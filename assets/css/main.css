@@ -1,0 +1,118 @@
+@import url("bootstrap.min.css");
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
+
+a {
+  position: relative;
+}
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+a:active {
+  outline: none;
+  text-decoration: none;
+}
+a:visited {
+  outline: none;
+  text-decoration: none;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .flex-row {
+    display: initial;
+    display: initial;
+    display: block;
+    -ms-flex-wrap: initial;
+    flex-wrap: initial;
+  }
+}
+.flex-row:before, .flex-row:after {
+  display: none;
+  display: none;
+}
+.flex-row > [class*=col-] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@media (max-width: 767px) {
+  .flex-row > [class*=col-] {
+    display: initial;
+    display: initial;
+    display: block;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+    -ms-flex-direction: initial;
+    flex-direction: initial;
+  }
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-regular/Roboto-Regular.eot");
+  src: url("../fonts/roboto-regular/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-regular/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto-regular/Roboto-Regular.woff") format("woff"), url("../fonts/roboto-regular/Roboto-Regular.ttf") format("truetype"), url("../fonts/roboto-regular/Roboto-Regular.svg#Roboto-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Light";
+  src: url("../fonts/roboto-light/Roboto-Light.eot");
+  src: url("../fonts/roboto-light/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-light/Roboto-Light.woff2") format("woff2"), url("../fonts/roboto-light/Roboto-Light.woff") format("woff"), url("../fonts/roboto-light/Roboto-Light.ttf") format("truetype"), url("../fonts/roboto-light/Roboto-Light.svg#Roboto-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Slab Bold";
+  src: url("../fonts/robotoSlab-bold/RobotoSlab-Bold.eot");
+  src: url("../fonts/robotoSlab-bold/RobotoSlab-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/robotoSlab-bold/RobotoSlab-Bold.woff2") format("woff2"), url("../fonts/robotoSlab-bold/RobotoSlab-Bold.woff") format("woff"), url("../fonts/robotoSlab-bold/RobotoSlab-Bold.ttf") format("truetype"), url("../fonts/robotoSlab-bold/RobotoSlab-Bold.svg#RobotoSlab-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Black";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/roboto-black/Roboto-Black.eot");
+  /* IE9 Compat Modes */
+  src: local("Roboto Black"), local("Roboto Black"), url("../fonts/roboto-black/Roboto-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-black/Roboto-Black.woff2") format("woff2"), url("../fonts/roboto-black/Roboto-Black.woff") format("woff"), url("../fonts/roboto-black/Roboto-Black.ttf") format("truetype"), url("../fonts/roboto-black/Roboto-Black.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+}
+
+/*# sourceMappingURL=main.css.map */
