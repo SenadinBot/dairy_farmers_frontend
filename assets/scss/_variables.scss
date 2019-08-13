@@ -1,5 +1,7 @@
 // colors named using http://chir.ag/projects/name-that-color
 $white: #ffffff;
+$dark: #000000;
+$mainColor: #0092bc;
 
 // Fonts
 $roboto: "Roboto";
@@ -60,5 +62,18 @@ $robotoBlack: "Roboto Black";
 .hidden-lg {
     @include media-lg() {
         display: none !important;
+    }
+}
+.visible-xs {
+    display: none !important;
+    @include media-xs() {
+        display: block !important;
+    }
+}
+.container {
+    &.custom-container {
+      @include media-lg() {
+        max-width: 1400px;
+      }
     }
 }

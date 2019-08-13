@@ -1,0 +1,67 @@
+.form-group {
+    input {
+        font-family: $roboto;
+        color: #54585a;
+        font-size: 18px;
+        line-height: normal;
+        border: none;
+        width: 100%;
+        padding: 6px 10px;
+        @include media-xs {
+            display: block;
+        }
+        &:focus {
+            outline: none;
+        }
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-family: $roboto;
+            color: #54585a;
+            font-size: 18px;
+            line-height: normal;
+        }
+        &::-moz-placeholder { /* Firefox 19+ */
+            font-family: $roboto;
+            color: #54585a;
+            font-size: 18px;
+            line-height: normal;
+        }
+        &:-ms-input-placeholder { /* IE 10+ */
+            font-family: $roboto;
+            color: #54585a;
+            font-size: 18px;
+            line-height: normal;
+        }
+        &:-moz-placeholder { /* Firefox 18- */
+            font-family: $roboto;
+            color: #54585a;
+            font-size: 18px;
+            line-height: normal;
+        }
+    }
+    .error-msg { 
+        display: none;
+    }
+    &.form-error {
+        position: relative;
+        input,
+        select,
+        textarea {
+            border: 1px solid #a21a19;
+        }
+        .error-msg {
+            display: inline-block;
+            position: absolute;
+            top: 3px;
+            right: 5px;
+            font-size: 14px;
+            line-height: 16px;
+            font-family: $robotoLight;
+            color: #a21a19;
+            text-transform: initial;
+            @include media-xs {
+                font-size: 12px;
+                margin-left: 5px;
+            }
+        }
+    }
+}

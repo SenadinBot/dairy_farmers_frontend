@@ -1,0 +1,66 @@
+.background-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 100%;
+    width: 100%;
+}
+.video-img-container {
+    height: 768px;
+    width: 100%;
+    margin: 0 0 176px 0;
+    cursor: pointer;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    position: relative;
+    @include media-sm {
+        height: 400px;
+    }
+    @include media-xs {
+        height: auto;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @include media-xs {
+            height: auto;
+        }
+    }
+    &:after {
+        content: "";
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background-image: url("../../../assets/images/play.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -30px;
+        -webkit-transition: all .3s ease 0s;
+        -moz-transition: all .3s ease 0s;
+        -o-transition: all .3s ease 0s;
+        transition: all .3s ease 0s;
+        @include media-xs-portrait {
+            width: 45px;
+            height: 45px;
+        }
+    }
+    .primary-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        margin-top: 75px;
+    }
+    &:hover {
+    }
+}
