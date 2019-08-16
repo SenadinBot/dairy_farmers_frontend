@@ -7,8 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
-    <meta name="description"
-        content="This is an example of a meta description. This will often show up in search results.">
+    <meta name="description" content="This is an example of a meta description. This will often show up in search results.">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./assets/images/favicon.ico">
@@ -20,7 +19,7 @@
 <body>
     <header>
         <div class="top-nav-container">
-            <div class="container">
+            <div class="container custom-container">
                 <div class="row">
                     <div class="col-sm-12">
                         <ul>
@@ -35,7 +34,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container custom-container">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="nav-icon-container hidden-lg hidden-md">
@@ -72,26 +71,42 @@
                             <li>
                                 <a href="#">Programs</a>
                             </li>
-                            <li class="calendar-link" style="display: none">
-                                <span>Free 2020 milk calendar</span>
-                                <img src="./assets/images/calendar-icon.png" alt="Calendar Icon">
-                                <a href="#">Get yours today</a>
+                            <li class="search-icon">
+                                <img src="./assets/images/icon-search.svg" alt="Search Icon">
+                            </li>
+                            <li class="calendar-link">
+                                <div class="calendar-link-content">
+                                    <span>Free 2020 milk calendar</span>
+                                    <img src="./assets/images/img-calendar-2019@3x.png" alt="Calendar Icon">
+                                </div>
+                                <a href="#" class="primary-btn">Get yours today</a>
                             </li>
                         </ul>
                     </nav>
+                    <!-- Header Search Container -->
+                    <div class="header-search">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search" aria-label=""
+                                    aria-describedby="basic-addon">
+                                    <div class="input-group-prepend">
+                                        <button type="button"></button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Header Search Container -->
                 </div>
             </div>
         </div>
     </header>
     <main>
         <div class="banner-image-container">
-            <div class="banner-img-background"
-                style="background-image: url('./assets/images/img-home-primary-hero-cow-field@3x.png')">
+            <div class="banner-img-background" style="background-image: url('./assets/images/img-home-primary-hero-cow-field@3x.png')">
             </div>
         </div>
         <div class="recipe-container">
-            <div class="recipe-img-background"
-                style="background-image: url('./assets/images/img-home-secondary-recipe-hero@3x.png')">
+            <div class="recipe-img-background" style="background-image: url('./assets/images/img-home-secondary-recipe-hero@3x.png')">
                 <div class="recipe-content">
                     <span>Satisfying Sides</span>
                     <h2>Cheesy Scalloped Potato Gnocchi</h2>
@@ -113,8 +128,7 @@
             </div>
         </div>
         <div class="adverb-container">
-            <div class="adverb-img-background"
-                style="background-image: url('./assets/images/img-calendar-2019-bg@3x.png')">
+            <div class="adverb-img-background" style="background-image: url('./assets/images/img-calendar-2019-bg@3x.png')">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
