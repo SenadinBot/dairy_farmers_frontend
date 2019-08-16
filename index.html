@@ -7,7 +7,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
-    <meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+    <meta name="description"
+        content="This is an example of a meta description. This will often show up in search results.">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./assets/images/favicon.ico">
@@ -38,7 +39,6 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="nav-icon-container hidden-lg hidden-md">
-                        <div class="nav-icon"></div>
                     </div>
                     <div class="logo-container">
                         <a href="/"><img src="./assets/images/logo.png" alt="Page logo" class="logo">
@@ -46,17 +46,22 @@
                     </div>
                     <nav>
                         <div class="mobile-intro hidden-lg hidden-md">
-                            <ul>
-                                <li>
-                                    <a href="#">Events</a>
-                                </li>
-                                <li>
-                                    <a href="#">DFOWeb Login</a>
-                                </li>
-                            </ul>
                             <div class="close-icon-container">
                                 <div class="close-icon"></div>
                             </div>
+                            <!-- Header Search Container -->
+                            <div class="header-search">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search" aria-label=""
+                                            aria-describedby="basic-addon">
+                                        <div class="input-group-prepend">
+                                            <button type="button"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Header Search Container -->
                         </div>
                         <ul>
                             <li>
@@ -82,16 +87,26 @@
                                 <a href="#" class="primary-btn">Get yours today</a>
                             </li>
                         </ul>
+                        <div class="mobile-more-links hidden-lg hidden-md">
+                            <ul>
+                                <li>
+                                    <a href="#">Events</a>
+                                </li>
+                                <li>
+                                    <a href="#">DFOWeb Login</a>
+                                </li>
+                            </ul>
+                        </div>
                     </nav>
                     <!-- Header Search Container -->
-                    <div class="header-search">
+                    <div class="header-search desktop-header-search hidden-xs hidden-sm">
                         <div class="form-group">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Search" aria-label=""
                                     aria-describedby="basic-addon">
-                                    <div class="input-group-prepend">
-                                        <button type="button"></button>
-                                    </div>
+                                <div class="input-group-prepend">
+                                    <button type="button"></button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -102,15 +117,17 @@
     </header>
     <main>
         <div class="banner-image-container">
-            <div class="banner-img-background" style="background-image: url('./assets/images/img-home-primary-hero-cow-field@3x.png')">
+            <div class="banner-img-background"
+                style="background-image: url('./assets/images/img-home-primary-hero-cow-field@3x.png')">
             </div>
         </div>
         <div class="recipe-container">
-            <div class="recipe-img-background" style="background-image: url('./assets/images/img-home-secondary-recipe-hero@3x.png')">
+            <div class="recipe-img-background"
+                style="background-image: url('./assets/images/img-home-secondary-recipe-hero@3x.png')">
                 <div class="recipe-content">
                     <span>Satisfying Sides</span>
-                    <h2>Cheesy Scalloped Potato Gnocchi</h2>
-                    <div class="recipe-info">
+                    <h2 data-aos="fade-left">Cheesy Scalloped Potato Gnocchi</h2>
+                    <div data-aos="fade-left" class="recipe-info">
                         <div class="recipe-info-item">
                             <span><b>Prep Time:</b>15 min</span>
                         </div>
@@ -121,14 +138,15 @@
                             <span><b>Serves:</b>4-6</span>
                         </div>
                     </div>
-                    <p>Serve up this comfort food alongside your favourite roast for a cozy meal the family will adore.
-                    </p>
-                    <a href="#" class="primary-btn white-btn">See the recipe</a>
+                    <p data-aos="fade-left">Serve up this comfort food alongside your favourite roast for a cozy meal
+                        the family will adore.</p>
+                    <a href="#" class="primary-btn white-btn" data-aos="fade-up">See the recipe</a>
                 </div>
             </div>
         </div>
         <div class="adverb-container">
-            <div class="adverb-img-background" style="background-image: url('./assets/images/img-calendar-2019-bg@3x.png')">
+            <div class="adverb-img-background"
+                style="background-image: url('./assets/images/img-calendar-2019-bg@3x.png')">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -304,6 +322,7 @@
     <!-- End of Video Modal -->
     <script type="text/javascript" src="assets/scripts/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="assets/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/aos.min.js"></script>
     <script type="text/javascript" src="assets/scripts/main.js"></script>
 </body>
 

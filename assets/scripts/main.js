@@ -22,11 +22,25 @@ $(document).ready(function () {
 
     // Open/Close Desktop Search Open
     $('.search-icon img').on('click', function () {
-        var $this = $('.header-search');
+        var $this = $('.desktop-header-search');
         if ($this.is(':hidden')) {
             $this.slideDown();
-        } else {
+        } 
+        else {
             $this.slideUp();
         }
+    });
+
+    // Aos animation
+    AOS.init({
+        duration: 900
+    });
+
+    // Open/Close Mobile Menu
+    $('.nav-icon-container').on('click', function () {
+        $('body').toggleClass('menu-open');
+    });
+    $('.close-icon-container').on('click', function () {
+        $('body').removeClass('menu-open');
     });
 });

@@ -123,6 +123,18 @@ a {
         font-size: 48px;
         letter-spacing: 2.88px;
     }
+    @include media-sm {
+
+    }
+    @include media-md {
+        font-size: 24px;
+        line-height: normal;
+        padding: 13px 22px 7px 22px;
+    }
+    @include media-xs-portrait {
+        font-size: 32px;
+        padding: 13px 32px 7px 32px;
+    }
     &.white-btn {
         color: #0072ce;
         border-color: #0072ce;
@@ -140,5 +152,10 @@ a {
             background-color: $white;
             color: #0072ce;
         }
+    }
+}
+.container { 
+    @media (max-width: 768px) {
+        max-width: 100%;
     }
 }
