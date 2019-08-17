@@ -36,6 +36,13 @@ h2 {
   font-stretch: normal;
   text-transform: uppercase; }
 
+h4 {
+  font-family: "Acumin Pro ExtraCondensed Black";
+  font-size: 36px;
+  line-height: 1;
+  letter-spacing: 1.8px;
+  color: #000000; }
+
 p {
   font-family: "Roboto";
   font-size: 18px;
@@ -155,6 +162,45 @@ a {
   .primary-btn.blue-border {
     border-color: #0072ce;
     color: #0072ce; }
+
+.custom-link {
+  text-transform: uppercase;
+  font-family: "Roboto Slab Bold";
+  font-size: 24px;
+  line-height: 30px;
+  color: #0072ce; }
+  .custom-link:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    background-position: 0 0,0 100%,0 0,100% 0;
+    background-repeat: repeat-x;
+    background-size: 8px;
+    background-image: repeating-linear-gradient(90deg, #0072ce 0, #0072ce 50%, transparent 0, transparent), repeating-linear-gradient(90deg, #0072ce 0, #0072ce 50%, transparent 0, transparent), repeating-linear-gradient(180deg, transparent 0, transparent 50%, transparent 0, transparent), repeating-linear-gradient(180deg, transparent 0, transparent 50%, transparent 0, transparent); }
+  .custom-link:hover {
+    text-decoration: none;
+    color: #0072ce; }
+    .custom-link:hover:after {
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      -moz-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+      -o-transform: scaleX(0);
+      transform: scaleX(0); }
 
 @media (max-width: 768px) {
   .container {
@@ -301,7 +347,7 @@ body {
 
 header {
   background-image: linear-gradient(100deg, rgba(95, 33, 103, 0.5), #0072ce), linear-gradient(to bottom, #0072ce, #0072ce);
-  z-index: 99;
+  z-index: 999;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s; }
@@ -1418,6 +1464,89 @@ footer {
         -webkit-appearance: none;
         outline: none;
         border: none; }
+
+.milk-info-container {
+  position: relative;
+  margin-bottom: -45px;
+  padding-top: 60px;
+  z-index: 99; }
+  .milk-info-container:before {
+    content: "";
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00358e;
+    opacity: 0.8; }
+  .milk-info-container .primary-btn {
+    margin-top: 15px; }
+  .milk-info-container .img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; }
+  .milk-info-container p {
+    font-family: "Roboto Light";
+    line-height: 1.67; }
+  .milk-info-container h4 {
+    margin-bottom: 0; }
+  .milk-info-container .full-width-info {
+    width: 100%;
+    margin-bottom: 60px; }
+    .milk-info-container .full-width-info .img-container {
+      display: inline-block;
+      width: 648px;
+      height: 489px;
+      opacity: 0.84;
+      vertical-align: top; }
+    .milk-info-container .full-width-info .info-content {
+      display: inline-block;
+      width: calc(100% - 653px);
+      vertical-align: top;
+      padding-top: 35px; }
+      .milk-info-container .full-width-info .info-content h2 {
+        color: #ffffff;
+        z-index: 9;
+        width: 130%;
+        position: relative;
+        margin-bottom: 25px;
+        padding-bottom: 10px; }
+        .milk-info-container .full-width-info .info-content h2:after {
+          content: "";
+          height: 3px;
+          width: 74%;
+          background-color: #ffc600;
+          position: absolute;
+          bottom: 0;
+          left: 0; }
+      .milk-info-container .full-width-info .info-content p {
+        color: #ffffff;
+        padding-right: 70px; }
+  .milk-info-container .small-info-image {
+    width: 387px;
+    margin-bottom: 79px;
+    margin-left: 117px;
+    padding: 0 18px;
+    display: inline-block;
+    vertical-align: top; }
+    .milk-info-container .small-info-image .img-container {
+      height: 258px;
+      width: 100%;
+      margin-bottom: 30px; }
+  .milk-info-container .small-info {
+    width: 423px;
+    background-image: linear-gradient(100deg, #5f2167, #0072ce), linear-gradient(to bottom, #0072ce, #0072ce);
+    padding: 50px 38px 69px 22px;
+    margin-left: 117px;
+    display: inline-block;
+    vertical-align: top; }
+    .milk-info-container .small-info span {
+      color: #ffffff;
+      text-transform: uppercase; }
+    .milk-info-container .small-info h4 {
+      color: #ffffff; }
+    .milk-info-container .small-info p {
+      color: #ffffff; }
 
 .adverb-container {
   position: relative;
