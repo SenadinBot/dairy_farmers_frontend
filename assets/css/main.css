@@ -42,7 +42,8 @@ p {
   font-style: normal;
   font-stretch: normal;
   letter-spacing: normal;
-  line-height: normal; }
+  line-height: normal;
+  color: #000000; }
 
 a {
   position: relative; }
@@ -151,6 +152,9 @@ a {
     .primary-btn.blue-btn:hover {
       background-color: #ffffff;
       color: #0072ce; }
+  .primary-btn.blue-border {
+    border-color: #0072ce;
+    color: #0072ce; }
 
 @media (max-width: 768px) {
   .container {
@@ -888,7 +892,8 @@ footer {
     width: 65%; }
     footer .footer-intro p {
       font-size: 18px;
-      margin: 0 0 20px 0; }
+      margin: 0 0 20px 0;
+      color: #ffffff; }
     footer .footer-intro img {
       display: inline-block;
       vertical-align: top;
@@ -1012,7 +1017,8 @@ footer {
             background: #ffffff; }
     footer .footer-info p {
       font-size: 14px;
-      margin: 0; }
+      margin: 0;
+      color: #ffffff; }
   footer .newsletter-container {
     margin-bottom: 30px; }
     footer .newsletter-container span {
@@ -1232,6 +1238,187 @@ footer {
     -moz-transform: scale(1);
     transform: scale(1); }
 
+.recipes-carousel-container {
+  position: relative;
+  padding: 45px 0 153px 0; }
+  .recipes-carousel-container:before {
+    content: "";
+    width: 100%;
+    height: 321px;
+    background: rgba(84, 88, 90, 0.15);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+  .recipes-carousel-container .recipes-carousel-intro p {
+    display: inline-block;
+    width: 48%;
+    font-size: 24px;
+    font-family: "Roboto Light";
+    line-height: normal;
+    vertical-align: top; }
+  .recipes-carousel-container .recipes-carousel-intro .primary-btn {
+    display: inline-block;
+    vertical-align: top; }
+  .recipes-carousel-container .recipes-carousel {
+    margin: 35px 0  45px 0;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; }
+    .recipes-carousel-container .recipes-carousel::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+      display: none; }
+    .recipes-carousel-container .recipes-carousel::-webkit-scrollbar-thumb {
+      background: transparent; }
+    .recipes-carousel-container .recipes-carousel .recipes-carousel-inner {
+      display: inline-flex;
+      padding-left: 15vw;
+      overflow: auto; }
+    .recipes-carousel-container .recipes-carousel .recipes-slide {
+      background-color: #ffc600;
+      color: #000000;
+      text-transform: uppercase;
+      width: 522px;
+      height: 352px;
+      margin-right: 18px;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      position: relative; }
+      .recipes-carousel-container .recipes-carousel .recipes-slide:last-child {
+        margin-right: 0; }
+      .recipes-carousel-container .recipes-carousel .recipes-slide a {
+        font-family: "Roboto Slab Bold";
+        font-size: 18px;
+        line-height: normal;
+        color: #000000; }
+        .recipes-carousel-container .recipes-carousel .recipes-slide a:hover {
+          color: #000000; }
+          .recipes-carousel-container .recipes-carousel .recipes-slide a:hover:after {
+            visibility: hidden;
+            -webkit-transform: scaleX(0);
+            -moz-transform: scaleX(0);
+            -ms-transform: scaleX(0);
+            -o-transform: scaleX(0);
+            transform: scaleX(0); }
+        .recipes-carousel-container .recipes-carousel .recipes-slide a:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          -moz-transform: scaleX(1);
+          -ms-transform: scaleX(1);
+          -o-transform: scaleX(1);
+          transform: scaleX(1);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          -moz-transition: all 0.3s ease-in-out 0s;
+          -ms-transition: all 0.3s ease-in-out 0s;
+          -o-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
+          background-position: 0 0,0 100%,0 0,100% 0;
+          background-repeat: repeat-x;
+          background-size: 8px;
+          background-image: repeating-linear-gradient(90deg, #000000 0, #000000 50%, transparent 0, transparent), repeating-linear-gradient(90deg, #000000 0, #000000 50%, transparent 0, transparent), repeating-linear-gradient(180deg, transparent 0, transparent 50%, transparent 0, transparent), repeating-linear-gradient(180deg, transparent 0, transparent 50%, transparent 0, transparent); }
+      .recipes-carousel-container .recipes-carousel .recipes-slide p {
+        font-family: "Acumin Pro ExtraCondensed Black";
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: 0.9px;
+        width: 100px; }
+      .recipes-carousel-container .recipes-carousel .recipes-slide img {
+        max-height: 352px;
+        position: absolute;
+        top: 0;
+        right: 0; }
+      .recipes-carousel-container .recipes-carousel .recipes-slide .recipes-slide-content {
+        vertical-align: bottom;
+        padding-left: 19px;
+        padding-bottom: 20px;
+        z-index: 99; }
+      .recipes-carousel-container .recipes-carousel .recipes-slide.white-text {
+        color: #ffffff; }
+        .recipes-carousel-container .recipes-carousel .recipes-slide.white-text p {
+          color: #ffffff; }
+        .recipes-carousel-container .recipes-carousel .recipes-slide.white-text a {
+          color: #ffffff; }
+          .recipes-carousel-container .recipes-carousel .recipes-slide.white-text a:hover {
+            color: #ffffff; }
+          .recipes-carousel-container .recipes-carousel .recipes-slide.white-text a:after {
+            background-image: repeating-linear-gradient(90deg, #ffffff 0, #ffffff 50%, transparent 0, transparent), repeating-linear-gradient(90deg, #ffffff 0, #ffffff 50%, transparent 0, transparent), repeating-linear-gradient(180deg, transparent 0, transparent 50%, transparent 0, transparent), repeating-linear-gradient(180deg, transparent 0, transparent 50%, transparent 0, transparent); }
+  .recipes-carousel-container .recipes-carousel-controls {
+    text-align: center;
+    display: block;
+    width: 791px;
+    margin: 0 auto; }
+    @media (max-width: 767px) {
+      .recipes-carousel-container .recipes-carousel-controls {
+        display: none; } }
+    .recipes-carousel-container .recipes-carousel-controls input[type=range] {
+      -webkit-appearance: none;
+      width: 100%;
+      margin: 0.8px 0; }
+      .recipes-carousel-container .recipes-carousel-controls input[type=range]:focus {
+        outline: none;
+        outline-style: none;
+        box-shadow: none;
+        border-color: transparent; }
+      .recipes-carousel-container .recipes-carousel-controls input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        cursor: pointer;
+        box-shadow: none;
+        height: 15px;
+        border-radius: 7.5px;
+        box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
+        background-color: #f2f2f2; }
+      .recipes-carousel-container .recipes-carousel-controls input[type=range]::-webkit-slider-thumb {
+        width: 74px;
+        height: 50px;
+        background: url("../../../assets/images/ui-slider.svg");
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -22px;
+        outline: none;
+        border: none; }
+      .recipes-carousel-container .recipes-carousel-controls input[type=range]::-moz-range-track {
+        width: 100%;
+        cursor: pointer;
+        box-shadow: none;
+        height: 15px;
+        border-radius: 7.5px;
+        box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
+        background-color: #f2f2f2; }
+      .recipes-carousel-container .recipes-carousel-controls input[type=range]::-moz-range-thumb {
+        width: 74px;
+        height: 50px;
+        background: url("../../../assets/images/ui-slider.svg");
+        cursor: pointer;
+        margin-top: -22px;
+        -webkit-appearance: none;
+        outline: none;
+        border: none; }
+      .recipes-carousel-container .recipes-carousel-controls input[type=range]::-ms-track {
+        width: 100%;
+        cursor: pointer;
+        box-shadow: none;
+        height: 15px;
+        border-radius: 7.5px;
+        box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
+        background-color: #f2f2f2; }
+      .recipes-carousel-container .recipes-carousel-controls input[type=range]::-ms-thumb {
+        width: 74px;
+        height: 50px;
+        background: url("../../../assets/images/ui-slider.svg");
+        cursor: pointer;
+        margin-top: -22px;
+        -webkit-appearance: none;
+        outline: none;
+        border: none; }
+
 .adverb-container {
   position: relative;
   width: 100%;
@@ -1288,7 +1475,40 @@ footer {
     height: 100%;
     background-position: left;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    @media (max-width: 767px) {
+      .banner-image-container .banner-img-background.desktop-img {
+        display: none; } }
+    .banner-image-container .banner-img-background.mobile-img {
+      display: none; }
+      @media (max-width: 767px) {
+        .banner-image-container .banner-img-background.mobile-img {
+          display: block; } }
+  .banner-image-container .banner-image-content {
+    position: relative;
+    top: 105px; }
+    .banner-image-container .banner-image-content span {
+      font-family: "Acumin Pro ExtraCondensed Black";
+      font-size: 125px;
+      line-height: 0.88;
+      letter-spacing: 15px;
+      color: #000000;
+      text-transform: uppercase;
+      display: block;
+      width: 60%; }
+    .banner-image-container .banner-image-content p {
+      font-family: "Roboto Light";
+      font-size: 22px;
+      line-height: 1.55; }
+    .banner-image-container .banner-image-content .primary-btn {
+      margin-top: 20px; }
+    .banner-image-container .banner-image-content .banner-image-inner-content {
+      margin-left: 204px;
+      width: 35%;
+      margin-top: 5px; }
 
 .recipe-container {
   position: relative;
@@ -1312,6 +1532,8 @@ footer {
     .recipe-container .recipe-content h2 {
       font-size: 44px;
       line-height: 44px; }
+    .recipe-container .recipe-content p {
+      color: #ffffff; }
     .recipe-container .recipe-content span {
       display: block;
       margin-bottom: 10px;

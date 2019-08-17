@@ -27,6 +27,7 @@ p {
     font-stretch: normal;
     letter-spacing: normal;
     line-height: normal;
+    color: $dark;
 }
 a {
     position: relative;
@@ -152,6 +153,10 @@ a {
             background-color: $white;
             color: #0072ce;
         }
+    }
+    &.blue-border {
+        border-color: #0072ce;
+        color: #0072ce;
     }
 }
 .container { 

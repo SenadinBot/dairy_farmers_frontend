@@ -9,6 +9,47 @@
         background-position: left;
         background-repeat: no-repeat;
         background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        &.desktop-img {
+            @include media-xs {
+                display: none;
+            }
+        }
+        &.mobile-img {
+            display: none;
+            @include media-xs {
+                display: block;
+            }
+        }
+    }
+    .banner-image-content {
+        position: relative;
+        top: 105px;
+        span {
+            font-family: $acuminProExtraCondBlack;
+            font-size: 125px;
+            line-height: 0.88;
+            letter-spacing: 15px;
+            color: $dark;
+            text-transform: uppercase;
+            display: block;
+            width: 60%;
+        }
+        p {
+            font-family: $robotoLight;
+            font-size: 22px;
+            line-height: 1.55;
+        }
+        .primary-btn {
+            margin-top: 20px;
+        }
+        .banner-image-inner-content {
+            margin-left: 204px;
+            width: 35%;
+            margin-top: 5px;
+        }
     }
 }
 .recipe-container {
@@ -34,6 +75,9 @@
         h2 {
             font-size: 44px;
             line-height: 44px;
+        }
+        p {
+            color: $white;
         }
         span {
             display: block;
