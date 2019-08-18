@@ -383,7 +383,7 @@
     }
     .small-info {
         width: 423px;
-        background-image: linear-gradient(100deg, #5f2167, #0072ce), linear-gradient(to bottom, #0072ce, #0072ce);
+        background-image: linear-gradient(100deg, #5f2167, $blue), linear-gradient(to bottom, $blue, $blue);
         padding: 50px 38px 69px 22px;
         margin-left: 117px;
         display: inline-block;

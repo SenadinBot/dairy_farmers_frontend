@@ -125,3 +125,65 @@
         }
     }
 }
+.big-banner-container {
+    width: 100%;
+    height: 605px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .banner-title { 
+        margin-top: 235px;
+    }
+}
+.banner-title {
+    z-index: 9;
+    position: relative;
+    .title-border {
+        display: inline-block;
+        width: 387px;
+        height: 597px;
+        border: 10px solid $mainColor;
+        border-right: none;
+        position: relative;
+        &:after {
+            content: "";
+            background: $mainColor;
+            height: 60px;
+            width: 10px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        &:before {
+            content: "";
+            background: $mainColor;
+            height: 265px;
+            width: 10px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+    span {
+        color: $dark;
+        font-size: 100px;
+        line-height: 88px;
+        text-transform: uppercase;
+        font-family: $acuminProExtraCondBlack;
+        position: absolute;
+        right: -58%;
+        top: 19%;
+    }
+    p {
+        font-size: 22px;
+        line-height: 34px;
+        font-family: $robotoLight;
+        width: 49%;
+        padding-left: 15px;
+        display: inline-block;
+        vertical-align: bottom;
+        margin: 0;
+        position: relative;
+        top: 10px;
+    }
+}

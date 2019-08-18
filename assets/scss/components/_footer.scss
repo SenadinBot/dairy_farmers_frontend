@@ -9,7 +9,7 @@ footer {
         height: 100%;
         width: 100%;
         opacity: 0.9;
-        background-image: linear-gradient(100deg, rgba(95, 33, 103, 0.5), #0072ce), linear-gradient(to bottom, #0072ce, #0072ce);
+        background-image: linear-gradient(100deg, rgba(95, 33, 103, 0.5), $blue), linear-gradient(to bottom, $blue, $blue);
     }
     .footer-intro {
         text-align: center;

@@ -1,0 +1,398 @@
+.nutrients-list-container {
+    width: 100%;
+    padding-top: 365px;
+    margin-bottom: 80px;
+    position: relative;
+    .nutrients-list-bg-image {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 900px;
+    }
+    .nutrients-list-intro {
+        .counter-num {
+            font-family: $acuminProSemiCondBold;
+            font-size: 536px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 445px;
+            letter-spacing: normal;
+            color: $blue;
+            display: inline-block;
+            width: 415px;
+            vertical-align: top;
+        }
+        .nutrients-list-intro-content {
+            display: inline-block;
+            width: calc(100% - 500px);
+            vertical-align: top;
+            margin-top: 60px;
+            span {
+                color: $dark;
+                font-size: 100px;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 0.88;
+                letter-spacing: 12px;
+                font-family: $acuminProExtraCondBlack;
+                text-transform: uppercase;
+            }
+            p {
+                font-family: $robotoLight;
+                font-size: 22px;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.55;
+                color: $dark;
+            }
+        }
+    }
+    .nutrients-list-carousel {
+        font-size: 0;
+        margin-bottom: 16px;
+        .nutrients-list-item {
+            display: inline-block;
+            width: 50%;
+            vertical-align: top;
+            margin-bottom: 45px;
+            h2 {
+                color: $dark;
+                position: relative;
+                margin: 0;
+                line-height: 46px;
+                span {
+                    color: $blue;
+                    font-size: 125px;
+                    font-family: $robotoSlabBold;
+                    position: absolute;
+                    top: -10px;
+                    padding-left: 8px;
+                }
+            }
+            p {
+                line-height: 1.44;
+                font-family: $robotoLight;
+                padding-right: 40px;
+            }
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+                h2 {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+    .additional-nutrients-list {
+        h4 {
+            text-align: center;
+            color: $blue;
+            text-transform: uppercase;
+            margin-bottom: 45px;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                margin-bottom: 37px;
+            }
+        }
+        h3 {
+            text-transform: uppercase;
+        }
+    }
+}
+.nutrition-background-image {
+    background-repeat: no-repeat;
+    background-size: 100% 980px;
+    background-position: top;
+    background-position-y: 185px;
+    height: 100%;
+    width: 100%;
+    .column-image-container  {
+        margin-bottom: 97px;
+    }
+}
+.true-false-container {
+    margin-bottom: 117px;
+    .true-false-intro {
+        span {
+            color: $dark;
+            text-transform: uppercase;
+            font-size: 100px;
+            line-height: 86px;
+            letter-spacing: 10px;
+            font-family: $acuminProExtraCondBlack;
+            display: inline-block;
+            width: 40%;
+            vertical-align: bottom;
+        }
+        p {
+            display: inline-block;
+            width: 49%;
+            margin-left: 80px;
+            vertical-align: bottom;
+            margin-bottom: 10px;
+        }
+    }
+    p {
+        font-family: $robotoLight;
+        line-height: 24px;
+        margin-bottom: 0;
+    }
+    a {
+        color: $blue;
+        font-family: $robotoLight;
+        line-height: 24px;
+        font-size: 18px;
+        position: relative;
+        letter-spacing: normal;
+        &:hover {
+            color: $blue;
+            &:before {
+                visibility: hidden;
+                -webkit-transform: scaleX(0);
+                -moz-transform: scaleX(0);
+                -ms-transform: scaleX(0);
+                -o-transform: scaleX(0);
+                transform: scaleX(0);
+            }
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: 1px;
+            left: 0;
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            -moz-transform: scaleX(1);
+            -ms-transform: scaleX(1);
+            -o-transform: scaleX(1);
+            transform: scaleX(1);
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            -moz-transition: all 0.3s ease-in-out 0s;
+            -ms-transition: all 0.3s ease-in-out 0s;
+            -o-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s;
+            background: $blue;
+        }
+        &:after {
+            content: "";
+            width: 14px;
+            height: 14px;
+            background-image: url("../../../assets/images/external-icon.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 4px;
+            margin-left: 8px;
+        }
+    }
+    h4 {
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+    .true-false-item-container {
+        font-size: 0;
+        margin-bottom: 100px;
+    }
+    .btn-container {
+        .primary-btn {
+            &:first-child {
+                margin-right: 20px;
+            }
+        }
+    }
+    .true-false-item {
+        margin-bottom: 75px;
+        .img-container {
+            height: 327px;
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                height: auto;
+                width: 100%;
+            }
+        }
+        h4 {
+            margin-bottom: 20px;
+        }
+        .true-false-answer {
+            display: none;
+            margin-top: 40px;
+            h3 {
+                text-transform: uppercase;
+                color: $blue;
+                margin-left: -20px;
+                margin-bottom: 0;
+            }
+        }
+        .true-false-item-content {
+            display: inline-block;
+            width: 50%;
+            vertical-align: top;
+            margin-top: 40px;
+            span {
+                text-transform: uppercase;
+                color: #54585a;
+                font-size: 16px;
+                line-height: 30px;
+                font-family: $robotoSlabBold;
+                letter-spacing: 0.8px;
+            }
+        }
+        &:nth-child(odd) {
+            .true-false-item-content {
+                padding-left: 28px;
+            }
+        }
+        &:nth-child(even) {
+            .true-false-item-content {
+                padding-right: 35spx;
+            }
+        }
+        &.show-answer {
+            .true-false-answer {
+                display: block;
+            }
+            .btn-container {
+                display: none;
+            }
+        }
+    }
+    .true-false-additional-container {
+        font-size: 0;
+        .true-false-additional-item {
+            display: inline-block;
+            width: 50%;
+            padding-right: 30px;
+            vertical-align: top;
+            p {
+                span {
+                    color: $blue;
+                    text-transform: uppercase;
+                    font-family: $robotoBold;
+                }
+            }
+        }
+    }
+}
+.nutrition-suggestion-container {
+    margin-bottom: 109px;
+    span {
+        font-size: 30px;
+        line-height: 30px;
+        font-family: $robotoSlabBold;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: #55585a;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        display: block;
+        width: 100%;
+    }
+    .img-container {
+        width: 657px;
+        background-color: #ffc600;
+        color: $dark;
+        text-transform: uppercase;
+        height: 370px;
+        display: inline-flex;
+        align-items: flex-end;
+        position: relative;
+        vertical-align: top;
+        &:last-child {
+            margin-right: 0;
+        }
+        a {
+            font-family: $robotoSlabBold;
+            font-size: 18px;
+            line-height: normal;
+            color: $dark;
+            &:hover {
+                color: $dark;
+                &:after {
+                    visibility: hidden;
+                    -webkit-transform: scaleX(0);
+                    -moz-transform: scaleX(0);
+                    -ms-transform: scaleX(0);
+                    -o-transform: scaleX(0);
+                    transform: scaleX(0);
+                }
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                visibility: visible;
+                -webkit-transform: scaleX(1);
+                -moz-transform: scaleX(1);
+                -ms-transform: scaleX(1);
+                -o-transform: scaleX(1);
+                transform: scaleX(1);
+                -webkit-transition: all 0.3s ease-in-out 0s;
+                -moz-transition: all 0.3s ease-in-out 0s;
+                -ms-transition: all 0.3s ease-in-out 0s;
+                -o-transition: all 0.3s ease-in-out 0s;
+                transition: all 0.3s ease-in-out 0s;
+                background-position: 0 0,0 100%,0 0,100% 0;
+                background-repeat: repeat-x;
+                background-size: 8px;
+                background-image: repeating-linear-gradient(90deg,#000000 0,#000000 50%,transparent 0,transparent),repeating-linear-gradient(90deg,#000000 0,#000000 50%,transparent 0,transparent),repeating-linear-gradient(180deg,transparent 0,transparent 50%,transparent 0,transparent),repeating-linear-gradient(180deg,transparent 0,transparent 50%,transparent 0,transparent);
+            }
+        }
+        p {
+            font-family: $acuminProExtraCondBlack;
+            font-size: 30px;
+            line-height: 30px;
+            letter-spacing: 0.9px;
+            width: 210px;
+            margin: 0;
+        }
+        img {
+            max-height: 407px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .suggestion-content {
+            vertical-align: bottom;
+            padding-left: 30px;
+            padding-bottom: 28px;
+            z-index: 99;
+        }
+    }
+    .nutrition-suggestion-content {
+        vertical-align: top;
+        display: inline-block;        
+        width: calc(100% - 665px);
+        padding-left: 12px;
+        h2 {
+            color: $dark;
+            display: block;
+            margin-bottom: 0;
+        }
+        p {
+            display: block;
+            font-family: $robotoLight;
+            line-height: 26px;
+            margin-bottom: 23px;
+            width: 60%;
+        }
+    }
+}

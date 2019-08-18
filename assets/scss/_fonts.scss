@@ -24,6 +24,19 @@
     font-style: normal;
 }
 
+// Roboto Bold
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('../fonts/roboto-bold/Roboto-Bold.eot');
+    src: url('../fonts/roboto-bold/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/roboto-bold/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/roboto-bold/Roboto-Bold.woff') format('woff'),
+        url('../fonts/roboto-bold/Roboto-Bold.ttf') format('truetype'),
+        url('../fonts/roboto-bold/Roboto-Bold.svg#RobotoSlab-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
 // Roboto Slab Bold
 @font-face {
     font-family: 'Roboto Slab Bold';
@@ -49,6 +62,19 @@
         url('../fonts/roboto-black/Roboto-Black.woff') format('woff'), /* Modern Browsers */
         url('../fonts/roboto-black/Roboto-Black.ttf') format('truetype'), /* Safari, Android, iOS */
         url('../fonts/roboto-black/Roboto-Black.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+// Acumin Pro Semi Condensed Semi Bold
+@font-face {
+    font-family: 'Acumin Pro Semi Condensed Bold';
+    src: url('../fonts/acumin-pro-bold/AcuminProExtraCond-Bold.eot');
+    src: url('../fonts/acumin-pro-bold/AcuminProExtraCond-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/acumin-pro-bold/AcuminProExtraCond-Bold.woff2') format('woff2'),
+        url('../fonts/acumin-pro-bold/AcuminProExtraCond-Bold.woff') format('woff'),
+        url('../fonts/acumin-pro-bold/AcuminProExtraCond-Bold.ttf') format('truetype'),
+        url('../fonts/acumin-pro-bold/AcuminProExtraCond-Bold.svg#AcuminProExtraCond-Bold') format('svg');
+    font-weight: 500;
+    font-style: normal;
 }
 
 // Acumin Pro ExtraCondensed Bold

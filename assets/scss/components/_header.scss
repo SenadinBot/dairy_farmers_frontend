@@ -123,7 +123,7 @@ body {
     }
 }
 header {
-    background-image: linear-gradient(100deg, rgba(95, 33, 103, 0.5), #0072ce), linear-gradient(to bottom, #0072ce, #0072ce);
+    background-image: linear-gradient(100deg, rgba(95, 33, 103, 0.5), $blue), linear-gradient(to bottom, $blue, $blue);
     z-index: 999;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -286,7 +286,7 @@ header {
                     font-stretch: normal;
                     line-height: normal;
                     letter-spacing: normal;
-                    color: #0072ce;
+                    color: $blue;
                     &:hover {
                         &:before {
                             visibility: hidden;
@@ -315,7 +315,7 @@ header {
                         -ms-transition: all 0.3s ease-in-out 0s;
                         -o-transition: all 0.3s ease-in-out 0s;
                         transition: all 0.3s ease-in-out 0s;
-                        background: #0072ce;
+                        background: $blue;
                     }
                 }
                 &:after {
@@ -356,7 +356,7 @@ header {
             left: 0;
             height: 100vh;
             overflow-y: auto;
-            background-color: #0072ce;
+            background-color: $blue;
             padding: 0 20px;
         }
         @include media-xs-landscape {
@@ -370,7 +370,7 @@ header {
             left: 0;
             height: 100vh;
             overflow-y: auto;
-            background-color: #0072ce;   
+            background-color: $blue;   
             padding: 0 20px;
         }
         @include media-md {

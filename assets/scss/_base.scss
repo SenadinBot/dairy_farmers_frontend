@@ -12,7 +12,11 @@ h2 {
     text-transform: uppercase;
 }
 h3 {
-    
+    font-family: $acuminProExtraCondBlack;
+    font-size: 48px;
+    line-height: 0.75;
+    letter-spacing: 2.88px;
+    color: $dark;
 }
 h4 {
     font-family: $acuminProExtraCondBlack;
@@ -114,8 +118,8 @@ a {
         text-decoration: none;
         outline: 0;
         background-color: $white;
-        color: #0072ce;
-        border-color: #0072ce;
+        color: $blue;
+        border-color: $blue;
     }
     &:focus {
         text-decoration: none;
@@ -141,26 +145,30 @@ a {
         padding: 13px 32px 7px 32px;
     }
     &.white-btn {
-        color: #0072ce;
-        border-color: #0072ce;
+        color: $blue;
+        border-color: $blue;
         background-color: $white;
         &:hover {
-            background-color: #0072ce;
+            background-color: $blue;
             color: $white;
         }
     }
     &.blue-btn {
         color: $white;
-        border-color: #0072ce;
-        background-color: #0072ce;
+        border-color: $blue;
+        background-color: $blue;
         &:hover {
             background-color: $white;
-            color: #0072ce;
+            color: $blue;
         }
     }
     &.blue-border {
-        border-color: #0072ce;
-        color: #0072ce;
+        border-color: $blue;
+        color: $blue;
+        &:hover {
+            background-color: $blue;
+            color: $white;
+        }
     }
 }
 .custom-link {
@@ -168,7 +176,7 @@ a {
     font-family: $robotoSlabBold;
     font-size: 24px;
     line-height: 30px;
-    color: #0072ce;
+    color: $blue;
     &:after {
         content: "";
         position: absolute;
@@ -190,11 +198,11 @@ a {
         background-position: 0 0,0 100%,0 0,100% 0;
         background-repeat: repeat-x;
         background-size: 8px;
-        background-image: repeating-linear-gradient(90deg, #0072ce 0, #0072ce 50%, transparent 0, transparent), repeating-linear-gradient(90deg, #0072ce 0, #0072ce 50%, transparent 0, transparent), repeating-linear-gradient(180deg, transparent 0, transparent 50%, transparent 0, transparent), repeating-linear-gradient(180deg, transparent 0, transparent 50%, transparent 0, transparent);
+        background-image: repeating-linear-gradient(90deg, $blue 0, $blue 50%, transparent 0, transparent), repeating-linear-gradient(90deg, $blue 0, $blue 50%, transparent 0, transparent), repeating-linear-gradient(180deg, transparent 0, transparent 50%, transparent 0, transparent), repeating-linear-gradient(180deg, transparent 0, transparent 50%, transparent 0, transparent);
     }
     &:hover {
         text-decoration: none;
-        color: #0072ce;
+        color: $blue;
         &:after {
             visibility: hidden;
             -webkit-transform: scaleX(0);
