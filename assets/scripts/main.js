@@ -80,7 +80,20 @@ $(document).ready(function () {
     }
 
     // Show Nutrition Answers
-    $('.true-false-item-content .primary-btn').on('click', function() {
+    $('.true-false-item-content .primary-btn').on('click', function () {
         $(this).parents('.true-false-item').addClass('show-answer');
+    });
+
+    // Nutrition List Slick Carousel
+    $(window).resize(function () {
+        if ($(window).width() < 767) {
+            $('.nutrients-list-carousel').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+            });
+        } else {
+            $('.nutrients-list-carousel').slick('unslick');
+        }
     });
 });

@@ -1,5 +1,7 @@
 @import url("bootstrap.min.css");
 @import url("aos.min.css");
+@import url("slick/slick-theme.min.css");
+@import url("slick/slick.min.css");
 @media (max-width: 767px) {
   .hidden-xs {
     display: none !important; } }
