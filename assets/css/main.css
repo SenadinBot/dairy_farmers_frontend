@@ -370,11 +370,12 @@ body {
           height: 0; } }
 
 header {
-  background-image: linear-gradient(100deg, rgba(95, 33, 103, 0.5), #0072ce), linear-gradient(to bottom, #0072ce, #0072ce);
+  background-image: linear-gradient(100deg, rgba(95, 33, 103, 0.5), #0072ce), linear-gradient(to bottom, rgba(0, 114, 206, 0.7), rgba(0, 114, 206, 0.7));
   z-index: 999;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  position: relative; }
   @media (min-width: 768px) and (max-width: 991px) {
     header {
       height: 150px;
@@ -1657,8 +1658,9 @@ footer {
 .banner-image-container {
   position: relative;
   width: 100%;
-  height: 680px;
-  font-size: 0; }
+  height: 800px;
+  font-size: 0;
+  margin-top: -120px; }
   .banner-image-container .banner-img-background {
     width: 100%;
     height: 100%;
@@ -1678,7 +1680,7 @@ footer {
           display: block; } }
   .banner-image-container .banner-image-content {
     position: relative;
-    top: 105px; }
+    top: 225px; }
     .banner-image-container .banner-image-content span {
       font-family: "Acumin Pro ExtraCondensed Black";
       font-size: 125px;
