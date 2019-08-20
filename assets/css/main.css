@@ -1978,6 +1978,7 @@ footer .social-container ul li a.twitter-icon:before {
 }
 .milk-info-container h4 {
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 .milk-info-container .full-width-info {
   width: 100%;
