@@ -85,15 +85,27 @@ $(document).ready(function () {
     });
 
     // Nutrition List Slick Carousel
-    $(window).resize(function () {
-        if ($(window).width() < 767) {
-            $('.nutrients-list-carousel').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false,
-            });
-        } else {
-            $('.nutrients-list-carousel').slick('unslick');
-        }
+    $('.nutrients-list-carousel').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        dots: false,
+        arrows: false,
+        variableWidth: true,
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 9999,
+                settings: "unslick"
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     });
 });

@@ -36,9 +36,6 @@ body {
                 -moz-transition: all 0.5s;
                 transition: all 0.5s;
                 @include media-xs {
-                    top: 50px;
-                }
-                @include media-xs-portrait {
                     top: 30px;
                 }
                 @include media-sm {
@@ -137,14 +134,11 @@ header {
         right: 0;
     }
     @include media-xs {
-        height: 150px;
+        height: 95px;
         position: relative;
         top: 0;
         left: 0;
         right: 0;
-    }
-    @include media-xs-portrait {
-        height: 95px;
     }
     .nav-icon-container {
         width: 73px;
@@ -152,7 +146,7 @@ header {
         position: absolute;
         top: 50px;
         right: 46px; 
-        @include media-xs-portrait {
+        @include media-xs {
             width: 50px;
             height: 34px;
             right: 26px;
@@ -166,7 +160,7 @@ header {
             background-repeat: no-repeat;
             background-size: cover;
             display: block;
-            @include media-xs-portrait {
+            @include media-xs {
                 width: 50px;
                 height: 34px;
             }
@@ -195,19 +189,14 @@ header {
             z-index: 0;
         }
         @include media-xs {
-            width: 200px;
-            height: 200px;
-            top: 50px;
+            top: 30px;
+            width: 120px;
+            height: 120px;
             left: 50%;
             -webkit-transform: translate(-50%);
             -ms-transform: translate(-50%);
             transform: translateX(-50%);
             z-index: 0;
-        }
-        @include media-xs-portrait {
-            top: 30px;
-            width: 120px;
-            height: 120px;
         }
         @include media-md {
             left: 15px;
@@ -236,10 +225,6 @@ header {
             top: 0;
             left: 0;
             @include media-xs {
-                width: 200px;
-                height: 200px;
-            }
-            @include media-xs-portrait {
                 width: 120px;
                 height: 120px;
             }

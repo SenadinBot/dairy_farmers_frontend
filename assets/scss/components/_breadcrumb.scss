@@ -3,9 +3,10 @@ main {
 }
 .breadcrumb-container {
     position: absolute;
-    top: 0;
+    top: 120px;
     left: 0;
     width: 100%;
+    z-index: 9;
     @include media-xs {
         display: none;
     }
@@ -23,11 +24,17 @@ main {
         opacity: 0.43;
     }
     ul {
-        margin: 0 0 0 5.5vw;
+        margin: 0 0 0 105px;
         padding: 7px 0;
         list-style: none;
         position: relative;
         z-index: 1;
+        @include media-md {
+            margin: 0 0 0 175px;
+        }
+        @media (min-width: 1200px) and (max-width: 1299px) {
+            margin: 0 0 0 175px;
+        }
         li {
             margin-right: 30px;
             font-family: $roboto;
