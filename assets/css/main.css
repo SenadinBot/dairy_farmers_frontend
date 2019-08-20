@@ -1993,14 +1993,14 @@ footer .social-container ul li a.twitter-icon:before {
 }
 .milk-info-container .full-width-info .info-content {
   display: inline-block;
-  width: calc(100% - 653px);
+  width: 35%;
   vertical-align: top;
   padding-top: 35px;
 }
 .milk-info-container .full-width-info .info-content h2 {
   color: #ffffff;
   z-index: 9;
-  width: 130%;
+  width: 145%;
   position: relative;
   margin-bottom: 25px;
   padding-bottom: 10px;
@@ -2008,7 +2008,7 @@ footer .social-container ul li a.twitter-icon:before {
 .milk-info-container .full-width-info .info-content h2:after {
   content: "";
   height: 3px;
-  width: 74%;
+  width: 67%;
   background-color: #ffc600;
   position: absolute;
   bottom: 0;
@@ -2016,13 +2016,12 @@ footer .social-container ul li a.twitter-icon:before {
 }
 .milk-info-container .full-width-info .info-content p {
   color: #ffffff;
-  padding-right: 70px;
+  padding-right: 0;
 }
 .milk-info-container .small-info-image {
   width: 387px;
   margin-bottom: 79px;
-  margin-left: 117px;
-  padding: 0 0px 0 18px;
+  margin-left: 131px;
   display: inline-block;
   vertical-align: top;
 }
