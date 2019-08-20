@@ -1,6 +1,9 @@
 footer {
     padding: 20px 0 15px 0;
     position: relative;
+    @include media-xs {
+        padding: 20px 0 50px 0;
+    }
     &:before {
         content: "";
         position: absolute;
@@ -17,10 +20,16 @@ footer {
         color: $white;
         margin: 0 auto;
         width: 65%;
+        @include media-xs {
+            width: 100%;
+        }
         p {
             font-size: 18px;
             margin: 0 0 20px 0;
             color: $white;
+            @include media-xs {
+                margin-bottom: 30px;
+            }
         }
         img {
             display: inline-block;
@@ -33,11 +42,20 @@ footer {
     .footer-links {
         color: $white;
         margin: 54px 0 45px 0;
+        @include media-xs {
+            margin: 54px 0 70px 0;
+        }
         ul {
             padding: 0;
-            margin: 5px 0 0 50px;
+            margin: 0 0 0 30px;
             list-style: none;
+            @include media-xs {
+                margin: 5px 0 0 0;
+            }
             li {
+                @include media-xs {
+                    margin-bottom: 3px;
+                }
                 a {
                     font-size: 18px;
                     line-height: 1.33;
@@ -90,10 +108,11 @@ footer {
             font-weight: normal;
             font-style: normal;
             font-stretch: normal;
-            line-height: normal;
+            line-height: 24px;
             color: $white;
             position: relative;
             text-transform: uppercase;
+            font-family: $acuminProExtraCondBlack;
         }
     }
     .footer-info {
@@ -103,6 +122,9 @@ footer {
         margin: 0 auto;
         width: 65%;
         padding-top: 10px;
+        @include media-xs {
+            width: 100%;
+        }
         ul {
             padding: 0;
             margin: 0;
@@ -174,8 +196,23 @@ footer {
     }
     .newsletter-container {
         margin-bottom: 30px;
+        @include media-sm {
+            text-align: center;
+            margin: 60px 0 50px 0;
+        }
+        @include media-xs {
+            text-align: center;
+            margin-bottom: 70px;
+        }
         span {
             margin-bottom: 5px;
+            @include media-sm {
+                text-align: left;
+                left: 16.5%;
+            }
+            @include media-xs {
+                margin-bottom: 15px;
+            }
         }
         .form-group {
             font-size: 0;
@@ -188,15 +225,33 @@ footer {
                     width: 100%;
                     padding: 19.5px 19px 19.5px 19px;
                 }
+                @include media-xs {
+                    width: 90%;
+                    margin-right: 0;
+                }
             }
             .primary-btn {
                 display: inline-block;
                 vertical-align: top;
+                @include media-md {
+                    width: calc(100% - 305px);
+                    padding: 18px 22px 9px 22px;
+                }
+                @include media-xs {
+                    margin-top: 25px;
+                }
             }
 
         }
     }
     .social-container {
+        @include media-sm {
+            text-align: center;
+        }
+        @include media-xs {
+            text-align: center;
+            margin-top: 50px;
+        }
         span {
             margin-bottom: 5px;
         }
@@ -210,12 +265,6 @@ footer {
                 display: inline-block;
                 &:last-child {
                     margin-right: 0;
-                    @include media-xs {
-                        margin-right: 0;
-                    }
-                }
-                @include media-xs {
-                    margin-right: 28px;
                 }
                 a {
                     width: 51px;
@@ -225,10 +274,6 @@ footer {
                     -webkit-transition: all 0.5s;
                     -moz-transition: all 0.5s;
                     transition: all 0.5s;
-                    @include media-xs {
-                        width: 76px;
-                        height: 75px;
-                    }
                     &:before {
                         content: "";
                         background-repeat: no-repeat;
@@ -237,10 +282,6 @@ footer {
                         width: 51px;
                         height: 50px;
                         object-fit: contain;
-                        @include media-xs {
-                            width: 76px;
-                            height: 75px;
-                        }
                     }
                     &:after {
                         display: none;
@@ -255,15 +296,9 @@ footer {
                     }
                     &.insta-icon {
                         width: 52px;
-                        @include media-xs {
-                            width: 77px;
-                        }
                         &:before {
                             width: 52px;
                             background-image: url("../../../assets/images/img-icon-social-instagram.svg");                            
-                            @include media-xs {
-                                width: 77px;
-                            }
                         }
                     }
                     &.twitter-icon {
