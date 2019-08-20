@@ -1744,6 +1744,9 @@ footer .social-container ul li a.twitter-icon:before {
   left: 0;
   z-index: -1;
 }
+.recipes-carousel-container .recipes-carousel-intro {
+  text-align: center;
+}
 .recipes-carousel-container .recipes-carousel-intro p {
   display: inline-block;
   width: 48%;
@@ -1751,6 +1754,7 @@ footer .social-container ul li a.twitter-icon:before {
   font-family: "Roboto Light";
   line-height: normal;
   vertical-align: top;
+  text-align: left;
 }
 .recipes-carousel-container .recipes-carousel-intro .primary-btn {
   display: inline-block;
@@ -2101,13 +2105,20 @@ footer .social-container ul li a.twitter-icon:before {
 .adverb-container .adverb-content .primary-btn {
   width: 284px;
   display: inline-block;
-  padding: 9.5px 5px 11.5px 5px;
   vertical-align: top;
+  position: relative;
+  top: 10px;
 }
 .adverb-container .adverb-content p {
-  width: calc(100% - 284px);
+  width: 46%;
+  padding-right: 15px;
+  line-height: 30px;
   display: inline-block;
   vertical-align: top;
+  font-family: "Roboto Light";
+}
+.adverb-container .adverb-content h2 {
+  width: 80%;
 }
 
 .banner-image-container {

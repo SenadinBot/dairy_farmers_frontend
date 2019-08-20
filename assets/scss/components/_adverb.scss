@@ -42,13 +42,20 @@
         .primary-btn {
             width: 284px;
             display: inline-block;
-            padding: 9.5px 5px 11.5px 5px;
             vertical-align: top;
+            position: relative;
+            top: 10px;
         }
         p {
-            width: calc(100% - 284px);
+            width: 46%;
+            padding-right: 15px;
+            line-height: 30px;
             display: inline-block;
             vertical-align: top;
+            font-family: $robotoLight;
+        }
+        h2 {
+            width: 80%;
         }
     }
 }

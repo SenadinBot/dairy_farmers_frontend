@@ -99,6 +99,7 @@
         z-index: -1;
     }
     .recipes-carousel-intro {
+        text-align: center;
         p {
             display: inline-block;
             width: 48%;
@@ -106,6 +107,7 @@
             font-family: $robotoLight;
             line-height: normal;
             vertical-align: top;
+            text-align: left;
         }
         .primary-btn {
             display: inline-block;
