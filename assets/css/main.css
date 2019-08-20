@@ -1643,10 +1643,14 @@ footer .social-container ul li a.twitter-icon:before {
   width: 100%;
 }
 
+.video-container {
+  background-color: #54585a;
+  margin: 0 0 176px 0;
+}
+
 .video-img-container {
   height: 768px;
   width: 100%;
-  margin: 0 0 176px 0;
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
