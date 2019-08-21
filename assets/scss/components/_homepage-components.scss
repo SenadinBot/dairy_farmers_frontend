@@ -118,6 +118,7 @@
 .recipes-carousel-container {
     position: relative;
     padding: 45px 0 153px 0;
+    overflow: hidden;
     @include media-xs {
         padding: 45px 0 100px 0;
     }

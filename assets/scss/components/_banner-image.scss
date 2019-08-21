@@ -129,6 +129,7 @@
     height: 640px;
     font-size: 0;
     margin-top: -70px;
+    overflow: hidden;
     @include media-md {
         height: 500px;
     }

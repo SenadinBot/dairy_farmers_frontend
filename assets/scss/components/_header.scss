@@ -533,9 +533,10 @@ header {
             letter-spacing: normal;
             color: $white;
             display: inline-block;
-            width: 100px;
+            width: 130px;
             text-align: center;
             vertical-align: top;
+            text-transform: uppercase;
             @include media-md {
                 font-size: 14px;
                 width: 90px;

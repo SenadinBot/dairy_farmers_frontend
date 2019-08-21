@@ -378,6 +378,9 @@
                 color: $blue;
                 margin-left: -20px;
                 margin-bottom: 0;
+                @include media-xs {
+                    margin-left: 0;
+                }
             }
         }
         .primary-btn {
