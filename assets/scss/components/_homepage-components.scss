@@ -118,6 +118,9 @@
 .recipes-carousel-container {
     position: relative;
     padding: 45px 0 153px 0;
+    @include media-xs {
+        padding: 45px 0 100px 0;
+    }
     &:before {
         content: "";
         width: 100%;
@@ -138,10 +141,17 @@
             line-height: normal;
             vertical-align: top;
             text-align: left;
+            @include media-xs {
+                text-align: center;
+                width: 100%;
+            }
         }
         .primary-btn {
             display: inline-block;
             vertical-align: top;
+            @include media-xs {
+                text-align: center;
+            }
         }
     }
     .recipes-carousel {
@@ -157,10 +167,16 @@
         &::-webkit-scrollbar-thumb {
             background: transparent;
         }
+        @include media-xs {
+            margin: 50px 0  45px 0;
+        }
         .recipes-carousel-inner {
             display: inline-flex;
             padding-left: 15vw;
             overflow: auto;
+            @include media-xs {
+                padding-left: 10px;
+            }
         }
         .recipes-slide {
             background-color: #ffc600;
@@ -175,6 +191,12 @@
             position: relative;
             &:last-child {
                 margin-right: 0;
+                @include media-xs {
+                    margin-right: 0;
+                }
+            }
+            @include media-xs {
+                margin-right: 10px;
             }
             a {
                 font-family: $robotoSlabBold;
@@ -259,6 +281,9 @@
         margin: 0 auto;
         @include media-xs {
             display: none;
+        }
+        @include media-sm {
+            width: 80%;
         }
         input[type=range] {
             -webkit-appearance: none;
@@ -468,14 +493,23 @@
                     margin-bottom: 40px;
                     padding-bottom: 40px;
                 } 
+                @include media-md {
+                    width: 180%;
+                }
                 &:after {
                     content: "";
                     height: 3px;
-                    width: 100%;
+                    width: 67%;
                     background-color: #ffc600;
                     position: absolute;
                     bottom: 0;
                     left: 0;
+                    @include media-xs {
+                        width: 100%;
+                    }
+                    @include media-md {
+                        width: 54%;
+                    }
                 }             
             }
             p {

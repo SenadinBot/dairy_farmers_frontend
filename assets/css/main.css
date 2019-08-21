@@ -1771,6 +1771,11 @@ footer .social-container ul li a.twitter-icon:before {
   position: relative;
   padding: 45px 0 153px 0;
 }
+@media (max-width: 767px) {
+  .recipes-carousel-container {
+    padding: 45px 0 100px 0;
+  }
+}
 .recipes-carousel-container:before {
   content: "";
   width: 100%;
@@ -1793,9 +1798,20 @@ footer .social-container ul li a.twitter-icon:before {
   vertical-align: top;
   text-align: left;
 }
+@media (max-width: 767px) {
+  .recipes-carousel-container .recipes-carousel-intro p {
+    text-align: center;
+    width: 100%;
+  }
+}
 .recipes-carousel-container .recipes-carousel-intro .primary-btn {
   display: inline-block;
   vertical-align: top;
+}
+@media (max-width: 767px) {
+  .recipes-carousel-container .recipes-carousel-intro .primary-btn {
+    text-align: center;
+  }
 }
 .recipes-carousel-container .recipes-carousel {
   margin: 35px 0 45px 0;
@@ -1811,10 +1827,20 @@ footer .social-container ul li a.twitter-icon:before {
 .recipes-carousel-container .recipes-carousel::-webkit-scrollbar-thumb {
   background: transparent;
 }
+@media (max-width: 767px) {
+  .recipes-carousel-container .recipes-carousel {
+    margin: 50px 0 45px 0;
+  }
+}
 .recipes-carousel-container .recipes-carousel .recipes-carousel-inner {
   display: inline-flex;
   padding-left: 15vw;
   overflow: auto;
+}
+@media (max-width: 767px) {
+  .recipes-carousel-container .recipes-carousel .recipes-carousel-inner {
+    padding-left: 10px;
+  }
 }
 .recipes-carousel-container .recipes-carousel .recipes-slide {
   background-color: #ffc600;
@@ -1830,6 +1856,16 @@ footer .social-container ul li a.twitter-icon:before {
 }
 .recipes-carousel-container .recipes-carousel .recipes-slide:last-child {
   margin-right: 0;
+}
+@media (max-width: 767px) {
+  .recipes-carousel-container .recipes-carousel .recipes-slide:last-child {
+    margin-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .recipes-carousel-container .recipes-carousel .recipes-slide {
+    margin-right: 10px;
+  }
 }
 .recipes-carousel-container .recipes-carousel .recipes-slide a {
   font-family: "Roboto Slab Bold";
@@ -1914,6 +1950,11 @@ footer .social-container ul li a.twitter-icon:before {
 @media (max-width: 767px) {
   .recipes-carousel-container .recipes-carousel-controls {
     display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .recipes-carousel-container .recipes-carousel-controls {
+    width: 80%;
   }
 }
 .recipes-carousel-container .recipes-carousel-controls input[type=range] {
@@ -2157,14 +2198,29 @@ footer .social-container ul li a.twitter-icon:before {
     padding-bottom: 40px;
   }
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .milk-info-container .full-width-info .info-content h2 {
+    width: 180%;
+  }
+}
 .milk-info-container .full-width-info .info-content h2:after {
   content: "";
   height: 3px;
-  width: 100%;
+  width: 67%;
   background-color: #ffc600;
   position: absolute;
   bottom: 0;
   left: 0;
+}
+@media (max-width: 767px) {
+  .milk-info-container .full-width-info .info-content h2:after {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .milk-info-container .full-width-info .info-content h2:after {
+    width: 54%;
+  }
 }
 .milk-info-container .full-width-info .info-content p {
   color: #ffffff;
@@ -2312,12 +2368,37 @@ footer .social-container ul li a.twitter-icon:before {
   height: 300px;
   font-size: 0;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .adverb-container {
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .adverb-container {
+    height: auto;
+  }
+}
 .adverb-container .adverb-img-background {
   width: 100%;
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .adverb-container .adverb-img-background {
+    background-position: center right;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .adverb-container .adverb-img-background {
+    background-position: center;
+  }
+}
+@media (max-width: 767px) {
+  .adverb-container .adverb-img-background {
+    background-position: center;
+  }
 }
 .adverb-container:after {
   content: "";
@@ -2336,18 +2417,85 @@ footer .social-container ul li a.twitter-icon:before {
   width: 30%;
   vertical-align: top;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .adverb-container .img-container {
+    width: 40%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .adverb-container .img-container {
+    width: 100%;
+    text-align: center;
+    margin-top: -100px;
+  }
+}
+@media (max-width: 767px) {
+  .adverb-container .img-container {
+    width: 100%;
+    text-align: center;
+    margin-top: -100px;
+  }
+}
 .adverb-container .img-container img {
-  width: 482px;
+  width: 452px;
   height: 302px;
   position: absolute;
-  left: -160px;
+  left: -149px;
   top: -50px;
+  object-fit: cover;
+  z-index: 9;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .adverb-container .img-container img {
+    width: 340px;
+    height: 230px;
+    left: 10px;
+    top: -50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .adverb-container .img-container img {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 320px;
+  }
+}
+@media (max-width: 767px) {
+  .adverb-container .img-container img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 200px;
+  }
 }
 .adverb-container .adverb-content {
   display: inline-block;
   width: 70%;
   vertical-align: top;
   padding-top: 35px;
+  position: relative;
+  z-index: 99;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .adverb-container .adverb-content {
+    width: 60%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .adverb-container .adverb-content {
+    width: 100%;
+    z-index: 999;
+    padding: 10px 70px 70px 70px;
+  }
+}
+@media (max-width: 767px) {
+  .adverb-container .adverb-content {
+    width: 100%;
+    z-index: 999;
+    padding: 0 5px 70px 5px;
+  }
 }
 .adverb-container .adverb-content .primary-btn {
   width: 284px;
@@ -2355,6 +2503,16 @@ footer .social-container ul li a.twitter-icon:before {
   vertical-align: top;
   position: relative;
   top: 10px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .adverb-container .adverb-content .primary-btn {
+    width: auto;
+  }
+}
+@media (max-width: 767px) {
+  .adverb-container .adverb-content .primary-btn {
+    width: auto;
+  }
 }
 .adverb-container .adverb-content p {
   width: 46%;
@@ -2364,8 +2522,40 @@ footer .social-container ul li a.twitter-icon:before {
   vertical-align: top;
   font-family: "Roboto Light";
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .adverb-container .adverb-content p {
+    width: 60%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .adverb-container .adverb-content p {
+    width: 100%;
+    font-size: 28px;
+    line-height: 42px;
+  }
+}
+@media (max-width: 767px) {
+  .adverb-container .adverb-content p {
+    width: 100%;
+  }
+}
 .adverb-container .adverb-content h2 {
   width: 80%;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .adverb-container .adverb-content h2 {
+    width: 100%;
+    font-size: 66px;
+    line-height: 66px;
+  }
+}
+@media (max-width: 767px) and (orientation: portrait) {
+  .adverb-container .adverb-content h2 {
+    width: 100%;
+    font-size: 62px;
+    line-height: 62px;
+    letter-spacing: 2px;
+  }
 }
 
 .banner-image-container {
