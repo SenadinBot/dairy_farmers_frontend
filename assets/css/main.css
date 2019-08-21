@@ -2623,6 +2623,23 @@ footer .social-container ul li a.twitter-icon:before {
   font-size: 0;
   margin-top: -70px;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .recipe-container {
+    height: 500px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .recipe-container {
+    height: auto;
+    margin-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .recipe-container {
+    height: auto;
+    margin-top: 0;
+  }
+}
 .recipe-container .recipe-img-background {
   width: 100%;
   height: 100%;
@@ -2630,13 +2647,42 @@ footer .social-container ul li a.twitter-icon:before {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .recipe-container .recipe-img-background {
+    height: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .recipe-container .recipe-img-background {
+    height: 400px;
+  }
+}
 .recipe-container .recipe-content {
   color: #ffffff;
   padding-top: 115px;
   width: 500px;
   position: absolute;
+  top: 0;
   left: 45%;
   transform: translateX(49%);
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .recipe-container .recipe-content {
+    left: 32%;
+    padding-top: 80px;
+    width: 450px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .recipe-container .recipe-content {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    background-color: #54585a;
+    padding: 0 120px 50px 120px;
+  }
 }
 .recipe-container .recipe-content h2 {
   font-size: 44px;
@@ -2644,6 +2690,15 @@ footer .social-container ul li a.twitter-icon:before {
 }
 .recipe-container .recipe-content p {
   color: #ffffff;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .recipe-container .recipe-content p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
 }
 .recipe-container .recipe-content span {
   display: block;
@@ -2662,6 +2717,23 @@ footer .social-container ul li a.twitter-icon:before {
   padding: 5px 14px;
   font-size: 0;
   margin: 40px 0;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .recipe-container .recipe-content .recipe-info {
+    margin: 20px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .recipe-container .recipe-content .recipe-info {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
+}
+@media (max-width: 767px) {
+  .recipe-container .recipe-content .recipe-info {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
 }
 .recipe-container .recipe-content .recipe-info .recipe-info-item {
   display: inline-block;
@@ -2683,6 +2755,11 @@ footer .social-container ul li a.twitter-icon:before {
   color: #54585a;
   border-color: #ffffff;
   margin-top: 25px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .recipe-container .recipe-content .white-btn {
+    margin-top: 15px;
+  }
 }
 .recipe-container .recipe-content .white-btn:hover {
   background-color: #54585a;
