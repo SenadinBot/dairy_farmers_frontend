@@ -2570,6 +2570,18 @@ footer .social-container ul li a.twitter-icon:before {
     height: 660px;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner-image-container {
+    margin-top: 0;
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .banner-image-container {
+    margin-top: 0;
+    height: auto;
+  }
+}
 .banner-image-container .banner-img-background {
   width: 100%;
   height: 100%;
@@ -2601,11 +2613,15 @@ footer .social-container ul li a.twitter-icon:before {
 @media (min-width: 768px) and (max-width: 991px) {
   .banner-image-container .banner-img-background {
     background-position: center;
+    height: 600px;
+    position: relative;
   }
 }
 @media (max-width: 767px) {
   .banner-image-container .banner-img-background {
     background-position: center;
+    height: 400px;
+    position: relative;
   }
 }
 .banner-image-container .banner-image-content {
@@ -2615,6 +2631,20 @@ footer .social-container ul li a.twitter-icon:before {
 @media (min-width: 992px) and (max-width: 1199px) {
   .banner-image-container .banner-image-content {
     top: 190px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner-image-container .banner-image-content {
+    top: 0;
+    margin-top: 40px;
+    padding: 0 70px 30px 110px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-image-container .banner-image-content {
+    top: 0;
+    margin-top: 40px;
+    padding: 0 10px 30px 10px;
   }
 }
 .banner-image-container .banner-image-content span {
@@ -2633,6 +2663,26 @@ footer .social-container ul li a.twitter-icon:before {
     line-height: 90px;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner-image-container .banner-image-content span {
+    width: 100%;
+    font-size: 120px;
+  }
+}
+@media (max-width: 767px) and (orientation: portrait) {
+  .banner-image-container .banner-image-content span {
+    font-size: 74px;
+    line-height: 74px;
+    letter-spacing: 6px;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) and (orientation: landscape) {
+  .banner-image-container .banner-image-content span {
+    font-size: 120px;
+    width: 90%;
+  }
+}
 .banner-image-container .banner-image-content p {
   font-family: "Roboto Light";
   font-size: 22px;
@@ -2640,6 +2690,11 @@ footer .social-container ul li a.twitter-icon:before {
 }
 .banner-image-container .banner-image-content .primary-btn {
   margin-top: 20px;
+}
+@media (max-width: 767px) and (orientation: portrait) {
+  .banner-image-container .banner-image-content .primary-btn {
+    width: 100%;
+  }
 }
 .banner-image-container .banner-image-content .banner-image-inner-content {
   margin-left: 204px;
@@ -2650,6 +2705,18 @@ footer .social-container ul li a.twitter-icon:before {
   .banner-image-container .banner-image-content .banner-image-inner-content {
     margin-left: 140px;
     width: 40%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner-image-container .banner-image-content .banner-image-inner-content {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .banner-image-container .banner-image-content .banner-image-inner-content {
+    margin-left: 0;
+    width: 100%;
   }
 }
 

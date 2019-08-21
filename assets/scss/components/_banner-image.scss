@@ -7,6 +7,14 @@
     @include media-md {
         height: 660px;
     }
+    @include media-sm {
+        margin-top: 0;
+        height: auto;
+    }
+    @include media-xs {
+        margin-top: 0;
+        height: auto;
+    }
     .banner-img-background {
         width: 100%;
         height: 100%;
@@ -32,9 +40,13 @@
         }
         @include media-sm {
             background-position: center;
+            height: 600px;
+            position: relative;
         }
         @include media-xs {
             background-position: center;
+            height: 400px;
+            position: relative;
         }
     }
     .banner-image-content {
@@ -42,6 +54,16 @@
         top: 225px;
         @include media-md {
             top: 190px;
+        }
+        @include media-sm {
+            top: 0;
+            margin-top: 40px;
+            padding: 0 70px 30px 110px;
+        }
+        @include media-xs {
+            top: 0;
+            margin-top: 40px;
+            padding: 0 10px 30px 10px;
         }
         span {
             font-family: $acuminProExtraCondBlack;
@@ -56,6 +78,20 @@
                 font-size: 98px;
                 line-height: 90px;
             }
+            @include media-sm {
+                width: 100%;
+                font-size: 120px;
+            }
+            @include media-xs-portrait {
+                font-size: 74px;
+                line-height: 74px;
+                letter-spacing: 6px;
+                width: 100%;
+            }
+            @include media-xs-landscape {
+                font-size: 120px;
+                width: 90%;
+            }
         }
         p {
             font-family: $robotoLight;
@@ -64,6 +100,9 @@
         }
         .primary-btn {
             margin-top: 20px;
+            @include media-xs-portrait {
+                width: 100%;
+            }
         }
         .banner-image-inner-content {
             margin-left: 204px;
@@ -72,6 +111,14 @@
             @include media-md {
                 margin-left: 140px;
                 width: 40%;
+            }
+            @include media-sm {
+                margin-left: 0;
+                width: 100%;
+            }
+            @include media-xs {
+                margin-left: 0;
+                width: 100%;
             }
         }
     }
