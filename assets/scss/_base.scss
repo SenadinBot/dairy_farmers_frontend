@@ -1,3 +1,6 @@
+main {
+    overflow: hidden;
+}
 h1 {
 
 }
@@ -132,12 +135,12 @@ a {
     &:active {
         outline: 0;
     }
-    @include media-xs {
+    @include media-xs-landscape {
         font-size: 48px;
         letter-spacing: 2.88px;
     }
     @include media-sm {
-
+        padding: 13px 15px 7px 15px;
     }
     @include media-md {
         font-size: 24px;
@@ -146,7 +149,7 @@ a {
     }
     @include media-xs-portrait {
         font-size: 32px;
-        padding: 13px 32px 7px 32px;
+        padding: 13px 15px 7px 15px;
     }
     &.white-btn {
         color: $blue;
