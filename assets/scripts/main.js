@@ -62,6 +62,7 @@ $(document).ready(function () {
 
     // Nutrition Counter 
     if ($('#count').length) {
+        var endCount = parseInt($('#count').text());
         function counter(id, start, end, duration) {
             let obj = document.getElementById(id),
                 current = start,
@@ -76,14 +77,19 @@ $(document).ready(function () {
                     }
                 }, step);
         }
-        counter("count", 0, 15, 3000);
+        counter("count", 0, endCount, 3000);
     }
 
     // Show Nutrition Answers
-    $('.true-false-item-content .primary-btn').on('click', function () {
+    $('.true-false-item-content .true-btn').on('click', function () {
         $(this).parents('.true-false-item').addClass('show-answer');
+        $(this).parents('.true-false-item').find(".wrong-answer").hide();
     });
 
+    $('.true-false-item-content .false-btn').on('click', function () {
+        $(this).parents('.true-false-item').addClass('show-answer');
+        $(this).parents('.true-false-item').find(".correct-answer").hide();
+    });
     // Nutrition List Slick Carousel
     $('.nutrients-list-carousel').slick({
         slidesToShow: 1,
