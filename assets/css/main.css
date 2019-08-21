@@ -2565,6 +2565,11 @@ footer .social-container ul li a.twitter-icon:before {
   font-size: 0;
   margin-top: -120px;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner-image-container {
+    height: 660px;
+  }
+}
 .banner-image-container .banner-img-background {
   width: 100%;
   height: 100%;
@@ -2588,9 +2593,29 @@ footer .social-container ul li a.twitter-icon:before {
     display: block;
   }
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner-image-container .banner-img-background {
+    background-position: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner-image-container .banner-img-background {
+    background-position: center;
+  }
+}
+@media (max-width: 767px) {
+  .banner-image-container .banner-img-background {
+    background-position: center;
+  }
+}
 .banner-image-container .banner-image-content {
   position: relative;
   top: 225px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner-image-container .banner-image-content {
+    top: 190px;
+  }
 }
 .banner-image-container .banner-image-content span {
   font-family: "Acumin Pro ExtraCondensed Black";
@@ -2601,6 +2626,12 @@ footer .social-container ul li a.twitter-icon:before {
   text-transform: uppercase;
   display: block;
   width: 60%;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner-image-container .banner-image-content span {
+    font-size: 98px;
+    line-height: 90px;
+  }
 }
 .banner-image-container .banner-image-content p {
   font-family: "Roboto Light";
@@ -2614,6 +2645,12 @@ footer .social-container ul li a.twitter-icon:before {
   margin-left: 204px;
   width: 35%;
   margin-top: 5px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner-image-container .banner-image-content .banner-image-inner-content {
+    margin-left: 140px;
+    width: 40%;
+  }
 }
 
 .recipe-container {
