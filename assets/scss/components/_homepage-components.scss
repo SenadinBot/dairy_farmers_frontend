@@ -8,6 +8,20 @@
 .video-container {
     background-color: #54585a;
     margin: 0 0 176px 0;
+    @include media-md {
+        margin: 0 0 156px 0;
+    }
+    @include media-sm {
+        margin: 0 0 126px 0;
+    }
+    @include media-xs {
+        margin: 0 0 106px 0;
+    }
+    .container {
+        @include media-xs {
+            padding: 0;
+        }
+    }
 }
 .video-img-container {
     height: 768px;
@@ -18,18 +32,25 @@
     -o-transition: all .3s ease 0s;
     transition: all .3s ease 0s;
     position: relative;
+    @include media-md {
+        height: 500px;
+    }
     @include media-sm {
         height: 400px;
     }
     @include media-xs {
-        height: auto;
+        height: 280px;
+        padding-top: 60px;
+    }
+    @include media-xs-landscape {
+        height: 380px;
     }
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         @include media-xs {
-            height: auto;
+            height: 100%;
         }
     }
     &:after {
@@ -54,6 +75,9 @@
             width: 45px;
             height: 45px;
         }
+        @include media-xs-portrait {
+            margin-top: 0;
+        }
     }
     .primary-btn {
         position: absolute;
@@ -63,6 +87,9 @@
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         margin-top: 75px;
+        @include media-xs {
+            width: 70%;
+        }
     }
     &:before {
         content: "";
@@ -91,6 +118,9 @@
 .recipes-carousel-container {
     position: relative;
     padding: 45px 0 153px 0;
+    @include media-xs {
+        padding: 45px 0 100px 0;
+    }
     &:before {
         content: "";
         width: 100%;
@@ -111,10 +141,17 @@
             line-height: normal;
             vertical-align: top;
             text-align: left;
+            @include media-xs {
+                text-align: center;
+                width: 100%;
+            }
         }
         .primary-btn {
             display: inline-block;
             vertical-align: top;
+            @include media-xs {
+                text-align: center;
+            }
         }
     }
     .recipes-carousel {
@@ -130,10 +167,16 @@
         &::-webkit-scrollbar-thumb {
             background: transparent;
         }
+        @include media-xs {
+            margin: 50px 0  45px 0;
+        }
         .recipes-carousel-inner {
             display: inline-flex;
             padding-left: 15vw;
             overflow: auto;
+            @include media-xs {
+                padding-left: 10px;
+            }
         }
         .recipes-slide {
             background-color: #ffc600;
@@ -148,6 +191,12 @@
             position: relative;
             &:last-child {
                 margin-right: 0;
+                @include media-xs {
+                    margin-right: 0;
+                }
+            }
+            @include media-xs {
+                margin-right: 10px;
             }
             a {
                 font-family: $robotoSlabBold;
@@ -233,6 +282,9 @@
         @include media-xs {
             display: none;
         }
+        @include media-sm {
+            width: 80%;
+        }
         input[type=range] {
             -webkit-appearance: none;
             width: 100%;
@@ -308,6 +360,20 @@
     margin-bottom: -45px;
     padding-top: 60px;
     z-index: 99;
+    @include media-xs {
+        padding: 0;
+    }
+    @include media-sm {
+        padding: 0;
+    }
+    .container {
+        @include media-xs {
+            padding: 0;
+        }
+        @include media-sm {
+            padding: 0;
+        }
+    }
     &:before {
         content: "";
         width: 100%;
@@ -317,6 +383,15 @@
         left: 0;
         background: #00358e;
         opacity: 0.8;
+        @include media-sm {
+            height: 70%;
+        }
+        @include media-xs {
+            height: 53%;
+        }
+        @include media-xs-landscape {
+            height: 56%;
+        }
     }
     .primary-btn {
         margin-top: 15px;
@@ -339,25 +414,88 @@
     .full-width-info {
         width: 100%;
         margin-bottom: 60px;
+        @include media-sm {
+            display: flex;
+            flex-flow: column;
+            position: relative;
+        }
+        @include media-xs {
+            display: flex;
+            flex-flow: column;
+            position: relative;
+        }
         .img-container {
             display: inline-block;
             width: 648px;
             height: 489px;
             opacity: 0.84;
             vertical-align: top;
+            img {
+                @include media-xs {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                @include media-sm {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            @include media-md {
+                width: 64%;
+            }
+            @include media-sm {
+                order: 1;  
+                width: 100%;
+                height: 540px;
+            }
+            @include media-xs {
+                order: 1;  
+                width: 100%;
+                height: auto;
+            }
         }
         .info-content {
             display: inline-block;
             width: 35%;
             vertical-align: top;
             padding-top: 35px;
+            @include media-sm {
+                order: 2;  
+                width: 100%;
+                padding: 0 70px;
+                margin-top: -40px;
+            }
+            @include media-xs {
+                order: 2; 
+                width: 100%;
+                padding: 0 20px;
+                margin-top: -40px;
+                text-align: center;
+            }
             h2 {
                 color: $white;
                 z-index: 9;
                 width: 145%;
                 position: relative;
                 margin-bottom: 25px;
-                padding-bottom: 10px;   
+                padding-bottom: 10px; 
+                @include media-xs {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    padding-bottom: 20px;
+                    text-align: left;
+                }  
+                @include media-sm {
+                    width: 100%;
+                    padding-right: 70px;
+                    margin-bottom: 40px;
+                    padding-bottom: 40px;
+                } 
+                @include media-md {
+                    width: 180%;
+                }
                 &:after {
                     content: "";
                     height: 3px;
@@ -366,11 +504,27 @@
                     position: absolute;
                     bottom: 0;
                     left: 0;
+                    @include media-xs {
+                        width: 100%;
+                    }
+                    @include media-md {
+                        width: 54%;
+                    }
                 }             
             }
             p {
                 color: $white;
                 padding-right: 0;
+                @include media-sm {
+                    font-size: 22px;
+                    width: 80%;
+                }
+                @include media-xs {
+                    text-align: left;
+                }
+                @include media-xs-landscape {
+                    width: 80%;
+                }
             }
         }
     }
@@ -380,10 +534,37 @@
         margin-left: 131px;
         display: inline-block;
         vertical-align: top;
+        @include media-xs {
+            margin-bottom: 50px;
+        }
         .img-container {
             height: 258px;
             width: 100%;
             margin-bottom: 30px;
+            @include media-xs {
+                height: auto;
+                margin-bottom: 20px;
+            }
+        }
+        @include media-md {
+            margin-left: 74px;
+        }
+        @include media-sm {
+            margin-left: 70px;
+            width: calc(100% / 2 - 70px);
+        }
+        @include media-xs {
+            width: 100%;
+            padding: 0 20px;
+            margin-left: 0;
+        }
+        &:last-child {
+            @include media-sm {
+                margin-left: 40px;
+            }
+        }
+        @include media-xs-landscape {
+            width: 75%;
         }
     }
 }
@@ -397,20 +578,46 @@
     position: relative;
     top: 44px;
     z-index: 99;
+    @include media-md {
+        margin-left: 60px;
+    }
+    @include media-sm {
+        margin-left: 60px;
+        width: calc(100% / 2 - 60px);
+    }
+    @include media-xs {
+        width: 100%;
+        padding: 50px 20px 70px 20px;
+        margin-left: 0;
+        text-align: center;
+    }
     span {
         color: $white;
         text-transform: uppercase;
+        @include media-xs {
+            text-align: left;
+            display: block;
+        }
     }
     .primary-btn {
         margin-top: 15px;
+        @include media-sm {
+            display: block;
+        }
     }
     p {
         font-family: $robotoLight;
         line-height: 1.67;
         color: $white;
+        @include media-xs {
+            text-align: left;
+        }
     }
     h4 {
         color: $white;
         margin-bottom: 0;
+        @include media-xs {
+            text-align: left;
+        }
     }
 }
