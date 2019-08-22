@@ -1,3 +1,11 @@
+main {
+    @include media-sm {
+        overflow: hidden
+    }
+    @include media-xs {
+        overflow: hidden
+    }
+}
 h1 {
 
 }
