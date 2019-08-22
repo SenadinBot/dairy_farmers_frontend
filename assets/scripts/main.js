@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // Video Modal
-    $('.video-modal').on('hidden.bs.modal', () => {
+    $('.video-modal').on('hidden.bs.modal', function () {
         $('.video-modal iframe').attr('src', $('.video-modal iframe').attr('src'));
     });
 
@@ -62,21 +62,23 @@ $(document).ready(function () {
 
     // Nutrition Counter 
     if ($('#count').length) {
-        var endCount = parseInt($('#count').text());
-        function counter(id, start, end, duration) {
-            let obj = document.getElementById(id),
+        var counter = function counter(id, start, end, duration) {
+            var obj = document.getElementById(id),
                 current = start,
                 range = end - start,
                 increment = end > start ? 1 : -1,
                 step = Math.abs(Math.floor(duration / range)),
-                timer = setInterval(() => {
+                timer = setInterval(function () {
                     current += increment;
                     obj.textContent = current;
+
                     if (current == end) {
                         clearInterval(timer);
                     }
                 }, step);
-        }
+        };
+
+        var endCount = parseInt($('#count').text());
         counter("count", 0, endCount, 3000);
     }
 
