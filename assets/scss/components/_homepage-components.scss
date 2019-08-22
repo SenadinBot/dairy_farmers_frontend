@@ -63,7 +63,7 @@
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        background-image: url("../../../assets/images/play.svg");
+        background-image: url("/App_Themes/Milk/images/play.svg");
         background-repeat: no-repeat;
         background-size: cover;
         margin-top: -30px;
@@ -308,7 +308,7 @@
             &::-webkit-slider-thumb {
                 width: 74px;
                 height: 50px;
-                background: url("../../../assets/images/ui-slider.svg");
+                background: url("/App_Themes/Milk/images/ui-slider.svg");
                 cursor: pointer;
                 -webkit-appearance: none;
                 margin-top: -22px;
@@ -327,7 +327,7 @@
             &::-moz-range-thumb {
                 width: 74px;
                 height: 50px;
-                background: url("../../../assets/images/ui-slider.svg");        
+                background: url("/App_Themes/Milk/images/ui-slider.svg");        
                 cursor: pointer; 
                 margin-top: -22px;   
                 -webkit-appearance: none;
@@ -346,7 +346,7 @@
             &::-ms-thumb {
                 width: 74px;
                 height: 50px;
-                background: url("../../../assets/images/ui-slider.svg");        
+                background: url("/App_Themes/Milk/images/ui-slider.svg");        
                 cursor: pointer;
                 margin-top: -22px;
                 -webkit-appearance: none;

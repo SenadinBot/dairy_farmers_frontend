@@ -156,7 +156,7 @@ header {
             content: "";
             width: 73px;
             height: 50px;
-            background-image: url("../../../assets/images/nav-menu-icon.svg");
+            background-image: url("/App_Themes/Milk/images/nav-menu-icon.svg");
             background-repeat: no-repeat;
             background-size: cover;
             display: block;
@@ -310,7 +310,7 @@ header {
                     margin-left: 9px;
                     width: 8px;
                     height: 12px;
-                    background-image: url("../../../assets/images/right-nav.svg");
+                    background-image: url("/App_Themes/Milk/images/right-nav.svg");
                     background-repeat: no-repeat;
                     background-size: cover;
                 }
@@ -726,7 +726,7 @@ header {
         z-index: 9;
         &:before {
             content: "";
-            background-image: url("../../../assets/images/input-icon-search.svg");
+            background-image: url("/App_Themes/Milk/images/input-icon-search.svg");
             background-repeat: no-repeat;
             background-size: cover;
             width: 38px;

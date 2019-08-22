@@ -528,7 +528,7 @@ header .nav-icon-container:after {
   content: "";
   width: 73px;
   height: 50px;
-  background-image: url("../../../assets/images/nav-menu-icon.svg");
+  background-image: url("/App_Themes/Milk/images/nav-menu-icon.svg");
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
@@ -702,7 +702,7 @@ header .top-nav-container ul li:after {
   margin-left: 9px;
   width: 8px;
   height: 12px;
-  background-image: url("../../../assets/images/right-nav.svg");
+  background-image: url("/App_Themes/Milk/images/right-nav.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1174,7 +1174,7 @@ header .calendar-link .primary-btn:after {
 }
 .header-search button:before {
   content: "";
-  background-image: url("../../../assets/images/input-icon-search.svg");
+  background-image: url("/App_Themes/Milk/images/input-icon-search.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 38px;
@@ -1548,17 +1548,17 @@ footer .social-container ul li a:hover {
   opacity: 0.7;
 }
 footer .social-container ul li a.fcb-icon:before {
-  background-image: url("../../../assets/images/img-icon-social-facebook.svg");
+  background-image: url("/App_Themes/Milk/images/img-icon-social-facebook.svg");
 }
 footer .social-container ul li a.insta-icon {
   width: 52px;
 }
 footer .social-container ul li a.insta-icon:before {
   width: 52px;
-  background-image: url("../../../assets/images/img-icon-social-instagram.svg");
+  background-image: url("/App_Themes/Milk/images/img-icon-social-instagram.svg");
 }
 footer .social-container ul li a.twitter-icon:before {
-  background-image: url("../../../assets/images/img-icon-social-twitter.svg");
+  background-image: url("/App_Themes/Milk/images/img-icon-social-twitter.svg");
 }
 
 .form-group input {
@@ -1719,7 +1719,7 @@ footer .social-container ul li a.twitter-icon:before {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background-image: url("../../../assets/images/play.svg");
+  background-image: url("/App_Themes/Milk/images/play.svg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: -30px;
@@ -1989,7 +1989,7 @@ footer .social-container ul li a.twitter-icon:before {
 .recipes-carousel-container .recipes-carousel-controls input[type=range]::-webkit-slider-thumb {
   width: 74px;
   height: 50px;
-  background: url("../../../assets/images/ui-slider.svg");
+  background: url("/App_Themes/Milk/images/ui-slider.svg");
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -22px;
@@ -2008,7 +2008,7 @@ footer .social-container ul li a.twitter-icon:before {
 .recipes-carousel-container .recipes-carousel-controls input[type=range]::-moz-range-thumb {
   width: 74px;
   height: 50px;
-  background: url("../../../assets/images/ui-slider.svg");
+  background: url("/App_Themes/Milk/images/ui-slider.svg");
   cursor: pointer;
   margin-top: -22px;
   -webkit-appearance: none;
@@ -2027,7 +2027,7 @@ footer .social-container ul li a.twitter-icon:before {
 .recipes-carousel-container .recipes-carousel-controls input[type=range]::-ms-thumb {
   width: 74px;
   height: 50px;
-  background: url("../../../assets/images/ui-slider.svg");
+  background: url("/App_Themes/Milk/images/ui-slider.svg");
   cursor: pointer;
   margin-top: -22px;
   -webkit-appearance: none;
@@ -3600,7 +3600,7 @@ main {
   content: "";
   width: 14px;
   height: 14px;
-  background-image: url("../../../assets/images/external-icon.svg");
+  background-image: url("/App_Themes/Milk/images/external-icon.svg");
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
@@ -4087,7 +4087,7 @@ main {
   content: "";
   width: 14px;
   height: 14px;
-  background-image: url("../../../assets/images/white-external-link.svg");
+  background-image: url("/App_Themes/Milk/images/white-external-link.svg");
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
