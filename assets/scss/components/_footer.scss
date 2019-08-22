@@ -224,9 +224,10 @@ footer {
                 input {
                     width: 100%;
                     padding: 19.5px 19px 19.5px 19px;
+                    border-radius: 0;
                 }
                 @include media-xs {
-                    width: 90%;
+                    width: 100%;
                     margin-right: 0;
                 }
             }
@@ -239,6 +240,7 @@ footer {
                 }
                 @include media-xs {
                     margin-top: 25px;
+                    padding: 13px 52px 7px 52px
                 }
             }
 

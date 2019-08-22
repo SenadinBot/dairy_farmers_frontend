@@ -538,8 +538,15 @@ header {
             vertical-align: top;
             text-transform: uppercase;
             @include media-md {
-                font-size: 14px;
-                width: 90px;
+                font-size: 12px;
+                width: 94px;
+                position: relative;
+                top: 8px;
+            }
+        }
+        .primary-btn {
+            @include media-md {
+                padding: 13px 22px 7px 22px;
             }
         }
         img {

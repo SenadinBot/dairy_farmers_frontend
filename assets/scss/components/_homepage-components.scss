@@ -87,8 +87,11 @@
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         margin-top: 75px;
-        @include media-xs {
-            width: 70%;
+        @include media-xs-landscape {
+            width: 421px;
+        }
+        @include media-xs-portrait {
+            width: 305px;
         }
     }
     &:before {
@@ -120,7 +123,7 @@
     padding: 45px 0 153px 0;
     overflow: hidden;
     @include media-xs {
-        padding: 45px 0 100px 0;
+        padding: 45px 5px 100px 5px;
     }
     &:before {
         content: "";
@@ -153,10 +156,17 @@
             @include media-xs {
                 text-align: center;
             }
+            @include media-xs-portrait {
+                width: 100%;
+            }
+            @include media-xs-landscape {
+                width: 60%;
+                display: block;
+            }
         }
     }
     .recipes-carousel {
-        margin: 35px 0  45px 0;
+        margin: 35px 0  20px 0;
         overflow-x: scroll;
         -ms-overflow-style: none;  // IE 10+
         scrollbar-width: none;  // Firefox
@@ -290,20 +300,12 @@
             -webkit-appearance: none;
             width: 100%;
             margin: 0.8px 0; 
+            height: 74px;
             &:focus {
                 outline: none;
                 outline-style: none;
                 box-shadow: none;
                 border-color: transparent; 
-            }
-            &::-webkit-slider-runnable-track {
-                width: 100%;
-                cursor: pointer;
-                box-shadow: none;
-                height: 15px;
-                border-radius: 7.5px;
-                box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
-                background-color: #f2f2f2; 
             }
             &::-webkit-slider-thumb {
                 width: 74px;
@@ -313,16 +315,7 @@
                 -webkit-appearance: none;
                 margin-top: -22px;
                 outline: none;
-                border: none;                
-            }
-            &::-moz-range-track {
-                width: 100%;
-                cursor: pointer;
-                box-shadow: none;
-                height: 15px;
-                border-radius: 7.5px;
-                box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
-                background-color: #f2f2f2; 
+                border: none;              
             }
             &::-moz-range-thumb {
                 width: 74px;
@@ -332,7 +325,17 @@
                 margin-top: -22px;   
                 -webkit-appearance: none;
                 outline: none;
-                border: none;                
+                border: none;               
+            }
+            &::-ms-thumb {
+                width: 74px;
+                height: 50px;
+                background: url("/App_Themes/Milk/images/ui-slider.svg");        
+                cursor: pointer;
+                margin-top: -10px;
+                -webkit-appearance: none;
+                outline: none;
+                border: none;
             }
             &::-ms-track {
                 width: 100%;
@@ -343,15 +346,23 @@
                 box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
                 background-color: #f2f2f2; 
             }
-            &::-ms-thumb {
-                width: 74px;
-                height: 50px;
-                background: url("/App_Themes/Milk/images/ui-slider.svg");        
+            &::-moz-range-track {
+                width: 100%;
                 cursor: pointer;
-                margin-top: -22px;
-                -webkit-appearance: none;
-                outline: none;
-                border: none;
+                box-shadow: none;
+                height: 15px;
+                border-radius: 7.5px;
+                box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
+                background-color: #f2f2f2; 
+            }
+            &::-webkit-slider-runnable-track {
+                width: 100%;
+                cursor: pointer;
+                box-shadow: none;
+                height: 15px;
+                border-radius: 7.5px;
+                box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
+                background-color: #f2f2f2; 
             }
         }
     }
@@ -396,6 +407,13 @@
     }
     .primary-btn {
         margin-top: 15px;
+        @include media-xs-portrait {
+            width: 100%;
+        }
+        @include media-xs-landscape {
+            width: 60%;
+            display: block;
+        }
     }
     .img-container {
         img {
@@ -604,6 +622,14 @@
         margin-top: 15px;
         @include media-sm {
             display: block;
+            padding: 13px 15px 7px 15px;
+        }
+        @include media-xs-landscape {
+            width: 421px;
+            padding: 13px 25px 7px 25px;
+        }
+        @include media-xs-portrait {
+            width: 305px;
         }
     }
     p {

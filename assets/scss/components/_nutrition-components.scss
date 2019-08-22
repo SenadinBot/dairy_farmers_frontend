@@ -597,6 +597,17 @@
             line-height: 26px;
             margin-bottom: 23px;
             width: 60%;
+            @include media-xs-portrait {
+                width: 100%;
+            }
+        }
+        .primary-btn {
+            @include media-xs-portrait {
+                width: 100%;
+            }
+            @include media-xs-landscape {
+                width: 60%;
+            }
         }
     }
 }

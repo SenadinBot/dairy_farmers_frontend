@@ -113,9 +113,14 @@
             top: 10px;
             @include media-md {
                 width: auto;
+                padding: 13px 22px 7px 22px;
             }
-            @include media-xs {
-                width: auto;
+            @include media-xs-landscape {
+                width: 60%;
+                padding: 13px 25px 7px 25px;
+            }
+            @include media-xs-portrait {
+                width: 100%;
             }
         }
         p {
