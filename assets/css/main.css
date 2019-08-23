@@ -1498,7 +1498,7 @@ footer {
       overflow: hidden;
       position: relative; }
       .recipes-carousel-container .recipes-carousel .recipes-slide:last-child {
-        margin-right: 0; }
+        margin-right: 7vw; }
         @media (max-width: 767px) {
           .recipes-carousel-container .recipes-carousel .recipes-slide:last-child {
             margin-right: 0; } }
@@ -2525,6 +2525,12 @@ footer {
       @media (max-width: 767px) {
         .big-banner-container .big-banner-image-container.mobile-banner-image {
           display: block !important; } }
+    .big-banner-container .big-banner-image-container.center-position {
+      background-position: center; }
+    .big-banner-container .big-banner-image-container.right-position {
+      background-position: right; }
+    .big-banner-container .big-banner-image-container.left-position {
+      background-position: left; }
   .big-banner-container.small-banner {
     margin-top: 0; }
     .big-banner-container.small-banner .big-banner-image-container {
@@ -2818,6 +2824,10 @@ main {
     left: 0;
     width: 100%;
     min-height: 900px; }
+    @media (max-width: 767px) {
+      .nutrients-list-container .nutrients-list-bg-image {
+        top: -13%;
+        min-height: 610px; } }
   .nutrients-list-container .mobile-decrp {
     text-align: center;
     margin-bottom: 50px; }
@@ -2975,6 +2985,12 @@ main {
   background-position-y: 185px;
   height: 100%;
   width: 100%; }
+  @media (max-width: 767px) and (orientation: landscape) {
+    .nutrition-background-image {
+      background-size: 100% 43%; } }
+  @media (max-width: 767px) and (orientation: portrait) {
+    .nutrition-background-image {
+      background-size: 100% 44.5%; } }
   .nutrition-background-image .column-image-container {
     margin-bottom: 97px; }
     @media (max-width: 767px) {
@@ -3087,6 +3103,12 @@ main {
         margin-bottom: 0; } }
   .true-false-container .btn-container .primary-btn:first-child {
     margin-right: 20px; }
+    @media (max-width: 767px) and (orientation: portrait) {
+      .true-false-container .btn-container .primary-btn:first-child {
+        margin-right: 10px; } }
+  @media (max-width: 767px) and (orientation: portrait) {
+    .true-false-container .btn-container .primary-btn {
+      padding: 13px 35px 7px 35px; } }
   .true-false-container .true-false-item {
     margin-bottom: 75px; }
     @media (min-width: 768px) and (max-width: 991px) {
@@ -3458,5 +3480,279 @@ main {
   .column-image-container .column-image-item-container .btn-container {
     text-align: center;
     margin-top: 62px; }
+
+.esmp-container {
+  margin-top: 312px; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .esmp-container {
+      margin-top: 80px; } }
+  @media (max-width: 767px) {
+    .esmp-container {
+      margin-top: 0; } }
+  .esmp-container.esmp-bottom-spacing {
+    margin-bottom: 109px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .esmp-container.esmp-bottom-spacing {
+        margin-bottom: 70px; } }
+    @media (max-width: 767px) {
+      .esmp-container.esmp-bottom-spacing {
+        margin-bottom: 50px; } }
+  .esmp-container .esmp-item-container {
+    display: block;
+    margin-bottom: 100px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .esmp-container .esmp-item-container {
+        margin-bottom: 70px; } }
+    @media (max-width: 767px) {
+      .esmp-container .esmp-item-container {
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 50px; } }
+    .esmp-container .esmp-item-container.small-bottom-padding {
+      margin-bottom: 50px; }
+    .esmp-container .esmp-item-container:nth-child(odd) .esmp-item-content {
+      margin-right: 10px; }
+      @media (max-width: 767px) {
+        .esmp-container .esmp-item-container:nth-child(odd) .esmp-item-content {
+          margin-right: 0; } }
+    .esmp-container .esmp-item-container:nth-child(even) .esmp-img-container {
+      margin-right: 10px; }
+      @media (max-width: 767px) {
+        .esmp-container .esmp-item-container:nth-child(even) .esmp-img-container {
+          margin-right: 0; } }
+    .esmp-container .esmp-item-container .esmp-item-content {
+      display: inline-block;
+      width: calc(100% / 2 - 7.5px);
+      vertical-align: top; }
+      @media (max-width: 767px) {
+        .esmp-container .esmp-item-container .esmp-item-content {
+          width: 100%;
+          order: 2; } }
+      .esmp-container .esmp-item-container .esmp-item-content h4 {
+        text-transform: uppercase;
+        margin: 0; }
+      .esmp-container .esmp-item-container .esmp-item-content p {
+        font-family: "Roboto Light";
+        line-height: 30px; }
+        .esmp-container .esmp-item-container .esmp-item-content p a {
+          position: relative;
+          color: #0072ce; }
+          .esmp-container .esmp-item-container .esmp-item-content p a:hover:after {
+            visibility: hidden;
+            -webkit-transform: scaleX(0);
+            -moz-transform: scaleX(0);
+            -ms-transform: scaleX(0);
+            -o-transform: scaleX(0);
+            transform: scaleX(0); }
+          .esmp-container .esmp-item-container .esmp-item-content p a:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            -moz-transform: scaleX(1);
+            -ms-transform: scaleX(1);
+            -o-transform: scaleX(1);
+            transform: scaleX(1);
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            -moz-transition: all 0.3s ease-in-out 0s;
+            -ms-transition: all 0.3s ease-in-out 0s;
+            -o-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s;
+            background: #0072ce; }
+        .esmp-container .esmp-item-container .esmp-item-content p span {
+          color: #0072ce;
+          font-size: 10px;
+          text-decoration: underline;
+          position: relative;
+          top: -5px;
+          left: -2px; }
+      .esmp-container .esmp-item-container .esmp-item-content .primary-btn {
+        margin-top: 10px; }
+        @media (max-width: 767px) {
+          .esmp-container .esmp-item-container .esmp-item-content .primary-btn {
+            width: 100%; } }
+        @media (max-width: 767px) and (orientation: landscape) {
+          .esmp-container .esmp-item-container .esmp-item-content .primary-btn {
+            width: 60%;
+            margin: 10px auto 0 auto;
+            display: block; } }
+    .esmp-container .esmp-item-container .esmp-img-container {
+      display: inline-block;
+      width: calc(100% / 2 - 7px);
+      vertical-align: top; }
+      @media (max-width: 767px) {
+        .esmp-container .esmp-item-container .esmp-img-container {
+          width: 100%;
+          order: 1;
+          margin-bottom: 25px; } }
+      .esmp-container .esmp-item-container .esmp-img-container img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain; }
+
+.esmp-additional-info-container {
+  background-color: rgba(84, 88, 90, 0.05);
+  padding: 100px 0 26px 0; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .esmp-additional-info-container {
+      padding: 70px 0 0 0; } }
+  @media (max-width: 767px) {
+    .esmp-additional-info-container {
+      padding: 70px 0 50px 0; } }
+  @media (max-width: 767px) and (orientation: landscape) {
+    .esmp-additional-info-container .primary-btn {
+      margin: 10px auto 0 auto;
+      display: block; } }
+
+.esmp-full-width-container {
+  background-color: #1471c8;
+  padding: 50px 0;
+  text-align: center; }
+  @media (max-width: 767px) {
+    .esmp-full-width-container {
+      padding: 60px 0; } }
+  .esmp-full-width-container h4 {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0; }
+  .esmp-full-width-container p {
+    color: #ffffff;
+    line-height: 30px;
+    font-family: "Roboto Light"; }
+  .esmp-full-width-container .primary-btn {
+    margin-top: 10px; }
+    @media (max-width: 767px) {
+      .esmp-full-width-container .primary-btn {
+        width: 100%; } }
+    @media (max-width: 767px) and (orientation: landscape) {
+      .esmp-full-width-container .primary-btn {
+        width: 60%;
+        margin: 10px auto 0 auto;
+        display: block; } }
+
+.esmp-description-container {
+  padding-bottom: 140px; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .esmp-description-container {
+      padding-bottom: 100px; } }
+  @media (max-width: 767px) {
+    .esmp-description-container {
+      padding-bottom: 80px; } }
+  .esmp-description-container ul,
+  .esmp-description-container ol {
+    padding: 0;
+    margin: 0;
+    width: 80%; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .esmp-description-container ul,
+      .esmp-description-container ol {
+        padding-left: 10px;
+        width: 90%; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .esmp-description-container ul,
+      .esmp-description-container ol {
+        padding-left: 10px;
+        width: 100%; } }
+    @media (max-width: 767px) {
+      .esmp-description-container ul,
+      .esmp-description-container ol {
+        padding-left: 15px;
+        width: 100%; } }
+    .esmp-description-container ul li,
+    .esmp-description-container ol li {
+      font-family: "Roboto Light";
+      font-size: 12px;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #000000;
+      margin-bottom: 15px; }
+      @media (max-width: 767px) {
+        .esmp-description-container ul li,
+        .esmp-description-container ol li {
+          font-size: 14px;
+          line-height: 18px; } }
+      .esmp-description-container ul li a,
+      .esmp-description-container ol li a {
+        position: relative;
+        color: #0072ce;
+        margin-right: 24px; }
+        .esmp-description-container ul li a:hover:before,
+        .esmp-description-container ol li a:hover:before {
+          visibility: hidden;
+          -webkit-transform: scaleX(0);
+          -moz-transform: scaleX(0);
+          -ms-transform: scaleX(0);
+          -o-transform: scaleX(0);
+          transform: scaleX(0); }
+        .esmp-description-container ul li a:before,
+        .esmp-description-container ol li a:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          bottom: 0;
+          left: 0;
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          -moz-transform: scaleX(1);
+          -ms-transform: scaleX(1);
+          -o-transform: scaleX(1);
+          transform: scaleX(1);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          -moz-transition: all 0.3s ease-in-out 0s;
+          -ms-transition: all 0.3s ease-in-out 0s;
+          -o-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
+          background: #0072ce; }
+        .esmp-description-container ul li a:after,
+        .esmp-description-container ol li a:after {
+          content: "";
+          width: 14px;
+          height: 14px;
+          background-image: url("/App_Themes/Milk/images/external-icon.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          position: absolute;
+          top: 0;
+          margin-left: 6px; }
+
+.cta-info-container {
+  display: inline-block;
+  width: calc(100% / 2 - 15px);
+  padding-right: 20px;
+  margin-bottom: 100px; }
+  @media (max-width: 767px) {
+    .cta-info-container {
+      padding-right: 0;
+      width: 100%;
+      margin-bottom: 50px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .cta-info-container {
+      padding-right: 0; } }
+  .cta-info-container:nth-child(odd) {
+    margin-right: 19px; }
+    @media (max-width: 767px) {
+      .cta-info-container:nth-child(odd) {
+        margin-right: 0; } }
+  .cta-info-container h4 {
+    text-transform: uppercase;
+    margin: 0; }
+  .cta-info-container p {
+    font-family: "Roboto Light";
+    line-height: 30px; }
+  .cta-info-container .primary-btn {
+    margin-top: 10px; }
+    @media (max-width: 767px) {
+      .cta-info-container .primary-btn {
+        width: 100%; } }
+    @media (max-width: 767px) and (orientation: landscape) {
+      .cta-info-container .primary-btn {
+        width: 60%; } }
 
 /*# sourceMappingURL=main.css.map */

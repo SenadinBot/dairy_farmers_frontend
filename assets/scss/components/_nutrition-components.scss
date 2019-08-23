@@ -18,6 +18,10 @@
         left: 0;
         width: 100%;
         min-height: 900px;
+        @include media-xs {
+            top: -13%;
+            min-height: 610px;
+        }
     }
     .mobile-decrp {
         text-align: center;
@@ -203,6 +207,12 @@
     background-position-y: 185px;
     height: 100%;
     width: 100%;
+    @include media-xs-landscape {
+        background-size: 100% 43%;
+    }
+    @include media-xs-portrait {
+        background-size: 100% 44.5%;
+    }
     .column-image-container  {
         margin-bottom: 97px;
         @include media-xs {
@@ -330,6 +340,12 @@
         .primary-btn {
             &:first-child {
                 margin-right: 20px;
+                @include media-xs-portrait {
+                    margin-right: 10px;
+                }
+            }
+            @include media-xs-portrait {
+                padding: 13px 35px 7px 35px
             }
         }
     }

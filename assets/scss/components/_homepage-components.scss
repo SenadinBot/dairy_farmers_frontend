@@ -201,7 +201,7 @@
             overflow: hidden;
             position: relative;
             &:last-child {
-                margin-right: 0;
+                margin-right: 7vw;
                 @include media-xs {
                     margin-right: 0;
                 }

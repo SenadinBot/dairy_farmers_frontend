@@ -517,6 +517,16 @@
                 display: block !important;
             }
         }
+        &.center-position {
+            background-position: center;
+
+        }
+        &.right-position {
+            background-position: right;
+        }
+        &.left-position {
+            background-position: left;
+        }
     }
     &.small-banner {
         margin-top: 0;
