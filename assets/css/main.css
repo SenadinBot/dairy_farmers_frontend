@@ -3219,7 +3219,7 @@ footer .social-container ul li a.twitter-icon:before {
   .big-banner-container .banner-title {
     position: relative;
     top: 0;
-    margin-top: -215px;
+    margin-top: -190px;
     margin-bottom: 50px;
   }
 }
@@ -3227,7 +3227,7 @@ footer .social-container ul li a.twitter-icon:before {
   .big-banner-container .banner-title {
     position: relative;
     top: 0;
-    margin-top: -215px;
+    margin-top: -190px;
     margin-bottom: 50px;
   }
 }
@@ -3253,6 +3253,117 @@ footer .social-container ul li a.twitter-icon:before {
     height: 400px;
   }
 }
+@media (max-width: 767px) {
+  .big-banner-container .big-banner-image-container.desktop-banner-image {
+    display: none !important;
+  }
+}
+.big-banner-container .big-banner-image-container.mobile-banner-image {
+  display: none !important;
+}
+@media (max-width: 767px) {
+  .big-banner-container .big-banner-image-container.mobile-banner-image {
+    display: block !important;
+  }
+}
+.big-banner-container.small-banner {
+  margin-top: 0;
+}
+.big-banner-container.small-banner .big-banner-image-container {
+  height: 400px;
+}
+.big-banner-container.small-banner .banner-title {
+  top: -297px;
+}
+.big-banner-container.small-banner .banner-title .title-border {
+  height: 507px;
+}
+.big-banner-container.small-banner .banner-title .title-border:before {
+  height: 165px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .big-banner-container.small-banner .banner-title .title-border:before {
+    height: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .big-banner-container.small-banner .banner-title .title-border:before {
+    height: 40px;
+  }
+}
+.big-banner-container.small-banner .banner-title .title-border:after {
+  height: 65px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .big-banner-container.small-banner .banner-title .title-border:after {
+    height: 170px;
+  }
+}
+@media (max-width: 767px) {
+  .big-banner-container.small-banner .banner-title .title-border:after {
+    height: 170px;
+  }
+}
+@media (max-width: 767px) {
+  .big-banner-container.small-banner .banner-title .title-border {
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .big-banner-container.small-banner .banner-title {
+    top: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .big-banner-container.small-banner .banner-title {
+    top: 0;
+  }
+}
+.big-banner-container.small-banner .banner-title span {
+  top: 23%;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .big-banner-container.small-banner .banner-title span {
+    top: initial;
+  }
+}
+@media (max-width: 767px) {
+  .big-banner-container.small-banner .banner-title span {
+    top: initial;
+  }
+}
+.big-banner-container.center-position .big-banner-image-container {
+  background-position: center;
+}
+.big-banner-container.right-position .big-banner-image-container {
+  background-position: right;
+}
+.big-banner-container.left-position .big-banner-image-container {
+  background-position: left;
+}
+.big-banner-container.white-title .banner-title span {
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  .big-banner-container.white-title .banner-title span {
+    color: #000000;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .big-banner-container.white-title .banner-title span {
+    color: #000000;
+  }
+}
+@media (max-width: 767px) {
+  .big-banner-container.white-title .banner-title span br {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .big-banner-container.white-title .banner-title span br {
+    display: none;
+  }
+}
 
 .banner-title {
   z-index: 9;
@@ -3274,13 +3385,15 @@ footer .social-container ul li a.twitter-icon:before {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .banner-title .title-border {
-    height: 487px;
+    height: auto;
+    padding: 370px 0 97px 0;
   }
 }
 @media (max-width: 767px) {
   .banner-title .title-border {
     width: 80%;
-    height: 487px;
+    height: auto;
+    padding: 370px 0 97px 0;
     margin-bottom: 20px;
   }
 }
@@ -3300,12 +3413,12 @@ footer .social-container ul li a.twitter-icon:before {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .banner-title .title-border:after {
-    height: 195px;
+    height: 170px;
   }
 }
 @media (max-width: 767px) {
   .banner-title .title-border:after {
-    height: 195px;
+    height: 170px;
   }
 }
 .banner-title .title-border:before {
@@ -3339,26 +3452,48 @@ footer .social-container ul li a.twitter-icon:before {
   text-transform: uppercase;
   font-family: "Acumin Pro ExtraCondensed Black";
   position: absolute;
-  right: -58%;
+  left: 78%;
   top: 19%;
+  width: 200%;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner-title span {
+    left: 54%;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .banner-title span {
-    right: -38%;
-    top: 50%;
+    width: 119%;
+    top: initial;
+    bottom: 10%;
+    transform: translateY(7%);
+    min-height: 88px;
   }
 }
 @media (max-width: 767px) {
   .banner-title span {
-    right: -38%;
-    top: 52%;
+    left: 15%;
+    top: initial;
+    bottom: 10%;
+    transform: translateY(7%);
+    min-height: 88px;
+    word-break: break-word;
+  }
+}
+@media (max-width: 767px) and (orientation: landscape) {
+  .banner-title span {
+    font-size: 84px;
+    line-height: 84px;
+    left: 50%;
+    width: 117%;
   }
 }
 @media (max-width: 767px) and (orientation: portrait) {
   .banner-title span {
-    font-size: 88px;
-    line-height: 84px;
-    right: -23%;
+    font-size: 76px;
+    line-height: 76px;
+    left: 15%;
+    width: 117%;
   }
 }
 .banner-title p {
