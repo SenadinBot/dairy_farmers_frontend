@@ -18,6 +18,8 @@
     .esmp-item-container {
         display: block;
         margin-bottom: 100px;
+        z-index: 9;
+        position: relative;
         @include media-sm {
             margin-bottom: 70px;
         }

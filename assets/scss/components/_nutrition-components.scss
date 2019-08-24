@@ -199,6 +199,42 @@
             }
         }
     }
+    .btn-container {
+        width: 100%;
+        text-align: center;
+        margin-top: -44px;
+        @include media-xs {
+            margin-top: initial;
+        }
+        .primary-btn {
+            @include media-xs-portrait {
+                padding: 13px 5px 7px 5px;
+                width: 100%;
+            }
+        }
+    }
+    &.esmp-nutrients-list-container {
+        margin-bottom: 145px;
+        padding-top: 43px;
+        .nutrients-list-bg-image {
+            top: -32%;
+            @include media-md {
+                top: -38%;
+            }
+            @include media-xs-portrait {
+                top: -15%;
+            }
+            @include media-xs-landscape {
+                top: -18%;
+            }
+        }
+        @include media-sm {
+            margin-bottom: 100px;
+        }
+        @include media-xs {
+            margin-bottom: 100px;
+        }
+    }
 }
 .nutrition-background-image {
     background-repeat: no-repeat;

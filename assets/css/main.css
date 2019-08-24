@@ -2977,6 +2977,37 @@ main {
       .nutrients-list-container .additional-nutrients-list h3 {
         font-size: 38px;
         word-break: break-all; } }
+  .nutrients-list-container .btn-container {
+    width: 100%;
+    text-align: center;
+    margin-top: -44px; }
+    @media (max-width: 767px) {
+      .nutrients-list-container .btn-container {
+        margin-top: initial; } }
+    @media (max-width: 767px) and (orientation: portrait) {
+      .nutrients-list-container .btn-container .primary-btn {
+        padding: 13px 5px 7px 5px;
+        width: 100%; } }
+  .nutrients-list-container.esmp-nutrients-list-container {
+    margin-bottom: 145px;
+    padding-top: 43px; }
+    .nutrients-list-container.esmp-nutrients-list-container .nutrients-list-bg-image {
+      top: -32%; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .nutrients-list-container.esmp-nutrients-list-container .nutrients-list-bg-image {
+          top: -38%; } }
+      @media (max-width: 767px) and (orientation: portrait) {
+        .nutrients-list-container.esmp-nutrients-list-container .nutrients-list-bg-image {
+          top: -15%; } }
+      @media (max-width: 767px) and (orientation: landscape) {
+        .nutrients-list-container.esmp-nutrients-list-container .nutrients-list-bg-image {
+          top: -18%; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .nutrients-list-container.esmp-nutrients-list-container {
+        margin-bottom: 100px; } }
+    @media (max-width: 767px) {
+      .nutrients-list-container.esmp-nutrients-list-container {
+        margin-bottom: 100px; } }
 
 .nutrition-background-image {
   background-repeat: no-repeat;
@@ -3499,7 +3530,9 @@ main {
         margin-bottom: 50px; } }
   .esmp-container .esmp-item-container {
     display: block;
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    z-index: 9;
+    position: relative; }
     @media (min-width: 768px) and (max-width: 991px) {
       .esmp-container .esmp-item-container {
         margin-bottom: 70px; } }
