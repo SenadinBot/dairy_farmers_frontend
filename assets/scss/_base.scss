@@ -178,6 +178,14 @@ a {
             color: $white;
         }
     }
+    &.green-border {
+        border-color: #00b140;
+        color: #00b140;
+        &:hover {
+            background-color: #00b140;
+            color: $white;
+        }
+    }
 }
 .custom-link {
     text-transform: uppercase;

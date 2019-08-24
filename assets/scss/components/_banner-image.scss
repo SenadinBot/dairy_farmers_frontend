@@ -466,29 +466,30 @@
 .big-banner-container {
     margin-top: -120px;
     position: relative;
+    margin-bottom: 110px;
     @include media-sm {
         margin-top: 0;
+        margin-bottom: 90px;
     }
     @include media-xs {
-        margin-top: 0;        
+        margin-top: 0; 
+        margin-bottom: 70px;       
     }
     .banner-title { 
-        position: absolute;
-        top: -372px;
+        position: relative;
+        margin-top: -372px;
         @include media-md {
-            top: -305px;
+            margin-top: -305px;
         }
         @include media-sm {
             position: relative;
-            top: 0;
+            margin-top: 0;
             margin-top: -190px;
-            margin-bottom: 50px;
         }
         @include media-xs {
             position: relative;
-            top: 0;
+            margin-top: 0;
             margin-top: -190px;
-            margin-bottom: 50px;
         }
     }
     .big-banner-image-container {
@@ -519,7 +520,6 @@
         }
         &.center-position {
             background-position: center;
-
         }
         &.right-position {
             background-position: right;
@@ -533,8 +533,14 @@
         .big-banner-image-container {
             height: 400px;
         }
+        &.top-spacing {
+            margin-top: -120px;
+            .big-banner-image-container {
+                height: 500px;
+            }
+        }
         .banner-title {
-            top: -297px;
+            margin-top: -297px;
             .title-border {
                 height: 507px;
                 &:before {
@@ -560,10 +566,10 @@
                 }
             }
             @include media-xs {
-                top: 0;
+                margin-top: -190px;
             }
             @include media-sm {
-                top: 0;
+                margin-top: -190px;
             }
             span {
                 top: 23%;
@@ -572,6 +578,18 @@
                 }
                 @include media-xs {
                     top: initial;
+                }
+            }
+            p {
+                margin: 29% 0 0 0;
+                @include media-xs {
+                    margin-top: 15px;
+                }
+                @include media-sm {
+                    margin-top: 15px;
+                }
+                @include media-md {
+                    margin: 38% 0 0 0;
                 }
             }
         }
@@ -686,6 +704,7 @@
         width: 200%;
         @include media-md {
             left: 54%;
+            width: 279%;
         }
         @include media-sm {
             width: 119%;
@@ -722,12 +741,13 @@
         width: 49%;
         padding-left: 15px;
         display: inline-block;
-        vertical-align: bottom;
-        margin: 0;
-        position: relative;
-        top: 10px;
+        margin: 35% 0 0 0;
+        vertical-align: top;
         @include media-md {
-            width: 65%;            
+            width: 65%;  
+            margin: 38% 0 0 0;
+            position: relative;
+            top: -25px;          
         }
         @include media-sm {
             width: 85%;   
@@ -737,7 +757,8 @@
         }
         @include media-xs {
             width: 100%;   
-            top: 0;                                    
+            top: 0;   
+            margin-top: 15px;                                   
         }
     }
 }

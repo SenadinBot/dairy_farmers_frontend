@@ -1,26 +1,22 @@
 .nutrients-list-container {
     width: 100%;
-    padding-top: 365px;
     margin-bottom: 80px;
     position: relative;
-    @include media-sm {
-        padding-top: 0;
-    }
-    @include media-xs {
-        padding-top: 0;
-    }
     .nutrients-list-bg-image {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
-        top: 0;
+        top: -23%;
         left: 0;
         width: 100%;
         min-height: 900px;
         @include media-xs {
             top: -13%;
             min-height: 610px;
+        }
+        @include media-sm {
+            top: -20%;
         }
     }
     .mobile-decrp {
