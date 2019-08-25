@@ -2587,7 +2587,8 @@ footer {
         margin: 29% 0 0 0; }
         @media (max-width: 767px) {
           .big-banner-container.small-banner .banner-title p {
-            margin-top: 15px; } }
+            margin-top: 15px;
+            padding-left: 0; } }
         @media (min-width: 768px) and (max-width: 991px) {
           .big-banner-container.small-banner .banner-title p {
             margin-top: 15px; } }
@@ -3789,7 +3790,7 @@ main {
     color: #ffffff; }
   @media (max-width: 767px) {
     .info-full-width-container {
-      padding: 60px 0; } }
+      padding: 50px 0; } }
   .info-full-width-container h4 {
     color: #54585a;
     text-transform: uppercase;
@@ -3806,9 +3807,17 @@ main {
         width: 100%; } }
     @media (max-width: 767px) and (orientation: landscape) {
       .info-full-width-container .primary-btn {
-        width: 60%;
+        width: 85%;
         margin: 10px auto 0 auto;
-        display: block; } }
+        display: block;
+        font-size: 40px;
+        line-height: 40px;
+        padding: 13px 20px 7px 20px; } }
+    @media (max-width: 767px) and (orientation: portrait) {
+      .info-full-width-container .primary-btn {
+        padding: 13px 5px 7px 5px;
+        font-size: 28px;
+        line-height: 28px; } }
 
 .recommendation-container {
   margin-bottom: 159px; }
@@ -3899,6 +3908,9 @@ main {
     margin-bottom: 15px;
     display: block;
     width: 100%; }
+    @media (max-width: 767px) {
+      .recommendation-container span {
+        margin-bottom: 20px; } }
   .recommendation-container .img-container {
     width: 657px;
     background-color: #ffc600;
@@ -3920,6 +3932,9 @@ main {
     @media (max-width: 767px) and (orientation: portrait) {
       .recommendation-container .img-container {
         height: 215px; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .recommendation-container .img-container {
+        width: 550px; } }
     .recommendation-container .img-container p {
       font-family: "Acumin Pro ExtraCondensed Black";
       font-size: 30px;
@@ -3935,6 +3950,11 @@ main {
       max-width: 100%;
       max-height: 100%;
       margin: 0 0 0 auto; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .recommendation-container .img-container img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover; } }
       @media (min-width: 768px) and (max-width: 991px) {
         .recommendation-container .img-container img {
           height: 100%;
@@ -3963,19 +3983,21 @@ main {
     @media (min-width: 768px) and (max-width: 991px) {
       .recommendation-container .recommendation-content {
         width: 100%;
-        padding-left: 85px;
+        padding-left: 0;
         margin-top: 50px; } }
     @media (max-width: 767px) {
       .recommendation-container .recommendation-content {
         width: 100%;
-        margin-top: 55px; } }
-    @media (max-width: 767px) and (orientation: portrait) {
+        margin-top: 30px;
+        padding-left: 0; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
       .recommendation-container .recommendation-content {
-        margin-top: 45px; } }
+        width: calc(100% - 555px); } }
     .recommendation-container .recommendation-content h2 {
       color: #000000;
       display: block;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      margin-top: 0; }
     .recommendation-container .recommendation-content p {
       display: block;
       font-family: "Roboto Light";
@@ -4004,21 +4026,43 @@ main {
     .qa-item-container {
       display: flex;
       flex-flow: column;
-      margin-bottom: 50px; } }
+      margin-bottom: 70px; }
+      .qa-item-container:last-child {
+        margin-bottom: 50px; } }
   .qa-item-container.small-bottom-padding {
     margin-bottom: 50px; }
+  .qa-item-container:nth-child(even) .qa-img-container {
+    margin-right: 10px; }
+    @media (max-width: 767px) {
+      .qa-item-container:nth-child(even) .qa-img-container {
+        margin-right: 0; } }
   .qa-item-container:nth-child(even) .qa-item-content {
-    margin-right: 10px; }
-    @media (max-width: 767px) {
-      .qa-item-container:nth-child(even) .qa-item-content {
-        margin-right: 0; } }
-  .qa-item-container:nth-child(odd) .qa-img-container {
-    margin-right: 10px; }
-    @media (max-width: 767px) {
-      .qa-item-container:nth-child(odd) .qa-img-container {
-        margin-right: 0; } }
-  .qa-item-container:nth-child(odd) .qa-item-content {
     padding-right: 10px; }
+  .qa-item-container:nth-child(odd) .qa-item-content {
+    margin-right: 10px; }
+    @media (max-width: 767px) {
+      .qa-item-container:nth-child(odd) .qa-item-content {
+        margin-right: 0; } }
+  .qa-item-container:nth-child(odd) .qa-additional-info {
+    margin-left: -244px; }
+    @media (min-width: 1310px) and (max-width: 1380px) {
+      .qa-item-container:nth-child(odd) .qa-additional-info {
+        margin-left: -279px; } }
+    @media (min-width: 1250px) and (max-width: 1309px) {
+      .qa-item-container:nth-child(odd) .qa-additional-info {
+        margin-left: -309px; } }
+    @media (min-width: 1200px) and (max-width: 1249px) {
+      .qa-item-container:nth-child(odd) .qa-additional-info {
+        margin-left: -334px; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .qa-item-container:nth-child(odd) .qa-additional-info {
+        margin-left: 0; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .qa-item-container:nth-child(odd) .qa-additional-info {
+        margin-left: 0; } }
+    @media (max-width: 767px) {
+      .qa-item-container:nth-child(odd) .qa-additional-info {
+        margin-left: 0; } }
   .qa-item-container .qa-item-content {
     display: inline-block;
     width: calc(100% / 2 - 7.5px);
@@ -4032,6 +4076,9 @@ main {
       margin: 0; }
     .qa-item-container .qa-item-content.text-padding {
       margin-top: 55px; }
+      @media (max-width: 767px) {
+        .qa-item-container .qa-item-content.text-padding {
+          margin-top: 0; } }
     .qa-item-container .qa-item-content p {
       font-family: "Roboto Light";
       line-height: 30px; }
@@ -4094,5 +4141,189 @@ main {
       max-width: 100%;
       max-height: 100%;
       object-fit: contain; }
+
+.qa-additional-info {
+  border: 10px solid #0092bc;
+  padding: 107px 46px 40px 134px;
+  width: 927px;
+  margin-left: -135px;
+  margin-top: -70px; }
+  @media (min-width: 1310px) and (max-width: 1380px) {
+    .qa-additional-info {
+      margin-left: -100px; } }
+  @media (min-width: 1250px) and (max-width: 1309px) {
+    .qa-additional-info {
+      margin-left: -64px; } }
+  @media (min-width: 1200px) and (max-width: 1249px) {
+    .qa-additional-info {
+      margin-left: -44px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .qa-additional-info {
+      display: none;
+      width: 100%;
+      margin-top: 50px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .qa-additional-info {
+      display: none;
+      width: 100%;
+      margin-top: 30px;
+      padding: 60px 70px 30px 46px; } }
+  @media (max-width: 767px) {
+    .qa-additional-info {
+      display: none;
+      width: 100%;
+      margin-top: 0;
+      padding: 30px 20px 10px 20px;
+      order: 3;
+      border: 8px solid #0092bc; } }
+  .qa-additional-info h4 {
+    text-transform: uppercase;
+    margin-right: 80px;
+    vertical-align: top;
+    display: inline-block;
+    max-width: 190px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .qa-additional-info h4 {
+        margin-right: 60px; } }
+    @media (max-width: 767px) {
+      .qa-additional-info h4 {
+        margin-right: 0;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 0; } }
+  .qa-additional-info p {
+    font-family: "Roboto Light";
+    line-height: 30px;
+    vertical-align: top;
+    display: inline-block;
+    width: calc(100% - 275px);
+    margin-top: -7px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .qa-additional-info p {
+        width: calc(100% - 255px); } }
+    @media (max-width: 767px) {
+      .qa-additional-info p {
+        width: 100%;
+        margin-top: 0; } }
+  @media (min-width: 1200px) {
+    .qa-additional-info.mobile-qa-additional-info {
+      display: none; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .qa-additional-info.mobile-qa-additional-info {
+      display: block;
+      margin-left: 0; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .qa-additional-info.mobile-qa-additional-info {
+      display: block;
+      margin-left: 0; } }
+  @media (max-width: 767px) {
+    .qa-additional-info.mobile-qa-additional-info {
+      display: block;
+      margin-left: 0; } }
+
+.qa-container h2 {
+  color: #000000;
+  margin-top: -22px; }
+  @media (max-width: 767px) {
+    .qa-container h2 {
+      margin-top: 0; } }
+
+.farmer-verification-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin-bottom: 150px;
+  padding: 100px 0 80px 0; }
+  @media (max-width: 767px) {
+    .farmer-verification-container {
+      margin-bottom: 100px;
+      padding: 80px 0 60px 0; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .farmer-verification-container {
+      padding: 90px 0 70px 0;
+      margin-bottom: 100px; } }
+  .farmer-verification-container:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00358e;
+    opacity: 0.8; }
+  .farmer-verification-container span {
+    border: 5px solid #ffc600;
+    border-right: none;
+    border-left: none;
+    padding: 50px 30px 30px 0;
+    font-family: "Acumin Pro ExtraCondensed Black";
+    font-size: 100px;
+    line-height: 88px;
+    letter-spacing: 10px;
+    color: #ffffff;
+    font-style: normal;
+    font-stretch: normal;
+    display: block;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    width: 47%; }
+    @media (max-width: 767px) {
+      .farmer-verification-container span {
+        padding: 35px 30px 15px 0; } }
+    @media (max-width: 767px) and (orientation: portrait) {
+      .farmer-verification-container span {
+        width: 100%;
+        font-size: 58px;
+        line-height: 62px; } }
+    @media (max-width: 767px) and (orientation: landscape) {
+      .farmer-verification-container span {
+        width: 81%; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .farmer-verification-container span {
+        width: 71%; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .farmer-verification-container span {
+        width: 56%; } }
+  .farmer-verification-container p {
+    font-family: "Roboto Light";
+    line-height: 24px;
+    color: #ffffff;
+    width: 61%; }
+    @media (max-width: 767px) and (orientation: portrait) {
+      .farmer-verification-container p {
+        width: 100%; } }
+    @media (max-width: 767px) and (orientation: landscape) {
+      .farmer-verification-container p {
+        width: 90%; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .farmer-verification-container p {
+        width: 90%; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .farmer-verification-container p {
+        width: 72%; } }
+  .farmer-verification-container .farm-verification-item-container {
+    margin-top: 45px; }
+    .farmer-verification-container .farm-verification-item-container .farm-verification-item {
+      display: inline-block;
+      width: calc(100% / 3 - 3px);
+      vertical-align: top;
+      padding-right: 10px; }
+      @media (max-width: 767px) {
+        .farmer-verification-container .farm-verification-item-container .farm-verification-item {
+          width: 100%;
+          margin-bottom: 50px; }
+          .farmer-verification-container .farm-verification-item-container .farm-verification-item:last-child {
+            margin-bottom: 0; } }
+      .farmer-verification-container .farm-verification-item-container .farm-verification-item h4 {
+        text-transform: uppercase;
+        color: #ffffff;
+        margin: 0; }
+      .farmer-verification-container .farm-verification-item-container .farm-verification-item p {
+        color: #ffffff;
+        font-family: "Roboto Light";
+        width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

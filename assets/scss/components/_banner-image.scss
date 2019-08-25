@@ -584,6 +584,7 @@
                 margin: 29% 0 0 0;
                 @include media-xs {
                     margin-top: 15px;
+                    padding-left: 0;
                 }
                 @include media-sm {
                     margin-top: 15px;
