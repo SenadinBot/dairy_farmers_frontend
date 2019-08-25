@@ -24,6 +24,19 @@
     font-style: normal;
 }
 
+// Roboto Light Italic
+@font-face {
+    font-family: 'Roboto Light Italic';
+    src: url('../fonts/roboto-light-italic/Roboto-LightItalic.eot');
+    src: url('../fonts/roboto-light-italic/Roboto-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/roboto-light-italic/Roboto-LightItalic.woff2') format('woff2'),
+        url('../fonts/roboto-light-italic/Roboto-LightItalic.woff') format('woff'),
+        url('../fonts/roboto-light-italic/Roboto-LightItalic.ttf') format('truetype'),
+        url('../fonts/roboto-light-italic/Roboto-LightItalic.svg#Roboto-Light') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
 // Roboto Bold
 @font-face {
     font-family: 'Roboto Bold';

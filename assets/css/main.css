@@ -258,6 +258,12 @@ a {
   font-weight: 300;
   font-style: normal; }
 @font-face {
+  font-family: 'Roboto Light Italic';
+  src: url("../fonts/roboto-light-italic/Roboto-LightItalic.eot");
+  src: url("../fonts/roboto-light-italic/Roboto-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-light-italic/Roboto-LightItalic.woff2") format("woff2"), url("../fonts/roboto-light-italic/Roboto-LightItalic.woff") format("woff"), url("../fonts/roboto-light-italic/Roboto-LightItalic.ttf") format("truetype"), url("../fonts/roboto-light-italic/Roboto-LightItalic.svg#Roboto-Light") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+@font-face {
   font-family: 'Roboto Bold';
   src: url("../fonts/roboto-bold/Roboto-Bold.eot");
   src: url("../fonts/roboto-bold/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-bold/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto-bold/Roboto-Bold.woff") format("woff"), url("../fonts/roboto-bold/Roboto-Bold.ttf") format("truetype"), url("../fonts/roboto-bold/Roboto-Bold.svg#RobotoSlab-Bold") format("svg");
@@ -4362,5 +4368,89 @@ main {
       .article-item-container .article-item-content .primary-btn {
         width: 60%;
         padding: 13px 15px 7px 15px; } }
+
+.sustainability-container {
+  margin-bottom: 150px; }
+  @media (max-width: 767px) {
+    .sustainability-container {
+      margin-bottom: 70px; } }
+  .sustainability-container .sustainability-intro {
+    margin-bottom: 20px; }
+    .sustainability-container .sustainability-intro .img-container {
+      display: inline-block;
+      width: calc(100% / 2 - 7px);
+      margin-right: 10px;
+      vertical-align: top;
+      margin-bottom: 60px; }
+      @media (max-width: 767px) {
+        .sustainability-container .sustainability-intro .img-container {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 40px; } }
+      .sustainability-container .sustainability-intro .img-container img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain; }
+    .sustainability-container .sustainability-intro p {
+      display: inline-block;
+      width: calc(100% / 2 - 7.5px);
+      line-height: 30px;
+      font-family: "Roboto Light";
+      vertical-align: bottom;
+      margin-bottom: 0; }
+      @media (max-width: 767px) {
+        .sustainability-container .sustainability-intro p {
+          width: 100%; } }
+  .sustainability-container .report-container {
+    background-color: #0072ce;
+    padding: 50px 0;
+    text-align: center;
+    position: relative; }
+    @media (max-width: 767px) and (orientation: landscape) {
+      .sustainability-container .report-container {
+        text-align: left; } }
+    @media (max-width: 767px) {
+      .sustainability-container .report-container {
+        padding: 25px 0 40px 0; }
+        .sustainability-container .report-container:after {
+          content: "";
+          height: 100%;
+          width: 15px;
+          position: absolute;
+          top: 0;
+          background-color: #0072ce;
+          right: -15px; }
+        .sustainability-container .report-container:before {
+          content: "";
+          height: 100%;
+          width: 15px;
+          position: absolute;
+          top: 0;
+          background-color: #0072ce;
+          left: -15px; } }
+    .sustainability-container .report-container h4 {
+      color: #ffffff;
+      text-transform: uppercase;
+      margin: 0; }
+    .sustainability-container .report-container p {
+      font-family: "Roboto Light";
+      line-height: 24px;
+      margin: 0;
+      color: #ffffff; }
+    .sustainability-container .report-container i {
+      font-family: "Roboto Light Italic";
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 24px;
+      display: block; }
+    .sustainability-container .report-container .primary-btn {
+      margin-top: 50px; }
+      @media (max-width: 767px) {
+        .sustainability-container .report-container .primary-btn {
+          margin-top: 35px;
+          width: 100%; } }
+      @media (max-width: 767px) and (orientation: landscape) {
+        .sustainability-container .report-container .primary-btn {
+          width: 60%; } }
 
 /*# sourceMappingURL=main.css.map */

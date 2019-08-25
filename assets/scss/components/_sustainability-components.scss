@@ -1,0 +1,95 @@
+.sustainability-container {
+    margin-bottom: 150px;
+    @include media-xs {
+        margin-bottom: 70px;
+    }
+    .sustainability-intro {
+        margin-bottom: 20px;
+        .img-container {
+            display: inline-block;
+            width: calc(100% / 2 - 7px);
+            margin-right: 10px;
+            vertical-align: top;
+            margin-bottom: 60px;
+            @include media-xs {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 40px;
+            }
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+        }
+        p {
+            display: inline-block;
+            width: calc(100% / 2 - 7.5px);
+            line-height: 30px;
+            font-family: $robotoLight;
+            vertical-align: bottom;
+            margin-bottom: 0;
+            @include media-xs {
+                width: 100%;
+            }
+        }
+    }
+    .report-container {
+        background-color: $blue;
+        padding: 50px 0;
+        text-align: center;
+        position: relative;
+        @include media-xs-landscape {
+            text-align: left;
+        }
+        @include media-xs {
+            padding: 25px 0 40px 0;
+            &:after {
+                content: "";
+                height: 100%;
+                width: 15px;
+                position: absolute;
+                top: 0;
+                background-color: $blue;
+                right: -15px;
+            }
+            &:before {
+                content: "";
+                height: 100%;
+                width: 15px;
+                position: absolute;
+                top: 0;
+                background-color: $blue;
+                left: -15px;
+            }
+        }
+        h4 {
+            color: $white;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        p {
+            font-family: $robotoLight;
+            line-height: 24px;
+            margin: 0;
+            color: $white;
+        }
+        i {
+            font-family: $robotoLightItalic;
+            color: $white;
+            font-size: 14px;
+            line-height: 24px;
+            display: block;
+        }
+        .primary-btn {
+            margin-top: 50px;
+            @include media-xs {
+                margin-top: 35px;
+                width: 100%;
+            }
+            @include media-xs-landscape {
+                width: 60%;
+            }
+        }
+    }
+}
