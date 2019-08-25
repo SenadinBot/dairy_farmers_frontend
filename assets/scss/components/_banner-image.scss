@@ -631,6 +631,12 @@
             }
         }
     }
+    &.small-bottom-spacing {
+        margin-bottom: 60px;
+        @include media-xs {
+            margin-bottom: 70px;       
+        }
+    }
 }
 .banner-title {
     z-index: 9;
@@ -713,6 +719,7 @@
             bottom: 10%;
             transform: translateY(7%);
             min-height: 88px;
+            left: 75%;
         }
         @include media-xs {
             left: 15%;   
