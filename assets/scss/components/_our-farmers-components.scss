@@ -1,0 +1,173 @@
+.farmers-history-container {
+    padding-bottom: 130px;
+    @include media-xs {
+        padding-bottom: 70px;
+    }
+    @include media-sm {
+        padding-bottom: 100px;
+    }
+    .farmers-history-image-container {
+        width: 100%;
+        height: 400px;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &.desktop-banner-image {
+            @include media-xs {
+                display: none !important;
+            }
+        }
+        &.mobile-banner-image {
+            display: none !important;
+            @include media-xs {
+                display: block !important;
+            }
+        }
+        &.center-position {
+            background-position: center;
+        }
+        &.right-position {
+            background-position: right;
+        }
+        &.left-position {
+            background-position: left;
+        }
+    }
+    .col-12 {
+        @media (min-width: 1240px) {
+            max-width: 108%;
+            -ms-flex: 0 0 108%;
+            flex: 0 0 108%;
+        }
+        @media (min-width: 1200px) and (max-width: 1239px) {
+            max-width: 107%;
+            -ms-flex: 0 0 107%;
+            flex: 0 0 107%;
+        }
+    }
+    .farmers-history-intro {
+        position: relative;
+        margin: -25px 0 20px 0;
+        &:before {
+            content: "";
+            background: rgba(255, 255, 255, 0.9);
+            width: 67%;
+            height: 180px;
+            position: absolute;
+            top: -25px;
+            left: -28px;
+            @include media-xs-portrait {
+                width: calc(100% + 30px);
+                left: -15px;
+            }
+        }
+        h2 {
+            width: 30%;
+            color: $dark;
+            z-index: 9;
+            position: relative;
+        }
+    }
+    .farmers-history-content {
+        display: inline-block;
+        width: 55%;
+        vertical-align: top;
+        padding-right: 8px;
+        @include media-xs {
+            width: 100%;
+            padding-right: 0;
+        }
+        @include media-sm {
+            width: 100%;
+        }
+        @media (min-width: 1200px) and (max-width: 1239px) {
+            width: 53%;
+        }
+        p {
+            font-family: $robotoLight;
+            line-height: 30px;
+        }
+    }
+    .farmers-history-facts {
+        display: inline-block;
+        width: 44%;
+        vertical-align: top;
+        @include media-xs {
+            width: 100%;
+        }
+        @include media-xs-portrait {
+            text-align: center;
+        }
+        @include media-sm {
+            width: 100%;
+        }
+        @media (min-width: 1200px) and (max-width: 1239px) {
+            width: 46%;
+        }
+        .facts-item {
+            text-align: center;
+            width: 249px;
+            display: inline-block;
+            margin-bottom: 12px;
+            vertical-align: top;
+            @include media-md {
+                margin-bottom: 15px;
+                width: 190px;
+            }
+            @include media-sm {
+                width: calc(100% / 3 - 17px);
+                margin-right: 20px;
+            }
+            @include media-xs {
+                margin-bottom: 30px;
+            }
+            @include media-xs-portrait {
+                width: 90%;
+            }
+            @include media-xs-landscape {
+                width: calc(100% / 2 - 17px);
+            }
+            &:nth-child(odd) {
+                margin-right: 26px;
+                @include media-md {
+                    margin-right: 20px;
+                }
+                @include media-sm {
+                    margin-right: 20px;
+                }
+                @include media-xs {
+                    margin-right: 0;
+                }
+                @include media-xs-landscape {
+                    margin-right: 20px;
+                }
+            }
+            &:last-child {
+                @include media-sm {
+                    margin-right: 0;
+                }
+                @include media-xs {
+                    margin-right: 0;
+                }
+            }
+            span {
+                display: block;
+                text-transform: uppercase;
+                font-family: $robotoSlabBold;
+                color: $blue;
+                font-size: 48px;
+                line-height: 48px;
+                @include media-md {
+                    font-size: 44px;
+                    line-height: 44px;
+                }
+            }
+            p {
+                font-family: $robotoLight;
+                font-size: 22px;
+                line-height: 24px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

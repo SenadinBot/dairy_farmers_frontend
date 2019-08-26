@@ -9,22 +9,6 @@
         }
     }
 }
-.esmp-additional-info-container {
-    background-color: rgba(84, 88, 90, 0.05);
-    padding: 100px 0 26px 0;
-    @include media-sm {
-        padding: 70px 0 0 0;
-    }
-    @include media-xs {
-        padding: 70px 0 50px 0;
-    }
-    .primary-btn {
-        @include media-xs-landscape {
-            margin: 10px auto 0 auto;
-            display: block;
-        }
-    }
-}
 .esmp-description-container {
     padding-bottom: 140px;
     @include media-sm {

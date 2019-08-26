@@ -30,6 +30,15 @@
             }
         }
     }
+    &.remove-bottom-spacing {
+        .column-image-item-container {
+            &:after { 
+                @include media-xs {
+                    display: none;
+                }
+            }
+        }
+    }
     .column-image-item-container {
         position: relative;
         padding-bottom: 50px;
@@ -150,7 +159,18 @@
         }
         .btn-container {
             text-align: center;
-            margin-top: 62px;
+            margin: 10px 0 40px 0;
+            @include media-xs {
+                margin: 10px 0 20px 0;
+            }
+            .primary-btn {
+                @include media-xs-portrait {
+                    width: 100%;
+                }
+                @include media-xs-landscape {
+                    width: 60%;
+                }
+            }
         }
     }
 }

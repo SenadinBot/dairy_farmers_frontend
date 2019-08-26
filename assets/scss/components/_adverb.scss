@@ -60,7 +60,7 @@
             width: 452px;
             height: 302px;
             position: absolute;
-            left: -149px;
+            left: -90px;
             top: -50px;
             object-fit: cover;
             z-index: 9;
@@ -92,6 +92,7 @@
         padding-top: 35px;
         position: relative;
         z-index: 99;
+        padding-left: 45px;
         @include media-md {
             width: 60%;
         }
@@ -111,6 +112,7 @@
             vertical-align: top;
             position: relative;
             top: 10px;
+            background: rgba(0, 0, 0, 0.55);
             @include media-md {
                 width: auto;
                 padding: 13px 22px 7px 22px;
@@ -124,14 +126,15 @@
             }
         }
         p {
-            width: 46%;
-            padding-right: 15px;
+            width: 52%;
+            padding-right: 31px;
             line-height: 30px;
             display: inline-block;
             vertical-align: top;
             font-family: $robotoLight;
             @include media-md {
-                width: 60%;
+                width: 62%;
+                padding-right: 15px;
             }
             @include media-sm {
                 width: 100%;
@@ -140,6 +143,7 @@
             }
             @include media-xs {
                 width: 100%;
+                padding-right: 15px;
             }
         }
         h2 {

@@ -32,6 +32,8 @@
         }
         @include media-xs-landscape {
             width: 60%;
+            padding: 13px 15px 7px 15px;
+            margin: 10px auto 0 0;
         }
     }
 }
@@ -614,6 +616,41 @@
         @include media-xs {
             display: block;
             margin-left: 0;
+        }
+    }
+}
+.additional-info-container {
+    background-color: rgba(84, 88, 90, 0.05);
+    padding: 100px 0 26px 0;
+    @include media-sm {
+        padding: 70px 0 0 0;
+    }
+    @include media-xs {
+        padding: 70px 0 50px 0;
+    }
+    .primary-btn {
+        @include media-xs-landscape {
+            margin: 10px auto 0 auto;
+            display: block;
+        }
+    }
+    h2 {
+        color: $dark;
+        width: 50%;
+        margin: -55px 0 28px 0;
+        @include media-xs {
+            width: 100%;
+            margin: -20px 0 28px 0;
+        }
+        @include media-xs-landscape {
+            width: 80%;
+        }
+        @include media-sm {
+            width: 80%;
+            margin: -20px 0 28px 0;
+        }
+        @include media-md {
+            width: 60%;
         }
     }
 }
