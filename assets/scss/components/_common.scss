@@ -520,7 +520,7 @@
     }
     .info-item-img-container {
         display: inline-block;
-        width: calc(100% / 2 - 7px);
+        width: calc(100% / 2 - 7.5px);
         vertical-align: top;
         @include media-xs {
             width: 100%;
