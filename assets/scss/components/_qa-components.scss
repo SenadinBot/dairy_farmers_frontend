@@ -6,6 +6,11 @@
             margin-top: 0;
         }
     }
+    .info-item-container {
+        &:last-child {
+            margin-bottom: 50px;
+        }
+    }
 }
 .farmer-verification-container {
     background-repeat: no-repeat;
