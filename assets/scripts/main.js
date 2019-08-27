@@ -92,6 +92,7 @@ $(document).ready(function () {
         $(this).parents('.true-false-item').addClass('show-answer');
         $(this).parents('.true-false-item').find(".correct-answer").hide();
     });
+
     // Nutrition List Slick Carousel
     $('.nutrients-list-carousel').slick({
         slidesToShow: 1,
@@ -112,6 +113,38 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                }
+            }
+        ]
+    });
+
+    // Our Farmers Carousel 
+    $('.farmers-carousel').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        cssEase: 'linear',
+        asNavFor: '.farmers-carousel-nav'
+    });
+    $('.farmers-carousel-nav').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.farmers-carousel',
+        dots: false,
+        arrows: false,
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 3,
                 }
             }
         ]

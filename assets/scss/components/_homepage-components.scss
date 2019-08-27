@@ -643,6 +643,7 @@
     h4 {
         color: $white;
         margin-bottom: 0;
+        text-transform: uppercase;
         @include media-xs {
             text-align: left;
         }

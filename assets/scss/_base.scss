@@ -248,3 +248,24 @@ a {
         max-width: 100%;
     }
 }
+.video-modal {
+    .modal-body {
+        padding: 0;
+        border-radius: 0;
+    }
+    .modal-dialog {
+        &.modal-lg {
+            max-width: 80%;
+            @include media-lg {
+                max-width: 70%;
+            }            
+            @include media-xs {
+                max-width: 90%;
+                margin: 30px auto;
+            }
+        }
+    }
+    .primary-btn {
+        padding: 7px 45px 0px 45px;
+    }
+}

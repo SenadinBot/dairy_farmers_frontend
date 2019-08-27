@@ -245,6 +245,21 @@ a {
   .container {
     max-width: 100%; } }
 
+.video-modal .modal-body {
+  padding: 0;
+  border-radius: 0; }
+.video-modal .modal-dialog.modal-lg {
+  max-width: 80%; }
+  @media (min-width: 1200px) {
+    .video-modal .modal-dialog.modal-lg {
+      max-width: 70%; } }
+  @media (max-width: 767px) {
+    .video-modal .modal-dialog.modal-lg {
+      max-width: 90%;
+      margin: 30px auto; } }
+.video-modal .primary-btn {
+  padding: 7px 45px 0px 45px; }
+
 @font-face {
   font-family: 'Roboto';
   src: url("../fonts/roboto-regular/Roboto-Regular.eot");
@@ -1904,7 +1919,8 @@ footer {
         text-align: left; } }
   .small-video-info h4 {
     color: #ffffff;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    text-transform: uppercase; }
     @media (max-width: 767px) {
       .small-video-info h4 {
         text-align: left; } }
@@ -3423,7 +3439,7 @@ main {
     width: 35%; }
     @media (min-width: 768px) and (max-width: 991px) {
       .column-image-container .column-image-intro h2 {
-        width: 50%; } }
+        width: 52%; } }
     @media (max-width: 767px) {
       .column-image-container .column-image-intro h2 {
         width: 100%; } }
@@ -3443,6 +3459,9 @@ main {
     @media (max-width: 767px) and (orientation: landscape) {
       .column-image-container .column-image-intro p {
         width: 80%; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .column-image-container .column-image-intro p {
+        margin-left: 0; } }
 @media (max-width: 767px) {
   .column-image-container.remove-bottom-spacing .column-image-item-container:after {
     display: none; } }
@@ -3487,6 +3506,9 @@ main {
         height: 216px;
         width: 100%;
         margin-bottom: 25px; }
+        @media (max-width: 767px) {
+          .column-image-container .column-image-item-container .column-image-item-content .column-image-item .img-container {
+            height: auto; } }
         .column-image-container .column-image-item-container .column-image-item-content .column-image-item .img-container img {
           width: 100%;
           height: 100%;
@@ -4840,5 +4862,240 @@ main {
         font-size: 22px;
         line-height: 24px;
         margin-bottom: 0; }
+
+.farmers-carousel-container {
+  margin: 190px 0 130px 0;
+  position: relative;
+  padding-bottom: 150px; }
+  @media (max-width: 767px) {
+    .farmers-carousel-container {
+      padding-bottom: 50px;
+      margin: 90px 0 70px 0; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .farmers-carousel-container {
+      padding-bottom: 80px;
+      margin: 140px 0 100px 0; } }
+  .farmers-carousel-container:after {
+    content: "";
+    background: rgba(84, 88, 90, 0.1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 538px;
+    z-index: -9; }
+    @media (max-width: 767px) {
+      .farmers-carousel-container:after {
+        height: 418px; } }
+  .farmers-carousel-container .farmers-carousel-intro {
+    margin-bottom: 10px; }
+    .farmers-carousel-container .farmers-carousel-intro h2 {
+      color: #000000;
+      display: inline-block;
+      width: 59%;
+      margin: 0; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .farmers-carousel-container .farmers-carousel-intro h2 {
+          width: 60%; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .farmers-carousel-container .farmers-carousel-intro h2 {
+          width: 50%; } }
+      @media (max-width: 767px) {
+        .farmers-carousel-container .farmers-carousel-intro h2 {
+          width: 100%; } }
+      @media (max-width: 767px) and (orientation: landscape) {
+        .farmers-carousel-container .farmers-carousel-intro h2 {
+          width: 50%; } }
+    .farmers-carousel-container .farmers-carousel-intro p {
+      display: inline-block;
+      font-family: "Roboto Light";
+      line-height: 30px;
+      width: 35%;
+      margin-left: 60px;
+      margin-bottom: 0;
+      position: relative;
+      top: 9px; }
+      @media (max-width: 767px) {
+        .farmers-carousel-container .farmers-carousel-intro p {
+          width: 100%;
+          margin-left: 0;
+          top: 0; } }
+      @media (max-width: 767px) and (orientation: landscape) {
+        .farmers-carousel-container .farmers-carousel-intro p {
+          width: 80%; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .farmers-carousel-container .farmers-carousel-intro p {
+          width: 45%;
+          margin-left: 20px; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .farmers-carousel-container .farmers-carousel-intro p {
+          margin-left: 42px; } }
+  .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel.slick-slider {
+    height: 100%; }
+  .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .slick-track,
+  .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .slick-list {
+    height: 100%; }
+  .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .farmers-slide .farmers-slide-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+    @media (max-width: 767px) {
+      .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .farmers-slide .farmers-slide-img {
+        position: relative;
+        height: 250px; } }
+  .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .small-video-info {
+    bottom: 29px;
+    top: initial;
+    position: absolute;
+    padding: 46px 38px 50px 49px;
+    background-image: linear-gradient(100deg, rgba(95, 33, 103, 0.5), rgba(0, 114, 206, 0.6)), linear-gradient(to bottom, rgba(0, 114, 206, 0.6), rgba(0, 114, 206, 0.6)); }
+    @media (max-width: 767px) {
+      .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .small-video-info {
+        background-image: linear-gradient(100deg, rgba(95, 33, 103, 0.5), #0072ce), linear-gradient(to bottom, #0072ce, #0072ce); } }
+    .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .small-video-info h4 {
+      letter-spacing: 2.16px;
+      line-height: normal;
+      margin-bottom: 28px; }
+    .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .small-video-info .primary-btn {
+      margin-top: 20px; }
+      @media (max-width: 767px) and (orientation: portrait) {
+        .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .small-video-info .primary-btn {
+          width: 100%; } }
+      @media (max-width: 767px) and (orientation: landscape) {
+        .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .small-video-info .primary-btn {
+          width: 60%; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .small-video-info p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .small-video-info {
+        width: 55%; } }
+    @media (max-width: 767px) {
+      .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .small-video-info {
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        padding: 30px 15px 40px 15px; } }
+  .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel-content {
+    height: 748px;
+    width: 100%; }
+    @media (min-width: 1200px) and (max-width: 1500px) {
+      .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel-content {
+        height: 600px; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel-content {
+        height: 600px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel-content {
+        height: 500px; } }
+    @media (max-width: 767px) {
+      .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel-content {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        height: auto; } }
+  .farmers-carousel-container span.more-farmer-stories {
+    display: block;
+    font-family: "Roboto Light";
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: #000000;
+    margin: 14px 0 0 0; }
+    @media (max-width: 767px) {
+      .farmers-carousel-container span.more-farmer-stories {
+        margin: 30px 0 0 0; } }
+  .farmers-carousel-container .farmers-carousel-nav {
+    margin: -3px -8.5px 0 -8.5px;
+    height: 162px; }
+    @media (max-width: 767px) {
+      .farmers-carousel-container .farmers-carousel-nav {
+        margin: 17px -5px 0 -5px;
+        height: 174px; } }
+    .farmers-carousel-container .farmers-carousel-nav .farmers-nav {
+      margin: 20px 8.5px 0 8.5px;
+      cursor: pointer;
+      position: relative;
+      height: 142px; }
+      @media (max-width: 767px) {
+        .farmers-carousel-container .farmers-carousel-nav .farmers-nav {
+          margin: 0 5px 0 5px;
+          height: 174px; } }
+      .farmers-carousel-container .farmers-carousel-nav .farmers-nav img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .farmers-carousel-container .farmers-carousel-nav .farmers-nav:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        border: 18px solid transparent;
+        border-bottom-color: #0072ce;
+        top: -36px;
+        opacity: 0;
+        -webkit-transition: opacity 0.4s ease;
+        -moz-transition: opacity 0.4s ease;
+        -ms-transition: opacity 0.4s ease;
+        -o-transition: opacity 0.4s ease;
+        transition: opacity 0.4s ease; }
+        @media (max-width: 767px) {
+          .farmers-carousel-container .farmers-carousel-nav .farmers-nav:before {
+            display: none; } }
+      .farmers-carousel-container .farmers-carousel-nav .farmers-nav:after {
+        content: "";
+        border: 4px solid #0072ce;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+        -webkit-transition: opacity 0.4s ease;
+        -moz-transition: opacity 0.4s ease;
+        -ms-transition: opacity 0.4s ease;
+        -o-transition: opacity 0.4s ease;
+        transition: opacity 0.4s ease; }
+      .farmers-carousel-container .farmers-carousel-nav .farmers-nav:hover:before {
+        opacity: 1;
+        -webkit-transition: opacity 0.4s ease;
+        -moz-transition: opacity 0.4s ease;
+        -ms-transition: opacity 0.4s ease;
+        -o-transition: opacity 0.4s ease;
+        transition: opacity 0.4s ease; }
+      .farmers-carousel-container .farmers-carousel-nav .farmers-nav:hover:after {
+        opacity: 1;
+        -webkit-transition: opacity 0.4s ease;
+        -moz-transition: opacity 0.4s ease;
+        -ms-transition: opacity 0.4s ease;
+        -o-transition: opacity 0.4s ease;
+        transition: opacity 0.4s ease; }
+      .farmers-carousel-container .farmers-carousel-nav .farmers-nav.slick-current:before {
+        opacity: 1;
+        -webkit-transition: opacity 0.4s ease;
+        -moz-transition: opacity 0.4s ease;
+        -ms-transition: opacity 0.4s ease;
+        -o-transition: opacity 0.4s ease;
+        transition: opacity 0.4s ease; }
+      .farmers-carousel-container .farmers-carousel-nav .farmers-nav.slick-current:after {
+        opacity: 1;
+        -webkit-transition: opacity 0.4s ease;
+        -moz-transition: opacity 0.4s ease;
+        -ms-transition: opacity 0.4s ease;
+        -o-transition: opacity 0.4s ease;
+        transition: opacity 0.4s ease; }
 
 /*# sourceMappingURL=main.css.map */
