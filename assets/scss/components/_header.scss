@@ -363,6 +363,7 @@ header {
             padding: 33px 0 36px 0px;            
         }
         .search-icon {
+            display: none;
             top: -10px;
             padding-left: 20px;
             @include media-md {
@@ -403,12 +404,14 @@ header {
             margin-bottom: 0;
             @include media-xs {
                 margin-left: 0;
-                margin-top: 150px;
+                // margin-top: 150px;
+                margin-top: 100px;
                 width: 100%;
             }
             @include media-sm {
                 margin-left: 0;
-                margin-top: 165px;
+                // margin-top: 165px;
+                margin-top: 100px;
                 width: 100%;
             }
             li {
@@ -631,7 +634,8 @@ header {
         } 
     }
     .header-search {
-        display: block;
+        // display: block;
+        display: none;
         position: relative;
         width: 100%;
         top: 70px;
