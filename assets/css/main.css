@@ -666,6 +666,9 @@ header .logo-container img {
     height: 130px;
   }
 }
+header .logo-container h1 {
+  margin: 0;
+}
 header .top-nav-container {
   padding: 12px 18px 8px 0;
   background-color: #eef4f6;
@@ -5756,6 +5759,27 @@ main {
 
 .our-milk-container h2 {
   color: #000000;
+}
+.our-milk-container .our-milk-carousel .our-milk-slide {
+  text-align: center;
+}
+.our-milk-container .our-milk-carousel .our-milk-slide img {
+  height: 150px;
+  margin: 0 auto 20px auto;
+}
+.our-milk-container .our-milk-carousel .our-milk-slide span {
+  font-family: "Acumin Pro ExtraCondensed Black";
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 36px;
+  letter-spacing: 2.4px;
+  color: #000000;
+  display: block;
+}
+.our-milk-container .our-milk-carousel .our-milk-slide.slick-current span {
+  font-size: 60px;
+  letter-spacing: 4.32px;
+  line-height: normal;
 }
 
 .article-list-container {

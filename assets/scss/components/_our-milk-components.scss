@@ -2,4 +2,29 @@
     h2 {
         color: $dark;
     }
+    .our-milk-carousel {
+        .our-milk-slide {
+            text-align: center;
+            img {
+                height: 150px;
+                margin: 0 auto 20px auto;
+            }
+            span {
+                font-family: $acuminProExtraCondBlack;
+                text-transform: uppercase;
+                font-size: 48px;
+                line-height: 36px;
+                letter-spacing: 2.4px;
+                color: $dark;
+                display: block;
+            }
+            &.slick-current {
+                span {
+                    font-size: 60px;
+                    letter-spacing: 4.32px;
+                    line-height: normal;
+                }
+            }
+        }
+    }
 }

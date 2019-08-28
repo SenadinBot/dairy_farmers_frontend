@@ -149,4 +149,16 @@ $(document).ready(function () {
             }
         ]
     });
+
+    // Our Milk Carousel
+    $('.our-milk-carousel').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        dots: true,
+        infinite: true,
+        speed: 500,
+        cssEase: 'linear',
+        centerMode: true,
+        centerPadding: '60px',
+    });
 });
