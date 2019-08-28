@@ -79,7 +79,12 @@ $acuminProExtraCondBlack: "Acumin Pro ExtraCondensed Black";
 .container {
     &.custom-container {
       @include media-lg() {
-        max-width: 1400px;
+            max-width: 1400px;
       }
     }
+    &.sustainability-custom-container {
+        @include media-lg() {
+            max-width: 1330px;
+        }
+      }
 }
