@@ -1,0 +1,72 @@
+.terms-cond-container {
+    margin-top: 200px;
+    margin-bottom: 150px; 
+    @include media-xs {
+        margin-bottom: 70px;
+    }
+    .terms-cond-container-intro {
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                padding-left: 25px;
+            }
+        }
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .t-c-sublink,
+    .t-c-link,
+    p {
+        font-family: $robotoLight;
+        font-size: 18px;
+        line-height: 30px;
+        color: $blue;
+    }
+    .t-c-link {
+        font-family: $robotoBold;
+        text-transform: uppercase;
+    }
+    .t-c-sublink,
+    .t-c-link {
+        display: block;
+    }
+    p {
+        color: $dark;
+        margin-bottom: 0;
+        width: 95%;
+        display: inline-block;
+        vertical-align: top;    
+    }
+    ol {
+        padding: 0 0 0 45px;
+        margin: 0;
+        list-style: none;
+        position: relative;
+        counter-reset: alpha;
+        li {
+            font-family: $robotoLight;
+            font-size: 18px;
+            line-height: 30px;
+            color: $dark;
+            &:before {
+                counter-increment: alpha;
+                content: "(" counter(alpha, lower-alpha) ") ";
+                position: absolute;
+                left: 20px;
+            }
+        }
+    }
+    .num {
+        display: inline-block;
+        vertical-align: top;    
+        font-family: $robotoLight;
+        font-size: 18px;
+        line-height: 30px;
+        color: $dark;
+    }
+}

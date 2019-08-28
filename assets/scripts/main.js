@@ -161,4 +161,12 @@ $(document).ready(function () {
         centerMode: true,
         centerPadding: '60px',
     });
+
+    // T&C Scroll
+    $('.t-c-link, .t-c-sublink').click(function (event) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top - 250,
+        }, 1300);
+    });
 });

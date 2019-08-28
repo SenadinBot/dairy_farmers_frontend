@@ -25,27 +25,38 @@
             @include media-xs {
                 display: none;
             }
+            @include media-sm {
+                display: none;
+            }
         }
         &.mobile-img {
             display: none;
             @include media-xs {
                 display: block;
             }
+            @include media-sm {
+                display: block;
+            }
         }
         @include media-sm {
-            height: 600px;
+            height: 100vh;
             position: relative;
         }
         @include media-xs {
             height: 500px;
             position: relative;
+            background-position: bottom center;
+        }
+        @include media-xs-landscape {
+            height: 600px;
         }
     }
     .banner-image-content {
         position: relative;
         top: 156px;
-        border: 10px solid $mainColor;
-        border-left: none;
+        // border: 10px solid $mainColor;
+        // border-left: none;
+        border: none;
         width: 62%;
         left: 22%;
         -webkit-transform: translateX(-19%);
@@ -67,7 +78,7 @@
         }
         @include media-xs {
             top: 0;
-            margin-top: -290px;
+            margin-top: -41.5%;
             padding: 0;
             border: none;
             left: 0;
@@ -77,94 +88,96 @@
             width: 100%;
         }
         @include media-xs-landscape {
-            margin-top: -245px;
+            // margin-top: -245px;
         }
-        &:after {
-            content: "";
-            background: $mainColor;
-            height: 30px;
-            width: 10px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            @include media-sm {
-                display: none;                                
-            }
-            @include media-xs {
-                display: none;                
-            }
-        }
-        &:before {
-            content: "";
-            background: $mainColor;
-            height: 230px;
-            width: 10px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            @include media-sm {
-                display: none;                
-            }
-            @include media-xs {
-                display: none;
-            }
-        }
+        // &:after {
+        //     content: "";
+        //     background: $mainColor;
+        //     height: 30px;
+        //     width: 10px;
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     @include media-sm {
+        //         display: none;                                
+        //     }
+        //     @include media-xs {
+        //         display: none;                
+        //     }
+        // }
+        // &:before {
+        //     content: "";
+        //     background: $mainColor;
+        //     height: 230px;
+        //     width: 10px;
+        //     position: absolute;
+        //     bottom: 0;
+        //     left: 0;
+        //     @include media-sm {
+        //         display: none;                
+        //     }
+        //     @include media-xs {
+        //         display: none;
+        //     }
+        // }
         .title-border {
             @include media-sm {
-                border: 10px solid $mainColor;
-                border-right: none;
+                border: none;
+                // border: 10px solid $mainColor;
+                // border-right: none;
                 left: 0;
-                padding: 320px 0 70px 85px;  
+                padding: 15px 0 65px 85px;  
                 position: relative;  
                 width: 70%;
-                &:after {
-                    content: "";
-                    background: $mainColor;
-                    height: 275px;
-                    width: 10px;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                }
-                &:before {
-                    content: "";
-                    background: $mainColor;
-                    height: 140px;
-                    width: 10px;
-                    position: absolute;
-                    bottom: 0;
-                    right: 0;
-                }
+                // &:after {
+                //     content: "";
+                //     background: $mainColor;
+                //     height: 275px;
+                //     width: 10px;
+                //     position: absolute;
+                //     top: 0;
+                //     right: 0;
+                // }
+                // &:before {
+                //     content: "";
+                //     background: $mainColor;
+                //     height: 140px;
+                //     width: 10px;
+                //     position: absolute;
+                //     bottom: 0;
+                //     right: 0;
+                // }
             }
             @include media-xs {
-                border: 10px solid $mainColor;
-                border-right: none;
+                border: none;
+                // border: 10px solid $mainColor;
+                // border-right: none;
                 left: 0;
-                padding: 305px 0 40px 25px;  
+                padding: 0 0 0 25px;  
                 position: relative;  
                 width: 85%;
-                &:after {
-                    content: "";
-                    background: $mainColor;
-                    height: 275px;
-                    width: 10px;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                }
-                &:before {
-                    content: "";
-                    background: $mainColor;
-                    height: 90px;
-                    width: 10px;
-                    position: absolute;
-                    bottom: 0;
-                    right: 0;
-                }
+                // &:after {
+                //     content: "";
+                //     background: $mainColor;
+                //     height: 275px;
+                //     width: 10px;
+                //     position: absolute;
+                //     top: 0;
+                //     right: 0;
+                // }
+                // &:before {
+                //     content: "";
+                //     background: $mainColor;
+                //     height: 90px;
+                //     width: 10px;
+                //     position: absolute;
+                //     bottom: 0;
+                //     right: 0;
+                // }
             }
             @include media-xs-landscape {
                 width: 80%;
-                padding: 305px 0 40px 95px;
+                padding: 0 0 25px 95px;
             }
         }
         span {
@@ -193,7 +206,7 @@
             @include media-xs {
                 width: 120%;
                 font-size: 74px;
-                line-height: 74px;
+                line-height: 66px;
                 letter-spacing: 6px;
                 left: 0;     
                 margin-top: 0;
@@ -232,15 +245,15 @@
             }
             @include media-sm {
                 margin-left: 0;
-                margin-top: 0;
+                margin-top: 50px;
                 width: 100%;
-                padding: 30px 70px 0 100px;
+                padding: 0 70px 0 100px;
             }
             @include media-xs {
                 margin-left: 0;
-                margin-top: 0;
                 width: 100%;
-                padding: 25px 0px 0 5px;
+                padding: 0 0 0 5px;
+                margin-top: 35px;
             }
         }
     }
@@ -401,6 +414,7 @@
                     display: block;
                     line-height: 34px;
                     font-size: 24px;
+                    font-family: $roboto;
                     @include media-xs-portrait {
                         line-height: 30px;
                         font-size: 20px;
@@ -408,6 +422,7 @@
                     b {
                         display: block;
                         font-size: 18px;
+                        font-family: $robotoBlack;
                         @include media-xs-portrait {
                             font-size: 16px;
                         }

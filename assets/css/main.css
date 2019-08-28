@@ -204,16 +204,11 @@ a {
   .custom-link:before {
     content: "";
     position: absolute;
-    width: 100%;
     height: 2px;
     bottom: 0;
-    left: 0;
+    right: 0;
     visibility: visible;
-    -webkit-transform: scaleX(1);
-    -moz-transform: scaleX(1);
-    -ms-transform: scaleX(1);
-    -o-transform: scaleX(1);
-    transform: scaleX(1);
+    width: 100%;
     -webkit-transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
     -ms-transition: all 0.3s ease-in-out 0s;
@@ -227,12 +222,7 @@ a {
     text-decoration: none;
     color: #0072ce; }
     .custom-link:hover:before {
-      visibility: hidden;
-      -webkit-transform: scaleX(0);
-      -moz-transform: scaleX(0);
-      -ms-transform: scaleX(0);
-      -o-transform: scaleX(0);
-      transform: scaleX(0); }
+      width: 0; }
   .custom-link.add-icon:after {
     content: "";
     width: 14px;
@@ -327,6 +317,12 @@ body {
   @media (max-width: 767px) {
     body main {
       margin-top: 0; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    body main {
+      margin-top: 160px; } }
+  @media (min-width: 1200px) {
+    body main {
+      margin-top: 160px; } }
   body.nav-fixed header {
     position: fixed;
     top: 0;
@@ -341,24 +337,6 @@ body {
       body.nav-fixed header {
         padding: 0;
         position: relative; } }
-    body.nav-fixed header .top-nav-container {
-      height: 0;
-      visibility: hidden;
-      opacity: 0;
-      position: absolute;
-      padding: 0;
-      top: -1000px; }
-    body.nav-fixed header .logo-container {
-      top: 0px;
-      -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      transition: all 0.5s; }
-      @media (max-width: 767px) {
-        body.nav-fixed header .logo-container {
-          top: 30px; } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        body.nav-fixed header .logo-container {
-          top: 50px; } }
   @media (min-width: 992px) and (max-width: 1199px) {
     body.nav-fixed main {
       margin-top: 166px; } }
@@ -423,7 +401,11 @@ header {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
-  position: relative; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.13); }
   @media (min-width: 768px) and (max-width: 991px) {
     header {
       height: 150px;
@@ -1082,24 +1064,15 @@ footer {
         text-transform: initial; }
         footer .footer-links ul li a:hover:after {
           visibility: hidden;
-          -webkit-transform: scaleX(0);
-          -moz-transform: scaleX(0);
-          -ms-transform: scaleX(0);
-          -o-transform: scaleX(0);
-          transform: scaleX(0); }
+          width: 0; }
         footer .footer-links ul li a:after {
           content: "";
           position: absolute;
           width: 100%;
           height: 1px;
           bottom: 0;
-          left: 0;
+          right: 0;
           visibility: visible;
-          -webkit-transform: scaleX(1);
-          -moz-transform: scaleX(1);
-          -ms-transform: scaleX(1);
-          -o-transform: scaleX(1);
-          transform: scaleX(1);
           -webkit-transition: all 0.3s ease-in-out 0s;
           -moz-transition: all 0.3s ease-in-out 0s;
           -ms-transition: all 0.3s ease-in-out 0s;
@@ -1547,24 +1520,15 @@ footer {
           color: #000000; }
           .recipes-carousel-container .recipes-carousel .recipes-slide a:hover:after {
             visibility: hidden;
-            -webkit-transform: scaleX(0);
-            -moz-transform: scaleX(0);
-            -ms-transform: scaleX(0);
-            -o-transform: scaleX(0);
-            transform: scaleX(0); }
+            width: 0; }
         .recipes-carousel-container .recipes-carousel .recipes-slide a:after {
           content: "";
           position: absolute;
           width: 100%;
           height: 2px;
           bottom: 0;
-          left: 0;
+          right: 0;
           visibility: visible;
-          -webkit-transform: scaleX(1);
-          -moz-transform: scaleX(1);
-          -ms-transform: scaleX(1);
-          -o-transform: scaleX(1);
-          transform: scaleX(1);
           -webkit-transition: all 0.3s ease-in-out 0s;
           -moz-transition: all 0.3s ease-in-out 0s;
           -ms-transition: all 0.3s ease-in-out 0s;
@@ -2109,24 +2073,33 @@ footer {
     @media (max-width: 767px) {
       .banner-image-container .banner-img-background.desktop-img {
         display: none; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .banner-image-container .banner-img-background.desktop-img {
+        display: none; } }
     .banner-image-container .banner-img-background.mobile-img {
       display: none; }
       @media (max-width: 767px) {
         .banner-image-container .banner-img-background.mobile-img {
           display: block; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .banner-image-container .banner-img-background.mobile-img {
+          display: block; } }
     @media (min-width: 768px) and (max-width: 991px) {
       .banner-image-container .banner-img-background {
-        height: 600px;
+        height: 100vh;
         position: relative; } }
     @media (max-width: 767px) {
       .banner-image-container .banner-img-background {
         height: 500px;
-        position: relative; } }
+        position: relative;
+        background-position: bottom center; } }
+    @media (max-width: 767px) and (orientation: landscape) {
+      .banner-image-container .banner-img-background {
+        height: 600px; } }
   .banner-image-container .banner-image-content {
     position: relative;
     top: 156px;
-    border: 10px solid #0092bc;
-    border-left: none;
+    border: none;
     width: 62%;
     left: 22%;
     -webkit-transform: translateX(-19%);
@@ -2149,7 +2122,7 @@ footer {
     @media (max-width: 767px) {
       .banner-image-container .banner-image-content {
         top: 0;
-        margin-top: -290px;
+        margin-top: -41.5%;
         padding: 0;
         border: none;
         left: 0;
@@ -2157,89 +2130,24 @@ footer {
         -ms-transform: none;
         transform: none;
         width: 100%; } }
-    @media (max-width: 767px) and (orientation: landscape) {
-      .banner-image-container .banner-image-content {
-        margin-top: -245px; } }
-    .banner-image-container .banner-image-content:after {
-      content: "";
-      background: #0092bc;
-      height: 30px;
-      width: 10px;
-      position: absolute;
-      top: 0;
-      left: 0; }
-      @media (min-width: 768px) and (max-width: 991px) {
-        .banner-image-container .banner-image-content:after {
-          display: none; } }
-      @media (max-width: 767px) {
-        .banner-image-container .banner-image-content:after {
-          display: none; } }
-    .banner-image-container .banner-image-content:before {
-      content: "";
-      background: #0092bc;
-      height: 230px;
-      width: 10px;
-      position: absolute;
-      bottom: 0;
-      left: 0; }
-      @media (min-width: 768px) and (max-width: 991px) {
-        .banner-image-container .banner-image-content:before {
-          display: none; } }
-      @media (max-width: 767px) {
-        .banner-image-container .banner-image-content:before {
-          display: none; } }
     @media (min-width: 768px) and (max-width: 991px) {
       .banner-image-container .banner-image-content .title-border {
-        border: 10px solid #0092bc;
-        border-right: none;
+        border: none;
         left: 0;
-        padding: 320px 0 70px 85px;
+        padding: 15px 0 65px 85px;
         position: relative;
-        width: 70%; }
-        .banner-image-container .banner-image-content .title-border:after {
-          content: "";
-          background: #0092bc;
-          height: 275px;
-          width: 10px;
-          position: absolute;
-          top: 0;
-          right: 0; }
-        .banner-image-container .banner-image-content .title-border:before {
-          content: "";
-          background: #0092bc;
-          height: 140px;
-          width: 10px;
-          position: absolute;
-          bottom: 0;
-          right: 0; } }
+        width: 70%; } }
     @media (max-width: 767px) {
       .banner-image-container .banner-image-content .title-border {
-        border: 10px solid #0092bc;
-        border-right: none;
+        border: none;
         left: 0;
-        padding: 305px 0 40px 25px;
+        padding: 0 0 0 25px;
         position: relative;
-        width: 85%; }
-        .banner-image-container .banner-image-content .title-border:after {
-          content: "";
-          background: #0092bc;
-          height: 275px;
-          width: 10px;
-          position: absolute;
-          top: 0;
-          right: 0; }
-        .banner-image-container .banner-image-content .title-border:before {
-          content: "";
-          background: #0092bc;
-          height: 90px;
-          width: 10px;
-          position: absolute;
-          bottom: 0;
-          right: 0; } }
+        width: 85%; } }
     @media (max-width: 767px) and (orientation: landscape) {
       .banner-image-container .banner-image-content .title-border {
         width: 80%;
-        padding: 305px 0 40px 95px; } }
+        padding: 0 0 25px 95px; } }
     .banner-image-container .banner-image-content span {
       font-family: "Acumin Pro ExtraCondensed Black";
       font-size: 125px;
@@ -2267,7 +2175,7 @@ footer {
         .banner-image-container .banner-image-content span {
           width: 120%;
           font-size: 74px;
-          line-height: 74px;
+          line-height: 66px;
           letter-spacing: 6px;
           left: 0;
           margin-top: 0; } }
@@ -2303,15 +2211,15 @@ footer {
       @media (min-width: 768px) and (max-width: 991px) {
         .banner-image-container .banner-image-content .banner-image-inner-content {
           margin-left: 0;
-          margin-top: 0;
+          margin-top: 50px;
           width: 100%;
-          padding: 30px 70px 0 100px; } }
+          padding: 0 70px 0 100px; } }
       @media (max-width: 767px) {
         .banner-image-container .banner-image-content .banner-image-inner-content {
           margin-left: 0;
-          margin-top: 0;
           width: 100%;
-          padding: 25px 0px 0 5px; } }
+          padding: 0 0 0 5px;
+          margin-top: 35px; } }
 
 .recipe-container {
   position: relative;
@@ -2461,14 +2369,16 @@ footer {
         .recipe-container .recipe-content .recipe-info .recipe-info-item span {
           display: block;
           line-height: 34px;
-          font-size: 24px; }
+          font-size: 24px;
+          font-family: "Roboto"; }
           @media (max-width: 767px) and (orientation: portrait) {
             .recipe-container .recipe-content .recipe-info .recipe-info-item span {
               line-height: 30px;
               font-size: 20px; } }
           .recipe-container .recipe-content .recipe-info .recipe-info-item span b {
             display: block;
-            font-size: 18px; }
+            font-size: 18px;
+            font-family: "Roboto Black"; }
             @media (max-width: 767px) and (orientation: portrait) {
               .recipe-container .recipe-content .recipe-info .recipe-info-item span b {
                 font-size: 16px; } }
@@ -3344,24 +3254,15 @@ main {
         color: #000000; }
         .nutrition-suggestion-container .img-container a:hover:after {
           visibility: hidden;
-          -webkit-transform: scaleX(0);
-          -moz-transform: scaleX(0);
-          -ms-transform: scaleX(0);
-          -o-transform: scaleX(0);
-          transform: scaleX(0); }
+          width: 0; }
       .nutrition-suggestion-container .img-container a:after {
         content: "";
         position: absolute;
         width: 100%;
         height: 2px;
         bottom: 0;
-        left: 0;
+        right: 0;
         visibility: visible;
-        -webkit-transform: scaleX(1);
-        -moz-transform: scaleX(1);
-        -ms-transform: scaleX(1);
-        -o-transform: scaleX(1);
-        transform: scaleX(1);
         -webkit-transition: all 0.3s ease-in-out 0s;
         -moz-transition: all 0.3s ease-in-out 0s;
         -ms-transition: all 0.3s ease-in-out 0s;
@@ -3830,24 +3731,15 @@ main {
         color: #000000; }
         .recommendation-container.nutrition-content .img-container a:hover:after {
           visibility: hidden;
-          -webkit-transform: scaleX(0);
-          -moz-transform: scaleX(0);
-          -ms-transform: scaleX(0);
-          -o-transform: scaleX(0);
-          transform: scaleX(0); }
+          width: 0; }
       .recommendation-container.nutrition-content .img-container a:after {
         content: "";
         position: absolute;
         width: 100%;
         height: 2px;
         bottom: 0;
-        left: 0;
+        right: 0;
         visibility: visible;
-        -webkit-transform: scaleX(1);
-        -moz-transform: scaleX(1);
-        -ms-transform: scaleX(1);
-        -o-transform: scaleX(1);
-        transform: scaleX(1);
         -webkit-transition: all 0.3s ease-in-out 0s;
         -moz-transition: all 0.3s ease-in-out 0s;
         -ms-transition: all 0.3s ease-in-out 0s;
@@ -5159,5 +5051,64 @@ main {
         -ms-transition: opacity 0.4s ease;
         -o-transition: opacity 0.4s ease;
         transition: opacity 0.4s ease; }
+
+.terms-cond-container {
+  margin-top: 200px;
+  margin-bottom: 150px; }
+  @media (max-width: 767px) {
+    .terms-cond-container {
+      margin-bottom: 70px; } }
+  .terms-cond-container .terms-cond-container-intro ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .terms-cond-container .terms-cond-container-intro ul li {
+      padding-left: 25px; }
+  .terms-cond-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  .terms-cond-container .t-c-sublink,
+  .terms-cond-container .t-c-link,
+  .terms-cond-container p {
+    font-family: "Roboto Light";
+    font-size: 18px;
+    line-height: 30px;
+    color: #0072ce; }
+  .terms-cond-container .t-c-link {
+    font-family: "Roboto Bold";
+    text-transform: uppercase; }
+  .terms-cond-container .t-c-sublink,
+  .terms-cond-container .t-c-link {
+    display: block; }
+  .terms-cond-container p {
+    color: #000000;
+    margin-bottom: 0;
+    width: 95%;
+    display: inline-block;
+    vertical-align: top; }
+  .terms-cond-container ol {
+    padding: 0 0 0 45px;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    counter-reset: alpha; }
+    .terms-cond-container ol li {
+      font-family: "Roboto Light";
+      font-size: 18px;
+      line-height: 30px;
+      color: #000000; }
+      .terms-cond-container ol li:before {
+        counter-increment: alpha;
+        content: "(" counter(alpha,lower-alpha) ") ";
+        position: absolute;
+        left: 20px; }
+  .terms-cond-container .num {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Roboto Light";
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000; }
 
 /*# sourceMappingURL=main.css.map */
