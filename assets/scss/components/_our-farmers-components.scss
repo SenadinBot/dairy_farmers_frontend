@@ -66,6 +66,12 @@
             color: $dark;
             z-index: 9;
             position: relative;
+            @include media-lg {
+                width: 25%;
+            }
+            @include media-xs-portrait {
+                width: 55%;
+            }
         }
     }
     .farmers-history-content {
