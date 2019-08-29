@@ -245,6 +245,11 @@
     @include media-xs-portrait {
         background-size: 100% 44.5%;
     }
+    &.programs-column-image-container {
+        @include media-xs {
+            background-size: 100% 100%;
+        }
+    }
     .column-image-container  {
         margin-bottom: 97px;
         &.remove-bottom-spacing {
@@ -255,6 +260,18 @@
         }
         @include media-xs {
             margin-bottom: 70px;
+        }
+        &.add-bottom-spacing {
+            margin-bottom: 200px;
+            @include media-md {
+                margin-bottom: 170px;
+            }
+            @include media-sm {
+                margin-bottom: 170px;
+            }
+            @include media-xs {
+                margin-bottom: 170px;
+            }
         }
     }
 }

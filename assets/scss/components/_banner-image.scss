@@ -611,6 +611,35 @@
             }
         }
     }
+    &.one-line-title {
+        .banner-title {
+            span {
+                top: 40%;
+                left: 70%;
+                @include media-sm {
+                    top: initial;
+                    bottom: 10%;
+                    transform: translateY(7%);
+                    min-height: auto;
+                    left: 42%;
+                }
+                @include media-xs-landscape {
+                    top: initial;
+                    bottom: 10%;
+                    transform: translateY(7%);
+                    min-height: auto;
+                    left: 42%;
+                }
+                @include media-xs-portrait {
+                    top: initial;
+                    bottom: 10%;
+                    transform: translateY(7%);
+                    min-height: auto;
+                    left: 15%;
+                }
+            }
+        }
+    }
     &.white-title {
         .banner-title {
             span {
@@ -710,6 +739,9 @@
         left: 78%;
         top: 19%;
         width: 200%;
+        @include media-lg {
+            letter-spacing: 10px;
+        }
         @include media-md {
             left: 54%;
             width: 279%;
