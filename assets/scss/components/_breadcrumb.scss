@@ -13,6 +13,9 @@ main {
     @include media-sm {
         display: none;
     }
+    &.remove-top-spacing {
+        top: 0;
+    }
     &:after {
         content: "";
         position: absolute;

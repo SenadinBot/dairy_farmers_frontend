@@ -152,7 +152,7 @@ $(document).ready(function () {
 
     // Our Milk Carousel
     $('.our-milk-carousel').slick({
-        slidesToShow: 5,
+        slidesToShow: 3,
         slidesToScroll: 1,
         dots: true,
         infinite: true,
