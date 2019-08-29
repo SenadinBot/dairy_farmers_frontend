@@ -204,7 +204,7 @@
                 margin-top: 0;
             }
             @include media-xs {
-                width: 120%;
+                width: 125%;
                 font-size: 74px;
                 line-height: 66px;
                 letter-spacing: 6px;
@@ -214,6 +214,7 @@
             @include media-xs-landscape {
                 font-size: 120px;
                 line-height: 120px;
+                width: 120%;
             }
         }
         p {

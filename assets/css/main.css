@@ -2782,7 +2782,7 @@ footer .social-container ul li a.twitter-icon:before {
 }
 @media (max-width: 767px) {
   .banner-image-container .banner-image-content span {
-    width: 120%;
+    width: 125%;
     font-size: 74px;
     line-height: 66px;
     letter-spacing: 6px;
@@ -2794,6 +2794,7 @@ footer .social-container ul li a.twitter-icon:before {
   .banner-image-container .banner-image-content span {
     font-size: 120px;
     line-height: 120px;
+    width: 120%;
   }
 }
 .banner-image-container .banner-image-content p {
