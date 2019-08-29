@@ -4060,6 +4060,24 @@ main {
     @media (max-width: 767px) {
       .info-item-container.right-content .info-item-img-container {
         margin-right: 0; } }
+  .info-item-container.full-width .info-item-content:first-child {
+    margin-right: 10px; }
+    @media (max-width: 767px) {
+      .info-item-container.full-width .info-item-content:first-child {
+        margin-right: 0; } }
+  .info-item-container.full-width .info-item-content:nth-child(2) {
+    margin-right: 10px; }
+    @media (max-width: 767px) {
+      .info-item-container.full-width .info-item-content:nth-child(2) {
+        margin-right: 0; } }
+  .info-item-container.full-width h4 {
+    margin-bottom: 35px; }
+    @media (max-width: 767px) {
+      .info-item-container.full-width h4 {
+        margin-bottom: 20px; } }
+  .info-item-container h4 {
+    text-transform: uppercase;
+    margin: 0; }
   .info-item-container .info-item-content {
     display: inline-block;
     width: calc(100% / 2 - 7.5px);
@@ -4073,9 +4091,32 @@ main {
       @media (max-width: 767px) {
         .info-item-container .info-item-content.text-padding {
           margin-top: 0; } }
-    .info-item-container .info-item-content h4 {
-      text-transform: uppercase;
-      margin: 0; }
+    .info-item-container .info-item-content ul {
+      list-style: none;
+      margin: 0;
+      padding: 0 40px 0 0; }
+      @media (max-width: 767px) {
+        .info-item-container .info-item-content ul {
+          padding: 0 15px 0 0; } }
+      .info-item-container .info-item-content ul li {
+        font-family: "Roboto Light";
+        line-height: 24px;
+        font-size: 18px;
+        color: #000000;
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 25px; }
+        .info-item-container .info-item-content ul li:before {
+          content: "";
+          color: #0072ce;
+          display: inline-block;
+          border: 1px solid #0072ce;
+          border-radius: 100%;
+          width: 8px;
+          height: 8px;
+          position: absolute;
+          top: 5px;
+          left: 0; }
     .info-item-container .info-item-content p {
       font-family: "Roboto Light";
       line-height: 30px; }
