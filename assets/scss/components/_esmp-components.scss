@@ -8,6 +8,153 @@
             margin-bottom: 50px;
         }
     }
+    &.esmp-coordinators {
+        margin-top: -19px;
+        .info-item-container {
+            margin-bottom: 0;
+            .info-item-content {
+                width: 58%;
+                @include media-xs {
+                    width: 100%;
+                }
+                @include media-md {
+                    width: calc(100% / 2 - 7.5px);
+                }
+                @include media-sm {
+                    width: calc(100% / 2 - 7.5px);
+                }
+                @media (min-width: 1200px) and (max-width: 1250px) { 
+                    width: 57%;
+                }
+                h4 {
+                    line-height: 36px;
+                }
+                p {
+                    line-height: 24px;
+                }
+                .esmp-coordinators-steps {
+                    ul {
+                        list-style: none;
+                        margin: 55px 0 0 0;
+                        padding: 0;
+                        counter-reset: custom-counter;
+                        @include media-xs {
+                            margin: 35px 0 0 0;
+                        }
+                        li {
+                            font-family: $robotoLight;
+                            color: $dark;
+                            font-size: 18px;
+                            line-height: 18px;
+                            position: relative;
+                            counter-increment: custom-counter;
+                            padding-left: 58px;
+                            margin-bottom: 53px;
+                            @include media-xs {
+                                margin-bottom: 55px;
+                            }
+                            &:before {
+                                display: none !important;
+                            }
+                            &:after {
+                                content:counter(custom-counter);
+                                position: absolute;
+                                color: $white;
+                                background-color: $blue;
+                                border-radius: 100%;
+                                font-family: $acuminProExtraCondBold;
+                                letter-spacing: 1.8px;
+                                font-size: 36px;
+                                line-height: 48px;
+                                top: 0;
+                                left: 0;
+                                height: 40px;
+                                width: 40px;
+                                text-align: center;
+                            }
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                            a {
+                                font-family: $robotoLight;
+                                color: $blue;
+                                font-size: 18px;
+                                line-height: 18px;
+                                position: relative;
+                                @include media-xs {
+                                    text-decoration: underline;
+                                }
+                                @include media-sm {
+                                    text-decoration: underline;
+                                }
+                                @include media-md {
+                                    text-decoration: underline;
+                                }
+                                &:before {
+                                    content: "";
+                                    position: absolute;
+                                    height: 1px;
+                                    bottom: 0;
+                                    right: 0;
+                                    visibility: visible;
+                                    width: 100%;
+                                    -webkit-transition: all 0.3s ease-in-out 0s;
+                                    -moz-transition: all 0.3s ease-in-out 0s;
+                                    -ms-transition: all 0.3s ease-in-out 0s;
+                                    -o-transition: all 0.3s ease-in-out 0s;
+                                    transition: all 0.3s ease-in-out 0s;
+                                    background-position: 0 0,0 100%,0 0,100% 0;
+                                    background-repeat: repeat-x;
+                                    background-size: 8px;
+                                    background: $blue;
+                                    @include media-xs {
+                                        display: none;
+                                    }
+                                    @include media-sm {
+                                        display: none;
+                                    }
+                                    @include media-md {
+                                        display: none;
+                                    }
+                                }
+                                &:hover {
+                                    text-decoration: none;
+                                    color: $blue;
+                                    &:before {
+                                        width: 0;
+                                    }
+                                }
+                            }
+                            b, 
+                            strong {
+                                font-family: $robotoBold;
+                            }
+                        }
+                    }
+                }
+            }
+            .info-item-img-container {
+                width: 47%;
+                @include media-lg {
+                    position: absolute;
+                    top: 0;
+                    right: -66px;
+                }
+                @media (min-width: 1200px) and (max-width: 1250px) { 
+                    right: -45px;
+                }
+                @include media-md {
+                    width: calc(100% / 2 - 7.5px);
+                }
+                @include media-sm {
+                    width: calc(100% / 2 - 7.5px);
+                }
+                @include media-xs {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 .esmp-description-container {
     padding-bottom: 140px;
@@ -91,6 +238,72 @@
                     position: absolute;
                     top: 0;
                     margin-left: 6px;
+                }
+            }
+        }
+    }
+}
+.esmp-download {
+    margin: 123px 0 43px 0;
+    @include media-sm {
+        margin: 103px 0 33px 0;
+    }
+    @include media-xs {
+        order: 3;
+        margin: 50px 0 50px 0;
+    }
+    .img-container {
+        display: inline-block;
+        margin-right: 5px;
+        vertical-align: top;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    .esmp-download-content {
+        display: inline-block;
+        vertical-align: top;
+        h4 {
+            text-transform: uppercase;
+            margin: 0;
+        }
+        span {
+            font-family: $robotoLight;
+            color: $dark;
+            font-size: 18px;
+            line-height: 18px;
+            a {
+                color: $blue;
+                font-family: $robotoLight;
+                font-size: 18px;
+                line-height: 18px;
+                position: relative;
+                margin-right: 5px;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    height: 1px;
+                    bottom: 0;
+                    right: 0;
+                    visibility: visible;
+                    width: 100%;
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                    -moz-transition: all 0.3s ease-in-out 0s;
+                    -ms-transition: all 0.3s ease-in-out 0s;
+                    -o-transition: all 0.3s ease-in-out 0s;
+                    transition: all 0.3s ease-in-out 0s;
+                    background-position: 0 0,0 100%,0 0,100% 0;
+                    background-repeat: repeat-x;
+                    background-size: 8px;
+                    background: $blue;
+                }
+                &:hover {
+                    text-decoration: none;
+                    color: $blue;
+                    &:before {
+                        width: 0;
+                    }
                 }
             }
         }
