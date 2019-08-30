@@ -66,6 +66,11 @@ footer {
                     -webkit-transition: all 0.5s;
                     -moz-transition: all 0.5s;
                     transition: all 0.5s;
+                    display: inline-block;
+                    margin-bottom: 0;
+                    @include media-xs-portrait {
+                        display: inline;
+                    }
                     &:hover {
                         -webkit-transition: all 0.5s;
                         -moz-transition: all 0.5s;
@@ -92,7 +97,9 @@ footer {
             color: $white;
             position: relative;
             text-transform: uppercase;
-            font-family: $acuminProExtraCondBlack;
+            @include acuminProExtraCondBlack();
+            display: block;
+            margin-bottom: 7px;
         }
     }
     .footer-info {
@@ -186,7 +193,7 @@ footer {
             margin-bottom: 70px;
         }
         span {
-            margin-bottom: 5px;
+            margin-bottom: 10px;
             @include media-sm {
                 text-align: left;
                 left: 16.5%;
@@ -217,11 +224,10 @@ footer {
                 vertical-align: top;
                 @include media-md {
                     width: calc(100% - 305px);
-                    padding: 18px 22px 9px 22px;
+                    padding: 12px 22px 14px 22px;
                 }
                 @include media-xs {
                     margin-top: 25px;
-                    padding: 13px 52px 7px 52px
                 }
             }
 
@@ -236,7 +242,7 @@ footer {
             margin-top: 50px;
         }
         span {
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
         ul {
             margin: 0;

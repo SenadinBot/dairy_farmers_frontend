@@ -181,6 +181,7 @@
             position: relative;
             top: 10px;
             background: rgba(0, 0, 0, 0.55);
+            padding: 12px 40px 14px 40px;
             @include media-md {
                 width: auto;
                 padding: 13px 22px 7px 22px;
@@ -191,6 +192,10 @@
             }
             @include media-xs-portrait {
                 width: 100%;
+            }
+            &:hover {
+                background-color: $white;
+                color: #54585a;
             }
         }
         p {

@@ -264,7 +264,7 @@
             height: 215px;
         }
         p {
-            font-family: $acuminProExtraCondBlack;
+            @include acuminProExtraCondBlack();            
             font-size: 30px;
             line-height: 30px;
             letter-spacing: 0.9px;

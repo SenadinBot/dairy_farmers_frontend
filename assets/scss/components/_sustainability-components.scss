@@ -106,7 +106,7 @@
                 a {
                     text-transform: uppercase;
                     color: $blue;
-                    font-family: $acuminProExtraCondBlack;
+                    @include acuminProExtraCondBlack();
                     font-size: 30px;
                     line-height: 30px;
                     font-style: normal;
@@ -298,7 +298,7 @@
         a {
             text-transform: uppercase;
             color: $blue;
-            font-family: $acuminProExtraCondBlack;
+            @include acuminProExtraCondBlack();
             font-size: 30px;
             line-height: 30px;
             font-style: normal;

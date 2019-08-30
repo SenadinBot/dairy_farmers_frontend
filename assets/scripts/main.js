@@ -102,7 +102,7 @@ $(document).ready(function () {
         dots: false,
         arrows: false,
         variableWidth: true,
-        infinite: true,
+        infinite: false,
         responsive: [
             {
                 breakpoint: 9999,

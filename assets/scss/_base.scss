@@ -10,7 +10,7 @@ h1 {
 
 }
 h2 {
-    font-family: $acuminProExtraCondBlack;
+    @include acuminProExtraCondBlack();
     font-size: 72px;
     line-height: 72px;
     letter-spacing: 3.6px;
@@ -24,14 +24,14 @@ h2 {
     }
 }
 h3 {
-    font-family: $acuminProExtraCondBlack;
+    @include acuminProExtraCondBlack();    
     font-size: 48px;
     line-height: 0.75;
     letter-spacing: 2.88px;
     color: $dark;
 }
 h4 {
-    font-family: $acuminProExtraCondBlack;
+    @include acuminProExtraCondBlack();    
     font-size: 36px;
     line-height: 1;
     letter-spacing: 1.8px;
@@ -107,8 +107,7 @@ a {
 }
 // Buttons
 .primary-btn {
-    font-family: "acumin-pro-extra-condensed",sans-serif;
-    font-weight: 900;
+    @include acuminProExtraCondBlack();
     background-color: transparent;
     color: $white;
     font-size: 30px;
@@ -132,7 +131,6 @@ a {
         outline: 0;
         background-color: $white;
         color: $blue;
-        border-color: $blue;
     }
     &:focus {
         text-decoration: none;
@@ -143,15 +141,19 @@ a {
     }
     @include media-xs-landscape {
         font-size: 48px;
+        line-height: 48px;
         letter-spacing: 2.88px;
+        padding: 11px 15px 15px 15px;
     }
     @include media-md {
         font-size: 24px;
+        line-height: 24px;
         line-height: normal;
     }
     @include media-xs-portrait {
         font-size: 32px;
-        padding: 13px 15px 7px 15px;
+        line-height: 32px;
+        padding: 12px 15px 14px 15px;        
     }
     &.white-btn {
         color: $blue;
@@ -208,10 +210,7 @@ a {
         -ms-transition: all 0.3s ease-in-out 0s;
         -o-transition: all 0.3s ease-in-out 0s;
         transition: all 0.3s ease-in-out 0s;
-        background-position: 0 0,0 100%,0 0,100% 0;
-        background-repeat: repeat-x;
-        background-size: 8px;
-        background-image: repeating-linear-gradient(90deg, $blue 0, $blue 50%, transparent 0, transparent), repeating-linear-gradient(90deg, $blue 0, $blue 50%, transparent 0, transparent), repeating-linear-gradient(180deg, transparent 0, transparent 50%, transparent 0, transparent), repeating-linear-gradient(180deg, transparent 0, transparent 50%, transparent 0, transparent);
+        border-bottom: 2px dashed $blue;
     }
     &:hover {
         text-decoration: none;
@@ -257,6 +256,6 @@ a {
         }
     }
     .primary-btn {
-        padding: 7px 45px 0px 45px;
+        padding: 12px 45px 14px 45px;
     }
 }

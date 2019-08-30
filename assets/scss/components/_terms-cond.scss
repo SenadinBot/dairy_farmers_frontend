@@ -20,7 +20,7 @@
             font-size: 100px;
             line-height: 88px;
             letter-spacing: 10px;
-            font-family: $acuminProExtraCondBlack;
+            @include acuminProExtraCondBlack();            
             text-transform: uppercase;
             display: block;
             width: 50%;
