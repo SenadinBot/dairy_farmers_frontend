@@ -3,7 +3,7 @@
     @include media-xs {
         margin-bottom: 70px;
     }
-    &.three-article-list-container {
+    .three-article-list-container {
         .article-item-container {
             margin-right: 15px;
             width: calc(100% / 3 - 13px);
@@ -14,11 +14,44 @@
             &:last-child {
                 margin-right: 0;
             }
-        }        
+        }  
+        .primary-btn {
+            @include media-sm {
+                padding: 13px 7px 7px 7px;
+            }
+        }      
+    }
+    &.bottom-border {
+        margin-bottom: 50px;
+        position: relative;
+        .three-article-list-container {
+            border-bottom: 1px solid #b7b7b7;
+            padding-bottom: 90px;
+            @include media-xs {
+                padding-bottom: 50px;
+            }
+        }
     }
     &.programs-article-list-container {
         margin-top: -16px;
         margin-bottom: 95px;
+    }
+    h2 {
+        text-transform: uppercase;
+        color: $dark;
+        width: 35%;
+        @include media-md {
+            width: 50%;
+        }
+        @include media-sm {
+            width: 52%;
+        }
+        @include media-xs {
+            width: 100%;
+        }
+        @include media-xs-landscape {
+            width: 50%;
+        }
     }
 }
 .article-item-container {
@@ -40,9 +73,19 @@
     &:last-child {
         margin-right: 0;
     }
+    &.has-subtitle {
+        .img-container {
+            margin-bottom: 19px;
+        }
+        .article-item-content {
+            span {
+                margin-top: -12px;
+            }
+        }
+    }
     .img-container {
         width: 100%;
-        height: 412;
+        height: auto;
         margin-bottom: 30px;
         @include media-xs {
             margin-bottom: 20px;
@@ -183,6 +226,186 @@
                 b,
                 strong {
                     font-family: $robotoBold;
+                }
+            }
+        }
+    }
+}
+.news-article-container {
+    margin: 130px 0 148px 0;
+    @include media-sm {
+        margin: 130px 0 100px 0;
+    }
+    @include media-xs {
+        margin: 130px 0 100px 0;
+    }
+    .news-article-intro {
+        margin-bottom: 50px;
+        @include media-xs {
+            margin-bottom: 35px;
+        }
+        h2 {
+            color: $dark;
+            font-size: 60px;
+            letter-spacing: 3px;
+            line-height: normal;
+            margin: 0;
+            @include media-xs-portrait {
+                font-size: 46px;
+                line-height: 50px;
+                letter-spacing: 2px;
+            }
+        }
+        span {
+            text-transform: uppercase;
+            color: $blue;
+            letter-spacing: 0.9px;
+            display: block;
+            font-family: $robotoSlabBold;
+            font-size: 18px;
+            line-height: normal;
+        }
+        p {
+            font-family: $robotoLight;
+            font-size: 14px;
+            line-height: normal;
+            margin-bottom: 0;
+        }
+    }
+    .news-img-container {
+        margin-bottom: 30px;
+        img {
+            max-width: 100%;
+            max-height: 596px;
+            // margin: 0 auto 15px auto;
+            // display: block;
+            margin-bottom: 15px;
+            @include media-md {
+                max-height: initila;
+            }
+            @include media-sm {
+                max-height: initila;
+            }
+            @include media-xs {
+                max-height: initila;
+            }
+        }
+        p {
+            font-family: $robotoLight;
+            font-size: 14px;
+            line-height: 18px;
+            i {
+                font-family: $robotoLightItalic;
+                font-size: 12px;
+                display: block;
+            }
+        }
+    }
+    .news-article-content {
+        border-bottom: 1px solid #b7b7b7;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        p {
+            font-family: $robotoLight;
+            line-height: 30px;
+            margin-bottom: 25px;
+        }
+    }
+    .news-article-author {
+        .author-img-container {
+            display: inline-block;
+            width: 117px;
+            margin-right: 13px;
+            vertical-align: top;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+            @include media-xs-portrait {
+                width: 80px;
+                margin-right: 10px;
+            }
+        }
+        .news-article-author-content {
+            display: inline-block;
+            vertical-align: top;
+            max-width: 80%;
+            @include media-xs-landscape {
+                max-width: 75%;
+            }
+            @include media-xs-portrait {
+                max-width: 70%;
+            }
+            .author-name {
+                min-height: 75px;
+                @include media-xs-portrait {
+                    min-height: 50px;
+                }
+                span {
+                    font-size: 18px;
+                    line-height: 18px;
+                    font-family: $robotoLight;
+                    @include media-xs-portrait {
+                        font-size: 14px;
+                        line-height: 14px;
+                    }
+                }
+                i {
+                    font-size: 14px;
+                    line-height: 14px;
+                    font-family: $robotoLightItalic;
+                    color: $dark;
+                    display: block;
+                    @include media-xs-portrait {
+                        font-size: 12px;
+                        line-height: 12px;
+                    }
+                }
+            }
+            p {
+                font-size: 18px;
+                line-height: 30px;
+                font-family: $robotoLight;
+                margin: 0;
+                @include media-xs-portrait {
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+            a {
+                position: relative;
+                color: $blue;
+                font-size: 18px;
+                line-height: 30px;
+                font-family: $robotoLight;
+                @include media-xs-portrait {
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    height: 1px;
+                    bottom: 0;
+                    right: 0;
+                    visibility: visible;
+                    width: 100%;
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                    -moz-transition: all 0.3s ease-in-out 0s;
+                    -ms-transition: all 0.3s ease-in-out 0s;
+                    -o-transition: all 0.3s ease-in-out 0s;
+                    transition: all 0.3s ease-in-out 0s;
+                    background-position: 0 0,0 100%,0 0,100% 0;
+                    background-repeat: repeat-x;
+                    background-size: 8px;
+                    background: $blue;
+                }
+                &:hover {
+                    text-decoration: none;
+                    color: $blue;
+                    &:before {
+                        width: 0;
+                    }
                 }
             }
         }
