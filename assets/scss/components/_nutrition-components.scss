@@ -30,11 +30,10 @@
     }
     .nutrients-list-intro {
         .counter-num {
-            font-family: $acuminProSemiCondBold;
-            font-size: 536px;
-            font-style: normal;
+            @include acuminProSemiCondBold();
+            font-size: 500px;
             font-stretch: normal;
-            line-height: 445px;
+            line-height: 500px;
             letter-spacing: normal;
             color: $blue;
             display: inline-block;
