@@ -58,7 +58,7 @@ footer {
                 }
                 a {
                     font-size: 18px;
-                    line-height: 1.33;
+                    line-height: 1;
                     font-family: $roboto;
                     letter-spacing: normal;
                     text-transform: initial;
@@ -66,11 +66,8 @@ footer {
                     -webkit-transition: all 0.5s;
                     -moz-transition: all 0.5s;
                     transition: all 0.5s;
-                    display: inline-block;
+                    display: inline;
                     margin-bottom: 0;
-                    @include media-xs-portrait {
-                        display: inline;
-                    }
                     &:hover {
                         -webkit-transition: all 0.5s;
                         -moz-transition: all 0.5s;

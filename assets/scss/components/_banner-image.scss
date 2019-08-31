@@ -671,6 +671,7 @@
         border: 10px solid $mainColor;
         border-right: none;
         position: relative;
+        top: -35px;
         @include media-md {
             width: 300px;
             height: 510px;
@@ -684,6 +685,7 @@
             height: auto;
             padding: 370px 0 97px 0;
             margin-bottom: 20px;
+            top: 0;
         }
         @include media-xs-landscape {
             width: 387px;
@@ -691,7 +693,7 @@
         &:after {
             content: "";
             background: $mainColor;
-            height: 60px;
+            height: 55px;
             width: 10px;
             position: absolute;
             top: 0;
@@ -730,7 +732,7 @@
         @include acuminProExtraCondBlack();        
         position: absolute;
         left: 78%;
-        top: 19%;
+        top: 15%;
         width: 200%;
         @include media-lg {
             letter-spacing: 10px;
@@ -738,6 +740,7 @@
         @include media-md {
             left: 54%;
             width: 279%;
+            top: 17%;
         }
         @include media-sm {
             width: 119%;
@@ -750,7 +753,7 @@
         @include media-xs {
             left: 15%;   
             top: initial;
-            bottom: 10%;
+            bottom: 21%;
             transform: translateY(7%);
             min-height: 88px;
             word-break: break-word;
@@ -775,13 +778,13 @@
         width: 49%;
         padding-left: 15px;
         display: inline-block;
-        margin: 35% 0 0 0;
+        margin: 33% 0 0 0;
         vertical-align: top;
         @include media-md {
             width: 65%;  
             margin: 38% 0 0 0;
             position: relative;
-            top: -25px;          
+            top: -45px;          
         }
         @include media-sm {
             width: 85%;   

@@ -1,6 +1,6 @@
 .nutrients-list-container {
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
     position: relative;
     .nutrients-list-bg-image {
         background-position: center;
@@ -18,6 +18,18 @@
         @include media-sm {
             top: -20%;
         }
+        &:after {
+            content: "";
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+            position: absolute;
+            height: 50px;
+            width: 100%;
+            background-color: white;
+            opacity: 1;
+            bottom: -50px;
+            left: 0;
+        }
     }
     .mobile-decrp {
         text-align: center;
@@ -29,27 +41,31 @@
         }
     }
     .nutrients-list-intro {
+        margin-top: -35px;
+        margin-bottom: 6px;
         .counter-num {
             @include acuminProSemiCondBold();
             font-size: 500px;
             font-stretch: normal;
-            line-height: 500px;
+            line-height: 430px;
             letter-spacing: normal;
             color: $blue;
             display: inline-block;
             width: 415px;
             vertical-align: top;
             position: relative;
-            left: -40px;
+            top: -78px;
+            left: -55px;
             @include media-sm {
                 left: 0;
-                font-size: 466px;
+                font-size: 380px;
                 width: 360px;
             }
             @include media-xs {
-                left: 0;
+                left: -5px;
                 font-size: 400px;
                 line-height: 335px;
+                top: 0;
             }
         }
         .nutrients-list-intro-content {
@@ -57,15 +73,18 @@
             width: calc(100% - 500px);
             vertical-align: top;
             margin-top: 60px;
+            margin-left: -20px;
             @include media-md {
                 width: calc(100% - 420px);
             }
             @include media-sm {
-                width: calc(100% - 370px);
+                width: calc(100% - 355px);
+                margin-top: 90px;
             }
             @include media-xs {
                 width: 100%;
-                margin-top: 0;
+                margin-top: 25px;
+                margin-left: 0;
             }
             span {
                 color: $dark;
@@ -76,6 +95,8 @@
                 letter-spacing: 12px;
                 @include acuminProExtraCondBlack();
                 text-transform: uppercase;
+                display: block;
+                margin-bottom: 8px;
                 @include media-sm {
                     font-size: 82px;
                     word-break: break-all;
@@ -98,7 +119,7 @@
     }
     .nutrients-list-carousel {
         font-size: 0;
-        margin-bottom: 16px;
+        margin-bottom: 10px;
         @include media-xs {
             margin-bottom: 0;
             margin-top: 40px;
@@ -126,7 +147,7 @@
                 color: $dark;
                 position: relative;
                 margin: 0;
-                line-height: 46px;
+                line-height: 1;
                 @include media-sm {
                     font-size: 64px;
                     line-height: 60px;
@@ -140,13 +161,16 @@
                     font-size: 125px;
                     font-family: $robotoSlabBold;
                     position: absolute;
-                    top: -10px;
+                    top: -27px;
                     padding-left: 8px;
+                    line-height: 1;
                     @include media-sm {
                         font-size: 78px;
+                        top: -6px;
                     }
                     @include media-xs-portrait {
                         font-size: 68px;
+                        top: -2px
                     }
                 }
             }
@@ -250,15 +274,12 @@
         }
     }
     .column-image-container  {
-        margin-bottom: 97px;
+        margin-bottom: 36px;
         &.remove-bottom-spacing {
             margin-bottom: 0;
             @include media-xs {
                 margin-bottom: 0;
             }
-        }
-        @include media-xs {
-            margin-bottom: 70px;
         }
         &.add-bottom-spacing {
             margin-bottom: 200px;
@@ -283,6 +304,7 @@
         margin-bottom: 70px;
     }
     .true-false-intro {
+        margin-bottom: 15px;
         span {
             color: $dark;
             text-transform: uppercase;
@@ -337,11 +359,7 @@
             color: $blue;
             &:before {
                 visibility: hidden;
-                -webkit-transform: scaleX(0);
-                -moz-transform: scaleX(0);
-                -ms-transform: scaleX(0);
-                -o-transform: scaleX(0);
-                transform: scaleX(0);
+                width: 0;
             }
         }
         &:before {
@@ -350,13 +368,8 @@
             width: 100%;
             height: 1px;
             bottom: 1px;
-            left: 0;
+            right: 0;
             visibility: visible;
-            -webkit-transform: scaleX(1);
-            -moz-transform: scaleX(1);
-            -ms-transform: scaleX(1);
-            -o-transform: scaleX(1);
-            transform: scaleX(1);
             -webkit-transition: all 0.3s ease-in-out 0s;
             -moz-transition: all 0.3s ease-in-out 0s;
             -ms-transition: all 0.3s ease-in-out 0s;
@@ -379,6 +392,8 @@
     h4 {
         text-transform: uppercase;
         margin-bottom: 0;
+        margin-bottom: 2px;
+        padding-right: 5px;    
     }
     .true-false-item-container {
         font-size: 0;
@@ -436,7 +451,7 @@
             }
         }
         h4 {
-            margin-bottom: 20px;
+            margin-bottom: 27px;
             @include media-sm {
                 font-size: 32px;
             }
@@ -454,11 +469,14 @@
                 @include media-xs {
                     margin-left: 0;
                 }
+                @include media-sm {
+                    margin-left: 0;
+                }
             }
         }
         .primary-btn {
             @include media-sm {
-                padding: 13px 32px 7px 32px
+                padding: 12px 32px 14px 32px
             }
         }
         .true-false-item-content {
@@ -607,7 +625,7 @@
             line-height: 30px;
             letter-spacing: 0.9px;
             width: 210px;
-            margin: 0;
+            margin: 0 0 5px 0;
             @include media-xs {
                 width: 120px;
             }
@@ -654,6 +672,8 @@
             color: $dark;
             display: block;
             margin-bottom: 0;
+            top: -15px;
+            position: relative;
         }
         p {
             display: block;
@@ -662,6 +682,9 @@
             margin-bottom: 23px;
             width: 60%;
             @include media-xs-portrait {
+                width: 100%;
+            }
+            @include media-md {
                 width: 100%;
             }
         }

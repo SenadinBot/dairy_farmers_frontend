@@ -1,6 +1,6 @@
 .column-image-container {
     .column-image-intro {
-        margin-bottom: 33px;
+        margin-bottom: 45px;
         h2 {
             color: $dark;
             display: inline-block;
@@ -44,7 +44,7 @@
     }
     .column-image-item-container {
         position: relative;
-        padding-bottom: 50px;
+        padding-bottom: 43px;
         background-color: rgba(0, 53, 142, 0.8);
         &:after {
             content: "";
@@ -52,7 +52,7 @@
             height: 5px;
             background-color: #ffc600;
             position: absolute;
-            bottom: 50px;
+            bottom: 44px;
             left: -webkit-calc(100% + (-100vw - 1140px) / 2);
             left: calc(100% + (-100vw - 1140px) / 2);
             margin-left: 15px;
@@ -84,7 +84,7 @@
                 .img-container {
                     height: 216px;
                     width: 100%;
-                    margin-bottom: 25px;
+                    margin-bottom: 12px;
                     @include media-xs {
                         height: auto;
                     }
@@ -99,10 +99,8 @@
                         color: $white;
                         margin: 0;
                         text-transform: uppercase;
-                        line-height: 24px;
-                        @include media-sm {
-                            line-height: 1;
-                        }
+                        line-height: 1;
+                        margin-bottom: 3px;
                     }
                     p {
                         color: $white;
