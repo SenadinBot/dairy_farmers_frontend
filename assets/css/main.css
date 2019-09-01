@@ -2212,7 +2212,6 @@ footer {
       text-transform: uppercase;
       display: block;
       width: 100%;
-      margin-top: 45x;
       position: relative;
       left: -135px; }
       @media (min-width: 992px) and (max-width: 1199px) {
@@ -2225,7 +2224,8 @@ footer {
           width: 140%;
           font-size: 120px;
           left: 0;
-          margin-top: 0; } }
+          margin-top: 0;
+          top: -20px; } }
       @media (max-width: 767px) {
         .banner-image-container .banner-image-content span {
           width: 125%;
@@ -2233,7 +2233,8 @@ footer {
           line-height: 66px;
           letter-spacing: 6px;
           left: 0;
-          margin-top: 0; } }
+          margin-top: 0;
+          top: -10px; } }
       @media (max-width: 767px) and (orientation: landscape) {
         .banner-image-container .banner-image-content span {
           font-size: 120px;
