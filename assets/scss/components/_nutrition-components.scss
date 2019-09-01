@@ -27,7 +27,7 @@
             width: 100%;
             background-color: white;
             opacity: 1;
-            bottom: -50px;
+            bottom: -40px;
             left: 0;
         }
     }
@@ -62,10 +62,10 @@
                 width: 360px;
             }
             @include media-xs {
-                left: -5px;
+                left: -8px;
                 font-size: 400px;
                 line-height: 335px;
-                top: 0;
+                top: -45px;
             }
         }
         .nutrients-list-intro-content {
@@ -83,7 +83,7 @@
             }
             @include media-xs {
                 width: 100%;
-                margin-top: 25px;
+                margin-top: -25px;
                 margin-left: 0;
             }
             span {
@@ -221,14 +221,13 @@
     .btn-container {
         width: 100%;
         text-align: center;
-        margin-top: -44px;
-        @include media-xs {
-            margin-top: initial;
-        }
+        margin-top: -34px;
         .primary-btn {
             @include media-xs-portrait {
-                padding: 13px 5px 7px 5px;
+                padding: 12px 5px 14px 5px;
                 width: 100%;
+                font-size: 30px;
+                line-height: 30px;
             }
         }
     }
