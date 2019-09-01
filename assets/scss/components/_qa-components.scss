@@ -1,10 +1,7 @@
 .qa-container {
     h2 {
         color: $dark;
-        margin-top: -22px;
-        @include media-xs {
-            margin-top: 0;
-        }
+        margin: -22px 0 11px 0;
     }
     .info-item-container {
         &:last-child {
@@ -19,8 +16,8 @@
     height: 100%;
     width: 100%;
     position: relative;
-    margin-bottom: 150px;
-    padding: 100px 0 80px 0;
+    margin-bottom: 145px;
+    padding: 100px 0 83px 0;
     @include media-xs {
         margin-bottom: 100px;
         padding: 80px 0 60px 0;
@@ -43,7 +40,7 @@
         border: 5px solid #ffc600;
         border-right: none;
         border-left: none;
-        padding: 50px 30px 30px 0;
+        padding: 31px 30px 49px 0;
         @include acuminProExtraCondBlack();
         font-size: 100px;
         line-height: 88px;
@@ -52,25 +49,24 @@
         font-style: normal;
         font-stretch: normal;
         display: block;
-        margin-bottom: 50px;
+        margin-bottom: 45px;
         text-transform: uppercase;
-        width: 47%;
-        @include media-xs {
-            padding: 35px 30px 15px 0;
-        }
+        width: 48%;
         @include media-xs-portrait {
             width: 100%;
-            font-size: 58px;
-            line-height: 62px;
+            font-size: 56px;
+            line-height: 56px;
+            word-break: break-word;
+            padding: 31px 0 49px 0;
         }
         @include media-xs-landscape {
-            width: 81%;
+            width: 84%;
         }
         @include media-sm {
-            width: 71%;
+            width: 73%;
         }
         @include media-md {
-            width: 56%;
+            width: 58%;
         }
     }
     p {
@@ -92,7 +88,7 @@
         }
     }
     .farm-verification-item-container {
-        margin-top: 45px;
+        margin-top: 50px;
         .farm-verification-item {
             display: inline-block;
             width: calc(100% / 3 - 3px);
@@ -108,7 +104,7 @@
             h4 {
                 text-transform: uppercase;
                 color: $white;
-                margin: 0;
+                margin: -8px 0 3px 0;
             }
             p {
                 color: $white;

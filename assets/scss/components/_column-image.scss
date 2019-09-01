@@ -35,7 +35,9 @@
     }
     &.remove-bottom-spacing {
         .column-image-item-container {
+            padding-bottom: 50px;
             &:after { 
+                bottom: 50px;
                 @include media-xs {
                     display: none;
                 }

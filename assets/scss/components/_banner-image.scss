@@ -476,10 +476,10 @@
 .big-banner-container {
     margin-top: -120px;
     position: relative;
-    margin-bottom: 110px;
+    margin-bottom: 140px;
     @include media-sm {
         margin-top: 0;
-        margin-bottom: 90px;
+        margin-bottom: 85px;
     }
     @include media-xs {
         margin-top: 0; 
@@ -508,6 +508,8 @@
         background-position: right;
         background-repeat: no-repeat;
         background-size: cover;
+        position: relative;
+        z-index: 9;
         @include media-md {
             height: 535px;
         }
@@ -548,16 +550,58 @@
             .big-banner-image-container {
                 height: 500px;
             }
+            .banner-title {
+                margin-top: -298px;
+                @include media-xs {
+                    margin-top: -180px;
+                }
+                @include media-sm {
+                    margin-top: -180px;
+                }
+                .title-border {
+                    &:before {
+                        height: 175px;
+                        @include media-sm {
+                            height: 40px;
+                        }
+                        @include media-xs {
+                            height: 40px;
+                        }
+                    }
+                }
+                span {
+                    top: 19%;
+                    @include media-sm {
+                        top: initial;
+                    }
+                    @include media-xs {
+                        top: initial;
+                    }
+                }
+                p {
+                    margin: 28.5% 0 0 0;
+                    @include media-xs {
+                        margin-top: 15px;
+                    }
+                    @include media-sm {
+                        margin-top: 15px;
+                    }
+                    @include media-md {
+                        margin: 38% 0 0 0;
+                    }
+                }
+            }
+            
         }
         .banner-title {
-            margin-top: -262px;
+            margin-top: -316px;
             .title-border {
                 height: 507px;
                 @include media-sm {
                     height: auto;
                 }
                 &:before {
-                    height: 165px;
+                    height: 155px;
                     @include media-sm {
                         height: 40px;
                     }
@@ -594,7 +638,7 @@
                 }
             }
             p {
-                margin: 29% 0 0 0;
+                margin: 30% 0 0 0;
                 @include media-xs {
                     margin-top: 15px;
                     padding-left: 0;
@@ -659,7 +703,7 @@
         }
     }
     &.small-bottom-spacing {
-        margin-bottom: 60px;
+        margin-bottom: 55px;
         @include media-xs {
             margin-bottom: 70px;       
         }
@@ -675,7 +719,6 @@
         border: 10px solid $mainColor;
         border-right: none;
         position: relative;
-        top: -35px;
         @include media-md {
             width: 300px;
             height: 510px;
@@ -689,7 +732,6 @@
             height: auto;
             padding: 140px 0 40px 0;
             margin-bottom: 20px;
-            top: 0;
         }
         @include media-xs-landscape {
             width: 387px;
@@ -736,7 +778,7 @@
         @include acuminProExtraCondBlack();        
         position: absolute;
         left: 78%;
-        top: 15%;
+        top: 16%;
         width: 220%;
         @include media-lg {
             letter-spacing: 10px;
@@ -752,7 +794,7 @@
             bottom: 0;
             transform: none;
             min-height: initial;
-            left: 75%;
+            left: 50%;
             position: relative;
             display: block;
             margin-top: -19px;
@@ -790,7 +832,7 @@
         width: 49%;
         padding-left: 15px;
         display: inline-block;
-        margin: 33% 0 0 0;
+        margin: 36% 0 0 0;
         vertical-align: top;
         @include media-md {
             width: 65%;  
@@ -802,12 +844,13 @@
             width: 85%;   
             padding-left: 85px;
             top: 0;
-            margin-top: 15px;                                   
+            margin-top: 30px;                                   
         }
         @include media-xs {
             width: 100%;   
             top: 0;   
-            margin-top: 15px;                                   
+            margin-top: 15px;    
+            padding-left: 0;                               
         }
     }
 }

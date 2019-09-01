@@ -3,6 +3,7 @@
     width: calc(100% / 2 - 15px); 
     padding-right: 20px;
     margin-bottom: 100px;
+    vertical-align: top;
     @include media-xs {
         padding-right: 0;
         width: 100%;
@@ -45,6 +46,9 @@
         background-color: #1471c8;
         .primary-btn {
             margin-top: 31px;
+            @include media-xs-landscape {
+                width: 60%;
+            }
         }
     }
     &.white-text {
@@ -70,13 +74,13 @@
         margin: 0;
     }
     .primary-btn {
-        margin-top: 40px;
+        margin-top: 45px;
         @include media-xs {
             width: 100%;
         }
         @include media-xs-landscape {
-            width: 60%;
-            margin: 10px auto 0 auto;
+            width: 85%;
+            margin: 45px auto 0 auto;
             display: block;
             font-size: 40px;
             line-height: 40px;
@@ -132,14 +136,12 @@
     }
     &.full-width-image {
         .img-container {
-            height: 100%;
+            height: auto;            
             max-height: 500px;
             @include media-sm {
                 max-height: initial;
-                height: auto;
             }
             @include media-xs {
-                height: auto;
                 max-height: initial;
             }
             img {
@@ -163,6 +165,8 @@
                 font-size: 18px;
                 line-height: normal;
                 color: $dark;
+                margin-bottom: 6px;
+                display: inline-block;            
                 &:hover {
                     color: $dark;
                     &:after {
@@ -304,7 +308,7 @@
         .suggestion-content {
             vertical-align: bottom;
             padding-left: 20px;
-            padding-bottom: 28px;
+            padding-bottom: 23px;
             z-index: 99;
             text-align: center;
             @include media-xs {
@@ -329,7 +333,7 @@
             .small-img {
                 height: 129px;
                 text-align: center;
-                margin-bottom: 27px;
+                margin-bottom: 22px;
                 @include media-xs-portrait {
                     height: 80px;
                 }
@@ -369,9 +373,7 @@
             color: $dark;
             display: block;
             margin-bottom: 0;
-            margin-top: 0;
-            top: -15px;
-            position: relative;
+            margin-top: -15px;
             @include media-md {
                 word-break: break-word;
                 font-size: 64px;
@@ -386,7 +388,7 @@
             display: block;
             font-family: $robotoLight;
             line-height: 26px;
-            margin-bottom: 23px;
+            margin-bottom: 32px;
             width: 95%;
             @include media-xs-portrait {
                 width: 100%;
@@ -398,10 +400,10 @@
             }
             @include media-xs-landscape {
                 width: 60%;
-                padding: 13px 22px 7px 22px;
+                padding: 12px 22px 14px 22px;
             }
             @include media-md {
-                padding: 13px 22px 7px 22px;
+                padding: 12px 22px 14px 22px;
             }
         }
     }
@@ -494,7 +496,7 @@
             order: 2; 
         }
         &.text-padding {
-            margin-top: 55px;
+            margin-top: 61px;
             @include media-xs {
                 margin-top: 0;
             }
@@ -620,7 +622,7 @@
         display: none;
         width: 100%;
         margin-top: 30px;
-        padding: 60px 70px 30px 46px;
+        padding: 60px 46px 30px 46px;
     }
     @include media-xs {
         display: none;
@@ -688,6 +690,9 @@
     @include media-xs {
         padding: 70px 0 50px 0;
     }
+    &.add-bottom-spacing {
+        padding-bottom: 50px;
+    }
     .primary-btn {
         @include media-xs-landscape {
             margin: 10px auto 0 auto;
@@ -697,7 +702,7 @@
     h2 {
         color: $dark;
         width: 50%;
-        margin: -55px 0 28px 0;
+        margin: -68px 0 43px 0;
         @include media-xs {
             width: 100%;
             margin: -20px 0 28px 0;

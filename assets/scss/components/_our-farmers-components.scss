@@ -47,14 +47,14 @@
     }
     .farmers-history-intro {
         position: relative;
-        margin: -25px 0 20px 0;
+        margin: -45px 0 20px 0;
         &:before {
             content: "";
             background: rgba(255, 255, 255, 0.9);
             width: 67%;
             height: 180px;
             position: absolute;
-            top: -25px;
+            top: -11px;
             left: -28px;
             @include media-xs-portrait {
                 width: calc(100% + 30px);
@@ -183,7 +183,7 @@
     padding-bottom: 150px;
     @include media-xs {
         padding-bottom: 50px;
-        margin: 90px 0 70px 0;
+        margin: 70px 0 70px 0;
     }
     @include media-sm {
         padding-bottom: 80px;
@@ -203,7 +203,7 @@
         }
     }
     .farmers-carousel-intro {
-        margin-bottom: 10px;
+        margin: -15px 0 19px 0;
         h2 {
             color: $dark;
             display: inline-block;
@@ -282,8 +282,8 @@
                 }
                 h4 {
                     letter-spacing: 2.16px;
-                    line-height: normal;
-                    margin-bottom: 28px;
+                    line-height: 44px;
+                    margin-bottom: 32px;
                 }
                 .primary-btn {
                     margin-top: 20px;
