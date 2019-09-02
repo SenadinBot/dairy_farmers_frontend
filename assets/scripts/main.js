@@ -169,26 +169,12 @@ $(document).ready(function () {
     $('.our-milk-carousel').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        dots: false,
+        dots: true,
         arrows: false,
-        infinite: true,
+        infinite: false,
         speed: 500,
         cssEase: 'linear',
         centerMode: true,
-        responsive: [
-            {
-                breakpoint: 9999,
-                settings: "unslick"
-            },
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    dots: true
-                }
-            }
-        ]
     });
 
     // T&C Scroll

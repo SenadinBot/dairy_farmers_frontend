@@ -3024,7 +3024,7 @@ main {
     margin-bottom: 10px; }
     @media (max-width: 767px) {
       .nutrients-list-container .nutrients-list-carousel {
-        margin-bottom: 0;
+        margin-bottom: 10px;
         margin-top: 40px; } }
     @media (max-width: 767px) {
       .nutrients-list-container .nutrients-list-carousel .slick-list {
@@ -3076,7 +3076,7 @@ main {
         line-height: 1.44;
         font-family: "Roboto Light";
         padding-right: 40px; }
-        @media (max-width: 767px) and (orientation: landscape) {
+        @media (max-width: 767px) {
           .nutrients-list-container .nutrients-list-carousel .nutrients-list-item p {
             padding-right: 0; } }
       .nutrients-list-container .nutrients-list-carousel .nutrients-list-item:nth-child(1) h2, .nutrients-list-container .nutrients-list-carousel .nutrients-list-item:nth-child(2) h2, .nutrients-list-container .nutrients-list-carousel .nutrients-list-item:nth-child(3) h2, .nutrients-list-container .nutrients-list-carousel .nutrients-list-item:nth-child(4) h2 {
@@ -3105,6 +3105,9 @@ main {
     width: 100%;
     text-align: center;
     margin-top: -34px; }
+    @media (max-width: 767px) {
+      .nutrients-list-container .btn-container {
+        margin-top: 0; } }
     @media (max-width: 767px) and (orientation: portrait) {
       .nutrients-list-container .btn-container .primary-btn {
         padding: 12px 5px 14px 5px;
@@ -4750,11 +4753,16 @@ main {
           margin-right: 0; }
         .our-milk-container .our-milk-carousel .slick-dots li.slick-active button:after {
           background: #0072ce; }
+    .our-milk-container .our-milk-carousel .slick-list {
+      margin-bottom: 20px;
+      width: 100%; }
     .our-milk-container .our-milk-carousel .our-milk-slide {
       text-align: center;
       position: relative;
-      display: inline-block;
-      width: calc(100% / 5); }
+      display: inline-block; }
+      @media (min-width: 1200px) {
+        .our-milk-container .our-milk-carousel .our-milk-slide {
+          width: calc(100% / 5); } }
       @media (min-width: 992px) and (max-width: 1199px) {
         .our-milk-container .our-milk-carousel .our-milk-slide {
           width: calc(100% / 5 - 30px);
@@ -4797,8 +4805,6 @@ main {
           .our-milk-container .our-milk-carousel .our-milk-slide.cream-slide img {
             height: auto;
             max-width: 100%; } }
-      .our-milk-container .our-milk-carousel .our-milk-slide .slick-list {
-        margin-bottom: 20px; }
       .our-milk-container .our-milk-carousel .our-milk-slide img {
         object-fit: contain;
         display: inline-block; }
@@ -4842,29 +4848,30 @@ main {
       .our-milk-container .our-milk-carousel .our-milk-slide .slide-content {
         z-index: 9;
         position: relative; }
-      .our-milk-container .our-milk-carousel .our-milk-slide p {
-        display: none;
-        font-family: "Roboto Light";
-        line-height: 30px;
-        text-align: left;
-        width: 520px;
-        position: absolute;
-        bottom: -128px;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        transform: translateX(-50%);
-        margin: 0;
-        height: 124px;
-        -webkit-box-orient: vertical;
-        -moz-box-orient: vertical;
-        -ms-box-orient: vertical;
-        box-orient: vertical;
-        -webkit-line-clamp: 4;
-        -moz-line-clamp: 4;
-        -ms-line-clamp: 4;
-        line-clamp: 4;
-        overflow: hidden; }
+      @media (min-width: 992px) {
+        .our-milk-container .our-milk-carousel .our-milk-slide p {
+          display: none;
+          font-family: "Roboto Light";
+          line-height: 30px;
+          text-align: left;
+          width: 520px;
+          position: absolute;
+          bottom: -128px;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+          margin: 0;
+          height: 124px;
+          -webkit-box-orient: vertical;
+          -moz-box-orient: vertical;
+          -ms-box-orient: vertical;
+          box-orient: vertical;
+          -webkit-line-clamp: 4;
+          -moz-line-clamp: 4;
+          -ms-line-clamp: 4;
+          line-clamp: 4;
+          overflow: hidden; } }
   .our-milk-container .our-milk-carousel-controls {
     text-align: center;
     display: block;

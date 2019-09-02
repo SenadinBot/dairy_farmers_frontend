@@ -56,6 +56,12 @@ $acuminProExtraCondBold: "Acumin Pro ExtraCondensed Bold";
     }
 }
 // Large Devices, Desktop .visible-lg-* 
+@mixin media-lmd {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+// Large Devices, Desktop .visible-lg-* 
 @mixin media-lg {
     @media (min-width: 1200px) {
         @content;

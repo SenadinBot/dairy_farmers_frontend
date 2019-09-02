@@ -69,11 +69,17 @@
                 }
             }
         }
+        .slick-list {
+            margin-bottom: 20px;
+            width: 100%;
+        }
         .our-milk-slide {
             text-align: center;
             position: relative;
             display: inline-block;
-            width: calc(100% / 5);
+            @include media-lg { 
+                width: calc(100% / 5);
+            }
             @include media-md {
                 width: calc(100% / 5 - 30px);
                 margin-right: 40px;
@@ -133,9 +139,6 @@
                     }
                 }
             }
-            .slick-list {
-                margin-bottom: 20px;
-            }
             img {
                 // max-height: 153px;
                 // margin-bottom: 20px;
@@ -187,28 +190,30 @@
                 position: relative;
             }
             p {
-                display: none;
-                font-family: $robotoLight;
-                line-height: 30px;
-                text-align: left;
-                width: 520px;
-                position: absolute;
-                bottom: -128px;
-                left: 50%;
-                -webkit-transform: translateX(-50%);
-                -ms-transform: translateX(-50%);
-                transform: translateX(-50%);
-                margin: 0;
-                height: 124px;
-                -webkit-box-orient: vertical;
-                -moz-box-orient: vertical;
-                -ms-box-orient: vertical;
-                box-orient: vertical;
-                -webkit-line-clamp: 4;
-                -moz-line-clamp: 4;
-                -ms-line-clamp: 4;
-                line-clamp: 4;
-                overflow: hidden;
+                @include media-lmd {
+                    display: none;
+                    font-family: $robotoLight;
+                    line-height: 30px;
+                    text-align: left;
+                    width: 520px;
+                    position: absolute;
+                    bottom: -128px;
+                    left: 50%;
+                    -webkit-transform: translateX(-50%);
+                    -ms-transform: translateX(-50%);
+                    transform: translateX(-50%);
+                    margin: 0;
+                    height: 124px;
+                    -webkit-box-orient: vertical;
+                    -moz-box-orient: vertical;
+                    -ms-box-orient: vertical;
+                    box-orient: vertical;
+                    -webkit-line-clamp: 4;
+                    -moz-line-clamp: 4;
+                    -ms-line-clamp: 4;
+                    line-clamp: 4;
+                    overflow: hidden;
+                }
             }
         }
     }
