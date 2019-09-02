@@ -151,43 +151,45 @@ $(document).ready(function () {
     });
 
     // Our Milk Carousel
-    $(".our-milk-range").on("change mousemove", function () {
-        var previousDiv = $(".our-milk-slide.active-slide");
-        $(".our-milk-slide").removeClass("active-slide");
-        var activeDiv = $(".our-milk-slide[data-value='" + parseInt($(this).val()) + "']");
-        activeDiv.addClass("active-slide");
-        if (activeDiv.index() > Math.round($(".our-milk-slide").length / 2 - 0.1, 0)) {
-            activeDiv.insertBefore(previousDiv);
-        }
-        else {
-            activeDiv.insertAfter(previousDiv);
-        }
-    });
+    if ($(window).width() > 992) {
+        $(".our-milk-range").on("change mousemove", function () {
+            var previousDiv = $(".our-milk-slide.active-slide");
+            $(".our-milk-slide").removeClass("active-slide");
+            var activeDiv = $(".our-milk-slide[data-value='" + parseInt($(this).val()) + "']");
+            activeDiv.addClass("active-slide");
+            if (activeDiv.index() > Math.round($(".our-milk-slide").length / 2 - 0.1, 0)) {
+                activeDiv.insertBefore(previousDiv);
+            }
+            else {
+                activeDiv.insertAfter(previousDiv);
+            }
+        });
+    };
 
-    // $('.our-milk-carousel').slick({
-    //     slidesToShow: 4,
-    //     slidesToScroll: 1,
-    //     dots: false,
-    //     arrows: false,
-    //     infinite: true,
-    //     speed: 500,
-    //     cssEase: 'linear',
-    //     centerMode: true,
-    //     responsive: [
-    //         {
-    //             breakpoint: 9999,
-    //             settings: "unslick"
-    //         },
-    //         {
-    //             breakpoint: 991,
-    //             settings: {
-    //                 slidesToShow: 3,
-    //                 slidesToScroll: 1,
-    //                 dots: true
-    //             }
-    //         }
-    //     ]
-    // });
+    $('.our-milk-carousel').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        cssEase: 'linear',
+        centerMode: true,
+        responsive: [
+            {
+                breakpoint: 9999,
+                settings: "unslick"
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    dots: true
+                }
+            }
+        ]
+    });
 
     // T&C Scroll
     $('.t-c-link, .t-c-sublink').click(function (event) {

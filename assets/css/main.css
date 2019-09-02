@@ -6324,25 +6324,66 @@ main {
   display: inline-block;
   width: calc(100% / 5);
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .our-milk-container .our-milk-carousel .our-milk-slide {
+    width: calc(100% / 5 - 30px);
+    margin-right: 40px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .our-milk-container .our-milk-carousel .our-milk-slide:last-child {
+    margin-right: 0;
+  }
+}
 .our-milk-container .our-milk-carousel .our-milk-slide.butter-slide img {
   width: 197px;
   height: 150px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .our-milk-container .our-milk-carousel .our-milk-slide.butter-slide img {
+    height: auto;
+    max-width: 100%;
+  }
 }
 .our-milk-container .our-milk-carousel .our-milk-slide.yogurt-slide img {
   width: 268px;
   height: 126px;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .our-milk-container .our-milk-carousel .our-milk-slide.yogurt-slide img {
+    height: auto;
+    max-width: 100%;
+  }
+}
 .our-milk-container .our-milk-carousel .our-milk-slide.milk-slide img {
   width: 195px;
   height: 346px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .our-milk-container .our-milk-carousel .our-milk-slide.milk-slide img {
+    height: auto;
+    max-width: 100%;
+  }
 }
 .our-milk-container .our-milk-carousel .our-milk-slide.cheese-slide img {
   width: 210px;
   height: 165px;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .our-milk-container .our-milk-carousel .our-milk-slide.cheese-slide img {
+    height: auto;
+    max-width: 100%;
+  }
+}
 .our-milk-container .our-milk-carousel .our-milk-slide.cream-slide img {
   width: 207px;
   height: 154px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .our-milk-container .our-milk-carousel .our-milk-slide.cream-slide img {
+    height: auto;
+    max-width: 100%;
+  }
 }
 .our-milk-container .our-milk-carousel .our-milk-slide .slick-list {
   margin-bottom: 20px;
@@ -6378,6 +6419,12 @@ main {
   transform: translateX(-50%);
   border-radius: 100%;
   bottom: 110px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .our-milk-container .our-milk-carousel .our-milk-slide.active-slide:before {
+    width: 240px;
+    height: 240px;
+  }
 }
 .our-milk-container .our-milk-carousel .our-milk-slide.active-slide span {
   font-size: 60px;
@@ -6430,7 +6477,7 @@ main {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .our-milk-container .our-milk-carousel-controls {
-    width: 80%;
+    display: none;
   }
 }
 .our-milk-container .our-milk-carousel-controls input[type=range] {
