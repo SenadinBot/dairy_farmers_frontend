@@ -8,6 +8,28 @@
         @include media-xs {
             margin-bottom: 50px;
         }
+        .info-item-container {
+            &:last-child {
+                .info-item-content {
+                    .primary-btn {
+                        @include media-xs {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .info-item-container {
+        &:last-child {
+            .info-item-content {
+                .primary-btn {
+                    @include media-xs {
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
     }
     &.esmp-coordinators {
         margin-top: -19px;

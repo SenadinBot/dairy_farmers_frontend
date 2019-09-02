@@ -4869,6 +4869,16 @@ main {
     margin-bottom: 50px;
   }
 }
+@media (max-width: 767px) {
+  .esmp-container.esmp-bottom-spacing .info-item-container:last-child .info-item-content .primary-btn {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .esmp-container .info-item-container:last-child .info-item-content .primary-btn {
+    margin-bottom: 50px;
+  }
+}
 .esmp-container.esmp-coordinators {
   margin-top: -19px;
 }
