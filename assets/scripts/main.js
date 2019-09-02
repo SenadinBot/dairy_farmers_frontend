@@ -171,10 +171,25 @@ $(document).ready(function () {
         slidesToScroll: 1,
         dots: true,
         arrows: false,
-        infinite: false,
+        infinite: true,
         speed: 500,
-        cssEase: 'linear',
         centerMode: true,
+        variableWidth: true,
+        initialSlide: 2,
+        centerPadding: '0',
+        responsive: [
+            {
+                breakpoint: 9999,
+                settings: "unslick"
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     });
 
     // T&C Scroll

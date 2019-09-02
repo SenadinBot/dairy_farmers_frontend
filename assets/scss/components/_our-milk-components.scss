@@ -1,5 +1,23 @@
 .our-milk-container {
     padding-bottom: 100px;
+    @include media-sm {
+        padding-bottom: 180px;
+    }
+    .custom-container {
+        &:before {
+            content: "";
+            background: rgba(255, 255, 255, 0.07);
+            position: absolute;
+            top: 47%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 307px;
+        }
+    }
     h2 {
         color: $dark;
         margin-top: -15px;
@@ -16,13 +34,25 @@
     }
     .our-milk-carousel-container {
         margin-top: -20px;
+        @include media-xs {
+            width: calc(100% + 30px);
+            margin-left: -15px;
+            margin-top: 0;
+        }
+        @include media-sm {
+            width: calc(100% + 30px);
+            margin-left: -15px;
+            margin-top: 0;
+        }
     }
     .our-milk-carousel {
-        margin-bottom: 10px;
-        display: inline-flex;
-        width: 100%;
-        align-items: flex-end;
-        height: 346px;
+        @include media-lmd {
+            margin-bottom: 10px;
+            height: 346px;
+            display: inline-flex;
+            width: 100%;
+            align-items: flex-end;
+        }
         @include media-sm {
             margin-bottom: 100px;
         }
@@ -33,6 +63,9 @@
             position: relative;
             bottom: 0;
             height: 25px;
+            @include media-sm {
+                bottom: -140px;
+            }
             button {
                 width: 25px;
                 height: 25px;
@@ -72,11 +105,51 @@
         .slick-list {
             margin-bottom: 20px;
             width: 100%;
+            height: 462px;
+            overflow: visible;
+            .slick-track {
+                display: inline-flex;
+                align-items: flex-end;                
+            }
+            .our-milk-slide {
+                text-align: center;
+                position: relative;
+                padding: 0 30px;                    
+                &.slick-current {
+                    margin-bottom: -90px;
+                    &:before {
+                        content: "";
+                        border: 10px solid $blue;
+                        background: rgba(0, 146, 188, 0.07);
+                        width: 290px;
+                        height: 290px;
+                        position: absolute;
+                        left: 50%;
+                        -webkit-transform: translateX(-50%);
+                        -ms-transform: translateX(-50%);
+                        transform: translateX(-50%);
+                        border-radius: 100%;
+                        bottom: 110px;
+                    }
+                    p {
+                        display: -webkit-box;                        
+                    }
+                    span {
+                        font-size: 60px;
+                        letter-spacing: 4.32px;
+                        line-height: normal;
+                        position: relative;
+                        top: 7px;
+                    }
+                }
+            }
         }
         .our-milk-slide {
-            text-align: center;
-            position: relative;
-            display: inline-block;
+            @include media-lmd {
+                text-align: center;
+                position: relative;
+                display: inline-block;
+            }
             @include media-lg { 
                 width: calc(100% / 5);
             }
@@ -153,36 +226,54 @@
                 letter-spacing: 2.4px;
                 color: $dark;
                 display: block;
-            }
-            &.active-slide {
-                margin-bottom: -123px;
-                &:before {
-                    content: "";
-                    border: 10px solid $blue;
-                    background: rgba(0, 146, 188, 0.07);
-                    width: 290px;
-                    height: 290px;
-                    position: absolute;
-                    left: 50%;
-                    -webkit-transform: translateX(-50%);
-                    -ms-transform: translateX(-50%);
-                    transform: translateX(-50%);
-                    border-radius: 100%;
-                    bottom: 110px;
-                    @include media-md {
-                        width: 240px;
-                        height: 240px;
-                    }
-                }
-                span {
-                    font-size: 60px;
-                    letter-spacing: 4.32px;
-                    line-height: normal;
+                @include media-sm {
                     position: relative;
                     top: 7px;
+                    -webkit-transition: all 0.3s ease;
+                    -moz-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
                 }
-                p {
-                    display: -webkit-box;
+                @include media-xs {
+                    position: relative;
+                    top: 7px;
+                    -webkit-transition: all 0.3s ease;
+                    -moz-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                }
+            }
+            @include media-lmd {
+                &.active-slide {
+                    margin-bottom: -123px;
+                    &:before {
+                        content: "";
+                        border: 10px solid $blue;
+                        background: rgba(0, 146, 188, 0.07);
+                        width: 290px;
+                        height: 290px;
+                        position: absolute;
+                        left: 50%;
+                        -webkit-transform: translateX(-50%);
+                        -ms-transform: translateX(-50%);
+                        transform: translateX(-50%);
+                        border-radius: 100%;
+                        bottom: 110px;
+                        @include media-md {
+                            width: 240px;
+                            height: 240px;
+                        }
+                    }
+                    span {
+                        font-size: 60px;
+                        letter-spacing: 4.32px;
+                        line-height: normal;
+                        position: relative;
+                        top: 7px;
+                    }
+                    p {
+                        display: -webkit-box;
+                    }
                 }
             }
             .slide-content {
@@ -190,29 +281,35 @@
                 position: relative;
             }
             p {
+                display: none;
+                font-family: $robotoLight;
+                line-height: 30px;
+                text-align: left;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+                position: absolute;
+                -webkit-box-orient: vertical;
+                -moz-box-orient: vertical;
+                -ms-box-orient: vertical;
+                box-orient: vertical;
+                overflow: hidden;
+                -webkit-line-clamp: 4;
+                -moz-line-clamp: 4;
+                -ms-line-clamp: 4;
+                line-clamp: 4;
                 @include media-lmd {
-                    display: none;
-                    font-family: $robotoLight;
-                    line-height: 30px;
-                    text-align: left;
                     width: 520px;
-                    position: absolute;
                     bottom: -128px;
-                    left: 50%;
-                    -webkit-transform: translateX(-50%);
-                    -ms-transform: translateX(-50%);
-                    transform: translateX(-50%);
                     margin: 0;
                     height: 124px;
-                    -webkit-box-orient: vertical;
-                    -moz-box-orient: vertical;
-                    -ms-box-orient: vertical;
-                    box-orient: vertical;
-                    -webkit-line-clamp: 4;
-                    -moz-line-clamp: 4;
-                    -ms-line-clamp: 4;
-                    line-clamp: 4;
-                    overflow: hidden;
+                }
+                @include media-sm {
+                    width: 200%;
+                    margin: 0 auto;
+                    bottom: -115px;
+                    font-size: 20px;
                 }
             }
         }

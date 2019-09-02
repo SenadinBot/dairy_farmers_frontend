@@ -4703,6 +4703,21 @@ main {
 
 .our-milk-container {
   padding-bottom: 100px; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .our-milk-container {
+      padding-bottom: 180px; } }
+  .our-milk-container .custom-container:before {
+    content: "";
+    background: rgba(255, 255, 255, 0.07);
+    position: absolute;
+    top: 47%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 307px; }
   .our-milk-container h2 {
     color: #000000;
     margin-top: -15px;
@@ -4718,115 +4733,76 @@ main {
         margin-left: 0; } }
   .our-milk-container .our-milk-carousel-container {
     margin-top: -20px; }
-  .our-milk-container .our-milk-carousel {
-    margin-bottom: 10px;
-    display: inline-flex;
-    width: 100%;
-    align-items: flex-end;
-    height: 346px; }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .our-milk-container .our-milk-carousel {
-        margin-bottom: 100px; } }
     @media (max-width: 767px) {
-      .our-milk-container .our-milk-carousel {
-        margin-bottom: 70px; } }
-    .our-milk-container .our-milk-carousel .slick-dots {
-      position: relative;
-      bottom: 0;
-      height: 25px; }
-      .our-milk-container .our-milk-carousel .slick-dots button {
+      .our-milk-container .our-milk-carousel-container {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        margin-top: 0; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .our-milk-container .our-milk-carousel-container {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        margin-top: 0; } }
+  @media (min-width: 992px) {
+    .our-milk-container .our-milk-carousel {
+      margin-bottom: 10px;
+      height: 346px;
+      display: inline-flex;
+      width: 100%;
+      align-items: flex-end; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .our-milk-container .our-milk-carousel {
+      margin-bottom: 100px; } }
+  @media (max-width: 767px) {
+    .our-milk-container .our-milk-carousel {
+      margin-bottom: 70px; } }
+  .our-milk-container .our-milk-carousel .slick-dots {
+    position: relative;
+    bottom: 0;
+    height: 25px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .our-milk-container .our-milk-carousel .slick-dots {
+        bottom: -140px; } }
+    .our-milk-container .our-milk-carousel .slick-dots button {
+      width: 25px;
+      height: 25px;
+      padding: 0; }
+      .our-milk-container .our-milk-carousel .slick-dots button:before {
+        display: none; }
+      .our-milk-container .our-milk-carousel .slick-dots button:after {
+        content: "";
+        display: block;
         width: 25px;
         height: 25px;
-        padding: 0; }
-        .our-milk-container .our-milk-carousel .slick-dots button:before {
-          display: none; }
-        .our-milk-container .our-milk-carousel .slick-dots button:after {
-          content: "";
-          display: block;
-          width: 25px;
-          height: 25px;
-          border: 1px solid #0072ce;
-          background: #ffffff;
-          border-radius: 100%;
-          position: absolute;
-          top: -6px;
-          left: 0; }
-      .our-milk-container .our-milk-carousel .slick-dots li {
-        width: 25px;
-        height: 25px;
-        margin: 0 10px 0 0; }
-        .our-milk-container .our-milk-carousel .slick-dots li:last-child {
-          margin-right: 0; }
-        .our-milk-container .our-milk-carousel .slick-dots li.slick-active button:after {
-          background: #0072ce; }
-    .our-milk-container .our-milk-carousel .slick-list {
-      margin-bottom: 20px;
-      width: 100%; }
-    .our-milk-container .our-milk-carousel .our-milk-slide {
+        border: 1px solid #0072ce;
+        background: #ffffff;
+        border-radius: 100%;
+        position: absolute;
+        top: -6px;
+        left: 0; }
+    .our-milk-container .our-milk-carousel .slick-dots li {
+      width: 25px;
+      height: 25px;
+      margin: 0 10px 0 0; }
+      .our-milk-container .our-milk-carousel .slick-dots li:last-child {
+        margin-right: 0; }
+      .our-milk-container .our-milk-carousel .slick-dots li.slick-active button:after {
+        background: #0072ce; }
+  .our-milk-container .our-milk-carousel .slick-list {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 462px;
+    overflow: visible; }
+    .our-milk-container .our-milk-carousel .slick-list .slick-track {
+      display: inline-flex;
+      align-items: flex-end; }
+    .our-milk-container .our-milk-carousel .slick-list .our-milk-slide {
       text-align: center;
       position: relative;
-      display: inline-block; }
-      @media (min-width: 1200px) {
-        .our-milk-container .our-milk-carousel .our-milk-slide {
-          width: calc(100% / 5); } }
-      @media (min-width: 992px) and (max-width: 1199px) {
-        .our-milk-container .our-milk-carousel .our-milk-slide {
-          width: calc(100% / 5 - 30px);
-          margin-right: 40px; } }
-      @media (min-width: 992px) and (max-width: 1199px) {
-        .our-milk-container .our-milk-carousel .our-milk-slide:last-child {
-          margin-right: 0; } }
-      .our-milk-container .our-milk-carousel .our-milk-slide.butter-slide img {
-        width: 197px;
-        height: 150px; }
-        @media (min-width: 992px) and (max-width: 1199px) {
-          .our-milk-container .our-milk-carousel .our-milk-slide.butter-slide img {
-            height: auto;
-            max-width: 100%; } }
-      .our-milk-container .our-milk-carousel .our-milk-slide.yogurt-slide img {
-        width: 268px;
-        height: 126px; }
-        @media (min-width: 992px) and (max-width: 1199px) {
-          .our-milk-container .our-milk-carousel .our-milk-slide.yogurt-slide img {
-            height: auto;
-            max-width: 100%; } }
-      .our-milk-container .our-milk-carousel .our-milk-slide.milk-slide img {
-        width: 195px;
-        height: 346px; }
-        @media (min-width: 992px) and (max-width: 1199px) {
-          .our-milk-container .our-milk-carousel .our-milk-slide.milk-slide img {
-            height: auto;
-            max-width: 100%; } }
-      .our-milk-container .our-milk-carousel .our-milk-slide.cheese-slide img {
-        width: 210px;
-        height: 165px; }
-        @media (min-width: 992px) and (max-width: 1199px) {
-          .our-milk-container .our-milk-carousel .our-milk-slide.cheese-slide img {
-            height: auto;
-            max-width: 100%; } }
-      .our-milk-container .our-milk-carousel .our-milk-slide.cream-slide img {
-        width: 207px;
-        height: 154px; }
-        @media (min-width: 992px) and (max-width: 1199px) {
-          .our-milk-container .our-milk-carousel .our-milk-slide.cream-slide img {
-            height: auto;
-            max-width: 100%; } }
-      .our-milk-container .our-milk-carousel .our-milk-slide img {
-        object-fit: contain;
-        display: inline-block; }
-      .our-milk-container .our-milk-carousel .our-milk-slide span {
-        font-family: "acumin-pro-extra-condensed",sans-serif;
-        font-style: normal;
-        font-weight: 900;
-        text-transform: uppercase;
-        font-size: 48px;
-        line-height: 36px;
-        letter-spacing: 2.4px;
-        color: #000000;
-        display: block; }
-      .our-milk-container .our-milk-carousel .our-milk-slide.active-slide {
-        margin-bottom: -123px; }
-        .our-milk-container .our-milk-carousel .our-milk-slide.active-slide:before {
+      padding: 0 30px; }
+      .our-milk-container .our-milk-carousel .slick-list .our-milk-slide.slick-current {
+        margin-bottom: -90px; }
+        .our-milk-container .our-milk-carousel .slick-list .our-milk-slide.slick-current:before {
           content: "";
           border: 10px solid #0072ce;
           background: rgba(0, 146, 188, 0.07);
@@ -4839,45 +4815,156 @@ main {
           transform: translateX(-50%);
           border-radius: 100%;
           bottom: 110px; }
-          @media (min-width: 992px) and (max-width: 1199px) {
-            .our-milk-container .our-milk-carousel .our-milk-slide.active-slide:before {
-              width: 240px;
-              height: 240px; } }
-        .our-milk-container .our-milk-carousel .our-milk-slide.active-slide span {
+        .our-milk-container .our-milk-carousel .slick-list .our-milk-slide.slick-current p {
+          display: -webkit-box; }
+        .our-milk-container .our-milk-carousel .slick-list .our-milk-slide.slick-current span {
           font-size: 60px;
           letter-spacing: 4.32px;
           line-height: normal;
           position: relative;
           top: 7px; }
-        .our-milk-container .our-milk-carousel .our-milk-slide.active-slide p {
-          display: -webkit-box; }
-      .our-milk-container .our-milk-carousel .our-milk-slide .slide-content {
-        z-index: 9;
-        position: relative; }
-      @media (min-width: 992px) {
-        .our-milk-container .our-milk-carousel .our-milk-slide p {
-          display: none;
-          font-family: "Roboto Light";
-          line-height: 30px;
-          text-align: left;
-          width: 520px;
-          position: absolute;
-          bottom: -128px;
-          left: 50%;
-          -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-          margin: 0;
-          height: 124px;
-          -webkit-box-orient: vertical;
-          -moz-box-orient: vertical;
-          -ms-box-orient: vertical;
-          box-orient: vertical;
-          -webkit-line-clamp: 4;
-          -moz-line-clamp: 4;
-          -ms-line-clamp: 4;
-          line-clamp: 4;
-          overflow: hidden; } }
+  @media (min-width: 992px) {
+    .our-milk-container .our-milk-carousel .our-milk-slide {
+      text-align: center;
+      position: relative;
+      display: inline-block; } }
+  @media (min-width: 1200px) {
+    .our-milk-container .our-milk-carousel .our-milk-slide {
+      width: calc(100% / 5); } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .our-milk-container .our-milk-carousel .our-milk-slide {
+      width: calc(100% / 5 - 30px);
+      margin-right: 40px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .our-milk-container .our-milk-carousel .our-milk-slide:last-child {
+      margin-right: 0; } }
+  .our-milk-container .our-milk-carousel .our-milk-slide.butter-slide img {
+    width: 197px;
+    height: 150px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .our-milk-container .our-milk-carousel .our-milk-slide.butter-slide img {
+        height: auto;
+        max-width: 100%; } }
+  .our-milk-container .our-milk-carousel .our-milk-slide.yogurt-slide img {
+    width: 268px;
+    height: 126px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .our-milk-container .our-milk-carousel .our-milk-slide.yogurt-slide img {
+        height: auto;
+        max-width: 100%; } }
+  .our-milk-container .our-milk-carousel .our-milk-slide.milk-slide img {
+    width: 195px;
+    height: 346px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .our-milk-container .our-milk-carousel .our-milk-slide.milk-slide img {
+        height: auto;
+        max-width: 100%; } }
+  .our-milk-container .our-milk-carousel .our-milk-slide.cheese-slide img {
+    width: 210px;
+    height: 165px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .our-milk-container .our-milk-carousel .our-milk-slide.cheese-slide img {
+        height: auto;
+        max-width: 100%; } }
+  .our-milk-container .our-milk-carousel .our-milk-slide.cream-slide img {
+    width: 207px;
+    height: 154px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .our-milk-container .our-milk-carousel .our-milk-slide.cream-slide img {
+        height: auto;
+        max-width: 100%; } }
+  .our-milk-container .our-milk-carousel .our-milk-slide img {
+    object-fit: contain;
+    display: inline-block; }
+  .our-milk-container .our-milk-carousel .our-milk-slide span {
+    font-family: "acumin-pro-extra-condensed",sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 36px;
+    letter-spacing: 2.4px;
+    color: #000000;
+    display: block; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .our-milk-container .our-milk-carousel .our-milk-slide span {
+        position: relative;
+        top: 7px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease; } }
+    @media (max-width: 767px) {
+      .our-milk-container .our-milk-carousel .our-milk-slide span {
+        position: relative;
+        top: 7px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease; } }
+  @media (min-width: 992px) {
+    .our-milk-container .our-milk-carousel .our-milk-slide.active-slide {
+      margin-bottom: -123px; }
+      .our-milk-container .our-milk-carousel .our-milk-slide.active-slide:before {
+        content: "";
+        border: 10px solid #0072ce;
+        background: rgba(0, 146, 188, 0.07);
+        width: 290px;
+        height: 290px;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        border-radius: 100%;
+        bottom: 110px; } }
+    @media (min-width: 992px) and (min-width: 992px) and (max-width: 1199px) {
+      .our-milk-container .our-milk-carousel .our-milk-slide.active-slide:before {
+        width: 240px;
+        height: 240px; } }
+  @media (min-width: 992px) {
+      .our-milk-container .our-milk-carousel .our-milk-slide.active-slide span {
+        font-size: 60px;
+        letter-spacing: 4.32px;
+        line-height: normal;
+        position: relative;
+        top: 7px; }
+      .our-milk-container .our-milk-carousel .our-milk-slide.active-slide p {
+        display: -webkit-box; } }
+  .our-milk-container .our-milk-carousel .our-milk-slide .slide-content {
+    z-index: 9;
+    position: relative; }
+  .our-milk-container .our-milk-carousel .our-milk-slide p {
+    display: none;
+    font-family: "Roboto Light";
+    line-height: 30px;
+    text-align: left;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -moz-line-clamp: 4;
+    -ms-line-clamp: 4;
+    line-clamp: 4; }
+    @media (min-width: 992px) {
+      .our-milk-container .our-milk-carousel .our-milk-slide p {
+        width: 520px;
+        bottom: -128px;
+        margin: 0;
+        height: 124px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .our-milk-container .our-milk-carousel .our-milk-slide p {
+        width: 200%;
+        margin: 0 auto;
+        bottom: -115px;
+        font-size: 20px; } }
   .our-milk-container .our-milk-carousel-controls {
     text-align: center;
     display: block;
