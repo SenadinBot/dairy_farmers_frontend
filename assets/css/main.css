@@ -3116,7 +3116,13 @@ main {
         line-height: 30px; } }
   .nutrients-list-container.esmp-nutrients-list-container {
     margin-bottom: 145px;
-    padding-top: 43px; }
+    padding-top: 65px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .nutrients-list-container.esmp-nutrients-list-container {
+        padding-top: 40px; } }
+    @media (max-width: 767px) {
+      .nutrients-list-container.esmp-nutrients-list-container {
+        padding-top: 40px; } }
     .nutrients-list-container.esmp-nutrients-list-container .nutrients-list-bg-image {
       top: -32%; }
       @media (min-width: 992px) and (max-width: 1199px) {
@@ -3124,7 +3130,7 @@ main {
           top: -38%; } }
       @media (max-width: 767px) and (orientation: portrait) {
         .nutrients-list-container.esmp-nutrients-list-container .nutrients-list-bg-image {
-          top: -15%; } }
+          top: -17%; } }
       @media (max-width: 767px) and (orientation: landscape) {
         .nutrients-list-container.esmp-nutrients-list-container .nutrients-list-bg-image {
           top: -18%; } }

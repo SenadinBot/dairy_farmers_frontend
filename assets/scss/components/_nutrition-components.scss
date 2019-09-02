@@ -236,14 +236,20 @@
     }
     &.esmp-nutrients-list-container {
         margin-bottom: 145px;
-        padding-top: 43px;
+        padding-top: 65px;
+        @include media-sm {
+            padding-top: 40px;
+        }
+        @include media-xs {
+            padding-top: 40px;
+        }
         .nutrients-list-bg-image {
             top: -32%;
             @include media-md {
                 top: -38%;
             }
             @include media-xs-portrait {
-                top: -15%;
+                top: -17%;
             }
             @include media-xs-landscape {
                 top: -18%;
