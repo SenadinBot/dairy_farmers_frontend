@@ -324,6 +324,7 @@
                 font-size: 64px;
                 line-height: 64px;
                 letter-spacing: 5px;
+                margin-bottom: 25px;
             }
         }
         p {
@@ -486,7 +487,7 @@
             @include media-xs {
                 width: 100%;
                 order: 2;  
-                margin-top: 20px;
+                margin-top: 10px;
             }
             span {
                 text-transform: uppercase;
@@ -542,6 +543,11 @@
                     color: $blue;
                     text-transform: uppercase;
                     font-family: $robotoBold;
+                }
+            }
+            h4 {
+                @include media-xs {
+                    margin-bottom: 20px;
                 }
             }
         }
