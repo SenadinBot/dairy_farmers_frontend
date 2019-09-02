@@ -6262,10 +6262,15 @@ main {
     margin-left: 0;
   }
 }
+.our-milk-container .our-milk-carousel-container {
+  margin-top: -20px;
+}
 .our-milk-container .our-milk-carousel {
   margin-bottom: 10px;
   display: inline-flex;
   width: 100%;
+  align-items: flex-end;
+  height: 346px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .our-milk-container .our-milk-carousel {
@@ -6317,7 +6322,6 @@ main {
   text-align: center;
   position: relative;
   display: inline-block;
-  align-items: flex-end;
   width: calc(100% / 5);
 }
 .our-milk-container .our-milk-carousel .our-milk-slide.butter-slide img {
@@ -6358,6 +6362,9 @@ main {
   color: #000000;
   display: block;
 }
+.our-milk-container .our-milk-carousel .our-milk-slide.active-slide {
+  margin-bottom: -123px;
+}
 .our-milk-container .our-milk-carousel .our-milk-slide.active-slide:before {
   content: "";
   border: 10px solid #0072ce;
@@ -6365,23 +6372,26 @@ main {
   width: 290px;
   height: 290px;
   position: absolute;
-  top: 12%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   border-radius: 100%;
+  bottom: 110px;
 }
 .our-milk-container .our-milk-carousel .our-milk-slide.active-slide span {
   font-size: 60px;
   letter-spacing: 4.32px;
   line-height: normal;
-  margin-top: 82px;
-  display: none;
+  position: relative;
+  top: 7px;
+}
+.our-milk-container .our-milk-carousel .our-milk-slide.active-slide p {
+  display: -webkit-box;
 }
 .our-milk-container .our-milk-carousel .our-milk-slide .slide-content {
-  background: red;
-  height: 100%;
+  z-index: 9;
+  position: relative;
 }
 .our-milk-container .our-milk-carousel .our-milk-slide p {
   display: none;
@@ -6389,19 +6399,29 @@ main {
   line-height: 30px;
   text-align: left;
   width: 520px;
-  position: relative;
-  bottom: 0;
+  position: absolute;
+  bottom: -128px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   margin: 0;
+  height: 124px;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-line-clamp: 4;
+  -moz-line-clamp: 4;
+  -ms-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
 }
 .our-milk-container .our-milk-carousel-controls {
   text-align: center;
   display: block;
   width: 791px;
-  margin: 0 auto;
+  margin: 245px auto 0 auto;
 }
 @media (max-width: 767px) {
   .our-milk-container .our-milk-carousel-controls {
