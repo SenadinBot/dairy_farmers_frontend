@@ -624,14 +624,10 @@ header {
         top: 0;
         right: 0;
         height: 100vh;
-        overflow-y: auto;
-        padding: 75px 45px 100px 45px;
+        padding: 150px 0 0 0;
         background-image: -moz-linear-gradient(10deg, #0072ce 0%, rgba(0, 114, 206, 0.94) 100%);
         background-image: -webkit-linear-gradient(10deg, #0072ce 0%, rgba(0, 114, 206, 0.94) 100%);
         background-image: -ms-linear-gradient(10deg, #0072ce 0%, rgba(0, 114, 206, 0.94) 100%); } }
-    @media (max-width: 767px) and (orientation: landscape) {
-      header nav {
-        padding-bottom: 320px; } }
     @media (min-width: 768px) and (max-width: 991px) {
       header nav {
         margin-right: -100%;
@@ -688,7 +684,6 @@ header {
       @media (max-width: 767px) {
         header nav ul {
           margin-left: 0;
-          margin-top: 100px;
           width: 100%; } }
       @media (min-width: 768px) and (max-width: 991px) {
         header nav ul {
@@ -1074,6 +1069,12 @@ header {
   @media (min-width: 768px) and (max-width: 991px) {
     .desktop-more-links ul {
       margin-top: 20px; } }
+
+@media (max-width: 767px) {
+  .mobile-inner-nav {
+    overflow-y: scroll;
+    height: 100vh;
+    padding: 50px 45px 250px 45px; } }
 
 footer {
   padding: 20px 0 15px 0;
