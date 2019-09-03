@@ -3,6 +3,12 @@
     @include media-sm {
         padding-bottom: 180px;
     }
+    @include media-xs {
+        padding-bottom: 180px;
+    }
+    @include media-xs-portrait {
+        padding-bottom: 240px;
+    }
     .custom-container {
         &:before {
             content: "";
@@ -65,6 +71,12 @@
             height: 25px;
             @include media-sm {
                 bottom: -140px;
+            }
+            @include media-xs {
+                bottom: -140px;
+            }
+            @include media-xs-portrait {
+                bottom: -200px;
             }
             button {
                 width: 25px;
@@ -308,8 +320,21 @@
                 @include media-sm {
                     width: 200%;
                     margin: 0 auto;
-                    bottom: -115px;
+                    bottom: initial;
                     font-size: 20px;
+                }
+                @include media-xs {
+                    width: 120%;
+                    margin: 0 auto;
+                    bottom: initial;
+                    font-size: 18px;
+                    -webkit-line-clamp: 6;
+                    -moz-line-clamp: 6;
+                    -ms-line-clamp: 6;
+                    line-clamp: 6;
+                }
+                @include media-xs-landscape {
+                    width: 200%;
                 }
             }
         }
