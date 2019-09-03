@@ -600,6 +600,10 @@
     span {
         color: $white;
         text-transform: uppercase;
+        font-family: $robotoSlabBold;
+        font-size: 16px;
+        line-height: 1;
+        display: block;
         @include media-xs {
             text-align: left;
             display: block;
@@ -629,7 +633,7 @@
     }
     h4 {
         color: $white;
-        margin-bottom: 0;
+        margin-bottom: 4px;
         text-transform: uppercase;
         @include media-xs {
             text-align: left;

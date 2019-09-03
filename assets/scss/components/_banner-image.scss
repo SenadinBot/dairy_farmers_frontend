@@ -276,7 +276,8 @@
     }
     @include media-xs {
         height: auto;  
-        margin-top: 0;     
+        margin-top: -10px;   
+        height: auto;  
     }
     .recipe-img-background {
         width: 100%;
@@ -285,14 +286,43 @@
         background-repeat: no-repeat;
         background-size: cover;
         @include media-sm {
-            height: 500px;
+            min-height: 1200px;
             z-index: 999;     
             position: relative; 
         }
         @include media-xs {
-            height: 400px;  
+            min-height: auto;            
             z-index: 999;  
             position: relative;    
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &.desktop-img {
+            @include media-xs {
+                display: none;
+            }
+            @include media-sm {
+                display: none;
+            }
+        }
+        &.mobile-img {
+            display: none;
+            @include media-xs {
+                display: block;
+            }
+            @include media-sm {
+                display: block;
+            }
+        }
+        &.center-position {
+            background-position: center;
+        }
+        &.right-position {
+            background-position: right;
+        }
+        &.left-position {
+            background-position: left;
         }
     }
     .recipe-content {
@@ -310,23 +340,21 @@
         }
         @include media-sm {
             width: 100%;
-            position: relative;
-            top: 0;
+            top: 50%;
             left: 0;
             transform: none;
-            background-color: #54585a;
             padding: 0 120px 50px 120px;
-            margin-top: -60px;
+            z-index: 999;
         }
         @include media-xs {
             width: 100%;
-            position: relative;
             top: 0;
             left: 0;
             transform: none;
-            background-color: #54585a;
             padding: 0 20px 50px 20px;
-            margin-top: -60px;
+            z-index: 999;
+            margin-top: 100%;
+            position: relative;
         }
         @include media-xs-landscape {
             padding: 0 150px 50px 20px;
@@ -439,6 +467,9 @@
             }
             @include media-xs-landscape {
                 width: 76%;
+            }
+            @include media-xs {
+                margin-top: 20px;
             }
             &:hover {
                 background-color: transparent;
