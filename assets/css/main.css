@@ -4056,7 +4056,7 @@ main {
 }
 .nutrients-list-container .nutrients-list-intro .nutrients-list-intro-content {
   display: inline-block;
-  width: calc(100% - 500px);
+  width: calc(100% - 520px);
   vertical-align: top;
   margin-top: 60px;
   margin-left: -20px;
@@ -4113,6 +4113,11 @@ main {
   font-stretch: normal;
   line-height: 1.55;
   color: #000000;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .nutrients-list-container .nutrients-list-intro .nutrients-list-intro-content p {
+    padding-right: 15px;
+  }
 }
 .nutrients-list-container .nutrients-list-carousel {
   font-size: 0;

@@ -70,7 +70,7 @@
         }
         .nutrients-list-intro-content {
             display: inline-block;
-            width: calc(100% - 500px);
+            width: calc(100% - 520px);
             vertical-align: top;
             margin-top: 60px;
             margin-left: -20px;
@@ -114,6 +114,9 @@
                 font-stretch: normal;
                 line-height: 1.55;
                 color: $dark;
+                @include media-sm {
+                    padding-right: 15px;
+                }
             }
         }
     }
