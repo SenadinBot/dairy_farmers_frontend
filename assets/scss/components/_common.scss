@@ -435,7 +435,7 @@
     }
     &.left-content {
         .info-item-content {
-            margin-right: 10px;
+            margin-right: 14px;
             @include media-xs {
                 margin-right: 0;
             }
@@ -464,7 +464,7 @@
     }
     &.right-content {
         .info-item-img-container {
-            margin-right: 10px;
+            margin-right: 14px;
             @include media-xs {
                 margin-right: 0;
             }
@@ -473,13 +473,13 @@
     &.full-width {
         .info-item-content {
             &:first-child {
-                margin-right: 10px;
+                margin-right: 14px;
                 @include media-xs {
                     margin-right: 0;
                 }
             }
             &:nth-child(2) {
-                margin-right: 10px;
+                margin-right: 14px;
                 @include media-xs {
                     margin-right: 0;
                 }
@@ -498,7 +498,7 @@
     }
     .info-item-content {
         display: inline-block;
-        width: calc(100% / 2 - 7.5px);            
+        width: calc(100% / 2 - 11px);            
         vertical-align: top;
         @include media-xs {
             width: 100%;
@@ -590,7 +590,7 @@
     }
     .info-item-img-container {
         display: inline-block;
-        width: calc(100% / 2 - 7.5px);
+        width: calc(100% / 2 - 11px);
         vertical-align: top;
         @include media-xs {
             width: 100%;
