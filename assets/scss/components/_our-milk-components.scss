@@ -39,7 +39,7 @@
         }
     }
     .our-milk-carousel-container {
-        margin-top: -20px;
+        margin-top: 20px;
         @include media-xs {
             width: calc(100% + 30px);
             margin-left: -15px;
@@ -49,6 +49,9 @@
             width: calc(100% + 30px);
             margin-left: -15px;
             margin-top: 0;
+        }
+        @include media-md {
+            margin-top: -35px;
         }
     }
     .our-milk-carousel {

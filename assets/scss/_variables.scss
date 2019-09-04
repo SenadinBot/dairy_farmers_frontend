@@ -15,6 +15,11 @@ $acuminProExtraCondBold: "Acumin Pro ExtraCondensed Bold";
 
 // Fonts
 @import url('https://use.typekit.net/nio3oec.css');
+@mixin acuminProCondItalic() {
+    font-family: "acumin-pro-extra-condensed",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
 @mixin acuminProSemiCondBold() {
     font-family: "acumin-pro-semi-condensed",sans-serif;
     font-style: normal;

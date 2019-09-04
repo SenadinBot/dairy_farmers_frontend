@@ -7,7 +7,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
-    <meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+    <meta name="description"
+        content="This is an example of a meta description. This will often show up in search results.">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./App_Themes/Milk/images/favicon.ico">
@@ -22,7 +23,7 @@
             <div class="container custom-container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="right-side">
+                        <div class="left-side">
                             <img src="./App_Themes/Milk/images/img-logo-milk-sm@3x.png" alt="Logo Image">
                             <a href="#">Back to Milk.org</a>
                         </div>
@@ -31,14 +32,14 @@
                                 <a href="#">Register</a>
                             </li>
                             <li>
-                                <a href="#">Login to</a>
+                                <a href="#">Login to Order</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container custom-container" style="display: none">
+        <div class="container custom-container">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="nav-icon-container hidden-lg hidden-md">
@@ -48,94 +49,69 @@
                         </a>
                     </div>
                     <nav>
-                        <div class="mobile-intro hidden-lg hidden-md">
-                            <div class="close-icon-container">
-                                <div class="close-icon"></div>
-                            </div>
-                            <!-- Header Search Container -->
-                            <div class="header-search">
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Search" aria-label=""
-                                            aria-describedby="basic-addon">
-                                        <div class="input-group-prepend">
-                                            <button type="button"></button>
-                                        </div>
-                                    </div>
+                        <div class="mobile-inner-nav">
+                            <div class="mobile-intro hidden-lg hidden-md">
+                                <div class="mobile-back">
+                                    <img src="./App_Themes/Milk/images/img-logo-milk-sm@3x.png" alt="Logo Image">
+                                    <a href="#">Back to Milk.org</a>
+                                </div>
+                                <div class="close-icon-container">
+                                    <div class="close-icon"></div>
                                 </div>
                             </div>
-                            <!-- End of Header Search Container -->
-                        </div>
-                        <ul>
-                            <li>
-                                <a href="#">About</a>
-                            </li>
-                            <li>
-                                <a href="#">Parent Info</a>
+                            <ul>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Parent Info</a>
+                                    <ul style="display: none">
+                                        <li><a href='#'>Parent Info 1</a>
+                                            <ul>
+                                                <li><a href='#'>Sub Parent</a></li>
+                                                <li><a href='#'>Sub Parent</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href='#'>Parent Info 2</a>
+                                            <ul>
+                                                <li><a href='#'>Sub Parent</a></li>
+                                                <li><a href='#'>Sub Parent</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Coordinators Corner</a>
+                                </li>
+                                <li>
+                                    <a href="#">School Programs</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                            <div class="mobile-more-links hidden-lg hidden-md">
                                 <ul>
-                                    <li><a href='#'>Parent Info 1</a>
-                                        <ul>
-                                            <li><a href='#'>Sub Parent</a></li>
-                                            <li><a href='#'>Sub Parent</a></li>
-                                        </ul>
+                                    <li>
+                                        <a href="#">Register</a>
                                     </li>
-                                    <li><a href='#'>Parent Info 2</a>
-                                        <ul>
-                                            <li><a href='#'>Sub Parent</a></li>
-                                            <li><a href='#'>Sub Parent</a></li>
-                                        </ul>
+                                    <li>
+                                        <a href="#">Login to Order</a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li>
-                                <a href="#">Coordinators Corner</a>
-                            </li>
-                            <li>
-                                <a href="#">School Programs</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact Us</a>
-                            </li>
-                        </ul>
-                        <div class="desktop-more-links">
-                            <ul>
-                                <li class="search-icon">
-                                    <img src="./App_Themes/Milk/images/icon-search.svg" alt="Search Icon">
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="mobile-more-links hidden-lg hidden-md">
-                            <ul>
-                                <li>
-                                    <a href="#">Register</a>
-                                </li>
-                                <li>
-                                    <a href="#">Login to Order</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                    <!-- Header Search Container -->
-                    <div class="header-search desktop-header-search hidden-xs hidden-sm">
-                        <div class="form-group">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search" aria-label=""
-                                    aria-describedby="basic-addon">
-                                <div class="input-group-prepend">
-                                    <button type="button"></button>
-                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- End of Header Search Container -->
+                    </nav>
                 </div>
             </div>
         </div>
     </header>
     <main>
         <div class="big-banner-container small-banner white-title">
-            <div class="big-banner-image-container desktop-banner-image center-position" style="background-image: url('./App_Themes/Milk/images/img-esmp-home-hero@3x.png')"></div>
-            <div class="big-banner-image-container mobile-banner-image center-position" style="background-image: url('./App_Themes/Milk/images/img-esmp-home-hero@3x.png')"></div>
+            <div class="big-banner-image-container desktop-banner-image center-position"
+                style="background-image: url('./App_Themes/Milk/images/img-esmp-home-hero@3x.png')"></div>
+            <div class="big-banner-image-container mobile-banner-image center-position"
+                style="background-image: url('./App_Themes/Milk/images/img-esmp-home-hero@3x.png')"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-12">
