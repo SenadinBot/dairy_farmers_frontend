@@ -169,18 +169,19 @@ $(document).ready(function () {
         // $('.our-milk-carousel').slick({
 
         // });
+        
         ourMilkSSlider = $(".ourMilkSlider").slider({
             min: 0,
-            max: 6,
-            value: 3,
+            max: 5,
             slide: function (event, ui) {
                 var slick = $ourMilkCarousel.slick("getSlick");
-                goTo = ui.value * (slick.slideCount - 1) / 6;
+                goTo = ui.value * (slick.slideCount - 1) / 5;
                 console.log('slideCount', slick.slideCount);
                 console.log(goTo);
                 $ourMilkCarousel.slick("goTo", goTo);
             }
         });
+        $('.ui-slider-handle').css('left', '50%');
     }
     $ourMilkCarousel.slick({
         slidesToShow: 5,
