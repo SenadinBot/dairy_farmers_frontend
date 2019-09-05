@@ -101,6 +101,12 @@
     @include media-xs {
         margin-bottom: 100px;
     }
+    &.medium-bottom-spacing { 
+        margin-bottom: 149px;
+        @include media-xs {
+            margin-bottom: 100px;
+        }
+    }
     &.small-bottom-spacing {
         margin-bottom: 109px;
         @include media-sm {

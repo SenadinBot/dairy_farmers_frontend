@@ -144,7 +144,8 @@
     }
     .tab-content {
         background-color: #f7f7f7;
-        padding: 87px 35px 110px 132px;
+        padding: 87px 35px 47px 132px;
+        min-height: 591px;
         @include media-md {
             padding: 50px 25px 80px 75px;            
         }
@@ -219,6 +220,9 @@
                 }
                 &.remove-top-spacing {
                     margin-top: -18px;
+                    @include media-xs {
+                        margin-top: 28px;
+                    }
                 }
                 .info-fact-item {
                     text-align: center;
@@ -248,6 +252,11 @@
                     }
                     &:last-child {
                         margin-bottom: 0;
+                        p {
+                            @include media-xs {
+                                margin-bottom: 0;
+                            }
+                        }
                     }
                     span {
                         display: block;
@@ -258,6 +267,7 @@
                         line-height: 48px;
                         &.text {
                             font-size: 30px;
+                            line-height: 30px;
                         }
                     }
                     p {
@@ -274,14 +284,54 @@
             .bigger-content {
                 .left-side {
                     width: 385px;
+                    @include media-md {
+                        width: 310px;
+                    }
+                    @include media-xs {
+                        width: 100%;
+                    }
                 }
                 .right-side {
                     width: calc(100% - 390px);
+                    padding-left: 13%;
+                    @include media-md {
+                        width: calc(100% - 315px);
+                        padding-left: 8%;
+                    }
+                    @include media-sm {
+                        width: 39%;
+                        padding-left: 0;
+                    }
+                    @include media-xs {
+                        width: 100%;
+                        padding-left: 0;
+                    }
                     .info-fact-item {
-                        width: 87%;
+                        width: 83.5%;
                         margin-right: 0;
+                        @include media-md {
+                            width: 100%;
+                        }
+                        @include media-sm {
+                            width: 100%;
+                        }
+                        @include media-xs {
+                            width: 95%;
+                        }
                         &:nth-child(odd) {
                             margin-right: 0;
+                        }
+                        &:nth-child(1) {
+                            margin-bottom: 5px;
+                            @include media-xs {
+                                margin-bottom: 28px;
+                            }
+                        }
+                        &:nth-child(2) {
+                            margin-bottom: 23px;
+                            @include media-xs {
+                                margin-bottom: 28px;
+                            }
                         }
                         p {
                             font-size: 24px;
@@ -299,7 +349,7 @@
                 padding: 30px;
             }
             @include media-xs {
-                padding: 0 15px 15px 15px;
+                padding: 45px 15px 70px 15px;
             }
         }
     }
