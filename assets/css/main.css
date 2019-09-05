@@ -1650,13 +1650,52 @@ header.second-header nav ul li:last-child {
   padding: 50px 25px 10px 25px;
   text-align: left;
   width: 100%;
-  -webkit-transition: all 0.25s ease;
-  -ms-transition: all 0.25s ease;
-  transition: all 0.25s ease;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .second-header .childMenu ul {
     padding: 50px 15px 10px 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .second-header .childMenu ul {
+    -webkit-transition: none;
+    -ms-transition: none;
+    transition: none;
+    height: 0;
+  }
+}
+@media (max-width: 767px) {
+  .second-header .childMenu ul {
+    -webkit-transition: none;
+    -ms-transition: none;
+    transition: none;
+    height: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .second-header .childMenu ul.open {
+    position: relative;
+    padding: 15px 25px 0 25px;
+    height: auto;
+  }
+  .second-header .childMenu ul.open li {
+    margin-bottom: 0;
+  }
+  .second-header .childMenu ul.open li:last-child {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .second-header .childMenu ul.open {
+    position: relative;
+    padding: 35px 25px 0 25px;
+    height: auto;
+  }
+  .second-header .childMenu ul.open li {
+    margin-bottom: 0;
+  }
+  .second-header .childMenu ul.open li:last-child {
+    padding-bottom: 0;
   }
 }
 .second-header .childMenu ul li {
@@ -1681,33 +1720,57 @@ header.second-header nav ul li:last-child {
   }
 }
 .second-header .childMenu .has-sub {
-  padding-right: 55px;
+  padding-right: 53px;
 }
 .second-header .childMenu .has-sub:hover ul {
   left: auto;
 }
-.second-header .childMenu .has-sub:hover:after {
+@media (min-width: 1200px) {
+  .second-header .childMenu .has-sub:hover .submenu-button:after {
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+.second-header .childMenu .has-sub .submenu-button {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -1px;
+  right: 18px;
+  margin-left: 13px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .second-header .childMenu .has-sub .submenu-button {
+    top: 8px;
+    right: 11px;
+  }
+}
+@media (max-width: 767px) {
+  .second-header .childMenu .has-sub .submenu-button {
+    top: 5px;
+    right: 0px;
+  }
+}
+.second-header .childMenu .has-sub .submenu-button.submenu-opened:after {
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
-.second-header .childMenu .has-sub:after {
-  background-color: red;
+.second-header .childMenu .has-sub .submenu-button:after {
   content: "";
   width: 13px;
   height: 20px;
   background-size: cover;
   background-repeat: no-repeat;
-  position: absolute;
-  top: -1px;
   background-image: url("/App_Themes/Milk/images/white-right-nav.svg");
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-  margin-left: 13px;
   -webkit-transition: all 0.25s ease;
   -ms-transition: all 0.25s ease;
   transition: all 0.25s ease;
+  display: block;
 }
 
 footer {
