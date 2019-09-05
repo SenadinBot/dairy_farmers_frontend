@@ -1122,12 +1122,64 @@ header {
         ul {
             position: absolute;
             left: -9999px;
+            display: block;
+            background: $blue;
+            padding: 50px 25px 10px 25px;
+            text-align: left;
+            width: 100%;
+            -webkit-transition: all .25s ease;
+            -ms-transition: all .25s ease;
+            transition: all .25s ease;
+            @include media-md {
+                padding: 50px 15px 10px 15px;
+            }
+            li {
+                a {
+                    font-size: 22px;
+                    line-height: 22px;
+                    @include media-md {
+                        font-size: 16px;
+                        line-height: 16px;
+                    }
+                    &:after {
+                        height: 1px;
+                    }
+                }
+                padding: 0 0 15px 0;
+                @include media-md {
+                    padding: 0 0 10px 0;
+                }
+            }
         }
         .has-sub {
+            padding-right: 55px;
             &:hover {
                 ul {
                     left: auto;
                 }
+                &:after {
+                    -webkit-transform: rotate(270deg);
+                    -ms-transform: rotate(270deg);
+                    transform: rotate(270deg);
+                }
+            }
+            &:after {
+                background-color: red;
+                content: "";
+                width: 13px;
+                height: 20px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: -1px;
+                background-image: url("/App_Themes/Milk/images/white-right-nav.svg");
+                -webkit-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
+                margin-left: 13px;
+                -webkit-transition: all .25s ease;
+                -ms-transition: all .25s ease;
+                transition: all .25s ease;
             }
         }
     }
