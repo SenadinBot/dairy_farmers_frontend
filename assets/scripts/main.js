@@ -151,42 +151,54 @@ $(document).ready(function () {
     });
 
     // Our Milk Carousel
+    var $ourMilkCarousel = $(".our-milk-carousel");
+    var ourMilkSSlider;
     if ($(window).width() > 992) {
-        $(".our-milk-range").on("change mousemove", function () {
-            var previousDiv = $(".our-milk-slide.active-slide");
-            $(".our-milk-slide").removeClass("active-slide");
-            var activeDiv = $(".our-milk-slide[data-value='" + parseInt($(this).val()) + "']");
-            activeDiv.addClass("active-slide");
-            if (activeDiv.index() > Math.round($(".our-milk-slide").length / 2 - 0.1, 0)) {
-                activeDiv.insertBefore(previousDiv);
-            }
-            else {
-                activeDiv.insertAfter(previousDiv);
+        // $(".our-milk-range").on("change mousemove", function () {
+        //     var previousDiv = $(".our-milk-slide.active-slide");
+        //     $(".our-milk-slide").removeClass("active-slide");
+        //     var activeDiv = $(".our-milk-slide[data-value='" + parseInt($(this).val()) + "']");
+        //     activeDiv.addClass("active-slide");
+        //     if (activeDiv.index() > Math.round($(".our-milk-slide").length / 2 - 0.1, 0)) {
+        //         activeDiv.insertBefore(previousDiv);
+        //     }
+        //     else {
+        //         activeDiv.insertAfter(previousDiv);
+        //     }
+        // });
+        // $('.our-milk-carousel').slick({
+
+        // });
+        ourMilkSSlider = $(".ourMilkSlider").slider({
+            min: 0,
+            max: 6,
+            value: 3,
+            slide: function (event, ui) {
+                var slick = $ourMilkCarousel.slick("getSlick");
+                goTo = ui.value * (slick.slideCount - 1) / 6;
+                console.log('slideCount', slick.slideCount);
+                console.log(goTo);
+                $ourMilkCarousel.slick("goTo", goTo);
             }
         });
-    };
-
-    $('.our-milk-carousel').slick({
-        slidesToShow: 3,
+    }
+    $ourMilkCarousel.slick({
+        slidesToShow: 5,
         slidesToScroll: 1,
-        dots: true,
+        dots: false,
         arrows: false,
         infinite: true,
         speed: 500,
         centerMode: true,
-        variableWidth: true,
+        variableWidth: false,
         initialSlide: 2,
         centerPadding: '0',
         responsive: [
             {
-                breakpoint: 9999,
-                settings: "unslick"
-            },
-            {
-                breakpoint: 991,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 1,
+                    dots: true,
                 }
             }
         ]

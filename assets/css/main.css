@@ -5180,13 +5180,6 @@ main {
     @media (min-width: 992px) and (max-width: 1199px) {
       .our-milk-container .our-milk-carousel-container {
         margin-top: -35px; } }
-  @media (min-width: 992px) {
-    .our-milk-container .our-milk-carousel {
-      margin-bottom: 10px;
-      height: 346px;
-      display: inline-flex;
-      width: 100%;
-      align-items: flex-end; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .our-milk-container .our-milk-carousel {
       margin-bottom: 100px; } }
@@ -5233,12 +5226,11 @@ main {
         background: #0072ce; }
   .our-milk-container .our-milk-carousel .slick-list {
     margin-bottom: 20px;
-    width: 100%;
-    height: 462px;
-    overflow: visible; }
+    width: 100%; }
     .our-milk-container .our-milk-carousel .slick-list .slick-track {
       display: inline-flex;
-      align-items: flex-end; }
+      align-items: flex-end;
+      padding-bottom: 250px; }
     .our-milk-container .our-milk-carousel .slick-list .our-milk-slide {
       text-align: center;
       position: relative;
@@ -5266,56 +5258,13 @@ main {
           line-height: normal;
           position: relative;
           top: 7px; }
-  @media (min-width: 992px) {
-    .our-milk-container .our-milk-carousel .our-milk-slide {
-      text-align: center;
-      position: relative;
-      display: inline-block; } }
-  @media (min-width: 1200px) {
-    .our-milk-container .our-milk-carousel .our-milk-slide {
-      width: calc(100% / 5); } }
-  @media (min-width: 992px) and (max-width: 1199px) {
-    .our-milk-container .our-milk-carousel .our-milk-slide {
-      width: calc(100% / 5 - 30px);
-      margin-right: 40px; } }
-  @media (min-width: 992px) and (max-width: 1199px) {
-    .our-milk-container .our-milk-carousel .our-milk-slide:last-child {
-      margin-right: 0; } }
-  .our-milk-container .our-milk-carousel .our-milk-slide.butter-slide img {
-    width: 197px;
-    height: 150px; }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      .our-milk-container .our-milk-carousel .our-milk-slide.butter-slide img {
-        height: auto;
-        max-width: 100%; } }
-  .our-milk-container .our-milk-carousel .our-milk-slide.yogurt-slide img {
-    width: 268px;
-    height: 126px; }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      .our-milk-container .our-milk-carousel .our-milk-slide.yogurt-slide img {
-        height: auto;
-        max-width: 100%; } }
-  .our-milk-container .our-milk-carousel .our-milk-slide.milk-slide img {
-    width: 195px;
-    height: 346px; }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      .our-milk-container .our-milk-carousel .our-milk-slide.milk-slide img {
-        height: auto;
-        max-width: 100%; } }
-  .our-milk-container .our-milk-carousel .our-milk-slide.cheese-slide img {
-    width: 210px;
-    height: 165px; }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      .our-milk-container .our-milk-carousel .our-milk-slide.cheese-slide img {
-        height: auto;
-        max-width: 100%; } }
-  .our-milk-container .our-milk-carousel .our-milk-slide.cream-slide img {
-    width: 207px;
-    height: 154px; }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      .our-milk-container .our-milk-carousel .our-milk-slide.cream-slide img {
-        height: auto;
-        max-width: 100%; } }
+      .our-milk-container .our-milk-carousel .slick-list .our-milk-slide img {
+        max-width: 100%;
+        height: auto; }
+        @media (min-width: 992px) {
+          .our-milk-container .our-milk-carousel .slick-list .our-milk-slide img {
+            max-width: 100%;
+            height: auto; } }
   .our-milk-container .our-milk-carousel .our-milk-slide img {
     object-fit: contain;
     display: inline-block; }
@@ -5469,14 +5418,6 @@ main {
         -webkit-appearance: none;
         outline: none;
         border: none; }
-      .our-milk-container .our-milk-carousel-controls input[type=range]::-ms-track {
-        width: 100%;
-        cursor: pointer;
-        box-shadow: none;
-        height: 15px;
-        border-radius: 7.5px;
-        box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
-        background-color: #f2f2f2; }
       .our-milk-container .our-milk-carousel-controls input[type=range]::-moz-range-track {
         width: 100%;
         cursor: pointer;
@@ -5493,6 +5434,30 @@ main {
         border-radius: 7.5px;
         box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
         background-color: #f2f2f2; }
+
+.ourMilkSlider {
+  width: 791px;
+  cursor: pointer;
+  box-shadow: none;
+  height: 15px;
+  border-radius: 7.5px;
+  box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
+  background-color: #f2f2f2;
+  margin: 0 auto; }
+  .ourMilkSlider .ui-slider-handle {
+    width: 74px;
+    height: 50px;
+    position: relative; }
+    .ourMilkSlider .ui-slider-handle:before {
+      content: "";
+      width: 74px;
+      height: 50px;
+      background: url("/App_Themes/Milk/images/ui-slider.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: -22px;
+      margin-left: -5px; }
 
 .article-list-container {
   margin-bottom: 110px; }
