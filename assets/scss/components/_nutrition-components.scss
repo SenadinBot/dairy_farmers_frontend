@@ -537,6 +537,10 @@
     }
     .true-false-additional-container {
         font-size: 0;
+        margin-bottom: 126px;
+        @include media-xs {
+            margin-bottom: 50px;
+        }
         .true-false-additional-item {
             display: inline-block;
             width: 50%;
