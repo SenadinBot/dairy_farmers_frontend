@@ -217,6 +217,9 @@
                     padding-left: 0;
                     text-align: center;
                 }
+                &.remove-top-spacing {
+                    margin-top: -18px;
+                }
                 .info-fact-item {
                     text-align: center;
                     width: 208px;
@@ -243,18 +246,47 @@
                             margin-right: 0;
                         }
                     }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
                     span {
                         display: block;
-                        text-transform: uppercase;
+                        // text-transform: uppercase;
                         font-family: $robotoSlabBold;
                         color: #0092bc;
                         font-size: 48px;
                         line-height: 48px;
+                        &.text {
+                            font-size: 30px;
+                        }
                     }
                     p {
                         font-family: $robotoLight;
                         font-size: 20px;
                         line-height: 22px;
+                    }
+                    img {
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+            }
+            .bigger-content {
+                .left-side {
+                    width: 385px;
+                }
+                .right-side {
+                    width: calc(100% - 390px);
+                    .info-fact-item {
+                        width: 87%;
+                        margin-right: 0;
+                        &:nth-child(odd) {
+                            margin-right: 0;
+                        }
+                        p {
+                            font-size: 24px;
+                            line-height: 26px;
+                        }
                     }
                 }
             }
