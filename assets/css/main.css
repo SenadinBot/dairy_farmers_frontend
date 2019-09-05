@@ -1642,6 +1642,13 @@ header.second-header nav ul li:last-child {
     line-height: 24px;
   }
 }
+.second-header .childMenu ul {
+  position: absolute;
+  left: -9999px;
+}
+.second-header .childMenu .has-sub:hover ul {
+  left: auto;
+}
 
 footer {
   padding: 20px 0 15px 0;
@@ -4882,6 +4889,7 @@ main {
 @media (max-width: 767px) {
   .true-false-container .true-false-item:nth-child(even) .true-false-item-content {
     padding: 12px 0;
+    margin-top: 0;
   }
 }
 .true-false-container .true-false-item.show-answer .true-false-answer {
@@ -8122,6 +8130,11 @@ main {
   position: relative;
   margin: -45px 0 20px 0;
 }
+@media (min-width: 1200px) {
+  .farmers-history-container .farmers-history-intro {
+    margin: -45px 0 35px 0;
+  }
+}
 .farmers-history-container .farmers-history-intro:before {
   content: "";
   background: rgba(255, 255, 255, 0.9);
@@ -8423,6 +8436,7 @@ main {
   letter-spacing: 2.16px;
   line-height: 44px;
   margin-bottom: 32px;
+  margin-top: -8px;
 }
 .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .small-video-info .primary-btn {
   margin-top: 20px;

@@ -48,6 +48,9 @@
     .farmers-history-intro {
         position: relative;
         margin: -45px 0 20px 0;
+        @include media-lg {
+            margin: -45px 0 35px 0;
+        }
         &:before {
             content: "";
             background: rgba(255, 255, 255, 0.9);
@@ -284,6 +287,7 @@
                     letter-spacing: 2.16px;
                     line-height: 44px;
                     margin-bottom: 32px;
+                    margin-top: -8px;
                 }
                 .primary-btn {
                     margin-top: 20px;

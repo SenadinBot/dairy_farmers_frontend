@@ -1118,4 +1118,17 @@ header {
             }
         }
     }
+    .childMenu {
+        ul {
+            position: absolute;
+            left: -9999px;
+        }
+        .has-sub {
+            &:hover {
+                ul {
+                    left: auto;
+                }
+            }
+        }
+    }
 }
