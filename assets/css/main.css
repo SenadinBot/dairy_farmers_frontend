@@ -2280,6 +2280,8 @@ footer {
   @media (max-width: 767px) {
     .adverb-container {
       height: auto; } }
+  .adverb-container.remove-bottom-spacing {
+    margin-bottom: 0; }
   .adverb-container.programs-adverb-container {
     margin-bottom: 158px;
     height: 279px; }
@@ -2295,6 +2297,8 @@ footer {
       .adverb-container.programs-adverb-container {
         margin-bottom: 90px;
         height: auto; } }
+    .adverb-container.programs-adverb-container.remove-bottom-spacing {
+      margin-bottom: 0; }
     .adverb-container.programs-adverb-container .adverb-content {
       padding-left: 30px; }
       @media (max-width: 767px) and (orientation: portrait) {
@@ -5023,6 +5027,27 @@ main {
     @media (min-width: 992px) and (max-width: 1199px) {
       .additional-info-container h2 {
         width: 60%; } }
+
+.advertisment-container {
+  margin-bottom: 100px;
+  height: 250px; }
+  @media (max-width: 767px) {
+    .advertisment-container {
+      margin-bottom: 70px;
+      height: auto; } }
+  .advertisment-container.add-bottom-spacing {
+    margin-bottom: 180px; }
+    @media (max-width: 767px) {
+      .advertisment-container.add-bottom-spacing {
+        margin-bottom: 100px; } }
+  .advertisment-container img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 250px; }
+    @media (max-width: 767px) {
+      .advertisment-container img {
+        height: auto; } }
 
 .qa-container h2 {
   color: #000000;

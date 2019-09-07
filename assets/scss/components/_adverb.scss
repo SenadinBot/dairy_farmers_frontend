@@ -12,6 +12,9 @@
     @include media-xs {
         height: auto;
     }
+    &.remove-bottom-spacing {
+        margin-bottom: 0;
+    }
     &.programs-adverb-container {
         margin-bottom: 158px;
         height: 279px;
@@ -26,6 +29,9 @@
         @include media-xs {
             margin-bottom: 90px;  
             height: auto;
+        }
+        &.remove-bottom-spacing {
+            margin-bottom: 0;
         }
         .adverb-content {
             padding-left: 30px;
