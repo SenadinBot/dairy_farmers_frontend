@@ -5130,16 +5130,13 @@ main {
         width: 100%; }
 
 .our-milk-container {
-  padding-bottom: 100px; }
+  padding-bottom: 140px; }
   @media (min-width: 768px) and (max-width: 991px) {
     .our-milk-container {
-      padding-bottom: 180px; } }
+      padding-bottom: 0; } }
   @media (max-width: 767px) {
     .our-milk-container {
-      padding-bottom: 180px; } }
-  @media (max-width: 767px) and (orientation: portrait) {
-    .our-milk-container {
-      padding-bottom: 240px; } }
+      padding-bottom: 0; } }
   .our-milk-container .custom-container:before {
     content: "";
     background: rgba(255, 255, 255, 0.07);
@@ -5166,20 +5163,15 @@ main {
       .our-milk-container h2 {
         margin-left: 0; } }
   .our-milk-container .our-milk-carousel-container {
-    margin-top: 20px; }
+    margin-top: -15px; }
     @media (max-width: 767px) {
       .our-milk-container .our-milk-carousel-container {
         width: calc(100% + 30px);
-        margin-left: -15px;
-        margin-top: 0; } }
+        margin-left: -15px; } }
     @media (min-width: 768px) and (max-width: 991px) {
       .our-milk-container .our-milk-carousel-container {
         width: calc(100% + 30px);
-        margin-left: -15px;
-        margin-top: 0; } }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      .our-milk-container .our-milk-carousel-container {
-        margin-top: -35px; } }
+        margin-left: -15px; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .our-milk-container .our-milk-carousel {
       margin-bottom: 100px; } }
@@ -5190,15 +5182,6 @@ main {
     position: relative;
     bottom: 0;
     height: 25px; }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .our-milk-container .our-milk-carousel .slick-dots {
-        bottom: -140px; } }
-    @media (max-width: 767px) {
-      .our-milk-container .our-milk-carousel .slick-dots {
-        bottom: -140px; } }
-    @media (max-width: 767px) and (orientation: portrait) {
-      .our-milk-container .our-milk-carousel .slick-dots {
-        bottom: -200px; } }
     .our-milk-container .our-milk-carousel .slick-dots button {
       width: 25px;
       height: 25px;
@@ -5225,18 +5208,29 @@ main {
       .our-milk-container .our-milk-carousel .slick-dots li.slick-active button:after {
         background: #0072ce; }
   .our-milk-container .our-milk-carousel .slick-list {
-    margin-bottom: 20px;
     width: 100%; }
+    @media (min-width: 992px) {
+      .our-milk-container .our-milk-carousel .slick-list {
+        margin-bottom: 20px; } }
     .our-milk-container .our-milk-carousel .slick-list .slick-track {
       display: inline-flex;
       align-items: flex-end;
       padding-bottom: 250px; }
+      @media (max-width: 767px) and (orientation: portrait) {
+        .our-milk-container .our-milk-carousel .slick-list .slick-track {
+          padding-bottom: 280px; } }
     .our-milk-container .our-milk-carousel .slick-list .our-milk-slide {
       text-align: center;
       position: relative;
       padding: 0 30px; }
+      @media (max-width: 767px) and (orientation: portrait) {
+        .our-milk-container .our-milk-carousel .slick-list .our-milk-slide {
+          padding: 0 5px; } }
       .our-milk-container .our-milk-carousel .slick-list .our-milk-slide.slick-current {
         margin-bottom: -90px; }
+        @media (max-width: 767px) and (orientation: portrait) {
+          .our-milk-container .our-milk-carousel .slick-list .our-milk-slide.slick-current {
+            margin-bottom: -70px; } }
         .our-milk-container .our-milk-carousel .slick-list .our-milk-slide.slick-current:before {
           content: "";
           border: 10px solid #0072ce;
@@ -5250,6 +5244,12 @@ main {
           transform: translateX(-50%);
           border-radius: 100%;
           bottom: 110px; }
+          @media (max-width: 767px) and (orientation: portrait) {
+            .our-milk-container .our-milk-carousel .slick-list .our-milk-slide.slick-current:before {
+              bottom: 80px;
+              width: 170px;
+              height: 170px;
+              border: 5px solid #0072ce; } }
         .our-milk-container .our-milk-carousel .slick-list .our-milk-slide.slick-current p {
           display: -webkit-box; }
         .our-milk-container .our-milk-carousel .slick-list .our-milk-slide.slick-current span {
@@ -5257,7 +5257,17 @@ main {
           letter-spacing: 4.32px;
           line-height: normal;
           position: relative;
-          top: 7px; }
+          top: 7px;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+          width: 150%; }
+          @media (max-width: 767px) and (orientation: portrait) {
+            .our-milk-container .our-milk-carousel .slick-list .our-milk-slide.slick-current span {
+              font-size: 44px;
+              top: 0;
+              width: 200%; } }
       .our-milk-container .our-milk-carousel .slick-list .our-milk-slide img {
         max-width: 100%;
         height: auto; }
@@ -5294,6 +5304,9 @@ main {
         -moz-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease; } }
+    @media (max-width: 767px) and (orientation: portrait) {
+      .our-milk-container .our-milk-carousel .our-milk-slide span {
+        font-size: 28px; } }
   @media (min-width: 992px) {
     .our-milk-container .our-milk-carousel .our-milk-slide.active-slide {
       margin-bottom: -123px; }
@@ -5353,14 +5366,17 @@ main {
         height: 124px; } }
     @media (min-width: 768px) and (max-width: 991px) {
       .our-milk-container .our-milk-carousel .our-milk-slide p {
-        width: 200%;
+        width: 229%;
         margin: 0 auto;
         bottom: initial;
         font-size: 20px; } }
+    @media (max-width: 767px) and (orientation: landscape) {
+      .our-milk-container .our-milk-carousel .our-milk-slide p {
+        width: 235%; } }
     @media (max-width: 767px) {
       .our-milk-container .our-milk-carousel .our-milk-slide p {
-        width: 120%;
-        margin: 0 auto;
+        width: 240%;
+        margin: -5px auto 0 auto;
         bottom: initial;
         font-size: 18px;
         -webkit-line-clamp: 6;
@@ -5443,7 +5459,7 @@ main {
   border-radius: 7.5px;
   box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
   background-color: #f2f2f2;
-  margin: 0 auto; }
+  margin: -18px auto 0 auto; }
   .ourMilkSlider .ui-slider-handle {
     width: 74px;
     height: 50px;
@@ -5458,6 +5474,12 @@ main {
       position: absolute;
       top: -22px;
       margin-left: -5px; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .ourMilkSlider {
+      display: none; } }
+  @media (max-width: 767px) {
+    .ourMilkSlider {
+      display: none; } }
 
 .article-list-container {
   margin-bottom: 110px; }

@@ -196,6 +196,12 @@ $(document).ready(function () {
         centerPadding: '0',
         responsive: [
             {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
                 breakpoint: 992,
                 settings: {
                     slidesToShow: 3,
