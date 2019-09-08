@@ -1868,6 +1868,9 @@ footer {
       @media (max-width: 767px) {
         .recipes-carousel-container .recipes-carousel .recipes-carousel-inner {
           padding-left: 10px; } }
+      @media all and (-ms-high-contrast: none) {
+        .recipes-carousel-container .recipes-carousel .recipes-carousel-inner {
+          width: 1000%; } }
     .recipes-carousel-container .recipes-carousel .recipes-slide {
       background-color: #ffc600;
       color: #000000;
@@ -1955,6 +1958,9 @@ footer {
       width: 100%;
       margin: 0.8px 0;
       height: 74px; }
+      @media all and (-ms-high-contrast: none) {
+        .recipes-carousel-container .recipes-carousel-controls input[type=range] {
+          height: 108px; } }
       .recipes-carousel-container .recipes-carousel-controls input[type=range]:focus {
         outline: none;
         outline-style: none;

@@ -183,6 +183,9 @@
             @include media-xs {
                 padding-left: 10px;
             }
+            @media all and (-ms-high-contrast:none) {
+                width: 1000%;
+            }
         }
         .recipes-slide {
             background-color: #ffc600;
@@ -284,6 +287,9 @@
             width: 100%;
             margin: 0.8px 0; 
             height: 74px;
+            @media all and (-ms-high-contrast:none) {
+                height: 108px;                
+            }
             &:focus {
                 outline: none;
                 outline-style: none;
