@@ -222,7 +222,7 @@ $(document).ready(function () {
     });
 
     // Child Menu
-    $(".childMenu").menumaker({
+    $(".second-header .mobile-inner-nav > ul").menumaker({
         format: "multitoggle"
     });
 

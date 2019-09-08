@@ -1118,7 +1118,60 @@ header {
             }
         }
     }
-    .childMenu {
+    .has-sub {
+        padding-right: 53px;
+        &:hover {
+            ul {
+                left: auto;
+            }
+            .submenu-button {
+                @include media-lg {
+                    &:after {
+                        -webkit-transform: rotate(270deg);
+                        -ms-transform: rotate(270deg);
+                        transform: rotate(270deg);
+                    }
+                }
+            }
+        }
+        .submenu-button {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: -1px;
+            right: 18px;
+            margin-left: 13px;
+            @include media-sm {
+                top: 8px;
+                right: 11px;
+            }
+            @include media-xs {
+                top: 5px;
+                right: 0px;
+            }
+            &.submenu-opened {
+                &:after {
+                    -webkit-transform: rotate(270deg);
+                    -ms-transform: rotate(270deg);
+                    transform: rotate(270deg);
+                }
+            }
+            &:after {
+                content: "";
+                width: 13px;
+                height: 20px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url("/App_Themes/Milk/images/white-right-nav.svg");
+                -webkit-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
+                -webkit-transition: all .25s ease;
+                -ms-transition: all .25s ease;
+                transition: all .25s ease;
+                display: block;
+            }
+        }
         ul {
             position: absolute;
             left: -9999px;
@@ -1181,61 +1234,6 @@ header {
                 padding: 0 0 15px 0;
                 @include media-md {
                     padding: 0 0 10px 0;
-                }
-            }
-        }
-        .has-sub {
-            padding-right: 53px;
-            &:hover {
-                ul {
-                    left: auto;
-                }
-                .submenu-button {
-                    @include media-lg {
-                        &:after {
-                            -webkit-transform: rotate(270deg);
-                            -ms-transform: rotate(270deg);
-                            transform: rotate(270deg);
-                        }
-                    }
-                }
-            }
-            .submenu-button {
-                width: 20px;
-                height: 20px;
-                position: absolute;
-                top: -1px;
-                right: 18px;
-                margin-left: 13px;
-                @include media-sm {
-                    top: 8px;
-                    right: 11px;
-                }
-                @include media-xs {
-                    top: 5px;
-                    right: 0px;
-                }
-                &.submenu-opened {
-                    &:after {
-                        -webkit-transform: rotate(270deg);
-                        -ms-transform: rotate(270deg);
-                        transform: rotate(270deg);
-                    }
-                }
-                &:after {
-                    content: "";
-                    width: 13px;
-                    height: 20px;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-image: url("/App_Themes/Milk/images/white-right-nav.svg");
-                    -webkit-transform: rotate(90deg);
-                    -ms-transform: rotate(90deg);
-                    transform: rotate(90deg);
-                    -webkit-transition: all .25s ease;
-                    -ms-transition: all .25s ease;
-                    transition: all .25s ease;
-                    display: block;
                 }
             }
         }

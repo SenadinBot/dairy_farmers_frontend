@@ -1303,71 +1303,16 @@ header {
   .second-header .mobile-more-links ul li a {
     font-size: 24px;
     line-height: 24px; } }
-.second-header .childMenu ul {
-  position: absolute;
-  left: -9999px;
-  display: block;
-  background: #0072ce;
-  padding: 50px 25px 10px 25px;
-  text-align: left;
-  width: 100%; }
-  @media (min-width: 992px) and (max-width: 1199px) {
-    .second-header .childMenu ul {
-      padding: 50px 15px 10px 15px; } }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .second-header .childMenu ul {
-      -webkit-transition: none;
-      -ms-transition: none;
-      transition: none;
-      height: 0; } }
-  @media (max-width: 767px) {
-    .second-header .childMenu ul {
-      -webkit-transition: none;
-      -ms-transition: none;
-      transition: none;
-      height: 0; } }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .second-header .childMenu ul.open {
-      position: relative;
-      padding: 15px 25px 0 25px;
-      height: auto; }
-      .second-header .childMenu ul.open li {
-        margin-bottom: 0; }
-        .second-header .childMenu ul.open li:last-child {
-          padding-bottom: 0; } }
-  @media (max-width: 767px) {
-    .second-header .childMenu ul.open {
-      position: relative;
-      padding: 35px 25px 0 25px;
-      height: auto; }
-      .second-header .childMenu ul.open li {
-        margin-bottom: 0; }
-        .second-header .childMenu ul.open li:last-child {
-          padding-bottom: 0; } }
-  .second-header .childMenu ul li {
-    padding: 0 0 15px 0; }
-    .second-header .childMenu ul li a {
-      font-size: 22px;
-      line-height: 22px; }
-      @media (min-width: 992px) and (max-width: 1199px) {
-        .second-header .childMenu ul li a {
-          font-size: 16px;
-          line-height: 16px; } }
-      .second-header .childMenu ul li a:after {
-        height: 1px; }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      .second-header .childMenu ul li {
-        padding: 0 0 10px 0; } }
-.second-header .childMenu .has-sub {
+.second-header .has-sub {
   padding-right: 53px; }
-  .second-header .childMenu .has-sub:hover ul {
+  .second-header .has-sub:hover ul {
     left: auto; }
   @media (min-width: 1200px) {
-    .second-header .childMenu .has-sub:hover .submenu-button:after {
+    .second-header .has-sub:hover .submenu-button:after {
       -webkit-transform: rotate(270deg);
       -ms-transform: rotate(270deg);
       transform: rotate(270deg); } }
-  .second-header .childMenu .has-sub .submenu-button {
+  .second-header .has-sub .submenu-button {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -1375,18 +1320,18 @@ header {
     right: 18px;
     margin-left: 13px; }
     @media (min-width: 768px) and (max-width: 991px) {
-      .second-header .childMenu .has-sub .submenu-button {
+      .second-header .has-sub .submenu-button {
         top: 8px;
         right: 11px; } }
     @media (max-width: 767px) {
-      .second-header .childMenu .has-sub .submenu-button {
+      .second-header .has-sub .submenu-button {
         top: 5px;
         right: 0px; } }
-    .second-header .childMenu .has-sub .submenu-button.submenu-opened:after {
+    .second-header .has-sub .submenu-button.submenu-opened:after {
       -webkit-transform: rotate(270deg);
       -ms-transform: rotate(270deg);
       transform: rotate(270deg); }
-    .second-header .childMenu .has-sub .submenu-button:after {
+    .second-header .has-sub .submenu-button:after {
       content: "";
       width: 13px;
       height: 20px;
@@ -1400,6 +1345,61 @@ header {
       -ms-transition: all .25s ease;
       transition: all .25s ease;
       display: block; }
+  .second-header .has-sub ul {
+    position: absolute;
+    left: -9999px;
+    display: block;
+    background: #0072ce;
+    padding: 50px 25px 10px 25px;
+    text-align: left;
+    width: 100%; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .second-header .has-sub ul {
+        padding: 50px 15px 10px 15px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .second-header .has-sub ul {
+        -webkit-transition: none;
+        -ms-transition: none;
+        transition: none;
+        height: 0; } }
+    @media (max-width: 767px) {
+      .second-header .has-sub ul {
+        -webkit-transition: none;
+        -ms-transition: none;
+        transition: none;
+        height: 0; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .second-header .has-sub ul.open {
+        position: relative;
+        padding: 15px 25px 0 25px;
+        height: auto; }
+        .second-header .has-sub ul.open li {
+          margin-bottom: 0; }
+          .second-header .has-sub ul.open li:last-child {
+            padding-bottom: 0; } }
+    @media (max-width: 767px) {
+      .second-header .has-sub ul.open {
+        position: relative;
+        padding: 35px 25px 0 25px;
+        height: auto; }
+        .second-header .has-sub ul.open li {
+          margin-bottom: 0; }
+          .second-header .has-sub ul.open li:last-child {
+            padding-bottom: 0; } }
+    .second-header .has-sub ul li {
+      padding: 0 0 15px 0; }
+      .second-header .has-sub ul li a {
+        font-size: 22px;
+        line-height: 22px; }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          .second-header .has-sub ul li a {
+            font-size: 16px;
+            line-height: 16px; } }
+        .second-header .has-sub ul li a:after {
+          height: 1px; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .second-header .has-sub ul li {
+          padding: 0 0 10px 0; } }
 
 footer {
   padding: 20px 0 15px 0;
@@ -7128,30 +7128,45 @@ main {
     max-width: 100%;
     width: 100%; }
   .recipe-article-item-container .hover-line {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0; }
     .recipe-article-item-container .hover-line:after, .recipe-article-item-container .hover-line:before {
       content: '';
       display: block;
       position: absolute;
-      background: red; }
+      z-index: 9;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease; }
     .recipe-article-item-container .hover-line:before {
-      top: -16px;
-      left: 0;
-      width: 64px;
-      height: 16px;
-      border-radius: 10px 0 0; }
+      background-color: rgba(84, 88, 90, 0);
+      top: -36px;
+      left: -9px;
+      width: 60%;
+      height: 24px;
+      border-radius: 10px 0 0;
+      z-index: 99; }
     .recipe-article-item-container .hover-line:after {
-      top: -32px;
-      left: 48px;
-      border: 16px solid transparent; }
+      width: 0;
+      height: 0;
+      top: -36px;
+      left: 58.4%;
+      border-bottom: solid 12px rgba(84, 88, 90, 0);
+      border-left: solid 12px rgba(84, 88, 90, 0);
+      border-right: solid 12px transparent;
+      border-top: solid 12px transparent; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .recipe-article-item-container .hover-line:after {
+          left: 58%; } }
   .recipe-article-item-container:after {
     content: "";
     border-radius: 4px;
     border-top-left-radius: 0;
-    background-color: #54585a;
-    box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 8px 7px 0 rgba(0, 0, 0, 0);
+    background-color: rgba(84, 88, 90, 0);
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
@@ -7162,6 +7177,16 @@ main {
     top: -12px;
     height: calc(100% + 20px);
     width: calc(100% + 17px); }
+  .recipe-article-item-container:hover:after {
+    background-color: rgba(84, 88, 90, 0.13);
+    box-shadow: 0px 8px 7px 0 rgba(0, 0, 0, 0.13); }
+  .recipe-article-item-container:hover .hover-line:before {
+    background-color: rgba(84, 88, 90, 0.13); }
+  .recipe-article-item-container:hover .hover-line:after {
+    border-bottom: solid 12px rgba(84, 88, 90, 0.13);
+    border-left: solid 12px rgba(84, 88, 90, 0.13);
+    border-right: solid 12px transparent;
+    border-top: solid 12px transparent; }
 
 .two-col-articles .recipe-article-item-container {
   width: calc(100% / 2 - 10px);
@@ -7210,5 +7235,10 @@ main {
     height: 93px; }
   .three-col-articles .recipe-article-item-container:hover .article-icon {
     padding-top: 22px; }
+  .three-col-articles .recipe-article-item-container .hover-line:after {
+    left: 57.5%; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .three-col-articles .recipe-article-item-container .hover-line:after {
+        left: 57%; } }
 
 /*# sourceMappingURL=main.css.map */
