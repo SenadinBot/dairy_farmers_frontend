@@ -37,6 +37,19 @@
     font-style: italic;
 }
 
+// Roboto Medium
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('../fonts/roboto-medium/Roboto-Medium.eot');
+    src: url('../fonts/roboto-medium/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/roboto-medium/Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/roboto-medium/Roboto-Medium.woff') format('woff'),
+        url('../fonts/roboto-medium/Roboto-Medium.ttf') format('truetype'),
+        url('../fonts/roboto-medium/Roboto-Medium.svg#Roboto-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
 // Roboto Bold
 @font-face {
     font-family: 'Roboto Bold';

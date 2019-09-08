@@ -194,6 +194,7 @@ $(document).ready(function () {
         variableWidth: false,
         initialSlide: 2,
         centerPadding: '0',
+        draggable: false,
         responsive: [
             {
                 breakpoint: 1200,
@@ -206,6 +207,7 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 3,
                     dots: true,
+                    draggable: true,
                 }
             }
         ]
@@ -222,6 +224,16 @@ $(document).ready(function () {
     // Child Menu
     $(".childMenu").menumaker({
         format: "multitoggle"
+    });
+
+    // Culinary Carousel
+    $('.culinary-carousel').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        dots: true,
+        cssEase: 'linear',
     });
 });
 

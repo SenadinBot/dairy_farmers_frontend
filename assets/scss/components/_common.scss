@@ -753,4 +753,9 @@
             height: auto;
         }
     }
+    .col-12 {
+        @include media-xs {
+            padding: 0 5px;
+        }
+    }
 }

@@ -7,7 +7,7 @@ main {
     }
 }
 h1 {
-
+    @include acuminProExtraCondBlack();
 }
 h2 {
     @include acuminProExtraCondBlack();
@@ -143,7 +143,7 @@ a {
         font-size: 48px;
         line-height: 48px;
         letter-spacing: 2.88px;
-        padding: 11px 15px 15px 15px;
+        padding: 12px 15px 14px 15px;
     }
     @include media-md {
         font-size: 24px;
