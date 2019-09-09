@@ -265,6 +265,32 @@
                         }
                     }
                 }
+                &.desktop-img {
+                    @include media-xs {
+                        display: none;
+                    }
+                    @include media-sm {
+                        display: none;
+                    }
+                }
+                &.mobile-img {
+                    display: none;
+                    @include media-xs {
+                        display: block;
+                    }
+                    @include media-sm {
+                        display: block;
+                    }
+                }
+                &.center-position {
+                    background-position: center;
+                }
+                &.right-position {
+                    background-position: right;
+                }
+                &.left-position {
+                    background-position: left;
+                }
             }
             .culinary-slide-content {
                 margin-left: 115px;
@@ -328,6 +354,9 @@
                     margin-top: 15px;
                     @include media-xs-portrait {
                         width: 100%;
+                    }
+                    @include media-xs-landscape {
+                        width: 60%;
                     }
                 }
             }

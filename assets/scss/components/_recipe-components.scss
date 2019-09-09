@@ -168,6 +168,9 @@
             }
         }
     }
+    .primary-btn {
+        width: 60%;
+    }
 }
 .recipe-article-items-container {
     padding-bottom: 145px;
@@ -187,7 +190,10 @@
                 width: 100%;
             }
             @include media-xs-landscape {
-                padding: 12px 25px 14px 25px;
+                padding: 12px 15px 14px 15px;
+                width: 60%;
+                margin: 0 auto 0 0;
+                display: block;
             }
         }
         .see-more {

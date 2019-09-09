@@ -9364,6 +9364,38 @@ main {
 .culinary-carousel-container .culinary-carousel .culinary-slide .culinary-slide-img .play-btn:hover:after {
   opacity: 0.8;
 }
+@media (max-width: 767px) {
+  .culinary-carousel-container .culinary-carousel .culinary-slide .culinary-slide-img.desktop-img {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .culinary-carousel-container .culinary-carousel .culinary-slide .culinary-slide-img.desktop-img {
+    display: none;
+  }
+}
+.culinary-carousel-container .culinary-carousel .culinary-slide .culinary-slide-img.mobile-img {
+  display: none;
+}
+@media (max-width: 767px) {
+  .culinary-carousel-container .culinary-carousel .culinary-slide .culinary-slide-img.mobile-img {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .culinary-carousel-container .culinary-carousel .culinary-slide .culinary-slide-img.mobile-img {
+    display: block;
+  }
+}
+.culinary-carousel-container .culinary-carousel .culinary-slide .culinary-slide-img.center-position {
+  background-position: center;
+}
+.culinary-carousel-container .culinary-carousel .culinary-slide .culinary-slide-img.right-position {
+  background-position: right;
+}
+.culinary-carousel-container .culinary-carousel .culinary-slide .culinary-slide-img.left-position {
+  background-position: left;
+}
 .culinary-carousel-container .culinary-carousel .culinary-slide .culinary-slide-content {
   margin-left: 115px;
   width: 852px;
@@ -9441,6 +9473,11 @@ main {
 @media (max-width: 767px) and (orientation: portrait) {
   .culinary-carousel-container .culinary-carousel .culinary-slide .culinary-slide-content .primary-btn {
     width: 100%;
+  }
+}
+@media (max-width: 767px) and (orientation: landscape) {
+  .culinary-carousel-container .culinary-carousel .culinary-slide .culinary-slide-content .primary-btn {
+    width: 60%;
   }
 }
 .culinary-carousel-container .culinary-carousel .slick-list,
@@ -9743,6 +9780,9 @@ main {
     margin-right: 0;
   }
 }
+.big-recipe-article-container .primary-btn {
+  width: 60%;
+}
 
 .recipe-article-items-container {
   padding-bottom: 145px;
@@ -9768,7 +9808,10 @@ main {
 }
 @media (max-width: 767px) and (orientation: landscape) {
   .recipe-article-items-container .btn-container .primary-btn {
-    padding: 12px 25px 14px 25px;
+    padding: 12px 15px 14px 15px;
+    width: 60%;
+    margin: 0 auto 0 0;
+    display: block;
   }
 }
 .recipe-article-items-container .btn-container .see-more {
