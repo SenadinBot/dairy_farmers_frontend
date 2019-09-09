@@ -9,6 +9,15 @@
         @include media-xlg {
             height: 910px;
         }
+        @include media-md {
+            height: 610px;
+        }
+        @include media-sm {
+            height: 400px;
+        }
+        @include media-xs {
+            height: 400px;
+        }
         &.desktop-banner-image {
             @include media-xs {
                 display: none !important;
@@ -46,6 +55,18 @@
         z-index: 9;
         margin: -50px 0 28px 0;
         width: 74%;
+        @include media-md {
+            width: 90%;
+        }
+        @include media-sm {
+            width: 84%;
+        }
+        @include media-xs {
+            width: 100%;
+            font-size: 64px;
+            line-height: 64px;
+            margin: -40px 0 20px 0;
+        }
         &:before {
             content: "";
             background: rgba(255, 255, 255, 0.9);
@@ -55,6 +76,10 @@
             top: -11px;
             left: -26px;
             z-index: -9;
+            @include media-xs {
+                width: 100vw;
+                height: 106px;
+            }
         }
     }
     .big-recipe-article-content {
@@ -63,6 +88,16 @@
         border-right: 1px solid #cccccc;
         padding-bottom: 10px;
         vertical-align: top;
+        @include media-md {
+            width: 55%;
+        }
+        @include media-sm {
+            width: 57%;
+        }
+        @include media-xs {
+            width: 100%;
+            border-right: 0;
+        }
         p {
             font-family: $robotoLight;
             font-size: 22px;
@@ -70,6 +105,9 @@
         }
         .primary-btn {
             margin-top: 25px;
+            @include media-xs-portrait {
+                width: 100%;
+            }
         }
     }
     .article-icon {
@@ -78,12 +116,31 @@
         padding-left: 36px;
         vertical-align: top;
         padding-top: 10px;
+        @include media-md {
+            width: 44%;
+        }
+        @include media-sm {
+            width: 42%;
+        }
+        @include media-xs {
+            width: 100%;
+            border-top: 1px solid #cccccc;
+            padding-top: 20px;
+            margin-bottom: 40px;
+            padding-left: 0;
+        }
         .article-info {
             display: inline-block;
             text-align: center;
             margin-right: 81px;
+            @include media-xs {
+                margin-right: calc((100% - 290px) / 2);
+            }
             img {
                 height: 40px;
+                @include media-xs {
+                    display: inline-block;
+                }
             }
             span {
                 font-family: $robotoLight;
@@ -92,12 +149,22 @@
                 color: $dark;
                 display: block;
                 margin-top: 6px;
+                @include media-xs {
+                    display: inline-block;
+                }
             }
             &:first-child {
                 margin-bottom: 33px;
+                @include media-xs {
+                    margin-bottom: 0;
+                }
             }
             &:last-child {
                 display: table;
+                @include media-xs {
+                    display: inline-block;
+                    margin-right: 0;
+                }
             }
         }
     }
@@ -111,6 +178,26 @@
     .btn-container {
         text-align: center;
         margin-top: 30px;
+        @include media-xs {
+            margin-top: -5px;
+        }
+        .primary-btn {
+            @include media-xs-portrait {
+                padding: 12px 25px 14px 25px;
+                width: 100%;
+            }
+            @include media-xs-landscape {
+                padding: 12px 25px 14px 25px;
+            }
+        }
+        .see-more {
+            @include acuminProExtraCondBlack;
+            color: $blue;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            font-size: 26px;
+            line-height: 26px;
+        }
     }
 }
 .recipe-article-item-container {
@@ -119,9 +206,21 @@
     margin-bottom: 80px;
     position: relative;
     padding-bottom: 10px;
+    @include media-xs {
+        margin-bottom: 50px;
+    }
     h4 {
         text-transform: uppercase;
         margin-top: -8px;
+        @include media-md {
+            min-height: 72px;
+        }
+        @include media-sm {
+            min-height: 72px;
+        }
+        @include media-xs {
+            margin-bottom: 0;
+        }
     }
     p {
         font-family: $robotoLight;
@@ -132,7 +231,10 @@
         -ms-box-orient: vertical;
         box-orient: vertical;
         overflow: hidden;
-        display: -webkit-box;    
+        display: -webkit-box;  
+        @include media-xs {
+            line-height: 24px;
+        }  
     }
     .article-icon {
         text-align: center;
@@ -155,6 +257,9 @@
         margin-right: 40px;
         &:last-child {
             margin-right: 0;
+        }
+        @include media-xs {
+            margin-right: calc((100% - 210px) / 2);
         }
         img {
             display: inline-block;
@@ -257,18 +362,31 @@
         margin-right: 15px;
         @include media-xs {
             margin-right: 0;
+            width: 100%;
         }
         &:last-child {
             margin-right: 0;
         }
         .img-container {
             margin-bottom: 30px;
+            @include media-xs {
+                margin-bottom: 20px;
+            }
         }
         .article-icon {
             padding-top: 18px;
             &:before {
                 width: calc(100% - 40px);
                 left: 20px;
+                @include media-xs {
+                    left: 0;
+                    width: 100%;
+                }
+            }
+            @include media-xs {
+                margin-top: 20px;
+                padding: 20px 20px 0 20px;
+                text-align: left;
             }
         }
         p {
@@ -277,6 +395,13 @@
             -ms-line-clamp: 2;
             line-clamp: 2;
             height: 60px;
+            @include media-xs {
+                -webkit-line-clamp: initial;
+                -moz-line-clamp: initial;
+                -ms-line-clamp: initial;
+                line-clamp: initial;
+                height: auto;
+            }
         }
         &:hover {
             .article-icon {
@@ -294,6 +419,7 @@
         }
         @include media-xs {
             margin-right: 0;
+            width: 100%;
         }
         .img-container {
             margin-bottom: 20px;
@@ -303,6 +429,30 @@
             &:before {
                 width: calc(100% - 23px);
                 left: 11px;
+                @include media-xs {
+                    width: 100%;
+                    left: 0;
+                }
+                @include media-sm {
+                    width: 100%;
+                    left: 0;
+                }
+            }
+        }
+        .article-info {
+            @include media-sm {
+                margin-right: calc((100% - 210px) / 2);
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        h4 {
+            @include media-md {
+                min-height: 108px;
+            }
+            @include media-sm {
+                min-height: 144px;
             }
         }
         p {
@@ -311,6 +461,13 @@
             -ms-line-clamp: 4;
             line-clamp: 3;
             height: 93px;
+            @include media-xs {
+                -webkit-line-clamp: initial;
+                -moz-line-clamp: initial;
+                -ms-line-clamp: initial;
+                line-clamp: initial;
+                height: auto;
+            }
         }
         &:hover {
             .article-icon {
