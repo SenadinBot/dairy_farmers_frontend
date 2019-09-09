@@ -33,6 +33,9 @@
         &.remove-bottom-spacing {
             margin-bottom: 0;
         }
+        &.medium-bottom-spacing {
+            margin-bottom: 132px;
+        }
         .adverb-content {
             padding-left: 30px;
             @include media-xs-portrait {

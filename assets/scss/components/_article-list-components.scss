@@ -5,8 +5,8 @@
     }
     .three-article-list-container {
         .article-item-container {
-            margin-right: 15px;
-            width: calc(100% / 3 - 13px);
+            margin-right: 11px;
+            width: calc(100% / 3 - 11px);
             @include media-xs {
                 width: 100%;
                 margin-right: 0;
@@ -32,6 +32,20 @@
             }
         }
     }
+    &.recipe-list-container {
+        &.big-bottom-spacing {
+            margin-bottom: 159px;
+        }
+        h2 {
+            width: 100%;
+        }
+        .article-item-content {
+            .primary-btn {
+                margin: 30px auto 0 auto;
+                display: table;
+            }
+        }
+    }
     &.programs-article-list-container {
         margin-top: -16px;
         margin-bottom: 95px;
@@ -40,6 +54,7 @@
         text-transform: uppercase;
         color: $dark;
         width: 35%;
+        margin: -19px 0 24px 0;        
         @include media-md {
             width: 50%;
         }
@@ -48,6 +63,7 @@
         }
         @include media-xs {
             width: 100%;
+            margin-bottom: 20px;
         }
         @include media-xs-landscape {
             width: 50%;

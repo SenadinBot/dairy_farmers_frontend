@@ -207,6 +207,15 @@
             line-height: 26px;
         }
     }
+    &.three-col-articles-container {
+        padding-bottom: 45px;
+        &.add-bottom-spacing {
+            padding-bottom: 60px;
+        }
+        h2 {
+            margin: -17px 0 73px 0;
+        }
+    }
 }
 .recipe-article-item-container {
     display: inline-block;
