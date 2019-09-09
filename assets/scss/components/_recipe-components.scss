@@ -59,7 +59,7 @@
             width: 90%;
         }
         @include media-sm {
-            width: 84%;
+            width: 95%;
         }
         @include media-xs {
             width: 100%;
@@ -169,7 +169,9 @@
         }
     }
     .primary-btn {
-        width: 60%;
+        @include media-xs-landscape {
+            width: 60%;
+        }
     }
 }
 .recipe-article-items-container {

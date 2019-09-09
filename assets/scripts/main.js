@@ -234,6 +234,16 @@ $(document).ready(function () {
         fade: true,
         dots: true,
         cssEase: 'linear',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    fade: false,
+                    variableWidth: true,
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 });
 
@@ -243,19 +253,6 @@ $.fn.menumaker = function (options) {
         sticky: false
     }, options);
     return this.each(function () {
-        // $(this).find(".button").on('click', function () {
-        //     $(this).toggleClass('menu-opened');
-        //     var mainmenu = $(this).next('ul');
-        //     if (mainmenu.hasClass('open')) {
-        //         mainmenu.slideToggle().removeClass('open');
-        //     }
-        //     else {
-        //         mainmenu.slideToggle().addClass('open');
-        //         if (settings.format === "dropdown") {
-        //             mainmenu.find('ul').show();
-        //         }
-        //     }
-        // });
         cssmenu.find('li ul').parent().addClass('has-sub');
         multiTg = function () {
             cssmenu.find(".has-sub").prepend('<span class="submenu-button"></span>');
