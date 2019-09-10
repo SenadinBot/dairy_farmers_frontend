@@ -738,6 +738,9 @@
         margin-bottom: 70px;
         height: auto;
     }
+    @include media-sm {
+        height: auto;
+    }
     &.add-bottom-spacing {
         margin-bottom: 180px;
         @include media-xs {
@@ -747,7 +750,7 @@
     &.medium-bottom-spacing {
         margin-bottom: 123px;
         @include media-xs {
-            margin-bottom: 80px;
+            margin-bottom: 143px;
         }
     }
     img {
@@ -756,6 +759,9 @@
         width: 100%;
         height: 250px;
         @include media-xs {
+            height: auto;
+        }
+        @include media-sm {
             height: auto;
         }
     }

@@ -238,6 +238,11 @@ a {
         max-width: 100%;
     }
 }
+.modal-open {
+    .modal {
+        z-index: 9999;
+    }
+}
 .video-modal {
     .modal-body {
         padding: 0;

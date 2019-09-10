@@ -10,14 +10,18 @@
             @include media-xs {
                 width: 100%;
                 margin-right: 0;
+                margin-bottom: 50px;
             }
             &:last-child {
                 margin-right: 0;
+                @include media-xs {
+                    margin-bottom: 0;
+                }
             }
         }  
         .primary-btn {
             @include media-sm {
-                padding: 13px 7px 7px 7px;
+                padding: 12px 7px 14px 7px;
             }
         }      
     }
@@ -35,6 +39,9 @@
     &.recipe-list-container {
         &.big-bottom-spacing {
             margin-bottom: 159px;
+            @include media-xs {
+                margin-bottom: 120px;
+            }
         }
         h2 {
             width: 100%;
@@ -142,7 +149,7 @@
             }
             @include media-xs-landscape {
                 width: 60%;
-                padding: 13px 15px 7px 15px;
+                padding: 12px 15px 14px 15px;
             }
         }
     }

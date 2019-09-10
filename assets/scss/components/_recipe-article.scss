@@ -1,5 +1,8 @@
 .article-info-banner-container {
     margin-bottom: 102px;
+    @include media-xs {
+        margin-bottom: 50px;
+    }
     .article-info-image-container {
         width: 100%;
         height: 810px;
@@ -18,7 +21,7 @@
             height: 600px;
         }
         @include media-xs {
-            height: 400px;
+            height: 600px;
         }
         &.desktop-banner-image {
             @include media-xs {
@@ -46,6 +49,9 @@
         margin-top: -172px;
         z-index: 9;
         position: relative;
+        @include media-xs-portrait {
+            margin-top: -270px;
+        }
         &:before {
             content: "";
             width: 90px;
@@ -61,6 +67,10 @@
             -o-transition: all .3s ease 0s;
             transition: all .3s ease 0s;
             vertical-align: middle;
+            @include media-xs {
+                width: 70px;
+                height: 70px;
+            }
         }
         &:hover {
             &:before {
@@ -104,7 +114,12 @@
             width: 100%;
             font-size: 64px;
             line-height: 64px;
-            margin: -40px 0 20px 0;
+        }
+        @include media-xs-portrait {
+            margin: 25px 0 20px 0;
+        }
+        @include media-xs-landscape {
+            margin: 30px 0 20px 0;
         }
         &:before {
             content: "";
@@ -117,6 +132,8 @@
             z-index: -9;
             @include media-xs {
                 width: 100vw;
+            }
+            @include media-xs-landscape {
                 height: 106px;
             }
         }
@@ -132,7 +149,8 @@
             width: 55%;
         }
         @include media-sm {
-            width: 57%;
+            width: 60%;
+            padding-right: 25px;
         }
         @include media-xs {
             width: 100%;
@@ -143,6 +161,9 @@
             font-size: 22px;
             line-height: 34px;
             margin: 0;
+            @include media-xs {
+                margin-bottom: 10px;
+            }
         }
         .primary-btn {
             margin-top: 25px;
@@ -161,7 +182,7 @@
             width: 44%;
         }
         @include media-sm {
-            width: 42%;
+            width: 39%;
         }
         @include media-xs {
             width: 100%;
@@ -176,6 +197,9 @@
             margin-right: 81px;
             @include media-xs {
                 margin-right: calc((100% - 290px) / 2);
+            }
+            @include media-sm {
+                margin-right: 50px;
             }
             img {
                 height: 40px;
@@ -211,6 +235,9 @@
     }
     .share-recipe-container {
         margin-top: 35px;
+        @include media-xs {
+            display: none;
+        }
         h4 {
             display: inline-block;
             font-size: 30px;
@@ -243,11 +270,26 @@
     margin-bottom: 93px;
     .recipe-article-inner-container {
         width: 84%;
+        @include media-md {
+            width: 95%;
+        }
+        @include media-sm {
+            width: 100%;
+        }
+        @include media-xs {
+            width: 100%;
+        }
     }
     .what-you-need-container {
         margin-bottom: 132px;
+        @include media-xs {
+            margin-bottom: 62px;
+        }
         h3 {
             margin-bottom: 50px;
+            @include media-xs {
+                margin-bottom: 40px;
+            }
         }
         ul {
             list-style: none;
@@ -264,8 +306,15 @@
                 position: relative;
                 padding-left: 17px;
                 margin-bottom: 18px;
+                @include media-xs {
+                    margin-bottom: 15px;
+                    line-height: 24px;
+                }
                 &:last-child {
                     margin-bottom: 0;
+                    @include media-xs {
+                        margin-bottom: 15px;
+                    }
                 }
                 &:before {
                     content: "";
@@ -295,6 +344,12 @@
         }
         .right-side {
             padding-left: 67px;
+            @include media-sm {
+                padding-left: 0;
+            }
+            @include media-xs {
+                padding-left: 0;
+            }
         }
     }
     .video-container {
@@ -302,6 +357,9 @@
         background-color: transparent;
         width: 99.4%;
         @include media-xs {
+            width: 100%;
+        }
+        @include media-sm {
             width: 100%;
         }
         h4 {
@@ -317,18 +375,28 @@
                 height: 400px;
             }
             @include media-xs {
-                height: 280px;
-                padding-top: 60px;
+                height: auto;
+                padding-top: 0;
             }
             @include media-xs-landscape {
-                height: 380px;
+                height: auto;
             }
             .primary-btn {
                 margin-top: 95px;
+                @include media-xs-portrait {
+                    padding: 11px 10px 13px 10px;
+                    width: 281px;
+                    margin-top: 35px;
+                }
                 &:before {
                     width: 90px;
                     height: 90px;
                     top: -131px;
+                    @include media-xs-portrait {
+                        width: 50px;
+                        height: 50px;
+                        top: -70px;
+                    }
                 }
             }
         }
@@ -339,11 +407,19 @@
         width: 99.4%;
         @include media-xs {
             width: 100%;
+            margin-bottom: 70px;
+        }
+        @include media-sm {
+            width: 100%;
         }
         .print-icon {
             position: absolute;
             top: 0;
             right: 0;
+            @include media-xs-portrait {
+                margin-top: 30px;
+                position: relative;
+            }
             &:before {
                 content: "";
                 width: 39px;
@@ -378,7 +454,7 @@
                 padding-left: 50px;
                 margin-bottom: 53px;
                 @include media-xs {
-                    margin-bottom: 55px;
+                    margin-bottom: 25px;
                 }
                 &:before {
                     display: none !important;
@@ -467,6 +543,10 @@
             width: 424px;
             @include media-xs {
                 width: 100%;
+                margin-bottom: 20px;
+            }
+            @include media-sm {
+                width: 49.5%;
             }
             h4 {
                 font-size: 30px;
@@ -485,7 +565,7 @@
             }
             table {
                 width: 100%;
-                margin-bottom: 18px;
+                margin-top: 18px;
                 thead {
                     tr {
                         border-bottom: 3px solid rgba(0, 0, 0, 0.25);
@@ -539,6 +619,10 @@
             margin-top: 40px;
             @include media-xs {
                 width: 100%;
+                text-align: center;
+            }
+            @include media-sm {
+                width: 49.5%;
             }
             h4 {
                 font-size: 30px;
@@ -547,16 +631,44 @@
                 text-transform: uppercase;
                 text-align: center;
                 padding-left: 95px;
+                @include media-sm {
+                    padding-left: 0;
+                }
+                @include media-xs {
+                    padding-left: 0;
+                }
             }
             .share-links {
                 text-align: right;
+                @include media-xs {
+                    text-align: center;
+                }
                 ul {
                     li {
                         width: 51px;
                         height: 50px;
+                        @include media-sm {
+                            width: 41px;
+                            height: 40px;
+                        }
+                        @include media-xs-portrait {
+                            width: 41px;
+                            height: 40px;
+                        }
+                        @include media-xs {
+                            margin-right: 10px;
+                        }
                         img {
                             width: 51px;
                             height: 50px;
+                            @include media-sm {
+                                width: 41px;
+                                height: 40px;
+                            }
+                            @include media-xs-portrait {
+                                width: 41px;
+                                height: 40px;
+                            }
                         }
                     }
                 }

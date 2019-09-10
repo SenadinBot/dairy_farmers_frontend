@@ -214,6 +214,14 @@
         }
         h2 {
             margin: -17px 0 73px 0;
+            @include media-xs {
+                margin: -17px 0 20px 0;
+            }
+        }
+        .three-col-articles {
+            .recipe-article-item-container {
+                margin-bottom: 0;
+            }
         }
     }
 }
