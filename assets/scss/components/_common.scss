@@ -573,13 +573,19 @@
                     background: $blue;
                 }
             }
-            span {
+            span,
+            .href-tag {
                 color: $blue;
                 font-size: 10px;
                 text-decoration: underline;
                 position: relative;
                 top: -5px;
                 left: -2px;
+            }
+            .href-tag {
+                &:after {
+                    display: none;
+                }
             }
         }
         .primary-btn {

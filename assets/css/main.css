@@ -6547,13 +6547,17 @@ main {
   transition: all 0.3s ease-in-out 0s;
   background: #0072ce;
 }
-.info-item-container .info-item-content p span {
+.info-item-container .info-item-content p span,
+.info-item-container .info-item-content p .href-tag {
   color: #0072ce;
   font-size: 10px;
   text-decoration: underline;
   position: relative;
   top: -5px;
   left: -2px;
+}
+.info-item-container .info-item-content p .href-tag:after {
+  display: none;
 }
 .info-item-container .info-item-content .primary-btn {
   margin-top: 15px;
