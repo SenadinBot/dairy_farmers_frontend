@@ -240,8 +240,11 @@ a {
 }
 .modal-open {
     .modal {
-        z-index: 9999;
+        z-index: 99991;
     }
+}
+.modal-backdrop {
+    z-index: 9999;
 }
 .video-modal {
     .modal-body {
