@@ -110,10 +110,18 @@
             .slick-track {
                 display: inline-flex;
                 align-items: flex-end;   
-                padding-bottom: 250px;  
+                padding-bottom: 250px; 
+                padding-top: 165px; 
                 @include media-xs-portrait {
                     padding-bottom: 280px;
-                }           
+                    padding-top: 75px; 
+                }  
+                @include media-sm {
+                    padding-top: 135px;
+                } 
+                @include media-md {
+                    padding-top: 120px;
+                }          
             }
             .our-milk-slide {
                 text-align: center;
@@ -166,6 +174,16 @@
                             top: 0;
                             width: 200%;
                         }
+                    }
+                    img {
+                        transition: all 200ms ease-in;
+                        -moz-transition: all 200ms ease-in;
+                        -webkit-transition: all 200ms ease-in;
+                        -ms-transition: all 200ms ease-in;
+                        -ms-transform: scale(1.5); 
+                        -moz-transform: scale(1.5);
+                        -webkit-transform: scale(1.5); 
+                        transform: scale(1.5); 
                     }
                 }
                 img {
@@ -316,6 +334,7 @@
             .slide-content {
                 z-index: 9;
                 position: relative;
+                text-align: center;
             }
             p {
                 display: none;

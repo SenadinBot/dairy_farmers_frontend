@@ -212,6 +212,12 @@
         &.add-bottom-spacing {
             padding-bottom: 60px;
         }
+        &.big-bottom-spacing {
+            padding-bottom: 140px;
+        }
+        &.medium-bottom-spacing {
+            padding-bottom: 125px;
+        }
         h2 {
             margin: -17px 0 73px 0;
             @include media-xs {
@@ -504,6 +510,46 @@
                 left: 57.5%;
                 @include media-md {
                     left: 57%;
+                }
+            }
+        }
+    }
+}
+.dairy-articles-category-container {
+    box-shadow: 0px 5px 0 0 rgba(84, 88, 90, 0.25);
+    background-color: rgba(84, 88, 90, 0.05);
+    padding: 50px 0 43px 0;
+    margin-bottom: 113px;
+    text-align: center;
+    h3 {
+        text-transform: uppercase;
+        margin: -6px 0 53px 0;
+    }
+    .dairy-articles-category-content {
+        .category-item {
+            display: inline-block;
+            &:first-child {
+                margin-right: 112px;
+            }
+            h4 {
+                text-transform: uppercase;
+                margin: -8px 0 0 0;
+            }
+            .img-container {
+                margin: 0 auto 11px auto;
+                width: 140px;
+                height: 140px;
+                background-color: $white;
+                border-radius: 100%;
+                text-align: center;
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    position: relative;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
                 }
             }
         }

@@ -3,6 +3,12 @@
     @include media-xs {
         margin-bottom: 70px;
     }
+    &.medium-bottom-spacing {
+        margin-bottom: 100px;
+    @include media-xs {
+        margin-bottom: 70px;
+    }
+    }
     .three-article-list-container {
         .article-item-container {
             margin-right: 11px;
@@ -23,7 +29,46 @@
             @include media-sm {
                 padding: 12px 7px 14px 7px;
             }
+        }  
+        &.small-bottom-spacing {
+            margin-bottom: 25px;
+        }
+        &.medium-bottom-spacing {
+            margin-bottom: 60px;
         }      
+    }
+    .two-article-list-container {
+        .article-item-container {
+            &.has-subtitle {
+                .img-container {
+                    margin-bottom: 30px;
+                    @include media-xs {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        &.small-bottom-spacing {
+            margin-bottom: 25px;
+        } 
+        &.medium-bottom-spacing {
+            margin-bottom: 70px;
+        }  
+    }
+    .btn-container {
+        text-align: center;
+        @include media-xs-landscape {
+            text-align: left;
+        }
+        .primary-btn {
+            @include media-xs-portrait {
+                width: 100%;
+            }
+            @include media-xs-landscape {
+                width: 70%;
+                padding: 13px 22px 7px 22px;
+            }
+        }
     }
     &.bottom-border {
         margin-bottom: 50px;
@@ -169,21 +214,6 @@
     @include media-xs {
         padding-bottom: 80px;
         margin: 0 0 80px 0;
-    }
-    .btn-container {
-        text-align: center;
-        @include media-xs-landscape {
-            text-align: left;
-        }
-        .primary-btn {
-            @include media-xs-portrait {
-                width: 100%;
-            }
-            @include media-xs-landscape {
-                width: 70%;
-                padding: 13px 22px 7px 22px;
-            }
-        }
     }
     .article-item-container {
         margin-bottom: 138px;
