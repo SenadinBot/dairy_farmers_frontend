@@ -253,7 +253,7 @@ a {
     max-width: 100%; } }
 
 .modal-open .modal {
-  z-index: 99999; }
+  z-index: 99991; }
 
 .modal-backdrop {
   z-index: 9999; }
@@ -6258,7 +6258,8 @@ main {
         text-align: center;
         width: 208px;
         display: inline-block;
-        margin-bottom: 28px; }
+        margin-bottom: 28px;
+        vertical-align: top; }
         @media (min-width: 992px) and (max-width: 1199px) {
           .custom-tab-accordion-container .tab-content .card .right-side .info-fact-item {
             margin-bottom: 15px; } }
