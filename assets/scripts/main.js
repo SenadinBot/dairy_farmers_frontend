@@ -169,7 +169,7 @@ $(document).ready(function () {
         // $('.our-milk-carousel').slick({
 
         // });
-        
+
         ourMilkSSlider = $(".ourMilkSlider").slider({
             min: 0,
             max: 5,
@@ -206,8 +206,7 @@ $(document).ready(function () {
                 breakpoint: 992,
                 settings: {
                     slidesToShow: 3,
-                    dots: true,
-                    draggable: true,
+                    dots: true
                 }
             }
         ]
@@ -234,6 +233,7 @@ $(document).ready(function () {
         fade: true,
         dots: true,
         cssEase: 'linear',
+        autoplaySpeed: 2000,
         responsive: [
             {
                 breakpoint: 768,
@@ -241,9 +241,27 @@ $(document).ready(function () {
                     fade: false,
                     variableWidth: true,
                     slidesToShow: 1,
+                    autoplay: true,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    autoplay: true,
                 }
             }
         ]
+    });
+    $('.pause-btn').on('click', function () {
+        $('.culinary-carousel').slick('slickPause');
+        $('.pause-btn').addClass('hide-pause');
+        $('.play-btn').removeClass('hide-play');
+    });
+
+    $('.play-btn').on('click', function () {
+        $('.culinary-carousel').slick('slickPlay');
+        $('.play-btn').addClass('hide-play');
+        $('.pause-btn').removeClass('hide-pause');
     });
 });
 

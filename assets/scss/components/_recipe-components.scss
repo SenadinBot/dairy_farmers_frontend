@@ -214,6 +214,9 @@
         }
         &.big-bottom-spacing {
             padding-bottom: 140px;
+            @include media-xs {
+                padding-bottom: 90px;
+            }
         }
         &.medium-bottom-spacing {
             padding-bottom: 125px;
@@ -227,6 +230,12 @@
         .three-col-articles {
             .recipe-article-item-container {
                 margin-bottom: 0;
+                @include media-xs {
+                    margin-bottom: 50px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
             }
         }
     }
@@ -521,15 +530,28 @@
     padding: 50px 0 43px 0;
     margin-bottom: 113px;
     text-align: center;
+    @include media-xs-portrait {
+        padding: 50px 0 23px 0;
+        margin-bottom: 70px;
+    }
     h3 {
         text-transform: uppercase;
         margin: -6px 0 53px 0;
+        @include media-xs {
+            line-height: 48px;
+        }
     }
     .dairy-articles-category-content {
         .category-item {
             display: inline-block;
             &:first-child {
                 margin-right: 112px;
+                @include media-xs-portrait {
+                    margin-right: 15px;
+                }
+            }
+            @include media-xs-portrait {
+                margin-bottom: 20px;
             }
             h4 {
                 text-transform: uppercase;
@@ -542,6 +564,10 @@
                 background-color: $white;
                 border-radius: 100%;
                 text-align: center;
+                @include media-xs-portrait {
+                    width: 120px;
+                    height: 120px;
+                }
                 img {
                     max-width: 100%;
                     max-height: 100%;

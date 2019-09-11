@@ -16,12 +16,12 @@
             @include media-xs {
                 width: 100%;
                 margin-right: 0;
-                margin-bottom: 50px;
+                margin-bottom: 30px;
             }
             &:last-child {
                 margin-right: 0;
                 @include media-xs {
-                    margin-bottom: 0;
+                    margin-bottom: 30px;
                 }
             }
         }  
@@ -32,9 +32,15 @@
         }  
         &.small-bottom-spacing {
             margin-bottom: 25px;
+            @include media-xs {
+                margin-bottom: 0;
+            }
         }
         &.medium-bottom-spacing {
             margin-bottom: 60px;
+            @include media-xs {
+                margin-bottom: 0;
+            }
         }      
     }
     .two-article-list-container {
@@ -47,12 +53,23 @@
                     }
                 }
             }
+            &:last-child {
+                @include media-xs {
+                    margin-bottom: 30px;
+                }
+            }
         }
         &.small-bottom-spacing {
             margin-bottom: 25px;
+            @include media-xs {
+                margin-bottom: 0;
+            }
         } 
         &.medium-bottom-spacing {
             margin-bottom: 70px;
+            @include media-xs {
+                margin-bottom: 0;
+            }
         }  
     }
     .btn-container {
@@ -90,6 +107,9 @@
         }
         h2 {
             width: 100%;
+            @include media-xs-portrait {
+                width: 90%;
+            }
         }
         .article-item-content {
             .primary-btn {

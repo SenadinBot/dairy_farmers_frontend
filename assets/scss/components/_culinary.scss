@@ -221,9 +221,65 @@
     &.small-bottom-spacing {
         margin-bottom: 79px;
     }
+    @include media-xs {
+        margin-bottom: 70px;
+    }
     .col-12 {
         @include media-xs {
             padding: 0;
+        }
+    }
+    .pause-btn {
+        position: absolute;
+        top: 568px;
+        right: 312px;
+        width: 45px;
+        height: 46px;
+        cursor: pointer;
+        @include media-md {
+            right: 170px;
+            top: 470px;
+        }
+        @include media-sm {
+            right: 45px;
+        }
+        @include media-xs {
+            display: none;
+        }
+        @include media-sm {
+            display: none;
+        }
+        @media (min-width: 1250px) and (max-width: 1299px) {
+            right: 220px;                
+        }
+        @media (min-width: 1200px) and (max-width: 1249px) {
+            right: 200px;              
+        }
+        &:after {
+            content: "";
+            width: 45px;
+            height: 46px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url('/App_Themes/Milk/images/btn-play.svg');
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            display: block;
+        }
+        &:hover {
+            &:after {
+                opacity: 0.8;
+            }
+        }
+        &.hide-pause {
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+            opacity: 0;
+            height: 0;
         }
     }
     .culinary-carousel {
@@ -260,13 +316,22 @@
                     height: 46px;
                     cursor: pointer;
                     @include media-md {
-                        right: 115px;
+                        right: 65px;
                     }
                     @include media-sm {
                         right: 45px;
                     }
                     @include media-xs {
                         display: none;
+                    }
+                    @include media-sm {
+                        display: none;
+                    }
+                    @media (min-width: 1250px) and (max-width: 1299px) {
+                        right: 107px;                
+                    }
+                    @media (min-width: 1200px) and (max-width: 1249px) {
+                        right: 87px;              
                     }
                     &:after {
                         content: "";
@@ -285,6 +350,14 @@
                         &:after {
                             opacity: 0.8;
                         }
+                    }
+                    &.hide-play {
+                        -webkit-transition: all 0.2s ease;
+                        -moz-transition: all 0.2s ease;
+                        -o-transition: all 0.2s ease;
+                        transition: all 0.2s ease;
+                        opacity: 0;
+                        height: 0;
                     }
                 }
                 &.desktop-img {
@@ -381,7 +454,7 @@
                 .primary-btn {
                     margin-top: 15px;
                     @include media-xs-portrait {
-                        width: 100%;
+                        width: calc(100vw - 30px);
                     }
                     @include media-xs-landscape {
                         width: 60%;
@@ -405,14 +478,14 @@
             -o-transition: all 0.3s ease;
             transition: all 0.3s ease;
             @media (min-width: 1250px) and (max-width: 1299px) {
-                padding-right: 131px;                
+                padding-right: 80px;                
             }
             @media (min-width: 1200px) and (max-width: 1249px) {
-                padding-right: 91px;                
+                padding-right: 60px;                
             }
             @include media-md {
                 top: 450px;      
-                padding-right: 90px;          
+                padding-right: 40px;      
             }
             @include media-sm {
                 padding-right: 20px;
