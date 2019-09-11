@@ -9609,7 +9609,16 @@ main {
 }
 .culinary-recipes-category-container .culinary-recipes-category-content .category-item img {
   margin-bottom: 47px;
+  height: 52px;
+}
+.culinary-recipes-category-container .culinary-recipes-category-content .category-item:first-child img {
+  height: 54px;
+}
+.culinary-recipes-category-container .culinary-recipes-category-content .category-item:nth-child(2) img {
   height: 76px;
+}
+.culinary-recipes-category-container .culinary-recipes-category-content .category-item:last-child img {
+  height: 73px;
 }
 .culinary-recipes-category-container .culinary-recipes-category-content .category-item h4 {
   line-height: 36px;

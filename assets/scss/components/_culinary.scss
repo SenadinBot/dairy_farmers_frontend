@@ -167,7 +167,22 @@
             display: inline-block;
             img {
                 margin-bottom: 47px;
-                height: 76px;
+                height: 52px;
+            }
+            &:first-child {
+                img {
+                    height: 54px;
+                }
+            }
+            &:nth-child(2) {
+                img {
+                    height: 76px;
+                }
+            }
+            &:last-child {
+                img {
+                    height: 73px;
+                }
             }
             h4 {
                 line-height: 36px;
