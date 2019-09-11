@@ -4,19 +4,23 @@
     background-position: top;
     height: 100%;
     width: 100%;
+    padding-bottom: 176px;
+    @include media-xs {
+        padding-bottom: 70px;
+    }
 }
 .video-container {
     background-color: #54585a;
-    margin: 0 0 176px 0;
-    @include media-md {
-        margin: 0 0 156px 0;
-    }
-    @include media-sm {
-        margin: 0 0 126px 0;
-    }
-    @include media-xs {
-        margin: 0 0 106px 0;
-    }
+    // margin: 0 0 176px 0;
+    // @include media-md {
+    //     margin: 0 0 156px 0;
+    // }
+    // @include media-sm {
+    //     margin: 0 0 126px 0;
+    // }
+    // @include media-xs {
+    //     margin: 0 0 106px 0;
+    // }
     .container {
         @include media-xs {
             padding: 0;

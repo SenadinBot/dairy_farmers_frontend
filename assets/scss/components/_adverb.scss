@@ -33,6 +33,12 @@
         &.remove-bottom-spacing {
             margin-bottom: 0;
         }
+        &.small-bottom-spacing {
+            margin-bottom: 90px;
+            @include media-xs {
+                margin-bottom: 70px;
+            }
+        }
         &.medium-bottom-spacing {
             margin-bottom: 132px;
             @include media-xs {

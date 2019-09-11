@@ -709,9 +709,9 @@ header {
         }
         nav {
             height: 100px;
-            padding: 37px 10px 35px 0px;
+            padding: 36px 10px 35px 0px;
             @include media-md {
-                padding: 43px 10px 35px 0px;
+                padding: 40px 10px 30px 0px;
             }
             @include media-sm {
                 height: 100vh;
@@ -731,7 +731,7 @@ header {
                     margin-top: 20px;
                 }
                 li {
-                    padding: 0 24px 0 0;
+                    padding: 0 26px 0 0;
                     @include media-xs {
                         padding: 0;
                     }
@@ -739,14 +739,14 @@ header {
                         padding: 0 15px 0 0;                        
                     }
                     a {
-                        font-family: $robotoLight;
+                        @include acuminProCondLight();
                         text-transform: initial;
                         font-size: 30px;
                         line-height: 30px;
                         letter-spacing: initial;
                         @include media-md {
-                            font-size: 20px;
-                            line-height: 20px;
+                            font-size: 22px;
+                            line-height: 22px;
                         }
                         @include media-sm {
                             font-size: 36px;
@@ -1119,7 +1119,7 @@ header {
         }
     }
     .has-sub {
-        padding-right: 53px;
+        padding-right: 55px;
         &:hover {
             ul {
                 left: auto;
@@ -1138,8 +1138,8 @@ header {
             width: 20px;
             height: 20px;
             position: absolute;
-            top: -1px;
-            right: 18px;
+            top: 4px;
+            right: 20px;
             margin-left: 13px;
             @include media-sm {
                 top: 8px;
@@ -1224,8 +1224,8 @@ header {
             }
             li {
                 a {
-                    font-size: 22px;
-                    line-height: 22px;
+                    font-size: 26px;
+                    line-height: 26px;
                     @include media-md {
                         font-size: 16px;
                         line-height: 16px;

@@ -243,7 +243,7 @@
     }
     &.text-padding {
         .recommendation-content {
-            margin-top: 180px;
+            margin-top: 173px;
             @include media-sm {
                 margin-top: 50px;
             }
@@ -664,6 +664,7 @@
             width: 100%;
             max-width: 100%;
             margin-bottom: 0;
+            font-size: 30px;
         }
     }
     p {

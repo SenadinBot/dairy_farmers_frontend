@@ -172,6 +172,79 @@
             }
         }
     }
+    .article-icon-info {
+        display: inline-block;
+        width: 39%;
+        padding-left: 28px;
+        vertical-align: top;
+        padding-top: 14px;
+        text-align: left;
+        @include media-md {
+            width: 44%;
+        }
+        @include media-sm {
+            width: 39%;
+        }
+        @include media-xs {
+            width: 100%;
+            border-top: 1px solid #cccccc;
+            padding-top: 20px;
+            margin-bottom: 40px;
+            padding-left: 0;
+            text-align: center;
+        }
+        ul {
+            li {
+                text-align: center;
+                vertical-align: top;
+                margin-right: 45px;
+                margin-bottom: 23px;
+                &:last-child {
+                    @include media-xs {
+                        margin-right: 0;
+                    }
+                }
+                span {
+                    display: block;
+                    line-height: 22px;
+                    font-size: 18px;
+                    text-align: center;
+                }
+                &:before {
+                    display: block;
+                    margin: 0 auto 3px auto;
+                }
+                &.prep-time {
+                    &:before {
+                        width: 56px;
+                        height: 37px;
+                    }
+                }
+                &.cook-time {
+                    margin-top: -5px;
+                    &:before { 
+                        width: 35px;
+                        height: 41px;
+                    }
+                }
+                &.yields {
+                    display: table;
+                    margin-left: 8px;
+                    span {
+                        text-align: center;
+                    }
+                    @include media-xs {
+                        display: inline-block;
+                    }
+                    &:before { 
+                        margin: 0 auto 4px auto;
+                        width: 64px;
+                        height: 29px;
+                    }
+                }
+            }
+        }
+    }
     .article-icon {
         display: inline-block;
         width: 39%;
@@ -236,7 +309,8 @@
     .share-recipe-container {
         margin-top: 35px;
         @include media-xs {
-            display: none;
+            margin: 0 0 20px 0;
+            text-align: center;
         }
         h4 {
             display: inline-block;
@@ -245,17 +319,29 @@
             margin: -3px 39px 0 0;
             text-transform: uppercase;
             vertical-align: middle;
+            @include media-xs {
+                margin: 0 0 20px 0;
+            }
         }
         .share-links {
             display: inline-block;
             vertical-align: middle;
+            @include media-xs {
+                text-align: center;
+            }
             ul {
                 li {
                     width: 41px;
                     height: 40px;
                     margin-right: 21px;
+                    @include media-xs {
+                        margin-right: 10px;
+                    }
                     &:last-child {
                         margin-right: 0;
+                        @include media-xs {
+                            margin-right: 0;
+                        }
                     }
                     img {
                         width: 41px;

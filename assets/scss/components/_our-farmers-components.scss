@@ -60,7 +60,7 @@
             top: -11px;
             left: -28px;
             @include media-xs-portrait {
-                width: calc(100% + 30px);
+                width: 100%;
                 left: -15px;
             }
         }
@@ -69,11 +69,15 @@
             color: $dark;
             z-index: 9;
             position: relative;
+            font-size: 100px;
+            line-height: 0.88;
+            letter-spacing: 10px;
             @include media-lg {
                 width: 25%;
             }
             @include media-xs-portrait {
                 width: 55%;
+                font-size: 80px;
             }
         }
     }

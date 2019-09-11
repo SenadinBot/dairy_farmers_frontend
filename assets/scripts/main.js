@@ -233,7 +233,7 @@ $(document).ready(function () {
         fade: true,
         dots: true,
         cssEase: 'linear',
-        autoplaySpeed: 2000,
+        autoplaySpeed: 6000,
         responsive: [
             {
                 breakpoint: 768,

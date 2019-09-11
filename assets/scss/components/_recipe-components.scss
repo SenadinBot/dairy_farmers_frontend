@@ -110,6 +110,79 @@
             }
         }
     }
+    .article-icon-info {
+        display: inline-block;
+        width: 49%;
+        padding-left: 20px;
+        vertical-align: top;
+        padding-top: 10px;
+        text-align: left;
+        @include media-md {
+            width: 44%;
+        }
+        @include media-sm {
+            width: 42%;
+        }
+        @include media-xs {
+            width: 100%;
+            border-top: 1px solid #cccccc;
+            padding-top: 20px;
+            margin-bottom: 40px;
+            padding-left: 0;
+            text-align: center;
+        }
+        ul {
+            li {
+                text-align: center;
+                vertical-align: top;
+                margin-right: 45px;
+                margin-bottom: 23px;
+                &:last-child {
+                    @include media-xs {
+                        margin-right: 0;
+                    }
+                }
+                span {
+                    display: block;
+                    line-height: 22px;
+                    font-size: 18px;
+                    text-align: center;
+                }
+                &:before {
+                    display: block;
+                    margin: 0 auto 3px auto;
+                }
+                &.prep-time {
+                    &:before {
+                        width: 56px;
+                        height: 37px;
+                    }
+                }
+                &.cook-time {
+                    margin-top: -5px;
+                    &:before { 
+                        width: 35px;
+                        height: 41px;
+                    }
+                }
+                &.yields {
+                    display: table;
+                    margin-left: 8px;
+                    span {
+                        text-align: center;
+                    }
+                    @include media-xs {
+                        display: inline-block;
+                    }
+                    &:before { 
+                        margin: 0 auto 4px auto;
+                        width: 64px;
+                        height: 29px;
+                    }
+                }
+            }
+        }
+    }
     .article-icon {
         display: inline-block;
         width: 49%;
@@ -176,13 +249,28 @@
 }
 .recipe-article-items-container {
     padding-bottom: 145px;
+    @include media-xs {
+        padding-bottom: 185px;
+    }
     h2 {
         color: $dark;
         margin: -17px 0 22px 0;
     }
+    &.small-bottom-spacing {
+        padding-bottom: 45px;
+    }
+    &.medium-bottom-spacing {
+        padding-bottom: 79px;
+    }
+    &.extra-big-bottom-spacing {
+        padding-bottom: 160px;
+        @include media-xs {
+            padding-bottom: 100px;
+        }
+    }
     .btn-container {
         text-align: center;
-        margin-top: 30px;
+        margin-top: 22px;
         @include media-xs {
             margin-top: -5px;
         }
@@ -220,6 +308,9 @@
         }
         &.medium-bottom-spacing {
             padding-bottom: 125px;
+            @include media-xs {
+                padding-bottom: 70px;
+            }
         }
         h2 {
             margin: -17px 0 73px 0;
@@ -237,6 +328,19 @@
                     }
                 }
             }
+        }
+    }
+    &.more-rows-container {
+        .btn-container {
+            margin-top: -26px;
+        }
+    }
+    &.calendar-recipe-article {
+        h2 { 
+            width: 40%;
+        }
+        .btn-container {
+            margin-top: 5px;
         }
     }
 }
@@ -422,11 +526,45 @@
                     left: 0;
                     width: 100%;
                 }
+                @include media-sm {
+                    left: 0;
+                    width: 100%;
+                }
             }
             @include media-xs {
                 margin-top: 20px;
                 padding: 20px 20px 0 20px;
                 text-align: left;
+            }
+        }
+        .article-icon-info { 
+            margin-top: 16px;
+            &:before {
+                width: calc(100% - 40px);
+                left: 20px;
+                @include media-xs {
+                    left: 0;
+                    width: 100%;
+                }
+                @include media-sm {
+                    left: 0;
+                    width: 100%;
+                }
+            }
+            @include media-xs {
+                margin-top: 25px;
+                padding: 20px 0 0 0;
+                text-align: center;
+            }
+            li {
+                &.prep-time {
+                    margin-right: 25px;
+                }
+                &.cook-time {
+                    margin-right: 15px;
+                }
+                &.yields {
+                }
             }
         }
         p {
@@ -463,6 +601,49 @@
         }
         .img-container {
             margin-bottom: 20px;
+        }
+        .article-icon-info { 
+            margin-top: -2px;
+            &:before {
+                width: calc(100% - 26px);
+                left: 10px;
+                @include media-md {
+                    width: 100%;
+                }
+                @include media-xs {
+                    width: 100%;
+                    left: 0;
+                }
+                @include media-sm {
+                    width: 100%;
+                    left: 0;
+                }
+            }
+            @include media-xs {
+                margin-top: 25px;
+                padding: 20px 0 0 0;
+                text-align: center;
+            }
+            li {
+                margin-right: 12px;
+                @include media-md {
+                    margin-right: 3px;
+                }
+                &:before {
+                    @include media-md {
+                        margin-right: 3px;
+                    }
+                }
+                &.prep-time {
+                }
+                &.cook-time {
+                }
+                &.yields {
+                    @include media-sm {
+                        margin-top: 15px;
+                    }
+                }
+            }
         }
         .article-icon {
             padding-top: 14px;
@@ -579,5 +760,15 @@
                 }
             }
         }
+    }
+}
+.explore-recipers-container {
+    margin-bottom: 147px;
+    @include media-xs {
+        margin-bottom: 70px;
+    }
+    h2 {
+        color: $dark;
+        margin: -17px 0 24px 0;
     }
 }

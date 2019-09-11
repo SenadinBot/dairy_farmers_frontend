@@ -270,22 +270,54 @@
     }
 }
 .nutrition-background-image {
-    background-repeat: no-repeat;
-    background-size: 100% 980px;
-    background-position: top;
-    background-position-y: 185px;
-    height: 100%;
-    width: 100%;
-    @include media-xs-landscape {
-        background-size: 100% 43%;
-    }
-    @include media-xs-portrait {
-        background-size: 100% 44.5%;
-    }
+    position: relative;
     &.programs-column-image-container {
-        @include media-xs {
-            background-size: 100% 100%;
+        .nutrition-background-image-container {
+            &:before {
+                height: calc(100% + 200px);
+                @include media-xs {
+                    height: calc(100% + 150px);
+                }
+            }
         }
+    }
+    &.add-bottom-spacing {
+        padding-bottom: 200px;
+        @include media-xs {
+            padding-bottom: 150px;
+        }
+    }
+    &.our-farmers-column-image-container {
+        .nutrition-background-image-container {
+            &:before {
+                height: 100%;
+            }
+        }
+    }
+    .nutrition-background-image-container {
+        &:before {
+            content: "";
+            height: 217%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("./../../../App_Themes/Milk/images/nutrition-background-image@2x.png");
+            z-index: -1;
+            @include media-md {
+                height: 212%;
+            }
+            @include media-xs {
+                height: 135%;
+                background-image: url("./../../../App_Themes/Milk/images/img-wood-background@3x.png");
+            }
+            @include media-xs-landscape {
+                height: 120%;
+            }
+        }
+        
     }
     .column-image-container  {
         margin-bottom: 36px;
@@ -306,6 +338,8 @@
             @include media-xs {
                 margin-bottom: 170px;
             }
+        }
+        .column-image-item-container {
         }
     }
 }
