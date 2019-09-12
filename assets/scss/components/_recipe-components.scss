@@ -475,6 +475,12 @@
             @include media-md {
                 left: 58%;
             }
+            @include media-sm {
+                left: 57.4%;
+            }
+            @include media-xs {
+                left: 57.4%;
+            }
         }
     }
     &:after {
@@ -712,6 +718,9 @@
                 left: 57.5%;
                 @include media-md {
                     left: 57%;
+                }
+                @include media-sm {
+                    left: 56%;
                 }
             }
         }

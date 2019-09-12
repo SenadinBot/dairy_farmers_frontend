@@ -280,6 +280,26 @@
                 }
             }
         }
+        .column-image-container {
+            &.remove-bottom-spacing {
+                .column-image-item-container {
+                    padding-bottom: 44px;
+                    &:after {
+                        bottom: 44px;
+                    }
+                }
+            }
+            .column-image-item-content {
+                @include media-xs {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+        &.add-bottom-spacing {
+            @include media-xs {
+                padding-bottom: 170px;
+            }
+        }
     }
     &.add-bottom-spacing {
         padding-bottom: 200px;

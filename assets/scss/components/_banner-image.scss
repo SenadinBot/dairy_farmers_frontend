@@ -711,6 +711,50 @@
                 }
             }
         }
+        &.top-spacing {
+            .banner-title {
+                span {
+                    top: 38%;
+                    left: 70%;
+                    @include media-sm {
+                        width: 119%;
+                        top: initial;
+                        bottom: 0;
+                        transform: none;
+                        min-height: initial;
+                        left: 50%;
+                        position: relative;
+                        display: block;
+                        margin-top: -19px;
+                        padding: 84px 0 25px 0;
+                    }
+                    @include media-xs {
+                        left: 15%;   
+                        top: initial;
+                        bottom: 0;
+                        transform: none;
+                        min-height: initial;
+                        word-break: break-word;
+                        position: relative;
+                        display: block;
+                        margin-top: -19px;
+                        padding: 67px 0 15px 0;
+                    }
+                    @include media-xs-landscape {
+                        font-size: 84px;
+                        line-height: 84px;
+                        left: 50%;
+                        width: 117%;
+                    }
+                    @include media-xs-portrait {
+                        font-size: 72px;
+                        line-height: 76px;
+                        left: 15%;
+                        width: 117%;
+                    }
+                }
+            }
+        }
     }
     &.white-title {
         .banner-title {
@@ -735,6 +779,12 @@
     }
     &.small-bottom-spacing {
         margin-bottom: 55px;
+        @include media-xs {
+            margin-bottom: 70px;       
+        }
+    }
+    &.medium-bottom-spacing {
+        margin-bottom: 100px;
         @include media-xs {
             margin-bottom: 70px;       
         }
@@ -850,8 +900,8 @@
             width: 117%;
         }
         @include media-xs-portrait {
-            font-size: 72px;
-            line-height: 76px;
+            font-size: 66px;
+            line-height: 74px;
             left: 15%;
             width: 117%;
         }
