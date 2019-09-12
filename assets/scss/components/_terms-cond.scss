@@ -3,6 +3,7 @@
     margin-top: 79px;
     @include media-xs {
         margin-bottom: 90px;
+        padding: 0 30px;
     }
     @include media-sm {
         margin-top: 180px;

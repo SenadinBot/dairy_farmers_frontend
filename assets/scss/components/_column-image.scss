@@ -10,6 +10,7 @@
             }
             @include media-xs {
                 width: 100%;
+                padding: 0 30px;
             }
             @include media-xs-landscape {
                 width: 50%;
@@ -24,6 +25,7 @@
             @include media-xs {
                 width: 100%;
                 margin-left: 0;
+                padding: 0 30px;
             }
             @include media-xs-landscape {
                 width: 80%;
@@ -36,6 +38,9 @@
     &.remove-bottom-spacing {
         .column-image-item-container {
             padding-bottom: 50px;
+            @include media-xs {
+                padding: 0 30px 50px 30px;
+            }
             &:after { 
                 bottom: 50px;
                 @include media-xs {
@@ -61,12 +66,16 @@
             @include media-xs {
                 left: 0;
                 width: calc(100% - 30px);
+                display: none;
             }
         }
         .column-image-item-content {
             font-size: 0;
             margin-top: -30px;
             padding-bottom: 50px;
+            @include media-xs {
+                padding-bottom: 15px;
+            }
             .column-image-item {
                 display: inline-block;
                 margin-right: 14px;
@@ -97,6 +106,9 @@
                     }
                 }
                 .column-image-content {
+                    @include media-xs {
+                        padding: 0 30px;
+                    }
                     h4 {
                         color: $white;
                         margin: 0;

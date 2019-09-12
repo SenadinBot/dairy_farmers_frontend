@@ -50,6 +50,9 @@
             @include media-xs-portrait {
                 padding: 0 5px 70px 5px;
             }
+            @include media-xs {
+                padding: 0 30px;
+            }
             @include media-sm {
                 padding: 10px 70px 70px 70px;
             }
@@ -75,6 +78,7 @@
                 @include media-xs {
                     position: relative;
                     top: initial; 
+                    margin-bottom: 60px;
                 }
                 @include media-sm {
                     position: relative;
@@ -194,7 +198,7 @@
         @include media-xs {
             width: 100%;
             z-index: 999;
-            padding: 0 5px 70px 5px;
+            padding: 0 30px 70px 30px;
         }
         .primary-btn {
             width: 284px;

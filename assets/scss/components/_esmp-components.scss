@@ -200,6 +200,10 @@
             &.full-width {
                 h4 {
                     margin-top: -11px;
+                    @include media-xs {
+                        margin-top: -20px;
+                        padding: 0 30px;
+                    }
                 }
             }
         }
@@ -211,7 +215,7 @@
         padding-bottom: 100px;
     }
     @include media-xs {
-        padding-bottom: 80px;
+        padding: 0 30px 80px 30px;
     }
     ul,
     ol {
@@ -247,6 +251,9 @@
                 position: relative;
                 color: $blue;
                 margin-right: 24px;
+                @include media-xs-portrait {
+                    display: inline-block;
+                }
                 &:hover {
                     &:before {
                         visibility: hidden;
@@ -304,6 +311,9 @@
     .esmp-download-content {
         display: inline-block;
         vertical-align: top;
+        @include media-xs {
+            padding: 0 30px;
+        }
         h4 {
             text-transform: uppercase;
             margin: 0;

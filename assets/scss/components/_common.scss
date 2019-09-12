@@ -60,7 +60,7 @@
         }
     }
     @include media-xs {
-        padding: 50px 0;
+        padding: 50px 30px;
     }
     h4 {
         color: #54585a;
@@ -373,7 +373,7 @@
         @include media-xs {
             width: 100%;
             margin-top: 30px;
-            padding-left: 0;
+            padding: 0 30px;
         }
         h2 {
             color: $dark;
@@ -384,7 +384,10 @@
                 word-break: break-word;
                 font-size: 64px;
                 line-height: 64px; 
-            }       
+            } 
+            @include media-xs {
+                word-break: break-word;
+            }      
         }
         h4 {
             text-transform: uppercase;
@@ -512,6 +515,7 @@
         @include media-xs {
             width: 100%;
             order: 2; 
+            padding: 0 30px;
         }
         &.text-padding {
             margin-top: 61px;
@@ -710,7 +714,7 @@
         padding: 70px 0 0 0;
     }
     @include media-xs {
-        padding: 70px 0 50px 0;
+        padding: 70px 30px 50px 30px;
     }
     &.add-bottom-spacing {
         padding-bottom: 50px;
@@ -869,8 +873,7 @@
             position: relative;
             z-index: 999;
             text-align: left;
-            padding-bottom: 200px;
-            padding-top: 200px;
+            padding: 200px 30px;
         }
         @media (min-width: 1200px) and (max-width: 1500px) {
             text-align: left;

@@ -4,6 +4,7 @@
         margin: 43px 0 110px 0;
         @include media-xs {
             margin: 30px 0 70px 0;
+            padding: 0 30px;            
         }
         @include media-xs-landscape {
             text-align: left;
@@ -51,10 +52,18 @@
         }
     }
     .culinary-article-item-container {
+        @include media-xs {
+            padding: 0 30px;
+        }
         .article-item-container {
             &:last-child {
                 @include media-xs {
                     display: none;
+                }
+            }
+            .article-item-content {
+                @include media-xs {
+                    padding: 0;
                 }
             }
         }
@@ -70,6 +79,7 @@
         }
         @include media-xs {
             width: 100%;
+            padding: 0 30px;
         }
         h2 {
             color: $dark;
@@ -82,6 +92,7 @@
             @include media-xs {
                 font-size: 64px;
                 line-height: 64px;
+                word-break: break-word;
             }
             &:before {
                 content: "";
@@ -93,7 +104,8 @@
                 left: -26px;
                 z-index: -9;
                 @include media-xs {
-                    width: 100vw;
+                    width: calc(100vw - 50px);
+                    left: -15px;
                     height: 106px;
                 }
             }
@@ -126,6 +138,13 @@
     margin-bottom: 77px;
     .btn-container {
         text-align: center;
+        @include media-xs {
+            padding: 0 30px;
+            display: none;
+            .primary-btn {
+                width: 100%;
+            }
+        }
     }
     h3 {
         text-transform: uppercase;
@@ -140,7 +159,7 @@
         padding-top: 50px;
         position: relative;
         @include media-xs {
-            padding-top: 0;
+            padding: 0 30px;
         }
         &:before {
             content: "";
@@ -157,73 +176,50 @@
     }
     .culinary-recipes-category-content {
         margin-bottom: 42px;
-        padding: 0 96px 0 75px;
         text-align: center;
-        @include media-sm {
-            padding: 0 20px;
-        }
+        display: flex;
         .category-item {
             text-align: center;
-            display: inline-block;
+            // display: inline-block;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-end;
+            align-items: center;
+            flex: 1 1 0%;
+            width: auto;
             img {
                 margin-bottom: 47px;
                 height: 52px;
+                max-width: 100%;;
             }
             &:first-child {
                 img {
                     height: 54px;
+                    margin-bottom: 52px;
                 }
             }
             &:nth-child(2) {
                 img {
                     height: 76px;
+                    margin-bottom: 41px;
                 }
             }
-            &:last-child {
+            &:nth-child(3) {
+                img {
+                    height: 52px;
+                    margin-bottom: 49px;
+                }
+            }
+            &:nth-child(4) {
                 img {
                     height: 73px;
+                    margin-bottom: 47px;
                 }
             }
             h4 {
                 line-height: 36px;
                 text-transform: uppercase;
                 margin: -8px 0 0 0;
-            }
-            &:first-child {
-                margin-right: 160px;
-                @include media-xs {
-                    margin-right: 0;
-                }
-                @include media-md {
-                    margin-right: 100px;
-                }
-                @include media-sm {
-                    margin-right: 60px;
-                }
-            }
-            &:nth-child(2) {
-                margin-right: 152px;
-                @include media-xs {
-                    margin-right: 0;
-                }
-                @include media-md {
-                    margin-right: 100px;
-                }
-                @include media-sm {
-                    margin-right: 60px;
-                }
-            }
-            &:nth-child(3) {
-                margin-right: 160px;
-                @include media-xs {
-                    margin-right: 0;
-                }
-                @include media-md {
-                    margin-right: 100px;
-                }
-                @include media-sm {
-                    margin-right: 60px;
-                }
             }
         }
     }
@@ -442,7 +438,7 @@
                     margin-left: 0;
                     width: 100%;
                     margin-top: -35px;
-                    padding: 0 15px 0 10px;
+                    padding: 0 20px 0 30px;
                 }
                 span {
                     color: $dark;
@@ -468,9 +464,12 @@
                         left: -26px;
                         z-index: -9;
                         @include media-xs {
-                            left: -10px;
-                            width: calc(100vw - 15px);
+                            left: -15px;
+                            width: calc(100vw - 55px);
                             height: 106px;
+                        }
+                        @include media-xs-landscape {
+                            width: calc(100vw - 65px);
                         }
                     }
                     @include media-xs {
@@ -499,8 +498,11 @@
                     width: 530px;
                     text-align: left;
                     @include media-xs {
-                        width: calc(100vw - 30px);
+                        width: calc(100vw - 70px);
                         text-align: center;
+                        margin-top: 20px;
+                        padding-top: 14px;
+                        margin-bottom: 15px;
                     }
                     &:before {
                         display: none;
@@ -512,7 +514,7 @@
                                 margin-right: 0;
                             }
                             @include media-xs-portrait {
-                                margin-right: 10px;
+                                margin-right: 5px;
                                     &:last-child {
                                         margin-right: 0;
                                     }
@@ -593,7 +595,7 @@
                 .primary-btn {
                     margin-top: 15px;
                     @include media-xs-portrait {
-                        width: calc(100vw - 30px);
+                        width: calc(100vw - 70px);
                     }
                     @include media-xs-landscape {
                         width: 60%;
@@ -702,6 +704,12 @@
             &:last-child {
                 margin-right: 0;
             }
+            @include media-xs-portrait {
+                margin-right: 5px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
             span {
                 font-family: $robotoLight;
                 color: $dark;
@@ -710,6 +718,10 @@
                 font-size: 14px;
                 text-align: left;
                 display: inline-block;
+                @include media-xs-portrait {
+                    line-height: 14px;
+                    font-size: 12px;   
+                }
                 b {
                     font-family: $robotoBold;
                     display: block;
@@ -721,12 +733,19 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 display: inline-block;
+                @include media-xs-portrait {
+                    margin-right: 3px;
+                }
             }
             &.prep-time {
                 &:before {
                     background-image: url("/App_Themes/Milk/images/icon-culinary-prep-time.svg");
                     width: 39px;
                     height: 24px;
+                    @include media-xs-portrait {
+                        width: 35px;
+                        height: 23px;
+                    }
                 }
             }
             &.cook-time {
@@ -734,6 +753,10 @@
                     background-image: url("/App_Themes/Milk/images/icon-culinary-time.svg");
                     width: 20px;
                     height: 24px;
+                    @include media-xs-portrait {
+                        width: 18px;
+                        height: 22px;
+                    }
                 }
             }
             &.yields {
@@ -743,6 +766,10 @@
                     height: 17px;
                     position: relative;
                     top: -5px;
+                    @include media-xs-portrait {
+                        width: 35px;
+                        height: 15px;
+                    }
                 }
             }
         }

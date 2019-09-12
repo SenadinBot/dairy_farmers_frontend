@@ -34,6 +34,9 @@
     .mobile-decrp {
         text-align: center;
         margin-bottom: 50px;
+        @include media-xs {
+            padding: 0 30px;
+        }
         p {
             font-family: $robotoLight;
             font-size: 20px;
@@ -43,6 +46,9 @@
     .nutrients-list-intro {
         margin-top: -35px;
         margin-bottom: 6px;
+        @include media-xs {
+            padding: 0 30px;
+        }
         .counter-num {
             @include acuminProSemiCondBold();
             font-size: 500px;
@@ -62,9 +68,9 @@
                 width: 360px;
             }
             @include media-xs {
-                left: -8px;
-                font-size: 400px;
-                line-height: 335px;
+                left: -30px;
+                font-size: 310px;
+                line-height: 270px;
                 top: -45px;
             }
         }
@@ -126,10 +132,12 @@
         @include media-xs {
             margin-bottom: 10px;
             margin-top: 40px;
+            padding: 0 30px;
         }
         .slick-list {
             @include media-xs {
                 overflow: visible;
+                margin: 0 -10px;
             }
         }
         .nutrients-list-item {
@@ -140,7 +148,8 @@
             @include media-xs {
                 margin-bottom: 0;
                 width: 250px;
-                margin-right: 50px;
+                margin: 0 10px;
+                padding-right: 20px;
             }
             @include media-xs-landscape {
                 width: 438px;
@@ -199,6 +208,9 @@
         }
     }
     .additional-nutrients-list {
+        @include media-xs {
+            padding: 0 30px;
+        }
         h4 {
             text-align: center;
             color: $blue;
@@ -230,6 +242,7 @@
         margin-top: -34px;
         @include media-xs {
             margin-top: 0;
+            padding: 0 30px;
         }
         .primary-btn {
             @include media-xs-portrait {
@@ -284,6 +297,9 @@
             &.remove-bottom-spacing {
                 .column-image-item-container {
                     padding-bottom: 44px;
+                    @include media-xs {
+                        padding: 0 0 44px 0;
+                    }
                     &:after {
                         bottom: 44px;
                     }
@@ -311,6 +327,24 @@
         .nutrition-background-image-container {
             &:before {
                 height: 100%;
+            }
+        }
+        .column-image-container {
+            .column-image-item-container {
+                .column-image-item-content {
+                    .column-image-item {
+                        .column-image-content {
+                            @include media-xs {
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+                .btn-container {
+                    @include media-xs {
+                        margin: 40px 0 20px 0;
+                    }
+                }
             }
         }
     }
@@ -373,6 +407,9 @@
     }
     .true-false-intro {
         margin-bottom: 15px;
+        @include media-xs {
+            padding: 0 30px;
+        }
         span {
             color: $dark;
             text-transform: uppercase;
@@ -571,7 +608,7 @@
             .true-false-item-content {
                 padding-left: 28px;
                 @include media-xs {
-                    padding: 0;
+                    padding: 0 30px;
                 }
             }
         }
@@ -579,7 +616,7 @@
             .true-false-item-content {
                 padding-right: 35px;
                 @include media-xs {
-                    padding: 12px 0;
+                    padding: 12px 30px;
                     margin-top: 0;
                 }
             }
@@ -597,7 +634,8 @@
         font-size: 0;
         margin-bottom: 126px;
         @include media-xs {
-            margin-bottom: 50px;
+            margin-bottom: 0;
+            padding: 0 30px;
         }
         .true-false-additional-item {
             display: inline-block;
@@ -743,7 +781,7 @@
         @include media-xs {
             width: 100%;
             margin-top: 55px;
-            padding-left: 0;
+            padding: 0 30px;
         }
         @include media-xs-portrait {
             margin-top: 45px;

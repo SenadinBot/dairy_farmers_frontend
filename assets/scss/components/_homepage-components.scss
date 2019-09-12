@@ -69,7 +69,7 @@
             width: 421px;
         }
         @include media-xs-portrait {
-            width: 305px;
+            width: calc(100% - 80px);
         }
         @include media-xs {
             margin-top: 85px;
@@ -122,7 +122,7 @@
     padding: 45px 0 153px 0;
     overflow: hidden;
     @include media-xs {
-        padding: 45px 5px 100px 5px;
+        padding: 45px 0 100px 0;
     }
     &:before {
         content: "";
@@ -136,6 +136,9 @@
     }
     .recipes-carousel-intro {
         text-align: center;
+        @include media-xs {
+            padding: 0 30px;
+        }
         p {
             display: inline-block;
             width: 48%;
@@ -482,7 +485,7 @@
             @include media-xs {
                 order: 2; 
                 width: 100%;
-                padding: 0 20px;
+                padding: 0 40px;
                 margin-top: -40px;
                 text-align: center;
             }
@@ -571,7 +574,7 @@
         }
         @include media-xs {
             width: 100%;
-            padding: 0 20px;
+            padding: 0 40px;
             margin-left: 0;
         }
         &:last-child {
@@ -603,7 +606,7 @@
     }
     @include media-xs {
         width: 100%;
-        padding: 50px 20px 70px 20px;
+        padding: 50px 30px 70px 30px;
         margin-left: 0;
         text-align: center;
     }
@@ -623,14 +626,14 @@
         margin-top: 15px;
         @include media-sm {
             display: block;
-            padding: 13px 15px 7px 15px;
+            padding: 12px 15px 14px 15px;
         }
         @include media-xs-landscape {
             width: 421px;
-            padding: 13px 25px 7px 25px;
+            padding: 12px 25px 14px 25px;
         }
         @include media-xs-portrait {
-            width: 305px;
+            width: 100%;
         }
     }
     p {

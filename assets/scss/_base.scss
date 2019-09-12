@@ -267,3 +267,21 @@ a {
         padding: 12px 45px 14px 45px;
     }
 }
+main,
+footer {
+    .container {
+        @include media-xs {
+            padding: 0 10px;
+        }
+    }
+    .col-12 {
+        @include media-xs {
+            padding: 0 10px;
+        }
+    }
+    .row {
+        @include media-xs {
+            margin: 0 -10px;
+        }
+    }
+}

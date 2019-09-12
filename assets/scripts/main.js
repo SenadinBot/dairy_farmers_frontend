@@ -265,6 +265,16 @@ $(document).ready(function () {
         $('.play-btn').addClass('hide-play');
         $('.pause-btn').removeClass('hide-pause');
     });
+
+    $('#loadMoreRecipes').on('click', function () {
+        var numberOfElements = parseInt($('#numberOfElements').val());
+        var currentNumberOfElements = parseInt($('#currentNumberOfElements').val());
+        for (var i = currentNumberOfElements; i < (currentNumberOfElements + numberOfElements); i++) {
+            $(`#recipe-item-${i}`).removeAttr('hidden');
+        }
+        currentNumberOfElements += numberOfElements;
+        $('#currentNumberOfElements').val(currentNumberOfElements);
+    });
 });
 
 $.fn.menumaker = function (options) {

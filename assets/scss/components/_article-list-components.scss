@@ -17,12 +17,18 @@
                 width: 100%;
                 margin-right: 0;
                 margin-bottom: 60px;
+                padding: 0 30px;
             }
             &:last-child {
                 margin-right: 0;
                 @include media-xs {
                     margin-bottom: 30px;
                 }
+            }
+            .article-item-content {
+                @include media-xs {
+                    padding: 0;
+                } 
             }
         }  
         .primary-btn {
@@ -45,6 +51,14 @@
     }
     .two-article-list-container {
         .article-item-container {
+            @include media-xs {
+                padding: 0 30px;
+            }
+            .article-item-content {
+                @include media-xs {
+                    padding: 0;
+                } 
+            }
             &.has-subtitle {
                 .img-container {
                     margin-bottom: 30px;
@@ -95,6 +109,17 @@
             padding-bottom: 90px;
             @include media-xs {
                 padding-bottom: 50px;
+                border-bottom: none;
+                &:after {
+                    content: "";
+                    border-bottom: 1px solid #b7b7b7;
+                    width: calc(100% - 60px);
+                    height: 1px;
+                    display: block;
+                    position: relative;
+                    top: 50px;
+                    left: 30px;
+                }
             }
         }
     }
@@ -152,6 +177,7 @@
         @include media-xs {
             width: 100%;
             margin-bottom: 20px;
+            padding: 0 30px;
         }
         @include media-xs-landscape {
             width: 50%;
@@ -204,7 +230,7 @@
     .article-item-content {
         padding-right: 25px;
         @include media-xs {
-            padding-right: 0;
+            padding: 0 30px;
         }
         span {
             display: block;
@@ -253,6 +279,14 @@
     }
     .btn-container {
         text-align: center;
+        @include media-xs {
+            padding: 0 30px;
+        }
+        .primary-btn {
+            @include media-xs {
+                width: 100%;
+            }
+        }
     }
     .article-item-container {
         margin-bottom: 138px;
@@ -308,6 +342,7 @@
             }
             @include media-xs-portrait {
                 width: 100%;
+                padding: 12px 0px 14px 0px;
             }
             @include media-xs-landscape {
                 width: 70%;
@@ -331,6 +366,7 @@
     }
     @include media-xs {
         margin: 130px 0 100px 0;
+        padding: 0 30px;
     }
     .news-article-intro {
         margin-bottom: 45px;
@@ -442,7 +478,7 @@
                 max-width: 75%;
             }
             @include media-xs-portrait {
-                max-width: 70%;
+                max-width: 65%;
             }
             .author-name {
                 min-height: 75px;
