@@ -7,8 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
-    <meta name="description"
-        content="This is an example of a meta description. This will often show up in search results.">
+    <meta name="description" content="This is an example of a meta description. This will often show up in search results.">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./App_Themes/Milk/images/favicon.ico">
@@ -87,8 +86,7 @@
                                 <li class="calendar-link">
                                     <div class="calendar-link-content">
                                         <span>Free 2020 <br> milk calendar</span>
-                                        <img src="./App_Themes/Milk/images/img-calendar-2019@3x.png"
-                                            alt="Calendar Icon">
+                                        <img src="./App_Themes/Milk/images/img-calendar-2019@3x.png" alt="Calendar Icon">
                                     </div>
                                     <a href="#" class="primary-btn">Get yours today</a>
                                 </li>
@@ -124,10 +122,8 @@
     </header>
     <main>
         <div class="big-banner-container small-banner top-spacing white-title">
-            <div class="big-banner-image-container desktop-banner-image center-position"
-                style="background-image: url('./App_Themes/Milk/images/img-calendar-signup-hero@3x.jpg')"></div>
-            <div class="big-banner-image-container mobile-banner-image center-position"
-                style="background-image: url('./App_Themes/Milk/images/img-calendar-signup-hero@3x.jpg')"></div>
+            <div class="big-banner-image-container desktop-banner-image center-position" style="background-image: url('./App_Themes/Milk/images/img-calendar-signup-hero@3x.jpg')"></div>
+            <div class="big-banner-image-container mobile-banner-image center-position" style="background-image: url('./App_Themes/Milk/images/img-calendar-signup-hero@3x.jpg')"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -149,7 +145,92 @@
                 <div class="col-12">
                     <div class="calendar-sing-up-container">
                         <h2>Request your free calendar today!</h2>
-                        <span>*Required field</span>
+                        <span class="required-field">*Required field</span>
+                        <div class="form-container">
+                            <div class="left-side">
+                                <h4>Personal Details</h4>
+                                <div class="form-group form-error mandatory-field">
+                                    <label for="firstName">Full Name</label>
+                                    <div class="input-group">
+                                        <input type="text" id="firstName" placeholder="John">
+                                        <span class="error-msg">Error Message</span>
+                                    </div>
+                                </div>
+                                <div class="form-group mandatory-field">
+                                    <label for="lastName">Last Name</label>
+                                    <div class="input-group">
+                                        <input type="text" id="lastName" placeholder="Smith">
+                                    </div>
+                                </div>
+                                <div class="form-group mandatory-field">
+                                    <label for="emailAddress">Email Address</label>
+                                    <div class="input-group">
+                                        <input type="text" id="address" placeholder="johnsmith@mail.com">
+                                    </div>
+                                </div>
+                                <div class="form-group small-input mandatory-field">
+                                    <label for="age">Age</label>
+                                    <div class="input-group">
+                                        <input type="text" id="age" placeholder="00">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-side">
+                                <h4>Mailing Address</h4>
+                                <div class="form-group form-error mandatory-field">
+                                    <label for="streetAddressOne">Street Address 1</label>
+                                    <div class="input-group">
+                                        <input type="text" id="streetAddressOne" placeholder="1234 Any Street">
+                                        <span class="error-msg">Error Message</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="streetAddressTwo">Street Address 2</label>
+                                    <div class="input-group">
+                                        <input type="text" id="phoneNumber" placeholder="Apt. 1">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cityTown">City/Town</label>
+                                    <div class="input-group">
+                                        <input type="text" id="cityTown" placeholder="Cityville">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="province">Province</label>
+                                    <div class="input-group">
+                                        <input type="text" id="province" placeholder="Select Province">
+                                    </div>
+                                </div>
+                                <div class="form-group small-input mandatory-field">
+                                    <label for="postalCode">Postal Code</label>
+                                    <div class="input-group">
+                                        <input type="text" id="" placeholder="A1A">
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="text" id="" placeholder="1A1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group agree-checkbox">
+                                <label class="custom-checkbox">Check here to confirm you are 13 years of age or older
+                                    and agree to receive emails from Dairy Farmers of Ontario including partner
+                                    promotions, contest offers, and Canadian dairy news. You won’t receive third party
+                                    emails, and you can opt out anytime. See our <a href="#">Privacy Policy</a> for
+                                    details.
+                                    <input type="checkbox">
+                                    <div class="checkbox-indicator"></div>
+                                </label>
+                                <label class="custom-checkbox">I want to sign up for all communications lorem ipsum
+                                    dolor sit amet, consectetur adipiscing elit.
+                                    <input type="checkbox">
+                                    <div class="checkbox-indicator"></div>
+                                </label>
+                            </div>
+                            <div class="btn-container">
+                                <button class="primary-btn blue-btn">Get Your Calendar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

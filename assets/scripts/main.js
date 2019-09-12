@@ -242,12 +242,14 @@ $(document).ready(function () {
                     variableWidth: true,
                     slidesToShow: 1,
                     autoplay: true,
+                    autoplaySpeed: 8000,
                 }
             },
             {
                 breakpoint: 992,
                 settings: {
                     autoplay: true,
+                    autoplaySpeed: 8000,
                 }
             }
         ]

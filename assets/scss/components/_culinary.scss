@@ -260,6 +260,10 @@
                         letter-spacing: 10px;
                         padding-right: 0;
                         margin-bottom: 20px;
+                        @include media-xs {
+                            font-size: 64px;
+                            line-height: 64px;
+                        }
                     }
                 }
             } 
@@ -494,6 +498,10 @@
                     margin-bottom: 25px;
                     width: 530px;
                     text-align: left;
+                    @include media-xs {
+                        width: calc(100vw - 30px);
+                        text-align: center;
+                    }
                     &:before {
                         display: none;
                     }
@@ -502,6 +510,12 @@
                             margin-right: 25px;
                             &:last-child {
                                 margin-right: 0;
+                            }
+                            @include media-xs-portrait {
+                                margin-right: 10px;
+                                    &:last-child {
+                                        margin-right: 0;
+                                    }
                             }
                             span {
                                 font-family: $robotoLight;
@@ -514,6 +528,10 @@
                                 display: inline-block;
                                 margin: 0;
                                 vertical-align: top;
+                                @include media-xs-portrait {
+                                    line-height: 15px;
+                                    font-size: 14px;
+                                }
                                 b {
                                     font-family: $robotoBold;
                                 }
@@ -524,11 +542,18 @@
                             &:before {
                                 content: "";
                                 margin-right: 5px;
+                                @include media-xs-portrait {
+                                    margin-right: 0;
+                                }
                             }
                             &.prep-time {
                                 &:before {
                                     width: 56px;
                                     height: 37px;
+                                    @include media-xs-portrait {
+                                        width: 40px;
+                                        height: 26px;                                    
+                                    }
                                 }
                             }
                             &.cook-time {
@@ -539,6 +564,10 @@
                                 &:before { 
                                     width: 35px;
                                     height: 41px;
+                                    @include media-xs-portrait {
+                                        width: 25px;
+                                        height: 30px;
+                                    }
                                 }
                             }
                             &.yields {
@@ -552,6 +581,10 @@
                                     height: 29px;
                                     position: relative;
                                     top: 6px;
+                                    @include media-xs-portrait {
+                                        width: 44px;
+                                        height: 20px;
+                                    }
                                 }
                             }
                         }
