@@ -6804,11 +6804,14 @@ main {
   .info-item-container {
     display: flex;
     flex-flow: column;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 .info-item-container.small-bottom-padding {
   margin-bottom: 50px;
+}
+.info-item-container.remove-bottom-padding {
+  margin-bottom: 0;
 }
 .info-item-container.big-bottom-padding {
   margin-bottom: 150px;

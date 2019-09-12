@@ -425,10 +425,13 @@
     @include media-xs {
         display: flex;
         flex-flow: column;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
     &.small-bottom-padding {
         margin-bottom: 50px;
+    }
+    &.remove-bottom-padding {
+        margin-bottom: 0;
     }
     &.big-bottom-padding {
         margin-bottom: 150px;
