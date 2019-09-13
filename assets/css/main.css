@@ -7489,6 +7489,123 @@ main {
       .terms-cond-container hr {
         margin: 0 0 25px 0; } }
 
+.privacy-policy-container {
+  margin-bottom: 150px;
+  margin-top: 79px; }
+  @media (max-width: 767px) {
+    .privacy-policy-container {
+      margin-bottom: 90px;
+      padding: 0 30px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .privacy-policy-container {
+      margin-top: 180px; } }
+  @media (max-width: 767px) and (orientation: landscape) {
+    .privacy-policy-container {
+      margin-top: 110px; } }
+  .privacy-policy-container .privacy-policy-title {
+    margin: 0 0 80px 0; }
+    @media (max-width: 767px) and (orientation: portrait) {
+      .privacy-policy-container .privacy-policy-title {
+        margin: 0 0 50px 0; } }
+    .privacy-policy-container .privacy-policy-title h1 {
+      color: #000000;
+      font-size: 100px;
+      line-height: 88px;
+      letter-spacing: 10px;
+      font-family: "acumin-pro-extra-condensed",sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      text-transform: uppercase;
+      display: block;
+      width: 100%; }
+      @media (max-width: 767px) {
+        .privacy-policy-container .privacy-policy-title h1 {
+          width: 80%; } }
+      @media (max-width: 767px) and (orientation: portrait) {
+        .privacy-policy-container .privacy-policy-title h1 {
+          width: 100%;
+          font-size: 64px;
+          line-height: 60px;
+          letter-spacing: 6px; } }
+  .privacy-policy-container .privacy-policy-container-intro {
+    margin-bottom: 50px; }
+    @media (max-width: 767px) {
+      .privacy-policy-container .privacy-policy-container-intro {
+        margin-bottom: 40px; } }
+    .privacy-policy-container .privacy-policy-container-intro ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 25px 0px; }
+      .privacy-policy-container .privacy-policy-container-intro ul li {
+        padding-left: 25px; }
+        @media (max-width: 767px) {
+          .privacy-policy-container .privacy-policy-container-intro ul li {
+            padding-left: 15px; } }
+  .privacy-policy-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  .privacy-policy-container .p-p-sublink,
+  .privacy-policy-container .p-p-link,
+  .privacy-policy-container p {
+    font-family: "Roboto Light";
+    font-size: 18px;
+    line-height: 30px;
+    color: #0072ce; }
+    @media (max-width: 767px) {
+      .privacy-policy-container .p-p-sublink,
+      .privacy-policy-container .p-p-link,
+      .privacy-policy-container p {
+        line-height: 24px; } }
+  .privacy-policy-container .p-p-link {
+    font-family: "Roboto Bold";
+    text-transform: uppercase; }
+  .privacy-policy-container .p-p-sublink,
+  .privacy-policy-container .p-p-link {
+    display: block; }
+  .privacy-policy-container p {
+    color: #000000;
+    margin-bottom: 0;
+    width: 95%;
+    display: inline-block;
+    vertical-align: top; }
+    @media (max-width: 767px) {
+      .privacy-policy-container p {
+        width: 90%; } }
+  .privacy-policy-container ol {
+    padding: 0 0 0 45px;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    counter-reset: alpha; }
+    .privacy-policy-container ol li {
+      font-family: "Roboto Light";
+      font-size: 18px;
+      line-height: 30px;
+      color: #000000; }
+      .privacy-policy-container ol li:before {
+        counter-increment: alpha;
+        content: "(" counter(alpha,lower-alpha) ") ";
+        position: absolute;
+        left: 20px; }
+  .privacy-policy-container .num {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Roboto Light";
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000; }
+    @media (max-width: 767px) {
+      .privacy-policy-container .num {
+        line-height: 24px; } }
+  .privacy-policy-container hr {
+    border: none;
+    margin: 0 0 35px 0;
+    display: block; }
+    @media (max-width: 767px) {
+      .privacy-policy-container hr {
+        margin: 0 0 25px 0; } }
+
 .culinary-article-container .btn-container {
   text-align: center;
   margin: 43px 0 110px 0; }
@@ -9969,7 +10086,9 @@ main {
             .contact-us-container .contact-us-content .social-links ul li {
               width: 56px;
               height: 55px;
-              margin-right: 15px; } }
+              margin-right: 15px; }
+              .contact-us-container .contact-us-content .social-links ul li:last-child {
+                margin-right: 0; } }
           .contact-us-container .contact-us-content .social-links ul li img {
             width: 71px;
             height: 70px;
