@@ -777,6 +777,20 @@
                 }
             }
         }
+        &.two-line-title {
+            .banner-title {
+                span {
+                    br {
+                        @include media-xs {
+                            display: block;
+                        }
+                        @include media-sm {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
     }
     &.small-bottom-spacing {
         margin-bottom: 55px;

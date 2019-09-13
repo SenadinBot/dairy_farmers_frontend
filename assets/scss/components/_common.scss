@@ -116,6 +116,11 @@
     &.extra-small-bottom-spacing {
         margin-bottom: 20px;
     }
+    &.mobile-bottom-spacing {
+        @include media-xs {
+            margin-bottom: 165px;
+        }
+    }
     &.img-over {
         .img-container {
             img {

@@ -1,0 +1,322 @@
+.annual-report-container {
+    margin-bottom: 95px;
+    margin-top: 3px;
+    border-bottom: 1px solid #54585a;
+    @include media-xs {
+        margin: 0 0 70px 0;
+    }
+    .annual-report-item {
+        margin-bottom: 150px;
+        @include media-xs {
+            margin-bottom: 90px;
+            padding: 0 30px;
+        }
+        .img-container {
+            display: inline-block;
+            width: calc(100% / 2 - 11px);            
+            vertical-align: top;
+            margin-right: 14px;
+            @include media-xs {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+        }
+        .annual-report-content {
+            display: inline-block;
+            width: calc(100% / 2 - 11px);            
+            vertical-align: top;
+            text-align: left;
+            @include media-xs {
+                width: 100%;
+            }
+            h4 {
+                text-transform: uppercase;
+                margin: -8px 0 3px 0;
+            }
+            p {
+                font-family: $robotoLight;
+                line-height: 30px;
+                padding-right: 15px;
+                @include media-xs {
+                    padding-right: 0;
+                }
+            }
+            .btn-container {
+                max-width: 279px;
+                text-align: center;
+                margin-top: 30px;
+                @include media-xs-portrait {
+                    max-width: 100%;
+                }
+                @include media-xs-landscape {
+                    max-width: 60%;
+                }
+                .primary-btn {
+                    padding: 12px 10px 14px 10px;
+                    width: 100%; 
+                }
+                span {
+                    display: block;
+                    margin: 0 auto;
+                    font-family: $robotoLight;
+                    font-size: 18px;
+                    line-height: 30px;
+                    color: $dark;
+                    @include media-xs {
+                        margin: 3px auto 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+.contact-us-container {
+    margin-bottom: 45px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #54585a;
+    margin-top: 79px;
+    position: relative;
+    @include media-xs {
+        padding-bottom: 70px;
+        margin-bottom: 35px;
+    }
+    @include media-sm {
+        margin-top: 180px;
+    }
+    @include media-xs-landscape {
+        margin-top: 110px;
+    }
+    .contact-us-title {
+        margin: 0 0 165px 0;
+        @include media-xs-portrait {
+            margin: 0 0 70px 0;
+        }
+        @include media-xs {
+            padding: 0 30px;
+        }
+        h1 {
+            color: $dark;
+            font-size: 100px;
+            line-height: 88px;
+            letter-spacing: 10px;
+            @include acuminProExtraCondBlack();            
+            text-transform: uppercase;
+            display: block;
+            width: 100%;
+            @include media-xs-portrait {
+                font-size: 64px;
+                line-height: 60px;
+                letter-spacing: 6px;
+            }
+        }
+    }
+    .contact-us-content {
+        display: inline-block;
+        width: 476px;            
+        vertical-align: top;
+        @include media-md {
+            width: 42%;
+        }
+        @include media-xs {
+            width: 100%;
+            @include media-xs {
+                padding: 0 30px;
+            }
+        }
+        .social-links {
+            margin: 25px 0 35px 0;
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    display: inline-block;
+                    margin-right: 21px;
+                    width: 71px;
+                    height: 70px;
+                    -webkit-transition: all 0.3s ease;
+                    -moz-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    @include media-xs-portrait {
+                        width: 56px;
+                        height: 55px;
+                        margin-right: 15px;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                    img {
+                        width: 71px;
+                        height: 70px;
+                        -webkit-transition: all 0.3s ease;
+                        -moz-transition: all 0.3s ease;
+                        -o-transition: all 0.3s ease;
+                        transition: all 0.3s ease;
+                        @include media-xs-portrait {
+                            width: 56px;
+                            height: 55px;
+                        }
+                    }
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                    a {
+                        &:before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    h4 {
+        text-transform: uppercase;
+        margin: 25px 0 3px 0;
+        &:first-child {
+            margin-top: -8px;
+        }
+    }
+    p {
+        font-family: $robotoLight;
+        line-height: 30px;
+        margin: 0;
+        a {
+            font-family: $robotoLight;
+            line-height: 30px;
+            font-size: 18px;
+            color: $blue;
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                bottom: 0;
+                right: 0;
+                visibility: visible;
+                -webkit-transition: all 0.3s ease-in-out 0s;
+                -moz-transition: all 0.3s ease-in-out 0s;
+                -ms-transition: all 0.3s ease-in-out 0s;
+                -o-transition: all 0.3s ease-in-out 0s;
+                transition: all 0.3s ease-in-out 0s;
+                background: #0072ce;
+            }
+            &:hover {
+                &:before {
+                    visibility: hidden;
+                    width: 0;
+                }
+            }
+        }
+    }
+    .contact-us-inner-container {
+        position: relative;
+    }
+    .contact-us-map {
+        display: inline-block;
+        width: 655px;   
+        height: 655px;         
+        vertical-align: top;
+        border: 2px solid $blue;
+        @include media-lg {
+            position: absolute;
+            top: 0;
+            right: -84px;
+        }
+        @media (min-width: 1250px) and (max-width: 1300px) { 
+            right: -65px;
+        }
+        @media (min-width: 1200px) and (max-width: 1249px) { 
+            right: -45px;
+        }
+        @include media-md {
+            width: 57%;
+        }
+        @include media-sm {
+            width: 100%;
+            margin-top: 70px;
+        }
+        @include media-xs {
+            width: 100%;
+            height: 50vh;
+            margin-top: 70px;
+        }
+        @include media-xs-landscape {
+            height: 100vh;
+        }
+        .map {
+            height: 100%;
+            width: 100%;
+            .gm-style-cc {
+                display: none;
+            }
+            a[href^="http://maps.google.com/maps"],
+            a[href^="https://maps.google.com/maps"],
+            a[href^="https://www.google.com/maps"] {
+                display: none !important;
+            }
+        }
+    }
+    .additional-contact-us-content {
+        width: 100%;
+        margin-top: 145px;
+        @include media-xs {
+            padding: 0 30px;
+            margin-top: 80px;
+        }
+        @include media-md {
+            margin-top: 100px;
+        }
+        @include media-sm {
+            margin-top: 80px;
+        }
+        .img-container {
+            margin-left: -23px;
+            @include media-sm {
+                margin-left: 0;
+            }
+            @include media-xs {
+                margin-left: 0;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            img {
+                width: 117px;
+                height: 117px;
+                object-fit: contain;
+            }
+        }
+        h4 {
+            margin: 1px 0 5px 0;
+            width: 50%;
+            @include media-md {
+                width: 60%;
+            }
+            @include media-sm {
+                width: 80%;
+            }
+            @include media-xs {
+                width: 100%;
+            }
+        }
+        .primary-btn {
+            margin-top: 31px;
+            @include media-xs-portrait {
+                width: 100%;
+            }
+            @include media-xs-landscape {
+                width: 60%;
+            }
+        }
+    }
+}

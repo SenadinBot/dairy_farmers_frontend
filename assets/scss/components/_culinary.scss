@@ -246,6 +246,27 @@
             padding: 0;
         }
     }
+    &.remove-mobile-spacing {
+        .culinary-carousel {
+            @include media-xs {
+                padding-left: 0;
+            }
+            .culinary-slide {
+                .culinary-slide-content {
+                    @include media-xs {
+                        padding: 0 25px 0 40px;
+                    }
+                    span {
+                        &:before {
+                            @include media-xs {
+                                width: calc(100vw - 70px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     &.change-title-font {
         .culinary-carousel {
             .culinary-slide {
@@ -261,8 +282,40 @@
                             line-height: 64px;
                         }
                     }
+                    .article-icon-info {
+                        @include media-xs-portrait {
+                            width: calc(100vw - 80px);
+                        }
+                        ul {
+                            li {
+                                @include media-xs-portrait {
+                                    margin-right: 0px;
+                                }
+                            }
+                        }
+                    }
+                    .primary-btn {
+                        @include media-xs-portrait {
+                            width: calc(100vw - 80px);
+                        }
+                    }
                 }
             } 
+        }
+        &.remove-mobile-spacing {
+            .culinary-carousel {
+                .culinary-slide {
+                    .culinary-slide-content {
+                        > span {
+                            @include media-xs {
+                                font-size: 58px;
+                                line-height: 58px;
+                                letter-spacing: 3.6px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     .pause-btn {
@@ -318,6 +371,111 @@
             height: 0;
         }
     }
+    &.small-culinary-carousel {
+        .culinary-carousel {
+            .culinary-slide {
+                .culinary-slide-img {
+                    height: 500px;
+                    @include media-md {
+                        height: 450px;                
+                    }
+                    @include media-sm {
+                        height: 500px;
+                    }
+                    @include media-xs {
+                        height: 450px;                
+                    }
+                    @include media-xs-landscape {
+                        height: 550px;
+                    }
+                }
+                .culinary-slide-content {
+                    span {
+                        font-size: 100px;
+                        line-height: 0.88;
+                        letter-spacing: 10px;
+                        @include media-xs {
+                            font-size: 64px;
+                            line-height: 64px;
+                            letter-spacing: 3.6px;
+                            word-break: break-word;
+                        }
+                    }
+                    p {
+                        @include media-lg {
+                            padding-right: 60px;
+                        }
+                    }
+                    .primary-btn {
+                        @include media-lg {
+                            min-width: 240px;
+                        }
+                        @include media-xs-portrait {
+                            width: calc(100vw - 80px);
+                        }
+                    }
+                    .event-info-container {
+                        text-align: center;
+                        margin-top: 20px;
+                        margin-bottom: 25px;
+                        .event-info {
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                            span {
+                                font-family: $robotoLight;
+                                color: $dark;
+                                font-size: 18px;
+                                line-height: 18px;
+                                font-weight: 300;
+                                letter-spacing: normal;
+                                text-transform: initial;
+                                padding-right: 0;
+                                margin: 0;
+                                &:before {
+                                    display: none;
+                                }
+                                @include media-xs-portrait {
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                }
+                            }
+                            a {
+                                max-width: 208px;
+                                display: block;
+                                font-size: 18px;
+                            }
+                            img {
+                                margin: 0 auto 29px auto;
+                            }
+                        }
+                    }
+                }
+            }
+            .slick-dots {
+                top: 500px;
+                @include media-md {
+                    top: 450px;          
+                }
+                @include media-sm {
+                    top: 500px;
+                }
+                @include media-xs {
+                    top: 361px;
+                }
+                @include media-xs-landscape {
+                    top: 450px;
+                }
+            }
+        }
+        .pause-btn {
+            top: 518px;
+            cursor: pointer;
+            @include media-md {
+                top: 470px;
+            }
+        }
+    }
     .culinary-carousel {
         width: 100%;
         @include media-xs {
@@ -339,10 +497,13 @@
                     height: 450px;                
                 }
                 @include media-sm {
-                    height: 400px;
+                    height: 500px;
                 }
                 @include media-xs {
-                    height: 300px;                
+                    height: 450px;                
+                }
+                @include media-xs-landscape {
+                    height: 550px;
                 }
                 .play-btn {
                     position: absolute;
@@ -458,7 +619,7 @@
                         content: "";
                         background: rgba(255, 255, 255, 0.9);
                         width: 100%;
-                        height: 206px;
+                        height: 106px;
                         position: absolute;
                         top: -11px;
                         left: -26px;
@@ -489,6 +650,9 @@
                     font-size: 18px;
                     line-height: 30px;
                     padding-right: 50px;
+                    @include media-xs {
+                        padding-right: 0;
+                    }
                 }
                 .article-icon-info {
                     border-top: 1px solid #cccccc;
@@ -630,13 +794,16 @@
             }
             @include media-sm {
                 padding-right: 20px;
-                top: 400px;
+                top: 500px;
             }
             @include media-xs {
-                top: 210px;
+                top: 361px;                
                 padding-right: 0;
                 margin-top: 0;
                 text-align: center;
+            }
+            @include media-xs-landscape {
+                top: 450px;
             }
             button {
                 width: 25px;
