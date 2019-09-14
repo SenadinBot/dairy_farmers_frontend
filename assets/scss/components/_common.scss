@@ -101,6 +101,12 @@
     @include media-xs {
         margin-bottom: 100px;
     }
+    .big-bottom-spacing {
+        margin-bottom: 185px;
+        @include media-xs {
+            margin-bottom: 100px;
+        }
+    }
     &.medium-bottom-spacing { 
         margin-bottom: 149px;
         @include media-xs {
@@ -119,6 +125,19 @@
     &.mobile-bottom-spacing {
         @include media-xs {
             margin-bottom: 165px;
+        }
+    }
+    &.small-content-width {
+        .recommendation-content {
+            p {
+                width: 80%;
+                @include media-md {
+                    width: 100%;
+                }
+                @include media-xs {
+                    width: 100%;
+                }
+            }
         }
     }
     &.img-over {
@@ -956,6 +975,34 @@
             &:hover {
                 background-color: $white;
                 color: #54585a;
+            }
+        }
+    }
+    &.add-border-bottom {
+        margin-bottom: 153px;
+        @include media-xs {
+            margin-bottom: 90px;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -60px;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            border-bottom: 1px solid #54585a;
+            max-width: 1110px;
+            width: 100%;
+            height: 1px;
+            @include media-xs {
+                max-width: 95%;
+            }
+            @include media-sm {
+                max-width: 738px;
+            }
+            @include media-md {
+                max-width: 930px;
             }
         }
     }

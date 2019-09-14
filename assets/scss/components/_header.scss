@@ -693,6 +693,8 @@ header {
             img {
                 width: 146px;
                 height: 146px;
+                box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
+                border-radius: 100%;
                 @include media-xs {
                     width: 120px;
                     height: 120px;

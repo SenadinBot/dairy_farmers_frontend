@@ -91,6 +91,9 @@
         @include media-xs-landscape {
             text-align: left;
         }
+        @include media-xs {
+            padding: 0 30px;
+        }
         .primary-btn {
             @include media-xs-portrait {
                 width: 100%;
@@ -163,10 +166,54 @@
             }
         }
     }
+    &.events-details-articles {
+        margin-bottom: 150px;
+        @include media-xs {
+            margin-bottom: 70px;
+        }
+        .three-article-list-container {
+            margin-bottom: 43px;
+            .article-icon-info {
+                margin-top: -5px;
+                &:before {
+                    width: calc(100% - 26px);
+                    left: 10px;
+                    @include media-md {
+                        width: 100%;
+                    }
+                    @include media-xs {
+                        width: 100%;
+                        left: 0;
+                    }
+                    @include media-sm {
+                        width: 100%;
+                        left: 0;
+                    }
+                }
+                ul {
+                    li {
+                        @include media-md {
+                            margin-right: 3px;
+                        }
+                        &:before {
+                            @include media-md {
+                                margin-right: 3px;
+                            }
+                        }
+                        &.yields {
+                            @include media-sm {
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     h2 {
         text-transform: uppercase;
         color: $dark;
-        width: 35%;
+        width: 45%;
         margin: -19px 0 24px 0;        
         @include media-md {
             width: 50%;
@@ -180,7 +227,7 @@
             padding: 0 30px;
         }
         @include media-xs-landscape {
-            width: 50%;
+            width: 75%;
         }
     }
 }
@@ -232,7 +279,7 @@
         @include media-xs {
             padding: 0 30px;
         }
-        span {
+        > span {
             display: block;
             text-transform: uppercase;
             color: $blue;
