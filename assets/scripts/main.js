@@ -213,7 +213,7 @@ $(document).ready(function () {
     });
 
     // T&C Scroll
-    $('.t-c-link, .t-c-sublink, .href-tag, .p-p-link, .p-p-sublink,').click(function (event) {
+    $('.t-c-link, .t-c-sublink, .href-tag, .p-p-link, .p-p-sublink').click(function (event) {
         event.preventDefault();
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top - 250,
