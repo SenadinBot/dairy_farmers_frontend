@@ -128,3 +128,16 @@
     font-weight: 900;
     font-style: normal;
 }
+
+// Arial
+@font-face {
+    font-family: 'ArialMT';
+    src: url('../fonts/arial/ArialMT.eot');
+    src: url('../fonts/arial/ArialMT.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/arial/ArialMT.woff2') format('woff2'),
+        url('../fonts/arial/ArialMT.woff') format('woff'),
+        url('../fonts/arial/ArialMT.ttf') format('truetype'),
+        url('../fonts/arial/ArialMT.svg#ArialMT') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}

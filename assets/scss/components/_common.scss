@@ -838,6 +838,12 @@
     @include media-sm {
         height: auto;
     }
+    &.big-bottom-spacing {
+        margin-bottom: 118px;
+        @include media-xs {
+            margin-bottom: 70px;
+        }
+    }
     .subscribe-ad-img {
         width: 100%;
         height: 100%;
