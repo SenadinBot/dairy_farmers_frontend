@@ -372,3 +372,19 @@ function initMap() {
           google.maps.event.addDomListener(window, 'load', initialize);
     }
 }
+
+
+
+
+
+
+// VELID --------------------------------------------------------
+// Customized radio button
+// Checked - Unchecked functionality
+$(".checkmark").on("click", function(){
+    $(this).parent().parent().find(".checkmark").find(".checkmark-active").css("opacity", "0");
+    $(this).parent().parent().find("input").attr("checked", false);
+
+    $(this).siblings("input").attr("checked", true);
+    $(this).find(".checkmark-active").css("opacity", "1");
+});
