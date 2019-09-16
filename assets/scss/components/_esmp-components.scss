@@ -1,5 +1,8 @@
 .esmp-container {
     margin-top: -40px;
+    @include media-xs {
+        margin-top: -20px;
+    }
     &.esmp-bottom-spacing {
         margin-bottom: 109px;
         @include media-sm {
@@ -298,10 +301,14 @@
     @include media-xs {
         order: 3;
         margin: 50px 0 50px 0;
+        padding: 0 30px;
     }
     .img-container {
         display: inline-block;
         margin-right: 5px;
+        vertical-align: top;
+        width: 59px;
+        height: 53px;
         vertical-align: top;
         img {
             max-width: 100%;
@@ -312,11 +319,11 @@
         display: inline-block;
         vertical-align: top;
         @include media-xs {
-            padding: 0 30px;
+            width: 70%;
         }
         h4 {
             text-transform: uppercase;
-            margin: 0;
+            margin: -8px 0 0 0;
         }
         span {
             font-family: $robotoLight;

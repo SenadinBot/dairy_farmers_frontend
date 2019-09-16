@@ -278,14 +278,20 @@ $(document).ready(function () {
         $('#currentNumberOfElements').val(currentNumberOfElements);
     });
 
-    $('#loadMoreArticles').on('click', function () {
-        var currentNumberOfElements = parseInt($('#numberOfVisibleItems').val());
-        for (var i = currentNumberOfElements; i < (currentNumberOfElements + 3); i++) {
+    $('.loadMoreArticles').on('click', function () {
+        var currentNumberOfElements = parseInt($(this).next('.numberOfVisibleItems').val());
+        var isInverted = $(this).siblings(".isInverted").val() == "True";
+        var increaseBy = isInverted ? 2 : 3;
+        for (var i = currentNumberOfElements; i < (currentNumberOfElements + increaseBy); i++) {
             var articleItemId = '#article-item-' + i;
-            $(articleItemId).removeAttr('hidden');
+            if (isInverted) {
+                $(this).parents('.btn-container').siblings('.two-article-list-container').children(articleItemId).removeAttr('hidden');
+            } else {
+                $(this).parents('.btn-container').siblings('.three-article-list-container').children(articleItemId).removeAttr('hidden');
+            }
         }
-        currentNumberOfElements += 3;
-        $('#numberOfVisibleItems').val(currentNumberOfElements);
+        currentNumberOfElements += increaseBy;
+        $(this).next(".numberOfVisibleItems").val(currentNumberOfElements);
     });
 
     // Modal Custom scrollbar
@@ -372,19 +378,3 @@ function initMap() {
           google.maps.event.addDomListener(window, 'load', initialize);
     }
 }
-
-
-
-
-
-
-// VELID --------------------------------------------------------
-// Customized radio button
-// Checked - Unchecked functionality
-$(".checkmark").on("click", function(){
-    $(this).parent().parent().find(".checkmark").find(".checkmark-active").css("opacity", "0");
-    $(this).parent().parent().find("input").attr("checked", false);
-
-    $(this).siblings("input").attr("checked", true);
-    $(this).find(".checkmark-active").css("opacity", "1");
-});

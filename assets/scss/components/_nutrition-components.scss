@@ -358,14 +358,14 @@
             left: 0;
             background-repeat: no-repeat;
             background-size: cover;
-            background-image: url("/App_Themes/Milk/images/nutrition-background-image@2x.png");
+            background-image: url("/App_Themes/Milk/images/nutrition-background-image-1920-w.png");
             z-index: -1;
             @include media-md {
                 height: 212%;
             }
             @include media-xs {
                 height: 135%;
-                background-image: url("/App_Themes/Milk/images/img-wood-background@3x.png");
+                background-image: url("/App_Themes/Milk/images/nutrition-background-image-720-w.png");
             }
             @include media-xs-landscape {
                 height: 120%;

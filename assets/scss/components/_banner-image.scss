@@ -268,7 +268,7 @@
     margin-top: -70px;
     overflow: hidden;
     @include media-md {
-        height: 500px;
+        height: 550px;
     }
     @include media-sm {
         height: auto;
@@ -369,6 +369,10 @@
             @include media-xs-landscape {
                 width: 90%;
             }
+            @include media-md {
+                font-size: 64px;
+                line-height: 64px;
+            }
         }
         p {
             color: $white;
@@ -407,7 +411,8 @@
             margin: 48px 0 35px 0;
             width: 80%;
             @include media-md {
-                margin: 20px 0;
+                margin: 10px 0;
+                width: 90%;
             }
             @include media-sm {
                 border-top: 1px solid $white;
@@ -431,6 +436,12 @@
                 }
                 &:last-child {
                     margin-right: 0;
+                }
+                @include media-md {
+                    margin-right: 20px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
                 }
                 span {
                     display: block;
@@ -511,10 +522,22 @@
     @include media-sm {
         margin-top: 0;
         margin-bottom: 85px;
+        z-index: 9;
     }
     @include media-xs {
         margin-top: 0; 
-        margin-bottom: 70px;       
+        margin-bottom: 70px;     
+        z-index: 9;  
+    }
+    img {
+        display: none;
+        width: 100%;
+        @include media-xs {
+            display: block;
+        }
+        @include media-sm {
+            display: block;
+        }
     }
     .banner-title { 
         position: relative;
@@ -525,12 +548,10 @@
         @include media-sm {
             position: relative;
             margin-top: 0;
-            margin-top: -190px;
         }
         @include media-xs {
             position: relative;
             margin-top: 0;
-            margin-top: -180px;
         }
     }
     .big-banner-image-container {
@@ -552,6 +573,9 @@
         }
         &.desktop-banner-image {
             @include media-xs {
+                display: none !important;
+            }
+            @include media-sm {
                 display: none !important;
             }
         }
@@ -584,19 +608,19 @@
             .banner-title {
                 margin-top: -298px;
                 @include media-xs {
-                    margin-top: -180px;
+                    margin-top: 0;
                 }
                 @include media-sm {
-                    margin-top: -180px;
+                    margin-top: 0;
                 }
                 .title-border {
                     &:before {
                         height: 175px;
                         @include media-sm {
-                            height: 40px;
+                            display: none;                            
                         }
                         @include media-xs {
-                            height: 40px;
+                            display: none;
                         }
                     }
                 }
@@ -616,7 +640,7 @@
                         padding: 0 30px;
                     }
                     @include media-sm {
-                        margin-top: 15px;
+                        margin-top: 35px;
                     }
                     @include media-md {
                         margin: 38% 0 0 0;
@@ -635,19 +659,19 @@
                 &:before {
                     height: 155px;
                     @include media-sm {
-                        height: 40px;
+                        display: none;                        
                     }
                     @include media-xs {
-                        height: 40px;
+                        display: none;
                     }
                 }
                 &:after {
                     height: 65px;
                     @include media-sm {
-                        height: 170px;
+                        display: none;                        
                     }
                     @include media-xs {
-                        height: 140px;
+                        display: none;                        
                     }
                 }
                 @include media-xs {
@@ -655,10 +679,10 @@
                 }
             }
             @include media-xs {
-                margin-top: -180px;
+                margin-top: 0;
             }
             @include media-sm {
-                margin-top: -180px;
+                margin-top: 0;
             }
             span {
                 top: 20%;
@@ -690,25 +714,12 @@
                 top: 40%;
                 left: 70%;
                 @include media-sm {
-                    top: initial;
-                    bottom: 10%;
-                    transform: translateY(7%);
-                    min-height: auto;
-                    left: 42%;
+                    left: 50%;
+                    width: 100%;
                 }
-                @include media-xs-landscape {
-                    top: initial;
-                    bottom: 10%;
-                    transform: translateY(7%);
-                    min-height: auto;
-                    left: 42%;
-                }
-                @include media-xs-portrait {
-                    top: initial;
-                    bottom: 10%;
-                    transform: translateY(7%);
-                    min-height: auto;
-                    left: 8%;
+                @include media-xs {
+                    left: 50%;
+                    width: 100%;
                 }
             }
         }
@@ -730,29 +741,22 @@
                         padding: 84px 0 25px 0;
                     }
                     @include media-xs {
-                        left: 8%;   
-                        top: initial;
-                        bottom: 0;
-                        transform: none;
-                        min-height: initial;
-                        word-break: break-word;
-                        position: relative;
-                        display: block;
-                        margin-top: -19px;
-                        padding: 67px 0 15px 0;
-                    }
-                    @include media-xs-landscape {
-                        font-size: 84px;
-                        line-height: 84px;
                         left: 50%;
-                        width: 117%;
+                        width: 100%;
                     }
-                    @include media-xs-portrait {
-                        font-size: 72px;
-                        line-height: 76px;
-                        left: 8%;
-                        width: 117%;
-                    }
+                }
+            }
+        }
+    }
+    &.three-line-title {
+        .banner-title {
+            span {
+                @include media-xs {
+                    transform: translate(-30%, -36%);
+                }
+                @include media-sm {
+                    transform: translate(-30%, -47%);
+                    width: 85%;
                 }
             }
         }
@@ -766,28 +770,6 @@
                 }
                 @include media-sm {
                     color: $dark;
-                }
-                br {
-                    @include media-xs {
-                        display: none;
-                    }
-                    @include media-sm {
-                        display: none;
-                    }
-                }
-            }
-        }
-        &.two-line-title {
-            .banner-title {
-                span {
-                    br {
-                        @include media-xs {
-                            display: block;
-                        }
-                        @include media-sm {
-                            display: block;
-                        }
-                    }
                 }
             }
         }
@@ -820,17 +802,24 @@
             height: 510px;
         }
         @include media-sm {
+            width: 100%;
             height: auto;
-            padding: 170px 0 40px 0;
+            padding: 0;
+            margin: 0;
+            border: none;
+            width: auto;
+            height: auto;
+            display: block;
         }
         @include media-xs {
-            width: 80%;
+            width: 100%;
             height: auto;
-            padding: 140px 0 40px 0;
-            margin-bottom: 20px;
-        }
-        @include media-xs-landscape {
-            width: 387px;
+            padding: 0;
+            margin: 0;
+            border: none;
+            width: auto;
+            height: auto;
+            display: block;
         }
         &:after {
             content: "";
@@ -841,10 +830,10 @@
             top: 0;
             right: 0;
             @include media-sm {
-                height: 170px;
+                display: none;                
             }
             @include media-xs {
-                height: 140px;
+                display: none;
             }
         }
         &:before {
@@ -859,10 +848,10 @@
                 height: 155px;
             }
             @include media-sm {
-                height: 40px;
+                display: none;                
             }
             @include media-xs {
-                height: 40px;
+                display: none;
             }
         }
     }
@@ -885,40 +874,36 @@
             top: 17%;
         }
         @include media-sm {
-            width: 119%;
+            left: 50%;   
             top: initial;
-            bottom: 0;
-            transform: none;
-            min-height: initial;
-            left: 50%;
-            position: relative;
-            display: block;
-            margin-top: -19px;
-            padding: 84px 0 25px 0;
-        }
-        @include media-xs {
-            left: 8%;   
-            top: initial;
-            bottom: 0;
-            transform: none;
             min-height: initial;
             word-break: break-word;
-            position: relative;
+            position: absolute;
+            transform: translate(-30%, -70%);
+            bottom: 25%;
             display: block;
-            margin-top: -19px;
-            padding: 67px 0 15px 0;
+            margin-top: 0;
+            padding: 0;
+            letter-spacing: 4px;
+            width: 100%;
         }
-        @include media-xs-landscape {
-            font-size: 84px;
-            line-height: 84px;
-            left: 50%;
-            width: 117%;
+        @include media-xs {
+            left: 50%;   
+            top: initial;
+            min-height: initial;
+            word-break: break-word;
+            position: absolute;
+            transform: translate(-30%, -50%);
+            bottom: 25%;
+            display: block;
+            margin-top: 0;
+            padding: 0;
+            letter-spacing: 4px;
+            width: 100%;
         }
         @include media-xs-portrait {
-            font-size: 66px;
-            line-height: 74px;
-            left: 8%;
-            width: 117%;
+            font-size: 48px;
+            line-height: 1;
         }
     }
     p {
@@ -940,12 +925,12 @@
             width: 85%;   
             padding-left: 85px;
             top: 0;
-            margin-top: 30px;                                   
+            margin-top: 35px;                                   
         }
         @include media-xs {
             width: 100%;   
             top: 0;   
-            margin-top: 15px;    
+            margin-top: 25px;    
             padding: 0 30px;                               
         }
     }

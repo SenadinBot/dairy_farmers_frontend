@@ -78,7 +78,7 @@
                 @include media-xs {
                     position: relative;
                     top: initial; 
-                    margin-bottom: 60px;
+                    margin-bottom: 0;
                 }
                 @include media-sm {
                     position: relative;
@@ -111,12 +111,54 @@
         background-size: cover;
         @include media-md {
             background-position: center right;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
         @include media-sm {
             background-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
         @include media-xs {
             background-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &.desktop-img {
+            @include media-xs {
+                display: none;
+            }
+            @include media-sm {
+                display: none;
+            }
+        }
+        &.mobile-img {
+            display: none;
+            @include media-xs {
+                display: block;
+            }
+            @include media-sm {
+                display: block;
+            }
+        }
+    }
+    .adverb-inner-container {
+        @include media-lg {
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;
+        z-index: 999;
+        position: relative;
+        @include media-xs {
+            padding: 0 10px 70px 10px;
         }
     }
     &:after {
@@ -189,6 +231,7 @@
         padding-left: 45px;
         @include media-md {
             width: 60%;
+            padding-bottom: 20px;
         }
         @include media-sm {
             width: 100%;
@@ -198,7 +241,7 @@
         @include media-xs {
             width: 100%;
             z-index: 999;
-            padding: 0 30px 70px 30px;
+            padding: 0 30px;
         }
         .primary-btn {
             width: 284px;
@@ -218,6 +261,7 @@
             }
             @include media-xs-portrait {
                 width: 100%;
+                padding: 12px 10px 14px 10px;
             }
             &:hover {
                 background-color: $white;
@@ -251,6 +295,9 @@
                 width: 100%;
                 font-size: 66px;
                 line-height: 66px;
+            }
+            @include media-xs {
+                margin-top: -10px;
             }
             @include media-xs-portrait {
                 width: 100%;
