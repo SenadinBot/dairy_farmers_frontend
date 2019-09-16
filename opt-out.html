@@ -118,13 +118,13 @@
     </header>
     <main>
         <div class="big-banner-container top-spacing small-bottom-spacing small-banner white-title">
-            <div class="big-banner-image-container desktop-banner-image center-position" id="opt-out-cow-banner-desktop" style="background-image: url('./App_Themes/Milk/images/optout-hero@3x.png')"></div>
-            <div class="big-banner-image-container mobile-banner-image center-position" id="opt-out-cow-banner-mobile" style="background-image: url('./App_Themes/Milk/images/img-home-primary-hero-cow-field-mobile@3x.png')"> </div>
-            <div class="container" style="position:relative; left: -60px" id="heading-container">
+            <div class="big-banner-image-container desktop-banner-image center-position" style="background-image: url('./App_Themes/Milk/images/optout-hero@3x.png')"></div>
+            <div class="big-banner-image-container mobile-banner-image center-position optout-mobile-banner" style="background-image: url('./App_Themes/Milk/images/img-home-primary-hero-cow-field-mobile@3x.png')"> </div>
+            <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="banner-title">
-                            <div class="title-border" id="opt-out-heading">
+                            <div class="title-border"> <!--id="afterBeforeHidden"-->
                                 <span  style="color: black">WE'RE SORRY <br>TO  SEE YOU GO</span>
                             </div>
                         </div>
@@ -133,9 +133,9 @@
             </div>
         </div>
 
-        <div class="container opt-out-form-container">
+        <div class="container">
             <div class="row-12">
-                <form>
+                <form class="form-container">
                     <div class="opt-out-info">
                         <span>
                             We will unsubscribe you from future emails sent from the Dairy Farmers of Ontario.
@@ -143,46 +143,33 @@
                         <span>What is your reason for opting out? Select all that apply.</span>
 
                     </div>
-                    <div class="opt-out-group-input">  
-                        <div class="opt-out-input">
-                            <input type="radio" name="optout" value="I'm getting too many emails." checked>
-                            <label class="checkmark">
-                                    <label class="checkmark-active" style="opacity: 1"></label>
-                                </label>
-                            <label class="input-label">I'm getting too many emails.</label>
-                        </div>
+                    <div class="opt-out-group-input form-group agree-checkbox">  
+                            <label class="custom-checkbox opt-out-input">I'm getting too many emails.
+                                    <input type="checkbox">
+                                    <div class="checkbox-indicator"></div>
+                            </label>
+                        
+                            <label class="custom-checkbox opt-out-input">It's not the information I expected.
+                                    <input type="checkbox">
+                                    <div class="checkbox-indicator"></div>
+                            </label>
 
-                        <div class="opt-out-input">
-                                <input type="radio" name="optout" value="It's not the information I expected.">
-                                <label class="checkmark">
-                                        <label class="checkmark-active"></label>
-                                    </label>
-                                <label class="input-label">It's not the information I expected.</label>
-                        </div>
+                            <label class="custom-checkbox opt-out-input">I'm not interested in these communications.                                    
+                                    <input type="checkbox">
+                                    <div class="checkbox-indicator"></div>
+                            </label>
 
-                        <div class="opt-out-input">
-                                <input type="radio" name="optout" value="I'm not interested in these communications.">
-                                <label class="checkmark">
-                                    <label class="checkmark-active"></label>
-                                </label>
-                                <label class="input-label">I'm not interested in these communications.</label>
-                        </div>
+                            <label class="custom-checkbox opt-out-input">I only wanted to sign up for the Milk calendar.
+                                    <input type="checkbox">
+                                    <div class="checkbox-indicator"></div>
+                            </label>
 
-                        <div class="opt-out-input">
-                                <input type="radio" name="optout">
-                                <label class="checkmark">
-                                        <label class="checkmark-active"></label>
-                                    </label>
-                                <label class="input-label">I only wanted to sign up for the Milk Calendar.</label>
-                        </div>
+                            <label class="custom-checkbox opt-out-input">Other.
+                                    <input type="checkbox">
+                                    <div class="checkbox-indicator"></div>
+                            </label>
 
-                        <div class="opt-out-input">
-                                <input type="radio" name="optout" value="Other">
-                                <label class="checkmark">
-                                        <label class="checkmark-active"></label>
-                                    </label>
-                                <label class="input-label">Other</label>
-                        </div>
+
                     </div>
                     <div class="opt-out-group-button">
                         <a href="#" class="primary-btn blue-btn" role="button">OPT-OUT</a>
