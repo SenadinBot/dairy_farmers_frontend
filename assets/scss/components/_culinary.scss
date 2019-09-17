@@ -178,6 +178,12 @@
         margin-bottom: 42px;
         text-align: center;
         display: flex;
+        .slick-track,
+        .slick-list {
+            @include media-xs {
+                display: flex;
+            }
+        }
         .category-item {
             text-align: center;
             // display: inline-block;

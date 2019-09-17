@@ -4571,7 +4571,6 @@ footer .social-container ul li a.twitter-icon:before {
 @media (max-width: 767px) {
   .big-banner-container.small-banner .banner-title p {
     margin-top: 15px;
-    padding-left: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -6383,6 +6382,30 @@ main {
     padding: 0 30px;
   }
 }
+.esmp-container.esmp-dairy-container {
+  margin-top: -50px;
+}
+.esmp-container.esmp-dairy-container .info-item-container {
+  margin-bottom: 58px;
+  border-bottom: 1px solid #54585a;
+  padding-bottom: 99px;
+  width: 95.5%;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .esmp-container.esmp-dairy-container .info-item-container {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .esmp-container.esmp-dairy-container .info-item-container {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .esmp-container.esmp-dairy-container .info-item-container.right-content .info-item-img-container {
+    padding: 0 30px;
+  }
+}
 
 .esmp-description-container {
   padding-bottom: 140px;
@@ -7162,6 +7185,7 @@ main {
 @media (max-width: 767px) and (orientation: portrait) {
   .recommendation-container .recommendation-content .primary-btn {
     width: 100%;
+    padding: 12px 5px 14px 5px;
   }
 }
 @media (max-width: 767px) and (orientation: landscape) {
@@ -7172,7 +7196,8 @@ main {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .recommendation-container .recommendation-content .primary-btn {
-    padding: 12px 22px 14px 22px;
+    padding: 12px 12px 14px 12px;
+    width: 100%;
   }
 }
 
@@ -10882,6 +10907,12 @@ main {
   margin-bottom: 42px;
   text-align: center;
   display: flex;
+}
+@media (max-width: 767px) {
+  .culinary-recipes-category-container .culinary-recipes-category-content .slick-track,
+.culinary-recipes-category-container .culinary-recipes-category-content .slick-list {
+    display: flex;
+  }
 }
 .culinary-recipes-category-container .culinary-recipes-category-content .category-item {
   text-align: center;

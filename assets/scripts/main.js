@@ -298,6 +298,31 @@ $(document).ready(function () {
     $(".board-directors-modal .modal-inner-content").mCustomScrollbar({
         theme: "minimal"
     });
+
+    // Culinary Category Mobile Carousel
+    $('.culinary-recipes-category-content').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        dots: false,
+        arrows: false,
+        variableWidth: false,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 9999,
+                settings: "unslick"
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    });
 });
 
 $.fn.menumaker = function (options) {

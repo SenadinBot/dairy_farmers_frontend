@@ -227,6 +227,28 @@
             }
         }
     }
+    &.esmp-dairy-container {
+        margin-top: -50px;
+        .info-item-container {
+            margin-bottom: 58px;
+            border-bottom: 1px solid #54585a;
+            padding-bottom: 99px;
+            width: 95.5%;
+            @include media-sm {
+                width: 100%;
+            }
+            @include media-xs {
+                width: 100%;
+            }
+            &.right-content {
+                .info-item-img-container {
+                    @include media-xs {
+                        padding: 0 30px;
+                    }
+                }
+            }
+        }
+    }
 }
 .esmp-description-container {
     padding-bottom: 140px;

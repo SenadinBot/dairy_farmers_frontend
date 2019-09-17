@@ -496,13 +496,15 @@
         .primary-btn {
             @include media-xs-portrait {
                 width: 100%;
+                padding: 12px 5px 14px 5px;
             }
             @include media-xs-landscape {
                 width: 60%;
                 padding: 12px 22px 14px 22px;
             }
             @include media-md {
-                padding: 12px 22px 14px 22px;
+                padding: 12px 12px 14px 12px;
+                width: 100%;
             }
         }
     }
