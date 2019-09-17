@@ -11842,15 +11842,15 @@ main {
   @media (max-width: 767px) {
     .opt-out-group-button .primary-btn {
       display: block;
-      padding: 22px 0;
+      padding: 12px 15px 14px 15px;
       max-width: 532px;
-      font-size: 45.5px; }
+      font-size: 32px; }
       .opt-out-group-button .primary-btn:first-child {
         margin-bottom: 30px; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .opt-out-group-button .primary-btn {
       display: block;
-      padding: 22px 0;
+      padding: 12px 15px 14px 15px;
       max-width: 532px;
       font-size: 45.5px;
       margin-left: auto;
