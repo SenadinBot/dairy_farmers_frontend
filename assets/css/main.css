@@ -11918,26 +11918,29 @@ main {
         margin-bottom: 5vh; } }
     @media (min-width: 768px) and (max-width: 991px) {
       .opt-out-group-input .opt-out-input {
+        max-width: 100vw;
         font-size: 30px;
         margin-right: 95px;
         margin-top: 58px;
-        margin-left: calc(100% - 75vw); } }
+        margin-left: 10vw; } }
     @media (min-width: 992px) and (max-width: 1199px) {
       .opt-out-group-input .opt-out-input {
         margin-left: calc(100% - 75vw); } }
 
 .opt-out-group-button {
-  position: relative;
   margin-top: 121px;
   margin-bottom: 159px; }
   @media (max-width: 767px) {
     .opt-out-group-button {
-      margin: 0 calc(104px / 2);
+      margin-left: 10vw;
+      margin-right: 10vw;
       margin-bottom: 164px;
       margin-top: 77px; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .opt-out-group-button {
-      margin-left: calc(100% - 75vw); } }
+      margin-left: 84px;
+      margin-right: 120px;
+      max-width: 532px; } }
   @media (min-width: 992px) and (max-width: 1199px) {
     .opt-out-group-button {
       margin-left: calc(100% - 84vw); } }
@@ -11960,10 +11963,9 @@ main {
       .opt-out-group-button .primary-btn {
         display: block;
         padding: 44px 15px;
-        max-width: 532px;
+        width: 532px;
         font-size: 45.5px;
-        margin-left: auto;
-        margin-right: auto; }
+        margin: 0; }
         .opt-out-group-button .primary-btn:first-child {
           margin-bottom: 30px; } }
 
