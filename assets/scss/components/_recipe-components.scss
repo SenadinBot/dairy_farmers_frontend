@@ -676,7 +676,7 @@
         padding: 0 30px;
     }
     .recipe-article-item-container {
-        width: calc(100% / 3 - 9.5px);        
+        width: calc(100% / 3 - 10px);        
         margin-right: 10px;
         &:last-child {
             margin-right: 0;
@@ -864,6 +864,300 @@
         margin: -17px 0 24px 0;
         @include media-xs {
             padding: 0 30px;
+        }
+    }
+    .explore-recipers-inner-container {
+        padding: 62px 0 27px 0;
+        background-color: rgba(0,0,0,0.05);
+        .explore-main-recipers-container {
+            background-color: $blue;
+            padding: 50px 0 64px 0;
+            @include media-xs {
+                overflow: scroll;
+            }
+            @include media-sm {
+                width: 100%;               
+            }
+            .col-12 {
+                @include media-xs {
+                    padding-block-end: 0;
+                }
+                @include media-sm {
+                    padding: 0;
+                }
+            }
+            .explore-main-links-container {
+                text-align: center;
+                margin-left: -114px;
+                @include media-sm {
+                    margin-left: 0;
+                    text-align: left;
+                }
+                @include media-md {
+                    margin-left: -5px;
+                }
+                @include media-xs {
+                    margin-left: 0;
+                    text-align: left;
+                }
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    li {
+                        display: inline-block;
+                        margin-right: 118px;
+                        @include media-sm {
+                            margin-right: 78px;
+                        }
+                        @include media-md {
+                            margin-right: 85px;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        a,
+                        span {
+                            text-transform: uppercase;
+                            color: $white;
+                            @include acuminProExtraCondBlack();                    
+                            font-size: 30px;
+                            line-height: 30px;
+                            vertical-align: top;
+                            text-transform: uppercase;
+                            display: block;
+                            cursor: pointer;
+                            position: relative;
+                        }
+                    }
+                }
+            }
+            .explore-main-btn-container {
+                padding-left: 77px;
+                margin-bottom: 31px;
+                @include media-sm {
+                    padding-left: 0;
+                }
+                @include media-xs {
+                    padding-left: 0;
+                }
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    li {
+                        display: inline-block;
+                        &:first-child {
+                            margin-right: 67px;
+                        }
+                        &:nth-child(2) {
+                            margin-right: 15px;
+                        }
+                        &:nth-child(3) {
+                            margin-right: 67px;
+                        }
+                        a,
+                        span {
+                            text-transform: uppercase;
+                            color: $white;
+                            @include acuminProExtraCondBlack();                    
+                            font-size: 30px;
+                            line-height: 30px;
+                            vertical-align: top;
+                            text-transform: uppercase;
+                            display: block;
+                            cursor: pointer;
+                            position: relative;
+                        }
+                    }
+                }
+                .primary-btn {
+                    &.active-btn {
+                        color: $blue;
+                        background: $white;
+                        padding-right: 70px;
+                        img {
+                            height: 30px;                        
+                            opacity: 1;
+                            visibility: visible;
+                            @media all and (-ms-high-contrast:none) {
+                                height: 32px;
+                            }
+                        }
+                    }
+                    img {
+                        height: 0;
+                        opacity: 0;
+                        visibility: hidden;
+                        width: 31px;
+                        position: absolute;
+                        right: 15px;
+                        top: 13px;
+                        -webkit-transition: all 0.3s ease;
+                        -moz-transition: all 0.3s ease;
+                        -o-transition: all 0.3s ease;
+                        transition: all 0.3s ease;
+                        cursor: pointer;
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                        @media all and (-ms-high-contrast:none) {
+                            width: 32px;
+                        }
+                    }
+                }
+            }
+        }
+        .choosen-filter-container {
+            padding-top: 30px;
+            padding-left: 90px;
+            @include media-sm {
+                padding-left: 0;
+            }
+            @include media-xs {
+                padding-left: 0;
+            }
+            span {
+                text-transform: uppercase;
+                @include acuminProExtraCondBlack();                    
+                font-size: 30px;
+                line-height: 30px;
+                vertical-align: top;
+                &.title {
+                    color: $dark;
+                    margin-right: 55px;
+                    display: inline-block;
+                }
+            }
+            .choosen-filter-item-container {
+                display: inline-block;
+                vertical-align: top;
+            }
+            .choosen-filter-item {
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+                margin-right: 30px;
+                vertical-align: top;
+                display: inline-block;
+                &:last-child {
+                    margin-right: 0;
+                }
+                span {
+                    color: $blue;
+                    margin-right: 15px;
+                }
+                img {
+                    vertical-align: top;
+                    width: 31px;
+                    height: 30px;
+                    -webkit-transition: all 0.3s ease;
+                    -moz-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                    position: relative;
+                    top: 1px;
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                    @media all and (-ms-high-contrast:none) {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+            }
+        }
+        .explore-recipes-category-content {
+            margin-bottom: 26px;
+            text-align: center;
+            display: flex;
+            .category-item {
+                text-align: center;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: flex-end;
+                align-items: center;
+                flex: 1 1 0%;
+                width: auto;
+                position: relative;
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+                cursor: pointer;
+                img {
+                    margin-bottom: 47px;
+                    height: 52px;
+                    max-width: 100%;
+                    z-index: 9;
+                    position: relative;
+                }
+                &:first-child {
+                    img {
+                        height: 54px;
+                        margin-bottom: 58px;
+                    }
+                }
+                &:nth-child(2) {
+                    img {
+                        height: 76px;
+                        margin-bottom: 46px;
+                    }
+                }
+                &:nth-child(3) {
+                    img {
+                        height: 52px;
+                        margin-bottom: 49px;
+                    }
+                }
+                &:nth-child(4) {
+                    img {
+                        height: 73px;
+                        margin-bottom: 49px;
+                    }
+                }
+                h4 {
+                    line-height: 36px;
+                    text-transform: uppercase;
+                    margin: -8px 0 0 0;
+                }
+                &:before {
+                    content: "";
+                    width: 140px;
+                    height: 140px;
+                    border-radius: 100%;
+                    -webkit-transition: all 0.3s ease;
+                    -moz-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                    position: absolute;
+                    top: -28px;
+                    left: 50%;
+                    -webkit-transform: translateX(-50%);
+                    -ms-transform: translateX(-50%);
+                    transform: translateX(-50%);
+                }
+                &:hover {
+                    &:before {
+                        background: $white;
+                        border: 5px solid $blue;
+                    }
+                }
+                &.active {
+                    &:before {
+                        background: #54585a;
+                        opacity: 0.1;
+                    }
+                    &:hover {
+                        &:before {
+                            border: 5px solid transparent;
+                            background: #54585a;
+                        }
+                    }
+                }
+            }
         }
     }
 }

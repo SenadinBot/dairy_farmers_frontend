@@ -323,6 +323,14 @@ $(document).ready(function () {
             }
         ]
     });
+
+    // Recipe List Filter
+    $('.choosen-filter-item').on('click', function() {
+        $(this).remove();
+    });
+    $('.explore-main-btn-container .primary-btn').on('click', function() {
+        $(this).toggleClass('active-btn');
+    });
 });
 
 $.fn.menumaker = function (options) {
