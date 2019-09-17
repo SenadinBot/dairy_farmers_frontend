@@ -211,6 +211,22 @@
             }
         }
     }
+    &.esmp-about-container {
+        margin-top: 93px;
+        .info-item-container {
+            margin-bottom: 50px;
+            @include media-sm {
+                margin-bottom: 90px;
+            }
+            &.right-content {
+                .info-item-img-container {
+                    @include media-xs {
+                        padding: 0 30px;
+                    }
+                }
+            }
+        }
+    }
 }
 .esmp-description-container {
     padding-bottom: 140px;

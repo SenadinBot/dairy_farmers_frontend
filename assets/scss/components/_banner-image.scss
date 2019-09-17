@@ -786,6 +786,17 @@
             margin-bottom: 70px;       
         }
     }
+    &.content-width {
+        .banner-title {
+            p {
+                font-size: 18px;
+                line-height: 30px;
+                @include media-md {
+                    margin: 41% 0 0 0;
+                }
+            }
+        }
+    }
 }
 .banner-title {
     z-index: 9;

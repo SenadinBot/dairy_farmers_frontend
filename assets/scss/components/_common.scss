@@ -59,6 +59,72 @@
             color: $white;
         }
     }
+    &.info-list-container {
+        text-align: left;
+        padding: 50px 0 57px 0;
+        @include media-xs {
+            padding: 50px 30px 20px 30px;
+        }
+        h4 {
+            margin-bottom: 19px;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0 10px 0 0;
+            @include media-xs {
+                padding: 0 15px 0 0;
+            }
+            li {
+                font-family: $robotoLight;
+                line-height: 30px;
+                font-size: 18px;
+                color: $white;
+                position: relative;
+                padding-left: 20px;
+                margin-bottom: 25px;
+                &:before {
+                    content: "";
+                    color: $blue;
+                    display: inline-block;
+                    border: 1px solid $blue;
+                    border-radius: 100%;
+                    width: 8px;
+                    height: 8px;
+                    position: absolute;
+                    top: 8px;
+                    left: 0;
+                }
+            }
+        }
+        &.blue-background {
+            ul {
+                li {
+                    &:before {
+                        border: 1px solid #ffc600;
+                    }
+                }
+            }
+        }
+        .left-side {
+            vertical-align: top;
+            display: inline-block;
+            margin-right: 30px;
+            width: calc(100% / 2 - 30px);
+            @include media-xs {
+                margin-right: 0;
+                width: 100%;
+            }
+        }
+        .right-side {
+            vertical-align: top;
+            display: inline-block;
+            width: calc(100% / 2 - 30px);
+            @include media-xs {
+                width: 100%;
+            }
+        }
+    }
     @include media-xs {
         padding: 50px 30px;
     }
@@ -742,6 +808,15 @@
     }
     &.add-bottom-spacing {
         padding-bottom: 50px;
+    }
+    &.add-bottom-margin {
+        margin-bottom: 159px;
+        @include media-sm {
+            margin-bottom: 125px;
+        }
+        @include media-xs {
+            margin-bottom: 70px;
+        }
     }
     .primary-btn {
         @include media-xs-landscape {
