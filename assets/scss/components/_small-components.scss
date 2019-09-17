@@ -983,7 +983,9 @@
     min-height: 55px;
     margin-bottom: 103px;
     @include media-xs{
-        margin-left: calc(100% - 90vw);
+        margin-left: 9.444vw;
+        margin-right: 9.861vw;
+        font-size: 30px;
     }
     @include media-sm{
         margin-left: calc(100% - 80vw);
@@ -995,7 +997,7 @@
         @include media-xs{
             &:first-child{
                 display: block;
-                margin-bottom: 30px;
+                margin-bottom: 5vh;
             }
         }
     }
@@ -1003,8 +1005,7 @@
 .opt-out-group-input{
 position: relative;
     .opt-out-input{
-        width: 100%;
-        height: 55px;
+        height: auto;
         font-family: $robotoLight;
         font-size: 22px;
         font-weight: 300;
@@ -1016,8 +1017,11 @@ position: relative;
         margin-top: 53px;
         margin-left: 4px;
         @include media-xs{
-            margin-left: calc(100% - 90vw);
-            margin-right: 30px;
+            max-width: 85vw;
+            margin-left: 10.139vw;
+            margin-right: 95px;
+            font-size: 30px;
+            margin-bottom: 5vh;
         }
         @include media-sm{
                 font-size: 30px;
@@ -1038,6 +1042,7 @@ margin-bottom: 159px;
 @include media-xs{
     margin: 0 calc(104px / 2);
     margin-bottom: 164px;
+    margin-top: 77px;
 }
 @include media-sm{
   margin-left: calc(100% - 75vw);
@@ -1046,9 +1051,16 @@ margin-bottom: 159px;
     margin-left: calc(100% - 84vw);
 }
     .primary-btn{
+        padding: 15px 50px;
+        line-height: 1;
+        letter-spacing: 1.8px;
+        font-size: 30px;
+        &:first-child{
+            margin-right: 60px;
+        }
         @include media-xs{
             display: block;
-            padding: 12px 15px 14px 15px;
+            padding: 44px 15px;
             max-width: 532px;
             font-size: 32px;
             &:first-child{
@@ -1057,7 +1069,7 @@ margin-bottom: 159px;
         }
         @include media-sm{
             display: block;
-            padding: 12px 15px 14px 15px;
+            padding: 44px 15px;
             max-width: 532px;
             font-size: 45.5px;
             margin-left: auto;
