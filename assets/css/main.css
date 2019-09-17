@@ -10193,10 +10193,12 @@ main {
           color: #ffffff;
           background-color: #0072ce;
           border-radius: 100%;
-          font-family: "Acumin Pro ExtraCondensed Bold";
+          font-family: "acumin-pro-extra-condensed",sans-serif;
+          font-style: normal;
+          font-weight: 900;
           letter-spacing: 1.8px;
           font-size: 36px;
-          line-height: 48px;
+          line-height: 34px;
           top: 8px;
           left: 0;
           height: 40px;
