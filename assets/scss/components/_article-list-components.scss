@@ -28,6 +28,21 @@
             &:nth-child(3n) {
                 margin-right: 0;
             }
+            .img-container {
+                height: 225px;
+                @include media-md {
+                    height: 188px;
+                }
+                @include media-sm {
+                    height: 148px;
+                }
+                @include media-xs {
+                    height: auto;
+                }
+                img {
+                    object-fit: cover;
+                }
+            }
             .article-item-content {
                 @include media-xs {
                     padding: 0;
@@ -61,6 +76,21 @@
                 @include media-xs {
                     padding: 0;
                 } 
+            }
+            .img-container {
+                height: 431px;
+                @include media-md {
+                    height: 360px;
+                }
+                @include media-sm {
+                    height: 284px;
+                }
+                @include media-xs {
+                    height: auto;
+                }
+                img {
+                    object-fit: cover;
+                }
             }
             &.has-subtitle {
                 .img-container {

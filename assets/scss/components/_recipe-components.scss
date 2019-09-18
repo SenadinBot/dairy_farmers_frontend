@@ -898,21 +898,24 @@
     .explore-recipers-inner-container {
         padding: 62px 0 27px 0;
         background-color: rgba(0,0,0,0.05);
+        @include media-xs {
+            padding: 0 0 22px 0;
+        }
         .explore-main-recipers-container {
             background-color: $blue;
             padding: 50px 0 64px 0;
             @include media-xs {
-                overflow: scroll;
+                overflow-x: scroll;
+                width: 100%;   
+                padding: 50px 0 48px 0;
             }
             @include media-sm {
-                width: 100%;               
+                width: 100%;   
+                overflow-x: scroll;
             }
             .col-12 {
                 @include media-xs {
                     padding-block-end: 0;
-                }
-                @include media-sm {
-                    padding: 0;
                 }
             }
             .explore-main-links-container {
@@ -926,8 +929,7 @@
                     margin-left: -5px;
                 }
                 @include media-xs {
-                    margin-left: 0;
-                    text-align: left;
+                    display: none;
                 }
                 ul {
                     margin: 0;
@@ -966,9 +968,19 @@
                 margin-bottom: 31px;
                 @include media-sm {
                     padding-left: 0;
+                    display: inline-flex;
+                    overflow: auto;
+                    width: 120vw;
                 }
                 @include media-xs {
                     padding-left: 0;
+                    display: inline-flex;
+                    overflow: auto;
+                    margin-bottom: 0;
+                    width: 270vw;
+                }
+                @include media-xs-landscape {
+                    width: 160vw;
                 }
                 ul {
                     margin: 0;
@@ -978,12 +990,34 @@
                         display: inline-block;
                         &:first-child {
                             margin-right: 67px;
+                            @include media-sm {
+                                margin-right: 60px;
+                            }
+                            @include media-xs {
+                                margin-right: 15px;
+                            }
                         }
                         &:nth-child(2) {
                             margin-right: 15px;
                         }
                         &:nth-child(3) {
                             margin-right: 67px;
+                            @include media-sm {
+                                margin-right: 60px;
+                            }
+                            @include media-xs {
+                                margin-right: 15px;
+                            }
+                        }
+                        .primary-btn {
+                            @include media-xs-landscape {
+                                font-size: 32px;
+                                line-height: 32px;
+                                padding: 12px 45px 14px 45px; 
+                            }
+                            @include media-xs {
+                                padding: 12px 75px 14px 75px; 
+                            }
                         }
                         a,
                         span {
@@ -997,7 +1031,25 @@
                             display: block;
                             cursor: pointer;
                             position: relative;
+                            @include media-sm {
+                                top: -17px;
+                            }
+                            @include media-xs {
+                                top: -17px;
+                            }
                         }
+                    }
+                    @include media-sm {
+                        display: flex;
+                        align-items: flex-end;
+                        overflow: hidden;
+                        position: relative;
+                    }
+                    @include media-xs {
+                        display: flex;
+                        align-items: flex-end;
+                        overflow: hidden;
+                        position: relative;
                     }
                 }
                 .primary-btn {
@@ -1005,12 +1057,18 @@
                         color: $blue;
                         background: $white;
                         padding-right: 70px;
+                        @include media-xs {
+                            padding-right: 100px;
+                        }
                         img {
                             height: 30px;                        
                             opacity: 1;
                             visibility: visible;
                             @media all and (-ms-high-contrast:none) {
                                 height: 32px;
+                            }
+                            @include media-xs {
+                                height: 40px;
                             }
                         }
                     }
@@ -1033,6 +1091,11 @@
                         @media all and (-ms-high-contrast:none) {
                             width: 32px;
                         }
+                        @include media-xs {
+                            width: 41px;
+                            top: 10px;
+                            right: 25px;
+                        }
                     }
                 }
             }
@@ -1044,7 +1107,7 @@
                 padding-left: 0;
             }
             @include media-xs {
-                padding-left: 0;
+                padding-left: 30px;
             }
             span {
                 text-transform: uppercase;
@@ -1056,11 +1119,24 @@
                     color: $dark;
                     margin-right: 55px;
                     display: inline-block;
+                    @include media-xs {
+                        margin-right: 20px;
+                    }
                 }
             }
             .choosen-filter-item-container {
                 display: inline-block;
                 vertical-align: top;
+                @include media-xs {
+                    overflow-x: scroll;
+                    width: calc(100% - 100px);
+                    margin-top: -4px;
+                }
+                .choosen-filter-item-inner-container {
+                    @include media-xs {
+                        display: inline-flex;
+                    }
+                }
             }
             .choosen-filter-item {
                 -webkit-transition: all 0.3s ease;
@@ -1070,12 +1146,21 @@
                 margin-right: 30px;
                 vertical-align: top;
                 display: inline-block;
+                @include media-xs {
+                    display: flex;
+                    align-items: flex-end;
+                    overflow: hidden;
+                }
                 &:last-child {
                     margin-right: 0;
                 }
                 span {
                     color: $blue;
                     margin-right: 15px;
+                    @include media-xs {
+                        position: relative;
+                        top: -6px;
+                    }
                 }
                 img {
                     vertical-align: top;
@@ -1091,6 +1176,11 @@
                     &:hover {
                         opacity: 0.7;
                     }
+                    @include media-xs {
+                        top: 0;
+                        width: 41px;
+                        height: 40px;
+                    }
                     @media all and (-ms-high-contrast:none) {
                         width: 32px;
                         height: 32px;
@@ -1098,10 +1188,24 @@
                 }
             }
         }
+        .explore-recipes-category-container {
+            @include media-xs {
+                overflow-x: scroll;
+                padding-top: 60px;
+            }
+            .col-12 {
+                @include media-xs {
+                    padding: 0;
+                }
+            }
+        }
         .explore-recipes-category-content {
             margin-bottom: 26px;
             text-align: center;
             display: flex;
+            @include media-xs {
+                display: inline-flex;
+            }
             .category-item {
                 text-align: center;
                 display: flex;
@@ -1116,6 +1220,9 @@
                 -o-transition: all 0.3s ease;
                 transition: all 0.3s ease;
                 cursor: pointer;
+                @include media-xs {
+                    min-width: 170px;
+                }
                 img {
                     margin-bottom: 47px;
                     height: 52px;

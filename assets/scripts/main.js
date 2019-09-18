@@ -299,36 +299,11 @@ $(document).ready(function () {
         theme: "minimal"
     });
 
-    // Culinary Category Mobile Carousel
-    $('.culinary-recipes-category-content').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 2000,
-        dots: false,
-        arrows: false,
-        variableWidth: false,
-        infinite: false,
-        responsive: [
-            {
-                breakpoint: 9999,
-                settings: "unslick"
-            },
-            {
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                }
-            }
-        ]
-    });
-
     // Recipe List Filter
-    $('.choosen-filter-item').on('click', function() {
+    $('.choosen-filter-item').on('click', function () {
         $(this).remove();
     });
-    $('.explore-main-btn-container .primary-btn').on('click', function() {
+    $('.explore-main-btn-container .primary-btn').on('click', function () {
         $(this).toggleClass('active-btn');
     });
 });
@@ -375,45 +350,50 @@ function initMap() {
         function initialize() {
             const myLatlng = new google.maps.LatLng(53.3333, -3.08333);
             const mapOptions = {
-              zoom: 13,
-              center: myLatlng,
-              mapTypeId: google.maps.MapTypeId.ROADMAP,
+                zoom: 13,
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
             };
-          
+
             const map = new google.maps.Map(document.getElementById('map'), mapOptions);
             // Callout Content
             const contentString = 'Some address here..';
             // Set window width + content
             const infowindow = new google.maps.InfoWindow({
-              content: contentString,
-              maxWidth: 500,
+                content: contentString,
+                maxWidth: 500,
             });
-          
+
+            var pinIcon = {
+                url: "/App_Themes/Milk/images/icon-pin-milk-logo@3x.png",
+                scaledSize: new google.maps.Size(63, 104)
+            };
             // Add Marker
             const marker = new google.maps.Marker({
-              position: myLatlng,
-              map: map,
-              title: 'image title',
+                position: myLatlng,
+                map: map,
+                title: 'image title',
+                icon: pinIcon
             });
-          
+
             google.maps.event.addListener(marker, 'click', function () {
-              infowindow.open(map, marker);
+                infowindow.open(map, marker);
             });
-          
+
             // Resize Function
             google.maps.event.addDomListener(window, 'resize', function () {
-              const center = map.getCenter();
-              google.maps.event.trigger(map, 'resize');
-              map.setCenter(center);
+                const center = map.getCenter();
+                google.maps.event.trigger(map, 'resize');
+                map.setCenter(center);
             });
-          }
-          
-          google.maps.event.addDomListener(window, 'load', initialize);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
     }
 }
 
 // Share buttons / Copy link
-$(document).on("click", ".copyUrl", function(){
+$(document).on("click", ".copyUrl", function () {
     var url = window.location.href;
     var sTemp = "<input id='copyToClipboard' value=\"" + url + "\" />";
     $("body").append(sTemp);

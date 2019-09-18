@@ -6434,6 +6434,22 @@ main {
           margin-bottom: 30px; } }
     .article-list-container .three-article-list-container .article-item-container:nth-child(3n) {
       margin-right: 0; }
+<<<<<<< Updated upstream
+=======
+    .article-list-container .three-article-list-container .article-item-container .img-container {
+      height: 225px; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .article-list-container .three-article-list-container .article-item-container .img-container {
+          height: 188px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .article-list-container .three-article-list-container .article-item-container .img-container {
+          height: 148px; } }
+      @media (max-width: 767px) {
+        .article-list-container .three-article-list-container .article-item-container .img-container {
+          height: auto; } }
+      .article-list-container .three-article-list-container .article-item-container .img-container img {
+        object-fit: cover; }
+>>>>>>> Stashed changes
     @media (max-width: 767px) {
       .article-list-container .three-article-list-container .article-item-container .article-item-content {
         padding: 0; } }
@@ -6456,6 +6472,22 @@ main {
   @media (max-width: 767px) {
     .article-list-container .two-article-list-container .article-item-container .article-item-content {
       padding: 0; } }
+<<<<<<< Updated upstream
+=======
+  .article-list-container .two-article-list-container .article-item-container .img-container {
+    height: 431px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .article-list-container .two-article-list-container .article-item-container .img-container {
+        height: 360px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .article-list-container .two-article-list-container .article-item-container .img-container {
+        height: 284px; } }
+    @media (max-width: 767px) {
+      .article-list-container .two-article-list-container .article-item-container .img-container {
+        height: auto; } }
+    .article-list-container .two-article-list-container .article-item-container .img-container img {
+      object-fit: cover; }
+>>>>>>> Stashed changes
   .article-list-container .two-article-list-container .article-item-container.has-subtitle .img-container {
     margin-bottom: 30px; }
     @media (max-width: 767px) {
@@ -8110,10 +8142,20 @@ main {
     text-align: center; }
     @media (max-width: 767px) {
       .culinary-recipes-category-container .btn-container {
+<<<<<<< Updated upstream
         padding: 0 30px;
         display: none; }
         .culinary-recipes-category-container .btn-container .primary-btn {
           width: 100%; } }
+=======
+        padding: 0 40px;
+        display: none; }
+        .culinary-recipes-category-container .btn-container .primary-btn {
+          width: 100%; } }
+  @media (max-width: 767px) {
+    .culinary-recipes-category-container .col-12 {
+      padding: 0; } }
+>>>>>>> Stashed changes
   .culinary-recipes-category-container h3 {
     text-transform: uppercase;
     margin: -5px 0 2px 0; }
@@ -8127,7 +8169,11 @@ main {
     position: relative; }
     @media (max-width: 767px) {
       .culinary-recipes-category-container .culinary-recipes-category-title {
+<<<<<<< Updated upstream
         padding: 0 30px; } }
+=======
+        padding: 0 40px; } }
+>>>>>>> Stashed changes
     .culinary-recipes-category-container .culinary-recipes-category-title:before {
       content: "";
       background: rgba(0, 0, 0, 0.25);
@@ -8139,6 +8185,12 @@ main {
       @media (max-width: 767px) {
         .culinary-recipes-category-container .culinary-recipes-category-title:before {
           display: none; } }
+<<<<<<< Updated upstream
+=======
+  @media (max-width: 767px) {
+    .culinary-recipes-category-container .culinary-recipes-category-inner-container {
+      overflow-x: scroll; } }
+>>>>>>> Stashed changes
   .culinary-recipes-category-container .culinary-recipes-category-content {
     margin-bottom: 42px;
     text-align: center;
@@ -8147,6 +8199,12 @@ main {
       .culinary-recipes-category-container .culinary-recipes-category-content .slick-track,
       .culinary-recipes-category-container .culinary-recipes-category-content .slick-list {
         display: flex; } }
+<<<<<<< Updated upstream
+=======
+    @media (max-width: 767px) {
+      .culinary-recipes-category-container .culinary-recipes-category-content {
+        display: inline-flex; } }
+>>>>>>> Stashed changes
     .culinary-recipes-category-container .culinary-recipes-category-content .category-item {
       text-align: center;
       display: flex;
@@ -8155,6 +8213,12 @@ main {
       align-items: center;
       flex: 1 1 0%;
       width: auto; }
+<<<<<<< Updated upstream
+=======
+      @media (max-width: 767px) {
+        .culinary-recipes-category-container .culinary-recipes-category-content .category-item {
+          min-width: 170px; } }
+>>>>>>> Stashed changes
       .culinary-recipes-category-container .culinary-recipes-category-content .category-item img {
         margin-bottom: 47px;
         height: 52px;
@@ -9506,11 +9570,18 @@ main {
   .explore-recipers-container .explore-recipers-inner-container {
     padding: 62px 0 27px 0;
     background-color: rgba(0, 0, 0, 0.05); }
+<<<<<<< Updated upstream
+=======
+    @media (max-width: 767px) {
+      .explore-recipers-container .explore-recipers-inner-container {
+        padding: 0 0 22px 0; } }
+>>>>>>> Stashed changes
     .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container {
       background-color: #0072ce;
       padding: 50px 0 64px 0; }
       @media (max-width: 767px) {
         .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container {
+<<<<<<< Updated upstream
           overflow: scroll; } }
       @media (min-width: 768px) and (max-width: 991px) {
         .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container {
@@ -9521,6 +9592,18 @@ main {
       @media (min-width: 768px) and (max-width: 991px) {
         .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .col-12 {
           padding: 0; } }
+=======
+          overflow-x: scroll;
+          width: 100%;
+          padding: 50px 0 48px 0; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container {
+          width: 100%;
+          overflow-x: scroll; } }
+      @media (max-width: 767px) {
+        .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .col-12 {
+          padding-block-end: 0; } }
+>>>>>>> Stashed changes
       .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-links-container {
         text-align: center;
         margin-left: -114px; }
@@ -9533,8 +9616,12 @@ main {
             margin-left: -5px; } }
         @media (max-width: 767px) {
           .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-links-container {
+<<<<<<< Updated upstream
             margin-left: 0;
             text-align: left; } }
+=======
+            display: none; } }
+>>>>>>> Stashed changes
         .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-links-container ul {
           margin: 0;
           padding: 0;
@@ -9569,10 +9656,27 @@ main {
         margin-bottom: 31px; }
         @media (min-width: 768px) and (max-width: 991px) {
           .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container {
+<<<<<<< Updated upstream
             padding-left: 0; } }
         @media (max-width: 767px) {
           .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container {
             padding-left: 0; } }
+=======
+            padding-left: 0;
+            display: inline-flex;
+            overflow: auto;
+            width: 120vw; } }
+        @media (max-width: 767px) {
+          .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container {
+            padding-left: 0;
+            display: inline-flex;
+            overflow: auto;
+            margin-bottom: 0;
+            width: 270vw; } }
+        @media (max-width: 767px) and (orientation: landscape) {
+          .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container {
+            width: 160vw; } }
+>>>>>>> Stashed changes
         .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul {
           margin: 0;
           padding: 0;
@@ -9581,10 +9685,36 @@ main {
             display: inline-block; }
             .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li:first-child {
               margin-right: 67px; }
+<<<<<<< Updated upstream
+=======
+              @media (min-width: 768px) and (max-width: 991px) {
+                .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li:first-child {
+                  margin-right: 60px; } }
+              @media (max-width: 767px) {
+                .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li:first-child {
+                  margin-right: 15px; } }
+>>>>>>> Stashed changes
             .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li:nth-child(2) {
               margin-right: 15px; }
             .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li:nth-child(3) {
               margin-right: 67px; }
+<<<<<<< Updated upstream
+=======
+              @media (min-width: 768px) and (max-width: 991px) {
+                .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li:nth-child(3) {
+                  margin-right: 60px; } }
+              @media (max-width: 767px) {
+                .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li:nth-child(3) {
+                  margin-right: 15px; } }
+            @media (max-width: 767px) and (orientation: landscape) {
+              .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li .primary-btn {
+                font-size: 32px;
+                line-height: 32px;
+                padding: 12px 45px 14px 45px; } }
+            @media (max-width: 767px) {
+              .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li .primary-btn {
+                padding: 12px 75px 14px 75px; } }
+>>>>>>> Stashed changes
             .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li a,
             .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li span {
               text-transform: uppercase;
@@ -9599,10 +9729,39 @@ main {
               display: block;
               cursor: pointer;
               position: relative; }
+<<<<<<< Updated upstream
+=======
+              @media (min-width: 768px) and (max-width: 991px) {
+                .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li a,
+                .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li span {
+                  top: -17px; } }
+              @media (max-width: 767px) {
+                .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li a,
+                .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li span {
+                  top: -17px; } }
+          @media (min-width: 768px) and (max-width: 991px) {
+            .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul {
+              display: flex;
+              align-items: flex-end;
+              overflow: hidden;
+              position: relative; } }
+          @media (max-width: 767px) {
+            .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul {
+              display: flex;
+              align-items: flex-end;
+              overflow: hidden;
+              position: relative; } }
+>>>>>>> Stashed changes
         .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container .primary-btn.active-btn {
           color: #0072ce;
           background: #ffffff;
           padding-right: 70px; }
+<<<<<<< Updated upstream
+=======
+          @media (max-width: 767px) {
+            .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container .primary-btn.active-btn {
+              padding-right: 100px; } }
+>>>>>>> Stashed changes
           .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container .primary-btn.active-btn img {
             height: 30px;
             opacity: 1;
@@ -9610,6 +9769,12 @@ main {
             @media all and (-ms-high-contrast: none) {
               .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container .primary-btn.active-btn img {
                 height: 32px; } }
+<<<<<<< Updated upstream
+=======
+            @media (max-width: 767px) {
+              .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container .primary-btn.active-btn img {
+                height: 40px; } }
+>>>>>>> Stashed changes
         .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container .primary-btn img {
           height: 0;
           opacity: 0;
@@ -9628,6 +9793,14 @@ main {
           @media all and (-ms-high-contrast: none) {
             .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container .primary-btn img {
               width: 32px; } }
+<<<<<<< Updated upstream
+=======
+          @media (max-width: 767px) {
+            .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container .primary-btn img {
+              width: 41px;
+              top: 10px;
+              right: 25px; } }
+>>>>>>> Stashed changes
     .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container {
       padding-top: 30px;
       padding-left: 90px; }
@@ -9636,7 +9809,11 @@ main {
           padding-left: 0; } }
       @media (max-width: 767px) {
         .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container {
+<<<<<<< Updated upstream
           padding-left: 0; } }
+=======
+          padding-left: 30px; } }
+>>>>>>> Stashed changes
       .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container span {
         text-transform: uppercase;
         font-family: "acumin-pro-extra-condensed",sans-serif;
@@ -9649,9 +9826,26 @@ main {
           color: #000000;
           margin-right: 55px;
           display: inline-block; }
+<<<<<<< Updated upstream
       .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item-container {
         display: inline-block;
         vertical-align: top; }
+=======
+          @media (max-width: 767px) {
+            .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container span.title {
+              margin-right: 20px; } }
+      .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item-container {
+        display: inline-block;
+        vertical-align: top; }
+        @media (max-width: 767px) {
+          .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item-container {
+            overflow-x: scroll;
+            width: calc(100% - 100px);
+            margin-top: -4px; } }
+        @media (max-width: 767px) {
+          .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item-container .choosen-filter-item-inner-container {
+            display: inline-flex; } }
+>>>>>>> Stashed changes
       .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item {
         -webkit-transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;
@@ -9660,11 +9854,26 @@ main {
         margin-right: 30px;
         vertical-align: top;
         display: inline-block; }
+<<<<<<< Updated upstream
+=======
+        @media (max-width: 767px) {
+          .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item {
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden; } }
+>>>>>>> Stashed changes
         .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item:last-child {
           margin-right: 0; }
         .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item span {
           color: #0072ce;
           margin-right: 15px; }
+<<<<<<< Updated upstream
+=======
+          @media (max-width: 767px) {
+            .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item span {
+              position: relative;
+              top: -6px; } }
+>>>>>>> Stashed changes
         .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item img {
           vertical-align: top;
           width: 31px;
@@ -9678,14 +9887,38 @@ main {
           top: 1px; }
           .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item img:hover {
             opacity: 0.7; }
+<<<<<<< Updated upstream
+=======
+          @media (max-width: 767px) {
+            .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item img {
+              top: 0;
+              width: 41px;
+              height: 40px; } }
+>>>>>>> Stashed changes
           @media all and (-ms-high-contrast: none) {
             .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item img {
               width: 32px;
               height: 32px; } }
+<<<<<<< Updated upstream
+=======
+    @media (max-width: 767px) {
+      .explore-recipers-container .explore-recipers-inner-container .explore-recipes-category-container {
+        overflow-x: scroll;
+        padding-top: 60px; } }
+    @media (max-width: 767px) {
+      .explore-recipers-container .explore-recipers-inner-container .explore-recipes-category-container .col-12 {
+        padding: 0; } }
+>>>>>>> Stashed changes
     .explore-recipers-container .explore-recipers-inner-container .explore-recipes-category-content {
       margin-bottom: 26px;
       text-align: center;
       display: flex; }
+<<<<<<< Updated upstream
+=======
+      @media (max-width: 767px) {
+        .explore-recipers-container .explore-recipers-inner-container .explore-recipes-category-content {
+          display: inline-flex; } }
+>>>>>>> Stashed changes
       .explore-recipers-container .explore-recipers-inner-container .explore-recipes-category-content .category-item {
         text-align: center;
         display: flex;
@@ -9700,6 +9933,12 @@ main {
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
         cursor: pointer; }
+<<<<<<< Updated upstream
+=======
+        @media (max-width: 767px) {
+          .explore-recipers-container .explore-recipers-inner-container .explore-recipes-category-content .category-item {
+            min-width: 170px; } }
+>>>>>>> Stashed changes
         .explore-recipers-container .explore-recipers-inner-container .explore-recipes-category-content .category-item img {
           margin-bottom: 47px;
           height: 52px;
@@ -12479,8 +12718,13 @@ main {
       top: -40px; } }
   @media (max-width: 767px) {
     .board-directors-modal .modal-header {
+<<<<<<< Updated upstream
       top: -17px;
       right: 24px; } }
+=======
+      top: -28px;
+      right: 11px; } }
+>>>>>>> Stashed changes
   .board-directors-modal .modal-header img {
     width: 115px;
     height: 115px;
@@ -12508,8 +12752,13 @@ main {
         height: 75px; } }
     @media (max-width: 767px) {
       .board-directors-modal .modal-header img {
+<<<<<<< Updated upstream
         width: 35px;
         height: 35px; } }
+=======
+        width: 55px;
+        height: 55px; } }
+>>>>>>> Stashed changes
 .board-directors-modal.show .modal-dialog {
   top: 50%;
   -webkit-transform: translateY(-54%);
@@ -12542,6 +12791,12 @@ main {
   @media (min-width: 1200px) and (max-width: 1350px) {
     .board-directors-modal .modal-dialog {
       max-width: 95%; } }
+<<<<<<< Updated upstream
+=======
+  @media (max-width: 767px) {
+    .board-directors-modal .modal-dialog {
+      max-width: calc(100% - 20px); } }
+>>>>>>> Stashed changes
 .board-directors-modal .modal-content {
   border: none;
   border-radius: 20px;
@@ -12587,7 +12842,12 @@ main {
         width: 100%;
         height: auto;
         margin-right: 0;
+<<<<<<< Updated upstream
         margin-bottom: 30px; } }
+=======
+        margin-bottom: 20px;
+        padding: 0 30px; } }
+>>>>>>> Stashed changes
     .board-directors-modal .modal-body .img-container img {
       max-width: 100%;
       max-height: 100%;

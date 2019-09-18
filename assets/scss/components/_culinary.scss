@@ -139,11 +139,16 @@
     .btn-container {
         text-align: center;
         @include media-xs {
-            padding: 0 30px;
+            padding: 0 40px;
             display: none;
             .primary-btn {
                 width: 100%;
             }
+        }
+    }
+    .col-12 {
+        @include media-xs {
+            padding: 0;
         }
     }
     h3 {
@@ -159,7 +164,7 @@
         padding-top: 50px;
         position: relative;
         @include media-xs {
-            padding: 0 30px;
+            padding: 0 40px;
         }
         &:before {
             content: "";
@@ -174,6 +179,11 @@
             }
         }
     }
+    .culinary-recipes-category-inner-container {
+        @include media-xs {
+            overflow-x: scroll;
+        }
+    }
     .culinary-recipes-category-content {
         margin-bottom: 42px;
         text-align: center;
@@ -184,6 +194,9 @@
                 display: flex;
             }
         }
+        @include media-xs {
+            display: inline-flex;
+        }
         .category-item {
             text-align: center;
             // display: inline-block;
@@ -193,6 +206,9 @@
             align-items: center;
             flex: 1 1 0%;
             width: auto;
+            @include media-xs {
+                min-width: 170px;
+            }
             img {
                 margin-bottom: 47px;
                 height: 52px;
