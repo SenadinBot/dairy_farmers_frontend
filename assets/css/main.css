@@ -376,6 +376,11 @@ footer .row {
   }
 }
 
+@media print {
+  @page {
+    margin-top: 80px;
+  }
+}
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/roboto-regular/Roboto-Regular.eot");
