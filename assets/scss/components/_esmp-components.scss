@@ -249,6 +249,27 @@
             }
         }
     }
+    &.esmp-school-container {
+        margin: 155px 0 57px 0;
+        @include media-md {
+            margin: -80px 0 57px 0;            
+        }
+        @include media-xs {
+            margin: -20px 0 46px 0;            
+        }
+        .info-item-container {
+            .info-item-img-container {
+                @include media-xs {
+                    padding: 0 30px;
+                }
+            }
+            .primary-btn {
+                @include media-xs {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
 }
 .esmp-description-container {
     padding-bottom: 140px;
