@@ -25,6 +25,9 @@
                     margin-bottom: 30px;
                 }
             }
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
             .article-item-content {
                 @include media-xs {
                     padding: 0;
