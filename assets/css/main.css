@@ -12663,6 +12663,9 @@ main {
 .three-col-articles .recipe-article-item-container:last-child {
   margin-right: 0;
 }
+.three-col-articles .recipe-article-item-container:nth-child(3n) {
+  margin-right: 0;
+}
 @media (max-width: 767px) {
   .three-col-articles .recipe-article-item-container {
     margin-right: 0;
