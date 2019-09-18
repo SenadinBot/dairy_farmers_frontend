@@ -411,3 +411,13 @@ function initMap() {
           google.maps.event.addDomListener(window, 'load', initialize);
     }
 }
+
+// Share buttons / Copy link
+$(document).on("click", ".copyUrl", function(){
+    var url = window.location.href;
+    var sTemp = "<input id='copyToClipboard' value=\"" + url + "\" />";
+    $("body").append(sTemp);
+    $("#copyToClipboard").select();
+    document.execCommand("copy");
+    $("body").remove("#copyToClipboard");
+});
