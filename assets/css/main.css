@@ -12361,6 +12361,7 @@ main {
 .recipe-article-item-container h4 {
   text-transform: uppercase;
   margin-top: -8px;
+  min-height: 73px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .recipe-article-item-container h4 {
@@ -12375,6 +12376,7 @@ main {
 @media (max-width: 767px) {
   .recipe-article-item-container h4 {
     margin-bottom: 0;
+    min-height: auto;
   }
 }
 .recipe-article-item-container p {
