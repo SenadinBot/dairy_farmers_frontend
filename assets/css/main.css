@@ -8136,21 +8136,6 @@ main {
     text-align: center; }
     @media (max-width: 767px) {
       .culinary-recipes-category-container .btn-container {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        padding: 0 30px;
-        display: none; }
-        .culinary-recipes-category-container .btn-container .primary-btn {
-          width: 100%; } }
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
         padding: 0 40px;
         display: none; }
         .culinary-recipes-category-container .btn-container .primary-btn {
@@ -8158,16 +8143,6 @@ main {
   @media (max-width: 767px) {
     .culinary-recipes-category-container .col-12 {
       padding: 0; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   .culinary-recipes-category-container h3 {
     text-transform: uppercase;
     margin: -5px 0 2px 0; }
@@ -8181,23 +8156,7 @@ main {
     position: relative; }
     @media (max-width: 767px) {
       .culinary-recipes-category-container .culinary-recipes-category-title {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        padding: 0 30px; } }
-=======
         padding: 0 40px; } }
->>>>>>> Stashed changes
-=======
-        padding: 0 40px; } }
->>>>>>> Stashed changes
-=======
-        padding: 0 40px; } }
->>>>>>> Stashed changes
-=======
-        padding: 0 40px; } }
->>>>>>> Stashed changes
     .culinary-recipes-category-container .culinary-recipes-category-title:before {
       content: "";
       background: rgba(0, 0, 0, 0.25);
@@ -8209,30 +8168,9 @@ main {
       @media (max-width: 767px) {
         .culinary-recipes-category-container .culinary-recipes-category-title:before {
           display: none; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
   @media (max-width: 767px) {
     .culinary-recipes-category-container .culinary-recipes-category-inner-container {
       overflow-x: scroll; } }
->>>>>>> Stashed changes
-=======
-  @media (max-width: 767px) {
-    .culinary-recipes-category-container .culinary-recipes-category-inner-container {
-      overflow-x: scroll; } }
->>>>>>> Stashed changes
-=======
-  @media (max-width: 767px) {
-    .culinary-recipes-category-container .culinary-recipes-category-inner-container {
-      overflow-x: scroll; } }
->>>>>>> Stashed changes
-=======
-  @media (max-width: 767px) {
-    .culinary-recipes-category-container .culinary-recipes-category-inner-container {
-      overflow-x: scroll; } }
->>>>>>> Stashed changes
   .culinary-recipes-category-container .culinary-recipes-category-content {
     margin-bottom: 42px;
     text-align: center;
@@ -8241,30 +8179,9 @@ main {
       .culinary-recipes-category-container .culinary-recipes-category-content .slick-track,
       .culinary-recipes-category-container .culinary-recipes-category-content .slick-list {
         display: flex; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
     @media (max-width: 767px) {
       .culinary-recipes-category-container .culinary-recipes-category-content {
         display: inline-flex; } }
->>>>>>> Stashed changes
-=======
-    @media (max-width: 767px) {
-      .culinary-recipes-category-container .culinary-recipes-category-content {
-        display: inline-flex; } }
->>>>>>> Stashed changes
-=======
-    @media (max-width: 767px) {
-      .culinary-recipes-category-container .culinary-recipes-category-content {
-        display: inline-flex; } }
->>>>>>> Stashed changes
-=======
-    @media (max-width: 767px) {
-      .culinary-recipes-category-container .culinary-recipes-category-content {
-        display: inline-flex; } }
->>>>>>> Stashed changes
     .culinary-recipes-category-container .culinary-recipes-category-content .category-item {
       text-align: center;
       display: flex;
@@ -8273,23 +8190,6 @@ main {
       align-items: center;
       flex: 1 1 0%;
       width: auto; }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-      @media (max-width: 767px) {
-        .culinary-recipes-category-container .culinary-recipes-category-content .category-item {
-          min-width: 170px; } }
->>>>>>> Stashed changes
-=======
-      @media (max-width: 767px) {
-        .culinary-recipes-category-container .culinary-recipes-category-content .category-item {
-          min-width: 170px; } }
->>>>>>> Stashed changes
-=======
-=======
->>>>>>> Stashed changes
       @media (max-width: 767px) {
         .culinary-recipes-category-container .culinary-recipes-category-content .category-item {
           min-width: 170px; } }
@@ -9644,56 +9544,14 @@ main {
   .explore-recipers-container .explore-recipers-inner-container {
     padding: 62px 0 27px 0;
     background-color: rgba(0, 0, 0, 0.05); }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
     @media (max-width: 767px) {
       .explore-recipers-container .explore-recipers-inner-container {
         padding: 0 0 22px 0; } }
->>>>>>> Stashed changes
-=======
-    @media (max-width: 767px) {
-      .explore-recipers-container .explore-recipers-inner-container {
-        padding: 0 0 22px 0; } }
->>>>>>> Stashed changes
-=======
-    @media (max-width: 767px) {
-      .explore-recipers-container .explore-recipers-inner-container {
-        padding: 0 0 22px 0; } }
->>>>>>> Stashed changes
-=======
-    @media (max-width: 767px) {
-      .explore-recipers-container .explore-recipers-inner-container {
-        padding: 0 0 22px 0; } }
->>>>>>> Stashed changes
     .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container {
       background-color: #0072ce;
       padding: 50px 0 64px 0; }
       @media (max-width: 767px) {
         .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-          overflow: scroll; } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container {
-          width: 100%; } }
-      @media (max-width: 767px) {
-        .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .col-12 {
-          padding-block-end: 0; } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .col-12 {
-          padding: 0; } }
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
           overflow-x: scroll;
           width: 100%;
           padding: 50px 0 48px 0; } }
@@ -9704,16 +9562,6 @@ main {
       @media (max-width: 767px) {
         .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .col-12 {
           padding-block-end: 0; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
       .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-links-container {
         text-align: center;
         margin-left: -114px; }
@@ -9726,24 +9574,7 @@ main {
             margin-left: -5px; } }
         @media (max-width: 767px) {
           .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-links-container {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-            margin-left: 0;
-            text-align: left; } }
-=======
             display: none; } }
->>>>>>> Stashed changes
-=======
-            display: none; } }
->>>>>>> Stashed changes
-=======
-            display: none; } }
->>>>>>> Stashed changes
-=======
-            display: none; } }
->>>>>>> Stashed changes
         .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-links-container ul {
           margin: 0;
           padding: 0;
@@ -9778,21 +9609,6 @@ main {
         margin-bottom: 31px; }
         @media (min-width: 768px) and (max-width: 991px) {
           .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-            padding-left: 0; } }
-        @media (max-width: 767px) {
-          .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container {
-            padding-left: 0; } }
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
             padding-left: 0;
             display: inline-flex;
             overflow: auto;
@@ -9807,16 +9623,6 @@ main {
         @media (max-width: 767px) and (orientation: landscape) {
           .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container {
             width: 160vw; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
         .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul {
           margin: 0;
           padding: 0;
@@ -9825,48 +9631,16 @@ main {
             display: inline-block; }
             .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li:first-child {
               margin-right: 67px; }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
               @media (min-width: 768px) and (max-width: 991px) {
                 .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li:first-child {
                   margin-right: 60px; } }
               @media (max-width: 767px) {
                 .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li:first-child {
                   margin-right: 15px; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
             .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li:nth-child(2) {
               margin-right: 15px; }
             .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li:nth-child(3) {
               margin-right: 67px; }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
               @media (min-width: 768px) and (max-width: 991px) {
                 .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li:nth-child(3) {
                   margin-right: 60px; } }
@@ -9881,16 +9655,6 @@ main {
             @media (max-width: 767px) {
               .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li .primary-btn {
                 padding: 12px 75px 14px 75px; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
             .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li a,
             .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li span {
               text-transform: uppercase;
@@ -9905,17 +9669,6 @@ main {
               display: block;
               cursor: pointer;
               position: relative; }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
               @media (min-width: 768px) and (max-width: 991px) {
                 .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li a,
                 .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container ul li span {
@@ -9936,44 +9689,13 @@ main {
               align-items: flex-end;
               overflow: hidden;
               position: relative; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
         .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container .primary-btn.active-btn {
           color: #0072ce;
           background: #ffffff;
           padding-right: 70px; }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
           @media (max-width: 767px) {
             .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container .primary-btn.active-btn {
               padding-right: 100px; } }
->>>>>>> Stashed changes
-=======
-          @media (max-width: 767px) {
-            .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container .primary-btn.active-btn {
-              padding-right: 100px; } }
->>>>>>> Stashed changes
-=======
-          @media (max-width: 767px) {
-            .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container .primary-btn.active-btn {
-              padding-right: 100px; } }
->>>>>>> Stashed changes
-=======
-          @media (max-width: 767px) {
-            .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container .primary-btn.active-btn {
-              padding-right: 100px; } }
->>>>>>> Stashed changes
           .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container .primary-btn.active-btn img {
             height: 30px;
             opacity: 1;
@@ -9981,30 +9703,9 @@ main {
             @media all and (-ms-high-contrast: none) {
               .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container .primary-btn.active-btn img {
                 height: 32px; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
             @media (max-width: 767px) {
               .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container .primary-btn.active-btn img {
                 height: 40px; } }
->>>>>>> Stashed changes
-=======
-            @media (max-width: 767px) {
-              .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container .primary-btn.active-btn img {
-                height: 40px; } }
->>>>>>> Stashed changes
-=======
-            @media (max-width: 767px) {
-              .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container .primary-btn.active-btn img {
-                height: 40px; } }
->>>>>>> Stashed changes
-=======
-            @media (max-width: 767px) {
-              .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container .primary-btn.active-btn img {
-                height: 40px; } }
->>>>>>> Stashed changes
         .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container .primary-btn img {
           height: 0;
           opacity: 0;
@@ -10023,32 +9724,11 @@ main {
           @media all and (-ms-high-contrast: none) {
             .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container .primary-btn img {
               width: 32px; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
           @media (max-width: 767px) {
             .explore-recipers-container .explore-recipers-inner-container .explore-main-recipers-container .explore-main-btn-container .primary-btn img {
               width: 41px;
               top: 10px;
               right: 25px; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container {
       padding-top: 30px;
       padding-left: 90px; }
@@ -10057,23 +9737,7 @@ main {
           padding-left: 0; } }
       @media (max-width: 767px) {
         .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-          padding-left: 0; } }
-=======
           padding-left: 30px; } }
->>>>>>> Stashed changes
-=======
-          padding-left: 30px; } }
->>>>>>> Stashed changes
-=======
-          padding-left: 30px; } }
->>>>>>> Stashed changes
-=======
-          padding-left: 30px; } }
->>>>>>> Stashed changes
       .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container span {
         text-transform: uppercase;
         font-family: "acumin-pro-extra-condensed",sans-serif;
@@ -10086,20 +9750,6 @@ main {
           color: #000000;
           margin-right: 55px;
           display: inline-block; }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item-container {
-        display: inline-block;
-        vertical-align: top; }
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
           @media (max-width: 767px) {
             .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container span.title {
               margin-right: 20px; } }
@@ -10114,16 +9764,6 @@ main {
         @media (max-width: 767px) {
           .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item-container .choosen-filter-item-inner-container {
             display: inline-flex; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
       .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item {
         -webkit-transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;
@@ -10132,62 +9772,20 @@ main {
         margin-right: 30px;
         vertical-align: top;
         display: inline-block; }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
         @media (max-width: 767px) {
           .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item {
             display: flex;
             align-items: flex-end;
             overflow: hidden; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
         .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item:last-child {
           margin-right: 0; }
         .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item span {
           color: #0072ce;
           margin-right: 15px; }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
           @media (max-width: 767px) {
             .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item span {
               position: relative;
               top: -6px; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
         .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item img {
           vertical-align: top;
           width: 31px;
@@ -10201,47 +9799,15 @@ main {
           top: 1px; }
           .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item img:hover {
             opacity: 0.7; }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
           @media (max-width: 767px) {
             .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item img {
               top: 0;
               width: 41px;
               height: 40px; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
           @media all and (-ms-high-contrast: none) {
             .explore-recipers-container .explore-recipers-inner-container .choosen-filter-container .choosen-filter-item img {
               width: 32px;
               height: 32px; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     @media (max-width: 767px) {
       .explore-recipers-container .explore-recipers-inner-container .explore-recipes-category-container {
         overflow-x: scroll;
@@ -10249,44 +9815,13 @@ main {
     @media (max-width: 767px) {
       .explore-recipers-container .explore-recipers-inner-container .explore-recipes-category-container .col-12 {
         padding: 0; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     .explore-recipers-container .explore-recipers-inner-container .explore-recipes-category-content {
       margin-bottom: 26px;
       text-align: center;
       display: flex; }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
       @media (max-width: 767px) {
         .explore-recipers-container .explore-recipers-inner-container .explore-recipes-category-content {
           display: inline-flex; } }
->>>>>>> Stashed changes
-=======
-      @media (max-width: 767px) {
-        .explore-recipers-container .explore-recipers-inner-container .explore-recipes-category-content {
-          display: inline-flex; } }
->>>>>>> Stashed changes
-=======
-      @media (max-width: 767px) {
-        .explore-recipers-container .explore-recipers-inner-container .explore-recipes-category-content {
-          display: inline-flex; } }
->>>>>>> Stashed changes
-=======
-      @media (max-width: 767px) {
-        .explore-recipers-container .explore-recipers-inner-container .explore-recipes-category-content {
-          display: inline-flex; } }
->>>>>>> Stashed changes
       .explore-recipers-container .explore-recipers-inner-container .explore-recipes-category-content .category-item {
         text-align: center;
         display: flex;
@@ -10301,30 +9836,9 @@ main {
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
         cursor: pointer; }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
         @media (max-width: 767px) {
           .explore-recipers-container .explore-recipers-inner-container .explore-recipes-category-content .category-item {
             min-width: 170px; } }
->>>>>>> Stashed changes
-=======
-        @media (max-width: 767px) {
-          .explore-recipers-container .explore-recipers-inner-container .explore-recipes-category-content .category-item {
-            min-width: 170px; } }
->>>>>>> Stashed changes
-=======
-        @media (max-width: 767px) {
-          .explore-recipers-container .explore-recipers-inner-container .explore-recipes-category-content .category-item {
-            min-width: 170px; } }
->>>>>>> Stashed changes
-=======
-        @media (max-width: 767px) {
-          .explore-recipers-container .explore-recipers-inner-container .explore-recipes-category-content .category-item {
-            min-width: 170px; } }
->>>>>>> Stashed changes
         .explore-recipers-container .explore-recipers-inner-container .explore-recipes-category-content .category-item img {
           margin-bottom: 47px;
           height: 52px;
@@ -13104,28 +12618,8 @@ main {
       top: -40px; } }
   @media (max-width: 767px) {
     .board-directors-modal .modal-header {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      top: -17px;
-      right: 24px; } }
-=======
       top: -28px;
       right: 11px; } }
->>>>>>> Stashed changes
-=======
-      top: -28px;
-      right: 11px; } }
->>>>>>> Stashed changes
-=======
-      top: -28px;
-      right: 11px; } }
->>>>>>> Stashed changes
-=======
-      top: -28px;
-      right: 11px; } }
->>>>>>> Stashed changes
   .board-directors-modal .modal-header img {
     width: 115px;
     height: 115px;
@@ -13153,28 +12647,8 @@ main {
         height: 75px; } }
     @media (max-width: 767px) {
       .board-directors-modal .modal-header img {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        width: 35px;
-        height: 35px; } }
-=======
         width: 55px;
         height: 55px; } }
->>>>>>> Stashed changes
-=======
-        width: 55px;
-        height: 55px; } }
->>>>>>> Stashed changes
-=======
-        width: 55px;
-        height: 55px; } }
->>>>>>> Stashed changes
-=======
-        width: 55px;
-        height: 55px; } }
->>>>>>> Stashed changes
 .board-directors-modal.show .modal-dialog {
   top: 50%;
   -webkit-transform: translateY(-54%);
@@ -13207,30 +12681,9 @@ main {
   @media (min-width: 1200px) and (max-width: 1350px) {
     .board-directors-modal .modal-dialog {
       max-width: 95%; } }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
   @media (max-width: 767px) {
     .board-directors-modal .modal-dialog {
       max-width: calc(100% - 20px); } }
->>>>>>> Stashed changes
-=======
-  @media (max-width: 767px) {
-    .board-directors-modal .modal-dialog {
-      max-width: calc(100% - 20px); } }
->>>>>>> Stashed changes
-=======
-  @media (max-width: 767px) {
-    .board-directors-modal .modal-dialog {
-      max-width: calc(100% - 20px); } }
->>>>>>> Stashed changes
-=======
-  @media (max-width: 767px) {
-    .board-directors-modal .modal-dialog {
-      max-width: calc(100% - 20px); } }
->>>>>>> Stashed changes
 .board-directors-modal .modal-content {
   border: none;
   border-radius: 20px;
@@ -13276,27 +12729,8 @@ main {
         width: 100%;
         height: auto;
         margin-right: 0;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        margin-bottom: 30px; } }
-=======
         margin-bottom: 20px;
         padding: 0 30px; } }
->>>>>>> Stashed changes
-=======
-        margin-bottom: 20px;
-        padding: 0 30px; } }
->>>>>>> Stashed changes
-=======
-        margin-bottom: 20px;
-        padding: 0 30px; } }
->>>>>>> Stashed changes
-=======
-        margin-bottom: 20px;
-        padding: 0 30px; } }
->>>>>>> Stashed changes
     .board-directors-modal .modal-body .img-container img {
       max-width: 100%;
       max-height: 100%;
