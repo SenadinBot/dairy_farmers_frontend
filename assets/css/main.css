@@ -10231,7 +10231,8 @@ main {
               margin-right: 0; } }
         .article-info-banner-container .share-recipe-container .share-links ul li img {
           width: 41px;
-          height: 40px; }
+          height: 40px;
+          cursor: pointer; }
 
 .recipe-article-container {
   margin-bottom: 93px; }
@@ -10591,7 +10592,8 @@ main {
               margin-right: 0; } }
         .recipe-article-container .recipe-additional-info-container .share-recipe-container .share-links ul li img {
           width: 51px;
-          height: 50px; }
+          height: 50px;
+          cursor: pointer; }
           @media (min-width: 768px) and (max-width: 991px) {
             .recipe-article-container .recipe-additional-info-container .share-recipe-container .share-links ul li img {
               width: 41px;
