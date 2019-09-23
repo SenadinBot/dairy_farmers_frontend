@@ -1,5 +1,5 @@
 .our-milk-container {
-    padding-bottom: 140px;
+    padding-bottom: 110px;
     @include media-sm {
         padding-bottom: 0;
     }
@@ -38,6 +38,17 @@
     }
     .our-milk-carousel-container {
         margin-top: -15px;
+        @include media-lmd {
+            width: 90%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        @media (min-width: 1200px) and (max-width: 1349px) { 
+            width: 100%;
+        }
+        @include media-md {
+            width: 100%;
+        }
         @include media-xs {
             width: calc(100% + 30px);
             margin-left: -15px;
@@ -48,13 +59,28 @@
         }
     }
     .our-milk-carousel {
-        // @include media-lmd {
-        //     margin-bottom: 10px;
-        //     height: 346px;
-        //     display: inline-flex;
-        //     width: 100%;
-        //     align-items: flex-end;
-        // }
+        @include media-lmd { 
+            display: inline-flex;
+            margin-top: 85px;
+            &:before {
+                content: "";
+                border: 10px solid $blue;
+                background: rgba(0, 146, 188, 0.07);
+                width: 290px;
+                height: 290px;
+                position: absolute;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+                border-radius: 100%;
+                top: 45px;
+                @include media-md {
+                    width: 220px;
+                    height: 220px;
+                }
+            }
+        }
         @include media-sm {
             margin-bottom: 100px;
         }
@@ -103,26 +129,41 @@
         }
         .slick-list {
             width: 100%;
-            // height: 462px;
-            // overflow-y: visible;
-            @include media-lmd {
-                margin-bottom: 20px;
-            }
+            &:before {
+                content: "";
+                border: 10px solid $blue;
+                background: rgba(0, 146, 188, 0.07);
+                width: 270px;
+                height: 270px;
+                position: absolute;
+                left: 50%;
+                top: 65px;
+                -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+                border-radius: 100%;
+                @include media-xs-portrait {
+                    bottom: 80px;
+                    width: 170px;
+                    height: 170px;
+                    border: 5px solid $blue;
+                }
+                @include media-xs-landscape {
+                    top: 135px;
+                }
+            }   
             .slick-track {
                 display: inline-flex;
                 align-items: flex-end;   
                 padding-bottom: 250px; 
                 padding-top: 165px; 
                 @include media-xs-portrait {
-                    padding-bottom: 280px;
-                    padding-top: 75px; 
+                    padding-bottom: 265px;
+                    padding-top: 80px; 
                 }  
                 @include media-sm {
-                    padding-top: 135px;
-                } 
-                @include media-md {
-                    padding-top: 120px;
-                }          
+                    padding-top: 100px;
+                }       
             }
             .our-milk-slide {
                 text-align: center;
@@ -130,34 +171,21 @@
                 padding: 0 30px;  
                 @include media-xs-portrait {
                     padding: 0 5px;
-                }                  
+                    padding-top: 25px;
+                } 
                 &.slick-current {
                     margin-bottom: -90px;
                     @include media-xs-portrait {
                         margin-bottom: -70px;
-                    }
-                    &:before {
-                        content: "";
-                        border: 10px solid $blue;
-                        background: rgba(0, 146, 188, 0.07);
-                        width: 290px;
-                        height: 290px;
-                        position: absolute;
-                        left: 50%;
-                        -webkit-transform: translateX(-50%);
-                        -ms-transform: translateX(-50%);
-                        transform: translateX(-50%);
-                        border-radius: 100%;
-                        bottom: 110px;
-                        @include media-xs-portrait {
-                            bottom: 80px;
-                            width: 170px;
-                            height: 170px;
-                            border: 5px solid $blue;
-                        }
+                        top: -25px;
                     }
                     p {
-                        display: -webkit-box;                        
+                        display: -webkit-box;   
+                        -webkit-animation: milkFadeIn 1.5s;
+                        -moz-animation: milkFadeIn 1.5s; 
+                        -ms-animation: milkFadeIn 1.5s; 
+                        -o-animation: milkFadeIn 1.5s;
+                        animation: milkFadeIn 1.5s;
                     }
                     span {
                         font-size: 60px;
@@ -170,106 +198,62 @@
                         -ms-transform: translateX(-50%);
                         transform: translateX(-50%);
                         width: 150%;
+                        -webkit-animation: milkFadeIn 1.5s;
+                        -moz-animation: milkFadeIn 1.5s; 
+                        -ms-animation: milkFadeIn 1.5s; 
+                        -o-animation: milkFadeIn 1.5s;
+                        animation: milkFadeIn 1.5s;
                         @include media-xs-portrait {
                             font-size: 44px;
-                            top: 0;
+                            top: 10px;
                             width: 200%;
                         }
                     }
                     img {
-                        transition: all 200ms ease-in;
-                        -moz-transition: all 200ms ease-in;
-                        -webkit-transition: all 200ms ease-in;
-                        -ms-transition: all 200ms ease-in;
                         -ms-transform: scale(1.5); 
                         -moz-transform: scale(1.5);
                         -webkit-transform: scale(1.5); 
                         transform: scale(1.5); 
+                        -webkit-animation: milkFadeIn 1.5s;
+                        -moz-animation: milkFadeIn 1.5s; 
+                        -ms-animation: milkFadeIn 1.5s; 
+                        -o-animation: milkFadeIn 1.5s;
+                        animation: milkFadeIn 1.5s;
+                        margin-bottom: 30px;
                     }
                 }
                 img {
                     max-width: 100%;
                     height: auto;
-                    @include media-lmd {
-                        max-width: 100%;
-                        height: auto;
-                    }
                 }
             }
         }
         .our-milk-slide {
-            // @include media-lmd {
-            //     text-align: center;
-            //     position: relative;
-            //     display: inline-block;
-            // }
-            // @include media-lg { 
-            //     width: calc(100% / 5);
-            // }
-            // @include media-md {
-            //     width: calc(100% / 5 - 30px);
-            //     margin-right: 40px;
-            // }
-            // &:last-child {
-            //     @include media-md {
-            //         margin-right: 0;
-            //     }
-            // }
-            // &.butter-slide {
-            //     img {
-            //         width: 197px;
-            //         height: 150px;
-            //         @include media-md {
-            //             height: auto;
-            //             max-width: 100%;
-            //         }
-            //     }
-            // }
-            // &.yogurt-slide {
-            //     img {
-            //         width: 268px;
-            //         height: 126px;
-            //         @include media-md {
-            //             height: auto;
-            //             max-width: 100%;
-            //         }
-            //     }
-            // }
-            // &.milk-slide {
-            //     img {
-            //         width: 195px;
-            //         height: 346px;
-            //         @include media-md {
-            //             height: auto;
-            //             max-width: 100%;
-            //         }
-            //     }
-            // }
-            // &.cheese-slide {
-            //     img {
-            //         width: 210px;
-            //         height: 165px;
-            //         @include media-md {
-            //             height: auto;
-            //             max-width: 100%;
-            //         }
-            //     }
-            // }
-            // &.cream-slide {
-            //     img {
-            //         width: 207px;
-            //         height: 154px;
-            //         @include media-md {
-            //             height: auto;
-            //             max-width: 100%;
-            //         }
-            //     }
-            // }
+            @include media-lmd {
+                text-align: center;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: flex-end;
+                align-items: center;
+                width: 220px;
+                position: relative;
+                margin-right: 35px;
+                top: -97px;
+                @media (min-width: 1200px) and (max-width: 1349px) { 
+                    margin-right: 25px;
+                }
+                @include media-md {
+                    width: 164px;
+                    position: relative;
+                    margin-right: 30px;
+                    top: -80px;
+                }
+            }
             img {
-                // max-height: 153px;
-                // margin-bottom: 20px;
                 object-fit: contain;
                 display: inline-block;
+                max-width: 100%;
+                max-height: 100%;
             }
             span {
                 @include acuminProExtraCondBlack();
@@ -279,6 +263,10 @@
                 letter-spacing: 2.4px;
                 color: $dark;
                 display: block;
+                margin-top: -10px;
+                @include media-md {
+                    font-size: 40px;                    
+                }
                 @include media-sm {
                     position: relative;
                     top: 7px;
@@ -300,35 +288,52 @@
                 }
             }
             @include media-lmd {
-                &.active-slide {
-                    margin-bottom: -123px;
-                    &:before {
-                        content: "";
-                        border: 10px solid $blue;
-                        background: rgba(0, 146, 188, 0.07);
-                        width: 290px;
-                        height: 290px;
-                        position: absolute;
-                        left: 50%;
-                        -webkit-transform: translateX(-50%);
-                        -ms-transform: translateX(-50%);
-                        transform: translateX(-50%);
-                        border-radius: 100%;
-                        bottom: 110px;
-                        @include media-md {
-                            width: 240px;
-                            height: 240px;
-                        }
-                    }
+                &.active {
+                    margin-bottom: 0;
+                    top: 0;
                     span {
                         font-size: 60px;
                         letter-spacing: 4.32px;
                         line-height: normal;
                         position: relative;
                         top: 7px;
+                        width: 110%;
+                        -webkit-animation: milkFadeIn 1s;
+                        -moz-animation: milkFadeIn 1s; 
+                        -ms-animation: milkFadeIn 1s; 
+                        -o-animation: milkFadeIn 1s;
+                        animation: milkFadeIn 1s;
+                        @include media-md {
+                            font-size: 48px;
+                            letter-spacing: 1.32px;
+                            top: 7px;
+                            width: 110%;
+                        }
                     }
                     p {
                         display: -webkit-box;
+                        -webkit-animation: milkFadeIn 1s;
+                        -moz-animation: milkFadeIn 1s; 
+                        -ms-animation: milkFadeIn 1s; 
+                        -o-animation: milkFadeIn 1s;
+                        animation: milkFadeIn 1s;
+                    }
+                    img {
+                        -ms-transform: scale(1.45); 
+                        -moz-transform: scale(1.45);
+                        -webkit-transform: scale(1.45); 
+                        transform: scale(1.45);
+                        position: relative;
+                        bottom: 5px;   
+                        margin-bottom: 45px;    
+                        -webkit-animation: milkFadeIn 1s;
+                        -moz-animation: milkFadeIn 1s; 
+                        -ms-animation: milkFadeIn 1s; 
+                        -o-animation: milkFadeIn 1s;
+                        animation: milkFadeIn 1s; 
+                        @include media-md {
+                            margin-bottom: 35px;
+                        }            
                     }
                 }
             }
@@ -373,7 +378,7 @@
                 }
                 @include media-xs {
                     width: 240%;
-                    margin: -5px auto 0 auto;
+                    margin: 5px auto 0 auto;
                     bottom: initial;
                     font-size: 18px;
                     -webkit-line-clamp: 6;
@@ -387,112 +392,99 @@
             }
         }
     }
-    .our-milk-carousel-controls {
-        text-align: center;
-        display: block;
-        width: 791px;
-        margin: 245px auto 0 auto;
-        @include media-xs {
-            display: none;
-        }
-        @include media-sm {
-            display: none;
-        }
-        input[type=range] {
-            -webkit-appearance: none;
-            width: 100%;
-            margin: 0.8px 0; 
-            height: 74px;
-            &:focus {
-                outline: none;
-                outline-style: none;
-                box-shadow: none;
-                border-color: transparent; 
-            }
-            &::-webkit-slider-thumb {
-                width: 74px;
-                height: 50px;
-                background: url("/App_Themes/Milk/images/ui-slider.svg");
-                cursor: pointer;
-                -webkit-appearance: none;
-                margin-top: -22px;
-                outline: none;
-                border: none;              
-            }
-            &::-moz-range-thumb {
-                width: 74px;
-                height: 50px;
-                background: url("/App_Themes/Milk/images/ui-slider.svg");        
-                cursor: pointer; 
-                margin-top: -22px;   
-                -webkit-appearance: none;
-                outline: none;
-                border: none;               
-            }
-            &::-ms-thumb {
-                width: 74px;
-                height: 50px;
-                background: url("/App_Themes/Milk/images/ui-slider.svg");        
-                cursor: pointer;
-                margin-top: -10px;
-                -webkit-appearance: none;
-                outline: none;
-                border: none;
-            }
-            &::-ms-track {
-                
-            }
-            &::-moz-range-track {
-                width: 100%;
-                cursor: pointer;
-                box-shadow: none;
-                height: 15px;
-                border-radius: 7.5px;
-                box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
-                background-color: #f2f2f2; 
-            }
-            &::-webkit-slider-runnable-track {
-                width: 100%;
-                cursor: pointer;
-                box-shadow: none;
-                height: 15px;
-                border-radius: 7.5px;
-                box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
-                background-color: #f2f2f2; 
-            }
-        }
-    }
 }
 .ourMilkSlider {
+    text-align: center;
+    display: block;
     width: 791px;
-    cursor: pointer;
-    box-shadow: none;
-    height: 15px;
-    border-radius: 7.5px;
-    box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
-    background-color: #f2f2f2; 
-    margin: -18px auto 0 auto;
-    .ui-slider-handle {
-        width: 74px;
-        height: 50px;
-        position: relative;
-        &:before {
-            content: "";
-            width: 74px;
-            height: 50px;
-            background: url("/App_Themes/Milk/images/ui-slider.svg");   
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: absolute;
-            top: -22px;
-            margin-left: -5px;
-        }
-
+    margin: 134px auto 0 auto;
+    @include media-xs {
+        display: none;
     }
     @include media-sm {
         display: none;
     }
-    @include media-xs {
-        display: none;
+    input[type=range] {
+        -webkit-appearance: none;
+        width: 100%;
+        margin: 0.8px 0; 
+        height: 74px;
+        &:focus {
+            outline: none;
+            outline-style: none;
+            box-shadow: none;
+            border-color: transparent; 
+        }
+        &::-webkit-slider-thumb {
+            width: 74px;
+            height: 50px;
+            background: url("/App_Themes/Milk/images/ui-slider.svg");
+            cursor: pointer;
+            -webkit-appearance: none;
+            margin-top: -22px;
+            outline: none;
+            border: none;              
+        }
+        &::-moz-range-thumb {
+            width: 74px;
+            height: 50px;
+            background: url("/App_Themes/Milk/images/ui-slider.svg");        
+            cursor: pointer; 
+            margin-top: -22px;   
+            -webkit-appearance: none;
+            outline: none;
+            border: none;               
+        }
+        &::-ms-thumb {
+            width: 74px;
+            height: 50px;
+            background: url("/App_Themes/Milk/images/ui-slider.svg");        
+            cursor: pointer;
+            margin-top: -10px;
+            -webkit-appearance: none;
+            outline: none;
+            border: none;
+        }
+        &::-ms-track {
+            
+        }
+        &::-moz-range-track {
+            width: 100%;
+            cursor: pointer;
+            box-shadow: none;
+            height: 15px;
+            border-radius: 7.5px;
+            box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
+            background-color: #f2f2f2; 
+        }
+        &::-webkit-slider-runnable-track {
+            width: 100%;
+            cursor: pointer;
+            box-shadow: none;
+            height: 15px;
+            border-radius: 7.5px;
+            box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
+            background-color: #f2f2f2; 
+        }
     }
+}
+@keyframes milkFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-moz-keyframes milkFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes milkFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-ms-keyframes milkFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-o-keyframes milkFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }

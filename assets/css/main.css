@@ -5493,10 +5493,36 @@ main {
   .info-item-container h4 {
     text-transform: uppercase;
     margin: -8px 0 3px 0; }
+  @media (min-width: 992px) {
+    .info-item-container:hover .info-item-img-container img {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
+    .info-item-container.right-content:hover .info-item-content {
+      position: relative;
+      transform: translate(25px, -17px);
+      -webkit-transform: translate(25px, -17px);
+      -ms-transform: translate(25px, -17px);
+      transition: transform .3s linear;
+      -webkit-transition: transform .3s linear;
+      -moz-transition: transform .3s linear;
+      -o-transition: transform .3s linear; }
+    .info-item-container.left-content:hover .info-item-content {
+      position: relative;
+      transform: translate(-25px, -17px);
+      -webkit-transform: translate(-25px, -17px);
+      -ms-transform: translate(-25px, -17px);
+      transition: transform .3s linear;
+      -webkit-transition: transform .3s linear;
+      -moz-transition: transform .3s linear;
+      -o-transition: transform .3s linear; } }
   .info-item-container .info-item-content {
     display: inline-block;
     width: calc(100% / 2 - 11px);
-    vertical-align: top; }
+    vertical-align: top;
+    transition: transform .3s linear;
+    -webkit-transition: transform .3s linear;
+    -moz-transition: transform .3s linear;
+    -o-transition: transform .3s linear; }
     @media (max-width: 767px) {
       .info-item-container .info-item-content {
         width: 100%;
@@ -5588,7 +5614,9 @@ main {
     .info-item-container .info-item-img-container img {
       max-width: 100%;
       max-height: 100%;
-      object-fit: contain; }
+      object-fit: contain;
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out; }
 
 .info-item-additional-info {
   border: 10px solid #0092bc;
@@ -6038,7 +6066,7 @@ main {
         width: 100%; }
 
 .our-milk-container {
-  padding-bottom: 140px; }
+  padding-bottom: 110px; }
   @media (min-width: 768px) and (max-width: 991px) {
     .our-milk-container {
       padding-bottom: 0; } }
@@ -6073,6 +6101,17 @@ main {
         padding: 0 30px; } }
   .our-milk-container .our-milk-carousel-container {
     margin-top: -15px; }
+    @media (min-width: 992px) {
+      .our-milk-container .our-milk-carousel-container {
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden; } }
+    @media (min-width: 1200px) and (max-width: 1349px) {
+      .our-milk-container .our-milk-carousel-container {
+        width: 100%; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .our-milk-container .our-milk-carousel-container {
+        width: 100%; } }
     @media (max-width: 767px) {
       .our-milk-container .our-milk-carousel-container {
         width: calc(100% + 30px);
@@ -6081,6 +6120,28 @@ main {
       .our-milk-container .our-milk-carousel-container {
         width: calc(100% + 30px);
         margin-left: -15px; } }
+  @media (min-width: 992px) {
+    .our-milk-container .our-milk-carousel {
+      display: inline-flex;
+      margin-top: 85px; }
+      .our-milk-container .our-milk-carousel:before {
+        content: "";
+        border: 10px solid #0072ce;
+        background: rgba(0, 146, 188, 0.07);
+        width: 290px;
+        height: 290px;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        border-radius: 100%;
+        top: 45px; } }
+    @media (min-width: 992px) and (min-width: 992px) and (max-width: 1199px) {
+      .our-milk-container .our-milk-carousel:before {
+        width: 220px;
+        height: 220px; } }
+
   @media (min-width: 768px) and (max-width: 991px) {
     .our-milk-container .our-milk-carousel {
       margin-bottom: 100px; } }
@@ -6118,9 +6179,28 @@ main {
         background: #0072ce; }
   .our-milk-container .our-milk-carousel .slick-list {
     width: 100%; }
-    @media (min-width: 992px) {
-      .our-milk-container .our-milk-carousel .slick-list {
-        margin-bottom: 20px; } }
+    .our-milk-container .our-milk-carousel .slick-list:before {
+      content: "";
+      border: 10px solid #0072ce;
+      background: rgba(0, 146, 188, 0.07);
+      width: 270px;
+      height: 270px;
+      position: absolute;
+      left: 50%;
+      top: 65px;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      border-radius: 100%; }
+      @media (max-width: 767px) and (orientation: portrait) {
+        .our-milk-container .our-milk-carousel .slick-list:before {
+          bottom: 80px;
+          width: 170px;
+          height: 170px;
+          border: 5px solid #0072ce; } }
+      @media (max-width: 767px) and (orientation: landscape) {
+        .our-milk-container .our-milk-carousel .slick-list:before {
+          top: 135px; } }
     .our-milk-container .our-milk-carousel .slick-list .slick-track {
       display: inline-flex;
       align-items: flex-end;
@@ -6128,47 +6208,32 @@ main {
       padding-top: 165px; }
       @media (max-width: 767px) and (orientation: portrait) {
         .our-milk-container .our-milk-carousel .slick-list .slick-track {
-          padding-bottom: 280px;
-          padding-top: 75px; } }
+          padding-bottom: 265px;
+          padding-top: 80px; } }
       @media (min-width: 768px) and (max-width: 991px) {
         .our-milk-container .our-milk-carousel .slick-list .slick-track {
-          padding-top: 135px; } }
-      @media (min-width: 992px) and (max-width: 1199px) {
-        .our-milk-container .our-milk-carousel .slick-list .slick-track {
-          padding-top: 120px; } }
+          padding-top: 100px; } }
     .our-milk-container .our-milk-carousel .slick-list .our-milk-slide {
       text-align: center;
       position: relative;
       padding: 0 30px; }
       @media (max-width: 767px) and (orientation: portrait) {
         .our-milk-container .our-milk-carousel .slick-list .our-milk-slide {
-          padding: 0 5px; } }
+          padding: 0 5px;
+          padding-top: 25px; } }
       .our-milk-container .our-milk-carousel .slick-list .our-milk-slide.slick-current {
         margin-bottom: -90px; }
         @media (max-width: 767px) and (orientation: portrait) {
           .our-milk-container .our-milk-carousel .slick-list .our-milk-slide.slick-current {
-            margin-bottom: -70px; } }
-        .our-milk-container .our-milk-carousel .slick-list .our-milk-slide.slick-current:before {
-          content: "";
-          border: 10px solid #0072ce;
-          background: rgba(0, 146, 188, 0.07);
-          width: 290px;
-          height: 290px;
-          position: absolute;
-          left: 50%;
-          -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-          border-radius: 100%;
-          bottom: 110px; }
-          @media (max-width: 767px) and (orientation: portrait) {
-            .our-milk-container .our-milk-carousel .slick-list .our-milk-slide.slick-current:before {
-              bottom: 80px;
-              width: 170px;
-              height: 170px;
-              border: 5px solid #0072ce; } }
+            margin-bottom: -70px;
+            top: -25px; } }
         .our-milk-container .our-milk-carousel .slick-list .our-milk-slide.slick-current p {
-          display: -webkit-box; }
+          display: -webkit-box;
+          -webkit-animation: milkFadeIn 1.5s;
+          -moz-animation: milkFadeIn 1.5s;
+          -ms-animation: milkFadeIn 1.5s;
+          -o-animation: milkFadeIn 1.5s;
+          animation: milkFadeIn 1.5s; }
         .our-milk-container .our-milk-carousel .slick-list .our-milk-slide.slick-current span {
           font-size: 60px;
           letter-spacing: 4.32px;
@@ -6179,31 +6244,57 @@ main {
           -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-          width: 150%; }
+          width: 150%;
+          -webkit-animation: milkFadeIn 1.5s;
+          -moz-animation: milkFadeIn 1.5s;
+          -ms-animation: milkFadeIn 1.5s;
+          -o-animation: milkFadeIn 1.5s;
+          animation: milkFadeIn 1.5s; }
           @media (max-width: 767px) and (orientation: portrait) {
             .our-milk-container .our-milk-carousel .slick-list .our-milk-slide.slick-current span {
               font-size: 44px;
-              top: 0;
+              top: 10px;
               width: 200%; } }
         .our-milk-container .our-milk-carousel .slick-list .our-milk-slide.slick-current img {
-          transition: all 200ms ease-in;
-          -moz-transition: all 200ms ease-in;
-          -webkit-transition: all 200ms ease-in;
-          -ms-transition: all 200ms ease-in;
           -ms-transform: scale(1.5);
           -moz-transform: scale(1.5);
           -webkit-transform: scale(1.5);
-          transform: scale(1.5); }
+          transform: scale(1.5);
+          -webkit-animation: milkFadeIn 1.5s;
+          -moz-animation: milkFadeIn 1.5s;
+          -ms-animation: milkFadeIn 1.5s;
+          -o-animation: milkFadeIn 1.5s;
+          animation: milkFadeIn 1.5s;
+          margin-bottom: 30px; }
       .our-milk-container .our-milk-carousel .slick-list .our-milk-slide img {
         max-width: 100%;
         height: auto; }
-        @media (min-width: 992px) {
-          .our-milk-container .our-milk-carousel .slick-list .our-milk-slide img {
-            max-width: 100%;
-            height: auto; } }
+  @media (min-width: 992px) {
+    .our-milk-container .our-milk-carousel .our-milk-slide {
+      text-align: center;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-end;
+      align-items: center;
+      width: 220px;
+      position: relative;
+      margin-right: 35px;
+      top: -97px; } }
+  @media (min-width: 992px) and (min-width: 1200px) and (max-width: 1349px) {
+    .our-milk-container .our-milk-carousel .our-milk-slide {
+      margin-right: 25px; } }
+  @media (min-width: 992px) and (min-width: 992px) and (max-width: 1199px) {
+    .our-milk-container .our-milk-carousel .our-milk-slide {
+      width: 164px;
+      position: relative;
+      margin-right: 30px;
+      top: -80px; } }
+
   .our-milk-container .our-milk-carousel .our-milk-slide img {
     object-fit: contain;
-    display: inline-block; }
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%; }
   .our-milk-container .our-milk-carousel .our-milk-slide span {
     font-family: "acumin-pro-extra-condensed",sans-serif;
     font-style: normal;
@@ -6213,7 +6304,11 @@ main {
     line-height: 36px;
     letter-spacing: 2.4px;
     color: #000000;
-    display: block; }
+    display: block;
+    margin-top: -10px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .our-milk-container .our-milk-carousel .our-milk-slide span {
+        font-size: 40px; } }
     @media (min-width: 768px) and (max-width: 991px) {
       .our-milk-container .our-milk-carousel .our-milk-slide span {
         position: relative;
@@ -6234,34 +6329,52 @@ main {
       .our-milk-container .our-milk-carousel .our-milk-slide span {
         font-size: 28px; } }
   @media (min-width: 992px) {
-    .our-milk-container .our-milk-carousel .our-milk-slide.active-slide {
-      margin-bottom: -123px; }
-      .our-milk-container .our-milk-carousel .our-milk-slide.active-slide:before {
-        content: "";
-        border: 10px solid #0072ce;
-        background: rgba(0, 146, 188, 0.07);
-        width: 290px;
-        height: 290px;
-        position: absolute;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        transform: translateX(-50%);
-        border-radius: 100%;
-        bottom: 110px; } }
-    @media (min-width: 992px) and (min-width: 992px) and (max-width: 1199px) {
-      .our-milk-container .our-milk-carousel .our-milk-slide.active-slide:before {
-        width: 240px;
-        height: 240px; } }
-  @media (min-width: 992px) {
-      .our-milk-container .our-milk-carousel .our-milk-slide.active-slide span {
+    .our-milk-container .our-milk-carousel .our-milk-slide.active {
+      margin-bottom: 0;
+      top: 0; }
+      .our-milk-container .our-milk-carousel .our-milk-slide.active span {
         font-size: 60px;
         letter-spacing: 4.32px;
         line-height: normal;
         position: relative;
-        top: 7px; }
-      .our-milk-container .our-milk-carousel .our-milk-slide.active-slide p {
-        display: -webkit-box; } }
+        top: 7px;
+        width: 110%;
+        -webkit-animation: milkFadeIn 1s;
+        -moz-animation: milkFadeIn 1s;
+        -ms-animation: milkFadeIn 1s;
+        -o-animation: milkFadeIn 1s;
+        animation: milkFadeIn 1s; } }
+    @media (min-width: 992px) and (min-width: 992px) and (max-width: 1199px) {
+      .our-milk-container .our-milk-carousel .our-milk-slide.active span {
+        font-size: 48px;
+        letter-spacing: 1.32px;
+        top: 7px;
+        width: 110%; } }
+  @media (min-width: 992px) {
+      .our-milk-container .our-milk-carousel .our-milk-slide.active p {
+        display: -webkit-box;
+        -webkit-animation: milkFadeIn 1s;
+        -moz-animation: milkFadeIn 1s;
+        -ms-animation: milkFadeIn 1s;
+        -o-animation: milkFadeIn 1s;
+        animation: milkFadeIn 1s; }
+      .our-milk-container .our-milk-carousel .our-milk-slide.active img {
+        -ms-transform: scale(1.45);
+        -moz-transform: scale(1.45);
+        -webkit-transform: scale(1.45);
+        transform: scale(1.45);
+        position: relative;
+        bottom: 5px;
+        margin-bottom: 45px;
+        -webkit-animation: milkFadeIn 1s;
+        -moz-animation: milkFadeIn 1s;
+        -ms-animation: milkFadeIn 1s;
+        -o-animation: milkFadeIn 1s;
+        animation: milkFadeIn 1s; } }
+    @media (min-width: 992px) and (min-width: 992px) and (max-width: 1199px) {
+      .our-milk-container .our-milk-carousel .our-milk-slide.active img {
+        margin-bottom: 35px; } }
+
   .our-milk-container .our-milk-carousel .our-milk-slide .slide-content {
     z-index: 9;
     position: relative;
@@ -6303,7 +6416,7 @@ main {
     @media (max-width: 767px) {
       .our-milk-container .our-milk-carousel .our-milk-slide p {
         width: 240%;
-        margin: -5px auto 0 auto;
+        margin: 5px auto 0 auto;
         bottom: initial;
         font-size: 18px;
         -webkit-line-clamp: 6;
@@ -6313,101 +6426,97 @@ main {
     @media (max-width: 767px) and (orientation: landscape) {
       .our-milk-container .our-milk-carousel .our-milk-slide p {
         width: 200%; } }
-  .our-milk-container .our-milk-carousel-controls {
-    text-align: center;
-    display: block;
-    width: 791px;
-    margin: 245px auto 0 auto; }
-    @media (max-width: 767px) {
-      .our-milk-container .our-milk-carousel-controls {
-        display: none; } }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .our-milk-container .our-milk-carousel-controls {
-        display: none; } }
-    .our-milk-container .our-milk-carousel-controls input[type=range] {
-      -webkit-appearance: none;
-      width: 100%;
-      margin: 0.8px 0;
-      height: 74px; }
-      .our-milk-container .our-milk-carousel-controls input[type=range]:focus {
-        outline: none;
-        outline-style: none;
-        box-shadow: none;
-        border-color: transparent; }
-      .our-milk-container .our-milk-carousel-controls input[type=range]::-webkit-slider-thumb {
-        width: 74px;
-        height: 50px;
-        background: url("/App_Themes/Milk/images/ui-slider.svg");
-        cursor: pointer;
-        -webkit-appearance: none;
-        margin-top: -22px;
-        outline: none;
-        border: none; }
-      .our-milk-container .our-milk-carousel-controls input[type=range]::-moz-range-thumb {
-        width: 74px;
-        height: 50px;
-        background: url("/App_Themes/Milk/images/ui-slider.svg");
-        cursor: pointer;
-        margin-top: -22px;
-        -webkit-appearance: none;
-        outline: none;
-        border: none; }
-      .our-milk-container .our-milk-carousel-controls input[type=range]::-ms-thumb {
-        width: 74px;
-        height: 50px;
-        background: url("/App_Themes/Milk/images/ui-slider.svg");
-        cursor: pointer;
-        margin-top: -10px;
-        -webkit-appearance: none;
-        outline: none;
-        border: none; }
-      .our-milk-container .our-milk-carousel-controls input[type=range]::-moz-range-track {
-        width: 100%;
-        cursor: pointer;
-        box-shadow: none;
-        height: 15px;
-        border-radius: 7.5px;
-        box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
-        background-color: #f2f2f2; }
-      .our-milk-container .our-milk-carousel-controls input[type=range]::-webkit-slider-runnable-track {
-        width: 100%;
-        cursor: pointer;
-        box-shadow: none;
-        height: 15px;
-        border-radius: 7.5px;
-        box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
-        background-color: #f2f2f2; }
 
 .ourMilkSlider {
+  text-align: center;
+  display: block;
   width: 791px;
-  cursor: pointer;
-  box-shadow: none;
-  height: 15px;
-  border-radius: 7.5px;
-  box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
-  background-color: #f2f2f2;
-  margin: -18px auto 0 auto; }
-  .ourMilkSlider .ui-slider-handle {
-    width: 74px;
-    height: 50px;
-    position: relative; }
-    .ourMilkSlider .ui-slider-handle:before {
-      content: "";
-      width: 74px;
-      height: 50px;
-      background: url("/App_Themes/Milk/images/ui-slider.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: absolute;
-      top: -22px;
-      margin-left: -5px; }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .ourMilkSlider {
-      display: none; } }
+  margin: 134px auto 0 auto; }
   @media (max-width: 767px) {
     .ourMilkSlider {
       display: none; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .ourMilkSlider {
+      display: none; } }
+  .ourMilkSlider input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 0.8px 0;
+    height: 74px; }
+    .ourMilkSlider input[type=range]:focus {
+      outline: none;
+      outline-style: none;
+      box-shadow: none;
+      border-color: transparent; }
+    .ourMilkSlider input[type=range]::-webkit-slider-thumb {
+      width: 74px;
+      height: 50px;
+      background: url("/App_Themes/Milk/images/ui-slider.svg");
+      cursor: pointer;
+      -webkit-appearance: none;
+      margin-top: -22px;
+      outline: none;
+      border: none; }
+    .ourMilkSlider input[type=range]::-moz-range-thumb {
+      width: 74px;
+      height: 50px;
+      background: url("/App_Themes/Milk/images/ui-slider.svg");
+      cursor: pointer;
+      margin-top: -22px;
+      -webkit-appearance: none;
+      outline: none;
+      border: none; }
+    .ourMilkSlider input[type=range]::-ms-thumb {
+      width: 74px;
+      height: 50px;
+      background: url("/App_Themes/Milk/images/ui-slider.svg");
+      cursor: pointer;
+      margin-top: -10px;
+      -webkit-appearance: none;
+      outline: none;
+      border: none; }
+    .ourMilkSlider input[type=range]::-moz-range-track {
+      width: 100%;
+      cursor: pointer;
+      box-shadow: none;
+      height: 15px;
+      border-radius: 7.5px;
+      box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
+      background-color: #f2f2f2; }
+    .ourMilkSlider input[type=range]::-webkit-slider-runnable-track {
+      width: 100%;
+      cursor: pointer;
+      box-shadow: none;
+      height: 15px;
+      border-radius: 7.5px;
+      box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
+      background-color: #f2f2f2; }
 
+@keyframes milkFadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-moz-keyframes milkFadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-webkit-keyframes milkFadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-ms-keyframes milkFadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-o-keyframes milkFadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 .article-list-container {
   margin-bottom: 110px; }
   @media (max-width: 767px) {

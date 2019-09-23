@@ -154,34 +154,19 @@ $(document).ready(function () {
     var $ourMilkCarousel = $(".our-milk-carousel");
     var ourMilkSSlider;
     if ($(window).width() > 992) {
-        // $(".our-milk-range").on("change mousemove", function () {
-        //     var previousDiv = $(".our-milk-slide.active-slide");
-        //     $(".our-milk-slide").removeClass("active-slide");
-        //     var activeDiv = $(".our-milk-slide[data-value='" + parseInt($(this).val()) + "']");
-        //     activeDiv.addClass("active-slide");
-        //     if (activeDiv.index() > Math.round($(".our-milk-slide").length / 2 - 0.1, 0)) {
-        //         activeDiv.insertBefore(previousDiv);
-        //     }
-        //     else {
-        //         activeDiv.insertAfter(previousDiv);
-        //     }
-        // });
-        // $('.our-milk-carousel').slick({
-
-        // });
-
-        ourMilkSSlider = $(".ourMilkSlider").slider({
-            min: 0,
-            max: 5,
-            slide: function (event, ui) {
-                var slick = $ourMilkCarousel.slick("getSlick");
-                goTo = ui.value * (slick.slideCount - 1) / 5;
-                console.log('slideCount', slick.slideCount);
-                console.log(goTo);
-                $ourMilkCarousel.slick("goTo", goTo);
+        $(".ourMilkRange").on("change mousemove", function () {
+            var previousDiv = $(".our-milk-slide.active");
+            var dataValue = parseInt(($(this).val() / 20)) * 20;
+            $(".our-milk-slide").removeClass("active");
+            var activeDiv = $(".our-milk-slide[data-value='" + dataValue + "']");
+            activeDiv.addClass("active");
+            if (activeDiv.index() > Math.round($(".our-milk-slide").length / 3 - 0.1, 0)) {
+                activeDiv.insertBefore(previousDiv);
+            }
+            else {
+                activeDiv.insertAfter(previousDiv);
             }
         });
-        $('.ui-slider-handle').css('left', '50%');
     }
     $ourMilkCarousel.slick({
         slidesToShow: 5,
@@ -195,12 +180,13 @@ $(document).ready(function () {
         initialSlide: 2,
         centerPadding: '0',
         draggable: false,
+        swipe: false,
+        swipeToSlide: false,
+        touchMove: false,
         responsive: [
             {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 3,
-                }
+                breakpoint: 9999,
+                settings: "unslick"
             },
             {
                 breakpoint: 992,
@@ -305,6 +291,12 @@ $(document).ready(function () {
     });
     $('.explore-main-btn-container .primary-btn').on('click', function () {
         $(this).toggleClass('active-btn');
+    });
+
+    //Video URL inside modal
+    $('.play-video-btn').on('click', function () {
+        var videoUrl = $(this).next('.hidden-video-url').val();
+        $(this).parents('.farmers-carousel-container').next('.video-modal').find('iframe').attr('src', videoUrl);
     });
 });
 

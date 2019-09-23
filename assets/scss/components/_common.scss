@@ -600,10 +600,52 @@
         text-transform: uppercase;
         margin: -8px 0 3px 0;
     }
+    @include media-lmd {
+        &:hover {
+            .info-item-img-container {
+                img {
+                    -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
+                }
+            }
+        }
+        &.right-content {
+            &:hover {
+                .info-item-content {
+                    position: relative;
+                    transform: translate(25px, -17px);
+                    -webkit-transform: translate(25px, -17px);
+                    -ms-transform: translate(25px, -17px);
+                    transition: transform .3s linear;
+                    -webkit-transition: transform .3s linear;
+                    -moz-transition: transform .3s linear;
+                    -o-transition: transform .3s linear;
+                }
+            }
+        }
+        &.left-content {
+            &:hover {
+                .info-item-content {
+                    position: relative;
+                    transform: translate(-25px, -17px);
+                    -webkit-transform: translate(-25px, -17px);
+                    -ms-transform: translate(-25px, -17px);
+                    transition: transform .3s linear;
+                    -webkit-transition: transform .3s linear;
+                    -moz-transition: transform .3s linear;
+                    -o-transition: transform .3s linear;
+                }
+            }
+        }
+    }
     .info-item-content {
         display: inline-block;
         width: calc(100% / 2 - 11px);            
         vertical-align: top;
+        transition: transform .3s linear;
+        -webkit-transition: transform .3s linear;
+        -moz-transition: transform .3s linear;
+        -o-transition: transform .3s linear;
         @include media-xs {
             width: 100%;
             order: 2; 
@@ -712,6 +754,8 @@
             max-width: 100%;
             max-height: 100%;
             object-fit: contain;
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
         }
     }
 }
