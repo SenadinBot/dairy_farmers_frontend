@@ -271,17 +271,82 @@
             .slick-list {
                 height: 100%;
             }
+            &.active-video {
+                z-index: 9999;
+                .small-video-info {
+                    z-index: 9;
+                    transition: opacity 1s ease;
+                    -webkit-transition: opacity 1s ease;
+                    -moz-transition: opacity 1s ease;
+                    -o-transition: opacity 1s ease;
+                }
+            }
             .farmers-slide {
+                position: relative;
                 .farmers-slide-img {
-                    position: absolute;
                     width: 100%;
                     height: 100%;
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: center;
                     @include media-xs {
-                        position: relative;
                         height: 250px;
+                    }
+                }
+                .story__video-container {
+                    transition: opacity 1s ease;
+                    -webkit-transition: opacity 1s ease;
+                    -moz-transition: opacity 1s ease;
+                    -o-transition: opacity 1s ease;
+                    opacity: 0;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: black;
+                    display: flex;
+                    @include media-xs {
+                        height: 250px;
+                    }
+                    .story__video {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .story__pause-btn {
+                        position: absolute;
+                        bottom: 8%;
+                        left: 50%;
+                        -webkit-transform: translateX(-50%);
+                        -ms-transform: translateX(-50%);
+                        transform: translateX(-50%);
+                        color: transparent;
+                        width: 20px;
+                        height: 20px;
+                        z-index: 10;
+                        z-index: 99999999;
+                        @include media-md {
+                            bottom: 11%;
+                        }
+                        @include media-sm {
+                            bottom: 12%;
+                        }
+                        @include media-xs {
+                            bottom: -35px;
+                            right: 40px;
+                            left: initial;
+                            transform: none;
+                        }
+                        img {
+                            max-width: 100%;
+                            max-height: 100%;
+                        }
+                    }
+                    &.active {
+                        z-index: 99;
+                        opacity: 1;
                     }
                 }
             }
@@ -367,18 +432,184 @@
     .farmers-carousel-nav {
         margin: -3px -8.5px 0 -8.5px;
         height: 162px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
         @include media-xs {
             margin: 17px -5px 0 -5px;
             height: 174px;
+        }
+        .nav-video {
+            &.active {
+                border: 4px solid #0072ce;
+                overflow: visible;
+                @include media-xs {
+                    border: 3px solid #0072ce;
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    left: 50%;
+                    -webkit-transform: translateX(-50%);
+                    -ms-transform: translateX(-50%);
+                    transform: translateX(-50%);
+                    border: 18px solid transparent;
+                    border-bottom-color: $blue;
+                    top: -40px;
+                    @include media-xs {
+                        display: none;
+                    }
+                }
+                .nav-video__overlay {
+                    display: block;
+                    @include media-xs {
+                        display: none;
+                    }
+                }
+                .nav-video__hover-overlay {
+                    display: none;
+                }
+            }
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                bottom: 0;
+                background-image: linear-gradient(to bottom, transparent 0, #000 100%);
+                z-index: 1;
+            }
+            .nav-video__hover-overlay {
+                display: block;
+                position: absolute;
+                left: 10px;
+                bottom: 10px;
+                width: 150px;
+                opacity: 0;
+                -webkit-transition: opacity 0.4s ease;
+                -moz-transition: opacity 0.4s ease;
+                -o-transition: opacity 0.4s ease;
+                transition: opacity 0.4s ease;
+                z-index: 2;
+                @include media-xs {
+                    display: none;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 1.2;
+                    font-family: $robotoLight;
+                    color: $white;
+                    margin: 0;
+                }
+                img {
+                    width: 25px;
+                    margin-bottom: 5px;
+                }
+            }
+            @include media-lmd {
+                &:hover {
+                    .nav-video__hover-overlay {
+                        opacity: 1;
+                    }
+                    width: 23%;
+                }
+            }
+            @include media-sm {
+                &:hover {
+                    .nav-video__hover-overlay {
+                        opacity: 1;
+                    }
+                    width: 23%;
+                }
+            }
+            @include media-sm {
+                height: 100px;
+                overflow: hidden;
+            }
+            @include media-md {
+                height: 130px;
+                overflow: hidden;
+            }
+        }
+        .nav-video__overlay {
+            display: none;
+            bottom: 10px;
+            left: 15px;
+            position: absolute;
+            z-index: 9;
+            @include media-xs {
+                display: none;
+            }
+            p {
+                font-size: 14px;
+                line-height: 1.71;
+                font-family: $robotoLight;
+                color: $white;
+                margin: 0;
+            }
         }
         .farmers-nav {
             margin: 20px 8.5px 0 8.5px; 
             cursor: pointer;
             position: relative;
-            height: 142px;
+            -webkit-transition: width 0.5s ease;
+            -moz-transition: width 0.5s ease;
+            -o-transition: width 0.5s ease;
+            transition: width 0.5s ease;
+            width: 20%;
+            display: inline-block;
+            overflow: hidden;
             @include media-xs {
                 margin: 0 5px 0 5px; 
                 height: 174px;
+                width: calc(100vw / 3 - 10px);
+                overflow: hidden;
+            }
+            @include media-sm {
+                height: 100px;
+            }
+            @include media-md {
+                height: 130px;
+            }
+            video,
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                @include media-xs {
+                    position: absolute;
+                    z-index: -1;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .story__nav-thumbnail {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                opacity: 1;
+                -webkit-transition: opacity 0.4s ease;
+                -moz-transition: opacity 0.4s ease;
+                -ms-transition: opacity 0.4s ease;
+                -o-transition: opacity 0.4s ease;
+                transition: opacity 0.4s ease;
+                z-index: 3;
+                &.hidden {
+                    opacity: 0;
+                    -webkit-transition: opacity 0.4s ease;
+                    -moz-transition: opacity 0.4s ease;
+                    -ms-transition: opacity 0.4s ease;
+                    -o-transition: opacity 0.4s ease;
+                    transition: opacity 0.4s ease; 
+                }
             }
             img {
                 display: block;
@@ -386,79 +617,6 @@
                 max-width: 100%;
                 height: 100%;
                 object-fit: cover;
-            }
-            &:before {
-                content: "";
-                position: absolute;
-                width: 0;
-                height: 0;
-                left: 50%;
-                -webkit-transform: translateX(-50%);
-                -ms-transform: translateX(-50%);
-                transform: translateX(-50%);
-                border: 18px solid transparent;
-                border-bottom-color: $blue;
-                top: -36px;
-                opacity: 0;
-                -webkit-transition: opacity 0.4s ease;
-                -moz-transition: opacity 0.4s ease;
-                -ms-transition: opacity 0.4s ease;
-                -o-transition: opacity 0.4s ease;
-                transition: opacity 0.4s ease;
-                @include media-xs {
-                    display: none;
-                }
-            }
-            &:after {
-                content: "";
-                border: 4px solid $blue;
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                opacity: 0;
-                -webkit-transition: opacity 0.4s ease;
-                -moz-transition: opacity 0.4s ease;
-                -ms-transition: opacity 0.4s ease;
-                -o-transition: opacity 0.4s ease;
-                transition: opacity 0.4s ease;
-            }
-            &:hover {
-                &:before {
-                    opacity: 1;
-                    -webkit-transition: opacity 0.4s ease;
-                    -moz-transition: opacity 0.4s ease;
-                    -ms-transition: opacity 0.4s ease;
-                    -o-transition: opacity 0.4s ease;
-                    transition: opacity 0.4s ease;                 
-                }
-                &:after {
-                    opacity: 1;
-                    -webkit-transition: opacity 0.4s ease;
-                    -moz-transition: opacity 0.4s ease;
-                    -ms-transition: opacity 0.4s ease;
-                    -o-transition: opacity 0.4s ease;
-                    transition: opacity 0.4s ease;                 
-                }
-            }
-            &.slick-current {
-                &:before {
-                    opacity: 1;
-                    -webkit-transition: opacity 0.4s ease;
-                    -moz-transition: opacity 0.4s ease;
-                    -ms-transition: opacity 0.4s ease;
-                    -o-transition: opacity 0.4s ease;
-                    transition: opacity 0.4s ease;                                       
-                }
-                &:after {
-                    opacity: 1;
-                    -webkit-transition: opacity 0.4s ease;
-                    -moz-transition: opacity 0.4s ease;
-                    -ms-transition: opacity 0.4s ease;
-                    -o-transition: opacity 0.4s ease;
-                    transition: opacity 0.4s ease;                 
-                }
             }
         }
     }

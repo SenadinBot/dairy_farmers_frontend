@@ -7676,17 +7676,76 @@ main {
   .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .slick-track,
   .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .slick-list {
     height: 100%; }
-  .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .farmers-slide .farmers-slide-img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; }
-    @media (max-width: 767px) {
-      .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .farmers-slide .farmers-slide-img {
-        position: relative;
-        height: 250px; } }
+  .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel.active-video {
+    z-index: 9999; }
+    .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel.active-video .small-video-info {
+      z-index: 9;
+      transition: opacity 1s ease;
+      -webkit-transition: opacity 1s ease;
+      -moz-transition: opacity 1s ease;
+      -o-transition: opacity 1s ease; }
+  .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .farmers-slide {
+    position: relative; }
+    .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .farmers-slide .farmers-slide-img {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+      @media (max-width: 767px) {
+        .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .farmers-slide .farmers-slide-img {
+          height: 250px; } }
+    .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .farmers-slide .story__video-container {
+      transition: opacity 1s ease;
+      -webkit-transition: opacity 1s ease;
+      -moz-transition: opacity 1s ease;
+      -o-transition: opacity 1s ease;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      display: flex; }
+      @media (max-width: 767px) {
+        .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .farmers-slide .story__video-container {
+          height: 250px; } }
+      .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .farmers-slide .story__video-container .story__video {
+        width: 100%;
+        height: 100%; }
+      .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .farmers-slide .story__video-container .story__pause-btn {
+        position: absolute;
+        bottom: 8%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        color: transparent;
+        width: 20px;
+        height: 20px;
+        z-index: 10;
+        z-index: 99999999; }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .farmers-slide .story__video-container .story__pause-btn {
+            bottom: 11%; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .farmers-slide .story__video-container .story__pause-btn {
+            bottom: 12%; } }
+        @media (max-width: 767px) {
+          .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .farmers-slide .story__video-container .story__pause-btn {
+            bottom: -35px;
+            right: 40px;
+            left: initial;
+            transform: none; } }
+        .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .farmers-slide .story__video-container .story__pause-btn img {
+          max-width: 100%;
+          max-height: 100%; }
+      .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .farmers-slide .story__video-container.active {
+        z-index: 99;
+        opacity: 1; }
   .farmers-carousel-container .farmers-carousel-inner-container .farmers-carousel .small-video-info {
     bottom: 29px;
     top: initial;
@@ -7757,27 +7816,21 @@ main {
         padding: 0 30px; } }
   .farmers-carousel-container .farmers-carousel-nav {
     margin: -3px -8.5px 0 -8.5px;
-    height: 162px; }
+    height: 162px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; }
     @media (max-width: 767px) {
       .farmers-carousel-container .farmers-carousel-nav {
         margin: 17px -5px 0 -5px;
         height: 174px; } }
-    .farmers-carousel-container .farmers-carousel-nav .farmers-nav {
-      margin: 20px 8.5px 0 8.5px;
-      cursor: pointer;
-      position: relative;
-      height: 142px; }
+    .farmers-carousel-container .farmers-carousel-nav .nav-video.active {
+      border: 4px solid #0072ce;
+      overflow: visible; }
       @media (max-width: 767px) {
-        .farmers-carousel-container .farmers-carousel-nav .farmers-nav {
-          margin: 0 5px 0 5px;
-          height: 174px; } }
-      .farmers-carousel-container .farmers-carousel-nav .farmers-nav img {
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        height: 100%;
-        object-fit: cover; }
-      .farmers-carousel-container .farmers-carousel-nav .farmers-nav:before {
+        .farmers-carousel-container .farmers-carousel-nav .nav-video.active {
+          border: 3px solid #0072ce; } }
+      .farmers-carousel-container .farmers-carousel-nav .nav-video.active:before {
         content: "";
         position: absolute;
         width: 0;
@@ -7788,58 +7841,147 @@ main {
         transform: translateX(-50%);
         border: 18px solid transparent;
         border-bottom-color: #0072ce;
-        top: -36px;
-        opacity: 0;
-        -webkit-transition: opacity 0.4s ease;
-        -moz-transition: opacity 0.4s ease;
-        -ms-transition: opacity 0.4s ease;
-        -o-transition: opacity 0.4s ease;
-        transition: opacity 0.4s ease; }
+        top: -40px; }
         @media (max-width: 767px) {
-          .farmers-carousel-container .farmers-carousel-nav .farmers-nav:before {
+          .farmers-carousel-container .farmers-carousel-nav .nav-video.active:before {
             display: none; } }
-      .farmers-carousel-container .farmers-carousel-nav .farmers-nav:after {
-        content: "";
-        border: 4px solid #0072ce;
+      .farmers-carousel-container .farmers-carousel-nav .nav-video.active .nav-video__overlay {
+        display: block; }
+        @media (max-width: 767px) {
+          .farmers-carousel-container .farmers-carousel-nav .nav-video.active .nav-video__overlay {
+            display: none; } }
+      .farmers-carousel-container .farmers-carousel-nav .nav-video.active .nav-video__hover-overlay {
+        display: none; }
+    .farmers-carousel-container .farmers-carousel-nav .nav-video:after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      bottom: 0;
+      background-image: linear-gradient(to bottom, transparent 0, #000 100%);
+      z-index: 1; }
+    .farmers-carousel-container .farmers-carousel-nav .nav-video .nav-video__hover-overlay {
+      display: block;
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+      width: 150px;
+      opacity: 0;
+      -webkit-transition: opacity 0.4s ease;
+      -moz-transition: opacity 0.4s ease;
+      -o-transition: opacity 0.4s ease;
+      transition: opacity 0.4s ease;
+      z-index: 2; }
+      @media (max-width: 767px) {
+        .farmers-carousel-container .farmers-carousel-nav .nav-video .nav-video__hover-overlay {
+          display: none; } }
+      .farmers-carousel-container .farmers-carousel-nav .nav-video .nav-video__hover-overlay p {
+        font-size: 14px;
+        line-height: 1.2;
+        font-family: "Roboto Light";
+        color: #ffffff;
+        margin: 0; }
+      .farmers-carousel-container .farmers-carousel-nav .nav-video .nav-video__hover-overlay img {
+        width: 25px;
+        margin-bottom: 5px; }
+    @media (min-width: 992px) {
+      .farmers-carousel-container .farmers-carousel-nav .nav-video:hover {
+        width: 23%; }
+        .farmers-carousel-container .farmers-carousel-nav .nav-video:hover .nav-video__hover-overlay {
+          opacity: 1; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .farmers-carousel-container .farmers-carousel-nav .nav-video:hover {
+        width: 23%; }
+        .farmers-carousel-container .farmers-carousel-nav .nav-video:hover .nav-video__hover-overlay {
+          opacity: 1; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .farmers-carousel-container .farmers-carousel-nav .nav-video {
+        height: 100px;
+        overflow: hidden; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .farmers-carousel-container .farmers-carousel-nav .nav-video {
+        height: 130px;
+        overflow: hidden; } }
+    .farmers-carousel-container .farmers-carousel-nav .nav-video__overlay {
+      display: none;
+      bottom: 10px;
+      left: 15px;
+      position: absolute;
+      z-index: 9; }
+      @media (max-width: 767px) {
+        .farmers-carousel-container .farmers-carousel-nav .nav-video__overlay {
+          display: none; } }
+      .farmers-carousel-container .farmers-carousel-nav .nav-video__overlay p {
+        font-size: 14px;
+        line-height: 1.71;
+        font-family: "Roboto Light";
+        color: #ffffff;
+        margin: 0; }
+    .farmers-carousel-container .farmers-carousel-nav .farmers-nav {
+      margin: 20px 8.5px 0 8.5px;
+      cursor: pointer;
+      position: relative;
+      -webkit-transition: width 0.5s ease;
+      -moz-transition: width 0.5s ease;
+      -o-transition: width 0.5s ease;
+      transition: width 0.5s ease;
+      width: 20%;
+      display: inline-block;
+      overflow: hidden; }
+      @media (max-width: 767px) {
+        .farmers-carousel-container .farmers-carousel-nav .farmers-nav {
+          margin: 0 5px 0 5px;
+          height: 174px;
+          width: calc(100vw / 3 - 10px);
+          overflow: hidden; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .farmers-carousel-container .farmers-carousel-nav .farmers-nav {
+          height: 100px; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .farmers-carousel-container .farmers-carousel-nav .farmers-nav {
+          height: 130px; } }
+      .farmers-carousel-container .farmers-carousel-nav .farmers-nav video,
+      .farmers-carousel-container .farmers-carousel-nav .farmers-nav img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+        @media (max-width: 767px) {
+          .farmers-carousel-container .farmers-carousel-nav .farmers-nav video,
+          .farmers-carousel-container .farmers-carousel-nav .farmers-nav img {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            height: 100%;
+            object-fit: cover; } }
+      .farmers-carousel-container .farmers-carousel-nav .farmers-nav .story__nav-thumbnail {
         position: absolute;
-        left: 0;
-        right: 0;
         top: 0;
-        bottom: 0;
-        opacity: 0;
-        -webkit-transition: opacity 0.4s ease;
-        -moz-transition: opacity 0.4s ease;
-        -ms-transition: opacity 0.4s ease;
-        -o-transition: opacity 0.4s ease;
-        transition: opacity 0.4s ease; }
-      .farmers-carousel-container .farmers-carousel-nav .farmers-nav:hover:before {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
         opacity: 1;
         -webkit-transition: opacity 0.4s ease;
         -moz-transition: opacity 0.4s ease;
         -ms-transition: opacity 0.4s ease;
         -o-transition: opacity 0.4s ease;
-        transition: opacity 0.4s ease; }
-      .farmers-carousel-container .farmers-carousel-nav .farmers-nav:hover:after {
-        opacity: 1;
-        -webkit-transition: opacity 0.4s ease;
-        -moz-transition: opacity 0.4s ease;
-        -ms-transition: opacity 0.4s ease;
-        -o-transition: opacity 0.4s ease;
-        transition: opacity 0.4s ease; }
-      .farmers-carousel-container .farmers-carousel-nav .farmers-nav.slick-current:before {
-        opacity: 1;
-        -webkit-transition: opacity 0.4s ease;
-        -moz-transition: opacity 0.4s ease;
-        -ms-transition: opacity 0.4s ease;
-        -o-transition: opacity 0.4s ease;
-        transition: opacity 0.4s ease; }
-      .farmers-carousel-container .farmers-carousel-nav .farmers-nav.slick-current:after {
-        opacity: 1;
-        -webkit-transition: opacity 0.4s ease;
-        -moz-transition: opacity 0.4s ease;
-        -ms-transition: opacity 0.4s ease;
-        -o-transition: opacity 0.4s ease;
-        transition: opacity 0.4s ease; }
+        transition: opacity 0.4s ease;
+        z-index: 3; }
+        .farmers-carousel-container .farmers-carousel-nav .farmers-nav .story__nav-thumbnail.hidden {
+          opacity: 0;
+          -webkit-transition: opacity 0.4s ease;
+          -moz-transition: opacity 0.4s ease;
+          -ms-transition: opacity 0.4s ease;
+          -o-transition: opacity 0.4s ease;
+          transition: opacity 0.4s ease; }
+      .farmers-carousel-container .farmers-carousel-nav .farmers-nav img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover; }
 
 .terms-cond-container {
   margin-bottom: 150px;

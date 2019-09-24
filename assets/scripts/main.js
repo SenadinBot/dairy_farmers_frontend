@@ -120,35 +120,87 @@ $(document).ready(function () {
 
     // Our Farmers Carousel 
     $('.farmers-carousel').slick({
+        infinite: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        fade: true,
-        cssEase: 'linear',
-        asNavFor: '.farmers-carousel-nav'
     });
-    $('.farmers-carousel-nav').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        asNavFor: '.farmers-carousel',
-        dots: false,
-        arrows: false,
-        focusOnSelect: true,
-        responsive: [
-            {
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 3,
-                }
-            },
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 3,
-                }
-            }
-        ]
+
+    // Story nav preview play on hover
+    $('.farmers-nav').hover(function () {
+        $(this).find('.story__nav-thumbnail').addClass('hidden');
+        $(this).find('.story__nav-video').get(0).play();
     });
+
+    $('.farmers-nav').mouseleave(function () {
+        let navVideo = $(this).find('.story__nav-video').get(0);
+        navVideo.pause();
+        navVideo.currentTime = 0;
+        $(this).find('.story__nav-thumbnail').removeClass('hidden');
+    });
+
+    // Story nav go to slide
+    $('.nav-video').on('click', function () {
+        $('.nav-video.active').removeClass('active');
+        let slide = $(this).data('index');
+        $('.farmers-carousel').slick('slickGoTo', slide);
+        $(this).addClass('active');
+    });
+
+    $('.farmers-slide').change(function () {
+        console.log("something", $('.farmers-slide').data('slick-index'));
+    });
+
+    // Change active slide on story nav if user swipes
+    $('.farmers-carousel').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        let mySlideNumber = nextSlide;
+        $('.nav-video.active').removeClass('active');
+        $('.nav-video').eq(mySlideNumber).addClass('active');
+    });
+
+    // If window width is 768px or less, activate slick
+    if (matchMedia) {
+        const windowWidth = window.matchMedia("(max-width: 767px)");
+        windowWidth.addListener(WidthChange);
+        WidthChange(windowWidth);
+    }
+
+    // media query change
+    function WidthChange(windowWidth) {
+        if (windowWidth.matches) {
+            // window width is at least 769px
+            $('.farmers-carousel-nav').slick({
+                infinite: false,
+                slidesToShow: 3,
+				slidesToScroll: 1,
+				arrows: false,
+				variableWidth: true,
+            });
+        } else {
+            // window width is less than 769px
+        }
+    }
+
+    // play and pause story videos
+    $('*[id*="story-play-js"]').each(function () {
+        $(this).click(function (e) {
+            e.preventDefault();
+            $('.story__video-container').addClass('active');
+            $('.nav').addClass('hide');
+            $('.farmers-carousel').addClass('active-video');
+        })
+    });
+
+    $('*[id*="story-pause-js"]').each(function () {
+        $(this).click(function (e) {
+            e.preventDefault();
+            $('.story__video-container').removeClass('active');
+            $('.nav').removeClass('hide');
+            $('.farmers-carousel').removeClass('active-video');
+        })
+    });
+
+
 
     // Our Milk Carousel
     var $ourMilkCarousel = $(".our-milk-carousel");
@@ -292,12 +344,6 @@ $(document).ready(function () {
     $('.explore-main-btn-container .primary-btn').on('click', function () {
         $(this).toggleClass('active-btn');
     });
-
-    //Video URL inside modal
-    $('.play-video-btn').on('click', function () {
-        var videoUrl = $(this).next('.hidden-video-url').val();
-        $(this).parents('.farmers-carousel-container').next('.video-modal').find('iframe').attr('src', videoUrl);
-    });
 });
 
 $.fn.menumaker = function (options) {
@@ -405,3 +451,133 @@ $('.custom-link').on('click', function () {
 
     document.body.innerHTML = originalContents;
 });
+
+
+// YOUTUBE API
+// https://developers.google.com/youtube/iframe_api_reference
+// global variable for the player
+let player;
+
+// Desktop/Tablet Story Videos -- Need a variable for each video
+let storyPlayer0;
+let storyPlayer1;
+let storyPlayer2;
+let storyPlayer3;
+let storyPlayer4;
+
+
+// this function gets called when API is ready to use
+function onYouTubePlayerAPIReady() {
+    // create the global player from the specific iframe (#video)
+    player = new YT.Player('hero-video', {
+        events: {
+            // call this function when player is ready to use
+            'onReady': onPlayerReady
+        }
+    });
+
+    storyPlayer0 = new YT.Player('story-video0', {
+        events: {
+            // call this function when player is ready to use
+            'onReady': onPlayerReady
+        }
+    });
+
+    storyPlayer1 = new YT.Player('story-video1', {
+        events: {
+            // call this function when player is ready to use
+            'onReady': onPlayerReady
+        }
+    });
+
+    storyPlayer2 = new YT.Player('story-video2', {
+        events: {
+            // call this function when player is ready to use
+            'onReady': onPlayerReady
+        }
+    });
+
+    storyPlayer3 = new YT.Player('story-video3', {
+        events: {
+            // call this function when player is ready to use
+            'onReady': onPlayerReady
+        }
+    });
+
+    storyPlayer4 = new YT.Player('story-video4', {
+        events: {
+            // call this function when player is ready to use
+            'onReady': onPlayerReady
+        }
+    });
+}
+
+function onPlayerReady(event) {
+
+    // story - video 1
+    // Desktop Play
+    let storyPlayButton0 = document.getElementById("story-play-js0");
+    storyPlayButton0.addEventListener("click", function () {
+        storyPlayer0.playVideo()
+    });
+
+    let storyPauseButton0 = document.getElementById("story-pause-js0");
+    storyPauseButton0.addEventListener("click", function () {
+        storyPlayer0.pauseVideo()
+    });
+
+    // story - video 2
+    // Desktop play
+    let storyPlayButton1 = document.getElementById("story-play-js1");
+    storyPlayButton1.addEventListener("click", function () {
+        storyPlayer1.playVideo()
+    });
+
+    let storyPauseButton1 = document.getElementById("story-pause-js1");
+    storyPauseButton1.addEventListener("click", function () {
+        storyPlayer1.pauseVideo()
+    });
+
+    // story - video 3
+    // Desktop play
+    let storyPlayButton2 = document.getElementById("story-play-js2");
+    storyPlayButton2.addEventListener("click", function () {
+        storyPlayer2.playVideo()
+    });
+
+    let storyPauseButton2 = document.getElementById("story-pause-js2");
+    storyPauseButton2.addEventListener("click", function () {
+        storyPlayer2.pauseVideo()
+    });
+
+    // story - video 4
+    // Desktop play
+    let storyPlayButton3 = document.getElementById("story-play-js3");
+    storyPlayButton3.addEventListener("click", function () {
+        storyPlayer3.playVideo()
+    });
+
+    let storyPauseButton3 = document.getElementById("story-pause-js3");
+    storyPauseButton3.addEventListener("click", function () {
+        storyPlayer3.pauseVideo()
+    });
+
+    // story - video 5
+    // Desktop play
+    let storyPlayButton4 = document.getElementById("story-play-js4");
+    storyPlayButton4.addEventListener("click", function () {
+        storyPlayer4.playVideo()
+    });
+
+    let storyPauseButton4 = document.getElementById("story-pause-js4");
+    storyPauseButton4.addEventListener("click", function () {
+        storyPlayer4.pauseVideo()
+    });
+
+}
+
+// Inject YouTube API script
+var tag = document.createElement('script');
+tag.src = "http://www.youtube.com/player_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
