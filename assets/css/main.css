@@ -3385,6 +3385,9 @@ footer {
       height: 400px; }
     .big-banner-container.small-banner.top-spacing {
       margin-top: -120px; }
+      @media (max-width: 767px) {
+        .big-banner-container.small-banner.top-spacing {
+          margin-top: 0; } }
       .big-banner-container.small-banner.top-spacing .big-banner-image-container {
         height: 500px; }
       .big-banner-container.small-banner.top-spacing .banner-title {
@@ -3483,11 +3486,20 @@ footer {
     @media (min-width: 768px) and (max-width: 991px) {
       .big-banner-container.one-line-title .banner-title span {
         left: 50%;
-        width: 100%; } }
+        width: 100%;
+        transform: translate(-30%, -95%);
+        top: initial;
+        padding-bottom: 25px; } }
     @media (max-width: 767px) {
       .big-banner-container.one-line-title .banner-title span {
         left: 50%;
-        width: 100%; } }
+        width: 100%;
+        transform: translate(-30%, -50%);
+        top: initial;
+        padding-bottom: 25px; } }
+    @media (max-width: 767px) and (orientation: landscape) {
+      .big-banner-container.one-line-title .banner-title span {
+        padding-bottom: 50px; } }
   .big-banner-container.one-line-title.top-spacing .banner-title span {
     top: 38%;
     left: 70%; }
@@ -3506,7 +3518,23 @@ footer {
     @media (max-width: 767px) {
       .big-banner-container.one-line-title.top-spacing .banner-title span {
         left: 50%;
-        width: 100%; } }
+        width: 100%;
+        top: initial; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .big-banner-container.one-line-title.top-spacing.press-room .banner-title span {
+      top: initial;
+      padding-bottom: 230px;
+      left: 50%;
+      width: 100%;
+      transform: translate(-30%, -95%);
+      margin-top: 0; } }
+  @media (max-width: 767px) {
+    .big-banner-container.one-line-title.top-spacing.press-room .banner-title span {
+      top: initial;
+      padding-bottom: 50px; } }
+  @media (max-width: 767px) and (orientation: landscape) {
+    .big-banner-container.one-line-title.top-spacing.press-room .banner-title span {
+      padding-bottom: 90px; } }
   @media (max-width: 767px) {
     .big-banner-container.three-line-title .banner-title span {
       transform: translate(-30%, -36%); } }
