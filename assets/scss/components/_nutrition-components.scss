@@ -332,7 +332,27 @@
         .column-image-container {
             .column-image-item-container {
                 .column-image-item-content {
+                    text-align: center;
                     .column-image-item {
+                        margin-right: 100px;
+                        width: calc(100% / 2 - 100px);
+                        text-align: left;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        @include media-xs {
+                            width: 100%;
+                            margin-right: 0;
+                        }
+                        .img-container {
+                            height: 316px;
+                            @include media-sm {
+                                height: 250px;
+                            }
+                            @include media-xs {
+                                height: auto;
+                            }
+                        }
                         .column-image-content {
                             @include media-xs {
                                 padding: 0;

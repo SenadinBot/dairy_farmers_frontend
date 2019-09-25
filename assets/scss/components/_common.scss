@@ -494,6 +494,8 @@
             }
         }
         .primary-btn {
+            min-width: 229px;
+            padding: 12px 15px 14px 15px;
             @include media-xs-portrait {
                 width: 100%;
                 padding: 12px 5px 14px 5px;
@@ -652,7 +654,13 @@
             padding: 0 30px;
         }
         &.text-padding {
-            margin-top: 61px;
+            margin-top: 65px;
+            @include media-xs {
+                margin-top: 0;
+            }
+        }
+        &.big-text-padding {
+            margin-top: 75px;
             @include media-xs {
                 margin-top: 0;
             }

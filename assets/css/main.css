@@ -2392,10 +2392,15 @@ footer {
       .milk-info-container .primary-btn {
         width: 60%;
         display: block; } }
+  .milk-info-container .img-container:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
   .milk-info-container .img-container img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain; }
+    object-fit: contain;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out; }
   .milk-info-container p {
     font-family: "Roboto Light";
     line-height: 1.67; }
@@ -4083,9 +4088,29 @@ main {
         padding-bottom: 150px; } }
   .nutrition-background-image.our-farmers-column-image-container .nutrition-background-image-container:before {
     height: 100%; }
-  @media (max-width: 767px) {
-    .nutrition-background-image.our-farmers-column-image-container .column-image-container .column-image-item-container .column-image-item-content .column-image-item .column-image-content {
-      padding: 0; } }
+  .nutrition-background-image.our-farmers-column-image-container .column-image-container .column-image-item-container .column-image-item-content {
+    text-align: center; }
+    .nutrition-background-image.our-farmers-column-image-container .column-image-container .column-image-item-container .column-image-item-content .column-image-item {
+      margin-right: 100px;
+      width: calc(100% / 2 - 100px);
+      text-align: left; }
+      .nutrition-background-image.our-farmers-column-image-container .column-image-container .column-image-item-container .column-image-item-content .column-image-item:last-child {
+        margin-right: 0; }
+      @media (max-width: 767px) {
+        .nutrition-background-image.our-farmers-column-image-container .column-image-container .column-image-item-container .column-image-item-content .column-image-item {
+          width: 100%;
+          margin-right: 0; } }
+      .nutrition-background-image.our-farmers-column-image-container .column-image-container .column-image-item-container .column-image-item-content .column-image-item .img-container {
+        height: 316px; }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .nutrition-background-image.our-farmers-column-image-container .column-image-container .column-image-item-container .column-image-item-content .column-image-item .img-container {
+            height: 250px; } }
+        @media (max-width: 767px) {
+          .nutrition-background-image.our-farmers-column-image-container .column-image-container .column-image-item-container .column-image-item-content .column-image-item .img-container {
+            height: auto; } }
+      @media (max-width: 767px) {
+        .nutrition-background-image.our-farmers-column-image-container .column-image-container .column-image-item-container .column-image-item-content .column-image-item .column-image-content {
+          padding: 0; } }
   @media (max-width: 767px) {
     .nutrition-background-image.our-farmers-column-image-container .column-image-container .column-image-item-container .btn-container {
       margin: 40px 0 20px 0; } }
@@ -5435,18 +5460,21 @@ main {
       @media (max-width: 767px) and (orientation: portrait) {
         .recommendation-container .recommendation-content p {
           width: 100%; } }
-    @media (max-width: 767px) and (orientation: portrait) {
-      .recommendation-container .recommendation-content .primary-btn {
-        width: 100%;
-        padding: 12px 5px 14px 5px; } }
-    @media (max-width: 767px) and (orientation: landscape) {
-      .recommendation-container .recommendation-content .primary-btn {
-        width: 60%;
-        padding: 12px 22px 14px 22px; } }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      .recommendation-container .recommendation-content .primary-btn {
-        padding: 12px 12px 14px 12px;
-        width: 100%; } }
+    .recommendation-container .recommendation-content .primary-btn {
+      min-width: 229px;
+      padding: 12px 15px 14px 15px; }
+      @media (max-width: 767px) and (orientation: portrait) {
+        .recommendation-container .recommendation-content .primary-btn {
+          width: 100%;
+          padding: 12px 5px 14px 5px; } }
+      @media (max-width: 767px) and (orientation: landscape) {
+        .recommendation-container .recommendation-content .primary-btn {
+          width: 60%;
+          padding: 12px 22px 14px 22px; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .recommendation-container .recommendation-content .primary-btn {
+          padding: 12px 12px 14px 12px;
+          width: 100%; } }
 
 .info-item-container {
   display: block;
@@ -5557,9 +5585,14 @@ main {
         order: 2;
         padding: 0 30px; } }
     .info-item-container .info-item-content.text-padding {
-      margin-top: 61px; }
+      margin-top: 65px; }
       @media (max-width: 767px) {
         .info-item-container .info-item-content.text-padding {
+          margin-top: 0; } }
+    .info-item-container .info-item-content.big-text-padding {
+      margin-top: 75px; }
+      @media (max-width: 767px) {
+        .info-item-container .info-item-content.big-text-padding {
           margin-top: 0; } }
     .info-item-container .info-item-content ul {
       list-style: none;
@@ -6816,7 +6849,12 @@ main {
     .article-item-container .img-container img {
       max-width: 100%;
       max-height: 100%;
-      object-fit: contain; }
+      object-fit: contain;
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out; }
+    .article-item-container .img-container:hover img {
+      -webkit-transform: scale(1.07);
+      transform: scale(1.07); }
   .article-item-container .article-item-content {
     padding-right: 25px; }
     @media (max-width: 767px) {
