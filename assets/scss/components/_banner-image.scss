@@ -953,6 +953,7 @@
             padding: 0;
             letter-spacing: 4px;
             width: 100%;
+            max-width: 85vw;
         }
         @include media-xs-portrait {
             font-size: 48px;
