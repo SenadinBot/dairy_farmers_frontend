@@ -271,7 +271,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2>Eplore our recipes</h2>
+                        <h2>Explore our recipes</h2>
                     </div>
                 </div>
             </div>
@@ -280,28 +280,52 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
-                                <div class="explore-recipes-category-content">
-                                    <div class="category-item active">
-                                        <img src="/App_Themes/Milk/images/img-culinary-icon-occasion.svg"
-                                            alt="Category Image">
-                                        <h4>Occasion</h4>
-                                    </div>
-                                    <div class="category-item">
-                                        <img src="/App_Themes/Milk/images/img-culinary-icon-style.svg"
-                                            alt="Category Image">
-                                        <h4>Style</h4>
-                                    </div>
-                                    <div class="category-item">
-                                        <img src="/App_Themes/Milk/images/img-culinary-icon-skill.svg"
-                                            alt="Category Image">
-                                        <h4>Skill level</h4>
-                                    </div>
-                                    <div class="category-item">
-                                        <img src="/App_Themes/Milk/images/img-culinary-icon-time.svg"
-                                            alt="Category Image">
-                                        <h4>Total Time</h4>
-                                    </div>
-                                </div>
+                                <ul class="explore-recipes-category-content nav">
+                                    <li class="category-item">
+                                        <a href="#occasion" class="active" data-toggle="tab">
+                                            <img class="normal-img"
+                                                src="/App_Themes/Milk/images/img-culinary-icon-occasion.svg"
+                                                alt="Category Image">
+                                            <img class="active-img"
+                                                src="/App_Themes/Milk/images/img-culinary-icon-occasion-active.svg"
+                                                alt="Category Image">
+                                            <h4>Occasion</h4>
+                                        </a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#style" data-toggle="tab">
+                                            <img class="normal-img"
+                                                src="/App_Themes/Milk/images/img-culinary-icon-style.svg"
+                                                alt="Category Image">
+                                            <img class="active-img"
+                                                src="/App_Themes/Milk/images/img-culinary-icon-style-active.svg"
+                                                alt="Category Image">
+                                            <h4>Style</h4>
+                                        </a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#skillLevel" data-toggle="tab">
+                                            <img class="normal-img"
+                                                src="/App_Themes/Milk/images/img-culinary-icon-skill.svg"
+                                                alt="Category Image">
+                                            <img class="active-img"
+                                                src="/App_Themes/Milk/images/img-culinary-icon-skill-active.svg"
+                                                alt="Category Image">
+                                            <h4>Skill level</h4>
+                                        </a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#totalTime" data-toggle="tab">
+                                            <img class="normal-img"
+                                                src="/App_Themes/Milk/images/img-culinary-icon-time.svg"
+                                                alt="Category Image">
+                                            <img class="active-img"
+                                                src="/App_Themes/Milk/images/img-culinary-icon-time-active.svg"
+                                                alt="Category Image">
+                                            <h4>Total Time</h4>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -310,24 +334,89 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
-                                <div class="explore-main-btn-container">
-                                    <ul>
-                                        <li><span>Light</span></li>
-                                        <li><button class="primary-btn">Spring/Summer <img
-                                                    src="/App_Themes/Milk/images/img-icon-delete-blue.svg"
-                                                    alt="Remove Icon"></button></li>
-                                        <li><button class="primary-btn active-btn">Fall/Winter <img
-                                                    src="/App_Themes/Milk/images/img-icon-delete-blue.svg"
-                                                    alt="Remove Icon"></button></li>
-                                        <li><span>Nutrient-Rich</span></li>
-                                    </ul>
+                                <div class="tab-pane fade active in" id="occasion">
+                                    <div class="explore-main-btn-container animated fadeInRight">
+                                        <ul>
+                                            <li><span>Light</span></li>
+                                            <li><button class="primary-btn">Spring/Summer <img
+                                                        src="/App_Themes/Milk/images/img-icon-delete-blue.svg"
+                                                        alt="Remove Icon"></button></li>
+                                            <li><button class="primary-btn active-btn">Fall/Winter <img
+                                                        src="/App_Themes/Milk/images/img-icon-delete-blue.svg"
+                                                        alt="Remove Icon"></button></li>
+                                            <li><span>Nutrient-Rich</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="explore-main-links-container animated fadeInRight">
+                                        <ul>
+                                            <li><span>Protein-Positive</span></li>
+                                            <li><a href="#">Vegetarian</a></li>
+                                            <li><span>Inspired</span></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="explore-main-links-container">
-                                    <ul>
-                                        <li><span>Protein-Positive</span></li>
-                                        <li><a href="#">Vegetarian</a></li>
-                                        <li><span>Inspired</span></li>
-                                    </ul>
+                                <div class="tab-pane fade" id="style" role="tabpanel">
+                                    <div class="explore-main-btn-container animated fadeInRight">
+                                        <ul>
+                                            <li><span>Light 1</span></li>
+                                            <li><button class="primary-btn">Spring/Summer <img
+                                                        src="/App_Themes/Milk/images/img-icon-delete-blue.svg"
+                                                        alt="Remove Icon"></button></li>
+                                            <li><button class="primary-btn active-btn">Fall/Winter <img
+                                                        src="/App_Themes/Milk/images/img-icon-delete-blue.svg"
+                                                        alt="Remove Icon"></button></li>
+                                            <li><span>Nutrient-Rich</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="explore-main-links-container animated fadeInRight">
+                                        <ul>
+                                            <li><span>Protein-Positive</span></li>
+                                            <li><a href="#">Vegetarian</a></li>
+                                            <li><span>Inspired</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="skillLevel" role="tabpanel">
+                                    <div class="explore-main-btn-container animated fadeInRight">
+                                        <ul>
+                                            <li><span>Light 2</span></li>
+                                            <li><button class="primary-btn">Spring/Summer <img
+                                                        src="/App_Themes/Milk/images/img-icon-delete-blue.svg"
+                                                        alt="Remove Icon"></button></li>
+                                            <li><button class="primary-btn active-btn">Fall/Winter <img
+                                                        src="/App_Themes/Milk/images/img-icon-delete-blue.svg"
+                                                        alt="Remove Icon"></button></li>
+                                            <li><span>Nutrient-Rich</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="explore-main-links-container animated fadeInRight">
+                                        <ul>
+                                            <li><span>Protein-Positive</span></li>
+                                            <li><a href="#">Vegetarian</a></li>
+                                            <li><span>Inspired</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="totalTime" role="tabpanel">
+                                    <div class="explore-main-btn-container animated fadeInRight">
+                                        <ul>
+                                            <li><span>Light 3</span></li>
+                                            <li><button class="primary-btn">Spring/Summer <img
+                                                        src="/App_Themes/Milk/images/img-icon-delete-blue.svg"
+                                                        alt="Remove Icon"></button></li>
+                                            <li><button class="primary-btn active-btn">Fall/Winter <img
+                                                        src="/App_Themes/Milk/images/img-icon-delete-blue.svg"
+                                                        alt="Remove Icon"></button></li>
+                                            <li><span>Nutrient-Rich</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="explore-main-links-container animated fadeInRight">
+                                        <ul>
+                                            <li><span>Protein-Positive</span></li>
+                                            <li><a href="#">Vegetarian</a></li>
+                                            <li><span>Inspired</span></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>

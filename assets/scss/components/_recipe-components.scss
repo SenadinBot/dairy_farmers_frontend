@@ -966,6 +966,10 @@
             .explore-main-btn-container {
                 padding-left: 77px;
                 margin-bottom: 31px;
+                @include media-md {
+                    padding-left: 0;
+                    text-align: center;
+                }
                 @include media-sm {
                     padding-left: 0;
                     display: inline-flex;
@@ -1099,6 +1103,15 @@
                     }
                 }
             }
+            .tab-pane {
+                display: none;
+                &.active {
+                    display: block;
+                    &.in {
+                        opacity: 1;
+                    }
+                }
+            }
         }
         .choosen-filter-container {
             padding-top: 30px;
@@ -1127,6 +1140,7 @@
             .choosen-filter-item-container {
                 display: inline-block;
                 vertical-align: top;
+                min-height: 40px;
                 @include media-xs {
                     overflow-x: scroll;
                     width: calc(100% - 100px);
@@ -1200,11 +1214,13 @@
             }
         }
         .explore-recipes-category-content {
-            margin-bottom: 26px;
+            margin: 0 0 26px 0;
+            padding: 0;
             text-align: center;
             display: flex;
             @include media-xs {
                 display: inline-flex;
+                flex-wrap: initial;
             }
             .category-item {
                 text-align: center;
@@ -1229,29 +1245,48 @@
                     max-width: 100%;
                     z-index: 9;
                     position: relative;
+                    -webkit-transition: all 0.3s ease;
+                    -moz-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
                 }
                 &:first-child {
                     img {
                         height: 54px;
-                        margin-bottom: 58px;
+                        margin: 0 auto 58px auto;
                     }
                 }
                 &:nth-child(2) {
                     img {
                         height: 76px;
-                        margin-bottom: 46px;
+                        margin: 0 auto 46px auto;
+                    }
+                    a {
+                        &:before {
+                            top: -28px;
+                        }
                     }
                 }
                 &:nth-child(3) {
                     img {
                         height: 52px;
-                        margin-bottom: 49px;
+                        margin: 0 auto 49px auto;
+                    }
+                    a {
+                        &:before {
+                            top: -50px;
+                        }
                     }
                 }
                 &:nth-child(4) {
                     img {
                         height: 73px;
-                        margin-bottom: 49px;
+                        margin: 0 auto 49px auto;
+                    }
+                    a {
+                        &:before {
+                            top: -28px;
+                        }
                     }
                 }
                 h4 {
@@ -1259,37 +1294,49 @@
                     text-transform: uppercase;
                     margin: -8px 0 0 0;
                 }
-                &:before {
-                    content: "";
-                    width: 140px;
-                    height: 140px;
-                    border-radius: 100%;
-                    -webkit-transition: all 0.3s ease;
-                    -moz-transition: all 0.3s ease;
-                    -o-transition: all 0.3s ease;
-                    transition: all 0.3s ease;
-                    position: absolute;
-                    top: -28px;
-                    left: 50%;
-                    -webkit-transform: translateX(-50%);
-                    -ms-transform: translateX(-50%);
-                    transform: translateX(-50%);
-                }
-                &:hover {
-                    &:before {
-                        background: $white;
-                        border: 5px solid $blue;
+                a {
+                    position: relative;
+                    &.active {
+                        &:before {
+                            background: #54585a;
+                            opacity: 0.1;
+                        }
+                        &:hover {
+                            &:before {
+                                border: 5px solid transparent;
+                                background: #54585a;
+                            }
+                        }
+                        .normal-img {
+                            display: none;                        
+                        }
+                        .active-img {
+                            display: block;
+                        }
                     }
-                }
-                &.active {
+                    .active-img {
+                        display: none;
+                    }
                     &:before {
-                        background: #54585a;
-                        opacity: 0.1;
+                        content: "";
+                        width: 140px;
+                        height: 140px;
+                        border-radius: 100%;
+                        -webkit-transition: all 0.3s ease;
+                        -moz-transition: all 0.3s ease;
+                        -o-transition: all 0.3s ease;
+                        transition: all 0.3s ease;
+                        position: absolute;
+                        top: -38px;
+                        left: 50%;
+                        -webkit-transform: translateX(-50%);
+                        -ms-transform: translateX(-50%);
+                        transform: translateX(-50%);
                     }
                     &:hover {
                         &:before {
-                            border: 5px solid transparent;
-                            background: #54585a;
+                            background: $white;
+                            border: 5px solid $blue;
                         }
                     }
                 }

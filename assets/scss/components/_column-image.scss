@@ -52,7 +52,8 @@
     .column-image-item-container {
         position: relative;
         padding-bottom: 43px;
-        background-color: rgba(0, 53, 142, 0.8);
+        // background-color: rgba(0, 53, 142, 0.8);
+        background: $blue;
         &:after {
             content: "";
             width: 530px;

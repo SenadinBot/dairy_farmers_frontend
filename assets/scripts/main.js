@@ -172,9 +172,9 @@ $(document).ready(function () {
             $('.farmers-carousel-nav').slick({
                 infinite: false,
                 slidesToShow: 3,
-				slidesToScroll: 1,
-				arrows: false,
-				variableWidth: true,
+                slidesToScroll: 1,
+                arrows: false,
+                variableWidth: true,
             });
         } else {
             // window width is less than 769px
@@ -339,7 +339,11 @@ $(document).ready(function () {
 
     // Recipe List Filter
     $('.choosen-filter-item').on('click', function () {
-        $(this).remove();
+        $(this).addClass('animated fadeOutLeft')
+        var clickThis = $(this);
+        setTimeout(function () {
+            clickThis.remove();
+        }, 500);
     });
     $('.explore-main-btn-container .primary-btn').on('click', function () {
         $(this).toggleClass('active-btn');

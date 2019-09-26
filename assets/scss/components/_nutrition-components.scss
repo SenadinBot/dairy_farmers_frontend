@@ -369,6 +369,7 @@
         }
     }
     .nutrition-background-image-container {
+        mix-blend-mode: multiply;
         &:before {
             content: "";
             height: 217%;
