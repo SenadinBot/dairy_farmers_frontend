@@ -477,6 +477,8 @@
             } 
             @include media-xs {
                 word-break: break-word;
+                font-size: 48px;
+                line-height: 48px;
             }      
         }
         h4 {
@@ -486,7 +488,7 @@
         p {
             display: block;
             font-family: $robotoLight;
-            line-height: 26px;
+            line-height: 30px;
             margin-bottom: 32px;
             width: 95%;
             @include media-xs-portrait {

@@ -5451,14 +5451,16 @@ main {
           line-height: 64px; } }
       @media (max-width: 767px) {
         .recommendation-container .recommendation-content h2 {
-          word-break: break-word; } }
+          word-break: break-word;
+          font-size: 48px;
+          line-height: 48px; } }
     .recommendation-container .recommendation-content h4 {
       text-transform: uppercase;
       margin: -8px 0 3px 0; }
     .recommendation-container .recommendation-content p {
       display: block;
       font-family: "Roboto Light";
-      line-height: 26px;
+      line-height: 30px;
       margin-bottom: 32px;
       width: 95%; }
       @media (max-width: 767px) and (orientation: portrait) {
@@ -6078,13 +6080,16 @@ main {
     @media (max-width: 767px) and (orientation: portrait) {
       .farmer-verification-container span {
         width: 100%;
-        font-size: 56px;
-        line-height: 56px;
+        font-size: 48px;
+        line-height: 48px;
         word-break: break-word;
-        padding: 31px 0 49px 0; } }
+        padding: 31px 0;
+        letter-spacing: 3.6px; } }
     @media (max-width: 767px) and (orientation: landscape) {
       .farmer-verification-container span {
-        width: 84%; } }
+        width: 84%;
+        font-size: 64px;
+        line-height: 64px; } }
     @media (min-width: 768px) and (max-width: 991px) {
       .farmer-verification-container span {
         width: 73%; } }
@@ -6168,9 +6173,21 @@ main {
     margin-top: -15px; }
     @media (min-width: 992px) {
       .our-milk-container .our-milk-carousel-container {
-        width: 90%;
         margin: 0 auto;
-        overflow: hidden; } }
+        overflow-y: hidden;
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none; }
+        .our-milk-container .our-milk-carousel-container::-webkit-scrollbar {
+          width: 0px;
+          background: transparent;
+          display: none; }
+        .our-milk-container .our-milk-carousel-container::-webkit-scrollbar-thumb {
+          background: transparent; } }
+  @media all and (min-width: 992px) and (-ms-high-contrast: none) {
+    .our-milk-container .our-milk-carousel-container {
+      padding-left: 70px; } }
+
     @media (min-width: 1200px) and (max-width: 1349px) {
       .our-milk-container .our-milk-carousel-container {
         width: 100%; } }
@@ -6188,7 +6205,13 @@ main {
   @media (min-width: 992px) {
     .our-milk-container .our-milk-carousel {
       display: inline-flex;
-      margin-top: 85px; }
+      margin-top: 85px;
+      width: 182%;
+      margin-left: 24%; } }
+  @media all and (min-width: 992px) and (-ms-high-contrast: none) {
+    .our-milk-container .our-milk-carousel {
+      width: 120%; } }
+  @media (min-width: 992px) {
       .our-milk-container .our-milk-carousel:before {
         content: "";
         border: 10px solid #0072ce;
@@ -6403,26 +6426,17 @@ main {
         line-height: normal;
         position: relative;
         top: 7px;
-        width: 110%;
-        -webkit-animation: milkFadeIn 1s;
-        -moz-animation: milkFadeIn 1s;
-        -ms-animation: milkFadeIn 1s;
-        -o-animation: milkFadeIn 1s;
-        animation: milkFadeIn 1s; } }
+        width: 110%; } }
     @media (min-width: 992px) and (min-width: 992px) and (max-width: 1199px) {
       .our-milk-container .our-milk-carousel .our-milk-slide.active span {
         font-size: 48px;
         letter-spacing: 1.32px;
         top: 7px;
         width: 110%; } }
+  @media all and (min-width: 992px) and (-ms-high-contrast: none) {
+    .our-milk-container .our-milk-carousel .our-milk-slide.active p {
+      display: flex; } }
   @media (min-width: 992px) {
-      .our-milk-container .our-milk-carousel .our-milk-slide.active p {
-        display: -webkit-box;
-        -webkit-animation: milkFadeIn 1s;
-        -moz-animation: milkFadeIn 1s;
-        -ms-animation: milkFadeIn 1s;
-        -o-animation: milkFadeIn 1s;
-        animation: milkFadeIn 1s; }
       .our-milk-container .our-milk-carousel .our-milk-slide.active img {
         -ms-transform: scale(1.45);
         -moz-transform: scale(1.45);
@@ -6430,12 +6444,7 @@ main {
         transform: scale(1.45);
         position: relative;
         bottom: 5px;
-        margin-bottom: 45px;
-        -webkit-animation: milkFadeIn 1s;
-        -moz-animation: milkFadeIn 1s;
-        -ms-animation: milkFadeIn 1s;
-        -o-animation: milkFadeIn 1s;
-        animation: milkFadeIn 1s; } }
+        margin-bottom: 45px; } }
     @media (min-width: 992px) and (min-width: 992px) and (max-width: 1199px) {
       .our-milk-container .our-milk-carousel .our-milk-slide.active img {
         margin-bottom: 35px; } }
@@ -6508,6 +6517,9 @@ main {
     width: 100%;
     margin: 0.8px 0;
     height: 74px; }
+    @media all and (-ms-high-contrast: none) {
+      .ourMilkSlider input[type=range] {
+        height: 108px; } }
     .ourMilkSlider input[type=range]:focus {
       outline: none;
       outline-style: none;
@@ -6540,6 +6552,14 @@ main {
       -webkit-appearance: none;
       outline: none;
       border: none; }
+    .ourMilkSlider input[type=range]::-ms-track {
+      width: 100%;
+      cursor: pointer;
+      box-shadow: none;
+      height: 15px;
+      border-radius: 7.5px;
+      box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
+      background-color: #f2f2f2; }
     .ourMilkSlider input[type=range]::-moz-range-track {
       width: 100%;
       cursor: pointer;
