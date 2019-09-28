@@ -254,10 +254,10 @@
                 flex-flow: column nowrap;
                 justify-content: flex-end;
                 align-items: center;
-                width: 220px;
+                width: 223px;
                 position: relative;
-                margin-right: 35px;
-                top: -97px;
+                margin-right: 34px;
+                top: -217px;
                 @media all and (-ms-high-contrast:none) {
                     // width: 300px;
                 }
@@ -320,11 +320,11 @@
                         position: relative;
                         top: 7px;
                         width: 110%;
-                        // -webkit-animation: milkFadeIn 1s;
-                        // -moz-animation: milkFadeIn 1s; 
-                        // -ms-animation: milkFadeIn 1s; 
-                        // -o-animation: milkFadeIn 1s;
-                        // animation: milkFadeIn 1s;
+                        -webkit-animation: milkFadeIn 1s;
+                        -moz-animation: milkFadeIn 1s; 
+                        -ms-animation: milkFadeIn 1s; 
+                        -o-animation: milkFadeIn 1s;
+                        animation: milkFadeIn 1s;
                         @include media-md {
                             font-size: 48px;
                             letter-spacing: 1.32px;
@@ -333,12 +333,12 @@
                         }
                     }
                     p {
-                        // display: -webkit-box; 
-                        // -webkit-animation: milkFadeIn 1s;
-                        // -moz-animation: milkFadeIn 1s; 
-                        // -ms-animation: milkFadeIn 1s; 
-                        // -o-animation: milkFadeIn 1s;
-                        // animation: milkFadeIn 1s;
+                        display: -webkit-box; 
+                        -webkit-animation: milkFadeIn 1s;
+                        -moz-animation: milkFadeIn 1s; 
+                        -ms-animation: milkFadeIn 1s; 
+                        -o-animation: milkFadeIn 1s;
+                        animation: milkFadeIn 1s;
                         @media all and (-ms-high-contrast:none) {
                             display: flex;
                         }
@@ -351,11 +351,11 @@
                         position: relative;
                         bottom: 5px;   
                         margin-bottom: 45px;    
-                        // -webkit-animation: milkFadeIn 1s;
-                        // -moz-animation: milkFadeIn 1s; 
-                        // -ms-animation: milkFadeIn 1s; 
-                        // -o-animation: milkFadeIn 1s;
-                        // animation: milkFadeIn 1s; 
+                        -webkit-animation: milkFadeIn 1s;
+                        -moz-animation: milkFadeIn 1s; 
+                        -ms-animation: milkFadeIn 1s; 
+                        -o-animation: milkFadeIn 1s;
+                        animation: milkFadeIn 1s; 
                         @include media-md {
                             margin-bottom: 35px;
                         }            
@@ -372,11 +372,6 @@
                 font-family: $robotoLight;
                 line-height: 30px;
                 text-align: left;
-                left: 50%;
-                -webkit-transform: translateX(-50%);
-                -ms-transform: translateX(-50%);
-                transform: translateX(-50%);
-                position: absolute;
                 -webkit-box-orient: vertical;
                 -moz-box-orient: vertical;
                 -ms-box-orient: vertical;
@@ -397,6 +392,11 @@
                     margin: 0 auto;
                     bottom: initial;
                     font-size: 20px;
+                    left: 50%;
+                    -webkit-transform: translateX(-50%);
+                    -ms-transform: translateX(-50%);
+                    transform: translateX(-50%);
+                    position: absolute;
                 }
                 @include media-xs-landscape {
                     width: 235%;                    
@@ -410,6 +410,11 @@
                     -moz-line-clamp: 6;
                     -ms-line-clamp: 6;
                     line-clamp: 6;
+                    left: 50%;
+                    -webkit-transform: translateX(-50%);
+                    -ms-transform: translateX(-50%);
+                    transform: translateX(-50%);
+                    position: absolute;
                 }
                 @include media-xs-landscape {
                     width: 200%;
@@ -422,7 +427,7 @@
     text-align: center;
     display: block;
     width: 791px;
-    margin: 134px auto 0 auto;
+    margin: 0 auto;
     @include media-xs {
         display: none;
     }

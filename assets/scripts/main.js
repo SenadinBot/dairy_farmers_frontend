@@ -207,7 +207,7 @@ $(document).ready(function () {
     var ourMilkSSlider;
     if ($(window).width() > 992) {
         $('.our-milk-carousel').on('init', function() {
-            $(this).css('margin-left', '-13.5%');
+            $(this).css('margin-left', '-14.3%');
         }); 
         $(".ourMilkRange").on("input change", function () {
             $('.our-milk-carousel').css('margin-left', '24%');
