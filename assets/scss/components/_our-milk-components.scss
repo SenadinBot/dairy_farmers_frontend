@@ -359,6 +359,7 @@
                         animation: milkFadeIn 1s;
                         @media all and (-ms-high-contrast:none) {
                             display: flex;
+                            margin-top: -100px;
                         }
                     }
                     img {

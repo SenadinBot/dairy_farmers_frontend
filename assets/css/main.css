@@ -6461,7 +6461,8 @@ main {
         animation: milkFadeIn 1s; } }
     @media all and (min-width: 992px) and (-ms-high-contrast: none) {
       .our-milk-container .our-milk-carousel .our-milk-slide.active p {
-        display: flex; } }
+        display: flex;
+        margin-top: -100px; } }
   @media (min-width: 992px) {
       .our-milk-container .our-milk-carousel .our-milk-slide.active img {
         -ms-transform: scale(1.45);
