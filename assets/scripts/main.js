@@ -207,27 +207,18 @@ $(document).ready(function () {
     var ourMilkSSlider;
     if ($(window).width() > 992) {
         $('.our-milk-carousel').on('init', function() {
-            $(this).css('margin-left', '-13%');
+            $(this).css('margin-left', '-13.5%');
         }); 
         $(".ourMilkRange").on("input change", function () {
             $('.our-milk-carousel').css('margin-left', '24%');
             var previousDiv = $(".our-milk-slide.active");
             var dataValue = parseInt(($(this).val() / 20)) * 20;
-            // $(".our-milk-slide").removeClass("active");
-            // var activeDiv = $(".our-milk-slide[data-value='" + dataValue + "']");
-            // activeDiv.addClass("active");
-            // if (activeDiv.index() > Math.round($(".our-milk-slide").length / 3 - 0.1, 0)) {
-            //     activeDiv.insertBefore(previousDiv);
-            // }
-            // else {
-            //     activeDiv.insertAfter(previousDiv);
-            // }
+            $(".our-milk-slide").removeClass("active");
+            var activeDiv = $(".our-milk-slide[data-value='" + dataValue + "']");
+            activeDiv.addClass("active");
             let width = $('.our-milk-carousel').width() - $('.our-milk-carousel-container').width() + (viewwidth * 0.08);
             let value = $(this).val() * 0.01;
             let slide = width * value;
-            console.log('width', width);
-            console.log('value', value);
-            console.log('slide', slide);
             $('.our-milk-carousel-container').scrollLeft(slide);
         });
     }
