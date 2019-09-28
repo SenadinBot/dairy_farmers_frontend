@@ -210,7 +210,7 @@ $(document).ready(function () {
             $(this).css('margin-left', '-14.3%');
         }); 
         $(".ourMilkRange").on("input change", function () {
-            $('.our-milk-carousel').css('margin-left', '24%');
+            $('.our-milk-carousel').css('margin-left', '22.8%');
             var previousDiv = $(".our-milk-slide.active");
             var dataValue = parseInt(($(this).val() / 20)) * 20;
             $(".our-milk-slide").removeClass("active");
