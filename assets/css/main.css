@@ -6176,17 +6176,14 @@ main {
         overflow-y: hidden;
         overflow-x: scroll;
         -ms-overflow-style: none;
-        scrollbar-width: none; }
+        scrollbar-width: none;
+        pointer-events: none; }
         .our-milk-container .our-milk-carousel-container::-webkit-scrollbar {
           width: 0px;
           background: transparent;
           display: none; }
         .our-milk-container .our-milk-carousel-container::-webkit-scrollbar-thumb {
           background: transparent; } }
-  @media all and (min-width: 992px) and (-ms-high-contrast: none) {
-    .our-milk-container .our-milk-carousel-container {
-      padding-left: 70px; } }
-
     @media (min-width: 1200px) and (max-width: 1349px) {
       .our-milk-container .our-milk-carousel-container {
         width: 100%; } }
@@ -6206,10 +6203,11 @@ main {
       display: inline-flex;
       margin-top: 85px;
       width: 182%;
-      margin-left: 24%; } }
-  @media all and (min-width: 992px) and (-ms-high-contrast: none) {
+      margin-left: 24%;
+      pointer-events: none; } }
+  @media (min-width: 992px) and (min-width: 992px) and (max-width: 1199px) {
     .our-milk-container .our-milk-carousel {
-      width: 120%; } }
+      width: 200%; } }
   @media (min-width: 992px) {
       .our-milk-container .our-milk-carousel:before {
         content: "";
@@ -6367,21 +6365,37 @@ main {
       position: relative;
       margin-right: 34px;
       top: -217px; } }
-  @media (min-width: 992px) and (min-width: 1200px) and (max-width: 1349px) {
+  @media (min-width: 992px) and (min-width: 1200px) and (max-width: 1249px) {
     .our-milk-container .our-milk-carousel .our-milk-slide {
-      margin-right: 25px; } }
+      margin-right: 6px;
+      width: 210px; } }
+  @media (min-width: 992px) and (min-width: 1250px) and (max-width: 1299px) {
+    .our-milk-container .our-milk-carousel .our-milk-slide {
+      margin-right: 18px;
+      width: 210px; } }
+  @media (min-width: 992px) and (min-width: 1300px) and (max-width: 1349px) {
+    .our-milk-container .our-milk-carousel .our-milk-slide {
+      margin-right: 18px;
+      width: 218px; } }
+  @media (min-width: 992px) and (min-width: 1350px) and (max-width: 1399px) {
+    .our-milk-container .our-milk-carousel .our-milk-slide {
+      margin-right: 23px; } }
   @media (min-width: 992px) and (min-width: 992px) and (max-width: 1199px) {
     .our-milk-container .our-milk-carousel .our-milk-slide {
       width: 164px;
       position: relative;
       margin-right: 30px;
-      top: -80px; } }
+      top: -200px; } }
 
   .our-milk-container .our-milk-carousel .our-milk-slide img {
     object-fit: contain;
     display: inline-block;
     max-width: 100%;
     max-height: 100%; }
+    @media all and (-ms-high-contrast: none) {
+      .our-milk-container .our-milk-carousel .our-milk-slide img {
+        max-width: 70%;
+        max-height: 70%; } }
   .our-milk-container .our-milk-carousel .our-milk-slide span {
     font-family: "acumin-pro-extra-condensed",sans-serif;
     font-style: normal;

@@ -39,12 +39,12 @@
     .our-milk-carousel-container {
         margin-top: -15px;
         @include media-lmd {
-            // width: 90%;
             margin: 0 auto;
             overflow-y: hidden;
             overflow-x: scroll;
             -ms-overflow-style: none;  // IE 10+
             scrollbar-width: none;  // Firefox
+            pointer-events: none;
             &::-webkit-scrollbar {
                 width: 0px;
                 background: transparent; 
@@ -53,9 +53,7 @@
             &::-webkit-scrollbar-thumb {
                 background: transparent;
             }
-            @media all and (-ms-high-contrast:none) {
-                padding-left: 70px;
-            }
+            
         }
         @media (min-width: 1200px) and (max-width: 1349px) { 
             width: 100%;
@@ -78,8 +76,12 @@
             margin-top: 85px;
             width: 182%;
             margin-left: 24%;
-            @media all and (-ms-high-contrast:none) {
-                width: 120%;
+            pointer-events: none;
+            // @media all and (-ms-high-contrast:none) {
+            //     width: 120%;
+            // }
+            @include media-md {
+                width: 200%;
             }
             &:before {
                 content: "";
@@ -261,14 +263,26 @@
                 @media all and (-ms-high-contrast:none) {
                     // width: 300px;
                 }
-                @media (min-width: 1200px) and (max-width: 1349px) { 
-                    margin-right: 25px;
+                @media (min-width: 1200px) and (max-width: 1249px) { 
+                    margin-right: 6px;
+                    width: 210px;
+                }
+                @media (min-width: 1250px) and (max-width: 1299px) { 
+                    margin-right: 18px;
+                    width: 210px;
+                }
+                @media (min-width: 1300px) and (max-width: 1349px) { 
+                    margin-right: 18px;
+                    width: 218px;
+                }
+                @media (min-width: 1350px) and (max-width: 1399px) { 
+                    margin-right: 23px;
                 }
                 @include media-md {
                     width: 164px;
                     position: relative;
                     margin-right: 30px;
-                    top: -80px;
+                    top: -200px;
                 }
             }
             img {
@@ -276,6 +290,10 @@
                 display: inline-block;
                 max-width: 100%;
                 max-height: 100%;
+                @media all and (-ms-high-contrast:none) {
+                    max-width: 70%;
+                    max-height: 70%;
+                }
             }
             span {
                 @include acuminProExtraCondBlack();
