@@ -160,7 +160,7 @@
     }
     .culinary-recipes-category-title {
         text-align: center;
-        margin-bottom: 43px;
+        margin-bottom: 44px;
         padding-top: 50px;
         position: relative;
         @include media-xs {
@@ -185,7 +185,7 @@
         }
     }
     .culinary-recipes-category-content {
-        margin-bottom: 42px;
+        margin-bottom: 47px;
         text-align: center;
         display: flex;
         .slick-track,
@@ -196,6 +196,7 @@
         }
         @include media-xs {
             display: inline-flex;
+            padding-top: 30px;
         }
         .category-item {
             text-align: center;
@@ -206,36 +207,86 @@
             align-items: center;
             flex: 1 1 0%;
             width: auto;
+            position: relative;
             @include media-xs {
                 min-width: 170px;
             }
             img {
                 margin-bottom: 47px;
                 height: 52px;
-                max-width: 100%;;
+                max-width: 100%;
+                z-index: 9;
+                position: relative;
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+            }
+            &.active {
+                &:before {
+                    background: #54585a;
+                    opacity: 0.1;
+                }
+                &:hover {
+                    &:before {
+                        border: 5px solid transparent;
+                        background: #54585a;
+                    }
+                }
+                .normal-img {
+                    display: none;                        
+                }
+                .active-img {
+                    display: block;
+                }
+            }
+            .active-img {
+                display: none;
+            }
+            &:before {
+                content: "";
+                width: 140px;
+                height: 140px;
+                border-radius: 100%;
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+                position: absolute;
+                top: -28px;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+            &:hover {
+                &:before {
+                    background: $white;
+                    border: 5px solid $blue;
+                }
             }
             &:first-child {
                 img {
                     height: 54px;
-                    margin-bottom: 52px;
+                    margin: 0 auto 52px auto;
                 }
             }
             &:nth-child(2) {
                 img {
                     height: 76px;
-                    margin-bottom: 41px;
+                    margin: 0 auto 40px auto;
                 }
             }
             &:nth-child(3) {
                 img {
                     height: 52px;
-                    margin-bottom: 49px;
+                    margin: 0 auto 49px auto;
                 }
             }
             &:nth-child(4) {
                 img {
                     height: 73px;
-                    margin-bottom: 47px;
+                    margin: 0 auto 49px auto;
                 }
             }
             h4 {
