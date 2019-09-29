@@ -268,7 +268,12 @@ a {
   z-index: 99991; }
 
 .modal-backdrop {
-  z-index: 9999; }
+  z-index: 9999;
+  -webkit-transition: opacity .5s linea;
+  -moz-transition: opacity .5s linea;
+  -ms-transition: opacity .5s linea;
+  -o-transition: opacity .5s linea;
+  transition: opacity .5s linear; }
 
 .video-modal .modal-body {
   padding: 0;
@@ -13321,12 +13326,21 @@ main {
 .board-directors-modal .modal-content {
   border: none;
   border-radius: 20px;
-  margin-top: 58px; }
+  margin-top: 58px;
+  min-height: 599px; }
   @media (max-width: 767px) {
     .board-directors-modal .modal-content {
       border-radius: 10px;
       margin-top: 18px; } }
 .board-directors-modal .modal-body {
+  -webkit-animation-delay: .5s;
+  -moz-animation-delay: .5s;
+  animation-delay: .5s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
   padding: 84px 44px 73px 135px; }
   @media (min-width: 1200px) and (max-width: 1440px) {
     .board-directors-modal .modal-body {
@@ -13435,7 +13449,16 @@ main {
         color: #000000;
         font-family: "Roboto Light";
         margin: -5px 0 25px 0; }
-
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeInUp {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 .mCSB_scrollTools .mCSB_draggerContainer {
   border-radius: 7.5px;
   box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);

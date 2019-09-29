@@ -298,12 +298,21 @@
         border: none;
         border-radius: 20px;
         margin-top: 58px;
+        min-height: 599px;
         @include media-xs {
             border-radius: 10px;
             margin-top: 18px;
         }
     }
     .modal-body {
+        -webkit-animation-delay: .5s;
+        -moz-animation-delay: .5s;
+        animation-delay: .5s;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: fadeIn;
         padding: 84px 44px 73px 135px;
         @media (min-width: 1200px) and (max-width: 1440px) {
             padding: 54px 44px 45px 95px;
@@ -419,6 +428,22 @@
                     margin: -5px 0 25px 0;
                 }
             }
+        }
+    }
+    @-webkit-keyframes fadeInUp {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
         }
     }
 }

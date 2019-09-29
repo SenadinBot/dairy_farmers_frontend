@@ -251,6 +251,11 @@ a {
 }
 .modal-backdrop {
     z-index: 9999;
+    -webkit-transition: opacity .5s linea;
+    -moz-transition: opacity .5s linea;
+    -ms-transition: opacity .5s linea;
+    -o-transition: opacity .5s linea;
+    transition: opacity .5s linear;
 }
 .video-modal {
     .modal-body {
