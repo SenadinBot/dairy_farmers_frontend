@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    // Add Animation to RTE
+    $('.quote-text').attr('data-aos', 'fade-right');
+    $('.restaurantes-content-container img').attr('data-aos', 'fade-left');
+
     // Video Modal
     $('.video-modal').on('hidden.bs.modal', function () {
         $('.video-modal iframe').attr('src', $('.video-modal iframe').attr('src'));

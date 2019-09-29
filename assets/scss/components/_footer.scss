@@ -319,4 +319,154 @@ footer {
             }
         }
     }
+    &.second-footer {
+        .footer-intro {
+            img {
+                width: 164px;
+                height: 164px;
+                box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
+                border-radius: 100%;
+                margin: -60px 0 55px 0;
+                @include media-xs {
+                    width: 120px;
+                    height: 120px;
+                    margin: -60px 0 45px 0;
+                }
+            }
+        }
+        .footer-intro { 
+            width: 80.5%;
+            @include media-xs {
+                width: 100%;
+            }
+            @include media-sm {
+                width: 90%;
+            }
+            @include media-md {
+                width: 90%;
+            }
+        }
+        .footer-info { 
+            width: 80.5%;
+            @include media-xs {
+                width: 100%;
+            }
+            @include media-sm {
+                width: 90%;
+            }
+            @include media-md {
+                width: 90%;
+            }
+        }
+    }
+    .footer-help {
+        text-align: left;
+        color: $white;
+        margin: 0 auto;
+        width: 80.5%;
+        padding: 42px 52px 32px 52px;
+        .col-12 {
+            @include media-xs {
+                padding: 0;
+            }
+        }
+        @include media-xs {
+            width: 100%;
+            padding: 0 30px;
+            border-bottom: none;
+            text-align: center;
+            padding: 50px 0;
+        }
+        @include media-sm {
+            width: 90%;
+            padding: 42px 22px 32px 22px;
+        }
+        @include media-md {
+            width: 90%;
+            padding: 42px 42px 32px 42px;
+        }
+        span {
+            display: block;
+        }
+        a, span {
+            font-size: 30px;
+            line-height: 1.2;
+            letter-spacing: 1.5px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 24px;
+            color: $white;
+            position: relative;
+            text-transform: uppercase;
+            @include acuminProExtraCondBlack();
+            display: block;
+            margin-bottom: 7px;
+            margin-top: -3px;
+        }
+        .info {
+            width: calc(100% - 221px);
+            display: inline-block;
+            @include media-xs {
+                display: block;
+                width: 100%;
+                margin-bottom: 35px;
+            }
+            p {
+                color: $white;
+                font-family: $roboto;
+                font-size: 18px;
+                line-height: 24px;
+                margin: 0%;
+                a {
+                    text-transform: initial;
+                    font-family: $roboto;
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin: 0;
+                    display: inline-block;
+                    position: relative;
+                    &:last-child {
+                        &:hover {
+                            &:before {
+                                visibility: hidden;
+                                width: 0;
+                            }
+                        }
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 1px;
+                            bottom: 0;
+                            right: 0;
+                            visibility: visible;
+                            -webkit-transition: all 0.3s ease-in-out 0s;
+                            -moz-transition: all 0.3s ease-in-out 0s;
+                            -ms-transition: all 0.3s ease-in-out 0s;
+                            -o-transition: all 0.3s ease-in-out 0s;
+                            transition: all 0.3s ease-in-out 0s;
+                            background: $white;
+                        }
+                    }
+                }
+            }
+        }
+        .btn-container {
+            width: 216px;
+            display: inline-block;
+            position: relative;
+            top: -8px;
+            @include media-xs {
+                top: 0;
+                width: 100%;
+                padding: 0 40px;
+            }
+            a {
+                width: 100%;
+                padding: 12px 50px 14px 40px;
+                margin: 0;
+            }
+        }
+    }
 }

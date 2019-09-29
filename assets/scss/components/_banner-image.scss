@@ -789,6 +789,64 @@
                 }
             }
         }
+        &.esmp-school {
+            .banner-title {
+                .title-border {
+                    &:after {
+                        height: 170px;
+                    }
+                }
+                span {
+                    @include media-sm {
+                        top: initial;
+                        padding-bottom: 230px;
+                        left: 50%;
+                        width: 100%;
+                        transform: translate(-30%, -95%);
+                        margin-top: 0;
+                    }
+                    @include media-xs {
+                        top: initial;
+                        padding-bottom: 0;
+                        max-width: 80vw;
+                    }
+                    @include media-sm {
+                        padding-bottom: 0;
+                        max-width: 75vw;
+                        transform: translate(-30%, -60%);
+                    }
+                }
+            }
+        }
+        &.esmp-about {
+            .banner-title {
+                .title-border {
+                    &:after {
+                        height: 170px;
+                    }
+                }
+                span {
+                    @include media-sm {
+                        top: initial;
+                        padding-bottom: 230px;
+                        left: 50%;
+                        width: 100%;
+                        transform: translate(-30%, -95%);
+                        margin-top: 0;
+                    }
+                    @include media-xs {
+                        top: initial;
+                        padding-bottom: 45px;
+                    }
+                    @include media-xs-landscape {
+                        padding-bottom: 85px;
+                    }
+                    @include media-sm {
+                        padding-bottom: 60px;
+                    }
+                }
+            }
+        }
     }
     &.three-line-title {
         .banner-title {

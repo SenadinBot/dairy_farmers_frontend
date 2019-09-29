@@ -1035,6 +1035,9 @@
             z-index: 999;
             text-align: left;
             padding: 200px 30px;
+            @include media-xs {
+                padding: 140px 30px 180px 30px;
+            }
         }
         @media (min-width: 1200px) and (max-width: 1500px) {
             text-align: left;
@@ -1081,8 +1084,9 @@
             h2 {
                 margin: -17px 0 0 0;
                 @include media-xs-portrait {
-                    font-size: 52px;
-                    line-height: 52px;
+                    margin: -10px 0 0 0;
+                    font-size: 48px;
+                    line-height: 48px;
                 }
             }
         }
