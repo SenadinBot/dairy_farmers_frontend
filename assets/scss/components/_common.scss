@@ -499,6 +499,9 @@
             // min-width: 229px;
             // padding: 12px 15px 14px 15px;
             padding: 12px 49px 14px 49px;
+            @include media-lg {
+                margin-left: 2px;
+            }
             @include media-xs-portrait {
                 width: 100%;
                 padding: 12px 5px 14px 5px;
@@ -732,7 +735,7 @@
                 text-decoration: underline;
                 position: relative;
                 top: -5px;
-                left: -2px;
+                left: 0;
             }
             .href-tag {
                 &:after {

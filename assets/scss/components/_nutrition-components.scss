@@ -381,6 +381,7 @@
             background-size: cover;
             background-image: url("/App_Themes/Milk/images/nutrition-background-image-1920-w.png");
             z-index: -1;
+            mix-blend-mode: multiply;
             @include media-md {
                 height: 212%;
             }

@@ -45,17 +45,17 @@
         .info-item-container {
             margin-bottom: 0;
             .info-item-content {
-                width: 59%;
+                width: 47%;
+                margin-right: 10px;
                 @include media-xs {
                     width: 100%;
+                    margin-right: 0;
                 }
                 @include media-md {
                     width: calc(100% / 2 - 7.5px);
-                    margin-right: 10px;
                 }
                 @include media-sm {
                     width: calc(100% / 2 - 7.5px);
-                    margin-right: 10px;
                 }
                 @media (min-width: 1200px) and (max-width: 1250px) { 
                     width: 57%;
@@ -79,13 +79,23 @@
                             font-family: $robotoLight;
                             color: $dark;
                             font-size: 18px;
-                            line-height: 18px;
+                            line-height: 26px;
                             position: relative;
                             counter-increment: custom-counter;
                             padding-left: 55px;
                             margin-bottom: 53px;
+                            &:first-child {
+                                @include media-xs {
+                                    margin-bottom: 55px;
+                                }
+                            }
+                            &:nth-child(2) {
+                                @include media-xs {
+                                    margin-bottom: 55px;
+                                }
+                            }
                             @include media-xs {
-                                margin-bottom: 55px;
+                                margin-bottom: 20px;
                             }
                             &:before {
                                 display: none !important;
@@ -100,11 +110,14 @@
                                 letter-spacing: 1.8px;
                                 font-size: 36px;
                                 line-height: 48px;
-                                top: 0;
+                                top: 5px;
                                 left: 0;
                                 height: 40px;
                                 width: 40px;
                                 text-align: center;
+                                @include media-xs {
+                                    top: 0;
+                                }
                             }
                             &:last-child {
                                 margin-bottom: 0;
@@ -169,14 +182,6 @@
             }
             .info-item-img-container {
                 width: 47%;
-                @include media-lg {
-                    position: absolute;
-                    top: 0;
-                    right: -81px;
-                }
-                @media (min-width: 1200px) and (max-width: 1250px) { 
-                    right: -45px;
-                }
                 @include media-md {
                     width: calc(100% / 2 - 7.5px);
                 }
@@ -185,6 +190,18 @@
                 }
                 @include media-xs {
                     width: 100%;
+                }
+            }
+        }
+        &.add-border-bottom {
+            margin-bottom: 50px;
+            .info-item-container {
+                border-bottom: 1px solid #b7b7b7;
+            }
+            .esmp-download {
+                margin: 93px 0 91px 0;
+                @include media-xs {
+                    margin: 45px 0 51px 0;
                 }
             }
         }
@@ -201,14 +218,25 @@
                 margin-bottom: 70px;
             }
             &.full-width {
+                @include media-xs {
+                    margin-top: -20px;
+                }
                 h4 {
-                    margin-top: -11px;
                     @include media-xs {
                         margin-top: -20px;
                         padding: 0 30px;
                     }
                 }
-            }
+                .info-item-content {
+                    width: calc(100% / 2 - 15px);
+                    @include media-xs {
+                        width: 100%;
+                    }
+                    &:nth-child(2) {
+                        margin-right: 0px;
+                    }
+                }
+            }   
         }
     }
     &.esmp-about-container {
@@ -353,9 +381,9 @@
     }
 }
 .esmp-download {
-    margin: 118px 0 43px 0;
+    margin: 93px 0 43px 0;
     @include media-sm {
-        margin: 103px 0 33px 0;
+        margin: 93px 0 33px 0;
     }
     @include media-xs {
         order: 3;

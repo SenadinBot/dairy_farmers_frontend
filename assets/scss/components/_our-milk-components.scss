@@ -370,11 +370,6 @@
                         position: relative;
                         bottom: 5px;   
                         margin-bottom: 45px;    
-                        -webkit-animation: milkFadeIn 1s;
-                        -moz-animation: milkFadeIn 1s; 
-                        -ms-animation: milkFadeIn 1s; 
-                        -o-animation: milkFadeIn 1s;
-                        animation: milkFadeIn 1s; 
                         @include media-md {
                             margin-bottom: 35px;
                         }            

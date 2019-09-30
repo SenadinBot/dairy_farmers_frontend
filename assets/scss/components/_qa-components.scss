@@ -40,8 +40,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        background: #00358e;
-        opacity: 0.8;
+        background: $blue;
+        mix-blend-mode: multiply;
     }
     span {
         border: 5px solid #ffc600;

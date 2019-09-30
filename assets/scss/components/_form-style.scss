@@ -226,6 +226,18 @@
                 transition: all 0.3s ease;
             }
         }
+        &.form-error {
+            .error-msg {
+                top: initial;
+                right: initial;
+                left: 54px;
+                bottom: -15px;
+                @include media-xs {
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
     }
     .agree-checkbox {
         width: 70%;
