@@ -1945,6 +1945,7 @@ footer .footer-links ul li a {
   transition: all 0.5s;
   display: inline;
   margin-bottom: 0;
+  font-weight: 400;
 }
 footer .footer-links ul li a:hover {
   -webkit-transition: all 0.5s;
