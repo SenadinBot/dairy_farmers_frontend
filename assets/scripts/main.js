@@ -217,6 +217,7 @@ $(document).ready(function () {
             $('.our-milk-carousel').css('margin-left', '22.8%');
             var previousDiv = $(".our-milk-slide.active");
             var dataValue = parseInt(($(this).val() / 20)) * 20;
+            console.log('dataValue', dataValue);
             $(".our-milk-slide").removeClass("active");
             var activeDiv = $(".our-milk-slide[data-value='" + dataValue + "']");
             activeDiv.addClass("active");

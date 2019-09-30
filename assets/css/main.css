@@ -6642,7 +6642,8 @@ main {
   @media (min-width: 992px) {
     .our-milk-container .our-milk-carousel .our-milk-slide.active {
       margin-bottom: 0;
-      top: 0; }
+      top: 0;
+      background: red; }
       .our-milk-container .our-milk-carousel .our-milk-slide.active span {
         font-size: 60px;
         letter-spacing: 4.32px;
