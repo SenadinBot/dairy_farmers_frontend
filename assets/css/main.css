@@ -35,6 +35,9 @@
   .container.sustainability-custom-container {
     max-width: 1360px; } }
 
+.hidden {
+  display: none !important; }
+
 @media (min-width: 768px) and (max-width: 991px) {
   main {
     overflow: hidden; } }
@@ -1439,7 +1442,8 @@ header {
           .second-header .has-sub ul.open li:last-child {
             padding-bottom: 0; } }
     .second-header .has-sub ul li {
-      padding: 0 0 15px 0; }
+      padding: 0 0 15px 0;
+      display: block; }
       .second-header .has-sub ul li a {
         font-size: 26px;
         line-height: 26px; }
@@ -5029,6 +5033,11 @@ main {
         @media (max-width: 767px) {
           .esmp-container.esmp-coordinators.add-border-bottom .esmp-download {
             margin: 45px 0 51px 0; } }
+  .esmp-container.esmp-parents-container .info-item-container:last-child {
+    margin-bottom: 95px; }
+    @media (max-width: 767px) {
+      .esmp-container.esmp-parents-container .info-item-container:last-child {
+        margin-bottom: 20px; } }
   .esmp-container.esmp-volunteer-container {
     margin-top: 63px;
     margin-bottom: 62px; }
@@ -5389,6 +5398,14 @@ main {
     @media (max-width: 767px) {
       .recommendation-container .big-bottom-spacing {
         margin-bottom: 100px; } }
+  .recommendation-container.add-top-border span {
+    border-top: 1px solid #b7b7b7;
+    padding-top: 45px;
+    margin-top: 98px; }
+    @media (max-width: 767px) {
+      .recommendation-container.add-top-border span {
+        padding-top: 25px;
+        margin-top: 50px; } }
   .recommendation-container.medium-bottom-spacing {
     margin-bottom: 149px; }
     @media (max-width: 767px) {
@@ -9308,38 +9325,110 @@ main {
       @media (max-width: 767px) and (orientation: landscape) {
         .culinary-carousel-container .culinary-carousel .slick-dots {
           top: 450px; } }
-      .culinary-carousel-container .culinary-carousel .slick-dots button {
-        width: 25px;
-        height: 25px;
-        padding: 0; }
-        .culinary-carousel-container .culinary-carousel .slick-dots button:before {
-          display: none; }
-        .culinary-carousel-container .culinary-carousel .slick-dots button:after {
-          content: "";
-          display: block;
-          width: 25px;
-          height: 25px;
-          border: 1px solid #0072ce;
-          background: #ffffff;
-          border-radius: 100%;
-          position: absolute;
-          top: -6px;
-          left: 0; }
-          @media (max-width: 767px) {
-            .culinary-carousel-container .culinary-carousel .slick-dots button:after {
-              border-color: #ffffff;
-              background: transparent; } }
-      .culinary-carousel-container .culinary-carousel .slick-dots li {
-        width: 25px;
-        height: 25px;
-        margin: 0 10px 0 0; }
-        .culinary-carousel-container .culinary-carousel .slick-dots li:last-child {
-          margin-right: 0; }
-        .culinary-carousel-container .culinary-carousel .slick-dots li.slick-active button:after {
-          background: #0072ce; }
-          @media (max-width: 767px) {
-            .culinary-carousel-container .culinary-carousel .slick-dots li.slick-active button:after {
-              background: #ffffff; } }
+
+.slick-dots li {
+  width: 25px;
+  height: 25px;
+  margin: 0 10px 0 0;
+  border-radius: 25px;
+  background: #ffffff;
+  position: relative;
+  display: inline-block;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-perspective: 1000;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  -moz-transform: 0;
+  -webkit-transform: 0;
+  transform: 0;
+  overflow: hidden; }
+  .slick-dots li:last-child {
+    margin-right: 0; }
+
+.slick-dots li.slick-active span {
+  display: block; }
+
+.slick-dots li::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #0072ce;
+  border-radius: 50%;
+  z-index: 4; }
+
+.slick-dots li span {
+  display: none; }
+
+.slick-dots li span:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: #0072ce;
+  z-index: 1;
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -moz-transform-origin: 12.5px 50%;
+  -ms-transform-origin: 12.5px 50%;
+  -webkit-transform-origin: 12.5px 50%;
+  transform-origin: 12.5px 50%; }
+
+.slick-dots li span:first-child + span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: #ffffff;
+  z-index: 2; }
+
+.slick-dots li span:last-child {
+  width: 50%;
+  height: 110%;
+  float: right;
+  background: #0072ce;
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -moz-transform-origin: 0 50%;
+  -ms-transform-origin: 0 50%;
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  position: relative;
+  z-index: 3;
+  opacity: 1; }
+
+.slick-dots li.start span:first-child {
+  -moz-transition: -moz-transform 3s linear 3s;
+  -o-transition: -o-transform 3s linear 3s;
+  -webkit-transition: -webkit-transform 3s linear;
+  -webkit-transition-delay: 3s;
+  transition: transform 3s linear 3s;
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.slick-dots li.start span:last-child {
+  opacity: 0;
+  -moz-transition: -moz-transform 3s linear, opacity 0s 3s;
+  -o-transition: -o-transform 3s linear, opacity 0s 3s;
+  -webkit-transition: -webkit-transform 3s linear, opacity 0s;
+  -webkit-transition-delay: 0s, 3s;
+  transition: transform 3s linear, opacity 0s 3s;
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
 
 .article-icon-info {
   text-align: center;

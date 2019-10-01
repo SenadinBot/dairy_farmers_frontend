@@ -210,9 +210,9 @@ $(document).ready(function () {
     var $ourMilkCarousel = $(".our-milk-carousel");
     var ourMilkSSlider;
     if ($(window).width() > 1200) {
-        $('.our-milk-carousel').on('init', function() {
+        $('.our-milk-carousel').on('init', function () {
             $(this).css('margin-left', '-14.3%');
-        }); 
+        });
         $(".ourMilkRange").on("input change", function () {
             $('.our-milk-carousel').css('margin-left', '22.8%');
             var previousDiv = $(".our-milk-slide.active");
@@ -228,9 +228,9 @@ $(document).ready(function () {
         });
     }
     if ($(window).width() > 992 && $(window).width() < 1199) {
-        $('.our-milk-carousel').on('init', function() {
+        $('.our-milk-carousel').on('init', function () {
             $(this).css('margin-left', '-21.5%');
-        }); 
+        });
         $(".ourMilkRange").on("input change", function () {
             $('.our-milk-carousel').css('margin-left', '25%');
             var previousDiv = $(".our-milk-slide.active");
@@ -243,7 +243,7 @@ $(document).ready(function () {
             let slide = width * value;
             $('.our-milk-carousel-container').scrollLeft(slide);
         });
-    } 
+    }
     if (($(window).width() < 991)) {
         $('.our-milk-carousel').children(':first').remove();
     }
@@ -318,15 +318,21 @@ $(document).ready(function () {
                 }
             }
         ]
+    }).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        $('.culinary-carousel .slick-dots li').eq(nextSlide).addClass('start').siblings().removeClass('start');
     });
+    $('.culinary-carousel .slick-dots li button').remove();
+    $('.culinary-carousel .slick-dots li').append('<span></span><span></span><span></span>').remove;
     $('.pause-btn').on('click', function () {
         $('.culinary-carousel').slick('slickPause');
+        $('.culinary-carousel .slick-dots li').removeClass('start');
         $('.pause-btn').addClass('hide-pause');
         $('.play-btn').removeClass('hide-play');
     });
 
     $('.play-btn').on('click', function () {
         $('.culinary-carousel').slick('slickPlay');
+        $('.culinary-carousel .slick-dots li').addClass('start');
         $('.play-btn').addClass('hide-play');
         $('.pause-btn').removeClass('hide-pause');
     });
@@ -357,6 +363,18 @@ $(document).ready(function () {
         }
         currentNumberOfElements += increaseBy;
         $(this).next(".numberOfVisibleItems").val(currentNumberOfElements);
+    });
+
+    //Press Room Load more
+    $('.press-room-more').on('click', function () {
+        var start = parseInt($('#skipNumber').val());
+        var take = parseInt($('#takeNumber').val());
+        for (var i = start; i < start + take; i++) {
+            var pressRoomID = '#press-room' + i;
+            $(this).parents('.article-room-container').find(pressRoomID).removeClass('hidden')
+        }
+        start += take;
+        $('#skipNumber').val(start);
     });
 
     // Modal Custom scrollbar
@@ -417,7 +435,12 @@ $.fn.menumaker = function (options) {
 function initMap() {
     if ($('#map').length > 0) {
         function initialize() {
-            const myLatlng = new google.maps.LatLng(53.3333, -3.08333);
+
+            var lat = $("#latitude").val();
+            var lng = $("#longitude").val();
+            var addressOnPin = $("#addressOnPin").val();
+
+            const myLatlng = new google.maps.LatLng(lat, lng);
             const mapOptions = {
                 zoom: 13,
                 center: myLatlng,
@@ -426,7 +449,7 @@ function initMap() {
 
             const map = new google.maps.Map(document.getElementById('map'), mapOptions);
             // Callout Content
-            const contentString = 'Some address here..';
+            const contentString = addressOnPin;
             // Set window width + content
             const infowindow = new google.maps.InfoWindow({
                 content: contentString,

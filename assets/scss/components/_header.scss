@@ -1237,6 +1237,7 @@ header {
                     }
                 }
                 padding: 0 0 15px 0;
+                display: block;
                 @include media-md {
                     padding: 0 0 10px 0;
                 }

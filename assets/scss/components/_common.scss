@@ -173,6 +173,17 @@
             margin-bottom: 100px;
         }
     }
+    &.add-top-border {
+        span {
+            border-top: 1px solid #b7b7b7;
+            padding-top: 45px;
+            margin-top: 98px;
+            @include media-xs {
+                padding-top: 25px;
+                margin-top: 50px;
+            }
+        }
+    }
     &.medium-bottom-spacing { 
         margin-bottom: 149px;
         @include media-xs {
