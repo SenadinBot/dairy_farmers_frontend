@@ -323,9 +323,9 @@
     margin-right: 15px;
     width: calc(100% / 2 - 10px);
     vertical-align: top;
-    @include media-lg {
-        margin-right: 0;
-    }
+    // @include media-lg {
+    //     margin-right: 0;
+    // }
     @include media-xs {
         width: 100%;
         margin-right: 0;
