@@ -51,6 +51,7 @@
         }
         .signature-container {
             margin-top: -25px;
+            height: 96px;
             @include media-xs {
                 margin-top: -20px;
             }

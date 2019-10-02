@@ -195,6 +195,8 @@
     .events-details-intro-content {
         margin-left: 130px;
         width: 852px;
+        position: relative;
+        margin-top: -58px;
         @include media-md {
             margin-left: 80px;
             width: 70%;
@@ -206,8 +208,42 @@
         @include media-xs {
             margin-left: 0;
             width: 100%;
-            margin-top: -35px;
+            margin-top: -31px;
             padding: 0 40px;
+        }
+        &:before {
+            content: "";
+            background: rgba(255, 255, 255, 0.9);
+            width: 100%;
+            height: 106px;
+            position: absolute;
+            top: -11px;
+            left: -29px;
+            @include media-xs {
+                left: 25px;
+                width: calc(100vw - 55px);
+                height: 106px;
+            }
+            @include media-xs-landscape {
+                width: calc(100vw - 65px);
+            }
+        }
+        span {
+            &.subtitle {
+                color: $blue;
+                text-transform: uppercase;
+                font-family: $robotoSlabBold;
+                font-size: 24px;
+                line-height: 24px;
+                display: block;
+                padding-top: 10px;
+                margin-top: 0;
+                margin-bottom: -7px;
+                position: relative;
+                @include media-xs {
+                    margin-bottom: -4px;
+                }
+            }
         }
         h1 {
             color: $dark;
@@ -217,29 +253,10 @@
             position: relative;
             z-index: 9;
             padding-right: 50px;
-            margin-top: -60px;
             display: block;
             font-size: 100px;
             line-height: 0.88;
             letter-spacing: 10px;
-            &:before {
-                content: "";
-                background: rgba(255, 255, 255, 0.9);
-                width: 100%;
-                height: 106px;
-                position: absolute;
-                top: -11px;
-                left: -26px;
-                z-index: -9;
-                @include media-xs {
-                    left: -15px;
-                    width: calc(100vw - 55px);
-                    height: 106px;
-                }
-                @include media-xs-landscape {
-                    width: calc(100vw - 65px);
-                }
-            }
             @include media-xs {
                 letter-spacing: initial;
                 padding-right: 0;
@@ -549,6 +566,7 @@
     }
     &.restaurantes-banner-container {
         margin-bottom: 48px;
+        margin-top: 0;
         .events-details-intro-content {
             position: relative;
             &:before {
@@ -627,6 +645,10 @@
                     text-transform: uppercase;
                     padding-top: 10px;
                     margin-top: -60px;
+                    @include media-xs {
+                        margin-bottom: 0px;
+                        margin-top: -39px;
+                    }
                 }
             }
         }
@@ -718,6 +740,10 @@
         margin-top: 50px;
         margin-bottom: 54px;
         position: relative;
+        @include media-xs {
+            margin-top: 40px;
+            margin-bottom: 44px;
+        }
         img {
             max-width: 100%;
             max-height: 100%;
@@ -768,7 +794,7 @@
             padding-bottom: 70px;
         }
         @include media-xs {
-            padding: 0 30px 70px 30px;
+            padding: 0 30px 50px 30px;
         }
         .img-container {
             width: 520px;
