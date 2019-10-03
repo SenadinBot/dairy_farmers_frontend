@@ -562,6 +562,9 @@
             width: 20%;
             display: inline-block;
             overflow: hidden;
+            @include media-lg {
+                margin: 45px 8.5px 0 8.5px; 
+            }
             @include media-xs {
                 margin: 0 5px 0 5px; 
                 height: 174px;
