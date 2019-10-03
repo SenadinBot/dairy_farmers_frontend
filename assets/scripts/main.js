@@ -391,12 +391,8 @@ $(document).ready(function () {
     });
 
     // Recipe List Filter
-    $('.choosen-filter-item').on('click', function () {
-        $(this).addClass('animated fadeOutLeft')
-        var clickThis = $(this);
-        setTimeout(function () {
-            clickThis.remove();
-        }, 500);
+    $('body').on('click', '.choosen-filter-item input', function () {
+        $(this).parent().addClass('animated fadeOutLeft')
     });
     $('.explore-main-btn-container .primary-btn').on('click', function () {
         $(this).toggleClass('active-btn');

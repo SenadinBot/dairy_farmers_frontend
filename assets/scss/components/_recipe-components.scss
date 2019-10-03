@@ -921,14 +921,14 @@
         }
     }
     .explore-recipers-inner-container {
-        padding: 62px 0 27px 0;
+        padding: 62px 0 0 0;
         background-color: rgba(0,0,0,0.05);
         @include media-xs {
-            padding: 0 0 22px 0;
+            padding: 0 0 0 0;
         }
         .explore-main-recipers-container {
             background-color: $blue;
-            padding: 50px 0 64px 0;
+            padding: 50px 0 34px 0;
             @include media-xs {
                 overflow-x: scroll;
                 width: 100%;   
@@ -990,7 +990,6 @@
             }
             .explore-main-btn-container {
                 padding-left: 77px;
-                margin-bottom: 31px;
                 @include media-md {
                     padding-left: 0;
                     text-align: center;
@@ -999,46 +998,37 @@
                     padding-left: 0;
                     display: inline-flex;
                     overflow: auto;
-                    width: 120vw;
+                    width: auto;
                 }
                 @include media-xs {
                     padding-left: 0;
                     display: inline-flex;
                     overflow: auto;
                     margin-bottom: 0;
-                    width: 270vw;
-                }
-                @include media-xs-landscape {
-                    width: 160vw;
+                    width: auto;
                 }
                 ul {
                     margin: 0;
                     padding: 0;
                     list-style: none;
+                    text-align: center;
                     li {
                         display: inline-block;
-                        &:first-child {
-                            margin-right: 67px;
-                            @include media-sm {
-                                margin-right: 60px;
-                            }
-                            @include media-xs {
-                                margin-right: 15px;
-                            }
-                        }
-                        &:nth-child(2) {
-                            margin-right: 15px;
-                        }
-                        &:nth-child(3) {
-                            margin-right: 67px;
-                            @include media-sm {
-                                margin-right: 60px;
-                            }
-                            @include media-xs {
-                                margin-right: 15px;
+                        margin-bottom: 18px;
+                        margin-right: 13px;
+                        &:nth-child(4) {
+                            @include media-lg {
+                                margin-right: 0;
                             }
                         }
                         .primary-btn {
+                            border: 2px solid transparent;
+                            white-space: nowrap;
+                            &:hover {
+                                border: 2px solid $white;
+                                color: $white;
+                                background-color: transparent;
+                            }
                             @include media-xs-landscape {
                                 font-size: 32px;
                                 line-height: 32px;
@@ -1085,7 +1075,8 @@
                     &.active-btn {
                         color: $blue;
                         background: $white;
-                        padding-right: 70px;
+                        padding-right: 61px;
+                        padding-left: 47px;
                         @include media-xs {
                             padding-right: 100px;
                         }
@@ -1099,6 +1090,10 @@
                             @include media-xs {
                                 height: 40px;
                             }
+                        }
+                        &:hover {
+                            background-color: $white;
+                            color: $blue;
                         }
                     }
                     img {
@@ -1141,11 +1136,13 @@
         .choosen-filter-container {
             padding-top: 30px;
             padding-left: 90px;
+            padding-bottom: 27px;
             @include media-sm {
                 padding-left: 0;
             }
             @include media-xs {
                 padding-left: 30px;
+                padding-bottom: 22px;
             }
             span {
                 text-transform: uppercase;
@@ -1201,7 +1198,8 @@
                         top: -6px;
                     }
                 }
-                img {
+                img,
+                input {
                     vertical-align: top;
                     width: 31px;
                     height: 30px;

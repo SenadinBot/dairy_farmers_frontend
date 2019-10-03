@@ -628,34 +628,6 @@
                 }
             }
         }
-        &.right-content {
-            &:hover {
-                .info-item-content {
-                    position: relative;
-                    transform: translate(25px, -17px);
-                    -webkit-transform: translate(25px, -17px);
-                    -ms-transform: translate(25px, -17px);
-                    transition: transform .3s linear;
-                    -webkit-transition: transform .3s linear;
-                    -moz-transition: transform .3s linear;
-                    -o-transition: transform .3s linear;
-                }
-            }
-        }
-        &.left-content {
-            &:hover {
-                .info-item-content {
-                    position: relative;
-                    transform: translate(-25px, -17px);
-                    -webkit-transform: translate(-25px, -17px);
-                    -ms-transform: translate(-25px, -17px);
-                    transition: transform .3s linear;
-                    -webkit-transition: transform .3s linear;
-                    -moz-transition: transform .3s linear;
-                    -o-transition: transform .3s linear;
-                }
-            }
-        }
     }
     .info-item-content {
         display: inline-block;
