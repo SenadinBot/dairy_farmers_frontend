@@ -189,6 +189,9 @@
     &.programs-article-list-container {
         margin-top: -46px;
         margin-bottom: 81px;
+        @include media-xs {
+            margin-top: 90px;
+        }
         .article-item-container {
             .article-item-content {
                 .primary-btn {
@@ -526,8 +529,8 @@
             text-transform: uppercase;
             color: $dark;
             font-size: 60px;
+            line-height: 60px;
             letter-spacing: 3px;
-            line-height: normal;
             margin: 0 0 5px 0;
             @include media-xs-portrait {
                 font-size: 46px;

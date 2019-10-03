@@ -1,4 +1,12 @@
 $(document).ready(function () {
+    // Breadcrumb Text Limitation
+    $('.breadcrumb-container .active a').each(function () {
+        var titleLen = $(this).text().length;
+        if (titleLen > 20) {
+            title = $(this).text().substring(0, 20)+'...';
+        }
+        return $(this).html(title);
+    });
     // Add Animation to RTE
     $('.quote-text').attr('data-aos', 'fade-right');
     $('.restaurantes-content-container img').attr('data-aos', 'fade-left');

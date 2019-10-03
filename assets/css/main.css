@@ -3659,16 +3659,11 @@ footer {
     left: 70%; }
     @media (min-width: 768px) and (max-width: 991px) {
       .big-banner-container.one-line-title.top-spacing .banner-title span {
-        width: 119%;
-        top: initial;
-        bottom: 0;
-        transform: none;
-        min-height: initial;
         left: 50%;
-        position: relative;
-        display: block;
-        margin-top: -19px;
-        padding: 84px 0 25px 0; } }
+        width: 100%;
+        transform: translate(-30%, -95%);
+        top: initial;
+        padding-bottom: 25px; } }
     @media (max-width: 767px) {
       .big-banner-container.one-line-title.top-spacing .banner-title span {
         left: 50%;
@@ -3871,7 +3866,7 @@ footer {
         bottom: 25%;
         display: block;
         margin-top: 0;
-        padding: 0;
+        padding: 5% 0 0 0;
         letter-spacing: 4px;
         width: 100%;
         max-width: 85vw; } }
@@ -5324,7 +5319,7 @@ main {
         font-size: 18px;
         color: #ffffff;
         position: relative;
-        padding-left: 20px;
+        padding-left: 17px;
         margin-bottom: 25px; }
         .info-full-width-container.info-list-container ul li:before {
           content: "";
@@ -5335,7 +5330,7 @@ main {
           width: 8px;
           height: 8px;
           position: absolute;
-          top: 8px;
+          top: 7px;
           left: 0; }
     .info-full-width-container.info-list-container.blue-background ul li:before {
       border: 1px solid #ffc600; }
@@ -5817,7 +5812,7 @@ main {
         font-size: 18px;
         color: #000000;
         position: relative;
-        padding-left: 20px;
+        padding-left: 17px;
         margin-bottom: 25px; }
         .info-item-container .info-item-content ul li:before {
           content: "";
@@ -5828,7 +5823,7 @@ main {
           width: 8px;
           height: 8px;
           position: absolute;
-          top: 5px;
+          top: 7px;
           left: 0; }
     .info-item-container .info-item-content p {
       font-family: "Roboto Light";
@@ -6989,6 +6984,9 @@ main {
   .article-list-container.programs-article-list-container {
     margin-top: -46px;
     margin-bottom: 81px; }
+    @media (max-width: 767px) {
+      .article-list-container.programs-article-list-container {
+        margin-top: 90px; } }
     .article-list-container.programs-article-list-container .article-item-container .article-item-content .primary-btn {
       margin-top: 20px; }
       @media (max-width: 767px) {
@@ -7250,8 +7248,8 @@ main {
       text-transform: uppercase;
       color: #000000;
       font-size: 60px;
+      line-height: 60px;
       letter-spacing: 3px;
-      line-height: normal;
       margin: 0 0 5px 0; }
       @media (max-width: 767px) and (orientation: portrait) {
         .news-article-container .news-article-intro h1 {
