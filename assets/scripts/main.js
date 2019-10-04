@@ -403,7 +403,7 @@ $(document).ready(function () {
     $('body').on('click', '.choosen-filter-item input', function () {
         $(this).parent().addClass('animated fadeOutLeft')
     });
-    $('.explore-main-btn-container .primary-btn').on('click', function () {
+    $('body').on('click', '.explore-main-btn-container .primary-btn', function () {
         $(this).toggleClass('active-btn');
     });
 
