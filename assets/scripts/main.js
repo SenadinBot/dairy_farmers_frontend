@@ -354,18 +354,6 @@ $(document).ready(function () {
         $('.pause-btn').removeClass('hide-pause');
     });
 
-    $('#loadMoreRecipes').on('click', function () {
-        debugger;
-        var numberOfElements = parseInt($('#numberOfElements').val());
-        var currentNumberOfElements = parseInt($('#currentNumberOfElements').val());
-        for (var i = currentNumberOfElements; i < (currentNumberOfElements + numberOfElements); i++) {
-            var recipeItemId = '#recipe-item-' + i;
-            $(recipeItemId).removeAttr('hidden');
-        }
-        currentNumberOfElements += numberOfElements;
-        $('#currentNumberOfElements').val(currentNumberOfElements);
-    });
-
     $('.loadMoreArticles').on('click', function () {
         var currentNumberOfElements = parseInt($(this).next('.numberOfVisibleItems').val());
         var isInverted = $(this).siblings(".isInverted").val() == "True";
