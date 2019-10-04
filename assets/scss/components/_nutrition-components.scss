@@ -370,6 +370,7 @@
     }
     .nutrition-background-image-container {
         mix-blend-mode: multiply;
+        opacity: 0.35;
         &:before {
             content: "";
             height: 217%;

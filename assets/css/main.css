@@ -2541,15 +2541,22 @@ footer {
       .milk-info-container .primary-btn {
         width: 60%;
         display: block; } }
-  .milk-info-container .img-container:hover img {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); }
-  .milk-info-container .img-container img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out; }
+  .milk-info-container .img-container {
+    overflow: hidden; }
+    .milk-info-container .img-container:hover img {
+      -ms-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2); }
+    .milk-info-container .img-container img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -o-transition: all .5s;
+      transition: all .5s; }
   .milk-info-container p {
     font-family: "Roboto Light";
     line-height: 1.67; }
@@ -4300,7 +4307,8 @@ main {
     .nutrition-background-image.our-farmers-column-image-container .column-image-container .column-image-item-container .btn-container {
       margin: 40px 0 20px 0; } }
   .nutrition-background-image .nutrition-background-image-container {
-    mix-blend-mode: multiply; }
+    mix-blend-mode: multiply;
+    opacity: 0.35; }
     .nutrition-background-image .nutrition-background-image-container:before {
       content: "";
       height: 217%;
@@ -5774,8 +5782,11 @@ main {
     margin: -8px 0 3px 0; }
   @media (min-width: 992px) {
     .info-item-container:hover .info-item-img-container img {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1); } }
+      -ms-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2); } }
   .info-item-container .info-item-content {
     display: inline-block;
     width: calc(100% / 2 - 11px);
@@ -5871,7 +5882,8 @@ main {
   .info-item-container .info-item-img-container {
     display: inline-block;
     width: calc(100% / 2 - 11px);
-    vertical-align: top; }
+    vertical-align: top;
+    overflow: hidden; }
     @media (max-width: 767px) {
       .info-item-container .info-item-img-container {
         width: 100%;
@@ -5881,8 +5893,10 @@ main {
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
-      -webkit-transition: .3s ease-in-out;
-      transition: .3s ease-in-out; }
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -o-transition: all .5s;
+      transition: all .5s; }
 
 .info-item-additional-info {
   border: 10px solid #0092bc;
@@ -7108,7 +7122,8 @@ main {
   .article-item-container .img-container {
     width: 100%;
     height: auto;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    overflow: hidden; }
     @media (max-width: 767px) {
       .article-item-container .img-container {
         margin-bottom: 20px;
@@ -7117,11 +7132,17 @@ main {
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
-      -webkit-transition: .3s ease-in-out;
-      transition: .3s ease-in-out; }
+      background-repeat: no-repeat;
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -o-transition: all .5s;
+      transition: all .5s; }
     .article-item-container .img-container:hover img {
-      -webkit-transform: scale(1.07);
-      transform: scale(1.07); }
+      -ms-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2); }
   .article-item-container .article-item-content {
     padding-right: 25px; }
     @media (max-width: 767px) {
