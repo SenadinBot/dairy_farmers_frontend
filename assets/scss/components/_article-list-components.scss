@@ -458,6 +458,9 @@
         &:nth-last-child(3) {
             margin-bottom: 98px;
         }
+        @include media-lg {
+            margin-right: 0;
+        }
         @include media-md {
             margin-bottom: 108px;
             &:last-child {
@@ -509,6 +512,9 @@
             }
         }
         .article-item-content {
+            @include media-lg {
+                padding-right: 25px;
+            }
             p {
                 b,
                 strong {
@@ -521,10 +527,10 @@
 .news-article-container {
     margin: 105px 0 148px 0;
     @include media-sm {
-        margin: 110px 0 100px 0;
+        margin: 160px 0 100px 0;
     }
     @include media-xs {
-        margin: 130px 0 100px 0;
+        margin: 100px 0 100px 0;
         padding: 0 30px;
     }
     .news-article-intro {

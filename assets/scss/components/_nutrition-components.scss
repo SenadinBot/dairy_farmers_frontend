@@ -286,6 +286,9 @@
     position: relative;
     &.programs-column-image-container {
         .nutrition-background-image-container {
+            @include media-xs {
+                opacity: 0.4;
+            }
             &:before {
                 height: calc(100% + 200px);
                 @include media-xs {
@@ -298,14 +301,21 @@
                 .column-image-item-container {
                     padding-bottom: 44px;
                     @include media-xs {
-                        padding: 0 0 44px 0;
+                        padding: 0 0 70px 0;
                     }
                     &:after {
                         bottom: 44px;
+                        @include media-xs {
+                            display: block;
+                            bottom: 50px;
+                            width: calc(100% - 80px);
+                            left: 25px;
+                        }
                     }
                 }
             }
             .column-image-item-content {
+                padding-bottom: 17px;
                 @include media-xs {
                     padding-bottom: 10px;
                 }
