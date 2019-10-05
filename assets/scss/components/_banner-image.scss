@@ -650,7 +650,40 @@
                     }
                 }
             }
-            
+            &.opt-out-banner {
+                margin-bottom: 70px;
+                @include media-xs {
+                    margin-bottom: 60px;
+                }
+                .banner-title {
+                    @include media-lg {
+                        margin-left: -78px;
+                    }
+                    span {
+                        @include media-lmd {
+                            font-size: 85px;
+                            line-height: 74.5px;
+                            letter-spacing: 8.5px;
+                            top: 25%;
+                        }
+                    }
+                    .title-border {
+                        &:before {
+                            @include media-lmd {
+                                height: 170px;
+                            }
+                        }
+                        &:after {
+                            @include media-lmd {
+                                height: 115px;
+                            }
+                        }
+                    }
+                }
+                .big-banner-image-container {
+                    height: 530px;
+                } 
+            }
         }
         .banner-title {
             margin-top: -316px;

@@ -3588,6 +3588,28 @@ footer {
           @media (min-width: 992px) and (max-width: 1199px) {
             .big-banner-container.small-banner.top-spacing .banner-title p {
               margin: 38% 0 0 0; } }
+      .big-banner-container.small-banner.top-spacing.opt-out-banner {
+        margin-bottom: 70px; }
+        @media (max-width: 767px) {
+          .big-banner-container.small-banner.top-spacing.opt-out-banner {
+            margin-bottom: 60px; } }
+        @media (min-width: 1200px) {
+          .big-banner-container.small-banner.top-spacing.opt-out-banner .banner-title {
+            margin-left: -78px; } }
+        @media (min-width: 992px) {
+          .big-banner-container.small-banner.top-spacing.opt-out-banner .banner-title span {
+            font-size: 85px;
+            line-height: 74.5px;
+            letter-spacing: 8.5px;
+            top: 25%; } }
+        @media (min-width: 992px) {
+          .big-banner-container.small-banner.top-spacing.opt-out-banner .banner-title .title-border:before {
+            height: 170px; } }
+        @media (min-width: 992px) {
+          .big-banner-container.small-banner.top-spacing.opt-out-banner .banner-title .title-border:after {
+            height: 115px; } }
+        .big-banner-container.small-banner.top-spacing.opt-out-banner .big-banner-image-container {
+          height: 530px; }
     .big-banner-container.small-banner .banner-title {
       margin-top: -316px; }
       .big-banner-container.small-banner .banner-title .title-border {
@@ -13158,104 +13180,90 @@ main {
               .tools-tips-container .tools-container .tools-item-container .tools-item .tools-item-content .download-link {
                 margin-top: 20px; } }
 
-.opt-out-info {
-  font-size: 22px;
-  font-family: "Roboto Light";
-  line-height: 1.55;
-  letter-spacing: normal;
-  text-align: left;
-  max-width: 794px;
-  min-height: 55px;
-  margin-bottom: 103px; }
-  @media (max-width: 767px) {
-    .opt-out-info {
-      margin-left: 9.444vw;
-      margin-right: 9.861vw;
-      font-size: 30px; } }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .opt-out-info {
-      margin-left: calc(100% - 80vw); } }
-  @media (min-width: 992px) and (max-width: 1199px) {
-    .opt-out-info {
-      margin-left: calc(100% - 84vw); } }
-  @media (max-width: 767px) {
-    .opt-out-info span:first-child {
-      display: block;
-      margin-bottom: 5vh; } }
-
-.opt-out-group-input {
-  position: relative; }
-  .opt-out-group-input .opt-out-input {
-    height: auto;
-    font-family: "Roboto Light";
-    font-size: 22px;
-    font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.55;
-    letter-spacing: normal;
-    text-align: left;
-    margin-top: 53px;
-    margin-left: 4px; }
-    @media (max-width: 767px) {
-      .opt-out-group-input .opt-out-input {
-        max-width: 85vw;
-        margin-left: 10.139vw;
-        margin-right: 95px;
-        font-size: 30px;
-        margin-bottom: 5vh; } }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .opt-out-group-input .opt-out-input {
-        max-width: 100vw;
-        font-size: 30px;
-        margin-right: 95px;
-        margin-top: 58px;
-        margin-left: 10vw; } }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      .opt-out-group-input .opt-out-input {
-        margin-left: calc(100% - 75vw); } }
-
-.opt-out-group-button {
-  margin-top: 121px;
+.opt-out-container {
   margin-bottom: 159px; }
-  @media (max-width: 767px) {
-    .opt-out-group-button {
-      margin-left: 10vw;
-      margin-right: 10vw;
-      margin-bottom: 164px;
-      margin-top: 77px; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .opt-out-group-button {
-      margin-left: 84px;
-      margin-right: 120px;
-      max-width: 532px; } }
-  @media (min-width: 992px) and (max-width: 1199px) {
-    .opt-out-group-button {
-      margin-left: calc(100% - 84vw); } }
-  .opt-out-group-button .primary-btn {
-    padding: 15px 50px;
-    line-height: 1;
-    letter-spacing: 1.8px;
-    font-size: 30px; }
-    .opt-out-group-button .primary-btn:first-child {
-      margin-right: 60px; }
+    .opt-out-container {
+      margin-bottom: 129px; } }
+  @media (max-width: 767px) {
+    .opt-out-container {
+      margin-bottom: 99px; } }
+  @media (min-width: 1200px) {
+    .opt-out-container {
+      margin-left: -31px; } }
+  @media (max-width: 767px) {
+    .opt-out-container {
+      padding: 0 30px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .opt-out-container {
+      padding: 0 60px; } }
+  .opt-out-container .opt-out-intro {
+    width: 75%; }
     @media (max-width: 767px) {
-      .opt-out-group-button .primary-btn {
-        display: block;
-        padding: 44px 15px;
-        max-width: 532px;
-        font-size: 32px; }
-        .opt-out-group-button .primary-btn:first-child {
-          margin-bottom: 30px; } }
+      .opt-out-container .opt-out-intro {
+        width: 100%; } }
     @media (min-width: 768px) and (max-width: 991px) {
-      .opt-out-group-button .primary-btn {
-        display: block;
-        padding: 44px 15px;
-        width: 532px;
-        font-size: 45.5px;
-        margin: 0; }
-        .opt-out-group-button .primary-btn:first-child {
-          margin-bottom: 30px; } }
+      .opt-out-container .opt-out-intro {
+        width: 90%; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .opt-out-container .opt-out-intro {
+        width: 90%; } }
+    .opt-out-container .opt-out-intro p {
+      font-family: "Roboto Light";
+      font-size: 22px;
+      line-height: 34px;
+      color: #000000; }
+  .opt-out-container .form-container .custom-checkbox {
+    font-size: 22px;
+    line-height: 30px;
+    padding-top: 0;
+    padding-left: 87px;
+    min-height: 36px;
+    margin-bottom: 53px; }
+    @media (max-width: 767px) {
+      .opt-out-container .form-container .custom-checkbox {
+        line-height: 26px;
+        padding-left: 65px;
+        letter-spacing: 0.5px; } }
+    .opt-out-container .form-container .custom-checkbox:last-child {
+      padding-top: 0; }
+    .opt-out-container .form-container .custom-checkbox:first-child {
+      margin-bottom: 53px; }
+    .opt-out-container .form-container .custom-checkbox input:checked ~ .checkbox-indicator:after {
+      width: 37px;
+      height: 37px;
+      background-image: url("../../../App_Themes/Milk/images/checkbox-selected-opt.svg"); }
+    .opt-out-container .form-container .custom-checkbox .checkbox-indicator {
+      width: 37px;
+      height: 37px;
+      top: -4px; }
+      @media (max-width: 767px) and (orientation: portrait) {
+        .opt-out-container .form-container .custom-checkbox .checkbox-indicator {
+          top: 3px; } }
+      .opt-out-container .form-container .custom-checkbox .checkbox-indicator:after {
+        width: 37px;
+        height: 37px;
+        background-image: url("../../../App_Themes/Milk/images/checkbox-opt.svg"); }
+  .opt-out-container .form-container .agree-checkbox {
+    margin: 93px 0 106px 0; }
+    @media (max-width: 767px) {
+      .opt-out-container .form-container .agree-checkbox {
+        margin: 60px 0 76px 0; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .opt-out-container .form-container .agree-checkbox {
+        margin: 73px 0 86px 0; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .opt-out-container .form-container .agree-checkbox {
+        margin: 83px 0 96px 0; } }
+  .opt-out-container .btn-container .primary-btn:first-child {
+    margin-right: 50px; }
+    @media (max-width: 767px) and (orientation: portrait) {
+      .opt-out-container .btn-container .primary-btn:first-child {
+        margin-right: 0;
+        margin-bottom: 30px; } }
+  @media (max-width: 767px) and (orientation: portrait) {
+    .opt-out-container .btn-container .primary-btn {
+      width: 100%; } }
 
 .boards-directors-container {
   margin-bottom: 80px;

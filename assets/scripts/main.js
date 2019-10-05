@@ -383,9 +383,11 @@ $(document).ready(function () {
     });
 
     // Modal Custom scrollbar
-    $(".board-directors-modal .modal-inner-content").mCustomScrollbar({
-        theme: "minimal"
-    });
+    if ($(".board-directors-modal .modal-inner-content").length) {
+        $(".board-directors-modal .modal-inner-content").mCustomScrollbar({
+            theme: "minimal"
+        });
+    }
 
     // Recipe List Filter
     $('body').on('click', '.choosen-filter-item input', function () {
