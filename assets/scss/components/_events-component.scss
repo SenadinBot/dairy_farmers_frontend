@@ -671,6 +671,19 @@
             width: 100%;
             padding: 0 30px;
         }
+        &:first-child {
+            p { 
+                &:first-letter {
+                    line-height: 30px;
+                    font-size: 72px;
+                    font-family: $robotoSlabBold;
+                    color: $blue;
+                    @include media-xs {
+                        font-size: 52px;
+                    }
+                }
+            } 
+        }
         p {
             font-family: $robotoLight;
             line-height: 30px;
@@ -683,12 +696,12 @@
             @include media-sm {
                 max-width: 90%;
             }
-            span {
-                line-height: 30px;
-                font-size: 72px;
-                font-family: $robotoSlabBold;
-                color: $blue;
-            }
+            // span {
+            //     line-height: 30px;
+            //     font-size: 72px;
+            //     font-family: $robotoSlabBold;
+            //     color: $blue;
+            // }
         }
         .quote-text {
             max-width: initial;

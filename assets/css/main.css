@@ -12020,6 +12020,14 @@ main {
       .events-details-banner-container .restaurantes-content-container {
         width: 100%;
         padding: 0 30px; } }
+    .events-details-banner-container .restaurantes-content-container:first-child p:first-letter {
+      line-height: 30px;
+      font-size: 72px;
+      font-family: "Roboto Slab Bold";
+      color: #0072ce; }
+      @media (max-width: 767px) {
+        .events-details-banner-container .restaurantes-content-container:first-child p:first-letter {
+          font-size: 52px; } }
     .events-details-banner-container .restaurantes-content-container p {
       font-family: "Roboto Light";
       line-height: 30px;
@@ -12032,11 +12040,6 @@ main {
       @media (min-width: 768px) and (max-width: 991px) {
         .events-details-banner-container .restaurantes-content-container p {
           max-width: 90%; } }
-      .events-details-banner-container .restaurantes-content-container p span {
-        line-height: 30px;
-        font-size: 72px;
-        font-family: "Roboto Slab Bold";
-        color: #0072ce; }
     .events-details-banner-container .restaurantes-content-container .quote-text {
       max-width: initial;
       font-family: "Roboto Slab Bold";
