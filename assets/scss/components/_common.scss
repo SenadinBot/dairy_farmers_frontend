@@ -759,6 +759,22 @@
             -moz-transition: all .5s;
             -o-transition: all .5s;
             transition: all .5s;
+            &.info-item-desktop-img {
+                @include media-xs {
+                    display: none;
+                }
+            }
+            &.info-item-mobile-img {
+                @include media-lmd {
+                    display: none;
+                }
+                @include media-sm {
+                    display: none;
+                }
+                @include media-xs {
+                    display: block;
+                }
+            }
         }
     }
 }

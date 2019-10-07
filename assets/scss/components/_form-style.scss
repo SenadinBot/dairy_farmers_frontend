@@ -197,6 +197,7 @@
         }
         &:first-child {
             margin-bottom: 7px;
+            padding-top: 0;
             @include media-xs {
                 margin-bottom: 30px;
             }

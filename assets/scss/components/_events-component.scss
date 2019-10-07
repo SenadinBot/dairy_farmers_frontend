@@ -671,15 +671,17 @@
             width: 100%;
             padding: 0 30px;
         }
-        &:first-child {
+        &.intro-restaurantes-content-container {
             p { 
-                &:first-letter {
-                    line-height: 30px;
-                    font-size: 72px;
-                    font-family: $robotoSlabBold;
-                    color: $blue;
-                    @include media-xs {
-                        font-size: 52px;
+                &:first-child {
+                    &:first-letter {
+                        line-height: 30px;
+                        font-size: 72px;
+                        font-family: $robotoSlabBold;
+                        color: $blue;
+                        @include media-xs {
+                            font-size: 52px;
+                        }
                     }
                 }
             } 
@@ -688,13 +690,14 @@
             font-family: $robotoLight;
             line-height: 30px;
             max-width: 85%;
-            margin-bottom: 25px;
+            margin-bottom: 29px;
             vertical-align: top;
             @include media-xs {
                 max-width: 100%;
+                margin-bottom: 15px;
             }
             @include media-sm {
-                max-width: 90%;
+                max-width: 100%;
             }
             // span {
             //     line-height: 30px;
@@ -703,59 +706,180 @@
             //     color: $blue;
             // }
         }
-        .quote-text {
+        &.quote-text {
+            vertical-align: top;
             max-width: initial;
-            font-family: $robotoSlabBold;
-            font-size: 36px;
-            line-height: 48px;
-            color: #54585a;
             display: inline-block;
-            width: 41%;
-            position: relative;
-            &:after,
-            &:before {
-                position: absolute;
-                font-size: 225px;
-                line-height: 0;
-                color: $mainColor;
-                opacity: 0.2;
-                font-family: $arialMT;
-            }
-            &:before {
-                content: "“";
-                left: -9px;
-                top: 92px;
-            }
-            &:after {
-                content: "”";
-                bottom: -60px;
-                right: 0;
+            width: 34%;
+            margin-right: 25px;
+            p {
+                font-family: $robotoSlabBold;
+                font-size: 36px;
+                line-height: 48px;
+                color: #54585a;
+                position: relative;
+                max-width: 100%;
+                margin-bottom: 0;
+                &:after,
+                &:before {
+                    position: absolute;
+                    font-size: 225px;
+                    line-height: 0;
+                    color: $mainColor;
+                    opacity: 0.2;
+                    font-family: $arialMT;
+                }
+                &:before {
+                    content: "“";
+                    left: -9px;
+                    top: 92px;
+                }
+                &:after {
+                    content: "”";
+                    bottom: -60px;
+                    right: 0;
+                }
             }
             @include media-xs {
                 width: 100%;
                 margin-bottom: 50px;
             }
+            @include media-sm {
+                width: 45.5%;
+            }
+            &.middle-align {
+                vertical-align: middle;
+            }
         }
-        .middle-align {
-            vertical-align: middle;
-        }
-        .quote-line-text {
+        &.quote-line-text {
+            vertical-align: top;
             display: inline-block;
-            width: 44%;
-            padding-left: 14px;
+            width: 41%;
+            padding-top: 10px;
             @include media-xs {
                 width: 100%;
-                padding-left: 0;
+            }
+            @include media-sm {
+                width: 50%;
+            }
+            &.middle-align {
+                vertical-align: middle;
+            }
+            p {
+                @include media-md {
+                    max-width: 90%;
+                }  
+            }
+        }
+        &.small-content {
+            display: inline-block;
+            width: 35%;
+            margin-right: 14px;
+            vertical-align: top;
+            @include media-sm {
+                width: 45.5%;
+            }
+            @include media-xs {
+                width: 100%;
+                margin-right: 0;
+            }
+            p {
+                max-width: 100%;
+            }
+        }
+        &.medium-img-content {
+            width: 520px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 8px;
+            @include media-sm {
+                width: 50%;
+            }
+            @include media-xs {
+                width: 100%;
+                margin-bottom: 40px;
+            }
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+            span {
+                color: $dark;
+                display: block;
+                font-size: 14px;
+                line-height: 30px;
+                font-family: $robotoLightItalic;
+                margin-top: 8px;
+                @include media-sm {
+                    line-height: 20px;
+                    margin-top: 12px;
+                }
+                @include media-xs {
+                    line-height: 16px;
+                    margin-top: 12px;
+                }
+            }
+        }
+        &.medium-content {
+            display: inline-block;
+            width: 44.5%;
+            margin-right: 44px;
+            vertical-align: top;
+            @include media-sm {
+                width: 45.5%;
+                margin-right: 14px;
+            }
+            @include media-xs {
+                width: 100%;
+                margin-right: 0;
+            }
+            p {
+                max-width: 100%;
+            }
+        }
+        &.small-img-content {
+            width: 386px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 8px;
+            @include media-sm {
+                width: 50%;
+            }
+            @include media-xs {
+                width: 100%;
+                margin-bottom: 40px;
+            }
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+            span {
+                color: $dark;
+                display: block;
+                font-size: 14px;
+                line-height: 30px;
+                font-family: $robotoLightItalic;
+                margin-top: 8px;
+                @include media-sm {
+                    line-height: 20px;
+                    margin-top: 12px;
+                }
+                @include media-xs {
+                    line-height: 16px;
+                    margin-top: 12px;
+                }
             }
         }
     }
     .restaurantes-main-img-container {
         margin-top: 50px;
-        margin-bottom: 54px;
+        margin-bottom: 48px;
         position: relative;
         @include media-xs {
-            margin-top: 40px;
-            margin-bottom: 44px;
+            margin-top: 25px;
+            margin-bottom: 37px;
         }
         img {
             max-width: 100%;
@@ -785,6 +909,7 @@
             margin-bottom: 15px;
             @include media-xs {
                 height: auto;
+                margin-bottom: 13px;
             }
             @include media-sm {
                 height: auto;
@@ -808,6 +933,7 @@
         }
         @include media-xs {
             padding: 0 30px 50px 30px;
+            margin-top: 50px;
         }
         .img-container {
             width: 520px;
@@ -1018,6 +1144,12 @@
                     }
                     &:first-child {
                         margin-bottom: 32px;
+                    }
+                    &.form-error {
+                        .error-msg {
+                            left: 49px;
+                            bottom: -20px;
+                        }
                     }
                 }
             }

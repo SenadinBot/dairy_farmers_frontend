@@ -8,8 +8,6 @@ $(document).ready(function () {
         }
     });
     // Add Animation to RTE
-    $('.quote-text').attr('data-aos', 'fade-right');
-    $('.restaurantes-content-container img').attr('data-aos', 'fade-left');
     $('.events-details-content img').attr('data-aos', 'fade-left');
 
     // Video Modal
