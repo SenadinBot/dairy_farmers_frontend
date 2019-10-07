@@ -180,7 +180,7 @@
                 padding: 0 0 25px 95px;
             }
         }
-        span {
+        span, h1 {
             @include acuminProExtraCondBlack();            
             font-size: 125px;
             line-height: 0.88;
@@ -627,7 +627,7 @@
                         }
                     }
                 }
-                span {
+                span, h1 {
                     top: 19%;
                     @include media-sm {
                         top: initial;
@@ -659,7 +659,7 @@
                     @include media-lg {
                         margin-left: -78px;
                     }
-                    span {
+                    span, h1 {
                         @include media-lmd {
                             font-size: 85px;
                             line-height: 74.5px;
@@ -743,7 +743,7 @@
                             background-color: $blue;
                         }
                     }
-                    span {
+                    span, h1 {
                         color: $white;
                         @include media-lmd {
                             top: 26%;
@@ -879,7 +879,7 @@
                             height: 136px;
                         }
                     }
-                    span {
+                    span, h1 {
                         color: $white;
                         @include media-lmd {
                             top: 26%;
@@ -943,7 +943,7 @@
             @include media-sm {
                 margin-top: 0;
             }
-            span {
+            span, h1 {
                 top: 20%;
                 @include media-sm {
                     top: initial;
@@ -977,7 +977,7 @@
     }
     &.one-line-title {
         .banner-title {
-            span {
+            span, h1 {
                 top: 41%;
                 left: 70%;
                 @include media-sm {
@@ -1001,7 +1001,7 @@
         }
         &.top-spacing {
             .banner-title {
-                span {
+                span, h1 {
                     top: 38%;
                     left: 70%;
                     @include media-sm {
@@ -1020,7 +1020,7 @@
             }
             &.press-room {
                 .banner-title {
-                    span {
+                    span, h1 {
                         @include media-sm {
                             top: initial;
                             padding-bottom: 230px;
@@ -1047,7 +1047,7 @@
                         height: 170px;
                     }
                 }
-                span {
+                span, h1 {
                     @include media-sm {
                         top: initial;
                         padding-bottom: 230px;
@@ -1076,7 +1076,7 @@
                         height: 170px;
                     }
                 }
-                span {
+                span, h1 {
                     @include media-sm {
                         top: initial;
                         padding-bottom: 230px;
@@ -1101,7 +1101,7 @@
     }
     &.three-line-title {
         .banner-title {
-            span {
+            span, h1 {
                 @include media-xs {
                     transform: translate(-30%, -36%);
                 }
@@ -1114,7 +1114,7 @@
     }
     &.white-title {
         .banner-title {
-            span {
+            span, h1 {
                 color: $white;
                 @include media-xs {
                     color: $dark;
@@ -1217,7 +1217,7 @@
             }
         }
     }
-    span {
+    span, h1 {
         color: $dark;
         font-size: 100px;
         line-height: 88px;
