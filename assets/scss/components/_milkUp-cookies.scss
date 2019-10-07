@@ -202,7 +202,25 @@
         color: $dark;
     }
     .social-container {
-
+        margin: 24px 0 17px 0;
+        img {
+            width: 129px;
+            height: 128px;
+            background-color: red;
+            @include media-xs-portrait {
+                width: 79px;
+                height: 78px;
+            }
+        }
+        a {
+            margin-right: 42px;
+            &:last-child {
+                margin-right: 0;
+            }
+            @include media-xs-portrait {
+                margin-right: 20px;
+            }
+        }
     }
     span {
         color: $dark;
@@ -229,9 +247,15 @@
     h2 {
         color: $dark;
         margin-bottom: 43px;
+        @include media-xs {
+            position: absolute;
+            top: 0;
+            left: 40px;
+            width: calc(100% - 80px);
+        }
     }
     .partners-content-container {
-        padding: 57px 0 68px 0;
+        padding: 57px 0 51px 0;
         margin-bottom: 90px;
         position: relative;
         display: flex;
@@ -250,23 +274,34 @@
                 background-image: url("/App_Themes/Milk/images/img-background-wood-720-w@3x.png");
             }
         }
-        &:after {
-            content: "";
-            width: 530px;
-            height: 5px;
-            background-color: #ffc600;
-            position: absolute;
-            bottom: 51px;
-            left: 0;
-            margin-left: 15px;
-            @include media-xs {
-                display: none;
-            }
-        }
         .partners-inner-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            position: relative;
+            padding-bottom: 15px;
+            &:after {
+                content: "";
+                width: 530px;
+                height: 5px;
+                background-color: #ffc600;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                margin-left: 15px;
+                @include media-xs {
+                    display: none;
+                }
+                @include media-sm {
+                    width: 450px;
+                }
+                @include media-md {
+                    left: -40px;
+                }
+                @include media-lg {
+                    left: -67px;
+                }
+            }
         }
         .partners-content-item {
             text-align: center;
@@ -296,6 +331,140 @@
             img {
                 margin-bottom: 15px;
             }
+        }
+    }
+}
+.milk-up-jarallax-container {
+    margin-bottom: 105px;
+    margin-top: -66px;
+    .jarallax-container {
+        height: 640px;
+        position: relative;
+        &:first-child {
+            .jarallax-content {
+                left: -50px;
+                top: -51px;
+            }
+        }
+        &:last-child {
+            .jarallax-content {
+                right: 0;
+                top: -275px;
+                padding: 47px 38px 41px 49px;
+            }
+        }
+    }
+    .jarallax {
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        @include media-xs {
+            position: relative;
+            height: auto;
+        }
+        @include media-sm {
+            position: relative;
+            height: auto;
+        }
+        @include media-md {
+            position: relative;
+            height: auto;
+        }
+    }
+    .full-bg-img-container {
+        height: 423px;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .primary-btn {
+        position: absolute;
+        top: 50%;
+        left: 57%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        margin-top: 45px;
+        @include media-xs-landscape {
+            width: 421px;
+        }
+        @include media-xs-portrait {
+            width: calc(100% - 80px);
+        }
+        @include media-xs {
+            margin-top: 85px;
+        }
+        @include media-sm {
+            margin-top: 67px;
+        }
+        @include media-md {
+            margin-top: 67px;
+        }
+        &:hover {
+            color: #54585a;
+            background: $white;
+            &:before {
+                background-image: url("/App_Themes/Milk/images/hover_btn_play_video.svg");
+            }
+        }
+        &:before {
+            content: "";
+            width: 90px;
+            height: 90px;
+            position: absolute;
+            top: -132px;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            background-image: url("/App_Themes/Milk/images/play.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-transition: all .3s ease 0s;
+            -moz-transition: all .3s ease 0s;
+            -o-transition: all .3s ease 0s;
+            transition: all .3s ease 0s;
+            @include media-xs-portrait {
+                width: 50px;
+                height: 50px;
+                top: -80px;
+            }
+            @include media-xs-portrait {
+                margin-top: 0;
+            }
+        }
+    }
+    .jarallax-content {
+        width: 473px;
+        position: absolute;
+        padding: 47px 38px 52px 49px;
+        background-image: linear-gradient(100deg, #13a8d3, #009bc5), linear-gradient(to bottom, #0072ce, #0072ce);
+        z-index: 9;
+        p {
+            color: $white;
+            font-family: $robotoLight;
+            margin: 0;
+            line-height: 30px;
+        }
+        h4 {
+            color: $white;
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+            line-height: 34px;
+        }
+        span {
+            color: $white;
+            display: block;
+            font-family: $robotoSlabBold;
+            font-size: 18px;
+            line-height: 18px;
+            text-transform: uppercase;
         }
     }
 }

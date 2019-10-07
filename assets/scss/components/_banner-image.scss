@@ -718,7 +718,7 @@
                         margin-top: -1070px;
                     }
                     @include media-sm {
-                        margin-top: -1100px;
+                        margin-top: -1035px;
                     }
                     @include media-xs {
                         margin-top: -140%;
@@ -726,9 +726,9 @@
                     @include media-xs-landscape {
                         margin-top: -137%;
                     }
-                    // @media only screen and (min-width: 411px) and (max-width: 823px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3.5) {
-                    //     margin-top: -163%;
-                    // }
+                    @media only screen and (min-width: 411px) and (max-width: 823px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3.5) {
+                        margin-top: -163%;
+                    }
                     @media only screen and (min-width: 411px) and (max-width: 731px) and (orientation: landscape) {
                         margin-top: -137%;
                     }

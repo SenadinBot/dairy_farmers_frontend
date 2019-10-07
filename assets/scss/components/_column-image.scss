@@ -49,6 +49,36 @@
             }
         }
     }
+    &.milk-up-column-image-container {
+        margin-bottom: 110px;
+        @include media-sm {
+            margin-bottom: 70px;
+        }
+        @include media-xs {
+            margin-bottom: 70px;
+        }
+        .column-image-intro {
+            @include media-xs {
+                margin-bottom: 70px;
+            }
+            h2 {
+                width: 100%;
+            }
+        }
+        .column-image-item-container {
+            background-color: $mainColor;
+            padding-bottom: 64px;
+            &:after {
+                display: none;
+            }
+            .column-image-item-content {
+                padding-bottom: 0;
+                @include media-xs {
+                    margin-top: -50px;
+                }
+            }
+        }
+    }
     .column-image-item-container {
         position: relative;
         padding-bottom: 43px;

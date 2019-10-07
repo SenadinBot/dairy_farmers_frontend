@@ -1,4 +1,11 @@
 $(document).ready(function () {
+    /* init Jarallax */
+    $(window).on('load resize orientationchange', function () {
+        if ($(window).width() > 768) {
+            jarallax(document.querySelectorAll('.jarallax'));
+        }
+    });
+
     // Breadcrumb Text Limitation
     $('.breadcrumb-container .active a').each(function () {
         var titleLen = $(this).text().length;
