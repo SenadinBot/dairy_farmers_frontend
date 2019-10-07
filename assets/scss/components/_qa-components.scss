@@ -14,6 +14,27 @@
         &:last-child {
             margin-bottom: 50px;
         }
+        .info-item-img-container {
+            overflow: visible;
+        }
+        &:hover {
+            .info-item-img-container {
+                img {
+                    -ms-transform: none;
+                    -moz-transform: none;
+                    -webkit-transform: none;
+                    -o-transform: none;
+                    transform: none;
+                    @include media-lg {
+                        -ms-transform: none;
+                        -moz-transform: none;
+                        -webkit-transform: none;
+                        -o-transform: none;
+                        transform: none;
+                    }
+                }
+            }
+        }
     }
 }
 .farmer-verification-container {

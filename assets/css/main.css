@@ -8734,6 +8734,25 @@ main {
 .qa-container .info-item-container:last-child {
   margin-bottom: 50px;
 }
+.qa-container .info-item-container .info-item-img-container {
+  overflow: visible;
+}
+.qa-container .info-item-container:hover .info-item-img-container img {
+  -ms-transform: none;
+  -moz-transform: none;
+  -webkit-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+@media (min-width: 1200px) {
+  .qa-container .info-item-container:hover .info-item-img-container img {
+    -ms-transform: none;
+    -moz-transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+}
 
 .farmer-verification-container {
   background-repeat: no-repeat;
