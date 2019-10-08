@@ -2,7 +2,7 @@ $(document).ready(function () {
     /* init Jarallax */
     if ($('.jarallax').length) {
         $(window).on('load resize orientationchange', function () {
-            if ($(window).width() > 768) {
+            if ($(window).width() > 992) {
                 jarallax(document.querySelectorAll('.jarallax'));
             }
         });

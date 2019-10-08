@@ -753,6 +753,9 @@
             &.middle-align {
                 vertical-align: middle;
             }
+            &.right-side {
+                margin-right: 0;
+            }
         }
         &.quote-line-text {
             vertical-align: top;
@@ -767,6 +770,9 @@
             }
             &.middle-align {
                 vertical-align: middle;
+            }
+            &.right-side {
+                
             }
             p {
                 @include media-md {
@@ -786,6 +792,9 @@
                 width: 100%;
                 margin-right: 0;
             }
+            &.right-side {
+                
+            }
             p {
                 max-width: 100%;
             }
@@ -801,6 +810,17 @@
             @include media-xs {
                 width: 100%;
                 margin-bottom: 40px;
+            }
+            &.right-side {
+                margin-right: 44px;
+                width: 370px;
+                @include media-sm {
+                    width: 45.5%;
+                }
+                @include media-xs {
+                    margin-right: 0;
+                    width: 100%;
+                }
             }
             img {
                 max-width: 100%;
@@ -837,6 +857,9 @@
                 width: 100%;
                 margin-right: 0;
             }
+            &.right-side {
+                margin-right: 0;
+            }
             p {
                 max-width: 100%;
             }
@@ -857,6 +880,15 @@
                 max-width: 100%;
                 max-height: 100%;
                 object-fit: contain;
+            }
+            &.right-side {
+                margin-right: 44px;
+                @include media-xs {
+                    margin-right: 0;
+                }
+                @include media-sm {
+                    margin-right: 20px;
+                }
             }
             span {
                 color: $dark;

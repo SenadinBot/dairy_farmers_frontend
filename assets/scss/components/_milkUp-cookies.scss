@@ -198,15 +198,29 @@
 }
 .milkup-social-description {
     text-align: center;
+    @include media-xs {
+        padding: 0 30px;
+    }
     h2 {
         color: $dark;
+        @include media-xs-portrait {
+            font-size: 56px;
+            line-height: 56px;
+        }
     }
     .social-container {
         margin: 24px 0 17px 0;
+        @include media-xs {
+            margin: 30px 0 45px 0;
+        }
         img {
             width: 129px;
             height: 128px;
-            background-color: red;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
             @include media-xs-portrait {
                 width: 79px;
                 height: 78px;
@@ -220,6 +234,11 @@
             @include media-xs-portrait {
                 margin-right: 20px;
             }
+            &:hover {
+                img {
+                    opacity: 0.8;
+                }
+            }
         }
     }
     span {
@@ -231,6 +250,18 @@
         line-height: 72px;
         text-transform: uppercase;
         margin-bottom: 136px;
+        letter-spacing: 3px;
+        @include media-sm {
+            margin-bottom: 100px;
+        }
+        @include media-xs {
+            margin-bottom: 90px;
+            letter-spacing: 3.6px;
+        }
+        @include media-xs-portrait {
+            font-size: 56px;
+            line-height: 56px;
+        }
     }
     p {
         font-family: $robotoLight;
@@ -240,6 +271,7 @@
         margin-bottom: 32px;
         @include media-xs {
             text-align: left;
+            margin-bottom: 80px;
         }
     }
 }
@@ -249,9 +281,15 @@
         margin-bottom: 43px;
         @include media-xs {
             position: absolute;
-            top: 0;
             left: 40px;
-            width: calc(100% - 80px);
+        }
+        @include media-xs-portrait {
+            font-size: 56px;
+            line-height: 56px;
+            top: 58px;            
+        }
+        @include media-xs-landscape {
+            top: 45px;
         }
     }
     .partners-content-container {
@@ -259,6 +297,16 @@
         margin-bottom: 90px;
         position: relative;
         display: flex;
+        @include media-sm {
+            margin-bottom: 70px;
+        }
+        @include media-xs {
+            margin-bottom: 50px;
+            padding: 175px 0 40px 0;
+        }
+        @include media-xs-landscape { 
+            padding: 155px 0 40px 0;
+        }
         &:before {
             content: "";
             height: 100%;
@@ -280,6 +328,9 @@
             justify-content: center;
             position: relative;
             padding-bottom: 15px;
+            @include media-xs {
+                padding: 0 30px 15px 30px;
+            }
             &:after {
                 content: "";
                 width: 530px;
@@ -319,6 +370,9 @@
             letter-spacing: 1.77px;
             color: $dark;
             margin-bottom: 80px;
+            @include media-xs {
+                margin-bottom: 50px;
+            }
             span {
                 text-transform: uppercase;
                 @include acuminProExtraCondBlack();
@@ -337,13 +391,46 @@
 .milk-up-jarallax-container {
     margin-bottom: 105px;
     margin-top: -66px;
+    @include media-xs {
+        margin-bottom: 70px;
+        margin-top: 70px;
+        position: relative;
+    }
+    @include media-sm {
+        margin-bottom: 70px;
+        margin-top: 30px;
+        position: relative;
+    }
     .jarallax-container {
         height: 640px;
         position: relative;
+        @include media-md {
+            height: 500px;
+        }
+        @include media-sm {
+            height: 400px;
+        }
+        @include media-xs {
+            height: auto;
+        }
         &:first-child {
+            @include media-xs {
+                margin-bottom: 75px;
+            }
             .jarallax-content {
                 left: -50px;
                 top: -51px;
+                @include media-md {
+                    left: 0;
+                }
+                @include media-sm {
+                    left: 15px;
+                }
+                @include media-xs {
+                    left: 0;
+                    top: 0;
+                    margin-top: -100px;
+                }
             }
         }
         &:last-child {
@@ -351,6 +438,22 @@
                 right: 0;
                 top: -275px;
                 padding: 47px 38px 41px 49px;
+                @include media-sm {
+                    padding: 37px 28px 31px 35px;
+                    right: 15px;
+                }
+                @include media-xs {
+                    padding: 37px 28px 31px 35px;
+                    margin-bottom: -30px;
+                    top: 0;
+                }
+            }
+            .jarallax {
+                .jarallax-img {
+                    // @include media-sm {
+                    //     object-position: 0% 50% !important;
+                    // }
+                }
             }
         }
     }
@@ -366,21 +469,62 @@
             position: relative;
             height: auto;
         }
-        @include media-sm {
-            position: relative;
-            height: auto;
+        .jarallax-img {
+            @include media-xs {
+                display: none;
+            }
+            @include media-sm {
+                max-width: 100%;
+                max-height: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
-        @include media-md {
-            position: relative;
-            height: auto;
+        .mobile-jarallax-img {
+            @include media-lmd {
+                display: none;
+            }
+            @include media-sm {
+                display: none;
+            }
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
         }
     }
     .full-bg-img-container {
         height: 423px;
+        @include media-md {
+            height: 350px;
+        }
+        @include media-sm {
+            height: 350px;
+        }
+        @include media-xs {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
         img {
             height: 100%;
             width: 100%;
             object-fit: cover;
+        }
+        .desktop-full-bg-img-container {
+            @include media-xs {
+                display: none;
+            }
+        }
+        .mobile-full-bg-img-container {
+            @include media-sm {
+                display: none;
+            }
+            @include media-lmd {
+                display: none;
+            }
         }
     }
     .primary-btn {
@@ -391,17 +535,22 @@
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         margin-top: 45px;
+        @include media-xs {
+            margin-top: -117px;
+            transform: translateX(-50%);
+            left: 50%;
+            top: initial;
+        }
         @include media-xs-landscape {
             width: 421px;
+            margin-top: -180px;
         }
         @include media-xs-portrait {
             width: calc(100% - 80px);
         }
-        @include media-xs {
-            margin-top: 85px;
-        }
         @include media-sm {
             margin-top: 67px;
+            left: 50%;
         }
         @include media-md {
             margin-top: 67px;
@@ -446,11 +595,22 @@
         padding: 47px 38px 52px 49px;
         background-image: linear-gradient(100deg, #13a8d3, #009bc5), linear-gradient(to bottom, #0072ce, #0072ce);
         z-index: 9;
+        @include media-sm {
+            padding: 35px 28px 35px 35px;            
+        }
+        @include media-xs {
+            width: 100%;
+            padding: 35px 28px 35px 35px;            
+            position: relative;
+        }
         p {
             color: $white;
             font-family: $robotoLight;
             margin: 0;
             line-height: 30px;
+            @include media-xs {
+                line-height: 24px;
+            }
         }
         h4 {
             color: $white;
