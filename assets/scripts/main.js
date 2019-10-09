@@ -67,7 +67,7 @@ $(document).ready(function () {
 
     // Custom recipe gallery slider
     let viewwidth = window.innerWidth;
-    $('.recipes-range').on('input', function () {
+    $('.recipes-range').on('input change', function () {
         let width = $('.recipes-carousel-inner').width() - $('.recipes-carousel').width() + (viewwidth * 0.08);
         let value = $(this).val() * 0.01;
         let slide = width * value;

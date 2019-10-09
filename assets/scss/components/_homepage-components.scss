@@ -191,7 +191,7 @@
                 padding-left: 10px;
             }
             @media all and (-ms-high-contrast:none) {
-                width: 1000%;
+                width: calc(6 * 540px);
             }
         }
         .recipes-slide {

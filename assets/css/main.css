@@ -2565,7 +2565,6 @@ footer .footer-help .btn-container a {
 }
 .form-container .custom-checkbox:first-child {
   margin-bottom: 7px;
-  padding-top: 0;
 }
 @media (max-width: 767px) {
   .form-container .custom-checkbox:first-child {
@@ -2629,6 +2628,9 @@ footer .footer-help .btn-container a {
   .form-container .agree-checkbox {
     width: 100%;
   }
+}
+.form-container .agree-checkbox.one-checkbox .custom-checkbox:first-child {
+  padding-top: 7px;
 }
 .form-container .agree-checkbox label a {
   position: relative;
@@ -3014,7 +3016,7 @@ footer .footer-help .btn-container a {
 }
 @media all and (-ms-high-contrast: none) {
   .recipes-carousel-container .recipes-carousel .recipes-carousel-inner {
-    width: 1000%;
+    width: calc(6 * 540px);
   }
 }
 .recipes-carousel-container .recipes-carousel .recipes-slide {

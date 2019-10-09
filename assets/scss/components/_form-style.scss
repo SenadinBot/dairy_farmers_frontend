@@ -197,7 +197,6 @@
         }
         &:first-child {
             margin-bottom: 7px;
-            padding-top: 0;
             @include media-xs {
                 margin-bottom: 30px;
             }
@@ -251,6 +250,13 @@
         }
         @include media-xs {
             width: 100%;
+        }
+        &.one-checkbox {
+            .custom-checkbox {
+                &:first-child {
+                    padding-top: 7px;
+                }
+            }
         }
         label {
             a {
