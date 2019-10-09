@@ -7140,11 +7140,6 @@ main {
     margin-bottom: 90px;
   }
 }
-@media (max-width: 767px) {
-  .esmp-container.esmp-about-container .info-item-container.right-content .info-item-img-container {
-    padding: 0 30px;
-  }
-}
 .esmp-container.esmp-dairy-container {
   margin-top: -50px;
 }

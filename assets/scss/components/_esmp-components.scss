@@ -258,9 +258,9 @@
             }
             &.right-content {
                 .info-item-img-container {
-                    @include media-xs {
-                        padding: 0 30px;
-                    }
+                    // @include media-xs {
+                    //     padding: 0 30px;
+                    // }
                 }
             }
         }
