@@ -248,6 +248,11 @@ a {
     .modal {
         z-index: 99991;
     }
+    @supports (-webkit-overflow-scrolling: touch) {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
 }
 .modal-backdrop {
     z-index: 9999;

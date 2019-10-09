@@ -619,19 +619,6 @@
         text-transform: uppercase;
         margin: -8px 0 3px 0;
     }
-    @include media-lmd {
-        &:hover {
-            .info-item-img-container {
-                img {
-                    -ms-transform: scale(1.05);
-                    -moz-transform: scale(1.05);
-                    -webkit-transform: scale(1.05);
-                    -o-transform: scale(1.05);
-                    transform: scale(1.05);
-                }
-            }
-        }
-    }
     .info-item-content {
         display: inline-block;
         width: calc(100% / 2 - 11px);            
@@ -750,6 +737,17 @@
             width: 100%;
             order: 1; 
             margin-bottom: 25px;
+        }
+        @include media-lmd {
+            &:hover {
+                img {
+                    -ms-transform: scale(1.05);
+                    -moz-transform: scale(1.05);
+                    -webkit-transform: scale(1.05);
+                    -o-transform: scale(1.05);
+                    transform: scale(1.05);
+                }
+            }
         }
         img {
             max-width: 100%;

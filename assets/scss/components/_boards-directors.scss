@@ -208,25 +208,18 @@
         padding: 0;
         border: none;
         position: absolute;
-        top: -57px;
+        top: -33px;
         right: 137px;
-        @media (min-width: 1200px) and (max-width: 1440px) {
-            top: -36px;
-        }
         @include media-sm {
-            top: -33px;
             right: 80px;
-        }
-        @include media-md {
-            top: -40px;
         }
         @include media-xs {
             top: -28px;
-            right: 11px;
+            right: 15px;
         }
         img {
-            width: 115px;
-            height: 115px;
+            width: 65px;
+            height: 65px;
             object-fit: contain;
             cursor: pointer;
             -webkit-transition: all 0.3s ease;
@@ -237,18 +230,6 @@
             z-index: 9;
             &:hover {
                 opacity: 0.95;
-            }
-            @media (min-width: 1200px) and (max-width: 1440px) {
-                width: 75px;
-                height: 75px;
-            }
-            @include media-sm {
-                width: 65px;
-                height: 65px;
-            }
-            @include media-md {
-                width: 75px;
-                height: 75px;
             }
             @include media-xs {
                 width: 55px;
@@ -278,6 +259,12 @@
                 -ms-transform: none;
                 transform: none;
                 top: 20%;
+            }
+            @supports (-webkit-overflow-scrolling: touch) {
+                top: 0%;
+                -webkit-transform: none;
+                -ms-transform: none;
+                transform: translateY(30%);            
             }
         }
     }
@@ -460,14 +447,14 @@
 .mCSB_scrollTools {
     opacity: 1 !important;
     .mCSB_dragger {
-        height: 82px !important;        
+        height: 78px !important;        
     }
     .mCSB_draggerRail {
         display: none;
     }
 }
 .mCSB_dragger_bar {
-    height: 82px !important;
+    height: 78px !important;
     &:after {
         content: "";
         width: 41px;
@@ -478,5 +465,6 @@
         background-image: url("/App_Themes/Milk/images/modal-ui-slider-vertical.svg");
         position: relative;
         left: -18px;
+        top: -3px;
     }
 }
