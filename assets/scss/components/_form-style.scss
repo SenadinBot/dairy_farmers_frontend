@@ -195,16 +195,17 @@
                 }
             }
         }
-        &:first-child {
-            margin-bottom: 7px;
-            @include media-xs {
-                margin-bottom: 30px;
-            }
-        }
         &:last-child {
             padding-top: 20px;
             @include media-xs {
                 padding-top: 7px;
+            }
+        }
+        &:first-child {
+            margin-bottom: 7px;
+            padding-top: 7px;
+            @include media-xs {
+                margin-bottom: 30px;
             }
         }
         .checkbox-indicator {
@@ -250,13 +251,6 @@
         }
         @include media-xs {
             width: 100%;
-        }
-        &.one-checkbox {
-            .custom-checkbox {
-                &:first-child {
-                    padding-top: 7px;
-                }
-            }
         }
         label {
             a {

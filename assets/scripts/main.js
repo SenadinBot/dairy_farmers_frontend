@@ -8,7 +8,6 @@ $(document).ready(function () {
         });
     }
 
-
     // Breadcrumb Text Limitation
     $('.breadcrumb-container .active a').each(function () {
         var titleLen = $(this).text().length;

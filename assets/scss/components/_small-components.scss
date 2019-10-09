@@ -19,7 +19,7 @@
             @include media-xs {
                 width: 100%;
                 margin-right: 0;
-                margin-bottom: 30px;
+                margin-bottom: 25px;
             }
             img {
                 max-width: 100%;
@@ -48,18 +48,26 @@
                 }
             }
             .btn-container {
-                max-width: 279px;
-                text-align: center;
-                margin-top: 30px;
+                margin-top: 15px;
+                display: inline-block;
                 @include media-xs-portrait {
                     max-width: 100%;
+                    width: 100%;
+                    margin-top: 10px;
                 }
                 @include media-xs-landscape {
                     max-width: 60%;
+                    width: 60%;
+                    margin-top: 10px;
                 }
                 .primary-btn {
-                    padding: 12px 10px 14px 10px;
-                    width: 100%; 
+                    // padding: 12px 10px 14px 10px;
+                    @include media-sm {
+                        padding: 12px 35px 14px 35px;
+                    }
+                    @include media-xs {
+                        width: 100%;
+                    }
                 }
                 span {
                     display: block;
@@ -68,6 +76,7 @@
                     font-size: 18px;
                     line-height: 30px;
                     color: $dark;
+                    text-align: center;
                     @include media-xs {
                         margin: 3px auto 0 auto;
                     }
