@@ -451,7 +451,6 @@
     width: 100%;
     @include media-xs {
         margin-bottom: 35px;
-        padding: 0 30px;
     }
     @include media-sm {
         margin-top: 180px;
@@ -460,7 +459,7 @@
         margin-top: 110px;
     }
     .rewards-esmp-intro {
-        margin: 0 0 81px 0;
+        margin: 0 0 90px 0;
         width: 83%;
         @include media-xs {
             width: 100%;
@@ -486,10 +485,18 @@
                 line-height: 60px;
                 letter-spacing: 6px;
             }
+            @include media-xs {
+                margin-bottom: 0;
+                padding: 0 30px;
+            }
         }
         p {
             font-family: $robotoLight;
             line-height: 30px;
+            @include media-xs {
+                line-height: 24px;
+                padding: 0 30px;
+            }
         }
     }
     .rewards-esmp-content-container {
@@ -520,6 +527,7 @@
                 margin-right: 0;
                 width: 100%;
                 order: 2;
+                padding: 0 30px;
             }
             @include media-sm {
                 width: 47%;
@@ -635,7 +643,7 @@
             @include media-xs {
                 width: 100%;
                 order: 1;
-                margin-bottom: 30px;
+                margin-bottom: 20px;
             }
             @include media-sm {
                 width: 50%;

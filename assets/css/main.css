@@ -7573,12 +7573,12 @@ main {
     margin-bottom: 100px;
   }
 }
-.recommendation-container .big-bottom-spacing {
-  margin-bottom: 185px;
+.recommendation-container.big-bottom-spacing {
+  margin-bottom: 193px;
 }
 @media (max-width: 767px) {
-  .recommendation-container .big-bottom-spacing {
-    margin-bottom: 100px;
+  .recommendation-container.big-bottom-spacing {
+    margin-bottom: 120px;
   }
 }
 .recommendation-container.add-top-border span {
@@ -17901,7 +17901,6 @@ main {
 @media (max-width: 767px) {
   .rewards-esmp-container {
     margin-bottom: 35px;
-    padding: 0 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -17915,7 +17914,7 @@ main {
   }
 }
 .rewards-esmp-container .rewards-esmp-intro {
-  margin: 0 0 81px 0;
+  margin: 0 0 90px 0;
   width: 83%;
 }
 @media (max-width: 767px) {
@@ -17953,9 +17952,21 @@ main {
     letter-spacing: 6px;
   }
 }
+@media (max-width: 767px) {
+  .rewards-esmp-container .rewards-esmp-intro h1 {
+    margin-bottom: 0;
+    padding: 0 30px;
+  }
+}
 .rewards-esmp-container .rewards-esmp-intro p {
   font-family: "Roboto Light";
   line-height: 30px;
+}
+@media (max-width: 767px) {
+  .rewards-esmp-container .rewards-esmp-intro p {
+    line-height: 24px;
+    padding: 0 30px;
+  }
 }
 .rewards-esmp-container .rewards-esmp-content-container {
   width: 95.5%;
@@ -17994,6 +18005,7 @@ main {
     margin-right: 0;
     width: 100%;
     order: 2;
+    padding: 0 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -18129,7 +18141,7 @@ main {
   .rewards-esmp-container .rewards-esmp-content-container .img-container {
     width: 100%;
     order: 1;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {

@@ -167,10 +167,10 @@
     @include media-xs {
         margin-bottom: 100px;
     }
-    .big-bottom-spacing {
-        margin-bottom: 185px;
+    &.big-bottom-spacing {
+        margin-bottom: 193px;
         @include media-xs {
-            margin-bottom: 100px;
+            margin-bottom: 120px;
         }
     }
     &.add-top-border {
