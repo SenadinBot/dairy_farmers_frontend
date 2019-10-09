@@ -53,8 +53,7 @@ $(document).ready(function () {
 
     // Aos animation
     AOS.init({
-        duration: 1000,
-        offset: -130
+        duration: 1000
     });
 
     // Open/Close Mobile Menu
