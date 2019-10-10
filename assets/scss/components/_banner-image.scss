@@ -1047,10 +1047,13 @@
             .banner-title {
                 .title-border {
                     &:after {
-                        height: 170px;
+                        height: 150px;
                     }
                 }
                 span, h1 {
+                    @include media-lg {
+                        top: 37%;
+                    }
                     @include media-sm {
                         top: initial;
                         padding-bottom: 230px;
@@ -1068,6 +1071,16 @@
                         padding-bottom: 0;
                         max-width: 75vw;
                         transform: translate(-30%, -60%);
+                    }
+                }
+                p {
+                    @include media-lg {
+                        padding-left: 38px;
+                        margin: 32% 0 0 0;
+                        width: 60%;
+                    }
+                    @include media-md {
+                        width: 60%;
                     }
                 }
             }

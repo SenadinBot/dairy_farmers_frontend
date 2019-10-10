@@ -211,9 +211,9 @@
     }
     &.esmp-school-article-list-container {
         margin-top: -46px;
-        margin-bottom: 94px;
+        margin-bottom: 95px;
         @include media-xs {
-            margin-bottom: 60px;
+            margin-bottom: 40px;
         }
         .col-12 {
             &:after {
@@ -223,8 +223,11 @@
                 height: 1px;
                 display: block;
                 position: relative;
-                top: 30px;
+                top: 50px;
                 left: 0;
+                @include media-xs {
+                    top: 20px;
+                }
             }
             @include media-xs {
                 padding-bottom: 0;
@@ -236,13 +239,10 @@
                 margin-bottom: 20px;
             }
             .img-container {
-                @include media-xs {
-                    padding: 0 30px;
-                }
             }
             .article-item-content {
                 .primary-btn {
-                    margin-top: 20px;
+                    margin-top: 15px;
                     @include media-xs {
                         margin-top: 0;
                     }

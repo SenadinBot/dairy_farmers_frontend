@@ -3915,7 +3915,10 @@ footer {
     .big-banner-container.one-line-title.top-spacing.press-room .banner-title span, .big-banner-container.one-line-title.top-spacing.press-room .banner-title h1 {
       padding-bottom: 90px; } }
   .big-banner-container.one-line-title.esmp-school .banner-title .title-border:after {
-    height: 170px; }
+    height: 150px; }
+  @media (min-width: 1200px) {
+    .big-banner-container.one-line-title.esmp-school .banner-title span, .big-banner-container.one-line-title.esmp-school .banner-title h1 {
+      top: 37%; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .big-banner-container.one-line-title.esmp-school .banner-title span, .big-banner-container.one-line-title.esmp-school .banner-title h1 {
       top: initial;
@@ -3934,6 +3937,14 @@ footer {
       padding-bottom: 0;
       max-width: 75vw;
       transform: translate(-30%, -60%); } }
+  @media (min-width: 1200px) {
+    .big-banner-container.one-line-title.esmp-school .banner-title p {
+      padding-left: 38px;
+      margin: 32% 0 0 0;
+      width: 60%; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .big-banner-container.one-line-title.esmp-school .banner-title p {
+      width: 60%; } }
   .big-banner-container.one-line-title.esmp-about .banner-title .title-border:after {
     height: 170px; }
   @media (min-width: 768px) and (max-width: 991px) {
@@ -5348,16 +5359,21 @@ main {
         .esmp-container.esmp-dairy-container .info-item-container.right-content .info-item-img-container {
           padding: 0 30px; } }
   .esmp-container.esmp-school-container {
-    margin: 155px 0 57px 0; }
+    margin: 164px 0 57px 0; }
     @media (min-width: 992px) and (max-width: 1199px) {
       .esmp-container.esmp-school-container {
         margin: -80px 0 57px 0; } }
     @media (max-width: 767px) {
       .esmp-container.esmp-school-container {
         margin: -20px 0 46px 0; } }
-    @media (max-width: 767px) {
-      .esmp-container.esmp-school-container .info-item-container .info-item-img-container {
-        padding: 0 30px; } }
+    @media (min-width: 1200px) {
+      .esmp-container.esmp-school-container .info-item-container .info-item-content {
+        padding-right: 5px; } }
+    .esmp-container.esmp-school-container .info-item-container .info-item-content .primary-btn {
+      margin-top: 10px; }
+      @media (max-width: 767px) {
+        .esmp-container.esmp-school-container .info-item-container .info-item-content .primary-btn {
+          margin-top: 0; } }
     @media (max-width: 767px) {
       .esmp-container.esmp-school-container .info-item-container .primary-btn {
         margin-top: 0; } }
@@ -7358,10 +7374,10 @@ main {
           margin-bottom: 0; } }
   .article-list-container.esmp-school-article-list-container {
     margin-top: -46px;
-    margin-bottom: 94px; }
+    margin-bottom: 95px; }
     @media (max-width: 767px) {
       .article-list-container.esmp-school-article-list-container {
-        margin-bottom: 60px; } }
+        margin-bottom: 40px; } }
     .article-list-container.esmp-school-article-list-container .col-12:after {
       content: "";
       border-bottom: 1px solid #54585a;
@@ -7369,8 +7385,11 @@ main {
       height: 1px;
       display: block;
       position: relative;
-      top: 30px;
+      top: 50px;
       left: 0; }
+      @media (max-width: 767px) {
+        .article-list-container.esmp-school-article-list-container .col-12:after {
+          top: 20px; } }
     @media (max-width: 767px) {
       .article-list-container.esmp-school-article-list-container .col-12 {
         padding-bottom: 0; } }
@@ -7379,11 +7398,8 @@ main {
       @media (min-width: 992px) and (max-width: 1199px) {
         .article-list-container.esmp-school-article-list-container .article-item-container {
           margin-bottom: 20px; } }
-      @media (max-width: 767px) {
-        .article-list-container.esmp-school-article-list-container .article-item-container .img-container {
-          padding: 0 30px; } }
       .article-list-container.esmp-school-article-list-container .article-item-container .article-item-content .primary-btn {
-        margin-top: 20px; }
+        margin-top: 15px; }
         @media (max-width: 767px) {
           .article-list-container.esmp-school-article-list-container .article-item-container .article-item-content .primary-btn {
             margin-top: 0; } }
