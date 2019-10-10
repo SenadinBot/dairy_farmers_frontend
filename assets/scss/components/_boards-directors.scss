@@ -260,6 +260,12 @@
                 transform: none;
                 top: 20%;
             }
+            @media only screen and (min-width: 411px) and (max-width: 823px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3.5) {
+                top: 10%;
+                -webkit-transform: none;
+                -ms-transform: none;
+                transform: none;
+            }
             @supports (-webkit-overflow-scrolling: touch) {
                 top: 0%;
                 -webkit-transform: none;
@@ -290,6 +296,10 @@
         @include media-xs {
             border-radius: 10px;
             margin-top: 18px;
+            min-height: auto;
+        }
+        @include media-sm {
+            min-height: auto;
         }
     }
     .modal-body {
@@ -302,6 +312,9 @@
         animation-fill-mode: both;
         animation-name: fadeIn;
         padding: 84px 44px 73px 135px;
+        @include media-lmd {
+            height: 88vh;
+        }
         @media (min-width: 1200px) and (max-width: 1440px) {
             padding: 54px 44px 45px 95px;
         }
@@ -318,11 +331,10 @@
             display: inline-block;
             vertical-align: top;
             width: 522px;
-            height: 680px;
+            height: 100%;
             margin-right: 16px;
             @media (min-width: 1200px) and (max-width: 1440px) {
-                width: 422px;
-                height: 500px;            
+                width: 422px;            
             }
             @include media-sm {
                 width: 41%;
@@ -362,17 +374,16 @@
             border: none;
             border-radius: 0;
             overflow-y: scroll;
-            height: 680px;
+            height: 100%;
             @media (min-width: 1200px) and (max-width: 1440px) {
                 width: calc(100% - 443px);
-                height: 500px;            
             }
             @include media-sm {
                 width: 55%;
+                max-height: 400px;
             }
             @include media-md {
                 width: 55%;
-                height: 73vh;
             }
             @include media-xs {
                 width: 100%;
@@ -446,6 +457,9 @@
 }
 .mCSB_scrollTools {
     opacity: 1 !important;
+    @include media-xs {
+        display: none !important;
+    }
     .mCSB_dragger {
         height: 78px !important;        
     }

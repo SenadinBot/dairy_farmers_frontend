@@ -5365,7 +5365,7 @@ main {
         margin: -80px 0 57px 0; } }
     @media (max-width: 767px) {
       .esmp-container.esmp-school-container {
-        margin: -20px 0 46px 0; } }
+        margin: -20px 0 20px 0; } }
     @media (min-width: 1200px) {
       .esmp-container.esmp-school-container .info-item-container .info-item-content {
         padding-right: 5px; } }
@@ -5374,6 +5374,9 @@ main {
       @media (max-width: 767px) {
         .esmp-container.esmp-school-container .info-item-container .info-item-content .primary-btn {
           margin-top: 0; } }
+    @media (max-width: 767px) {
+      .esmp-container.esmp-school-container .info-item-container .info-item-content ul li {
+        margin-bottom: 15px; } }
     @media (max-width: 767px) {
       .esmp-container.esmp-school-container .info-item-container .primary-btn {
         margin-top: 0; } }
@@ -13961,6 +13964,12 @@ main {
       -ms-transform: none;
       transform: none;
       top: 20%; } }
+  @media only screen and (min-width: 411px) and (max-width: 823px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3.5) {
+    .board-directors-modal.show .modal-dialog {
+      top: 10%;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none; } }
   @supports (-webkit-overflow-scrolling: touch) {
     .board-directors-modal.show .modal-dialog {
       top: 0%;
@@ -13988,7 +13997,11 @@ main {
   @media (max-width: 767px) {
     .board-directors-modal .modal-content {
       border-radius: 10px;
-      margin-top: 18px; } }
+      margin-top: 18px;
+      min-height: auto; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .board-directors-modal .modal-content {
+      min-height: auto; } }
 .board-directors-modal .modal-body {
   -webkit-animation-delay: .5s;
   -moz-animation-delay: .5s;
@@ -13999,6 +14012,9 @@ main {
   animation-fill-mode: both;
   animation-name: fadeIn;
   padding: 84px 44px 73px 135px; }
+  @media (min-width: 992px) {
+    .board-directors-modal .modal-body {
+      height: 88vh; } }
   @media (min-width: 1200px) and (max-width: 1440px) {
     .board-directors-modal .modal-body {
       padding: 54px 44px 45px 95px; } }
@@ -14015,12 +14031,11 @@ main {
     display: inline-block;
     vertical-align: top;
     width: 522px;
-    height: 680px;
+    height: 100%;
     margin-right: 16px; }
     @media (min-width: 1200px) and (max-width: 1440px) {
       .board-directors-modal .modal-body .img-container {
-        width: 422px;
-        height: 500px; } }
+        width: 422px; } }
     @media (min-width: 768px) and (max-width: 991px) {
       .board-directors-modal .modal-body .img-container {
         width: 41%;
@@ -14057,18 +14072,17 @@ main {
     border: none;
     border-radius: 0;
     overflow-y: scroll;
-    height: 680px; }
+    height: 100%; }
     @media (min-width: 1200px) and (max-width: 1440px) {
       .board-directors-modal .modal-body .modal-inner-content {
-        width: calc(100% - 443px);
-        height: 500px; } }
+        width: calc(100% - 443px); } }
     @media (min-width: 768px) and (max-width: 991px) {
       .board-directors-modal .modal-body .modal-inner-content {
-        width: 55%; } }
+        width: 55%;
+        max-height: 400px; } }
     @media (min-width: 992px) and (max-width: 1199px) {
       .board-directors-modal .modal-body .modal-inner-content {
-        width: 55%;
-        height: 73vh; } }
+        width: 55%; } }
     @media (max-width: 767px) {
       .board-directors-modal .modal-body .modal-inner-content {
         width: 100%;
@@ -14125,6 +14139,9 @@ main {
 
 .mCSB_scrollTools {
   opacity: 1 !important; }
+  @media (max-width: 767px) {
+    .mCSB_scrollTools {
+      display: none !important; } }
   .mCSB_scrollTools .mCSB_dragger {
     height: 78px !important; }
   .mCSB_scrollTools .mCSB_draggerRail {
