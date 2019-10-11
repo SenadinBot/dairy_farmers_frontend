@@ -435,6 +435,24 @@ $(document).ready(function () {
             $(".btnSubmitServer")[0].click();
         }
     });
+
+    //ContactUs form validation
+    $(".submit-contact-us-btn").on('click', function (e) {
+        var hasError = false;
+        e.preventDefault();
+        $(".required").each(function () {
+            if ($(this).val() === "") {
+                $(this).parent().parent().addClass('form-error');
+                hasError = true;
+            }
+            else {
+                $(this).parent().parent().removeClass('form-error');
+            }
+        });
+        if (!hasError) {
+            $(".btnSubmitContact")[0].click();
+        }
+    });
 });
 
 $.fn.menumaker = function (options) {
