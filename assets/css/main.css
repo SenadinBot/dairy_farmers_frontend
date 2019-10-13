@@ -5354,10 +5354,9 @@ main {
           width: 100%; } }
       @media (max-width: 767px) {
         .esmp-container.esmp-dairy-container .info-item-container {
-          width: 100%; } }
-      @media (max-width: 767px) {
-        .esmp-container.esmp-dairy-container .info-item-container.right-content .info-item-img-container {
-          padding: 0 30px; } }
+          width: 100%;
+          margin-bottom: 30px;
+          padding-bottom: 40px; } }
   .esmp-container.esmp-school-container {
     margin: 164px 0 57px 0; }
     @media (min-width: 992px) and (max-width: 1199px) {

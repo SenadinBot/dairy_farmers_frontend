@@ -277,13 +277,10 @@
             }
             @include media-xs {
                 width: 100%;
+                margin-bottom: 30px;
+                padding-bottom: 40px;
             }
             &.right-content {
-                .info-item-img-container {
-                    @include media-xs {
-                        padding: 0 30px;
-                    }
-                }
             }
         }
     }
