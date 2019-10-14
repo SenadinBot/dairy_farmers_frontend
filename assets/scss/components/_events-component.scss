@@ -50,7 +50,7 @@
     }
 }
 .event-article-container {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     @include media-xs {
         margin-bottom: 70px;
     }
@@ -66,10 +66,14 @@
         display: inline-block;
         vertical-align: top;
         position: relative;
+        margin-bottom: 100px;
         @include media-xs {
             margin-right: 0;
             width: 100%;
             margin-bottom: 70px;
+        }
+        &:nth-child(2n) {
+            margin-right: 0;
         }
         &:last-child {
             margin-right: 0;
@@ -134,7 +138,7 @@
     }
 }
 .events-details-banner-container {
-    margin-bottom: 150px;
+    margin-bottom: 110px;
     @include media-xs {
         margin-bottom: 120px;
     }
@@ -492,63 +496,67 @@
         .sponsored-item {
             display: inline-block;
             vertical-align: top;
-            &:first-child {
-                margin-right: 78px;
-                @include media-xs {
-                    margin-right: 0;
-                    margin-bottom: 40px;
-                    margin-left: 26px;
+            margin-right: 78px;
+            margin-bottom: 40px;
+            @include media-xs {
+                margin-top: 0;
+                margin-right: 0;
+                width: 100%;
+                &:last-child {
+                    margin-bottom: 0;
                 }
-                @include media-sm {
+            }
+            @include media-sm {
+                margin-right: 40px;
+                vertical-align: middle;                
+                &:nth-child(2n) {
                     margin-right: 0;
                 }
+            }
+            &.brought-item {
                 .img-container {
                     img {
                         height: 116px;
-                    }
-                }
-                .sponsored-item-content {
-                    vertical-align: middle;
-                    @include media-xs-portrait {
-                        width: calc(100% - 135px);
-                    }
-                }
-            }
-            &:last-child {
-                .img-container {
-                    @include media-xs {
-                        margin-right: 8px;
-                    }
-                    img {
-                        height: 83px;
                         @include media-xs {
-                            height: 56px;
+                            height: 92px;
                         }
                     }
                 }
-                margin-top: 23px;
-                @include media-xs {
-                    margin-top: 0;
-                }
                 .sponsored-item-content {
-                    position: relative;
-                    top: -20px;
+                    vertical-align: bottom;
+                    top: -2px;
+                    @include media-xs-portrait {
+                        width: calc(100% - 152px);
+                    }
                     @include media-xs {
-                        top: 0;
+                        vertical-align: middle;
                     }
                 }
             }
             .img-container {
                 display: inline-block;
                 margin-right: 13px;
+                @include media-xs {
+                    margin-right: 8px;
+                    text-align: center;
+                    width: 139px;
+                }
                 img {
+                    height: 83px;
                     max-width: 100%;
                     max-height: 100%;
+                    @include media-xs {
+                        height: 46px;
+                    }
+                    @include media-sm {
+                        height: 65px;
+                    }
                 }
             }
             .sponsored-item-content {
                 display: inline-block;
                 vertical-align: bottom;
+                position: relative;
                 span {
                     color: $blue;
                     text-transform: uppercase;
