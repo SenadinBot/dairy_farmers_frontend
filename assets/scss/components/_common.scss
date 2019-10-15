@@ -352,6 +352,24 @@
                 margin-top: 30px;
             }
         }
+        .img-container {
+            overflow: hidden;
+            img {
+                -webkit-transition: all .5s;
+                -moz-transition: all .5s;
+                -o-transition: all .5s;
+                transition: all .5s;
+            }
+            &:hover {
+                img {
+                    -ms-transform: scale(1.05);
+                    -moz-transform: scale(1.05);
+                    -webkit-transform: scale(1.05);
+                    -o-transform: scale(1.05);
+                    transform: scale(1.05); 
+                }      
+            }
+        }
     }
     .img-container {
         width: 657px;
@@ -924,7 +942,7 @@
         }
     }
     &.small-bottom-spacing {
-        margin-bottom: 58px;
+        margin-bottom: 65px;
         @include media-xs {
             margin-bottom: 46px;
         }

@@ -332,7 +332,7 @@
 }
 .calendar-sing-up-container {
     border-bottom: 1px solid #cccccc;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     margin-bottom: 50px;
     @include media-xs {
         padding: 0 30px 70px 30px;
@@ -396,6 +396,81 @@
                 } 
                 &:last-child {
                     margin-right: 0;
+                }
+            }
+        }
+    }
+    .code-container {
+        border-top: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc;
+        padding: 30px 0 24px 0;
+        margin-bottom: 39px;
+        margin-top: 27px;
+        .form-group {
+            margin-bottom: 18px;
+        }
+        span {
+            display: block;
+            font-family: $roboto;
+            font-size: 18px;
+            line-height: normal;
+            color: #54585a;
+        }
+        h4 {
+            margin: -8px 0 10px 0;
+        }
+        .input-group {
+            width: 49%;
+            @include media-xs {
+                width: 100%;
+            }
+        }
+    }
+    .pdf-link {
+        padding-left: 55px;
+        margin-bottom: 55px;
+        margin-top: -30px;
+        span {
+            font-family: $robotoLight;
+            font-size: 14px;
+            line-height: 18px;
+            color: $dark;
+            display: block;
+            a {
+                color: $blue;
+                position: relative;
+                margin-right: 20px;
+                &:hover {
+                    &:before {
+                        visibility: hidden;
+                        width: 0;
+                    }
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    height: 1px;
+                    bottom: 0;
+                    right: 0;
+                    visibility: visible;
+                    width: 100%;
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                    -moz-transition: all 0.3s ease-in-out 0s;
+                    -ms-transition: all 0.3s ease-in-out 0s;
+                    -o-transition: all 0.3s ease-in-out 0s;
+                    transition: all 0.3s ease-in-out 0s;
+                    background-color: $blue;
+                }
+                &:after {
+                    content: "";
+                    width: 14px;
+                    height: 14px;
+                    background-image: url("/App_Themes/Milk/images/external-icon.svg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: 2px;
+                    margin-left: 5px;
                 }
             }
         }

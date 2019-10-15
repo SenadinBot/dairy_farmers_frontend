@@ -119,6 +119,8 @@
                         // text-transform: uppercase;
                         @include media-xs {
                             word-break: break-word;
+                            font-size: 18px;
+                            line-height: 24px;
                         }
                     }
                     p {
@@ -128,6 +130,8 @@
                         margin-bottom: 0;
                         @include media-xs-portrait {
                             padding: 0;
+                            line-height: 26px;
+                            font-size: 16px;
                         }
                     }
                     span {

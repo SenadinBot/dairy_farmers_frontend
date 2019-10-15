@@ -1117,6 +1117,10 @@
         line-height: 34px;
         color: $dark;
         margin-bottom: 25px;
+        @include media-xs  {
+            font-size: 22px;
+            line-height: 26px;
+        }
     }
     p {
         font-family: $robotoLight;
