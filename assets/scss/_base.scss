@@ -187,6 +187,15 @@ a {
             color: $white;
         }
     }
+    &.white-border {
+        border-color: $white;
+        color: $white;
+        &:hover {
+            border-color: $dark;
+            background-color: $white;
+            color: $dark;
+        }
+    }
     &.green-border {
         border-color: #00b140;
         color: #00b140;

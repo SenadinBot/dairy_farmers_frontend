@@ -335,7 +335,7 @@
     padding-bottom: 50px;
     margin-bottom: 50px;
     @include media-xs {
-        padding: 0 30px 70px 30px;
+        padding: 0 30px 60px 30px;
     }
     h2 {
         color: $dark;
@@ -400,12 +400,42 @@
             }
         }
     }
+    .form-container {
+        .primary-btn {
+            @include media-xs-landscape {
+                width: 75%;
+            }
+        }
+    }
     .code-container {
         border-top: 1px solid #cccccc;
         border-bottom: 1px solid #cccccc;
         padding: 30px 0 24px 0;
         margin-bottom: 39px;
         margin-top: 27px;
+        @include media-xs {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            position: relative;
+            &:before {
+                content: "";
+                border-top: 1px solid #cccccc;
+                position: absolute;
+                left: -30px;
+                top: -1px;
+                width: calc(100% + 60px);
+                height: 1px;
+            }
+            &:after {
+                content: "";
+                border-bottom: 1px solid #cccccc;
+                position: absolute;
+                left: -30px;
+                bottom: -1px;
+                width: calc(100% + 60px);                
+                height: 1px;
+            }
+        }
         .form-group {
             margin-bottom: 18px;
         }
@@ -440,6 +470,10 @@
                 color: $blue;
                 position: relative;
                 margin-right: 20px;
+                @include media-xs-portrait {
+                    text-decoration: underline;
+                    margin-right: 0;
+                }
                 &:hover {
                     &:before {
                         visibility: hidden;
@@ -460,6 +494,9 @@
                     -o-transition: all 0.3s ease-in-out 0s;
                     transition: all 0.3s ease-in-out 0s;
                     background-color: $blue;
+                    @include media-xs-portrait {
+                        display: none;
+                    }
                 }
                 &:after {
                     content: "";
@@ -471,6 +508,11 @@
                     position: absolute;
                     top: 2px;
                     margin-left: 5px;
+                    @include media-xs-portrait {
+                        display: inline-block;
+                        position: relative;
+                        margin-left: 0;
+                    }
                 }
             }
         }

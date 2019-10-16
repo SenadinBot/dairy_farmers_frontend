@@ -1095,6 +1095,44 @@
             }
         }
     }
+    .other-container {
+        margin: -80px 0 80px 0;
+        display: none;
+        @include media-xs {
+            margin: -35px 0 50px 0;
+        }
+        @include media-sm {
+            margin: -35px 0 50px 0;
+        }
+        @include media-md {
+            margin: -55px 0 50px 0;
+        }
+        p {
+            font-size: 22px;
+            line-height: 30px;
+            font-family: $robotoLight;
+        }
+    }
+    .form-success-container {
+        text-align: center;
+        background: #FFFFFF;
+        box-shadow: 0 2px 13px 0 rgba(204, 204, 204, 0.8);
+        float: left;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 51px 28px 53px 28px;
+        border-radius: 8px;
+        position: relative;
+        margin-bottom: 160px;
+        display: none;
+        @include media-xs {
+            padding: 30px 15px;
+        }
+        p {
+            font-family: $robotoLight;
+        }
+    }
 }
 .page-not-found-container {
     margin-top: 19px;
@@ -1170,6 +1208,71 @@
         @include media-xs-portrait {
             width: 100%;
             padding: 12px 20px 14px 20px;
+        }
+    }
+}
+.calendar-intro-container {
+    margin-bottom: 97px;
+    margin-top: -18px;
+    @include media-xs {
+        padding: 0 30px;
+    }
+    .img-container {
+        display: inline-block;
+        width: 487px;
+        vertical-align: top;
+        @include media-lg {
+            margin-left: -100px;
+        }
+        @include media-md {
+            width: 350px;
+        }
+        @include media-sm {
+            width: 250px;
+        }
+        @include media-xs {
+            width: auto;
+            max-width: 100%;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    }
+    .calendar-intro-content {
+        display: inline-block;
+        width: calc(100% - 487px);
+        padding-left: 10px;
+        vertical-align: top;
+        margin-top: 42px;
+        @include media-lg {
+            width: calc(100% - 455px);
+        }
+        @include media-md {
+            width: calc(100% - 355px);
+            margin-top: 32px;
+        }
+        @include media-sm {
+            width: calc(100% - 255px);
+            margin-top: 25px;
+        }
+        @include media-xs {
+            width: auto;
+            max-width: 100%;
+            margin-top: 0;
+        }
+        h4 {
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+        p {
+            font-family: $robotoLight;
+            font-size: 22px;
+            line-height: 34px;
+            @include media-xs {
+                line-height: 26px;
+            }
         }
     }
 }

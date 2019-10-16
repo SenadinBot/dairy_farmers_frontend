@@ -176,6 +176,10 @@
             }
             li {
                 margin-bottom: 0;
+                padding-left: 25px;
+                @include media-xs {
+                    padding-left: 15px;
+                }
             }
         }
     }
@@ -185,6 +189,24 @@
         margin: 0;
     }
     .p-p-sublink,
+    .p-p-link {
+        font-family: $robotoLight;
+        font-size: 18px;
+        line-height: 30px;
+        color: $blue;
+        @include media-xs {
+            line-height: 24px;
+        }
+    }
+    .p-p-link {
+        font-family: $robotoBold;
+        text-transform: uppercase;
+    }
+    .p-p-sublink,
+    .p-p-link {
+        display: block;
+    }
+    // .p-p-sublink,
     p {
         font-family: $robotoLight;
         font-size: 18px;
@@ -194,27 +216,27 @@
             line-height: 24px;
         }
     }
-    .p-p-sublink {
-        font-family: $robotoBold;
-        @include media-xs {
-            font-size: 22px;
-            line-height: 28px;
-        }
-    }
-    .p-p-link {
-        @include acuminProExtraCondBlack();    
-        font-size: 36px;
-        line-height: 1;
-        letter-spacing: 1.8px;
-        color: $dark;
-        text-transform: uppercase;
-        margin-top: -8px;
-        margin-bottom: 5px;
-    }
-    .p-p-sublink,
-    .p-p-link {
-        display: block;
-    }
+    // .p-p-sublink {
+    //     font-family: $robotoBold;
+    //     @include media-xs {
+    //         font-size: 22px;
+    //         line-height: 28px;
+    //     }
+    // }
+    // .p-p-link {
+    //     @include acuminProExtraCondBlack();    
+    //     font-size: 36px;
+    //     line-height: 1;
+    //     letter-spacing: 1.8px;
+    //     color: $dark;
+    //     text-transform: uppercase;
+    //     margin-top: -8px;
+    //     margin-bottom: 5px;
+    // }
+    // .p-p-sublink,
+    // .p-p-link {
+    //     display: block;
+    // }
     p {
         color: $dark;
         margin-bottom: 25px;

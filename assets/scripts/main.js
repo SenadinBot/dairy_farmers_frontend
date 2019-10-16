@@ -1,4 +1,28 @@
 $(document).ready(function () {
+    $('.banner-title p').append($('.banner-list'));
+    // Checked Checkbox OPT 
+    $('.opt-out-container .custom-checkbox:last-child').on('click', function () {
+        var checked = $(this).find("input:checkbox").is(":checked");
+        if (checked) {
+            $('.other-container').show(300);
+        } else {
+            $('.other-container').hide(300);
+        }
+    });
+    $('.opt-out-btn').on('click', function () {
+        $('.form-success-container').show(300);
+        $('.opt-out-form-container').hide(300);
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($('.opt-out-form-container')).offset().top - 250,
+        }, 300);
+    });
+    // Remove Cookie
+    $('.cookies-container .close-cookie').on('click', function (e) {
+        e.preventDefault();
+        $('.cookies-container').slideUp();
+    });
+
     /* init Jarallax */
     if ($('.jarallax').length) {
         $(window).on('load resize orientationchange', function () {

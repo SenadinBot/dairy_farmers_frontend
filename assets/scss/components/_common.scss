@@ -1249,3 +1249,133 @@
         }
     }
 }
+.cookies-container {
+    background-color: rgba(0, 0, 0, 0.92);
+    box-shadow: 0px -6px 15px 0 rgba(0, 0, 0, 0.35);
+    padding: 43px 0px 45px 0px;
+    border-radius: 3px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 9;
+    @include media-xs {
+        padding: 25px 40px 65px 40px;
+    }
+    p {
+        color: $white;
+        line-height: 30px;
+        vertical-align: top;
+        margin: 0;
+        font-family: $robotoLight;
+        @include media-xs {
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 35px;
+        }
+    }
+    h3 {
+        color: $white;
+        text-transform: uppercase;
+        margin: 0 0 5px 0;
+        line-height: 48px;
+        letter-spacing: 2.88px;
+        @include media-xs {
+            font-size: 40px;
+            line-height: 44px;
+        }
+    }
+    .cookies-content {
+        padding-left: 28px;
+        display: inline-block;
+        width: 50%;
+        margin-right: 88px;
+        vertical-align: middle;
+        @include media-sm {
+            margin-right: 0;
+        }
+        @include media-md {
+            margin-right: 40px;
+        }
+        @include media-xs {
+            width: 100%;
+            margin-right: 0;
+            padding-left: 0;
+        }
+    }
+    .btn-container {
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -5px;
+        @include media-xs {
+            width: 100%;
+        }
+    }
+    .primary-btn {
+        display: inline-block;
+        @include media-sm {
+            padding: 12px 30px 14px 30px;
+        }
+        @include media-xs-portrait {
+            width: 100%;
+            display: block;
+        }
+        @include media-xs-landscape {
+            padding: 12px 52px 14px 52px;
+        }
+        &:first-child {
+            margin-right: 45px;
+            @include media-sm {
+                margin-right: 20px;
+            }
+            @include media-xs-portrait {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+        }
+        &.white-btn {
+            color: $dark;
+            border-color: $white;
+            background-color: $white;
+            &:hover {
+                background-color: $dark;
+                color: $white;
+            }
+        }
+    }
+    .close-cookie-icon {
+        position: absolute;
+        top: -72px;
+        right: -55px;
+        @include media-sm {
+            right: 20px;
+        }
+        @include media-md {
+            right: 20px;
+        }
+        @include media-xs {
+            top: -50px;
+            right: -15px;
+        }
+        img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            cursor: pointer;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            z-index: 9;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.75;
+            }
+            @include media-xs {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}
