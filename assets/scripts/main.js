@@ -9,13 +9,21 @@ $(document).ready(function () {
             $('.other-container').hide(300);
         }
     });
-    $('.opt-out-btn').on('click', function () {
-        $('.form-success-container').show(300);
-        $('.opt-out-form-container').hide(300);
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: $($('.opt-out-form-container')).offset().top - 250,
-        }, 300);
+    //Opt out form validation
+    $(".submit-btn-opt-out").on('click', function (e) {
+        e.preventDefault();
+        var checked = $('#optOutForm input[type=checkbox]:checked').length != 0;
+        if (checked) {
+
+            $(".btnSubmitOptOutServer")[0].click();
+            $('.form-success-container').show(300);
+            $('.opt-out-form-container').hide(300);
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: $($('.opt-out-form-container')).offset().top - 250,
+            }, 300);
+
+        }
     });
     // Remove Cookie
     $('.cookies-container .close-cookie').on('click', function (e) {

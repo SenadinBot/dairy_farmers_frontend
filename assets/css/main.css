@@ -6793,7 +6793,7 @@ main {
   left: 0;
   bottom: 0;
   width: 100%;
-  z-index: 9; }
+  z-index: 9999; }
   @media (max-width: 767px) {
     .cookies-container {
       padding: 25px 40px 65px 40px; } }
@@ -13472,35 +13472,49 @@ main {
       @media (max-width: 767px) {
         .contact-esmp-container .contact-esmp-form .btn-container {
           margin: 42px 0 30px 0; } }
-    .contact-esmp-container .contact-esmp-form .additional-info p {
+  .contact-esmp-container .additional-info p {
+    font-family: "Roboto Light";
+    line-height: 26px;
+    margin: 0; }
+    .contact-esmp-container .additional-info p b {
+      font-family: "Roboto Bold"; }
+    .contact-esmp-container .additional-info p a {
       font-family: "Roboto Light";
-      line-height: 26px;
-      margin: 0; }
-      .contact-esmp-container .contact-esmp-form .additional-info p b {
-        font-family: "Roboto Bold"; }
-      .contact-esmp-container .contact-esmp-form .additional-info p a {
-        font-family: "Roboto Light";
-        line-height: 30px;
-        font-size: 18px;
-        color: #0072ce;
-        position: relative; }
-        .contact-esmp-container .contact-esmp-form .additional-info p a:before {
-          content: "";
-          position: absolute;
-          width: 100%;
-          height: 1px;
-          bottom: 0;
-          right: 0;
-          visibility: visible;
-          -webkit-transition: all 0.3s ease-in-out 0s;
-          -moz-transition: all 0.3s ease-in-out 0s;
-          -ms-transition: all 0.3s ease-in-out 0s;
-          -o-transition: all 0.3s ease-in-out 0s;
-          transition: all 0.3s ease-in-out 0s;
-          background: #0072ce; }
-        .contact-esmp-container .contact-esmp-form .additional-info p a:hover:before {
-          visibility: hidden;
-          width: 0; }
+      line-height: 30px;
+      font-size: 18px;
+      color: #0072ce;
+      position: relative; }
+      .contact-esmp-container .additional-info p a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        right: 0;
+        visibility: visible;
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -moz-transition: all 0.3s ease-in-out 0s;
+        -ms-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+        background: #0072ce; }
+      .contact-esmp-container .additional-info p a:hover:before {
+        visibility: hidden;
+        width: 0; }
+  .contact-esmp-container .contact-esmp-msg-container {
+    margin-bottom: 95px;
+    display: none; }
+    @media (max-width: 767px) {
+      .contact-esmp-container .contact-esmp-msg-container {
+        margin-top: -20px; } }
+    .contact-esmp-container .contact-esmp-msg-container h4 {
+      text-transform: uppercase;
+      margin-top: -8px; }
+      @media (max-width: 767px) {
+        .contact-esmp-container .contact-esmp-msg-container h4 {
+          margin-bottom: 0; } }
+    .contact-esmp-container .contact-esmp-msg-container p {
+      font-family: "Roboto Light"; }
 
 .rewards-esmp-container {
   margin-bottom: 30px;

@@ -413,43 +413,60 @@
                 margin: 42px 0 30px 0;
             }
         }
-        .additional-info {
-            p {
+    }
+    .additional-info {
+        p {
+            font-family: $robotoLight;
+            line-height: 26px;
+            margin: 0;
+            b {
+                font-family: $robotoBold;
+            }
+            a {
                 font-family: $robotoLight;
-                line-height: 26px;
-                margin: 0;
-                b {
-                    font-family: $robotoBold;
+                line-height: 30px;
+                font-size: 18px;
+                color: $blue;
+                position: relative;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    bottom: 0;
+                    right: 0;
+                    visibility: visible;
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                    -moz-transition: all 0.3s ease-in-out 0s;
+                    -ms-transition: all 0.3s ease-in-out 0s;
+                    -o-transition: all 0.3s ease-in-out 0s;
+                    transition: all 0.3s ease-in-out 0s;
+                    background: #0072ce;
                 }
-                a {
-                    font-family: $robotoLight;
-                    line-height: 30px;
-                    font-size: 18px;
-                    color: $blue;
-                    position: relative;
+                &:hover {
                     &:before {
-                        content: "";
-                        position: absolute;
-                        width: 100%;
-                        height: 1px;
-                        bottom: 0;
-                        right: 0;
-                        visibility: visible;
-                        -webkit-transition: all 0.3s ease-in-out 0s;
-                        -moz-transition: all 0.3s ease-in-out 0s;
-                        -ms-transition: all 0.3s ease-in-out 0s;
-                        -o-transition: all 0.3s ease-in-out 0s;
-                        transition: all 0.3s ease-in-out 0s;
-                        background: #0072ce;
-                    }
-                    &:hover {
-                        &:before {
-                            visibility: hidden;
-                            width: 0;
-                        }
+                        visibility: hidden;
+                        width: 0;
                     }
                 }
             }
+        }
+    }
+    .contact-esmp-msg-container {
+        margin-bottom: 95px;
+        display: none;
+        @include media-xs {
+            margin-top: -20px;
+        }
+        h4 {
+            text-transform: uppercase;
+            margin-top: -8px;
+            @include media-xs {
+                margin-bottom: 0;
+            }
+        }
+        p {
+            font-family: $robotoLight;
         }
     }
 }

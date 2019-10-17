@@ -1258,7 +1258,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    z-index: 9;
+    z-index: 9999;
     @include media-xs {
         padding: 25px 40px 65px 40px;
     }
