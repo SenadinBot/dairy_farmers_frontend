@@ -1127,6 +1127,24 @@
                 }
             }
         }
+        &.milk-cookies-banner {
+            .banner-title {
+                span, h1 {
+                    @include media-xs {
+                        transform: translate(-30%, -24%);
+                        max-width: 82vw;
+                    }
+                    @include media-sm {
+                        transform: translate(-30%, -32%);
+                    }
+                    @include media-xs-landscape {
+                        font-size: 70px;
+                        line-height: 76px;
+                        transform: translate(-30%, -55%);
+                    }
+                }
+            }
+        }
     }
     &.white-title {
         .banner-title {
