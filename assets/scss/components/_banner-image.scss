@@ -1115,6 +1115,22 @@
             }
         }
     }
+    &.esmp-about {
+        .banner-title {
+            span, h1 {
+                @include media-xs {
+                    top: initial;
+                    padding-bottom: 8px;
+                }
+                @include media-xs-landscape {
+                    padding-bottom: 20px;
+                }
+                @include media-sm {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
     &.three-line-title {
         .banner-title {
             span, h1 {

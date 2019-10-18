@@ -377,6 +377,33 @@
         p {
             font-family: $robotoLight;
             line-height: 30px;
+            a {
+                position: relative;
+                color: $blue;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    height: 1px;
+                    bottom: 0;
+                    right: 0;
+                    visibility: visible;
+                    width: 100%;
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                    -moz-transition: all 0.3s ease-in-out 0s;
+                    -ms-transition: all 0.3s ease-in-out 0s;
+                    -o-transition: all 0.3s ease-in-out 0s;
+                    transition: all 0.3s ease-in-out 0s;
+                    background-position: 0 0,0 100%,0 0,100% 0;
+                    background-repeat: repeat-x;
+                    background-size: 8px;
+                    background: $blue;
+                }
+                &:hover {
+                    &:after {
+                        width: 0;
+                    }
+                }
+            }
         }
     }
     .contact-esmp-form {
@@ -574,7 +601,7 @@
                         font-family: $robotoLight;
                         color: $dark;
                         font-size: 18px;
-                        line-height: 18px;
+                        line-height: 30px;
                         position: relative;
                         counter-increment: custom-counter;
                         padding-left: 55px;
@@ -591,11 +618,11 @@
                             color: $white;
                             background-color: $blue;
                             border-radius: 100%;
-                            font-family: $acuminProExtraCondBold;
+                            @include acuminProExtraCondBlack();
                             letter-spacing: 1.8px;
                             font-size: 36px;
-                            line-height: 48px;
-                            top: 0;
+                            line-height: 34px;
+                            top: 8px;
                             left: 0;
                             height: 40px;
                             width: 40px;
@@ -666,6 +693,7 @@
             vertical-align: top;
             display: inline-block;
             width: 521px;
+            overflow: hidden;
             @include media-xs {
                 width: 100%;
                 order: 1;
@@ -677,10 +705,23 @@
             @include media-md {
                 width: 50%;
             }
+            &:hover {
+                img {
+                    -ms-transform: scale(1.05);
+                    -moz-transform: scale(1.05);
+                    -webkit-transform: scale(1.05);
+                    -o-transform: scale(1.05);
+                    transform: scale(1.05);
+                }
+            }
             img {
                 max-width: 100%;
                 max-height: 100%;
                 object-fit: contain;
+                -webkit-transition: all .5s;
+                -moz-transition: all .5s;
+                -o-transition: all .5s;
+                transition: all .5s;
             }
         }
     }
@@ -765,7 +806,7 @@
                 font-family: $robotoLight;
                 color: $dark;
                 font-size: 18px;
-                line-height: 18px;
+                line-height: 30px;
                 position: relative;
                 counter-increment: custom-counter;
                 padding-left: 55px;
@@ -783,11 +824,11 @@
                     color: $white;
                     background-color: $blue;
                     border-radius: 100%;
-                    font-family: $acuminProExtraCondBold;
+                    @include acuminProExtraCondBlack();
                     letter-spacing: 1.8px;
                     font-size: 36px;
-                    line-height: 48px;
-                    top: 0;
+                    line-height: 34px;
+                    top: 8px;
                     left: 0;
                     height: 40px;
                     width: 40px;
@@ -802,6 +843,10 @@
                     font-size: 18px;
                     line-height: 18px;
                     position: relative;
+                    border-bottom: 1px solid $blue;
+                    -webkit-transition: all 0.5s;
+                    -moz-transition: all 0.5s;
+                    transition: all 0.5s;
                     @include media-xs {
                         text-decoration: underline;
                     }
@@ -811,39 +856,43 @@
                     @include media-md {
                         text-decoration: underline;
                     }
-                    &:before {
-                        content: "";
-                        position: absolute;
-                        height: 1px;
-                        bottom: 0;
-                        right: 0;
-                        visibility: visible;
-                        width: 100%;
-                        -webkit-transition: all 0.3s ease-in-out 0s;
-                        -moz-transition: all 0.3s ease-in-out 0s;
-                        -ms-transition: all 0.3s ease-in-out 0s;
-                        -o-transition: all 0.3s ease-in-out 0s;
-                        transition: all 0.3s ease-in-out 0s;
-                        background-position: 0 0,0 100%,0 0,100% 0;
-                        background-repeat: repeat-x;
-                        background-size: 8px;
-                        background: $blue;
-                        @include media-xs {
-                            display: none;
-                        }
-                        @include media-sm {
-                            display: none;
-                        }
-                        @include media-md {
-                            display: none;
-                        }
-                    }
+                    // &:before {
+                    //     content: "";
+                    //     position: absolute;
+                    //     height: 1px;
+                    //     bottom: 0;
+                    //     right: 0;
+                    //     visibility: visible;
+                    //     width: 100%;
+                    //     -webkit-transition: all 0.3s ease-in-out 0s;
+                    //     -moz-transition: all 0.3s ease-in-out 0s;
+                    //     -ms-transition: all 0.3s ease-in-out 0s;
+                    //     -o-transition: all 0.3s ease-in-out 0s;
+                    //     transition: all 0.3s ease-in-out 0s;
+                    //     background-position: 0 0,0 100%,0 0,100% 0;
+                    //     background-repeat: repeat-x;
+                    //     background-size: 8px;
+                    //     background: $blue;
+                    //     @include media-xs {
+                    //         display: none;
+                    //     }
+                    //     @include media-sm {
+                    //         display: none;
+                    //     }
+                    //     @include media-md {
+                    //         display: none;
+                    //     }
+                    // }
                     &:hover {
                         text-decoration: none;
                         color: $blue;
-                        &:before {
-                            width: 0;
-                        }
+                        -webkit-transition: all 0.5s;
+                        -moz-transition: all 0.5s;
+                        transition: all 0.5s;
+                        border-bottom: 1px solid transparent;
+                        // &:before {
+                        //     width: 0;
+                        // }
                     }
                 }
                 b, 
@@ -1289,6 +1338,116 @@
             line-height: 34px;
             @include media-xs {
                 line-height: 26px;
+            }
+        }
+    }
+}
+.calendar-sign-up-msg-container {
+    border-bottom: 1px solid #54585a;
+    margin-bottom: 50px;
+    padding-bottom: 67px;
+    margin-top: 15px;
+    display: none;
+    @include media-sm {
+        margin-bottom: 40px;
+        padding-bottom: 47px;
+    }
+    @include media-xs {
+        display: flex;
+        flex-flow: column;
+        margin-top: -10px;
+        margin-bottom: 35px;
+        padding-bottom: 25px;
+    }
+    .img-container {
+        display: inline-block;
+        width: 347px;
+        vertical-align: top;
+        @include media-lg {
+            margin-left: -30px;
+        }
+        @include media-md {
+            width: 350px;
+        }
+        @include media-sm {
+            width: 250px;
+        }
+        @include media-xs {
+            width: auto;
+            max-width: 100%;
+            padding: 0 30px;
+            order: 2;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    }
+    .calendar-sign-up-msg-content {
+        display: inline-block;
+        width: calc(100% - 330px);
+        padding-left: 85px;
+        vertical-align: top;
+        margin-top: 42px;
+        padding-right: 40px;
+        @include media-md {
+            width: calc(100% - 355px);
+            margin-top: 32px;
+            padding-left: 55px;
+            padding-right: 0;
+        }
+        @include media-sm {
+            width: calc(100% - 255px);
+            margin-top: 25px;
+            padding-left: 35px;
+            padding-right: 0;
+        }
+        @include media-xs {
+            width: auto;
+            max-width: 100%;
+            margin-top: 0;
+            padding: 0 30px;    
+            order: 1;     
+            margin-bottom: 10px;   
+        }
+        h2 {
+            color: $dark;
+            @include media-xs {
+                font-size: 58px;
+                line-height: 58px;
+            }
+        }
+        p {
+            font-family: $robotoLight;
+            font-size: 22px;
+            line-height: 34px;
+            a {
+                position: relative;
+                color: $blue;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    height: 1px;
+                    bottom: 0;
+                    right: 0;
+                    visibility: visible;
+                    width: 100%;
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                    -moz-transition: all 0.3s ease-in-out 0s;
+                    -ms-transition: all 0.3s ease-in-out 0s;
+                    -o-transition: all 0.3s ease-in-out 0s;
+                    transition: all 0.3s ease-in-out 0s;
+                    background-position: 0 0,0 100%,0 0,100% 0;
+                    background-repeat: repeat-x;
+                    background-size: 8px;
+                    background: $blue;
+                }
+                &:hover {
+                    &:after {
+                        width: 0;
+                    }
+                }
             }
         }
     }
