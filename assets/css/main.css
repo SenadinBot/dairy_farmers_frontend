@@ -6164,21 +6164,21 @@ main {
         .recommendation-container .recommendation-content p {
           width: 100%; } }
     .recommendation-container .recommendation-content .primary-btn {
-      padding: 12px 49px 14px 49px; }
+      padding: 11.5px 49px 15.5px 49px; }
       @media (min-width: 1200px) {
         .recommendation-container .recommendation-content .primary-btn {
           margin-left: 2px; } }
       @media (max-width: 767px) and (orientation: portrait) {
         .recommendation-container .recommendation-content .primary-btn {
           width: 100%;
-          padding: 12px 5px 14px 5px; } }
+          padding: 11.5px 5px 15.5px 5px; } }
       @media (max-width: 767px) and (orientation: landscape) {
         .recommendation-container .recommendation-content .primary-btn {
           width: 60%;
-          padding: 12px 22px 14px 22px; } }
+          padding: 11.5px 22px 15.5px 22px; } }
       @media (min-width: 992px) and (max-width: 1199px) {
         .recommendation-container .recommendation-content .primary-btn {
-          padding: 12px 12px 14px 12px;
+          padding: 11.5px 12px 15.5px 12px;
           width: 100%; } }
 
 .info-item-container {

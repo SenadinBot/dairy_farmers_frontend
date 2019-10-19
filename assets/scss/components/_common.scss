@@ -527,20 +527,20 @@
         .primary-btn {
             // min-width: 229px;
             // padding: 12px 15px 14px 15px;
-            padding: 12px 49px 14px 49px;
+            padding: 11.5px 49px 15.5px 49px;
             @include media-lg {
                 margin-left: 2px;
             }
             @include media-xs-portrait {
                 width: 100%;
-                padding: 12px 5px 14px 5px;
+                padding: 11.5px 5px 15.5px 5px;
             }
             @include media-xs-landscape {
                 width: 60%;
-                padding: 12px 22px 14px 22px;
+                padding: 11.5px 22px 15.5px 22px;
             }
             @include media-md {
-                padding: 12px 12px 14px 12px;
+                padding: 11.5px 12px 15.5px 12px;
                 width: 100%;
             }
         }
