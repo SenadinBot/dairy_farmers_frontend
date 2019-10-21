@@ -418,6 +418,10 @@ header {
                 margin-top: 100px;
                 width: 100%;
             }
+            @include media-md {
+                position: relative;
+                top: 15px;
+            }
             li {
                 list-style: none;
                 display: inline-block;
@@ -574,7 +578,7 @@ header {
         }
         .primary-btn {
             @include media-md {
-                padding: 13px 22px 7px 22px;
+                padding: 5px 22px 7px 22px;
             }
         }
         img {
@@ -817,6 +821,9 @@ header {
     margin-top: 15px;
     ul {
         margin-top: 50px;
+        @include media-md {
+            top: 0;
+        }
         li {
             margin-bottom: 30px;
             a {
@@ -964,6 +971,9 @@ header {
         }
         @include media-sm {
             margin-top: 20px;
+        }
+        @include media-md {
+            top: 0;
         }
     }
 }

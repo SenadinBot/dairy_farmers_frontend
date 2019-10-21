@@ -481,7 +481,6 @@
     }
     .contact-esmp-msg-container {
         margin-bottom: 95px;
-        display: none;
         @include media-xs {
             margin-top: -20px;
         }
@@ -1180,20 +1179,16 @@
         }
     }
     .form-success-container {
-        text-align: center;
-        background: #FFFFFF;
-        box-shadow: 0 2px 13px 0 rgba(204, 204, 204, 0.8);
-        float: left;
-        width: 100%;
-        display: block;
-        text-align: center;
-        padding: 51px 28px 53px 28px;
-        border-radius: 8px;
-        position: relative;
-        margin-bottom: 160px;
-        display: none;
+        margin-bottom: 95px;
         @include media-xs {
-            padding: 30px 15px;
+            margin-top: -20px;
+        }
+        h4 {
+            text-transform: uppercase;
+            margin-top: -8px;
+            @include media-xs {
+                margin-bottom: 0;
+            }
         }
         p {
             font-family: $robotoLight;
@@ -1347,7 +1342,6 @@
     margin-bottom: 50px;
     padding-bottom: 67px;
     margin-top: 15px;
-    display: none;
     @include media-sm {
         margin-bottom: 40px;
         padding-bottom: 47px;

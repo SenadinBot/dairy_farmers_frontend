@@ -208,6 +208,12 @@
                 }
             }
         }
+        &.add-bottom-spacing {
+            margin-bottom: 150px;
+            @include media-xs {
+                margin-top: 120px;
+            }
+        }
     }
     &.esmp-school-article-list-container {
         margin-top: -46px;

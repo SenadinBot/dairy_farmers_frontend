@@ -752,6 +752,10 @@ header {
           margin-left: 0;
           margin-top: 100px;
           width: 100%; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        header nav ul {
+          position: relative;
+          top: 15px; } }
       header nav ul li {
         list-style: none;
         display: inline-block;
@@ -897,7 +901,7 @@ header {
           top: 8px; } }
     @media (min-width: 992px) and (max-width: 1199px) {
       header .calendar-link .primary-btn {
-        padding: 13px 22px 7px 22px; } }
+        padding: 5px 22px 7px 22px; } }
     header .calendar-link img {
       width: 105px;
       height: 67px;
@@ -1112,6 +1116,9 @@ header {
   margin-top: 15px; }
   .mobile-more-links ul {
     margin-top: 50px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .mobile-more-links ul {
+        top: 0; } }
     .mobile-more-links ul li {
       margin-bottom: 30px; }
       .mobile-more-links ul li a {
@@ -1244,6 +1251,9 @@ header {
   @media (min-width: 768px) and (max-width: 991px) {
     .desktop-more-links ul {
       margin-top: 20px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .desktop-more-links ul {
+      top: 0; } }
 
 @media (max-width: 767px) {
   .mobile-inner-nav {
@@ -3048,9 +3058,6 @@ footer {
     display: inline-block;
     width: 30%;
     vertical-align: top; }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      .adverb-container .img-container {
-        width: 40%; } }
     @media (min-width: 768px) and (max-width: 991px) {
       .adverb-container .img-container {
         width: 100%;
@@ -3062,18 +3069,14 @@ footer {
         text-align: center;
         margin-top: -100px; } }
     .adverb-container .img-container img {
-      width: 452px;
       height: 302px;
       position: absolute;
-      left: -90px;
       top: -50px;
       object-fit: cover;
       z-index: 9; }
       @media (min-width: 992px) and (max-width: 1199px) {
         .adverb-container .img-container img {
-          width: 340px;
           height: 230px;
-          left: 10px;
           top: -50px; } }
       @media (min-width: 768px) and (max-width: 991px) {
         .adverb-container .img-container img {
@@ -3086,8 +3089,8 @@ footer {
           position: relative;
           top: 0;
           left: 0;
-          width: 280px;
-          height: 200px; } }
+          height: 200px;
+          margin-bottom: 15px; } }
   .adverb-container .adverb-content {
     display: inline-block;
     width: 70%;
@@ -3098,7 +3101,6 @@ footer {
     padding-left: 45px; }
     @media (min-width: 992px) and (max-width: 1199px) {
       .adverb-container .adverb-content {
-        width: 60%;
         padding-bottom: 20px; } }
     @media (min-width: 768px) and (max-width: 991px) {
       .adverb-container .adverb-content {
@@ -6286,7 +6288,7 @@ main {
           padding: 0 15px 0 0; } }
       .info-item-container .info-item-content ul li {
         font-family: "Roboto Light";
-        line-height: 24px;
+        line-height: 30px;
         font-size: 18px;
         color: #000000;
         position: relative;
@@ -6301,7 +6303,7 @@ main {
           width: 8px;
           height: 8px;
           position: absolute;
-          top: 7px;
+          top: 11px;
           left: 0; }
     .info-item-container .info-item-content p {
       font-family: "Roboto Light";
@@ -7695,6 +7697,11 @@ main {
         margin-bottom: 50px; }
         .article-list-container.programs-article-list-container .article-item-container:last-child {
           margin-bottom: 0; } }
+    .article-list-container.programs-article-list-container.add-bottom-spacing {
+      margin-bottom: 150px; }
+      @media (max-width: 767px) {
+        .article-list-container.programs-article-list-container.add-bottom-spacing {
+          margin-top: 120px; } }
   .article-list-container.esmp-school-article-list-container {
     margin-top: -46px;
     margin-bottom: 95px; }
@@ -13528,8 +13535,7 @@ main {
         visibility: hidden;
         width: 0; }
   .contact-esmp-container .contact-esmp-msg-container {
-    margin-bottom: 95px;
-    display: none; }
+    margin-bottom: 95px; }
     @media (max-width: 767px) {
       .contact-esmp-container .contact-esmp-msg-container {
         margin-top: -20px; } }
@@ -14122,21 +14128,16 @@ main {
       line-height: 30px;
       font-family: "Roboto Light"; }
   .opt-out-container .form-success-container {
-    text-align: center;
-    background: #FFFFFF;
-    box-shadow: 0 2px 13px 0 rgba(204, 204, 204, 0.8);
-    float: left;
-    width: 100%;
-    display: block;
-    text-align: center;
-    padding: 51px 28px 53px 28px;
-    border-radius: 8px;
-    position: relative;
-    margin-bottom: 160px;
-    display: none; }
+    margin-bottom: 95px; }
     @media (max-width: 767px) {
       .opt-out-container .form-success-container {
-        padding: 30px 15px; } }
+        margin-top: -20px; } }
+    .opt-out-container .form-success-container h4 {
+      text-transform: uppercase;
+      margin-top: -8px; }
+      @media (max-width: 767px) {
+        .opt-out-container .form-success-container h4 {
+          margin-bottom: 0; } }
     .opt-out-container .form-success-container p {
       font-family: "Roboto Light"; }
 
@@ -14274,8 +14275,7 @@ main {
   border-bottom: 1px solid #54585a;
   margin-bottom: 50px;
   padding-bottom: 67px;
-  margin-top: 15px;
-  display: none; }
+  margin-top: 15px; }
   @media (min-width: 768px) and (max-width: 991px) {
     .calendar-sign-up-msg-container {
       margin-bottom: 40px;
