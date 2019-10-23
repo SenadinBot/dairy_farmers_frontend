@@ -1,1045 +1,517 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
-  xmlns:o="urn:schemas-microsoft-com:office:office">
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="x-apple-disable-message-reformatting">
-  <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <link href="https://use.typekit.net/nio3oec.css" rel="stylesheet">
-
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700&display=swap" rel="stylesheet">
-  <title>Email Newsletter</title>
-  <style type="text/css">
-    html {
-      margin: 0 !important;
-      padding: 0 !important;
-      height: 100% !important;
-      width: 100% !important;
-    }
-
-    body {
-      margin: 0 !important;
-      padding: 0 0 0 0;
-      height: 100% !important;
-      width: 100% !important;
-    }
-
-    .email-content {
-      padding: 0 20px;
-      margin-bottom: 109px !important;
-    }
-
-    ul li {
-      margin-left: 0;
-    }
-
-    * {
-      -ms-text-size-adjust: 100%;
-      -webkit-text-size-adjust: 100%;
-    }
-
-    div[style*="margin: 16px 0"] {
-      margin: 0 !important;
-    }
-
-    table,
-    td {
-      mso-table-lspace: 0pt !important;
-      mso-table-rspace: 0pt !important;
-      position: relative;
-    }
-
-    table {
-      border-spacing: 0 !important;
-      table-layout: fixed !important;
-      margin: 0 auto;
-      border-collapse: separate;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    img {
-      -ms-interpolation-mode: bicubic;
-    }
-
-    a[x-apple-data-detectors],
-    .unstyle-auto-detected-links a,
-    .aBn {
-      border-bottom: 0 !important;
-      cursor: default !important;
-      color: inherit !important;
-      text-decoration: none !important;
-      font-size: inherit !important;
-      font-family: inherit !important;
-      font-weight: inherit !important;
-      line-height: inherit !important;
-    }
-
-    .im {
-      color: inherit !important;
-    }
-
-    .a6S {
-      display: none !important;
-      opacity: 0.01 !important;
-    }
-
-    img.g-img+div {
-      display: none !important;
-    }
-  </style>
-  <style type="text/css">
-    .img-container {
-      background-color: #fff;
-      margin-top: 4px;
-    }
-
-    .background-logo {
-      height: 180px;
-      max-width: 100%;
-      width: auto;
-      margin: 40px auto 20px auto;
-      display: block;
-      object-fit: contain;
-    }
-
-    .email-body tbody {
-      border-radius: 0;
-      border: solid 1px #dadada;
-    }
-
-    .email-body td {
-      padding: 0 25x;
-    }
-
-    .email-body td td {
-      padding: 0;
-    }
-
-    .app-logo {
-      width: 175px;
-      height: 30px;
-      object-fit: contain;
-    }
-
-    h2 {
-      font-family: "acumin-pro-extra-condensed", sans-serif;
-      font-size: 48px;
-      font-weight: 900;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1;
-      letter-spacing: 2.4px;
-      text-align: left;
-      color: #000000;
-      text-transform: uppercase;
-      text-align: left;
-      margin: 0 0 26px 0;
-    }
-
-    h3 {
-      font-family: "acumin-pro-extra-condensed", sans-serif;
-      font-size: 36px;
-      font-weight: 900;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1;
-      letter-spacing: 1.8px;
-      text-align: left;
-      color: #000000;
-      text-transform: uppercase;
-      text-align: left;
-      margin: 0 0 5px 0;
-    }
-
-    h5 {
-      font-size: 18px;
-      font-weight: bold;
-      line-height: 20px;
-      color: #0072ce;
-      letter-spacing: normal;
-      font-family: 'Roboto Slab', sans-serif;
-      text-transform: uppercase;
-      text-align: left;
-      margin: 0;
-    }
-
-    p {
-      font-family: 'Roboto Light', sans-serif;
-      font-size: 16px;
-      font-weight: 300;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.5;
-      letter-spacing: normal;
-      text-align: left;
-      color: #000000;
-      text-align: left;
-      margin: 0 0 23px 0;
-    }
-
-    .custom-btn {
-      font-family: "acumin-pro-extra-condensed", sans-serif;
-      font-style: normal;
-      font-weight: 900;
-      background-color: transparent;
-      font-size: 22px;
-      line-height: 22px;
-      padding: 6px 32px 8px 32px;
-      text-align: center;
-      border-radius: 0;
-      letter-spacing: 1.8px;
-      position: relative;
-      z-index: 1;
-      border: 2px solid #0072ce;
-      color: #0072ce;
-      display: inline-block;
-      text-transform: uppercase;
-      -webkit-transition: all 0.3s ease;
-      -moz-transition: all 0.3s ease;
-      -o-transition: all 0.3s ease;
-      transition: all 0.3s ease;
-    }
-
-    .custom-btn:hover {
-      background-color: #0072ce;
-      color: #ffffff;
-      text-decoration: none;
-      outline: none;
-    }
-
-    .blue-btn {
-      font-family: "acumin-pro-extra-condensed", sans-serif;
-      font-style: normal;
-      font-weight: 900;
-      background-color: #0072ce;
-      font-size: 30px;
-      line-height: 30px;
-      padding: 12px 50px 14px 50px;
-      text-align: center;
-      border-radius: 0;
-      letter-spacing: 1.8px;
-      position: relative;
-      z-index: 1;
-      border: 2px solid #0072ce;
-      color: #ffffff;
-      display: inline-block;
-      text-transform: uppercase;
-      -webkit-transition: all 0.3s ease;
-      -moz-transition: all 0.3s ease;
-      -o-transition: all 0.3s ease;
-      transition: all 0.3s ease;
-    }
-
-    .blue-btn:hover {
-      background-color: transparent;
-      color: #0072ce;
-      text-decoration: none;
-      outline: none;
-    }
-
-    td .img-container img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-    }
-
-    .footer-intro {
-      display: block;
-    }
-
-    .footer-intro p {
-      color: #ffffff;
-      font-family: 'Roboto', sans-serif;
-      font-size: 18px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      text-align: center;
-      margin: 26px 0 10px 0;
-    }
-
-    .footer-content b {
-      font-weight: 500;
-      font-size: 22px;
-      display: block;
-      letter-spacing: 0.04em;
-    }
-
-    .footer-social {
-      margin-bottom: 50px;
-    }
-
-    .footer-social span {
-      display: block;
-      color: #ffffff !important;
-      font-family: "acumin-pro-extra-condensed", sans-serif;
-      font-size: 30px;
-      font-weight: 900;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.2;
-      letter-spacing: 1.5px;
-      text-align: center;
-      margin: 40px 0 5px 0;
-      text-transform: uppercase;
-    }
-
-    .footer-social ul {
-      margin: 0 0 49px 0;
-      padding: 0;
-      list-style: none;
-      font-size: 0;
-      text-align: center;
-    }
-
-    .footer-social ul li {
-      margin-right: 18px;
-      display: inline-block;
-    }
-
-    .footer-social ul li a {
-      width: 51px;
-      height: 50px;
-      display: block;
-      position: relative;
-      -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      transition: all 0.5s;
-      border: none;
-    }
-
-    .footer-social ul li a:hover {
-      opacity: 0.7;
-    }
-
-    .footer-social ul li:last-child {
-      margin-right: 0;
-    }
-
-    .footer-social img {
-      max-height: 100%;
-      max-width: 100%;
-      object-fit: contain;
-    }
-
-    .footer-address ul {
-      margin: 0 0 10px 0;
-      padding: 0;
-      list-style: none;
-      font-size: 0;
-      text-align: center;
-    }
-
-    .footer-address ul li {
-      font-size: 11px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      text-align: center;
-      color: #ffffff;
-      font-family: 'Roboto', sans-serif;
-    }
-
-    .footer-link ul {
-      margin: 0 0 30px 0;
-      padding: 0;
-      list-style: none;
-      font-size: 0;
-      text-align: center;
-    }
-
-    .footer-link ul li {
-      margin-right: 0;
-      display: inline-block;
-      position: relative;
-      padding-bottom: 1px;
-    }
-
-    .footer-link ul li:last-child {
-      margin-right: 0;
-      padding-left: 10px;
-    }
-
-    .footer-link ul li:first-child {
-      border-right: 2px solid #ffffff;
-      padding-right: 10px;
-    }
-
-    .footer-link ul li a {
-      font-size: 14px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      text-align: center;
-      color: #ffffff;
-      font-family: 'Roboto', sans-serif;
-      border-bottom: 1px solid #ffffff;
-      -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      transition: all 0.5s;
-    }
-
-    .footer-link ul li a:hover {
-      color: #ffffff;
-      -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      transition: all 0.5s;
-      border-bottom: 1px solid transparent;
-    }
-
-    .footer-copyright {
-      padding-top: 17px;
-    }
-
-    .footer-copyright p {
-      font-size: 11px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      text-align: center;
-      color: #ffffff;
-      font-family: 'Roboto', sans-serif;
-    }
-
-    .article-icon-info {
-      text-align: center;
-      position: relative;
-      padding-top: 20px;
-      margin-bottom: 30px;
-      border-top: 1px solid #cccccc;
-    }
-
-    .article-icon-info ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .article-icon-info ul li {
-      display: inline-block;
-      margin-right: 20px;
-    }
-
-    .article-icon-info ul li span {
-      font-family: 'Roboto Light', sans-serif;
-      font-size: 14px;
-      font-weight: 300;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1;
-      letter-spacing: normal;
-      text-align: left;
-      color: #000000;
-      text-align: left;
-      vertical-align: middle;
-    }
-
-    .article-icon-info ul li:last-child {
-      margin-right: 0;
-    }
-
-    .article-icon-info ul li img {
-      height: 25px;
-      display: inline-block;
-      vertical-align: middle;
-    }
-
-    .email-header {
-      position: relative;
-      margin: auto;
-      max-width: 640px;
-      width: 100%;
-      padding: 11px 20px 0 20px;
-      background-image: linear-gradient(100deg, rgba(95, 33, 103, 0.5), #0072ce), linear-gradient(to bottom, #0072ce, #0072ce);
-      background-color: #0072ce;
-    }
-
-    .header-intro {
-      text-align: center;
-    }
-
-    .header-intro p {
-      color: #ffffff;
-      font-size: 10px;
-      font-weight: 300;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      text-align: center;
-      font-family: 'Roboto Light', sans-serif;
-      margin: 0;
-    }
-
-    .header-intro p a {
-      color: #ffffff;
-      border-bottom: 1px solid #ffffff;
-      -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      transition: all 0.5s;
-    }
-
-    .header-intro p a:hover {
-      color: #ffffff;
-      -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      transition: all 0.5s;
-      border-bottom: 1px solid transparent;
-    }
-
-    .header-logo {
-      vertical-align: middle;
-      text-align: center;
-    }
-
-    .header-logo .img-container {
-      width: 73px;
-      height: 73px;
-      vertical-align: middle;
-      border-radius: 100%;
-      display: inline-block;
-      margin-right: 15px;
-    }
-
-    .header-logo .img-container img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-    }
-
-    .header-logo span {
-      display: inline-block;
-      vertical-align: middle;
-      color: #ffffff !important;
-      font-family: "acumin-pro-extra-condensed", sans-serif;
-      font-size: 30px;
-      font-weight: 900;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.2;
-      letter-spacing: 1.5px;
-      text-align: left;
-      text-transform: uppercase;
-    }
-
-    .header-bg-image .img-container {
-      height: 338px;
-      margin-top: 23px;
-    }
-
-    .header-bg-image .img-container img {
-      max-width: 100%;
-      max-height: 100%;
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
-
-    .email-recipe-intro {
-      position: relative;
-      margin: auto;
-      max-width: 640px;
-      width: 100%;
-      padding: 0 70px;
-    }
-
-    .recipe-intro {
-      padding: 14px 35px 0 22px;
-      margin-top: -70px;
-      margin-bottom: 87px;
-      background-color: rgba(255, 255, 255, 0.9);
-    }
-
-    .recipe-content {
-      display: inline-block;
-      width: 69%;
-      vertical-align: top;
-    }
-    .recipe-content p {
-      line-height: 1.67;
-      font-size: 18px;
-      margin: 0 0 27px 0;
-    }
-    .recipe-info {
-      display: inline-block;
-      border-left: 1px solid #cccccc;
-      width: 25%;
-      vertical-align: top;
-      padding-left: 17px;
-      margin-top: 4px;
-    }
-    .recipe-info ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .recipe-info ul li {
-      display: inline-block;
-      text-align: center;
-    }
-
-    .recipe-info ul li span {
-      font-family: 'Roboto Light', sans-serif;
-      font-size: 12px;
-      font-weight: 300;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1;
-      letter-spacing: normal;
-      color: #000000;
-      display: block;
-      margin: 0 auto;
-    }
-
-    .recipe-info ul li:first-child {
-      margin-right: 25px;  
-      margin-bottom: 17px;    
-    }
-
-    .recipe-info ul li img {
-      height: 25px;
-      display: block;
-      margin: 0 auto 10px auto;
-    }
-  </style>
-  <style media="only screen and (max-width: 767px)" type="text/css">
-    @media only screen and (max-width: 767px) {
-      .email-content {
-        padding: 0 40px !important;
-        margin-bottom: 120px !important;
-      }
-
-      .custom-btn {
-        width: 100%;
-        padding: 12px 0 14px 0 !important;
-      }
-
-      body {
-        padding: 0;
-      }
-
-      table {
-        width: 100% !important;
-      }
-
-      table td {
-        width: 100%;
-        display: block;
-        padding-right: 0 !important;
-        padding-left: 0 !important;
-      }
-
-      .stack-column-center {
-        margin-right: 0 !important;
-      }
-
-      .stack-column-center:first-child {
-        margin-bottom: 20px;
-      }
-
-      .stack-column-center:last-child {
-        margin-bottom: 0;
-      }
-      .header-intro p {
-        font-size: 14px;
-      }
-      .header-logo .img-container {
-        display: block;
-        margin: 0 auto 25px auto;
-        width: 110px;
-        height: 110px;
-      }
-      .header-logo span {
-        display: block;
-        text-align: center;
-      }
-      .header-bg-image .img-container {
-        margin-top: 10px;
-        height: 200px;
-      }
-      .email-header {
-        padding: 11px 15px 0 15px;
-      }
-      .email-recipe-intro {
-        padding: 0 30px;
-      }
-      .recipe-intro {
-        padding: 14px 13px 0 13px;
-        margin-bottom: 60px;
-      }
-      h2 {
-        font-size: 42px;
-        margin: 0 0 7px 0;
-      }
-      .recipe-content {
-        width: 100%;
-        display: block;
-      }
-      .recipe-content p {
-        margin: 0 0 10px 0;
-      }
-      .recipe-info {
-        width: 100%;
-        display: block;
-        border-top: 1px solid #cccccc;
-        border-left: none;
-        margin-top: 0;
-        padding-left: 0;
-        margin-bottom: 20px;
-        padding-top: 15px;
-        text-align: center;
-      }
-      .recipe-info ul li {
-        margin-right: 20px;
-      }
-      .recipe-info ul li:last-child {
-        margin-right: 0;
-      }
-      .recipe-info ul li span {
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: 3px;
-      }
-      .recipe-info ul li img {
-        display: inline-block;
-        vertical-align: middle;
-        margin: 0;
-      }
-    }
-  </style>
+    <title>Homepage</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <meta name="description"
+        content="This is an example of a meta description. This will often show up in search results.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./App_Themes/Milk/images/favicon.ico">
+
+    <!-- Styles -->
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
 </head>
 
-<body width="100%" height="100%"
-  style="margin: 0; mso-line-height-rule: exactly; background-color: #ffffff; max-width: 100%">
-  <center style="width: 100%; background-color: #ffffff;">
-    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
-      class="email-container email-header">
-      <tr>
-        <td>
-          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
-            <tr>
-              <td class="header-intro">
-                <p>Problems viewing this email? <a href="http://staging.milk.org" target="_blank">Click here</a>.</p>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
-            <tr class="header-logo">
-              <td>
-                <div class="img-container">
-                  <img src="http://staging.milk.org/Milk/media/Images/logo.png?ext=.png" alt="Image">
-                </div>
-                <span>Hello Again, Name</span>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
-            <tr>
-              <td class="header-bg-image">
-                <div class="img-container">
-                  <img src="http://staging.milk.org/Milk/media/Images/img-recipe-list-hero-01@3x.jpg?ext=.jpg"
-                    alt="Image">
-                </div>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
-      class="email-container email-recipe-intro">
-      <tr>
-        <td>
-          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
-            <tr>
-              <td>
-                <div class="recipe-intro">
-                  <h5>Recipes</h5>
-                  <h2>Cheesy Scalloped Potato Gnocchi</h2>
-                  <div class="recipe-intro-content">
-                    <div class="recipe-content">
-                      <p>Serve up this comfort food alongside your favourite roast for a cozy meal the family will
-                        adore.</p>
+<body>
+    <header>
+        <div class="top-nav-container">
+            <div class="container custom-container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul>
+                            <li>
+                                <a href="#">Events</a>
+                            </li>
+                            <li>
+                                <a href="#">DFOWeb Login</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="recipe-info">
-                      <ul>
-                        <li>
-                          <img src="http://staging.milk.org/Milk/media/Images/icon-prep-time.png" alt="Im">
-                          <span>15min</span>
-                        </li>
-                        <li>
-                          <img src="http://staging.milk.org/Milk/media/Images/img-culinary-icon-cook-time.png"
-                            alt="Im">
-                          <span>35min</span>
-                        </li>
-                        <li>
-                          <img src="http://staging.milk.org/Milk/media/Images/img-culinary-icon-serving.png" alt="Im">
-                          <span>4-6</span>
-                        </li>
-                      </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container custom-container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="nav-icon-container hidden-lg hidden-md">
                     </div>
-                  </div>
-                  <a href="http://staging.milk.org" class="blue-btn" target="_blank">View this recipe</a>
+                    <div class="logo-container">
+                        <h1>
+                            <a href="/"><img src="./App_Themes/Milk/images/logo.png" alt="Page logo" class="logo">
+                            </a>
+                        </h1>
+                    </div>
+                    <nav>
+                        <div class="mobile-inner-nav">
+                            <div class="mobile-intro hidden-lg hidden-md">
+                                <div class="close-icon-container">
+                                    <div class="close-icon"></div>
+                                </div>
+                                <!-- Header Search Container -->
+                                <div class="header-search">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search" aria-label=""
+                                                aria-describedby="basic-addon">
+                                            <div class="input-group-prepend">
+                                                <button type="button"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End of Header Search Container -->
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#">Our Milk</a>
+                                </li>
+                                <li>
+                                    <a href="#">Culinary</a>
+                                </li>
+                                <li>
+                                    <a href="#">Our farmers</a>
+                                </li>
+                                <li>
+                                    <a href="#">Programs</a>
+                                </li>
+                            </ul>
+                            <div class="desktop-more-links">
+                                <ul>
+                                    <li class="search-icon">
+                                        <img src="./App_Themes/Milk/images/icon-search.svg" alt="Search Icon">
+                                    </li>
+                                    <li class="calendar-link">
+                                        <div class="calendar-link-content">
+                                            <span>Free 2020 <br> milk calendar</span>
+                                            <img src="./App_Themes/Milk/images/img-calendar-2019@3x.png"
+                                                alt="Calendar Icon">
+                                        </div>
+                                        <a href="#" class="primary-btn">Get yours today</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mobile-more-links hidden-lg hidden-md">
+                                <ul>
+                                    <li>
+                                        <a href="#">Events</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">DFOWeb Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- Header Search Container -->
+                    <div class="header-search desktop-header-search hidden-xs hidden-sm">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search" aria-label=""
+                                    aria-describedby="basic-addon">
+                                <div class="input-group-prepend">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Header Search Container -->
                 </div>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
-      style="background-color: #ffffff; max-width: 640px; width: 100%; text-align: left;"
-      class="email-container email-content">
-      <tr>
-        <td>
-          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
-            <tr>
-              <td>
-                <h2>Also happening <br> this month</h2>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td style="border-bottom: 1px solid #e5e5e5;">
-          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
-            <tr>
-              <td style="vertical-align: top; padding-right: 10px; padding-bottom: 50px;">
-                <div class="img-container">
-                  <img
-                    src="http://staging.milk.org/Milk/media/Images/img-culinary-ontario-local-article-1-521-w@3x.png?ext=.png"
-                    alt="image">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="banner-image-container">
+            <div class="banner-img-background desktop-img"
+                style="background-image: url('./App_Themes/Milk/images/img-home-primary-hero-cow-field@3x.png')">
+            </div>
+            <div class="banner-img-background mobile-img"
+                style="background-image: url('./App_Themes/Milk/images/img-home-primary-hero-cow-field-mobile@3x.png')">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="banner-image-content">
+                            <div class="title-border">
+                                <h1>Dairy Done Right</h1>
+                            </div>
+                            <div class="banner-image-inner-content">
+                                <p>Tasty, refreshing, nutritious, versatile – Ontario milk and dairy products cover a
+                                    lot of
+                                    ground. Find out just how good it is for you, and how it gets that way.</p>
+                                <a href="#" class="primary-btn blue-btn">Our milk</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </td>
-              <td style="vertical-align: top; padding-left: 10px; padding-bottom: 50px;">
-                <h5>Chefs & Restaurants</h5>
-                <h3>Kingston Atomica Takes Bold Flavour in a New Direction</h3>
-                <p>Once the capital city of the province of Canada, Kingston has been quietly reinventing itself, and
-                  you
-                  can see it in its local food scene.</p>
-                <a href="http://staging.milk.org" class="custom-btn" target="_blank">Read the article</a>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td style="border-bottom: 1px solid #e5e5e5; padding-top: 50px;">
-          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
-            <tr>
-              <td style="vertical-align: top; padding-right: 10px;  padding-bottom: 50px;">
-                <h5>local ontario</h5>
-                <h3>ontario local: sudbury</h3>
-                <p>Verdicchio Serves Up Central Italian Wine & Food Culture</p>
-                <a href="http://staging.milk.org" class="custom-btn" target="_blank">Read the article</a>
-              </td>
-              <td style="vertical-align: top; padding-left: 10px;  padding-bottom: 50px;">
-                <div class="img-container">
-                  <img src="http://staging.milk.org/Milk/media/Images/img-programs-esmp@3x-2.png?ext=.png" alt="image">
+            </div>
+        </div>
+        <div class="recipe-container">
+            <div class="recipe-img-background desktop-img"
+                style="background-image: url('./App_Themes/Milk/images/img-home-secondary-recipe-hero@3x.png')">
+            </div>
+            <div class="recipe-img-background mobile-img"
+                style="background-image: url('./App_Themes/Milk/images/recipe-mobile-bg.png')">
+            </div>
+            <div class="recipe-content">
+                <span>Satisfying Sides</span>
+                <h2 data-aos="fade-left">Cheesy Scalloped Potato Gnocchi</h2>
+                <div data-aos="fade-left" class="recipe-info">
+                    <div class="recipe-info-item">
+                        <span><b>Prep Time:</b>15 min</span>
+                    </div>
+                    <div class="recipe-info-item">
+                        <span><b>Cook Time:</b>35 min</span>
+                    </div>
+                    <div class="recipe-info-item">
+                        <span><b>Serves:</b>4-6</span>
+                    </div>
                 </div>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td style="border-bottom: 1px solid #e5e5e5; padding-top: 50px;">
-          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
-            <tr>
-              <td style="vertical-align: top; padding-right: 10px;  padding-bottom: 50px;">
-                <div class="img-container">
-                  <img
-                    src="http://staging.milk.org/Milk/media/Images/img-culinary-ontario-local-article-1-521-w@3x.png?ext=.png"
-                    alt="image">
+                <p data-aos="fade-left">Serve up this comfort food alongside your favourite roast for a cozy meal
+                    the family will adore.</p>
+                <a href="#" class="primary-btn white-btn" data-aos="fade-up">See the recipe</a>
+            </div>
+        </div>
+        <div class="recipes-carousel-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="recipes-carousel-intro">
+                            <p>Great recipes start with dairy – find a new favourite today! </p>
+                            <a href="#" class="primary-btn blue-border">Get Cooking</a>
+                        </div>
+                    </div>
                 </div>
-              </td>
-              <td style="vertical-align: top; padding-left: 10px;  padding-bottom: 50px;">
-                <h5>Recipe</h5>
-                <h3>Indian Spiced chicken</h3>
-                <p style="margin: 0 0 3px 0;">Change up your weeknight dinner and make this hint of spice and creamy
-                  chicken meal.</p>
-                <div class="article-icon-info">
-                  <ul>
-                    <li>
-                      <img src="http://staging.milk.org/Milk/media/Images/icon-prep-time.png" alt="Im">
-                      <span>20min</span>
-                    </li>
-                    <li>
-                      <img src="http://staging.milk.org/Milk/media/Images/img-culinary-icon-cook-time.png" alt="Im">
-                      <span>45min</span>
-                    </li>
-                    <li>
-                      <img src="http://staging.milk.org/Milk/media/Images/img-culinary-icon-serving.png" alt="Im">
-                      <span>6-8</span>
-                    </li>
-                  </ul>
+            </div>
+            <div class="recipes-carousel" data-aos="fade-left">
+                <div class="recipes-carousel-inner">
+                    <div class="recipes-slide">
+                        <div class="recipes-slide-content">
+                            <p>Indian Spiced Chicken</p>
+                            <a href="#">See the Recipe</a>
+                        </div>
+                        <img src="./App_Themes/Milk/images/img-recipe-indian-spiced-chicken@3x.png" alt="Recipe Image">
+                    </div>
+                    <div class="recipes-slide white-text" style="background-color: #733410">
+                        <div class="recipes-slide-content">
+                            <p>Double Cheese Arancini</p>
+                            <a href="#">See the Recipe</a>
+                        </div>
+                        <img src="./App_Themes/Milk/images/img-recipe-double-cheese-arancini@3x.png" alt="Recipe Image">
+                    </div>
+                    <div class="recipes-slide white-text" style="background-color: #d77719">
+                        <div class="recipes-slide-content">
+                            <p>Creamy Sweet Potato & Bacon Soup</p>
+                            <a href="#">See the Recipe</a>
+                        </div>
+                        <img src="./App_Themes/Milk/images/img-recipe-creamy-sweet-potato-bacon-soup@3x.png"
+                            alt="Recipe Image">
+                    </div>
+                    <div class="recipes-slide">
+                        <div class="recipes-slide-content">
+                            <p>Indian Spiced Chicken</p>
+                            <a href="#">See the Recipe</a>
+                        </div>
+                        <img src="./App_Themes/Milk/images/img-recipe-indian-spiced-chicken@3x.png" alt="Recipe Image">
+                    </div>
+                    <div class="recipes-slide white-text" style="background-color: #733410">
+                        <div class="recipes-slide-content">
+                            <p>Double Cheese Arancini</p>
+                            <a href="#">See the Recipe</a>
+                        </div>
+                        <img src="./App_Themes/Milk/images/img-recipe-double-cheese-arancini@3x.png" alt="Recipe Image">
+                    </div>
+                    <div class="recipes-slide white-text" style="background-color: #d77719">
+                        <div class="recipes-slide-content">
+                            <p>Creamy Sweet Potato & Bacon Soup</p>
+                            <a href="#">See the Recipe</a>
+                        </div>
+                        <img src="./App_Themes/Milk/images/img-recipe-creamy-sweet-potato-bacon-soup@3x.png"
+                            alt="Recipe Image">
+                    </div>
                 </div>
-                <a href="http://staging.milk.org" class="custom-btn" target="_blank">See the recipe</a>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td style="padding-top: 50px;">
-          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
-            <tr>
-              <td style="vertical-align: top; padding-right: 10px; padding-bottom: 50px;">
-                <h5>Recipe</h5>
-                <h3>Cauliflower CrustPizza</h3>
-                <p style="margin: 0 0 3px 0;">This hearty vegetarian pizza will go on repeat for a weeknight meal.</p>
-                <div class="article-icon-info">
-                  <ul>
-                    <li>
-                      <img src="http://staging.milk.org/Milk/media/Images/icon-prep-time.png" alt="Im">
-                      <span>20min</span>
-                    </li>
-                    <li>
-                      <img src="http://staging.milk.org/Milk/media/Images/img-culinary-icon-cook-time.png" alt="Im">
-                      <span>45min</span>
-                    </li>
-                    <li>
-                      <img src="http://staging.milk.org/Milk/media/Images/img-culinary-icon-serving.png" alt="Im">
-                      <span>6-8</span>
-                    </li>
-                  </ul>
+            </div>
+            <div class="recipes-carousel-controls">
+                <input class="recipes-range" title="Recipe rangle input" type="range" value="0" label="">
+            </div>
+        </div>
+        <div class="adverb-container">
+            <div class="adverb-img-background desktop-img"
+                style="background-image: url('./App_Themes/Milk/images/img-calendar-2019-bg@3x.png')"></div>
+            <div class="adverb-img-background mobile-img"
+                style="background-image: url('./App_Themes/Milk/images/img-calendar-2019-bg-720-w-fpo.png')">
+            </div>
+            <div class="adverb-inner-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="img-container">
+                                <img src="./App_Themes/Milk/images/img-calendar-2019@3x.png" alt="Calendar Image">
+                            </div>
+                            <div class="adverb-content">
+                                <h2>Get a free 2020 milk Calendar</h2>
+                                <p>Enjoy 14 of our favourite sustainable, local and creative recipes from across the
+                                    country in our 43rd Milk Calendar.</p>
+                                <a href="#" class="primary-btn">Get yours today</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <a href="http://staging.milk.org" class="custom-btn" target="_blank">See the recipe</a>
-              </td>
-              <td style="vertical-align: top; padding-left: 10px; padding-bottom: 50px;">
-                <div class="img-container">
-                  <img
-                    src="http://staging.milk.org/Milk/media/Images/img-culinary-ontario-local-article-1-521-w@3x.png?ext=.png"
-                    alt="image">
+            </div>
+        </div>
+        <div class="background-image"
+            style="background-image: url('./App_Themes/Milk/images/img-wood-background@3x.png')">
+            <div class="milk-info-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="full-width-info">
+                                <div class="info-content">
+                                    <h2>Committed to Ontario families</h2>
+                                    <p>The Dairy Farmers of Ontario is run by real Ontario dairy farmers and farm
+                                        families. We’re dedicated to excellence in the production of Canadian milk – of
+                                        course! But we’re also committed to education and awareness about the
+                                        nutritional benefits of Ontario dairy.</p>
+                                    <a href="#" class="primary-btn">View Programs</a>
+                                </div>
+                                <div class="img-container">
+                                    <img src="./App_Themes/Milk/images/img-programs-hero@3x.png" alt="Info Image">
+                                </div>
+                            </div>
+                            <div class="small-info-image">
+                                <div class="img-container">
+                                    <img src="./App_Themes/Milk/images/img-program-esmp@3x.png" alt="Info Image">
+                                </div>
+                                <div class="info-content">
+                                    <h4>Elementary School Milk Program</h4>
+                                    <p>We’ve been helping ensure Ontario students enjoy the nutritional benefits of
+                                        cold,
+                                        fresh milk at lunch every day since 1986.</p>
+                                    <a href="#" class="custom-link">learn about the program</a>
+                                </div>
+                            </div>
+                            <div class="small-info-image">
+                                <div class="img-container">
+                                    <img src="./App_Themes/Milk/images/img-program-recharge@3x.png" alt="Info Image">
+                                </div>
+                                <div class="info-content">
+                                    <h4>Recharge with Milk</h4>
+                                    <p>It takes hard work and determination to reach the top – and that’s not all. Find
+                                        out
+                                        how some of your favourite athletes hydrate, refuel and recharge with milk.</p>
+                                    <a href="#" class="custom-link add-icon">explore our programs</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
-      style="background-image: linear-gradient(100deg, rgba(95, 33, 103, 0.5), #0072ce), linear-gradient(to bottom, #0072ce, #0072ce); background-color: #0072ce; margin:auto; max-width: 640px; width: 100%; text-align: center; padding: 0 20px 30px 20px;"
-      class="email-container email-footer">
-      <tr>
-        <td style="border-bottom: 1px solid rgba(0, 0, 0, 0.4);">
-          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
-            <tr>
-              <td class="footer-intro">
-                <a href="http://staging.milk.org" target="_blank">
-                  <img style="max-height: 142px; max-width: 100%; position: relative; top: -10px;"
-                    src="http://staging.milk.org/Milk/media/Images/logo-footer.png?ext=.png" alt="Image">
-                </a>
-                <p>Proudly brought to you by the Dairy Farmers of Ontario.</p>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
-            <tr>
-              <td class="footer-social">
-                <span>Follow Us</span>
-                <ul>
-                  <li>
-                    <a href="http://staging.milk.org" target="_blank">
-                      <img src="http://staging.milk.org/Milk/media/Images/img-icon-social-facebook.png"
-                        alt="Image">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://staging.milk.org" target="_blank">
-                      <img src="http://staging.milk.org/Milk/media/Images/img-icon-social-instagram.png"
-                        alt="Image">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://staging.milk.org" target="_blank">
-                      <img src="http://staging.milk.org/Milk/media/Images/img-icon-social-twitter.png" alt="Image">
-                    </a>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
-            <tr>
-              <td class="footer-link">
-                <ul>
-                  <li>
-                    <a href="http://staging.milk.org" target="_blank">Unsubscribe</a>
-                  </li>
-                  <li>
-                    <a href="http://staging.milk.org" target="_blank">milk.org</a>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td style="border-bottom: 1px solid rgba(0, 0, 0, 0.4);">
-          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
-            <tr>
-              <td class="footer-address">
-                <ul>
-                  <li>Dairy Farmers of Ontario</li>
-                  <li>6780 Campobello Rd</li>
-                  <li>Mississauga, ON</li>
-                  <li>L5N 2L8</li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
-            <tr>
-              <td class="footer-copyright">
-                <p>© 2019 Dairy Farmers of Ontario. All rights reserved.</p>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </center>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="small-video-info" data-aos="fade-up">
+                            <div class="info-content">
+                                <span>atwood, Ontario</span>
+                                <h4>Tom, Jim & Eric’s Farm</h4>
+                                <p>“Our community consumes a lot of our product so we strive to produce a good
+                                    quality
+                                    for our neighbours.” If you ask the brothers, honest, hard work is what they’ve
+                                    always believed in.</p>
+                                <a href="#" class="primary-btn">Meet Our Farmers</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-container">
+                <div class="container custom-container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="video-img-container" data-toggle="modal" data-target="#modal1">
+                                <img src="./App_Themes/Milk/images/modal-image.png" alt="Video Image">
+                                <button class="primary-btn">Watch the Video</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cookies-container">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-12">
+                        <div class="close-cookie-icon">
+                            <img class="close-cookie" src="/App_Themes/Milk/images/cookie-icon-close.svg"
+                                alt="Close Icon">
+                        </div>
+                        <div class="cookies-content">
+                            <h3>Personalizing your experience</h3>
+                            <p>Vestibulum convallis nisi arcu. Proin pellentesque augue risus, nec molestie massa
+                                scelerisque vel.</p>
+                        </div>
+                        <div class="btn-container">
+                            <a href="#" class="primary-btn white-btn close-cookie">Accept</a>
+                            <a href="#" class="primary-btn white-border close-cookie">Decline</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-intro">
+                        <img src="./App_Themes/Milk/images/logo-footer.png" alt="Footer Logo">
+                        <p>Brought to you by the Dairy Farmers of Ontario.</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="footer-links">
+                        <div class="row">
+                            <div class="col-12 visible-xs">
+                                <div class="newsletter-container visible-xs">
+                                    <span>Newsletter</span>
+                                    <!-- Add class "form-error" on form-group to show error message -->
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input type="email" placeholder="Enter your Email Address">
+                                            <span class="error-msg">This field is required.</span>
+                                        </div>
+                                        <button type="button" class="primary-btn">Sign Up</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 offset-md-2 col-md-4 offset-lg-0 col-lg-3">
+                                <a href="#">Consumers</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Our Milk</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Food</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Our Famers</a>
+                                    </li>
+                                    <li class="add-space">
+                                        <a href="#">Programs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Recharge with Milk</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Elementary School Milk</a>
+                                    </li>
+                                    <li class="add-space">
+                                        <a href="#">Program</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2019 Milk Calendar</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Media</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Careers</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <span>Producers</span>
+                                <ul>
+                                    <li>
+                                        <a href="#">Producers</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Processors</a>
+                                    </li>
+                                    <li class="add-space">
+                                        <a href="#">Transporters</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Dairy Farmers of Canada</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <div class="newsletter-container hidden-xs">
+                                    <span>Newsletter</span>
+                                    <!-- Add class "form-error" on form-group to show error message -->
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input type="email" placeholder="Enter your Email Address">
+                                            <span class="error-msg">This field is required.</span>
+                                        </div>
+                                        <button type="button" class="primary-btn">Sign Up</button>
+                                    </div>
+                                </div>
+                                <div class="social-container">
+                                    <span>Follow us</span>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="fcb-icon"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="insta-icon"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="twitter-icon"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="footer-info">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                        </ul>
+                        <p>© 2019 Dairy Farmers of Ontario. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Video Modal -->
+    <div class="modal fade video-modal" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MG4_8z_rXgA"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="primary-btn white-btn" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Video Modal -->
+    <script type="text/javascript" src="assets/scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/aos.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/slick.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/jquery-ui.js"></script>
+    <script type="text/javascript" src="assets/scripts/mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="assets/scripts/main.js"></script>
 </body>
 
 </html>
