@@ -393,18 +393,6 @@ $(document).ready(function () {
         $(this).next(".numberOfVisibleItems").val(currentNumberOfElements);
     });
 
-    //Press Room Load more
-    $('.press-room-more').on('click', function () {
-        var start = parseInt($('#skipNumber').val());
-        var take = parseInt($('#takeNumber').val());
-        for (var i = start; i < start + take; i++) {
-            var pressRoomID = '#press-room' + i;
-            $(this).parents('.article-room-container').find(pressRoomID).removeClass('hidden')
-        }
-        start += take;
-        $('#skipNumber').val(start);
-    });
-
     // Modal Custom scrollbar
     if ($(".board-directors-modal .modal-inner-content").length) {
         $(".board-directors-modal .modal-inner-content").mCustomScrollbar({

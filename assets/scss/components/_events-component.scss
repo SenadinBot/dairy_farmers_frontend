@@ -436,6 +436,13 @@
     .events-details-content {
         width: 927px;
         margin-bottom: 90px;
+        font-family: $robotoLight;
+        font-size: 18px;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        line-height: 30px;
+        color: $dark;
         @include media-md {
             width: 90%;
         }
@@ -677,6 +684,13 @@
     }
     .restaurantes-content-container {
         width: 927px;
+        font-family: $robotoLight;
+        font-size: 18px;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        line-height: 30px;
+        color: $dark;
         @include media-md {
             width: 90%;
         }
