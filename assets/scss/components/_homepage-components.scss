@@ -382,6 +382,16 @@
             padding: 0;
         }
     }
+    &.one-item {
+        &:before {
+            @include media-xs {
+                height: 73%;
+            }
+            @include media-xs-landscape {
+                height: 77%;
+            }
+        }
+    }
     &:before {
         content: "";
         width: 100%;
@@ -577,6 +587,9 @@
             @include media-xs {
                 height: auto;
                 margin-bottom: 10px;
+            }
+            @include media-sm {
+                height: 209px;
             }
         }
         @include media-md {

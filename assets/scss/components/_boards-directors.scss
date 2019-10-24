@@ -145,7 +145,7 @@
                             display: block;
                             margin: -5px 0 2px 0;
                             @include media-xs-portrait {
-                                min-height: 44px;
+                                // min-height: 44px;
                                 line-height: 22px;
                             }
                         }

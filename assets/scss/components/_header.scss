@@ -420,7 +420,7 @@ header {
             }
             @include media-md {
                 position: relative;
-                top: 15px;
+                top: 8px;
             }
             li {
                 list-style: none;
@@ -595,14 +595,14 @@ header {
             }
             @include media-sm {
                 width: 130px;
-                height: 92px;
+                height: 83px;
                 position: absolute;
                 left: 0;
                 top: -25px;
             }
             @include media-xs {
                 width: 130px;
-                height: 92px;
+                height: 83px;
                 position: absolute;
                 left: 0;
                 top: -25px;

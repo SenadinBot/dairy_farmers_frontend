@@ -226,6 +226,18 @@ a {
         -o-transition: all 0.3s ease-in-out 0s;
         transition: all 0.3s ease-in-out 0s;
         border-bottom: 2px dashed $blue;
+        @include media-xs-portrait {
+            display: none;
+        }
+        @include media-sm {
+            display: none;
+        }
+    }
+    @include media-xs-portrait {
+        border-bottom: 2px dashed $blue;
+    }
+    @include media-sm {
+        border-bottom: 2px dashed $blue;
     }
     &:hover {
         text-decoration: none;
@@ -245,6 +257,16 @@ a {
             position: absolute;
             top: 9px;
             margin-left: 8px;
+            @include media-xs-portrait {
+                position: relative;
+                top: -2px;
+                display: inline-block;
+            }
+            @include media-sm {
+                position: relative;
+                top: -2px;
+                display: inline-block;
+            }
         }
     }
 }

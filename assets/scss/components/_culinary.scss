@@ -1082,3 +1082,226 @@
         }
     }
 }
+.newsletter-modal {
+    .modal-header {
+        padding: 0;
+        border: none;
+        position: absolute;
+        top: -33px;
+        right: 100px;
+        @include media-sm {
+            right: 80px;
+        }
+        @include media-xs {
+            top: -28px;
+            right: 15px;
+        }
+        img {
+            width: 65px;
+            height: 65px;
+            object-fit: contain;
+            cursor: pointer;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            z-index: 9;
+            &:hover {
+                opacity: 0.95;
+            }
+            @include media-xs {
+                width: 55px;
+                height: 55px;
+            }
+        }
+    }
+    .modal-dialog {
+        max-width: 90%;
+        margin: 0 auto;
+        @include media-lg {
+            max-width: 1330px;
+        }
+        @media (min-width: 1200px) and (max-width: 1350px) {
+            max-width: 95%;             
+        }
+        @include media-xs {
+            margin: 45px auto 0 auto;
+            max-width: calc(100% - 20px);
+        }
+    }
+    .modal-content {
+        border: none;
+        border-radius: 20px;
+        margin-top: 58px;
+        @include media-xs {
+            border-radius: 10px;
+            margin-top: 18px;
+        }
+    }
+    .modal-body {
+        -webkit-animation-delay: .5s;
+        -moz-animation-delay: .5s;
+        animation-delay: .5s;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: fadeIn;
+        padding: 0;
+        border: 3px solid $white;
+        border-radius: 20px;
+        @include media-xs {
+            @include media-xs {
+                width: 100%;
+                display: flex;
+                flex-flow: column;
+            }
+        }
+        .img-container {
+            display: inline-block;
+            vertical-align: top;
+            width: 402px;
+            height: 100%;
+            @include media-md {
+                width: 34%;
+            }
+            @include media-sm {
+                width: 34%;
+            }
+            @include media-xs {
+                width: 100%;
+                height: auto;
+                margin-right: 0;
+                margin-bottom: 20px;
+                padding: 0;
+                order: 1;
+            }
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: cover;
+                width: 100%;
+                border-top-right-radius: 17px;
+                border-bottom-right-radius: 17px;
+                @include media-sm {
+                    width: auto;
+                }
+                @include media-md {
+                    width: auto;
+                }
+                @include media-xs {
+                    width: auto;
+                    border-top-left-radius: 8px;
+                    border-top-right-radius: 8px;
+                    border-bottom-right-radius: 0;
+                }
+            }
+        }
+        .modal-inner-content {
+            display: inline-block;
+            vertical-align: top;
+            width: calc(100% - 407px);
+            border: none;
+            border-radius: 0;
+            padding: 50px 130px 100px 134px;
+            @include media-md {
+                padding: 50px 30px 70px 34px;
+                width: 65%;
+            }
+            @include media-sm {
+                width: 65%;
+                padding: 50px 30px 70px 34px;
+            }
+            @include media-xs {
+                width: 100%;
+                height: auto;
+                padding: 0 30px 50px 30px;
+                order: 2;
+            }
+            h2 {
+                color: $dark;
+                text-transform: uppercase;
+                margin: 0;
+            }
+            p {
+                line-height: 30px;
+                font-family: $robotoLight;
+                margin-bottom: 35px;
+            }
+            span {
+                display: block;
+                font-size: 18px;
+                line-height: 24px;
+                &.position {
+                    color: $blue;
+                    font-family: $robotoSlabBold;
+                    text-transform: uppercase;
+                    margin: -3px 0 15px 0;
+                }
+                &.district {
+                    color: $dark;
+                    font-family: $robotoLight;
+                    margin: -5px 0 25px 0;
+                }
+            }
+            .form-container {
+                .form-error {
+                    .error-msg {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+    }
+    @-webkit-keyframes fadeInUp {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .form-container {
+        .form-group {
+            margin-bottom: 40px;
+        }
+        label {
+            font-size: 30px;
+            color: $dark;
+            text-transform: uppercase;
+        }
+        .agree-checkbox {
+            width: 100%;
+        }
+        .custom-checkbox {
+            letter-spacing: normal;
+            font-size: 14px;
+            line-height: 18px;
+            text-transform: initial;
+            @include media-xs {
+                font-size: 20px;
+                line-height: 26px;
+            }
+            &:first-child {
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .btn-container {
+        text-align: center;
+        margin-top: 55px;
+        .primary-btn {
+            min-width: 270px;
+        }
+    }
+}

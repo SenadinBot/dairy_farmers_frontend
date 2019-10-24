@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    if( $('.milk-info-container .small-info-image').length < 2 ) {
+        $('.milk-info-container').addClass('one-item');
+    }
     $('.banner-title p').append($('.banner-list'));
     // Checked Checkbox OPT 
     $('.opt-out-container .custom-checkbox:last-child').on('click', function () {

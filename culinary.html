@@ -218,8 +218,7 @@
                                 <a href="#" class="category-item">
                                     <img class="normal-img" src="/App_Themes/Milk/images/icon-culinary-style.svg"
                                         alt="Category Image">
-                                    <img class="active-img"
-                                        src="/App_Themes/Milk/images/icon-culinary-style-active.svg"
+                                    <img class="active-img" src="/App_Themes/Milk/images/icon-culinary-style-active.svg"
                                         alt="Category Image">
                                     <h4>Style</h4>
                                 </a>
@@ -242,7 +241,8 @@
                             </div>
                         </div>
                         <div class="btn-container">
-                            <a href="#" class="primary-btn blue-btn">Inspire me</a>
+                            <a href="#" class="primary-btn blue-btn" data-toggle="modal" data-target="#modal2">Inspire
+                                me</a>
                         </div>
                     </div>
                 </div>
@@ -491,7 +491,8 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="img-container">
-                                <img src="http://staging.milk.org/Milk/media/Images/img-2020-milk-calendar-453-w@3x.png?ext=.png" alt="Calendar Image">
+                                <img src="http://staging.milk.org/Milk/media/Images/img-2020-milk-calendar-453-w@3x.png?ext=.png"
+                                    alt="Calendar Image">
                             </div>
                             <div class="adverb-content">
                                 <h2>Get a free 2020 milk Calendar</h2>
@@ -631,6 +632,77 @@
             </div>
         </div>
     </main>
+    <!-- Newsletter Modal -->
+    <div class="modal fade newsletter-modal" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="/App_Themes/Milk/images/cookie-icon-close.svg" alt="Close Icon" data-dismiss="modal">
+                </div>
+                <div class="modal-body">
+                    <div class="modal-inner-content">
+                        <div class="newsletter-form-container">
+                            <h2>Subscribe to our newsletter</h2>
+                            <p>Get local food, event and entertainment ideas delivered to your inbox every month. <br>
+                                *Required field </p>
+                            <div class="form-container">
+                                <div class="form-group form-error mandatory-field">
+                                    <label for="firstName">Full Name</label>
+                                    <div class="input-group">
+                                        <input type="text" id="firstName" placeholder="John">
+                                        <span class="error-msg">Error Message</span>
+                                    </div>
+                                </div>
+                                <div class="form-group mandatory-field">
+                                    <label for="emailAddress">Email Address</label>
+                                    <div class="input-group">
+                                        <input type="text" id="address" placeholder="johnsmith@mail.com">
+                                    </div>
+                                </div>
+                                <div class="form-group mandatory-field">
+                                    <label for="postalCode">Postal Code</label>
+                                    <div class="input-group">
+                                        <input type="text" id="postalCode" placeholder="A1A 1A1">
+                                    </div>
+                                </div>
+                                <div class="form-group agree-checkbox">
+                                    <label class="custom-checkbox form-error">Check here to confirm you are 13 years of
+                                        age
+                                        or
+                                        older
+                                        and agree to receive emails from Dairy Farmers of Ontario including partner
+                                        promotions, contest offers, and Canadian dairy news. You won’t receive third
+                                        party
+                                        emails, and you can opt out anytime. See our <a href="#">Privacy Policy</a> for
+                                        details.
+                                        <input type="checkbox">
+                                        <div class="checkbox-indicator"></div>
+                                        <span class="error-msg">Error Message</span>
+                                    </label>
+                                    <label class="custom-checkbox">I want to sign up for all communications lorem ipsum
+                                        dolor sit amet, consectetur adipiscing elit.
+                                        <input type="checkbox">
+                                        <div class="checkbox-indicator"></div>
+                                    </label>
+                                </div>
+                                <div class="btn-container">
+                                    <button class="primary-btn blue-btn">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="newsletter-form-modal-msg hidden">
+                            <h4>Thank you for subscribing!</h4>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="/App_Themes/Milk/images/esmp-school-programs-education@3x.jpg" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter Modal -->
     <footer>
         <div class="container">
             <div class="row">
