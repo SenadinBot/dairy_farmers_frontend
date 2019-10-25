@@ -1021,24 +1021,24 @@
                     }
                 }
             }
-            &.press-room {
-                .banner-title {
-                    span, h1 {
-                        @include media-sm {
-                            top: initial;
-                            padding-bottom: 230px;
-                            left: 50%;
-                            width: 100%;
-                            transform: translate(-30%, -95%);
-                            margin-top: 0;
-                        }
-                        @include media-xs {
-                            top: initial;
-                            padding-bottom: 50px;
-                        }
-                        @include media-xs-landscape {
-                            padding-bottom: 90px;
-                        }
+        }
+        &.press-room {
+            .banner-title {
+                span, h1 {
+                    @include media-sm {
+                        top: initial;
+                        padding-bottom: 205px;
+                        left: 50%;
+                        width: 100%;
+                        transform: translate(-30%, 0);
+                        margin-top: 0;
+                    }
+                    @include media-xs {
+                        top: initial;
+                        padding-bottom: 50px;
+                    }
+                    @include media-xs-landscape {
+                        padding-bottom: 90px;
                     }
                 }
             }

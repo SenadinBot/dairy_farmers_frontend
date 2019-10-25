@@ -4045,19 +4045,19 @@ footer {
         width: 100%;
         top: initial; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .big-banner-container.one-line-title.top-spacing.press-room .banner-title span, .big-banner-container.one-line-title.top-spacing.press-room .banner-title h1 {
+    .big-banner-container.one-line-title.press-room .banner-title span, .big-banner-container.one-line-title.press-room .banner-title h1 {
       top: initial;
-      padding-bottom: 230px;
+      padding-bottom: 205px;
       left: 50%;
       width: 100%;
-      transform: translate(-30%, -95%);
+      transform: translate(-30%, 0);
       margin-top: 0; } }
   @media (max-width: 767px) {
-    .big-banner-container.one-line-title.top-spacing.press-room .banner-title span, .big-banner-container.one-line-title.top-spacing.press-room .banner-title h1 {
+    .big-banner-container.one-line-title.press-room .banner-title span, .big-banner-container.one-line-title.press-room .banner-title h1 {
       top: initial;
       padding-bottom: 50px; } }
   @media (max-width: 767px) and (orientation: landscape) {
-    .big-banner-container.one-line-title.top-spacing.press-room .banner-title span, .big-banner-container.one-line-title.top-spacing.press-room .banner-title h1 {
+    .big-banner-container.one-line-title.press-room .banner-title span, .big-banner-container.one-line-title.press-room .banner-title h1 {
       padding-bottom: 90px; } }
   .big-banner-container.one-line-title.esmp-school .banner-title .title-border:after {
     height: 150px; }
@@ -8431,6 +8431,9 @@ main {
       @media (min-width: 992px) and (max-width: 1199px) {
         .custom-tab-accordion-container .tab-content .card .bigger-content .left-side {
           width: 310px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .custom-tab-accordion-container .tab-content .card .bigger-content .left-side {
+          width: 60%; } }
       @media (max-width: 767px) {
         .custom-tab-accordion-container .tab-content .card .bigger-content .left-side {
           width: 100%; } }
@@ -9493,8 +9496,7 @@ main {
     text-align: center; }
     @media (max-width: 767px) {
       .culinary-recipes-category-container .btn-container {
-        padding: 0 40px;
-        display: none; }
+        padding: 0 40px; }
         .culinary-recipes-category-container .btn-container .primary-btn {
           width: 100%; } }
   @media (max-width: 767px) {
@@ -9691,7 +9693,7 @@ main {
       height: 46px;
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url("/App_Themes/Milk/images/btn-play.svg");
+      background-image: url("/App_Themes/Milk/images/btn-pause.svg");
       -webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
@@ -9991,7 +9993,8 @@ main {
                 line-height: 15px;
                 font-size: 14px; } }
             .culinary-carousel-container .culinary-carousel .culinary-slide .culinary-slide-content .article-icon-info ul li span b {
-              font-family: "Roboto Bold"; }
+              font-family: "Roboto Bold";
+              text-align: left; }
             .culinary-carousel-container .culinary-carousel .culinary-slide .culinary-slide-content .article-icon-info ul li span:before {
               display: none; }
           .culinary-carousel-container .culinary-carousel .culinary-slide .culinary-slide-content .article-icon-info ul li:before {
@@ -10100,7 +10103,7 @@ main {
       margin-right: 0; }
   .culinary-carousel-container .slick-dots li.slick-active span {
     display: block; }
-  .culinary-carousel-container .slick-dots li::after {
+  .culinary-carousel-container .slick-dots li:after {
     content: "";
     width: 100%;
     height: 100%;
@@ -10110,6 +10113,8 @@ main {
     border: 1px solid #0072ce;
     border-radius: 50%;
     z-index: 4; }
+  .culinary-carousel-container .slick-dots li button:before {
+    display: none; }
   .culinary-carousel-container .slick-dots li span {
     display: none; }
   .culinary-carousel-container .slick-dots li span:first-child {
@@ -10778,13 +10783,13 @@ main {
   .recipe-article-items-container.more-rows-container .btn-container {
     margin-top: -26px; }
   .recipe-article-items-container.calendar-recipe-article h2 {
-    width: 40%; }
+    width: 50%; }
     @media (min-width: 768px) and (max-width: 991px) {
       .recipe-article-items-container.calendar-recipe-article h2 {
-        width: 60%; } }
+        width: 90%; } }
     @media (min-width: 992px) and (max-width: 1199px) {
       .recipe-article-items-container.calendar-recipe-article h2 {
-        width: 50%; } }
+        width: 75%; } }
     @media (max-width: 767px) {
       .recipe-article-items-container.calendar-recipe-article h2 {
         width: 100%; } }
@@ -14767,6 +14772,9 @@ main {
       margin-bottom: 53px; }
       .boards-directors-container .boards-directors-item-container.directors-container .boards-directors-item-content .boards-directors-item .item-content h5 {
         min-height: 60px; }
+        @media (max-width: 767px) {
+          .boards-directors-container .boards-directors-item-container.directors-container .boards-directors-item-content .boards-directors-item .item-content h5 {
+            min-height: auto; } }
       .boards-directors-container .boards-directors-item-container.directors-container .boards-directors-item-content .boards-directors-item .item-content p {
         min-height: 60px; }
         @media (max-width: 767px) and (orientation: portrait) {

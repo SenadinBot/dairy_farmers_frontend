@@ -399,12 +399,12 @@
     }
     &.calendar-recipe-article {
         h2 { 
-            width: 40%;
+            width: 50%;
             @include media-sm {
-                width: 60%;
+                width: 90%;
             }
             @include media-md {
-                width: 50%;
+                width: 75%;
             }
             @include media-xs {
                 width: 100%;

@@ -291,6 +291,9 @@
                     @include media-md {
                         width: 310px;
                     }
+                    @include media-sm {
+                        width: 60%;
+                    }
                     @include media-xs {
                         width: 100%;
                     }
