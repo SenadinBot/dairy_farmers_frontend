@@ -350,8 +350,9 @@
                         padding-right: 0;
                         margin-bottom: 20px;
                         @include media-xs {
-                            font-size: 64px;
-                            line-height: 64px;
+                            font-size: 48px;
+                            line-height: 48px;
+                            letter-spacing: 3.6px;
                         }
                     }
                     .article-icon-info {
@@ -380,8 +381,8 @@
                     .culinary-slide-content {
                         > span {
                             @include media-xs {
-                                font-size: 58px;
-                                line-height: 58px;
+                                font-size: 48px;
+                                line-height: 48px;
                                 letter-spacing: 3.6px;
                             }
                         }
@@ -467,8 +468,8 @@
                         line-height: 0.88;
                         letter-spacing: 10px;
                         @include media-xs {
-                            font-size: 64px;
-                            line-height: 64px;
+                            font-size: 48px;
+                            line-height: 48px;
                             letter-spacing: 3.6px;
                             word-break: break-word;
                         }
@@ -706,9 +707,9 @@
                         }
                     }
                     @include media-xs {
-                        font-size: 56px;
-                        line-height: 56px;
-                        letter-spacing: initial;
+                        font-size: 48px;
+                        line-height: 48px;
+                        letter-spacing: 3.6px;
                         padding-right: 0;
                         margin-top: 0;
                     }
