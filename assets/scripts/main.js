@@ -1,5 +1,9 @@
 $(document).ready(function () {
-    if( $('.milk-info-container .small-info-image').length < 2 ) {
+    // Add Animation on Culinary Article
+    if ($(window).width() < 767) {
+        $('.big-recipe-article-container .article-icon-info li.yields').attr('data-aos-delay', '1000');
+    }
+    if ($('.milk-info-container .small-info-image').length < 2) {
         $('.milk-info-container').addClass('one-item');
     }
     $('.banner-title p').append($('.banner-list'));
@@ -334,6 +338,7 @@ $(document).ready(function () {
         dots: true,
         cssEase: 'linear',
         autoplaySpeed: 6000,
+        infinite: false,
         responsive: [
             {
                 breakpoint: 768,
@@ -358,6 +363,20 @@ $(document).ready(function () {
         setTimeout(function () {
             $('.culinary-carousel .slick-dots li').eq(nextSlide).addClass('start');
         }, 100);
+    }).on('afterChange', function (event, slick, currentSlide) {
+        if (slick.slideCount === currentSlide + 1) {
+            // slick.paused = true;
+            // $('.culinary-carousel').slick('slickPause');         
+            // setTimeout(function () {
+            //     $('.culinary-carousel .slick-dots li').removeClass('start');
+            //     $('.pause-btn').addClass('hide-pause');
+            //     $('.play-btn').removeClass('hide-play');
+            //     $('.play-btn').on('click', function () {
+            //         $('.culinary-carousel') .slick("slickGoTo", 0);
+            //         console.log('test');
+            //     });
+            // }, 5600);
+        }
     });
     $('.culinary-carousel .slick-dots li button').remove();
     $('.culinary-carousel .slick-dots li').append('<span></span><span></span><span></span>').remove;

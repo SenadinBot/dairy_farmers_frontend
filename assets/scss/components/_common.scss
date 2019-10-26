@@ -972,6 +972,12 @@
             margin-bottom: 70px;
         }
     }
+    &.extra-big-bottom-spacing {
+        margin-bottom: 190px;
+        @include media-xs {
+            margin-bottom: 160px;
+        }
+    }
     img {
         max-width: 100%;
         max-height: 100%;

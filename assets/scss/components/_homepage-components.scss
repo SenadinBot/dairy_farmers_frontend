@@ -119,8 +119,14 @@
 }
 .recipes-carousel-container {
     position: relative;
-    padding: 45px 0 153px 0;
+    padding: 45px 0 215px 0;
     overflow: hidden;
+    @include media-md {
+        padding: 45px 0 75px 0;
+    }
+    @include media-sm {
+        padding: 45px 0 155px 0;
+    }
     @include media-xs {
         padding: 45px 0 100px 0;
     }

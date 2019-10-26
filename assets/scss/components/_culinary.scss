@@ -692,7 +692,8 @@
                         content: "";
                         background: rgba(255, 255, 255, 0.9);
                         width: 100%;
-                        height: 106px;
+                        // height: 106px;
+                        height: 100%;
                         position: absolute;
                         top: -11px;
                         left: -26px;
@@ -700,7 +701,7 @@
                         @include media-xs {
                             left: -15px;
                             width: calc(100vw - 55px);
-                            height: 106px;
+                            // height: 106px;
                         }
                         @include media-xs-landscape {
                             width: calc(100vw - 65px);
