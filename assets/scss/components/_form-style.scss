@@ -329,6 +329,40 @@
             width: 100%;
         }
     }
+    select {
+        font-family: $roboto;
+        color: #54585a;
+        font-size: 18px;
+        line-height: normal;
+        border: none;
+        width: 100%;
+        padding: 17.5px 10px 17.5px 18px;
+        border: 2px solid $mainColor;
+        box-shadow: none;
+        background: transparent;
+        background-image: none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        appearance:none;
+        border-radius: 0;
+        background: url('../../../App_Themes/Milk/images/select-icon.svg');
+        background-repeat: no-repeat;
+        background-position-x: 97%;
+        background-position-y: 21px;
+        background-size: 16px 16px;
+        cursor: pointer;
+        &:focus {
+            outline: none;
+        }
+    }
+    .additional-info {
+        position: absolute;
+        span {
+            font-family: $robotoLight;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
 }
 .calendar-sing-up-container {
     border-bottom: 1px solid #cccccc;
