@@ -10460,9 +10460,17 @@ main {
         color: #000000;
         font-family: "Roboto Light";
         margin: -5px 0 25px 0; }
+    .newsletter-modal .modal-body .modal-inner-content .form-container .error-msg {
+      display: none; }
     .newsletter-modal .modal-body .modal-inner-content .form-container .form-error .error-msg {
+      display: block;
       font-size: 14px;
       line-height: 16px; }
+    .newsletter-modal .modal-body .modal-inner-content .form-container .mandatory-field label:after {
+      top: 3px;
+      font-size: 16px;
+      line-height: 16px;
+      margin-left: 1px; }
     .newsletter-modal .modal-body .modal-inner-content .additional-info span {
       font-size: 14px;
       line-height: 20px; }

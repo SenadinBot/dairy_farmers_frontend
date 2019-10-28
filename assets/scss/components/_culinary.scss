@@ -1251,10 +1251,24 @@
                 }
             }
             .form-container {
+                .error-msg {
+                    display: none;
+                }
                 .form-error {
                     .error-msg {
+                        display: block;
                         font-size: 14px;
                         line-height: 16px;
+                    }
+                }
+                .mandatory-field {
+                    label {
+                        &:after {
+                            top: 3px;
+                            font-size: 16px;
+                            line-height: 16px;
+                            margin-left: 1px;
+                        }
                     }
                 }
             }
