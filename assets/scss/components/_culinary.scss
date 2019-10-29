@@ -558,6 +558,7 @@
             @include media-xs {
                 width: 96.1vw;
                 padding-right: 15px;
+                height: auto;
             }
             .culinary-slide-img {
                 width: 100%;
@@ -845,6 +846,9 @@
         .slick-list,
         .slick-track {
             height: 100%;
+            @include media-xs {
+                height: auto;
+            }
         }
         .slick-dots {
             position: absolute;

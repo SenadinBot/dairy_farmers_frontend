@@ -63,6 +63,19 @@
                 margin-left: 5px;
             }
         }
+        &.small-input {
+            .error-msg {
+                bottom: -32px;
+                top: initial;
+                left: 0;
+                margin-left: 0;
+                @include media-xs {
+                    bottom: 0;
+                    position: relative;
+                    vertical-align: top;
+                }
+            }
+        }
     }
 }
 .form-container {
