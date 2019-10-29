@@ -220,6 +220,9 @@
     }
     &.esmp-about-container {
         margin-top: 93px;
+        @include media-xs {
+            margin-top: -35px;
+        }
         .info-item-container {
             margin-bottom: 50px;
             @include media-sm {
