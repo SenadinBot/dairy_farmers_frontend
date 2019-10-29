@@ -346,7 +346,7 @@ $(document).ready(function () {
                     fade: false,
                     variableWidth: true,
                     slidesToShow: 1,
-                    autoplay: true,
+                    // autoplay: true,
                     autoplaySpeed: 5900,
                     adaptiveHeight: true
                 }

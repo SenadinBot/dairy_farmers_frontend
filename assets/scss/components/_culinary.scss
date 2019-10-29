@@ -363,6 +363,7 @@
                             li {
                                 @include media-xs-portrait {
                                     margin-right: 0px;
+                                    margin-bottom: 10px;
                                 }
                             }
                         }
@@ -742,6 +743,9 @@
                         margin-top: 20px;
                         padding-top: 14px;
                         margin-bottom: 15px;
+                    }
+                    @include media-xs-portrait {
+                        margin-bottom: 5px;
                     }
                     &:before {
                         display: none;
