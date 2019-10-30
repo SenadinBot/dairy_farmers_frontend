@@ -508,8 +508,9 @@
             margin-top: -15px;
             @include media-md {
                 word-break: break-word;
-                font-size: 64px;
-                line-height: 64px; 
+                font-size: 48px;
+                line-height: 48px; 
+                letter-spacing: 3.6px;
             } 
             @include media-xs {
                 word-break: break-word;

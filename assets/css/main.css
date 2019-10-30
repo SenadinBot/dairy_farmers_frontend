@@ -2016,8 +2016,8 @@ footer {
     content: "*";
     position: absolute;
     top: 7px;
-    font-size: 10px;
-    line-height: 10px; }
+    font-size: 14px;
+    line-height: 14px; }
 .form-container .form-group {
   margin-bottom: 24px; }
 .form-container .error-msg {
@@ -6243,8 +6243,9 @@ main {
       @media (min-width: 992px) and (max-width: 1199px) {
         .recommendation-container .recommendation-content h2 {
           word-break: break-word;
-          font-size: 64px;
-          line-height: 64px; } }
+          font-size: 48px;
+          line-height: 48px;
+          letter-spacing: 3.6px; } }
       @media (max-width: 767px) {
         .recommendation-container .recommendation-content h2 {
           word-break: break-word;
