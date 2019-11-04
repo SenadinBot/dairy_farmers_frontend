@@ -339,6 +339,7 @@ $(document).ready(function () {
         cssEase: 'linear',
         autoplaySpeed: 6000,
         infinite: false,
+        adaptiveHeight: true,
         responsive: [
             {
                 breakpoint: 768,
@@ -348,7 +349,6 @@ $(document).ready(function () {
                     slidesToShow: 1,
                     // autoplay: true,
                     autoplaySpeed: 5900,
-                    adaptiveHeight: true
                 }
             },
             {

@@ -1,6 +1,6 @@
 .milk-cookies-video-container {
     margin-top: -505px;
-    margin-bottom: 43px;
+    margin-bottom: 97px;
     z-index: 9;
     position: relative;
     @include media-xs {
@@ -56,12 +56,28 @@
             font-family: $robotoLight;
             color: $dark;
             padding-left: 5px;
+            line-height: 30px;
             @include media-lg {
                 padding-right: 15px;
             }
             @include media-xs {
                 padding: 0 30px;
             }
+        }
+    }
+    &.no-video {
+        margin-top: 190px;
+        @include media-xs {
+            margin-top: 80px;
+        }
+        @include media-xs-portrait {
+            margin-top: 80px;
+        }
+        @include media-sm {
+            margin-top: 100px;
+        }
+        @include media-md {
+            margin-top: 130px;
         }
     }
 }
@@ -390,10 +406,10 @@
 }
 .milk-up-jarallax-container {
     margin-bottom: 105px;
-    margin-top: -66px;
+    margin-top: -100px;
     @include media-xs {
         margin-bottom: 70px;
-        margin-top: 70px;
+        margin-top: 30px;
         position: relative;
     }
     @include media-sm {
@@ -413,13 +429,13 @@
         @include media-xs {
             height: auto;
         }
-        &:first-child {
+        &.left-side {
             @include media-xs {
                 margin-bottom: 75px;
             }
             .jarallax-content {
                 left: -50px;
-                top: -51px;
+                top: -95px;
                 @include media-md {
                     left: 0;
                 }
@@ -429,14 +445,17 @@
                 @include media-xs {
                     left: 0;
                     top: 0;
-                    margin-top: -100px;
+                    margin-top: -95px;
                 }
             }
         }
-        &:nth-last-child(2) {
+        &.right-side {
+            @include media-xs {
+                margin-bottom: 75px;
+            }
             .jarallax-content {
                 right: 0;
-                top: -275px;
+                top: -95px;
                 padding: 47px 38px 41px 49px;
                 @include media-sm {
                     padding: 37px 28px 31px 35px;
@@ -444,15 +463,9 @@
                 }
                 @include media-xs {
                     padding: 37px 28px 31px 35px;
-                    margin-bottom: -30px;
+                    // margin-bottom: -30px;
                     top: 0;
-                }
-            }
-            .jarallax {
-                .jarallax-img {
-                    // @include media-sm {
-                    //     object-position: 0% 50% !important;
-                    // }
+                    margin-top: -95px;
                 }
             }
         }
