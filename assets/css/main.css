@@ -12545,6 +12545,20 @@ main {
           padding: 0; } }
       .event-article-container .event-article-item .event-info-container .event-info a {
         max-width: 140px; }
+  .event-article-container .btn-load-container {
+    text-align: center; }
+    @media (max-width: 767px) {
+      .event-article-container .btn-load-container {
+        padding: 0 30px; } }
+    @media (max-width: 767px) and (orientation: landscape) {
+      .event-article-container .btn-load-container {
+        text-align: left; } }
+    @media (max-width: 767px) and (orientation: portrait) {
+      .event-article-container .btn-load-container .primary-btn {
+        width: 100%; } }
+    @media (max-width: 767px) and (orientation: landscape) {
+      .event-article-container .btn-load-container .primary-btn {
+        width: 60%; } }
 
 .events-details-banner-container {
   margin-bottom: 110px; }

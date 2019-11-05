@@ -136,6 +136,23 @@
             }
         }
     }
+    .btn-load-container {
+        text-align: center;
+        @include media-xs {
+            padding: 0 30px;
+        }
+        @include media-xs-landscape {
+            text-align: left;
+        }
+        .primary-btn {
+            @include media-xs-portrait {
+                width: 100%;
+            }
+            @include media-xs-landscape {
+                width: 60%;
+            }
+        }
+    }
 }
 .events-details-banner-container {
     margin-bottom: 110px;
