@@ -819,6 +819,8 @@ header {
 .mobile-more-links {
     text-align: center;    
     margin-top: 15px;
+    z-index: 9999;
+    position: relative;
     ul {
         margin-top: 50px;
         @include media-md {
@@ -980,7 +982,7 @@ header {
 .mobile-inner-nav {
     @include media-xs {
         overflow-y: scroll;
-        height: 100vh;
+        height: 100%;
         padding: 50px 45px 300px 45px;
     }
 }
