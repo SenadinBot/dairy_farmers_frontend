@@ -83,10 +83,10 @@
 }
 .milk-cookies-divider-container {
     text-align: center;
-    margin-bottom: 91px;
+    margin-bottom: 83px;
     @include media-xs {
         padding: 0 30px;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
     }
     &.active-divider {
         img {
@@ -103,53 +103,59 @@
 }
 .partner-logo-container {
     text-align: center;
-    margin-bottom: 97px;
+    margin-bottom: 58px;
     @include media-lmd {
         display: flex;
+        flex-wrap: wrap;
     }
     @include media-sm {
         display: flex;
+        flex-wrap: wrap;
     }
     @include media-xs-landscape {
         display: flex;
+        flex-wrap: wrap;
     }
     @include media-xs {
         padding: 0 30px;
-        margin-bottom: 65px;
+        margin-bottom: 90px;
     }
     .partner-item {
         @include media-lmd {
             text-align: center;
             display: flex;
-            flex-flow: column nowrap;
+            flex-flow: row nowrap;
             justify-content: center;
             align-items: center;
-            flex: 1 1 0%;
+            flex: 1 1 33%;
             width: auto;
             position: relative;
+            margin-bottom: 60px;
         }
         @include media-xs-landscape {
             text-align: center;
             display: flex;
-            flex-flow: column nowrap;
+            flex-flow: row nowrap;
             justify-content: center;
             align-items: center;
-            flex: 1 1 0%;
+            flex: 1 1 33%;
             width: auto;
             position: relative;
+            margin-bottom: 60px;
         }
         @include media-sm {
             text-align: center;
             display: flex;
-            flex-flow: column nowrap;
+            flex-flow: row nowrap;
             justify-content: center;
             align-items: center;
-            flex: 1 1 0%;
+            flex: 1 1 33%;
             width: auto;
             position: relative;
+            margin-bottom: 60px;
         }
         @include media-xs-portrait {
-            margin-bottom: 30px;
+            margin-bottom: 50px;
             display: block;
             &:last-child {
                 margin-bottom: 0;
@@ -347,28 +353,28 @@
             @include media-xs {
                 padding: 0 30px 15px 30px;
             }
-            &:after {
-                content: "";
-                width: 530px;
-                height: 5px;
-                background-color: #ffc600;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                margin-left: 15px;
-                @include media-xs {
-                    display: none;
-                }
-                @include media-sm {
-                    width: 450px;
-                }
-                @include media-md {
-                    left: -40px;
-                }
-                @include media-lg {
-                    left: -67px;
-                }
-            }
+            // &:after {
+            //     content: "";
+            //     width: 530px;
+            //     height: 5px;
+            //     background-color: #ffc600;
+            //     position: absolute;
+            //     bottom: 0;
+            //     left: 0;
+            //     margin-left: 15px;
+            //     @include media-xs {
+            //         display: none;
+            //     }
+            //     @include media-sm {
+            //         width: 450px;
+            //     }
+            //     @include media-md {
+            //         left: -40px;
+            //     }
+            //     @include media-lg {
+            //         left: -67px;
+            //     }
+            // }
         }
         .partners-content-item {
             text-align: center;
@@ -376,7 +382,7 @@
             flex-flow: row wrap;
             justify-content: center;
             align-items: flex-end;
-            flex: 1 1 25%;
+            flex: 1 1 20%;
             flex-grow: 1;
             width: auto;
             position: relative;
@@ -385,9 +391,11 @@
             line-height: 30px;
             letter-spacing: 1.77px;
             color: $dark;
-            margin-bottom: 80px;
+            margin-bottom: 83px;
             @include media-xs {
                 margin-bottom: 50px;
+                align-items: flex-start;
+
             }
             span {
                 text-transform: uppercase;

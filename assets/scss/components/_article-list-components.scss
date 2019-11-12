@@ -29,16 +29,16 @@
                 margin-right: 0;
             }
             .img-container {
-                height: 225px;
-                @include media-md {
-                    height: 188px;
-                }
-                @include media-sm {
-                    height: 148px;
-                }
-                @include media-xs {
-                    height: auto;
-                }
+                // height: 225px;
+                // @include media-md {
+                //     height: 188px;
+                // }
+                // @include media-sm {
+                //     height: 148px;
+                // }
+                // @include media-xs {
+                //     height: auto;
+                // }
                 img {
                     object-fit: cover;
                 }

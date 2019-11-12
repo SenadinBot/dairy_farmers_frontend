@@ -3379,7 +3379,7 @@ footer {
       .banner-image-container .banner-image-content .title-border {
         width: 80%;
         padding: 0 0 25px 95px; } }
-    .banner-image-container .banner-image-content span, .banner-image-container .banner-image-content h1 {
+    .banner-image-container .banner-image-content h1 {
       font-family: "acumin-pro-extra-condensed",sans-serif;
       font-style: normal;
       font-weight: 900;
@@ -3393,19 +3393,19 @@ footer {
       position: relative;
       left: -135px; }
       @media (min-width: 992px) and (max-width: 1199px) {
-        .banner-image-container .banner-image-content span, .banner-image-container .banner-image-content h1 {
+        .banner-image-container .banner-image-content h1 {
           font-size: 98px;
           line-height: 90px;
           left: -108px; } }
       @media (min-width: 768px) and (max-width: 991px) {
-        .banner-image-container .banner-image-content span, .banner-image-container .banner-image-content h1 {
+        .banner-image-container .banner-image-content h1 {
           width: 140%;
           font-size: 120px;
           left: 0;
           margin-top: 0;
           top: -20px; } }
       @media (max-width: 767px) {
-        .banner-image-container .banner-image-content span, .banner-image-container .banner-image-content h1 {
+        .banner-image-container .banner-image-content h1 {
           width: 125%;
           font-size: 74px;
           line-height: 66px;
@@ -3414,7 +3414,7 @@ footer {
           margin-top: 0;
           top: -10px; } }
       @media (max-width: 767px) and (orientation: landscape) {
-        .banner-image-container .banner-image-content span, .banner-image-container .banner-image-content h1 {
+        .banner-image-container .banner-image-content h1 {
           font-size: 120px;
           line-height: 120px;
           width: 120%; } }
@@ -3785,13 +3785,13 @@ footer {
           @media (max-width: 767px) {
             .big-banner-container.small-banner.top-spacing .banner-title .title-border:before {
               display: none; } }
-        .big-banner-container.small-banner.top-spacing .banner-title span, .big-banner-container.small-banner.top-spacing .banner-title h1 {
+        .big-banner-container.small-banner.top-spacing .banner-title h1 {
           top: 19%; }
           @media (min-width: 768px) and (max-width: 991px) {
-            .big-banner-container.small-banner.top-spacing .banner-title span, .big-banner-container.small-banner.top-spacing .banner-title h1 {
+            .big-banner-container.small-banner.top-spacing .banner-title h1 {
               top: initial; } }
           @media (max-width: 767px) {
-            .big-banner-container.small-banner.top-spacing .banner-title span, .big-banner-container.small-banner.top-spacing .banner-title h1 {
+            .big-banner-container.small-banner.top-spacing .banner-title h1 {
               top: initial; } }
         .big-banner-container.small-banner.top-spacing .banner-title p {
           margin: 28.5% 0 0 0; }
@@ -3814,7 +3814,7 @@ footer {
           .big-banner-container.small-banner.top-spacing.opt-out-banner .banner-title {
             margin-left: -78px; } }
         @media (min-width: 992px) {
-          .big-banner-container.small-banner.top-spacing.opt-out-banner .banner-title span, .big-banner-container.small-banner.top-spacing.opt-out-banner .banner-title h1 {
+          .big-banner-container.small-banner.top-spacing.opt-out-banner .banner-title h1 {
             font-size: 85px;
             line-height: 74.5px;
             letter-spacing: 8.5px;
@@ -3878,23 +3878,23 @@ footer {
           .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title .title-border:before {
             height: 240px;
             background-color: #0072ce; }
-        .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title span, .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title h1 {
+        .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title h1 {
           color: #ffffff; }
           @media (min-width: 992px) {
-            .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title span, .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title h1 {
+            .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title h1 {
               top: 26%; } }
           @media (min-width: 768px) and (max-width: 991px) {
-            .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title span, .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title h1 {
+            .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title h1 {
               transform: translate(-23%, -70%); } }
           @media (max-width: 767px) {
-            .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title span, .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title h1 {
+            .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title h1 {
               transform: translate(-25%, -50%); } }
         .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title .milk-up-intro {
           padding-left: 18px;
           display: inline-block;
           width: 64%;
           position: relative;
-          top: 223px; }
+          top: 198px; }
           @media (min-width: 768px) and (max-width: 991px) {
             .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title .milk-up-intro {
               top: 0;
@@ -3909,7 +3909,7 @@ footer {
               margin-top: 60px; } }
           .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title .milk-up-intro p {
             color: #ffffff;
-            margin: 30px 0 25px 0;
+            margin: 30px 0 30px 0;
             padding: 0;
             width: 92%; }
             @media (min-width: 992px) and (max-width: 1199px) {
@@ -3995,11 +3995,14 @@ footer {
           height: 80px; }
         .big-banner-container.small-banner.top-spacing.milk-cookies-banner .banner-title .title-border:before {
           height: 136px; }
-        .big-banner-container.small-banner.top-spacing.milk-cookies-banner .banner-title span, .big-banner-container.small-banner.top-spacing.milk-cookies-banner .banner-title h1 {
+        .big-banner-container.small-banner.top-spacing.milk-cookies-banner .banner-title h1 {
           color: #ffffff; }
           @media (min-width: 992px) {
-            .big-banner-container.small-banner.top-spacing.milk-cookies-banner .banner-title span, .big-banner-container.small-banner.top-spacing.milk-cookies-banner .banner-title h1 {
+            .big-banner-container.small-banner.top-spacing.milk-cookies-banner .banner-title h1 {
               top: 26%; } }
+          @media (min-width: 768px) and (max-width: 991px) {
+            .big-banner-container.small-banner.top-spacing.milk-cookies-banner .banner-title h1 {
+              transform: translate(-40%, -70%); } }
         .big-banner-container.small-banner.top-spacing.milk-cookies-banner .banner-title p {
           color: #ffffff; }
           @media (min-width: 1200px) {
@@ -4051,13 +4054,13 @@ footer {
       @media (min-width: 768px) and (max-width: 991px) {
         .big-banner-container.small-banner .banner-title {
           margin-top: 0; } }
-      .big-banner-container.small-banner .banner-title span, .big-banner-container.small-banner .banner-title h1 {
+      .big-banner-container.small-banner .banner-title h1 {
         top: 20%; }
         @media (min-width: 768px) and (max-width: 991px) {
-          .big-banner-container.small-banner .banner-title span, .big-banner-container.small-banner .banner-title h1 {
+          .big-banner-container.small-banner .banner-title h1 {
             top: initial; } }
         @media (max-width: 767px) {
-          .big-banner-container.small-banner .banner-title span, .big-banner-container.small-banner .banner-title h1 {
+          .big-banner-container.small-banner .banner-title h1 {
             top: initial; } }
       .big-banner-container.small-banner .banner-title p {
         margin: 30% 0 0 0; }
@@ -4073,43 +4076,43 @@ footer {
     @media (min-width: 992px) and (max-width: 1199px) {
       .big-banner-container.small-banner.one-line-title .banner-title p {
         margin: 41% 0 0 0; } }
-  .big-banner-container.one-line-title .banner-title span, .big-banner-container.one-line-title .banner-title h1 {
+  .big-banner-container.one-line-title .banner-title h1 {
     top: 41%;
     left: 70%; }
     @media (min-width: 768px) and (max-width: 991px) {
-      .big-banner-container.one-line-title .banner-title span, .big-banner-container.one-line-title .banner-title h1 {
+      .big-banner-container.one-line-title .banner-title h1 {
         left: 50%;
         width: 100%;
         transform: translate(-30%, -95%);
         top: initial;
         padding-bottom: 25px; } }
     @media (max-width: 767px) {
-      .big-banner-container.one-line-title .banner-title span, .big-banner-container.one-line-title .banner-title h1 {
+      .big-banner-container.one-line-title .banner-title h1 {
         left: 50%;
         width: 100%;
         transform: translate(-30%, -50%);
         top: initial;
         padding-bottom: 25px; } }
     @media (max-width: 767px) and (orientation: landscape) {
-      .big-banner-container.one-line-title .banner-title span, .big-banner-container.one-line-title .banner-title h1 {
+      .big-banner-container.one-line-title .banner-title h1 {
         padding-bottom: 50px; } }
-  .big-banner-container.one-line-title.top-spacing .banner-title span, .big-banner-container.one-line-title.top-spacing .banner-title h1 {
+  .big-banner-container.one-line-title.top-spacing .banner-title h1 {
     top: 38%;
     left: 70%; }
     @media (min-width: 768px) and (max-width: 991px) {
-      .big-banner-container.one-line-title.top-spacing .banner-title span, .big-banner-container.one-line-title.top-spacing .banner-title h1 {
+      .big-banner-container.one-line-title.top-spacing .banner-title h1 {
         left: 50%;
         width: 100%;
         transform: translate(-30%, -95%);
         top: initial;
         padding-bottom: 25px; } }
     @media (max-width: 767px) {
-      .big-banner-container.one-line-title.top-spacing .banner-title span, .big-banner-container.one-line-title.top-spacing .banner-title h1 {
+      .big-banner-container.one-line-title.top-spacing .banner-title h1 {
         left: 50%;
         width: 100%;
         top: initial; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .big-banner-container.one-line-title.press-room .banner-title span, .big-banner-container.one-line-title.press-room .banner-title h1 {
+    .big-banner-container.one-line-title.press-room .banner-title h1 {
       top: initial;
       padding-bottom: 205px;
       left: 50%;
@@ -4117,19 +4120,19 @@ footer {
       transform: translate(-30%, 0);
       margin-top: 0; } }
   @media (max-width: 767px) {
-    .big-banner-container.one-line-title.press-room .banner-title span, .big-banner-container.one-line-title.press-room .banner-title h1 {
+    .big-banner-container.one-line-title.press-room .banner-title h1 {
       top: initial;
       padding-bottom: 50px; } }
   @media (max-width: 767px) and (orientation: landscape) {
-    .big-banner-container.one-line-title.press-room .banner-title span, .big-banner-container.one-line-title.press-room .banner-title h1 {
+    .big-banner-container.one-line-title.press-room .banner-title h1 {
       padding-bottom: 90px; } }
   .big-banner-container.one-line-title.esmp-school .banner-title .title-border:after {
     height: 150px; }
   @media (min-width: 1200px) {
-    .big-banner-container.one-line-title.esmp-school .banner-title span, .big-banner-container.one-line-title.esmp-school .banner-title h1 {
+    .big-banner-container.one-line-title.esmp-school .banner-title h1 {
       top: 37%; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .big-banner-container.one-line-title.esmp-school .banner-title span, .big-banner-container.one-line-title.esmp-school .banner-title h1 {
+    .big-banner-container.one-line-title.esmp-school .banner-title h1 {
       top: initial;
       padding-bottom: 230px;
       left: 50%;
@@ -4137,12 +4140,12 @@ footer {
       transform: translate(-30%, -95%);
       margin-top: 0; } }
   @media (max-width: 767px) {
-    .big-banner-container.one-line-title.esmp-school .banner-title span, .big-banner-container.one-line-title.esmp-school .banner-title h1 {
+    .big-banner-container.one-line-title.esmp-school .banner-title h1 {
       top: initial;
       padding-bottom: 0;
       max-width: 80vw; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .big-banner-container.one-line-title.esmp-school .banner-title span, .big-banner-container.one-line-title.esmp-school .banner-title h1 {
+    .big-banner-container.one-line-title.esmp-school .banner-title h1 {
       padding-bottom: 0;
       max-width: 75vw;
       transform: translate(-30%, -60%); } }
@@ -4157,7 +4160,7 @@ footer {
   .big-banner-container.one-line-title.esmp-about .banner-title .title-border:after {
     height: 170px; }
   @media (min-width: 768px) and (max-width: 991px) {
-    .big-banner-container.one-line-title.esmp-about .banner-title span, .big-banner-container.one-line-title.esmp-about .banner-title h1 {
+    .big-banner-container.one-line-title.esmp-about .banner-title h1 {
       top: initial;
       padding-bottom: 230px;
       left: 50%;
@@ -4165,44 +4168,45 @@ footer {
       transform: translate(-30%, -95%);
       margin-top: 0; } }
   @media (max-width: 767px) {
-    .big-banner-container.one-line-title.esmp-about .banner-title span, .big-banner-container.one-line-title.esmp-about .banner-title h1 {
+    .big-banner-container.one-line-title.esmp-about .banner-title h1 {
       top: initial;
       padding-bottom: 45px; } }
   @media (max-width: 767px) and (orientation: landscape) {
-    .big-banner-container.one-line-title.esmp-about .banner-title span, .big-banner-container.one-line-title.esmp-about .banner-title h1 {
+    .big-banner-container.one-line-title.esmp-about .banner-title h1 {
       padding-bottom: 85px; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .big-banner-container.one-line-title.esmp-about .banner-title span, .big-banner-container.one-line-title.esmp-about .banner-title h1 {
+    .big-banner-container.one-line-title.esmp-about .banner-title h1 {
       padding-bottom: 60px; } }
   @media (max-width: 767px) {
-    .big-banner-container.esmp-about .banner-title span, .big-banner-container.esmp-about .banner-title h1 {
+    .big-banner-container.esmp-about .banner-title h1 {
       top: initial; } }
   @media (max-width: 767px) {
-    .big-banner-container.three-line-title .banner-title span, .big-banner-container.three-line-title .banner-title h1 {
+    .big-banner-container.three-line-title .banner-title h1 {
       transform: translate(-30%, -36%); } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .big-banner-container.three-line-title .banner-title span, .big-banner-container.three-line-title .banner-title h1 {
+    .big-banner-container.three-line-title .banner-title h1 {
       transform: translate(-30%, -47%);
       width: 85%; } }
   @media (max-width: 767px) {
-    .big-banner-container.three-line-title.milk-cookies-banner .banner-title span, .big-banner-container.three-line-title.milk-cookies-banner .banner-title h1 {
+    .big-banner-container.three-line-title.milk-cookies-banner .banner-title h1 {
       transform: translate(-30%, -24%);
       max-width: 82vw; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .big-banner-container.three-line-title.milk-cookies-banner .banner-title span, .big-banner-container.three-line-title.milk-cookies-banner .banner-title h1 {
-      transform: translate(-30%, -32%); } }
+    .big-banner-container.three-line-title.milk-cookies-banner .banner-title h1 {
+      width: 85vw; } }
   @media (max-width: 767px) and (orientation: landscape) {
-    .big-banner-container.three-line-title.milk-cookies-banner .banner-title span, .big-banner-container.three-line-title.milk-cookies-banner .banner-title h1 {
+    .big-banner-container.three-line-title.milk-cookies-banner .banner-title h1 {
+      max-width: 83vw;
       font-size: 70px;
       line-height: 76px;
-      transform: translate(-30%, -55%); } }
-  .big-banner-container.white-title .banner-title span, .big-banner-container.white-title .banner-title h1 {
+      transform: translate(-43%, -45%); } }
+  .big-banner-container.white-title .banner-title h1 {
     color: #ffffff; }
     @media (max-width: 767px) {
-      .big-banner-container.white-title .banner-title span, .big-banner-container.white-title .banner-title h1 {
+      .big-banner-container.white-title .banner-title h1 {
         color: #000000; } }
     @media (min-width: 768px) and (max-width: 991px) {
-      .big-banner-container.white-title .banner-title span, .big-banner-container.white-title .banner-title h1 {
+      .big-banner-container.white-title .banner-title h1 {
         color: #000000; } }
   .big-banner-container.small-bottom-spacing {
     margin-bottom: 55px; }
@@ -4286,7 +4290,7 @@ footer {
       @media (max-width: 767px) {
         .banner-title .title-border:before {
           display: none; } }
-  .banner-title span, .banner-title h1 {
+  .banner-title h1 {
     color: #000000;
     font-size: 100px;
     line-height: 88px;
@@ -4299,15 +4303,15 @@ footer {
     top: 16%;
     width: 220%; }
     @media (min-width: 1200px) {
-      .banner-title span, .banner-title h1 {
+      .banner-title h1 {
         letter-spacing: 10px; } }
     @media (min-width: 992px) and (max-width: 1199px) {
-      .banner-title span, .banner-title h1 {
+      .banner-title h1 {
         left: 54%;
         width: 279%;
         top: 17%; } }
     @media (min-width: 768px) and (max-width: 991px) {
-      .banner-title span, .banner-title h1 {
+      .banner-title h1 {
         left: 50%;
         top: initial;
         min-height: initial;
@@ -4321,7 +4325,7 @@ footer {
         letter-spacing: 4px;
         width: 100%; } }
     @media (max-width: 767px) {
-      .banner-title span, .banner-title h1 {
+      .banner-title h1 {
         left: 50%;
         top: initial;
         min-height: initial;
@@ -4336,7 +4340,7 @@ footer {
         width: 100%;
         max-width: 85vw; } }
     @media (max-width: 767px) and (orientation: portrait) {
-      .banner-title span, .banner-title h1 {
+      .banner-title h1 {
         font-size: 48px;
         line-height: 1; } }
   .banner-title p {
@@ -5204,6 +5208,10 @@ main {
       @media (max-width: 767px) {
         .nutrition-suggestion-container .img-container p {
           width: 120px; } }
+      @media (max-width: 767px) and (orientation: portrait) {
+        .nutrition-suggestion-container .img-container p {
+          font-size: 24px;
+          line-height: 24px; } }
     .nutrition-suggestion-container .img-container img {
       max-height: 407px;
       max-width: 471px;
@@ -7670,19 +7678,8 @@ main {
           margin-bottom: 30px; } }
     .article-list-container .three-article-list-container .article-item-container:nth-child(3n) {
       margin-right: 0; }
-    .article-list-container .three-article-list-container .article-item-container .img-container {
-      height: 225px; }
-      @media (min-width: 992px) and (max-width: 1199px) {
-        .article-list-container .three-article-list-container .article-item-container .img-container {
-          height: 188px; } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        .article-list-container .three-article-list-container .article-item-container .img-container {
-          height: 148px; } }
-      @media (max-width: 767px) {
-        .article-list-container .three-article-list-container .article-item-container .img-container {
-          height: auto; } }
-      .article-list-container .three-article-list-container .article-item-container .img-container img {
-        object-fit: cover; }
+    .article-list-container .three-article-list-container .article-item-container .img-container img {
+      object-fit: cover; }
     @media (max-width: 767px) {
       .article-list-container .three-article-list-container .article-item-container .article-item-content {
         padding: 0; } }
@@ -15220,11 +15217,11 @@ main {
 
 .milk-cookies-divider-container {
   text-align: center;
-  margin-bottom: 91px; }
+  margin-bottom: 83px; }
   @media (max-width: 767px) {
     .milk-cookies-divider-container {
       padding: 0 30px;
-      margin-bottom: 30px; } }
+      margin-bottom: 60px; } }
   .milk-cookies-divider-container.active-divider img {
     width: 100%; }
   .milk-cookies-divider-container h4 {
@@ -15235,53 +15232,59 @@ main {
 
 .partner-logo-container {
   text-align: center;
-  margin-bottom: 97px; }
+  margin-bottom: 58px; }
   @media (min-width: 992px) {
     .partner-logo-container {
-      display: flex; } }
+      display: flex;
+      flex-wrap: wrap; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .partner-logo-container {
-      display: flex; } }
+      display: flex;
+      flex-wrap: wrap; } }
   @media (max-width: 767px) and (orientation: landscape) {
     .partner-logo-container {
-      display: flex; } }
+      display: flex;
+      flex-wrap: wrap; } }
   @media (max-width: 767px) {
     .partner-logo-container {
       padding: 0 30px;
-      margin-bottom: 65px; } }
+      margin-bottom: 90px; } }
   @media (min-width: 992px) {
     .partner-logo-container .partner-item {
       text-align: center;
       display: flex;
-      flex-flow: column nowrap;
+      flex-flow: row nowrap;
       justify-content: center;
       align-items: center;
-      flex: 1 1 0%;
+      flex: 1 1 33%;
       width: auto;
-      position: relative; } }
+      position: relative;
+      margin-bottom: 60px; } }
   @media (max-width: 767px) and (orientation: landscape) {
     .partner-logo-container .partner-item {
       text-align: center;
       display: flex;
-      flex-flow: column nowrap;
+      flex-flow: row nowrap;
       justify-content: center;
       align-items: center;
-      flex: 1 1 0%;
+      flex: 1 1 33%;
       width: auto;
-      position: relative; } }
+      position: relative;
+      margin-bottom: 60px; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .partner-logo-container .partner-item {
       text-align: center;
       display: flex;
-      flex-flow: column nowrap;
+      flex-flow: row nowrap;
       justify-content: center;
       align-items: center;
-      flex: 1 1 0%;
+      flex: 1 1 33%;
       width: auto;
-      position: relative; } }
+      position: relative;
+      margin-bottom: 60px; } }
   @media (max-width: 767px) and (orientation: portrait) {
     .partner-logo-container .partner-item {
-      margin-bottom: 30px;
+      margin-bottom: 50px;
       display: block; }
       .partner-logo-container .partner-item:last-child {
         margin-bottom: 0; } }
@@ -15454,34 +15457,13 @@ main {
     @media (max-width: 767px) {
       .partners-container .partners-content-container .partners-inner-container {
         padding: 0 30px 15px 30px; } }
-    .partners-container .partners-content-container .partners-inner-container:after {
-      content: "";
-      width: 530px;
-      height: 5px;
-      background-color: #ffc600;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      margin-left: 15px; }
-      @media (max-width: 767px) {
-        .partners-container .partners-content-container .partners-inner-container:after {
-          display: none; } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        .partners-container .partners-content-container .partners-inner-container:after {
-          width: 450px; } }
-      @media (min-width: 992px) and (max-width: 1199px) {
-        .partners-container .partners-content-container .partners-inner-container:after {
-          left: -40px; } }
-      @media (min-width: 1200px) {
-        .partners-container .partners-content-container .partners-inner-container:after {
-          left: -67px; } }
   .partners-container .partners-content-container .partners-content-item {
     text-align: center;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-end;
-    flex: 1 1 25%;
+    flex: 1 1 20%;
     flex-grow: 1;
     width: auto;
     position: relative;
@@ -15492,10 +15474,11 @@ main {
     line-height: 30px;
     letter-spacing: 1.77px;
     color: #000000;
-    margin-bottom: 80px; }
+    margin-bottom: 83px; }
     @media (max-width: 767px) {
       .partners-container .partners-content-container .partners-content-item {
-        margin-bottom: 50px; } }
+        margin-bottom: 50px;
+        align-items: flex-start; } }
     .partners-container .partners-content-container .partners-content-item span {
       text-transform: uppercase;
       font-family: "acumin-pro-extra-condensed",sans-serif;

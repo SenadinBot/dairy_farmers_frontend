@@ -33,6 +33,10 @@
       padding: 0 20px;
     }
 
+    .email-content table table {
+      border-bottom: none;
+    }
+
     .email-footer {
       margin-top: 109px !important;
     }
@@ -133,22 +137,22 @@
 
     h2 {
       font-family: sans-serif;
-      font-size: 48px;
+      font-size: 34px;
+      line-height: 40px;
       font-weight: 900;
       font-stretch: normal;
       font-style: normal;
-      line-height: 1;
       letter-spacing: 1px;
       text-align: left;
       color: #000000;
       text-transform: uppercase;
       text-align: left;
-      margin: 0 0 26px 0;
+      margin: 0 0 16px 0;
     }
 
     h3 {
       font-family: sans-serif;
-      font-size: 36px;
+      font-size: 26px;
       font-weight: 900;
       font-stretch: normal;
       font-style: normal;
@@ -179,7 +183,7 @@
       font-weight: 300;
       font-stretch: normal;
       font-style: normal;
-      line-height: 1.5;
+      line-height: 22px;
       letter-spacing: normal;
       text-align: left;
       color: #000000;
@@ -192,15 +196,15 @@
       font-style: normal;
       font-weight: 900;
       background-color: transparent;
-      font-size: 22px;
-      line-height: 22px;
-      padding: 6px 32px 8px 32px;
+      font-size: 18px;
+      line-height: 30px;
+      padding: 5px 32px 4px 32px;
       text-align: center;
       border-radius: 0;
       letter-spacing: 1px;
       position: relative;
       z-index: 1;
-      border: 2px solid #0072ce;
+      border: 1px solid #0072ce;
       color: #0072ce;
       display: inline-block;
       text-transform: uppercase;
@@ -222,15 +226,15 @@
       font-style: normal;
       font-weight: 900;
       background-color: #0072ce;
-      font-size: 30px;
-      line-height: 44px;
-      padding: 12px 50px 10px 50px;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 0 32px 0 32px;
       text-align: center;
       border-radius: 0;
       letter-spacing: 1px;
       position: relative;
       z-index: 1;
-      border: 2px solid #0072ce;
+      border: 15px solid #0072ce;
       color: #ffffff;
       display: inline-block;
       text-transform: uppercase;
@@ -289,7 +293,7 @@
       font-weight: 900;
       font-stretch: normal;
       font-style: normal;
-      line-height: 1.2;
+      line-height: 36px;
       letter-spacing: 1px;
       text-align: center;
       margin: 40px 0 5px 0;
@@ -351,17 +355,12 @@
       padding-bottom: 1px;
     }
 
-    .footer-link td:last-child {
-      margin-right: 0;
-      padding-left: 10px;
-    }
 
-    .footer-link td:first-child {
+    .footer-link a:first-child {
       border-right: 2px solid #ffffff;
-      padding-right: 10px;
     }
 
-    .footer-link td a {
+    .footer-link a {
       font-size: 14px;
       font-weight: normal;
       font-stretch: normal;
@@ -375,9 +374,10 @@
       -moz-transition: all 0.5s;
       transition: all 0.5s;
       text-decoration: underline;
+      padding: 0 15px;
     }
 
-    .footer-link td a:hover {
+    .footer-link a:hover {
       color: #ffffff;
       -webkit-transition: all 0.5s;
       -moz-transition: all 0.5s;
@@ -426,7 +426,7 @@
       font-weight: 300;
       font-stretch: normal;
       font-style: normal;
-      line-height: 1;
+      line-height: 14px;
       letter-spacing: normal;
       text-align: left;
       color: #000000;
@@ -457,6 +457,10 @@
     .header-intro {
       text-align: center;
       padding-bottom: 15px;
+    }
+
+    .recipe-intro  h2 {
+      margin: 0;
     }
 
     .header-intro p {
@@ -521,7 +525,7 @@
       font-weight: 900;
       font-stretch: normal;
       font-style: normal;
-      line-height: 1.2;
+      line-height: 36px;
       letter-spacing: 1px;
       text-align: center;
       text-transform: uppercase;
@@ -545,8 +549,7 @@
       margin: auto;
       max-width: 640px;
       width: 100%;
-      padding: 0 20px;
-      margin-bottom: 80px;
+      padding: 0 20px 80px 20px;
     }
 
     .recipe-intro {
@@ -559,17 +562,10 @@
       vertical-align: top;
     }
 
-    .recipe-content p {
-      line-height: 1.67;
+    .recipe-intro p {
+      line-height: 26px;
       font-size: 18px;
       margin: 0 0 15px 0;
-    }
-
-    .recipe-info {
-      border-top: 1px solid #cccccc;
-      vertical-align: top;
-      text-align: center;
-      padding: 15px 0 20px 0;
     }
 
     .recipe-info ul {
@@ -588,7 +584,7 @@
       font-weight: 300;
       font-stretch: normal;
       font-style: normal;
-      line-height: 1;
+      line-height: 12px;
       letter-spacing: normal;
       color: #000000;
       display: block;
@@ -609,10 +605,13 @@
   <style media="only screen and (max-width: 767px)" type="text/css">
     @media only screen and (max-width: 767px) {
 
+      .blue-btn { 
+        display: block;
+      }
 
       .custom-btn {
         width: 100%;
-        padding: 12px 0 14px 0 !important;
+        padding: 5px 0 4px 0 !important;
       }
 
       body {
@@ -635,19 +634,14 @@
         width: 100%;
       }
 
-      table .footer-link td:last-child {
-        padding-left: 10px !important;
-      }
-
-      table .footer-link td:first-child {
-        padding-right: 10px !important;
+      .email-content td {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
       }
 
       table td {
         width: 100%;
         display: block;
-        padding-right: 0 !important;
-        padding-left: 0 !important;
       }
 
       .stack-column-center {
@@ -688,7 +682,7 @@
       }
 
       .email-recipe-intro {
-        padding: 0 30px;
+        padding: 0 30px 80px 30px;
       }
 
       .recipe-intro {
@@ -787,17 +781,13 @@
                 <div class="recipe-intro">
                   <h5>Recipes</h5>
                   <h2>Cheesy Scalloped Potato Gnocchi</h2>
-                  <div class="recipe-intro-content">
-                    <div class="recipe-content">
                       <p>Serve up this comfort food alongside your favourite roast for a cozy meal the family will
                         adore.</p>
-                    </div>
-                  </div>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>
+              <td style="border-top: 1px solid #cccccc; vertical-align: top; text-align: center; padding: 15px 0 20px 0;">
                 <div class="recipe-info">
                   <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
                     style="width: 100%;">
@@ -845,8 +835,12 @@
           </table>
         </td>
       </tr>
+    </table>
+    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
+      style="background-color: #ffffff; max-width: 640px; width: 100%; text-align: left;"
+      class="email-container email-content">
       <tr>
-        <td style="border-bottom: 1px solid #e5e5e5; padding-bottom: 25px;">
+        <td style="padding-bottom: 25px;">
           <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
             <tr>
               <td style="vertical-align: top; padding-right: 10px; padding-bottom: 25px;">
@@ -868,8 +862,12 @@
           </table>
         </td>
       </tr>
+    </table>
+    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
+      style="background-color: #ffffff; max-width: 640px; width: 100%; text-align: left;"
+      class="email-container email-content">
       <tr>
-        <td style="border-bottom: 1px solid #e5e5e5; padding-top: 50px; padding-bottom: 25px;">
+        <td style="padding-top: 50px; padding-bottom: 25px;">
           <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
             <tr>
               <td style="vertical-align: top; padding-right: 10px;  padding-bottom: 25px;">
@@ -888,8 +886,12 @@
           </table>
         </td>
       </tr>
+    </table>
+    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
+      style="background-color: #ffffff; max-width: 640px; width: 100%; text-align: left;"
+      class="email-container email-content">
       <tr>
-        <td style="border-bottom: 1px solid #e5e5e5; padding-top: 50px; padding-bottom: 25px;">
+        <td style="padding-top: 50px; padding-bottom: 25px;">
           <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
             <tr>
               <td style="vertical-align: top; padding-right: 10px;  padding-bottom: 25px;">
@@ -932,6 +934,10 @@
           </table>
         </td>
       </tr>
+    </table>
+    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
+      style="background-color: #ffffff; max-width: 640px; width: 100%; text-align: left;"
+      class="email-container email-content">
       <tr>
         <td style="padding-top: 50px;">
           <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
@@ -1037,9 +1043,10 @@
                 <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
                   style="width: 100%; margin-bottom: 30px;">
                   <tr>
-                    <td style="text-align: right;"><a href="http://staging.milk.org" target="_blank">Unsubscribe</a>
+                    <td style="text-align: center;">
+                      <a href="http://staging.milk.org" target="_blank">Unsubscribe</a>
+                      <a href="http://staging.milk.org" target="_blank">milk.org</a>
                     </td>
-                    <td style="text-align: left;"><a href="http://staging.milk.org" target="_blank">milk.org</a></td>
                   </tr>
                 </table>
               </td>
