@@ -1191,6 +1191,17 @@
                 padding: 0;
                 order: 1;
             }
+            .desktop-img {
+                @include media-xs {
+                    display: none;
+                }
+            }
+            .mobile-img {
+                display: none;
+                @include media-xs {
+                    display: block;
+                }
+            }
             img {
                 max-width: 100%;
                 max-height: 100%;

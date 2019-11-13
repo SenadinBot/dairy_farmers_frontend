@@ -10,7 +10,6 @@
   <meta name="x-apple-disable-message-reformatting">
   <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <link href="https://use.typekit.net/nio3oec.css" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700&display=swap" rel="stylesheet">
@@ -32,7 +31,14 @@
 
     .email-content {
       padding: 0 20px;
-      margin-bottom: 109px !important;
+    }
+
+    .email-content table table {
+      border-bottom: none;
+    }
+
+    .email-footer {
+      margin-top: 109px !important;
     }
 
     ul li {
@@ -98,7 +104,6 @@
   </style>
   <style type="text/css">
     .img-container {
-      background-color: #fff;
       margin-top: 4px;
     }
 
@@ -131,28 +136,28 @@
     }
 
     h2 {
-      font-family: "acumin-pro-extra-condensed", sans-serif;
-      font-size: 48px;
+      font-family: sans-serif;
+      font-size: 34px;
+      line-height: 40px;
       font-weight: 900;
       font-stretch: normal;
       font-style: normal;
-      line-height: 1;
-      letter-spacing: 2.4px;
+      letter-spacing: 1px;
       text-align: left;
       color: #000000;
       text-transform: uppercase;
       text-align: left;
-      margin: 0 0 26px 0;
+      margin: 0 0 16px 0;
     }
 
     h3 {
-      font-family: "acumin-pro-extra-condensed", sans-serif;
-      font-size: 36px;
+      font-family: sans-serif;
+      font-size: 26px;
       font-weight: 900;
       font-stretch: normal;
       font-style: normal;
       line-height: 1;
-      letter-spacing: 1.8px;
+      letter-spacing: 1px;
       text-align: left;
       color: #000000;
       text-transform: uppercase;
@@ -178,7 +183,7 @@
       font-weight: 300;
       font-stretch: normal;
       font-style: normal;
-      line-height: 1.5;
+      line-height: 22px;
       letter-spacing: normal;
       text-align: left;
       color: #000000;
@@ -187,19 +192,19 @@
     }
 
     .custom-btn {
-      font-family: "acumin-pro-extra-condensed", sans-serif;
+      font-family: sans-serif;
       font-style: normal;
       font-weight: 900;
       background-color: transparent;
-      font-size: 22px;
-      line-height: 22px;
-      padding: 6px 32px 8px 32px;
+      font-size: 18px;
+      line-height: 30px;
+      padding: 5px 25px 4px 25px;
       text-align: center;
       border-radius: 0;
-      letter-spacing: 1.8px;
+      letter-spacing: 1px;
       position: relative;
       z-index: 1;
-      border: 2px solid #0072ce;
+      border: 1px solid #0072ce;
       color: #0072ce;
       display: inline-block;
       text-transform: uppercase;
@@ -207,29 +212,22 @@
       -moz-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease;
-    }
-
-    .custom-btn:hover {
-      background-color: #0072ce;
-      color: #ffffff;
-      text-decoration: none;
-      outline: none;
     }
 
     .blue-btn {
-      font-family: "acumin-pro-extra-condensed", sans-serif;
+      font-family: sans-serif;
       font-style: normal;
       font-weight: 900;
       background-color: #0072ce;
-      font-size: 30px;
-      line-height: 30px;
-      padding: 12px 50px 14px 50px;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 0 20px 0 20px;
       text-align: center;
       border-radius: 0;
-      letter-spacing: 1.8px;
+      letter-spacing: 1px;
       position: relative;
       z-index: 1;
-      border: 2px solid #0072ce;
+      border: 15px solid #0072ce;
       color: #ffffff;
       display: inline-block;
       text-transform: uppercase;
@@ -237,13 +235,6 @@
       -moz-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease;
-    }
-
-    .blue-btn:hover {
-      background-color: transparent;
-      color: #0072ce;
-      text-decoration: none;
-      outline: none;
     }
 
     td .img-container img {
@@ -283,35 +274,21 @@
     .footer-social span {
       display: block;
       color: #ffffff !important;
-      font-family: "acumin-pro-extra-condensed", sans-serif;
+      font-family: sans-serif;
       font-size: 30px;
       font-weight: 900;
       font-stretch: normal;
       font-style: normal;
-      line-height: 1.2;
-      letter-spacing: 1.5px;
+      line-height: 36px;
+      letter-spacing: 1px;
       text-align: center;
       margin: 40px 0 5px 0;
       text-transform: uppercase;
     }
 
-    .footer-social ul {
-      margin: 0 0 49px 0;
-      padding: 0;
-      list-style: none;
-      font-size: 0;
-      text-align: center;
-    }
-
-    .footer-social ul li {
-      margin-right: 18px;
-      display: inline-block;
-    }
-
-    .footer-social ul li a {
+    .footer-social td a {
       width: 51px;
       height: 50px;
-      display: block;
       position: relative;
       -webkit-transition: all 0.5s;
       -moz-transition: all 0.5s;
@@ -319,12 +296,8 @@
       border: none;
     }
 
-    .footer-social ul li a:hover {
+    .footer-social td a:hover {
       opacity: 0.7;
-    }
-
-    .footer-social ul li:last-child {
-      margin-right: 0;
     }
 
     .footer-social img {
@@ -333,7 +306,7 @@
       object-fit: contain;
     }
 
-    .footer-address ul {
+    .footer-address {
       margin: 0 0 10px 0;
       padding: 0;
       list-style: none;
@@ -341,7 +314,7 @@
       text-align: center;
     }
 
-    .footer-address ul li {
+    .footer-address td {
       font-size: 11px;
       font-weight: normal;
       font-stretch: normal;
@@ -353,7 +326,7 @@
       font-family: 'Roboto', sans-serif;
     }
 
-    .footer-link ul {
+    .footer-link {
       margin: 0 0 30px 0;
       padding: 0;
       list-style: none;
@@ -368,17 +341,12 @@
       padding-bottom: 1px;
     }
 
-    .footer-link ul li:last-child {
-      margin-right: 0;
-      padding-left: 10px;
-    }
 
-    .footer-link ul li:first-child {
+    .footer-link a:first-child {
       border-right: 2px solid #ffffff;
-      padding-right: 10px;
     }
 
-    .footer-link ul li a {
+    .footer-link a {
       font-size: 14px;
       font-weight: normal;
       font-stretch: normal;
@@ -388,18 +356,19 @@
       text-align: center;
       color: #ffffff;
       font-family: 'Roboto', sans-serif;
-      border-bottom: 1px solid #ffffff;
       -webkit-transition: all 0.5s;
       -moz-transition: all 0.5s;
       transition: all 0.5s;
+      text-decoration: underline;
+      padding: 0 15px;
     }
 
-    .footer-link ul li a:hover {
+    .footer-link a:hover {
       color: #ffffff;
       -webkit-transition: all 0.5s;
       -moz-transition: all 0.5s;
       transition: all 0.5s;
-      border-bottom: 1px solid transparent;
+      text-decoration: none;
     }
 
     .footer-copyright {
@@ -485,11 +454,11 @@
     }
 
     .single-mail-content span {
-      width: 13px;
+      width: 20px;
     }
 
     .single-mail-content p {
-      width: 95%;
+      width: 90%;
     }
 
     .email-header {
@@ -600,24 +569,17 @@
       margin-bottom: 80px;
     }
     .recipe-intro {
-      padding: 14px 14px 25px 14px;
-      background-color: rgba(255, 255, 255, 0.9);
-      margin: 0 auto;
-      width: 85%;
+      
       z-index: 9;
+      margin: 0 auto;
       position: relative;
-    }
-
-    .recipe-intro .blue-btn {
-      padding: 12px 20px 14px 20px;
-      min-width: 220px;
     }
 
     .recipe-content {
       vertical-align: top;
     }
 
-    .recipe-content p {
+    .recipe-intro p {
       line-height: 32px;
       font-size: 22px;
       margin: 0 0 15px 0;
@@ -667,13 +629,14 @@
   </style>
   <style media="only screen and (max-width: 767px)" type="text/css">
     @media only screen and (max-width: 767px) {
-      .email-content {
-        margin-bottom: 120px !important;
+      .blue-btn { 
+        display: block;
+        padding: 0;
       }
 
       .custom-btn {
         width: 100%;
-        padding: 12px 0 14px 0 !important;
+        padding: 5px 0 4px 0 !important;
       }
 
       body {
@@ -684,11 +647,26 @@
         width: 100% !important;
       }
 
+      table .recipe-info td,
+      table .article-icon-info td,
+      table .footer-social td,
+      table .footer-link td {
+        width: auto;
+        display: table-cell;
+      }
+
+      .email-content td .img-container img {
+        width: 100%;
+      }
+
+      .email-content td {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
       table td {
         width: 100%;
         display: block;
-        padding-right: 0 !important;
-        padding-left: 0 !important;
       }
 
       .stack-column-center {
@@ -719,32 +697,31 @@
         text-align: center;
       }
 
+      .header-bg-image .img-container {
+        margin-top: 10px;
+        height: 200px;
+      }
 
       .email-header {
         padding: 11px 15px 0 15px;
       }
 
       .email-recipe-intro {
-        padding: 0 30px;
+        padding: 0 30px 80px 30px;
       }
-
-      h2 {
-        font-size: 42px;
-        margin: 0 0 7px 0;
-      }
-
+      
       .recipe-content {
         width: 100%;
         display: block;
       }
 
-      .recipe-info ul li span {
+      .recipe-info td span {
         display: inline-block;
         vertical-align: middle;
         margin-left: 3px;
       }
 
-      .recipe-info ul li img {
+      .recipe-info td img {
         display: inline-block;
         vertical-align: middle;
         margin: 0;
@@ -775,7 +752,7 @@
             <tr class="header-logo">
               <td>
                 <div class="img-container">
-                  <img src="http://staging.milk.org/Milk/media/Images/logo.png?ext=.png" alt="Image">
+                  <img width="73" height="73" src="http://staging.milk.org/Milk/media/Images/logo.png?ext=.png" alt="Image">
                 </div>
               </td>
             </tr>
@@ -787,7 +764,7 @@
           <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
             <tr class="header-logo">
               <td>
-                <span>Hello Again, Name</span>
+                <span style="color: #ffffff">Hello Again, Name</span>
               </td>
             </tr>
           </table>
@@ -797,16 +774,18 @@
           <td>
             <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
               <tr>
-                <td>
+                <td style="padding: 14px 14px 25px 14px;
+                background: #ffffff;
+                opacity: 0.9;
+                width: 85%;
+                margin: 0 auto;
+                display: block;
+                z-index: 9;">
                   <div class="recipe-intro">
                     <h5>Contest</h5>
                     <h2>Win a DAIRY CULINARY PRIZE PACK!*</h2>
-                    <div class="recipe-intro-content">
-                      <div class="recipe-content">
-                        <p>Aliquam dapibus sed nunc nec malesuada. Maecenas congue mi augue, a suscipit sem pulvinar sed1.
-                        </p>
-                      </div>
-                    </div>
+                    <p>Aliquam dapibus sed nunc nec malesuada. Maecenas congue mi augue, a suscipit sem pulvinar sed1.
+                      </p>
                     <a href="http://staging.milk.org" class="blue-btn" target="_blank">Enter the contest</a>
                   </div>
                 </td>
@@ -818,7 +797,7 @@
                     <tr>
                       <td class="header-bg-image">
                         <div class="img-container">
-                          <img
+                          <img width="600" height="auto"
                             src="http://staging.milk.org/Milk/media/Images/img-esmp-volunteer-become-521-w@3x.png?ext=.png"
                             alt="Image">
                         </div>
@@ -881,9 +860,10 @@
         <td style="border-bottom: 1px solid rgba(0, 0, 0, 0.4);">
           <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
             <tr>
-              <td class="footer-intro">
+              <td class="footer-intro" style="text-align: center;">
                 <a href="http://staging.milk.org" target="_blank">
-                  <img style="max-height: 142px; max-width: 100%; position: relative; top: -10px;"
+                  <img width="277" height="144"
+                    style="max-height: 142px; max-width: 100%; position: relative; top: -10px;"
                     src="http://staging.milk.org/Milk/media/Images/logo-footer.png?ext=.png" alt="Image">
                 </a>
                 <p>Proudly brought to you by the Dairy Farmers of Ontario.</p>
@@ -896,25 +876,31 @@
         <td>
           <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
             <tr>
-              <td class="footer-social">
-                <span>Follow Us</span>
-                <ul>
-                  <li>
-                    <a href="http://staging.milk.org" target="_blank">
-                      <img src="http://staging.milk.org/Milk/media/Images/img-icon-social-facebook.png" alt="Image">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://staging.milk.org" target="_blank">
-                      <img src="http://staging.milk.org/Milk/media/Images/img-icon-social-instagram.png" alt="Image">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://staging.milk.org" target="_blank">
-                      <img src="http://staging.milk.org/Milk/media/Images/img-icon-social-twitter.png" alt="Image">
-                    </a>
-                  </li>
-                </ul>
+              <td class="footer-social" style="text-align: center;">
+                <span style="color: #ffffff;">Follow Us</span>
+                <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                  style="width: 100%; margin-bottom: 49px;">
+                  <tr>
+                    <td style="text-align: right;">
+                      <a href="http://staging.milk.org" target="_blank">
+                        <img width="51" height="51"
+                          src="http://staging.milk.org/Milk/media/Images/img-icon-social-facebook.png" alt="Image">
+                      </a>
+                    </td>
+                    <td style="text-align: center; width:90px">
+                      <a href="http://staging.milk.org" target="_blank">
+                        <img width="51" height="51"
+                          src="http://staging.milk.org/Milk/media/Images/img-icon-social-instagram.png" alt="Image">
+                      </a>
+                    </td>
+                    <td style="text-align: left;">
+                      <a href="http://staging.milk.org" target="_blank">
+                        <img width="51" height="51"
+                          src="http://staging.milk.org/Milk/media/Images/img-icon-social-twitter.png" alt="Image">
+                      </a>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
           </table>
@@ -925,30 +911,40 @@
           <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
             <tr>
               <td class="footer-link">
-                <ul>
-                  <li>
-                    <a href="http://staging.milk.org" target="_blank">Unsubscribe</a>
-                  </li>
-                  <li>
-                    <a href="http://staging.milk.org" target="_blank">milk.org</a>
-                  </li>
-                </ul>
+                <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                  style="width: 100%; margin-bottom: 30px;">
+                  <tr>
+                    <td style="text-align: center;">
+                      <a href="http://staging.milk.org" target="_blank">Unsubscribe</a>
+                      <a href="http://staging.milk.org" target="_blank">milk.org</a>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
           </table>
         </td>
       </tr>
       <tr>
-        <td style="border-bottom: 1px solid rgba(0, 0, 0, 0.4);">
+        <td style="border-bottom: 1px solid rgba(0, 0, 0, 0.4)">
           <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
             <tr>
               <td class="footer-address">
-                <ul>
-                  <li>Dairy Farmers of Ontario</li>
-                  <li>6780 Campobello Rd</li>
-                  <li>Mississauga, ON</li>
-                  <li>L5N 2L8</li>
-                </ul>
+                <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                  style="width: 100%; margin-bottom: 10px;">
+                  <tr>
+                    <td>Dairy Farmers of Ontario</td>
+                  </tr>
+                  <tr>
+                    <td>6780 Campobello Rd</td>
+                  </tr>
+                  <tr>
+                    <td>Mississauga, ON</td>
+                  </tr>
+                  <tr>
+                    <td>L5N 2L8</td>
+                  </tr>
+                </table>
               </td>
             </tr>
           </table>

@@ -10,10 +10,11 @@
   <meta name="x-apple-disable-message-reformatting">
   <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link href="https://use.typekit.net/nio3oec.css" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700&display=swap" rel="stylesheet">
-  <title>Email Newsletter Responsive</title>
+  <title>Single Mail</title>
   <style type="text/css">
     html {
       margin: 0 !important;
@@ -31,14 +32,7 @@
 
     .email-content {
       padding: 0 20px;
-    }
-
-    .email-content table table {
-      border-bottom: none;
-    }
-
-    .email-footer {
-      margin-top: 109px !important;
+      margin-bottom: 109px !important;
     }
 
     ul li {
@@ -104,6 +98,7 @@
   </style>
   <style type="text/css">
     .img-container {
+      background-color: #fff;
       margin-top: 4px;
     }
 
@@ -136,28 +131,28 @@
     }
 
     h2 {
-      font-family: sans-serif;
-      font-size: 34px;
-      line-height: 40px;
-      font-weight: 900;
-      font-stretch: normal;
-      font-style: normal;
-      letter-spacing: 1px;
-      text-align: left;
-      color: #000000;
-      text-transform: uppercase;
-      text-align: left;
-      margin: 0 0 16px 0;
-    }
-
-    h3 {
-      font-family: sans-serif;
-      font-size: 26px;
+      font-family: "acumin-pro-extra-condensed", sans-serif;
+      font-size: 48px;
       font-weight: 900;
       font-stretch: normal;
       font-style: normal;
       line-height: 1;
-      letter-spacing: 1px;
+      letter-spacing: 2.4px;
+      text-align: left;
+      color: #000000;
+      text-transform: uppercase;
+      text-align: left;
+      margin: 0 0 26px 0;
+    }
+
+    h3 {
+      font-family: "acumin-pro-extra-condensed", sans-serif;
+      font-size: 36px;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: 1.8px;
       text-align: left;
       color: #000000;
       text-transform: uppercase;
@@ -183,7 +178,7 @@
       font-weight: 300;
       font-stretch: normal;
       font-style: normal;
-      line-height: 22px;
+      line-height: 1.5;
       letter-spacing: normal;
       text-align: left;
       color: #000000;
@@ -192,19 +187,19 @@
     }
 
     .custom-btn {
-      font-family: sans-serif;
+      font-family: "acumin-pro-extra-condensed", sans-serif;
       font-style: normal;
       font-weight: 900;
       background-color: transparent;
-      font-size: 18px;
-      line-height: 30px;
-      padding: 5px 32px 4px 32px;
+      font-size: 22px;
+      line-height: 22px;
+      padding: 6px 32px 8px 32px;
       text-align: center;
       border-radius: 0;
-      letter-spacing: 1px;
+      letter-spacing: 1.8px;
       position: relative;
       z-index: 1;
-      border: 1px solid #0072ce;
+      border: 2px solid #0072ce;
       color: #0072ce;
       display: inline-block;
       text-transform: uppercase;
@@ -222,19 +217,19 @@
     }
 
     .blue-btn {
-      font-family: sans-serif;
+      font-family: "acumin-pro-extra-condensed", sans-serif;
       font-style: normal;
       font-weight: 900;
       background-color: #0072ce;
-      font-size: 18px;
-      line-height: 22px;
-      padding: 0 32px 0 32px;
+      font-size: 30px;
+      line-height: 30px;
+      padding: 12px 50px 14px 50px;
       text-align: center;
       border-radius: 0;
-      letter-spacing: 1px;
+      letter-spacing: 1.8px;
       position: relative;
       z-index: 1;
-      border: 15px solid #0072ce;
+      border: 2px solid #0072ce;
       color: #ffffff;
       display: inline-block;
       text-transform: uppercase;
@@ -288,21 +283,35 @@
     .footer-social span {
       display: block;
       color: #ffffff !important;
-      font-family: sans-serif;
+      font-family: "acumin-pro-extra-condensed", sans-serif;
       font-size: 30px;
       font-weight: 900;
       font-stretch: normal;
       font-style: normal;
-      line-height: 36px;
-      letter-spacing: 1px;
+      line-height: 1.2;
+      letter-spacing: 1.5px;
       text-align: center;
       margin: 40px 0 5px 0;
       text-transform: uppercase;
     }
 
-    .footer-social td a {
+    .footer-social ul {
+      margin: 0 0 49px 0;
+      padding: 0;
+      list-style: none;
+      font-size: 0;
+      text-align: center;
+    }
+
+    .footer-social ul li {
+      margin-right: 18px;
+      display: inline-block;
+    }
+
+    .footer-social ul li a {
       width: 51px;
       height: 50px;
+      display: block;
       position: relative;
       -webkit-transition: all 0.5s;
       -moz-transition: all 0.5s;
@@ -310,8 +319,12 @@
       border: none;
     }
 
-    .footer-social td a:hover {
+    .footer-social ul li a:hover {
       opacity: 0.7;
+    }
+
+    .footer-social ul li:last-child {
+      margin-right: 0;
     }
 
     .footer-social img {
@@ -320,7 +333,7 @@
       object-fit: contain;
     }
 
-    .footer-address {
+    .footer-address ul {
       margin: 0 0 10px 0;
       padding: 0;
       list-style: none;
@@ -328,7 +341,7 @@
       text-align: center;
     }
 
-    .footer-address td {
+    .footer-address ul li {
       font-size: 11px;
       font-weight: normal;
       font-stretch: normal;
@@ -340,7 +353,7 @@
       font-family: 'Roboto', sans-serif;
     }
 
-    .footer-link {
+    .footer-link ul {
       margin: 0 0 30px 0;
       padding: 0;
       list-style: none;
@@ -355,12 +368,17 @@
       padding-bottom: 1px;
     }
 
-
-    .footer-link a:first-child {
-      border-right: 2px solid #ffffff;
+    .footer-link ul li:last-child {
+      margin-right: 0;
+      padding-left: 10px;
     }
 
-    .footer-link a {
+    .footer-link ul li:first-child {
+      border-right: 2px solid #ffffff;
+      padding-right: 10px;
+    }
+
+    .footer-link ul li a {
       font-size: 14px;
       font-weight: normal;
       font-stretch: normal;
@@ -370,19 +388,18 @@
       text-align: center;
       color: #ffffff;
       font-family: 'Roboto', sans-serif;
+      border-bottom: 1px solid #ffffff;
       -webkit-transition: all 0.5s;
       -moz-transition: all 0.5s;
       transition: all 0.5s;
-      text-decoration: underline;
-      padding: 0 15px;
     }
 
-    .footer-link a:hover {
+    .footer-link ul li a:hover {
       color: #ffffff;
       -webkit-transition: all 0.5s;
       -moz-transition: all 0.5s;
       transition: all 0.5s;
-      text-decoration: none;
+      border-bottom: 1px solid transparent;
     }
 
     .footer-copyright {
@@ -420,13 +437,13 @@
       margin-right: 20px;
     }
 
-    .article-icon-info td span {
+    .article-icon-info ul li span {
       font-family: 'Roboto Light', sans-serif;
       font-size: 14px;
       font-weight: 300;
       font-stretch: normal;
       font-style: normal;
-      line-height: 14px;
+      line-height: 1;
       letter-spacing: normal;
       text-align: left;
       color: #000000;
@@ -438,10 +455,41 @@
       margin-right: 0;
     }
 
-    .article-icon-info td img {
+    .article-icon-info ul li img {
       height: 25px;
       display: inline-block;
       vertical-align: middle;
+    }
+
+    .single-mail-content {
+      position: relative;
+      margin: auto;
+      max-width: 640px;
+      width: 100%;
+      padding: 11px 20px 25px 20px;
+    }
+
+    .single-mail-content p,
+    .single-mail-content span {
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #666666;
+      font-family: 'Roboto', sans-serif;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .single-mail-content span {
+      width: 13px;
+    }
+
+    .single-mail-content p {
+      width: 95%;
     }
 
     .email-header {
@@ -452,15 +500,12 @@
       padding: 11px 20px 0 20px;
       background-image: linear-gradient(100deg, rgba(95, 33, 103, 0.5), #0072ce), linear-gradient(to bottom, #0072ce, #0072ce);
       background-color: #0072ce;
+      margin-bottom: 30px;
     }
 
     .header-intro {
       text-align: center;
       padding-bottom: 15px;
-    }
-
-    .recipe-intro  h2 {
-      margin: 0;
     }
 
     .header-intro p {
@@ -520,15 +565,16 @@
       display: inline-block;
       vertical-align: middle;
       color: #ffffff !important;
-      font-family: sans-serif;
+      font-family: "acumin-pro-extra-condensed", sans-serif;
       font-size: 30px;
       font-weight: 900;
       font-stretch: normal;
       font-style: normal;
-      line-height: 36px;
-      letter-spacing: 1px;
+      line-height: 1.2;
+      letter-spacing: 1.5px;
       text-align: center;
       text-transform: uppercase;
+      margin-bottom: 25px;
     }
 
     .header-bg-image .img-container {
@@ -542,6 +588,7 @@
       height: 100%;
       width: 100%;
       object-fit: cover;
+      margin-top: -150px;
     }
 
     .email-recipe-intro {
@@ -549,23 +596,38 @@
       margin: auto;
       max-width: 640px;
       width: 100%;
-      padding: 0 20px 80px 20px;
+      padding: 0 20px;
+      margin-bottom: 80px;
+    }
+    .recipe-intro {
+      padding: 14px 14px 25px 14px;
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 0 auto;
+      width: 85%;
+      z-index: 9;
+      position: relative;
     }
 
-    .recipe-intro {
-      padding: 14px 14px 0 14px;
-      margin-top: -70px;
-      background-color: rgba(255, 255, 255, 0.9);
+    .recipe-intro .blue-btn {
+      padding: 12px 20px 14px 20px;
+      min-width: 220px;
     }
 
     .recipe-content {
       vertical-align: top;
     }
 
-    .recipe-intro p {
-      line-height: 26px;
-      font-size: 18px;
+    .recipe-content p {
+      line-height: 32px;
+      font-size: 22px;
       margin: 0 0 15px 0;
+    }
+
+    .recipe-info {
+      border-top: 1px solid #cccccc;
+      vertical-align: top;
+      text-align: center;
+      padding: 15px 0 20px 0;
     }
 
     .recipe-info ul {
@@ -574,17 +636,18 @@
       padding: 0;
     }
 
-    .recipe-info td {
+    .recipe-info ul li {
+      display: inline-block;
       text-align: center;
     }
 
-    .recipe-info td span {
+    .recipe-info ul li span {
       font-family: 'Roboto Light', sans-serif;
       font-size: 12px;
       font-weight: 300;
       font-stretch: normal;
       font-style: normal;
-      line-height: 12px;
+      line-height: 1;
       letter-spacing: normal;
       color: #000000;
       display: block;
@@ -596,7 +659,7 @@
       margin-bottom: 17px;
     }
 
-    .recipe-info td img {
+    .recipe-info ul li img {
       height: 25px;
       display: block;
       margin: 0 auto 10px auto;
@@ -604,14 +667,13 @@
   </style>
   <style media="only screen and (max-width: 767px)" type="text/css">
     @media only screen and (max-width: 767px) {
-
-      .blue-btn { 
-        display: block;
+      .email-content {
+        margin-bottom: 120px !important;
       }
 
       .custom-btn {
         width: 100%;
-        padding: 5px 0 4px 0 !important;
+        padding: 12px 0 14px 0 !important;
       }
 
       body {
@@ -622,26 +684,11 @@
         width: 100% !important;
       }
 
-      table .recipe-info td,
-      table .article-icon-info td,
-      table .footer-social td,
-      table .footer-link td {
-        width: auto;
-        display: table-cell;
-      }
-
-      .email-content td .img-container img {
-        width: 100%;
-      }
-
-      .email-content td {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-      }
-
       table td {
         width: 100%;
         display: block;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
       }
 
       .stack-column-center {
@@ -672,22 +719,18 @@
         text-align: center;
       }
 
-      .header-bg-image .img-container {
-        margin-top: 10px;
-        height: 200px;
-      }
 
       .email-header {
         padding: 11px 15px 0 15px;
       }
 
       .email-recipe-intro {
-        padding: 0 30px 80px 30px;
+        padding: 0 30px;
       }
 
-      .recipe-intro {
-        padding: 14px 13px 0 13px;
-        margin-bottom: 60px;
+      h2 {
+        font-size: 42px;
+        margin: 0 0 7px 0;
       }
 
       .recipe-content {
@@ -695,13 +738,13 @@
         display: block;
       }
 
-      .recipe-info td span {
+      .recipe-info ul li span {
         display: inline-block;
         vertical-align: middle;
         margin-left: 3px;
       }
 
-      .recipe-info td img {
+      .recipe-info ul li img {
         display: inline-block;
         vertical-align: middle;
         margin: 0;
@@ -732,8 +775,7 @@
             <tr class="header-logo">
               <td>
                 <div class="img-container">
-                  <img width="73" height="73" src="http://staging.milk.org/Milk/media/Images/logo.png?ext=.png"
-                    alt="Image">
+                  <img src="http://staging.milk.org/Milk/media/Images/logo.png?ext=.png" alt="Image">
                 </div>
               </td>
             </tr>
@@ -745,232 +787,87 @@
           <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
             <tr class="header-logo">
               <td>
-                <span style="color: #ffffff">Hello Again, Name</span>
+                <span>Hello Again, Name</span>
               </td>
             </tr>
           </table>
         </td>
       </tr>
       <tr>
-        <td>
-          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
-            <tr>
-              <td class="header-bg-image">
-                <div class="img-container">
-                  <img width="600" height="auto"
-                    src="http://staging.milk.org/Milk/media/Images/img-recipe-list-hero-01@3x.jpg?ext=.jpg" alt="Image">
-                </div>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
-      class="email-container email-recipe-intro">
-      <tr>
-        <td>
-          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
-            <tr>
-              <td>
-                <div class="recipe-intro">
-                  <h5>Recipes</h5>
-                  <h2>Cheesy Scalloped Potato Gnocchi</h2>
-                      <p>Serve up this comfort food alongside your favourite roast for a cozy meal the family will
-                        adore.</p>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td style="border-top: 1px solid #cccccc; vertical-align: top; text-align: center; padding: 15px 0 20px 0;">
-                <div class="recipe-info">
+          <td>
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+              <tr>
+                <td>
+                  <div class="recipe-intro">
+                    <h5>Contest</h5>
+                    <h2>Win a DAIRY CULINARY PRIZE PACK!*</h2>
+                    <div class="recipe-intro-content">
+                      <div class="recipe-content">
+                        <p>Aliquam dapibus sed nunc nec malesuada. Maecenas congue mi augue, a suscipit sem pulvinar sed1.
+                        </p>
+                      </div>
+                    </div>
+                    <a href="http://staging.milk.org" class="blue-btn" target="_blank">Enter the contest</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
                   <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
                     style="width: 100%;">
                     <tr>
-                      <td>
-                        <img width="20" height="" src="http://staging.milk.org/Milk/media/Images/icon-prep-time.png"
-                          alt="Im">
-                        <span>15min</span>
-                      </td>
-                      <td>
-                        <img width="26" height="" width="26" height=""
-                          src="http://staging.milk.org/Milk/media/Images/img-culinary-icon-cook-time.png" alt="Im">
-                        <span>35min</span>
-                      </td>
-                      <td>
-                        <img width="35" height=""
-                          src="http://staging.milk.org/Milk/media/Images/img-culinary-icon-serving.png" alt="Im">
-                        <span>4-6</span>
+                      <td class="header-bg-image">
+                        <div class="img-container">
+                          <img
+                            src="http://staging.milk.org/Milk/media/Images/img-esmp-volunteer-become-521-w@3x.png?ext=.png"
+                            alt="Image">
+                        </div>
                       </td>
                     </tr>
                   </table>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="http://staging.milk.org" class="blue-btn" target="_blank">View this recipe</a>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
     </table>
     <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
-      style="background-color: #ffffff; max-width: 640px; width: 100%; text-align: left;"
-      class="email-container email-content">
+      class="email-container single-mail-content">
       <tr>
         <td>
           <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
             <tr>
               <td>
-                <h2>Also happening <br> this month</h2>
+                <span>*</span>
+                <p>Cras ac purus et velit malesuada auctor. Duis quis urna eget nunc tincidunt aliquet sit amet vel
+                  est. Quisque enim leo, scelerisque quis lobortis porta, malesuada vitae tortor. Duis eu turpis nec
+                  massa scelerisque viverra. Nullam massa diam, suscipit blandit lacus quis, hendrerit tristique est.
+                  Integer sed feugiat tortor. Curabitur augue nisi, lobortis id tincidunt vitae, malesuada et augue.
+                  Vestibulum non risus ac eros tincidunt mollis semper eget orci. Maecenas id nibh semper, placerat
+                  turpis gravida, pellentesque metus.</p>
               </td>
             </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
-      style="background-color: #ffffff; max-width: 640px; width: 100%; text-align: left;"
-      class="email-container email-content">
-      <tr>
-        <td style="padding-bottom: 25px;">
-          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
             <tr>
-              <td style="vertical-align: top; padding-right: 10px; padding-bottom: 25px;">
-                <div class="img-container">
-                  <img width="290" height=""
-                    src="http://staging.milk.org/Milk/media/Images/img-culinary-ontario-local-article-1-521-w@3x.png?ext=.png"
-                    alt="image">
-                </div>
-              </td>
-              <td style="vertical-align: top; padding-left: 10px; padding-bottom: 25px;">
-                <h5>Chefs & Restaurants</h5>
-                <h3>Kingston Atomica Takes Bold Flavour in a New Direction</h3>
-                <p>Once the capital city of the province of Canada, Kingston has been quietly reinventing itself, and
-                  you
-                  can see it in its local food scene.</p>
-                <a href="http://staging.milk.org" class="custom-btn" target="_blank">Read the article</a>
+              <td>
+                <span>92</span>
+                <p>Pellentesque a elementum leo. Proin sed turpis in orci ultricies condimentum. Nulla dignissim mi in
+                  elit tincidunt commodo. Donec at dolor ac erat dapibus dapibus. Cras sed mauris vel sapien congue
+                  ultrices eu et mi. Aenean bibendum libero felis, at mattis nulla vehicula eu. Vestibulum tincidunt
+                  erat sit amet erat placerat tincidunt. Phasellus elementum lacus libero, ut posuere nunc lacinia
+                  facilisis. Mauris convallis mi quis auctor ornare. Nunc eget gravida nibh. Duis venenatis lorem sed
+                  lacinia feugiat. Morbi egestas faucibus leo vel dictum.</p>
               </td>
             </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
-      style="background-color: #ffffff; max-width: 640px; width: 100%; text-align: left;"
-      class="email-container email-content">
-      <tr>
-        <td style="padding-top: 50px; padding-bottom: 25px;">
-          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
             <tr>
-              <td style="vertical-align: top; padding-right: 10px;  padding-bottom: 25px;">
-                <h5>local ontario</h5>
-                <h3>ontario local: sudbury</h3>
-                <p>Verdicchio Serves Up Central Italian Wine & Food Culture</p>
-                <a href="http://staging.milk.org" class="custom-btn" target="_blank">Read the article</a>
-              </td>
-              <td style="vertical-align: top; padding-left: 10px;  padding-bottom: 25px;">
-                <div class="img-container">
-                  <img width="290" height=""
-                    src="http://staging.milk.org/Milk/media/Images/img-programs-esmp@3x-2.png?ext=.png" alt="image">
-                </div>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
-      style="background-color: #ffffff; max-width: 640px; width: 100%; text-align: left;"
-      class="email-container email-content">
-      <tr>
-        <td style="padding-top: 50px; padding-bottom: 25px;">
-          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
-            <tr>
-              <td style="vertical-align: top; padding-right: 10px;  padding-bottom: 25px;">
-                <div class="img-container">
-                  <img width="290" height=""
-                    src="http://staging.milk.org/Milk/media/Images/img-culinary-ontario-local-article-1-521-w@3x.png?ext=.png"
-                    alt="image">
-                </div>
-              </td>
-              <td style="vertical-align: top; padding-left: 10px;  padding-bottom: 25px;">
-                <h5>Recipe</h5>
-                <h3>Indian Spiced chicken</h3>
-                <p style="margin: 0 0 3px 0;">Change up your weeknight dinner and make this hint of spice and creamy
-                  chicken meal.</p>
-                <div class="article-icon-info">
-                  <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
-                    style="width: 100%;">
-                    <tr>
-                      <td>
-                        <img width="20" height="" src="http://staging.milk.org/Milk/media/Images/icon-prep-time.png"
-                          alt="Im">
-                        <span>15min</span>
-                      </td>
-                      <td>
-                        <img width="26" height="" width="26" height=""
-                          src="http://staging.milk.org/Milk/media/Images/img-culinary-icon-cook-time.png" alt="Im">
-                        <span>35min</span>
-                      </td>
-                      <td>
-                        <img width="35" height=""
-                          src="http://staging.milk.org/Milk/media/Images/img-culinary-icon-serving.png" alt="Im">
-                        <span>4-6</span>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <a href="http://staging.milk.org" class="custom-btn" target="_blank">See the recipe</a>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
-      style="background-color: #ffffff; max-width: 640px; width: 100%; text-align: left;"
-      class="email-container email-content">
-      <tr>
-        <td style="padding-top: 50px;">
-          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
-            <tr>
-              <td style="vertical-align: top; padding-right: 10px; padding-bottom: 25px;">
-                <h5>Recipe</h5>
-                <h3>Cauliflower CrustPizza</h3>
-                <p style="margin: 0 0 3px 0;">This hearty vegetarian pizza will go on repeat for a weeknight meal.</p>
-                <div class="article-icon-info">
-                  <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
-                    style="width: 100%;">
-                    <tr>
-                      <td>
-                        <img width="20" height="" src="http://staging.milk.org/Milk/media/Images/icon-prep-time.png"
-                          alt="Im">
-                        <span>15min</span>
-                      </td>
-                      <td>
-                        <img width="26" height="" width="26" height=""
-                          src="http://staging.milk.org/Milk/media/Images/img-culinary-icon-cook-time.png" alt="Im">
-                        <span>35min</span>
-                      </td>
-                      <td>
-                        <img width="35" height=""
-                          src="http://staging.milk.org/Milk/media/Images/img-culinary-icon-serving.png" alt="Im">
-                        <span>4-6</span>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-                <a href="http://staging.milk.org" class="custom-btn" target="_blank">See the recipe</a>
-              </td>
-              <td style="vertical-align: top; padding-left: 10px; padding-bottom: 25px;">
-                <div class="img-container">
-                  <img width="290" height=""
-                    src="http://staging.milk.org/Milk/media/Images/img-culinary-ontario-local-article-1-521-w@3x.png?ext=.png"
-                    alt="image">
-                </div>
+              <td>
+                <span></span>
+                <p>Nam laoreet dictum nisi in tempus. Mauris ac mauris dui. Nunc eu quam fermentum, fermentum tortor
+                  congue, posuere ipsum. Fusce fermentum, nisl ut condimentum blandit, ante enim accumsan sem, a rutrum
+                  nisl enim non felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                  Curae; Aliquam erat volutpat. Nam lobortis massa erat, scelerisque euismod diam vestibulum ac. Sed
+                  feugiat rhoncus lorem vel porta. Etiam non consequat arcu. Quisque quis nibh fringilla, pretium metus
+                  ac, auctor orci. Nullam convallis dictum leo, egestas pulvinar enim hendrerit sit amet. Aliquam
+                  dapibus sed nunc nec malesuada. Maecenas congue mi augue, a suscipit sem pulvinar sed.</p>
               </td>
             </tr>
           </table>
@@ -984,10 +881,9 @@
         <td style="border-bottom: 1px solid rgba(0, 0, 0, 0.4);">
           <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
             <tr>
-              <td class="footer-intro" style="text-align: center;">
+              <td class="footer-intro">
                 <a href="http://staging.milk.org" target="_blank">
-                  <img width="277" height="144"
-                    style="max-height: 142px; max-width: 100%; position: relative; top: -10px;"
+                  <img style="max-height: 142px; max-width: 100%; position: relative; top: -10px;"
                     src="http://staging.milk.org/Milk/media/Images/logo-footer.png?ext=.png" alt="Image">
                 </a>
                 <p>Proudly brought to you by the Dairy Farmers of Ontario.</p>
@@ -1000,31 +896,25 @@
         <td>
           <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
             <tr>
-              <td class="footer-social" style="text-align: center;">
-                <span style="color: #ffffff;">Follow Us</span>
-                <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
-                  style="width: 100%; margin-bottom: 49px;">
-                  <tr>
-                    <td style="text-align: right;">
-                      <a href="http://staging.milk.org" target="_blank">
-                        <img width="51" height="51"
-                          src="http://staging.milk.org/Milk/media/Images/img-icon-social-facebook.png" alt="Image">
-                      </a>
-                    </td>
-                    <td style="text-align: center; width:90px">
-                      <a href="http://staging.milk.org" target="_blank">
-                        <img width="51" height="51"
-                          src="http://staging.milk.org/Milk/media/Images/img-icon-social-instagram.png" alt="Image">
-                      </a>
-                    </td>
-                    <td style="text-align: left;">
-                      <a href="http://staging.milk.org" target="_blank">
-                        <img width="51" height="51"
-                          src="http://staging.milk.org/Milk/media/Images/img-icon-social-twitter.png" alt="Image">
-                      </a>
-                    </td>
-                  </tr>
-                </table>
+              <td class="footer-social">
+                <span>Follow Us</span>
+                <ul>
+                  <li>
+                    <a href="http://staging.milk.org" target="_blank">
+                      <img src="http://staging.milk.org/Milk/media/Images/img-icon-social-facebook.png" alt="Image">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://staging.milk.org" target="_blank">
+                      <img src="http://staging.milk.org/Milk/media/Images/img-icon-social-instagram.png" alt="Image">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://staging.milk.org" target="_blank">
+                      <img src="http://staging.milk.org/Milk/media/Images/img-icon-social-twitter.png" alt="Image">
+                    </a>
+                  </li>
+                </ul>
               </td>
             </tr>
           </table>
@@ -1035,40 +925,30 @@
           <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
             <tr>
               <td class="footer-link">
-                <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
-                  style="width: 100%; margin-bottom: 30px;">
-                  <tr>
-                    <td style="text-align: center;">
-                      <a href="http://staging.milk.org" target="_blank">Unsubscribe</a>
-                      <a href="http://staging.milk.org" target="_blank">milk.org</a>
-                    </td>
-                  </tr>
-                </table>
+                <ul>
+                  <li>
+                    <a href="http://staging.milk.org" target="_blank">Unsubscribe</a>
+                  </li>
+                  <li>
+                    <a href="http://staging.milk.org" target="_blank">milk.org</a>
+                  </li>
+                </ul>
               </td>
             </tr>
           </table>
         </td>
       </tr>
       <tr>
-        <td style="border-bottom: 1px solid rgba(0, 0, 0, 0.4)">
+        <td style="border-bottom: 1px solid rgba(0, 0, 0, 0.4);">
           <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
             <tr>
               <td class="footer-address">
-                <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
-                  style="width: 100%; margin-bottom: 10px;">
-                  <tr>
-                    <td>Dairy Farmers of Ontario</td>
-                  </tr>
-                  <tr>
-                    <td>6780 Campobello Rd</td>
-                  </tr>
-                  <tr>
-                    <td>Mississauga, ON</td>
-                  </tr>
-                  <tr>
-                    <td>L5N 2L8</td>
-                  </tr>
-                </table>
+                <ul>
+                  <li>Dairy Farmers of Ontario</li>
+                  <li>6780 Campobello Rd</li>
+                  <li>Mississauga, ON</li>
+                  <li>L5N 2L8</li>
+                </ul>
               </td>
             </tr>
           </table>

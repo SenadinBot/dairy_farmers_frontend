@@ -2376,6 +2376,10 @@ footer {
               position: relative;
               margin-left: 0; } }
 
+#error-message-postal-code-id {
+  display: flex;
+  color: #A21A19 !important; }
+
 .background-image {
   background-repeat: no-repeat;
   background-size: cover;
@@ -3911,7 +3915,9 @@ footer {
             color: #ffffff;
             margin: 30px 0 30px 0;
             padding: 0;
-            width: 92%; }
+            width: 92%;
+            font-family: "Roboto";
+            text-shadow: 1px 1px #171616; }
             @media (min-width: 992px) and (max-width: 1199px) {
               .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title .milk-up-intro p {
                 top: 0;
@@ -10414,6 +10420,14 @@ main {
         margin-bottom: 20px;
         padding: 0;
         order: 1; } }
+    @media (max-width: 767px) {
+      .newsletter-modal .modal-body .img-container .desktop-img {
+        display: none; } }
+    .newsletter-modal .modal-body .img-container .mobile-img {
+      display: none; }
+      @media (max-width: 767px) {
+        .newsletter-modal .modal-body .img-container .mobile-img {
+          display: block; } }
     .newsletter-modal .modal-body .img-container img {
       max-width: 100%;
       max-height: 100%;

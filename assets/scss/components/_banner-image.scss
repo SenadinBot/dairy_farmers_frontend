@@ -783,6 +783,8 @@
                             margin: 30px 0 30px 0;
                             padding: 0;
                             width: 92%;
+                            font-family: $roboto;
+                            text-shadow: 1px 1px #171616;
                             @include media-md {
                                 top: 0;
                                 width: 100%;
