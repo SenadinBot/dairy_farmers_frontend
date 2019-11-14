@@ -564,6 +564,57 @@
             }
         }
     }
+    .additional-info {
+        margin-top: 50px;
+        position: relative;
+        span {
+            font-family: $robotoLight;
+            font-size: 20px;
+            line-height: 24px;
+            color: $dark;
+            display: block;
+            @include media-xs {
+                font-size: 18px;
+            }
+            a {
+                color: $blue;
+                position: relative;
+                @include media-xs-portrait {
+                    text-decoration: underline;
+                }
+                @include media-sm {
+                    text-decoration: underline;
+                }
+                &:hover {
+                    &:before {
+                        visibility: hidden;
+                        width: 0;
+                    }
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    height: 1px;
+                    bottom: 0;
+                    right: 0;
+                    visibility: visible;
+                    width: 100%;
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                    -moz-transition: all 0.3s ease-in-out 0s;
+                    -ms-transition: all 0.3s ease-in-out 0s;
+                    -o-transition: all 0.3s ease-in-out 0s;
+                    transition: all 0.3s ease-in-out 0s;
+                    background-color: $blue;
+                    @include media-xs-portrait {
+                        display: none;
+                    }
+                    @include media-sm {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
 #error-message-postal-code-id {
     display: flex;

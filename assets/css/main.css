@@ -2375,6 +2375,50 @@ footer {
               display: inline-block;
               position: relative;
               margin-left: 0; } }
+  .calendar-sing-up-container .additional-info {
+    margin-top: 50px;
+    position: relative; }
+    .calendar-sing-up-container .additional-info span {
+      font-family: "Roboto Light";
+      font-size: 20px;
+      line-height: 24px;
+      color: #000000;
+      display: block; }
+      @media (max-width: 767px) {
+        .calendar-sing-up-container .additional-info span {
+          font-size: 18px; } }
+      .calendar-sing-up-container .additional-info span a {
+        color: #0072ce;
+        position: relative; }
+        @media (max-width: 767px) and (orientation: portrait) {
+          .calendar-sing-up-container .additional-info span a {
+            text-decoration: underline; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .calendar-sing-up-container .additional-info span a {
+            text-decoration: underline; } }
+        .calendar-sing-up-container .additional-info span a:hover:before {
+          visibility: hidden;
+          width: 0; }
+        .calendar-sing-up-container .additional-info span a:before {
+          content: "";
+          position: absolute;
+          height: 1px;
+          bottom: 0;
+          right: 0;
+          visibility: visible;
+          width: 100%;
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          -moz-transition: all 0.3s ease-in-out 0s;
+          -ms-transition: all 0.3s ease-in-out 0s;
+          -o-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
+          background-color: #0072ce; }
+          @media (max-width: 767px) and (orientation: portrait) {
+            .calendar-sing-up-container .additional-info span a:before {
+              display: none; } }
+          @media (min-width: 768px) and (max-width: 991px) {
+            .calendar-sing-up-container .additional-info span a:before {
+              display: none; } }
 
 #error-message-postal-code-id {
   display: flex;
