@@ -209,9 +209,13 @@
             }
         }
         &.add-bottom-spacing {
-            margin-bottom: 150px;
+            margin-bottom: 220px;
+            @include media-md {
+                margin-bottom: 120px;
+            }
             @include media-xs {
                 margin-top: 120px;
+                margin-bottom: 170px;
             }
         }
     }

@@ -566,6 +566,8 @@
     }
 }
 #error-message-postal-code-id {
-    display: flex ;
+    display: flex;
     color: #A21A19 !important;
+    font-size: 14px;
+    font-family: $robotoLight;
 }
