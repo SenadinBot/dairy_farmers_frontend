@@ -53,63 +53,6 @@
                 margin-bottom: 82px;
             }
         }
-        .adverb-content {
-            padding-left: 30px;
-            @include media-xs-portrait {
-                padding: 0 5px 70px 5px;
-            }
-            @include media-xs {
-                padding: 0 30px;
-            }
-            @include media-sm {
-                padding: 10px 70px 70px 70px;
-            }
-            @include media-md {
-                padding-left: 45px;
-            }
-            h2 {
-                width: 65%;
-                @include media-xs-portrait {
-                    width: 100%;
-                }
-                @include media-sm {
-                    width: 80%;
-                }
-                @include media-md {
-                    width: 100%;
-                }
-            }
-            .primary-btn {
-                position: absolute;
-                top: 110px;
-                right: 0;
-                @include media-xs {
-                    position: relative;
-                    top: initial; 
-                    margin-bottom: 0;
-                }
-                @include media-sm {
-                    position: relative;
-                    top: 10px; 
-                }
-                @include media-md {
-                    position: relative;
-                    top: 10px; 
-                }
-            }
-            p {
-                width: 70%;
-                @include media-xs {
-                    width: 100%;
-                }
-                @include media-sm {
-                    width: 100%;
-                }
-                @include media-md {
-                    width: 60%;
-                }
-            }
-        }
     }
     .adverb-img-background {
         width: 100%;
@@ -246,10 +189,11 @@
         padding-top: 31px;
         position: relative;
         z-index: 99;
-        padding-left: 45px;
+        padding-left: 30px;
         @include media-md {
             // width: 60%;
             padding-bottom: 20px;
+            padding-left: 45px;
         }
         @include media-sm {
             width: 100%;
@@ -261,17 +205,27 @@
             z-index: 999;
             padding: 0 30px;
         }
+        @include media-xs-portrait {
+            padding: 0 5px 70px 5px;
+        }
         .primary-btn {
             width: 284px;
             display: inline-block;
             vertical-align: top;
-            position: relative;
-            top: 10px;
+            position: absolute;
+            top: 110px;
+            right: 0;
             background: rgba(0, 0, 0, 0.55);
             padding: 12px 40px 14px 40px;
             @include media-md {
                 width: auto;
                 padding: 12px 22px 14px 22px;
+                position: relative;
+                top: 10px; 
+            }
+            @include media-sm {
+                position: relative;
+                top: 10px; 
             }
             @include media-xs-landscape {
                 width: 60%;
@@ -281,13 +235,18 @@
                 width: 100%;
                 padding: 12px 10px 14px 10px;
             }
+            @include media-xs {
+                position: relative;
+                top: initial; 
+                margin-bottom: 0;
+            }
             &:hover {
                 background-color: $white;
                 color: #54585a;
             }
         }
         p {
-            width: 52%;
+            width: 70%;
             padding-right: 31px;
             line-height: 30px;
             display: inline-block;
@@ -308,7 +267,7 @@
             }
         }
         h2 {
-            width: 80%;
+            width: 65%;
             margin-bottom: 3px;
             @include media-md {
                 width: 100%;
@@ -323,6 +282,9 @@
                 font-size: 62px;
                 line-height: 62px;
                 letter-spacing: 2px;
+            }
+            @include media-sm {
+                width: 80%;
             }
         }
     }

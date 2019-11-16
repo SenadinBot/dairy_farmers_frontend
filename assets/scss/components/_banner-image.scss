@@ -50,6 +50,9 @@
         @include media-xs-landscape {
             height: 600px;
         }
+        @media only screen and (min-width: 411px) and (max-width: 823px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3.5) {
+            height: 1100px;
+        }
     }
     .banner-image-content {
         position: relative;
@@ -129,6 +132,7 @@
                 padding: 15px 0 65px 85px;  
                 position: relative;  
                 width: 70%;
+                min-height: 220px;
                 // &:after {
                 //     content: "";
                 //     background: $mainColor;
@@ -156,6 +160,7 @@
                 padding: 0 0 0 25px;  
                 position: relative;  
                 width: 85%;
+                min-height: 123px;
                 // &:after {
                 //     content: "";
                 //     background: $mainColor;
@@ -176,10 +181,18 @@
                 // }
             }
             @include media-xs-landscape {
+                min-height: 248px;
                 width: 80%;
                 padding: 0 0 25px 95px;
             }
+            @include media-sm {
+                min-height: 218px;
+            }
+            @include media-md {
+                min-height: 180px;
+            }
         }
+        span,
         h1 {
             @include acuminProExtraCondBlack();            
             font-size: 125px;
@@ -197,7 +210,7 @@
                 left: -108px;
             }
             @include media-sm {
-                width: 140%;
+                width: 150%;
                 font-size: 120px;
                 left: 0;     
                 margin-top: 0;

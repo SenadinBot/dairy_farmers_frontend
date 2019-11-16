@@ -3080,59 +3080,6 @@ footer {
       @media (max-width: 767px) {
         .adverb-container.programs-adverb-container.medium-bottom-spacing {
           margin-bottom: 82px; } }
-    .adverb-container.programs-adverb-container .adverb-content {
-      padding-left: 30px; }
-      @media (max-width: 767px) and (orientation: portrait) {
-        .adverb-container.programs-adverb-container .adverb-content {
-          padding: 0 5px 70px 5px; } }
-      @media (max-width: 767px) {
-        .adverb-container.programs-adverb-container .adverb-content {
-          padding: 0 30px; } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        .adverb-container.programs-adverb-container .adverb-content {
-          padding: 10px 70px 70px 70px; } }
-      @media (min-width: 992px) and (max-width: 1199px) {
-        .adverb-container.programs-adverb-container .adverb-content {
-          padding-left: 45px; } }
-      .adverb-container.programs-adverb-container .adverb-content h2 {
-        width: 65%; }
-        @media (max-width: 767px) and (orientation: portrait) {
-          .adverb-container.programs-adverb-container .adverb-content h2 {
-            width: 100%; } }
-        @media (min-width: 768px) and (max-width: 991px) {
-          .adverb-container.programs-adverb-container .adverb-content h2 {
-            width: 80%; } }
-        @media (min-width: 992px) and (max-width: 1199px) {
-          .adverb-container.programs-adverb-container .adverb-content h2 {
-            width: 100%; } }
-      .adverb-container.programs-adverb-container .adverb-content .primary-btn {
-        position: absolute;
-        top: 110px;
-        right: 0; }
-        @media (max-width: 767px) {
-          .adverb-container.programs-adverb-container .adverb-content .primary-btn {
-            position: relative;
-            top: initial;
-            margin-bottom: 0; } }
-        @media (min-width: 768px) and (max-width: 991px) {
-          .adverb-container.programs-adverb-container .adverb-content .primary-btn {
-            position: relative;
-            top: 10px; } }
-        @media (min-width: 992px) and (max-width: 1199px) {
-          .adverb-container.programs-adverb-container .adverb-content .primary-btn {
-            position: relative;
-            top: 10px; } }
-      .adverb-container.programs-adverb-container .adverb-content p {
-        width: 70%; }
-        @media (max-width: 767px) {
-          .adverb-container.programs-adverb-container .adverb-content p {
-            width: 100%; } }
-        @media (min-width: 768px) and (max-width: 991px) {
-          .adverb-container.programs-adverb-container .adverb-content p {
-            width: 100%; } }
-        @media (min-width: 992px) and (max-width: 1199px) {
-          .adverb-container.programs-adverb-container .adverb-content p {
-            width: 60%; } }
   .adverb-container .adverb-img-background {
     width: 100%;
     height: 100%;
@@ -3253,10 +3200,11 @@ footer {
     padding-top: 31px;
     position: relative;
     z-index: 99;
-    padding-left: 45px; }
+    padding-left: 30px; }
     @media (min-width: 992px) and (max-width: 1199px) {
       .adverb-container .adverb-content {
-        padding-bottom: 20px; } }
+        padding-bottom: 20px;
+        padding-left: 45px; } }
     @media (min-width: 768px) and (max-width: 991px) {
       .adverb-container .adverb-content {
         width: 100%;
@@ -3267,18 +3215,28 @@ footer {
         width: 100%;
         z-index: 999;
         padding: 0 30px; } }
+    @media (max-width: 767px) and (orientation: portrait) {
+      .adverb-container .adverb-content {
+        padding: 0 5px 70px 5px; } }
     .adverb-container .adverb-content .primary-btn {
       width: 284px;
       display: inline-block;
       vertical-align: top;
-      position: relative;
-      top: 10px;
+      position: absolute;
+      top: 110px;
+      right: 0;
       background: rgba(0, 0, 0, 0.55);
       padding: 12px 40px 14px 40px; }
       @media (min-width: 992px) and (max-width: 1199px) {
         .adverb-container .adverb-content .primary-btn {
           width: auto;
-          padding: 12px 22px 14px 22px; } }
+          padding: 12px 22px 14px 22px;
+          position: relative;
+          top: 10px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .adverb-container .adverb-content .primary-btn {
+          position: relative;
+          top: 10px; } }
       @media (max-width: 767px) and (orientation: landscape) {
         .adverb-container .adverb-content .primary-btn {
           width: 60%;
@@ -3287,11 +3245,16 @@ footer {
         .adverb-container .adverb-content .primary-btn {
           width: 100%;
           padding: 12px 10px 14px 10px; } }
+      @media (max-width: 767px) {
+        .adverb-container .adverb-content .primary-btn {
+          position: relative;
+          top: initial;
+          margin-bottom: 0; } }
       .adverb-container .adverb-content .primary-btn:hover {
         background-color: #ffffff;
         color: #54585a; }
     .adverb-container .adverb-content p {
-      width: 52%;
+      width: 70%;
       padding-right: 31px;
       line-height: 30px;
       display: inline-block;
@@ -3311,7 +3274,7 @@ footer {
           width: 100%;
           padding-right: 15px; } }
     .adverb-container .adverb-content h2 {
-      width: 80%;
+      width: 65%;
       margin-bottom: 3px; }
       @media (min-width: 992px) and (max-width: 1199px) {
         .adverb-container .adverb-content h2 {
@@ -3327,6 +3290,9 @@ footer {
           font-size: 62px;
           line-height: 62px;
           letter-spacing: 2px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .adverb-container .adverb-content h2 {
+          width: 80%; } }
 
 .banner-image-container {
   position: relative;
@@ -3377,6 +3343,9 @@ footer {
     @media (max-width: 767px) and (orientation: landscape) {
       .banner-image-container .banner-img-background {
         height: 600px; } }
+    @media only screen and (min-width: 411px) and (max-width: 823px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3.5) {
+      .banner-image-container .banner-img-background {
+        height: 1100px; } }
   .banner-image-container .banner-image-content {
     position: relative;
     top: 200px;
@@ -3417,18 +3386,28 @@ footer {
         left: 0;
         padding: 15px 0 65px 85px;
         position: relative;
-        width: 70%; } }
+        width: 70%;
+        min-height: 220px; } }
     @media (max-width: 767px) {
       .banner-image-container .banner-image-content .title-border {
         border: none;
         left: 0;
         padding: 0 0 0 25px;
         position: relative;
-        width: 85%; } }
+        width: 85%;
+        min-height: 123px; } }
     @media (max-width: 767px) and (orientation: landscape) {
       .banner-image-container .banner-image-content .title-border {
+        min-height: 248px;
         width: 80%;
         padding: 0 0 25px 95px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .banner-image-container .banner-image-content .title-border {
+        min-height: 218px; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .banner-image-container .banner-image-content .title-border {
+        min-height: 180px; } }
+    .banner-image-container .banner-image-content span,
     .banner-image-container .banner-image-content h1 {
       font-family: "acumin-pro-extra-condensed",sans-serif;
       font-style: normal;
@@ -3443,18 +3422,21 @@ footer {
       position: relative;
       left: -135px; }
       @media (min-width: 992px) and (max-width: 1199px) {
+        .banner-image-container .banner-image-content span,
         .banner-image-container .banner-image-content h1 {
           font-size: 98px;
           line-height: 90px;
           left: -108px; } }
       @media (min-width: 768px) and (max-width: 991px) {
+        .banner-image-container .banner-image-content span,
         .banner-image-container .banner-image-content h1 {
-          width: 140%;
+          width: 150%;
           font-size: 120px;
           left: 0;
           margin-top: 0;
           top: -20px; } }
       @media (max-width: 767px) {
+        .banner-image-container .banner-image-content span,
         .banner-image-container .banner-image-content h1 {
           width: 125%;
           font-size: 74px;
@@ -3464,6 +3446,7 @@ footer {
           margin-top: 0;
           top: -10px; } }
       @media (max-width: 767px) and (orientation: landscape) {
+        .banner-image-container .banner-image-content span,
         .banner-image-container .banner-image-content h1 {
           font-size: 120px;
           line-height: 120px;
@@ -6928,6 +6911,13 @@ main {
       .subscribe-ad-container .subscribe-ad-inner-container .primary-btn:hover {
         background-color: #ffffff;
         color: #54585a; }
+      .subscribe-ad-container .subscribe-ad-inner-container .primary-btn.white-btn, .subscribe-ad-container .subscribe-ad-inner-container .primary-btn.white-suggestion-btn {
+        color: #000000;
+        border-color: #ffffff;
+        background-color: #ffffff; }
+        .subscribe-ad-container .subscribe-ad-inner-container .primary-btn.white-btn:hover, .subscribe-ad-container .subscribe-ad-inner-container .primary-btn.white-suggestion-btn:hover {
+          background-color: #000000;
+          color: #ffffff; }
   .subscribe-ad-container.add-border-bottom {
     margin-bottom: 153px; }
     @media (max-width: 767px) {
@@ -15331,7 +15321,7 @@ main {
       flex-flow: row nowrap;
       justify-content: center;
       align-items: center;
-      flex: 1 1 33%;
+      flex: 1 1 50%;
       width: auto;
       position: relative;
       margin-bottom: 60px; } }
@@ -15355,22 +15345,11 @@ main {
   .partner-logo-container .partner-item img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain; }
+    object-fit: contain;
+    margin: 0 auto; }
     @media (max-width: 767px) and (orientation: portrait) {
       .partner-logo-container .partner-item img {
         max-width: 65%; } }
-  .partner-logo-container .partner-item:nth-child(1n) img {
-    margin: 0 auto 0 0; }
-    @media (max-width: 767px) {
-      .partner-logo-container .partner-item:nth-child(1n) img {
-        margin: 0 auto; } }
-  .partner-logo-container .partner-item:nth-child(2n) img {
-    margin: 0 auto; }
-  .partner-logo-container .partner-item:nth-child(3n) img {
-    margin: 0 0 0 auto; }
-    @media (max-width: 767px) {
-      .partner-logo-container .partner-item:nth-child(3n) img {
-        margin: 0 auto; } }
 
 .milk-cookies-description {
   margin-bottom: 156px;
@@ -15543,6 +15522,12 @@ main {
       .partners-container .partners-content-container .partners-content-item {
         margin-bottom: 50px;
         align-items: flex-start; } }
+    @media (max-width: 767px) and (orientation: landscape) {
+      .partners-container .partners-content-container .partners-content-item {
+        flex: 1 1 50%; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .partners-container .partners-content-container .partners-content-item {
+        flex: 1 1 25%; } }
     .partners-container .partners-content-container .partners-content-item span {
       text-transform: uppercase;
       font-family: "acumin-pro-extra-condensed",sans-serif;
@@ -15737,6 +15722,7 @@ main {
     position: absolute;
     padding: 47px 38px 52px 49px;
     background-image: linear-gradient(100deg, #13a8d3, #009bc5), linear-gradient(to bottom, #0072ce, #0072ce);
+    opacity: 0.9 !important;
     z-index: 9; }
     @media (min-width: 768px) and (max-width: 991px) {
       .milk-up-jarallax-container .jarallax-content {

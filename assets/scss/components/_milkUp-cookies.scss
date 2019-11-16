@@ -138,7 +138,7 @@
             flex-flow: row nowrap;
             justify-content: center;
             align-items: center;
-            flex: 1 1 33%;
+            flex: 1 1 50%;
             width: auto;
             position: relative;
             margin-bottom: 60px;
@@ -165,31 +165,32 @@
             max-width: 100%;
             max-height: 100%;
             object-fit: contain;
+            margin: 0 auto;   
             @include media-xs-portrait {
                 max-width: 65%;
             }
         }
-        &:nth-child(1n) {
-            img {
-                margin: 0 auto 0 0;
-                @include media-xs {
-                    margin: 0 auto;                
-                } 
-            }
-        }
-        &:nth-child(2n) {
-            img {
-                margin: 0 auto;                
-            }
-        }
-        &:nth-child(3n) {
-            img {
-                margin: 0 0 0 auto;
-                @include media-xs {
-                    margin: 0 auto;                
-                }                
-            }
-        }
+        // &:nth-child(1n) {
+        //     img {
+        //         margin: 0 auto 0 0;
+        //         @include media-xs {
+        //             margin: 0 auto;                
+        //         } 
+        //     }
+        // }
+        // &:nth-child(2n) {
+        //     img {
+        //         margin: 0 auto;                
+        //     }
+        // }
+        // &:nth-child(3n) {
+        //     img {
+        //         margin: 0 0 0 auto;
+        //         @include media-xs {
+        //             margin: 0 auto;                
+        //         }                
+        //     }
+        // }
     }
 }
 .milk-cookies-description {
@@ -396,6 +397,12 @@
                 margin-bottom: 50px;
                 align-items: flex-start;
 
+            }
+            @include media-xs-landscape {
+                flex: 1 1 50%;
+            }
+            @include media-sm {
+                flex: 1 1 25%;
             }
             span {
                 text-transform: uppercase;
@@ -617,6 +624,7 @@
         position: absolute;
         padding: 47px 38px 52px 49px;
         background-image: linear-gradient(100deg, #13a8d3, #009bc5), linear-gradient(to bottom, #0072ce, #0072ce);
+        opacity: 0.9 !important;
         z-index: 9;
         @include media-sm {
             padding: 35px 28px 35px 35px;            

@@ -1232,6 +1232,16 @@
                 background-color: $white;
                 color: #54585a;
             }
+            &.white-btn,
+            &.white-suggestion-btn {
+                color: $dark;
+                border-color: $white;
+                background-color: $white;
+                &:hover {
+                    background-color: $dark;
+                    color: $white;
+                }
+            }
         }
     }
     &.add-border-bottom {
