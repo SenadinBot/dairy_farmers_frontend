@@ -271,7 +271,7 @@ $(document).ready(function () {
         $(".ourMilkRange").on("input change", function () {
             $('.our-milk-carousel').css('margin-left', '25%');
             var previousDiv = $(".our-milk-slide.active");
-            var dataValue = parseInt(($(this).val() / 20)) * 20;
+            var dataValue = parseInt(($(this).val() / 20) + 0.5) * 20;
             $(".our-milk-slide").removeClass("active");
             var activeDiv = $(".our-milk-slide[data-value='" + dataValue + "']");
             activeDiv.addClass("active");
