@@ -650,7 +650,8 @@ header {
         margin-bottom: 0;
         padding-right: 37px;
         position: relative; }
-        header .top-nav-container ul li a {
+        header .top-nav-container ul li a,
+        header .top-nav-container ul li span {
           font-family: "Roboto";
           font-size: 16px;
           font-weight: normal;
@@ -658,11 +659,14 @@ header {
           font-stretch: normal;
           line-height: normal;
           letter-spacing: normal;
-          color: #0072ce; }
-          header .top-nav-container ul li a:hover:before {
+          color: #0072ce;
+          cursor: pointer; }
+          header .top-nav-container ul li a:hover:before,
+          header .top-nav-container ul li span:hover:before {
             visibility: hidden;
             width: 0; }
-          header .top-nav-container ul li a:before {
+          header .top-nav-container ul li a:before,
+          header .top-nav-container ul li span:before {
             content: "";
             position: absolute;
             width: 100%;
@@ -3874,8 +3878,11 @@ footer {
             top: -100px; } }
         @media (max-width: 767px) {
           .big-banner-container.small-banner.top-spacing.milk-up-banner img {
-            min-height: 700px;
-            margin-top: -115px; } }
+            min-height: 100%;
+            margin-top: -94px; } }
+        @media (max-width: 767px) and (orientation: portrait) {
+          .big-banner-container.small-banner.top-spacing.milk-up-banner img {
+            min-height: 960px; } }
         @media (min-width: 768px) and (max-width: 991px) {
           .big-banner-container.small-banner.top-spacing.milk-up-banner img {
             margin-top: -200px; } }
@@ -3887,19 +3894,20 @@ footer {
             margin-top: -1070px; } }
         @media (min-width: 768px) and (max-width: 991px) {
           .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title {
-            margin-top: -1035px; } }
-        @media (max-width: 767px) {
+            margin-top: -735px; } }
+        @media (max-width: 767px) and (orientation: portrait) {
           .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title {
-            margin-top: -140%; } }
+            max-width: 355px;
+            margin-top: -440px; } }
         @media (max-width: 767px) and (orientation: landscape) {
           .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title {
-            margin-top: -137%; } }
+            margin-top: -99%; } }
         @media only screen and (min-width: 411px) and (max-width: 823px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3.5) {
           .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title {
-            margin-top: -163%; } }
+            margin-top: -115%; } }
         @media only screen and (min-width: 411px) and (max-width: 731px) and (orientation: landscape) {
           .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title {
-            margin-top: -137%; } }
+            margin-top: -99%; } }
         .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title .title-border {
           border-color: #0072ce; }
           @media (min-width: 992px) {
@@ -3931,7 +3939,7 @@ footer {
           @media (min-width: 768px) and (max-width: 991px) {
             .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title .milk-up-intro {
               top: 0;
-              margin-top: 100px;
+              margin-top: 170px;
               padding-left: 85px;
               width: 85%; } }
           @media (max-width: 767px) {
@@ -3939,7 +3947,10 @@ footer {
               top: 0;
               padding: 0 30px;
               width: 100%;
-              margin-top: 60px; } }
+              margin-top: 105px; } }
+          @media (max-width: 767px) and (orientation: landscape) {
+            .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title .milk-up-intro {
+              margin-top: 145px; } }
           .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title .milk-up-intro p {
             color: #ffffff;
             margin: 30px 0 30px 0;
@@ -3965,6 +3976,9 @@ footer {
             letter-spacing: 3.6px; }
             .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title .milk-up-intro h4 b {
               font-family: "Roboto Bold"; }
+            @media (max-width: 767px) {
+              .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title .milk-up-intro h4 {
+                letter-spacing: 1.6px; } }
           .big-banner-container.small-banner.top-spacing.milk-up-banner .banner-title .milk-up-intro h5 {
             font-family: "Roboto Bold";
             color: #ffffff;
@@ -15213,7 +15227,8 @@ main {
     background-color: transparent; }
     .milk-cookies-video-container.video-container .video-img-container {
       height: 606px;
-      margin-bottom: 13px; }
+      margin-bottom: 13px;
+      position: relative; }
       @media (min-width: 768px) and (max-width: 991px) {
         .milk-cookies-video-container.video-container .video-img-container {
           height: auto; } }
@@ -15233,6 +15248,48 @@ main {
         @media (min-width: 992px) and (max-width: 1199px) {
           .milk-cookies-video-container.video-container .video-img-container .primary-btn {
             margin-top: 67px; } }
+      .milk-cookies-video-container.video-container .video-img-container .story__video-container {
+        transition: opacity 1s ease;
+        -webkit-transition: opacity 1s ease;
+        -moz-transition: opacity 1s ease;
+        -o-transition: opacity 1s ease;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        display: flex; }
+        .milk-cookies-video-container.video-container .video-img-container .story__video-container .story__video {
+          width: 100%;
+          height: 100%; }
+        .milk-cookies-video-container.video-container .video-img-container .story__video-container .story__pause-btn {
+          position: absolute;
+          bottom: 8%;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+          color: transparent;
+          width: 20px;
+          height: 20px;
+          z-index: 10;
+          z-index: 99999999; }
+          @media (min-width: 992px) and (max-width: 1199px) {
+            .milk-cookies-video-container.video-container .video-img-container .story__video-container .story__pause-btn {
+              bottom: 11%; } }
+          @media (min-width: 768px) and (max-width: 991px) {
+            .milk-cookies-video-container.video-container .video-img-container .story__video-container .story__pause-btn {
+              bottom: 12%; } }
+          .milk-cookies-video-container.video-container .video-img-container .story__video-container .story__pause-btn img {
+            max-width: 100%;
+            max-height: 100%; }
+        .milk-cookies-video-container.video-container .video-img-container .story__video-container.active {
+          z-index: 99;
+          opacity: 1; }
     .milk-cookies-video-container.video-container h4 {
       text-transform: uppercase;
       margin-bottom: 5px;

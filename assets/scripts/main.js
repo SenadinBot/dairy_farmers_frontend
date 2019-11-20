@@ -536,6 +536,7 @@ $(document).on("click", ".copyUrl", function () {
 let player;
 
 // Desktop/Tablet Story Videos -- Need a variable for each video
+let storyPlayerMC1;
 let storyPlayer0;
 let storyPlayer1;
 let storyPlayer2;
@@ -546,7 +547,8 @@ let storyPlayer4;
 // this function gets called when API is ready to use
 function onYouTubePlayerAPIReady() {
     // create the global player from the specific iframe (#video)
-    player = new YT.Player('hero-video', {
+
+    storyPlayerMC1 = new YT.Player('story-videoMC1', {
         events: {
             // call this function when player is ready to use
             'onReady': onPlayerReady
@@ -590,67 +592,79 @@ function onYouTubePlayerAPIReady() {
 }
 
 function onPlayerReady(event) {
+    // Milk Cookies Play
+    if ($('#story-play-jsMC1').length > 1) {
+        let storyPlayButtonMC1 = document.getElementById("story-play-jsMC1");
+        storyPlayButtonMC1.addEventListener("click", function () {
+            storyPlayerMC1.playVideo();
+        });
 
-    // story - video 1
-    // Desktop Play
-    let storyPlayButton0 = document.getElementById("story-play-js0");
-    storyPlayButton0.addEventListener("click", function () {
-        storyPlayer0.playVideo()
-    });
+        let storyPauseButtonMC1 = document.getElementById("story-pause-jsMC1");
+        storyPauseButtonMC1.addEventListener("click", function () {
+            storyPlayerMC1.pauseVideo();
+        });
+    }
+    if ($('#story-play-js0').length > 1) {
+        // story - video 1
+        // Desktop Play
+        let storyPlayButton0 = document.getElementById("story-play-js0");
+        storyPlayButton0.addEventListener("click", function () {
+            storyPlayer0.playVideo()
+        });
 
-    let storyPauseButton0 = document.getElementById("story-pause-js0");
-    storyPauseButton0.addEventListener("click", function () {
-        storyPlayer0.pauseVideo()
-    });
+        let storyPauseButton0 = document.getElementById("story-pause-js0");
+        storyPauseButton0.addEventListener("click", function () {
+            storyPlayer0.pauseVideo()
+        });
 
-    // story - video 2
-    // Desktop play
-    let storyPlayButton1 = document.getElementById("story-play-js1");
-    storyPlayButton1.addEventListener("click", function () {
-        storyPlayer1.playVideo()
-    });
+        // story - video 2
+        // Desktop play
+        let storyPlayButton1 = document.getElementById("story-play-js1");
+        storyPlayButton1.addEventListener("click", function () {
+            storyPlayer1.playVideo()
+        });
 
-    let storyPauseButton1 = document.getElementById("story-pause-js1");
-    storyPauseButton1.addEventListener("click", function () {
-        storyPlayer1.pauseVideo()
-    });
+        let storyPauseButton1 = document.getElementById("story-pause-js1");
+        storyPauseButton1.addEventListener("click", function () {
+            storyPlayer1.pauseVideo()
+        });
 
-    // story - video 3
-    // Desktop play
-    let storyPlayButton2 = document.getElementById("story-play-js2");
-    storyPlayButton2.addEventListener("click", function () {
-        storyPlayer2.playVideo()
-    });
+        // story - video 3
+        // Desktop play
+        let storyPlayButton2 = document.getElementById("story-play-js2");
+        storyPlayButton2.addEventListener("click", function () {
+            storyPlayer2.playVideo()
+        });
 
-    let storyPauseButton2 = document.getElementById("story-pause-js2");
-    storyPauseButton2.addEventListener("click", function () {
-        storyPlayer2.pauseVideo()
-    });
+        let storyPauseButton2 = document.getElementById("story-pause-js2");
+        storyPauseButton2.addEventListener("click", function () {
+            storyPlayer2.pauseVideo()
+        });
 
-    // story - video 4
-    // Desktop play
-    let storyPlayButton3 = document.getElementById("story-play-js3");
-    storyPlayButton3.addEventListener("click", function () {
-        storyPlayer3.playVideo()
-    });
+        // story - video 4
+        // Desktop play
+        let storyPlayButton3 = document.getElementById("story-play-js3");
+        storyPlayButton3.addEventListener("click", function () {
+            storyPlayer3.playVideo()
+        });
 
-    let storyPauseButton3 = document.getElementById("story-pause-js3");
-    storyPauseButton3.addEventListener("click", function () {
-        storyPlayer3.pauseVideo()
-    });
+        let storyPauseButton3 = document.getElementById("story-pause-js3");
+        storyPauseButton3.addEventListener("click", function () {
+            storyPlayer3.pauseVideo()
+        });
 
-    // story - video 5
-    // Desktop play
-    let storyPlayButton4 = document.getElementById("story-play-js4");
-    storyPlayButton4.addEventListener("click", function () {
-        storyPlayer4.playVideo()
-    });
+        // story - video 5
+        // Desktop play
+        let storyPlayButton4 = document.getElementById("story-play-js4");
+        storyPlayButton4.addEventListener("click", function () {
+            storyPlayer4.playVideo()
+        });
 
-    let storyPauseButton4 = document.getElementById("story-pause-js4");
-    storyPauseButton4.addEventListener("click", function () {
-        storyPlayer4.pauseVideo()
-    });
-
+        let storyPauseButton4 = document.getElementById("story-pause-js4");
+        storyPauseButton4.addEventListener("click", function () {
+            storyPlayer4.pauseVideo()
+        });
+    }
 }
 
 // Inject YouTube API script

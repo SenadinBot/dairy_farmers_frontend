@@ -718,8 +718,11 @@
                 }
                 img {
                     @include media-xs {
-                        min-height: 700px;
-                        margin-top: -115px;
+                        min-height: 100%;
+                        margin-top: -94px;
+                    }
+                    @include media-xs-portrait {
+                        min-height: 960px;
                     }
                     @include media-sm {
                         margin-top: -200px;
@@ -733,19 +736,20 @@
                         margin-top: -1070px;
                     }
                     @include media-sm {
-                        margin-top: -1035px;
+                        margin-top: -735px;
                     }
-                    @include media-xs {
-                        margin-top: -140%;
+                    @include media-xs-portrait {
+                        max-width: 355px;
+                        margin-top: -440px;
                     }
                     @include media-xs-landscape {
-                        margin-top: -137%;
+                        margin-top: -99%;
                     }
                     @media only screen and (min-width: 411px) and (max-width: 823px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3.5) {
-                        margin-top: -163%;
+                        margin-top: -115%;
                     }
                     @media only screen and (min-width: 411px) and (max-width: 731px) and (orientation: landscape) {
-                        margin-top: -137%;
+                        margin-top: -99%;
                     }
                     .title-border {
                         border-color: $blue;
@@ -781,7 +785,7 @@
                         top: 198px;
                         @include media-sm {
                             top: 0;
-                            margin-top: 100px;
+                            margin-top: 170px;
                             padding-left: 85px;
                             width: 85%;
                         }
@@ -789,7 +793,12 @@
                             top: 0;
                             padding: 0 30px;
                             width: 100%;
-                            margin-top: 60px;
+                            margin-top: 105px;
+                        }
+                        @include media-xs-portrait {
+                        }
+                        @include media-xs-landscape {
+                            margin-top: 145px;
                         }
                         p {
                             color: $white;
@@ -817,6 +826,9 @@
                             letter-spacing: 3.6px;
                             b {
                                 font-family: $robotoBold;
+                            }
+                            @include media-xs {
+                                letter-spacing: 1.6px;
                             }
                         }
                         h5 {
