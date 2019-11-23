@@ -1403,3 +1403,39 @@
         }
     }
 }
+.main-bg-image-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    &.events-landing {
+        position: initial;
+        @include media-xs {
+            position: relative;
+        }
+    }
+    &.recipe-article {
+        z-index: -9;
+    }
+    img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
+    .desktop-img {
+        display: block;
+        @include media-xs {
+            display: none;
+        }
+    }
+    .mobile-img {
+        display: none;
+        @include media-xs {
+            display: block;
+        }
+    }
+}

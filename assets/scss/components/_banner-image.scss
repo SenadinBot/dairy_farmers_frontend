@@ -1310,7 +1310,7 @@
         position: absolute;
         left: 66%;
         top: 16%;
-        width: 220%;
+        width: 235%;
         @include media-lg {
             letter-spacing: 10px;
         }
@@ -1465,5 +1465,53 @@
             }
         }
         
+    }
+}
+.FRCA {
+    .banner-title {
+        h1 {
+            @include media-lg {
+                font-size: 86px;
+                line-height: 80px;
+                letter-spacing: 4px;
+            }
+            @include media-md {
+                font-size: 68px;
+                line-height: 74px;
+                letter-spacing: 4px;
+            }
+        }
+    }
+    .big-banner-container {
+        &.three-line-title {
+            .banner-title {
+                h1 {
+                    @include media-sm {
+                        font-size: 74px;
+                        line-height: 74px;
+                    }
+                    br {
+                        @include media-sm {
+                            display: none;
+                        }
+                    }
+                    @include media-xs-portrait {
+                        font-size: 38px;
+                        transform: translate(-50%, -50%);
+                        max-width: 90vw;
+                    }
+                    @include media-xs-landscape {
+                        font-size: 68px;
+                        line-height: 68px;
+                        transform: translate(-50%, -50%);
+                    }
+                    br {
+                        @include media-xs {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
