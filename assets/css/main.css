@@ -1887,6 +1887,9 @@ footer {
             -o-transition: all 0.3s ease-in-out 0s;
             transition: all 0.3s ease-in-out 0s;
             background: #ffffff; }
+      footer .footer-help .info a, footer .footer-help .info span {
+        font-size: 36px;
+        letter-spacing: 0.9px; }
     footer .footer-help .btn-container {
       width: 216px;
       display: inline-block;
