@@ -138,7 +138,7 @@
     h2 {
       font-family: sans-serif;
       font-size: 34px;
-      mso-line-height-rule:exactly;
+      mso-line-height-rule: exactly;
       line-height: 40px;
       font-weight: 900;
       font-stretch: normal;
@@ -157,7 +157,7 @@
       font-weight: 900;
       font-stretch: normal;
       font-style: normal;
-      mso-line-height-rule:exactly;
+      mso-line-height-rule: exactly;
       line-height: 1;
       letter-spacing: 1px;
       text-align: left;
@@ -170,7 +170,7 @@
     h5 {
       font-size: 18px;
       font-weight: bold;
-      mso-line-height-rule:exactly;
+      mso-line-height-rule: exactly;
       line-height: 20px;
       color: #0072ce;
       letter-spacing: normal;
@@ -186,7 +186,7 @@
       font-weight: 300;
       font-stretch: normal;
       font-style: normal;
-      mso-line-height-rule:exactly;
+      mso-line-height-rule: exactly;
       line-height: 22px;
       letter-spacing: normal;
       text-align: left;
@@ -201,7 +201,7 @@
       font-weight: 900;
       background-color: transparent;
       font-size: 18px;
-      mso-line-height-rule:exactly;
+      mso-line-height-rule: exactly;
       line-height: 30px;
       padding: 5px 25px 4px 25px;
       text-align: center;
@@ -225,7 +225,7 @@
       font-weight: 900;
       background-color: #0072ce;
       font-size: 18px;
-      mso-line-height-rule:exactly;
+      mso-line-height-rule: exactly;
       line-height: 22px;
       padding: 0 20px 0 20px;
       text-align: center;
@@ -260,7 +260,7 @@
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
-      mso-line-height-rule:exactly;
+      mso-line-height-rule: exactly;
       line-height: normal;
       letter-spacing: normal;
       text-align: center;
@@ -286,7 +286,7 @@
       font-weight: 900;
       font-stretch: normal;
       font-style: normal;
-      mso-line-height-rule:exactly;
+      mso-line-height-rule: exactly;
       line-height: 36px;
       letter-spacing: 1px;
       text-align: center;
@@ -327,7 +327,7 @@
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
-      mso-line-height-rule:exactly;
+      mso-line-height-rule: exactly;
       line-height: normal;
       letter-spacing: normal;
       text-align: center;
@@ -360,7 +360,7 @@
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
-      mso-line-height-rule:exactly;
+      mso-line-height-rule: exactly;
       line-height: normal;
       letter-spacing: normal;
       text-align: center;
@@ -390,7 +390,7 @@
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
-      mso-line-height-rule:exactly;
+      mso-line-height-rule: exactly;
       line-height: normal;
       letter-spacing: normal;
       text-align: center;
@@ -423,7 +423,7 @@
       font-weight: 300;
       font-stretch: normal;
       font-style: normal;
-      mso-line-height-rule:exactly;
+      mso-line-height-rule: exactly;
       line-height: 1;
       letter-spacing: normal;
       text-align: left;
@@ -451,12 +451,13 @@
     }
 
     .single-mail-content p,
-    .single-mail-content span {
+    .single-mail-content span,
+    .single-mail-content td {
       font-size: 14px;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
-      mso-line-height-rule:exactly;
+      mso-line-height-rule: exactly;
       line-height: normal;
       letter-spacing: normal;
       text-align: left;
@@ -464,6 +465,10 @@
       font-family: 'Roboto', sans-serif;
       display: inline-block;
       vertical-align: top;
+    }
+
+    .single-mail-content td {
+      padding-bottom: 23px;
     }
 
     .single-mail-content span {
@@ -496,7 +501,7 @@
       font-weight: 300;
       font-stretch: normal;
       font-style: normal;
-      mso-line-height-rule:exactly;
+      mso-line-height-rule: exactly;
       line-height: normal;
       letter-spacing: normal;
       text-align: center;
@@ -553,7 +558,7 @@
       font-weight: 900;
       font-stretch: normal;
       font-style: normal;
-      mso-line-height-rule:exactly;
+      mso-line-height-rule: exactly;
       line-height: 1.2;
       letter-spacing: 1.5px;
       text-align: center;
@@ -583,8 +588,9 @@
       padding: 0 20px;
       margin-bottom: 80px;
     }
+
     .recipe-intro {
-      
+
       z-index: 9;
       margin: 0 auto;
       position: relative;
@@ -595,7 +601,7 @@
     }
 
     .recipe-intro p {
-      mso-line-height-rule:exactly;
+      mso-line-height-rule: exactly;
       line-height: 32px;
       font-size: 22px;
       margin: 0 0 15px 0;
@@ -625,7 +631,7 @@
       font-weight: 300;
       font-stretch: normal;
       font-style: normal;
-      mso-line-height-rule:exactly;
+      mso-line-height-rule: exactly;
       line-height: 1;
       letter-spacing: normal;
       color: #000000;
@@ -646,7 +652,7 @@
   </style>
   <style media="only screen and (max-width: 767px)" type="text/css">
     @media only screen and (max-width: 767px) {
-      .blue-btn { 
+      .blue-btn {
         display: block;
         padding: 0;
       }
@@ -726,7 +732,7 @@
       .email-recipe-intro {
         padding: 0 30px 80px 30px;
       }
-      
+
       .recipe-content {
         width: 100%;
         display: block;
@@ -769,7 +775,8 @@
             <tr class="header-logo">
               <td>
                 <div class="img-container">
-                  <img width="73" height="73" src="http://staging.milk.org/Milk/media/Images/logo.png?ext=.png" alt="Image">
+                  <img width="73" height="73" src="http://staging.milk.org/Milk/media/Images/logo.png?ext=.png"
+                    alt="Image">
                 </div>
               </td>
             </tr>
@@ -788,44 +795,45 @@
         </td>
       </tr>
       <tr>
-          <td>
-            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
-              <tr>
-                <td style="padding: 14px 14px 25px 14px;
+        <td>
+          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+            <tr>
+              <td style="padding: 14px 14px 25px 14px;
                 background: #ffffff;
                 opacity: 0.9;
                 width: 85%;
+                max-width: 538px;
                 margin: 0 auto;
                 display: block;
                 z-index: 9;">
-                  <div class="recipe-intro">
-                    <h5>Contest</h5>
-                    <h2>Win a DAIRY CULINARY PRIZE PACK!*</h2>
-                    <p>Aliquam dapibus sed nunc nec malesuada. Maecenas congue mi augue, a suscipit sem pulvinar sed1.
-                      </p>
-                    <a href="http://staging.milk.org" class="blue-btn" target="_blank">Enter the contest</a>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
-                    style="width: 100%;">
-                    <tr>
-                      <td class="header-bg-image">
-                        <div class="img-container">
-                          <img width="600" height="auto"
-                            src="http://staging.milk.org/Milk/media/Images/img-esmp-volunteer-become-521-w@3x.png?ext=.png"
-                            alt="Image">
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
+                <div class="recipe-intro">
+                  <h5>Contest</h5>
+                  <h2>Win a DAIRY CULINARY PRIZE PACK!*</h2>
+                  <p>Aliquam dapibus sed nunc nec malesuada. Maecenas congue mi augue, a suscipit sem pulvinar sed1.
+                  </p>
+                  <a href="http://staging.milk.org" class="blue-btn" target="_blank">Enter the contest</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                  style="width: 100%;">
+                  <tr>
+                    <td class="header-bg-image">
+                      <div class="img-container">
+                        <img width="600" height="auto"
+                          src="http://staging.milk.org/Milk/media/Images/img-esmp-volunteer-become-521-w@3x.png?ext=.png"
+                          alt="Image">
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
     </table>
     <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
       class="email-container single-mail-content">
@@ -835,35 +843,35 @@
             <tr>
               <td>
                 <span>*</span>
-                <p>Cras ac purus et velit malesuada auctor. Duis quis urna eget nunc tincidunt aliquet sit amet vel
-                  est. Quisque enim leo, scelerisque quis lobortis porta, malesuada vitae tortor. Duis eu turpis nec
-                  massa scelerisque viverra. Nullam massa diam, suscipit blandit lacus quis, hendrerit tristique est.
-                  Integer sed feugiat tortor. Curabitur augue nisi, lobortis id tincidunt vitae, malesuada et augue.
-                  Vestibulum non risus ac eros tincidunt mollis semper eget orci. Maecenas id nibh semper, placerat
-                  turpis gravida, pellentesque metus.</p>
+                Cras ac purus et velit malesuada auctor. Duis quis urna eget nunc tincidunt aliquet sit amet vel
+                est. Quisque enim leo, scelerisque quis lobortis porta, malesuada vitae tortor. Duis eu turpis nec
+                massa scelerisque viverra. Nullam massa diam, suscipit blandit lacus quis, hendrerit tristique est.
+                Integer sed feugiat tortor. Curabitur augue nisi, lobortis id tincidunt vitae, malesuada et augue.
+                Vestibulum non risus ac eros tincidunt mollis semper eget orci. Maecenas id nibh semper, placerat
+                turpis gravida, pellentesque metus.
               </td>
             </tr>
             <tr>
               <td>
                 <span>92</span>
-                <p>Pellentesque a elementum leo. Proin sed turpis in orci ultricies condimentum. Nulla dignissim mi in
-                  elit tincidunt commodo. Donec at dolor ac erat dapibus dapibus. Cras sed mauris vel sapien congue
-                  ultrices eu et mi. Aenean bibendum libero felis, at mattis nulla vehicula eu. Vestibulum tincidunt
-                  erat sit amet erat placerat tincidunt. Phasellus elementum lacus libero, ut posuere nunc lacinia
-                  facilisis. Mauris convallis mi quis auctor ornare. Nunc eget gravida nibh. Duis venenatis lorem sed
-                  lacinia feugiat. Morbi egestas faucibus leo vel dictum.</p>
+                Pellentesque a elementum leo. Proin sed turpis in orci ultricies condimentum. Nulla dignissim mi in
+                elit tincidunt commodo. Donec at dolor ac erat dapibus dapibus. Cras sed mauris vel sapien congue
+                ultrices eu et mi. Aenean bibendum libero felis, at mattis nulla vehicula eu. Vestibulum tincidunt
+                erat sit amet erat placerat tincidunt. Phasellus elementum lacus libero, ut posuere nunc lacinia
+                facilisis. Mauris convallis mi quis auctor ornare. Nunc eget gravida nibh. Duis venenatis lorem sed
+                lacinia feugiat. Morbi egestas faucibus leo vel dictum.
               </td>
             </tr>
             <tr>
               <td>
                 <span></span>
-                <p>Nam laoreet dictum nisi in tempus. Mauris ac mauris dui. Nunc eu quam fermentum, fermentum tortor
-                  congue, posuere ipsum. Fusce fermentum, nisl ut condimentum blandit, ante enim accumsan sem, a rutrum
-                  nisl enim non felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                  Curae; Aliquam erat volutpat. Nam lobortis massa erat, scelerisque euismod diam vestibulum ac. Sed
-                  feugiat rhoncus lorem vel porta. Etiam non consequat arcu. Quisque quis nibh fringilla, pretium metus
-                  ac, auctor orci. Nullam convallis dictum leo, egestas pulvinar enim hendrerit sit amet. Aliquam
-                  dapibus sed nunc nec malesuada. Maecenas congue mi augue, a suscipit sem pulvinar sed.</p>
+                Nam laoreet dictum nisi in tempus. Mauris ac mauris dui. Nunc eu quam fermentum, fermentum tortor
+                congue, posuere ipsum. Fusce fermentum, nisl ut condimentum blandit, ante enim accumsan sem, a rutrum
+                nisl enim non felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                Curae; Aliquam erat volutpat. Nam lobortis massa erat, scelerisque euismod diam vestibulum ac. Sed
+                feugiat rhoncus lorem vel porta. Etiam non consequat arcu. Quisque quis nibh fringilla, pretium metus
+                ac, auctor orci. Nullam convallis dictum leo, egestas pulvinar enim hendrerit sit amet. Aliquam
+                dapibus sed nunc nec malesuada. Maecenas congue mi augue, a suscipit sem pulvinar sed.
               </td>
             </tr>
           </table>

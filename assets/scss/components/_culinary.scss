@@ -394,14 +394,13 @@
     }
     .pause-btn {
         position: absolute;
-        top: 568px;
-        right: 312px;
+        bottom: 18px;
+        right: 197px;
         width: 45px;
         height: 46px;
         cursor: pointer;
         @include media-md {
-            right: 170px;
-            top: 470px;
+            right: 65px;
         }
         @include media-sm {
             right: 45px;
@@ -413,11 +412,37 @@
             display: none;
         }
         @media (min-width: 1250px) and (max-width: 1299px) {
-            right: 220px;                
+            right: 107px;                
         }
         @media (min-width: 1200px) and (max-width: 1249px) {
-            right: 200px;              
+            right: 87px;              
         }
+        // position: absolute;
+        // top: 568px;
+        // right: 312px;
+        // width: 45px;
+        // height: 46px;
+        // cursor: pointer;
+        // z-index: 9;
+        // @include media-md {
+        //     right: 170px;
+        //     top: 470px;
+        // }
+        // @include media-sm {
+        //     right: 45px;
+        // }
+        // @include media-xs {
+        //     display: none;
+        // }
+        // @include media-sm {
+        //     display: none;
+        // }
+        // @media (min-width: 1250px) and (max-width: 1299px) {
+        //     right: 220px;                
+        // }
+        // @media (min-width: 1200px) and (max-width: 1249px) {
+        //     right: 200px;              
+        // }
         &:after {
             content: "";
             width: 45px;
@@ -437,10 +462,10 @@
             }
         }
         &.hide-pause {
-            -webkit-transition: all 0.2s ease;
-            -moz-transition: all 0.2s ease;
-            -o-transition: all 0.2s ease;
-            transition: all 0.2s ease;
+            // -webkit-transition: all 0.2s ease;
+            // -moz-transition: all 0.2s ease;
+            // -o-transition: all 0.2s ease;
+            // transition: all 0.2s ease;
             opacity: 0;
             height: 0;
         }
@@ -626,10 +651,10 @@
                         }
                     }
                     &.hide-play {
-                        -webkit-transition: all 0.2s ease;
-                        -moz-transition: all 0.2s ease;
-                        -o-transition: all 0.2s ease;
-                        transition: all 0.2s ease;
+                        // -webkit-transition: all 0.2s ease;
+                        // -moz-transition: all 0.2s ease;
+                        // -o-transition: all 0.2s ease;
+                        // transition: all 0.2s ease;
                         opacity: 0;
                         height: 0;
                     }

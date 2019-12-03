@@ -9854,15 +9854,14 @@ main {
       letter-spacing: 3.6px; } }
   .culinary-carousel-container .pause-btn {
     position: absolute;
-    top: 568px;
-    right: 312px;
+    bottom: 18px;
+    right: 197px;
     width: 45px;
     height: 46px;
     cursor: pointer; }
     @media (min-width: 992px) and (max-width: 1199px) {
       .culinary-carousel-container .pause-btn {
-        right: 170px;
-        top: 470px; } }
+        right: 65px; } }
     @media (min-width: 768px) and (max-width: 991px) {
       .culinary-carousel-container .pause-btn {
         right: 45px; } }
@@ -9874,10 +9873,10 @@ main {
         display: none; } }
     @media (min-width: 1250px) and (max-width: 1299px) {
       .culinary-carousel-container .pause-btn {
-        right: 220px; } }
+        right: 107px; } }
     @media (min-width: 1200px) and (max-width: 1249px) {
       .culinary-carousel-container .pause-btn {
-        right: 200px; } }
+        right: 87px; } }
     .culinary-carousel-container .pause-btn:after {
       content: "";
       width: 45px;
@@ -9893,10 +9892,6 @@ main {
     .culinary-carousel-container .pause-btn:hover:after {
       opacity: 0.8; }
     .culinary-carousel-container .pause-btn.hide-pause {
-      -webkit-transition: all 0.2s ease;
-      -moz-transition: all 0.2s ease;
-      -o-transition: all 0.2s ease;
-      transition: all 0.2s ease;
       opacity: 0;
       height: 0; }
   .culinary-carousel-container.small-culinary-carousel .culinary-carousel .culinary-slide .culinary-slide-img {
@@ -10051,10 +10046,6 @@ main {
         .culinary-carousel-container .culinary-carousel .culinary-slide .culinary-slide-img .play-btn:hover:after {
           opacity: 0.8; }
         .culinary-carousel-container .culinary-carousel .culinary-slide .culinary-slide-img .play-btn.hide-play {
-          -webkit-transition: all 0.2s ease;
-          -moz-transition: all 0.2s ease;
-          -o-transition: all 0.2s ease;
-          transition: all 0.2s ease;
           opacity: 0;
           height: 0; }
       @media (max-width: 767px) {
