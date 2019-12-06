@@ -567,14 +567,6 @@
                 }
             }
         }
-        .pause-btn {
-            top: 518px;
-            cursor: pointer;
-            z-index: 9;
-            @include media-md {
-                top: 470px;
-            }
-        }
     }
     .culinary-carousel {
         width: 100%;

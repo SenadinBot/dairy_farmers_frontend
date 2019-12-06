@@ -397,6 +397,7 @@
     .esmp-download-content {
         display: inline-block;
         vertical-align: top;
+        width: calc(100% - 70px);
         @include media-xs {
             width: 70%;
         }
