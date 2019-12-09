@@ -314,7 +314,8 @@ footer {
     }
     &.second-footer {
         &:before {
-            background-image: linear-gradient(100deg,rgba(95,33,103,.2),#0072ce),linear-gradient(to bottom,#0072ce,rgba(0, 114, 206, 0.8));
+            background-image: linear-gradient(to right, #465aa3, #207aca 80%);
+            opacity: initial;
         }
         .footer-intro {
             img {

@@ -1773,7 +1773,8 @@ footer {
         footer .social-container ul li a.twitter-icon:before {
           background-image: url("/App_Themes/Milk/images/img-icon-social-twitter.svg"); }
   footer.second-footer:before {
-    background-image: linear-gradient(100deg, rgba(95, 33, 103, 0.2), #0072ce), linear-gradient(to bottom, #0072ce, rgba(0, 114, 206, 0.8)); }
+    background-image: linear-gradient(to right, #465aa3, #207aca 80%);
+    opacity: initial; }
   footer.second-footer .footer-intro img {
     width: 164px;
     height: 164px;
@@ -3735,12 +3736,12 @@ footer {
     .big-banner-container {
       margin-top: 0;
       margin-bottom: 85px;
-      z-index: 9; } }
+      z-index: 0; } }
   @media (max-width: 767px) {
     .big-banner-container {
       margin-top: 0;
       margin-bottom: 70px;
-      z-index: 9; } }
+      z-index: 0; } }
   .big-banner-container img {
     display: none;
     width: 100%; }
@@ -7136,6 +7137,10 @@ main {
     width: 100%;
     height: auto;
     max-width: 100%; }
+    @media (max-width: 767px) {
+      .main-bg-image-container img {
+        transform: translateY(-17%);
+        top: 50%; } }
   .main-bg-image-container .desktop-img {
     display: block; }
     @media (max-width: 767px) {
@@ -10365,6 +10370,8 @@ main {
     -ms-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg); }
+  .culinary-carousel-container .main-bg-image-container .desktop-img {
+    top: 450px; }
 
 .article-icon-info {
   text-align: center;
