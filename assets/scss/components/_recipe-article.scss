@@ -395,6 +395,7 @@
 }
 .recipe-article-container {
     margin-bottom: 93px;
+    position: relative;
     .recipe-article-inner-container {
         width: 84%;
         @include media-md {

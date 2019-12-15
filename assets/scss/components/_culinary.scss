@@ -333,6 +333,12 @@
                             @include media-xs {
                                 width: calc(100vw - 70px);
                             }
+                            @include media-sm {
+                                height: 20vh;
+                            }
+                            @include media-md {
+                                height: 20vh;
+                            }
                         }
                     }
                 }

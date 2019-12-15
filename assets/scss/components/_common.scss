@@ -1416,6 +1416,37 @@
     &.recipe-article {
         z-index: -9;
     }
+    &.qa {
+        img {
+            @include media-xs {
+                transform: none;
+                top: initial;
+            }
+        }
+    }
+    &.our-farmers {
+        img {
+            @include media-xs {
+                transform: none;
+                top: initial;
+            }
+        }
+    }
+    &.recipe-article {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-80%);
+        @include media-xs  {
+            top: 30%;
+            transform: translateY(-100%);
+        }
+        img {
+            position: relative;
+            top: initial;
+            left: initial;
+            transform: none;
+        }
+    }
     img {
         background-position: center;
         background-repeat: no-repeat;

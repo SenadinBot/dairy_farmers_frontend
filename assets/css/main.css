@@ -7127,6 +7127,27 @@ main {
         position: relative; } }
   .main-bg-image-container.recipe-article {
     z-index: -9; }
+  @media (max-width: 767px) {
+    .main-bg-image-container.qa img {
+      transform: none;
+      top: initial; } }
+  @media (max-width: 767px) {
+    .main-bg-image-container.our-farmers img {
+      transform: none;
+      top: initial; } }
+  .main-bg-image-container.recipe-article {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-80%); }
+    @media (max-width: 767px) {
+      .main-bg-image-container.recipe-article {
+        top: 30%;
+        transform: translateY(-100%); } }
+    .main-bg-image-container.recipe-article img {
+      position: relative;
+      top: initial;
+      left: initial;
+      transform: none; }
   .main-bg-image-container img {
     background-position: center;
     background-repeat: no-repeat;
@@ -9834,6 +9855,12 @@ main {
   @media (max-width: 767px) {
     .culinary-carousel-container.remove-mobile-spacing .culinary-carousel .culinary-slide .culinary-slide-content span:before {
       width: calc(100vw - 70px); } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .culinary-carousel-container.remove-mobile-spacing .culinary-carousel .culinary-slide .culinary-slide-content span:before {
+      height: 20vh; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .culinary-carousel-container.remove-mobile-spacing .culinary-carousel .culinary-slide .culinary-slide-content span:before {
+      height: 20vh; } }
   .culinary-carousel-container.change-title-font .culinary-carousel .culinary-slide .culinary-slide-content span {
     font-size: 100px;
     line-height: 0.88;
@@ -12153,7 +12180,8 @@ main {
           cursor: pointer; }
 
 .recipe-article-container {
-  margin-bottom: 93px; }
+  margin-bottom: 93px;
+  position: relative; }
   .recipe-article-container .recipe-article-inner-container {
     width: 84%; }
     @media (min-width: 992px) and (max-width: 1199px) {
